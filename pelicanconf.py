@@ -2,17 +2,20 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-AUTHOR = '"security made in Lëtzebuerg" (SMILE) g.i.e.'
+AUTHOR = 'security made in Lëtzebuerg (SMILE) g.i.e.'
 SITENAME = 'MONARC'
-SITEURL = '.'
+SITEURL = 'http://localhost:8000'
 
 THEME = "./themes/pelican-bootstrap3"
 JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
 PLUGIN_PATHS = ['./plugins']
 PLUGINS = ['i18n_subsites']
 FEED_ALL_ATOM = True
+BOOTSTRAP_FLUID = False
+BOOTSTRAP_NAVBAR_INVERSE = False
 DISPLAY_RECENT_POSTS_ON_SIDEBAR = True
 DISPLAY_CATEGORIES_ON_MENU = False
+CC_LICENSE = "CC-BY-SA"
 
 
 PATH = 'content'
@@ -39,4 +42,11 @@ SOCIAL = (('GitHub', 'https://github.com/CASES-LU'),
 DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+RELATIVE_URLS = True
+# ARTICLE_URL = 'blog/{slug}.html'
+# ARTICLE_SAVE_AS = 'blog/{slug}.html'
+# PAGE_URL = '{slug}.html'
+# PAGE_SAVE_AS = '{slug}.html'
+# TAG_URL = 'tags/{slug}.html'
+# TAG_SAVE_AS = 'tags/{slug}.html'
+# TAGS_URL = 'tags.html'
