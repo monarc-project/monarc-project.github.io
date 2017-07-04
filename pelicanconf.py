@@ -6,6 +6,8 @@ AUTHOR = 'security made in Lëtzebuerg (SMILE) g.i.e.'
 SITENAME = 'MONARC'
 SITEURL = 'http://localhost:8000'
 
+PAGE_ORDER_BY = 'page-order'
+
 THEME = "./themes/pelican-bootstrap3"
 JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
 PLUGIN_PATHS = ['./plugins']
@@ -16,7 +18,6 @@ BOOTSTRAP_NAVBAR_INVERSE = False
 DISPLAY_RECENT_POSTS_ON_SIDEBAR = True
 DISPLAY_CATEGORIES_ON_MENU = False
 CC_LICENSE = "CC-BY-SA"
-
 
 PATH = 'content'
 
@@ -43,10 +44,8 @@ DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True
-# ARTICLE_URL = 'blog/{slug}.html'
-# ARTICLE_SAVE_AS = 'blog/{slug}.html'
-# PAGE_URL = '{slug}.html'
-# PAGE_SAVE_AS = '{slug}.html'
-# TAG_URL = 'tags/{slug}.html'
-# TAG_SAVE_AS = 'tags/{slug}.html'
-# TAGS_URL = 'tags.html'
+
+ARTICLE_URL = 'news/{date:%Y}/{date:%m}/{date:%d}/{slug}/'
+ARTICLE_SAVE_AS = 'news/{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html'
+PAGE_URL = '{slug}.html'
+PAGE_SAVE_AS = '{slug}.html'
