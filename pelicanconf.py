@@ -6,9 +6,9 @@ AUTHOR = '"security made in Lëtzebuerg" (SMILE) g.i.e.'
 SITENAME = 'MONARC'
 SITEURL = '.'
 
-THEME = "~/pelican-themes/pelican-bootstrap3"
+THEME = "./themes/pelican-bootstrap3"
 JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
-PLUGIN_PATHS = ['~/pelican-plugins']
+PLUGIN_PATHS = ['./plugins']
 PLUGINS = ['i18n_subsites']
 FEED_ALL_ATOM = True
 DISPLAY_RECENT_POSTS_ON_SIDEBAR = True
