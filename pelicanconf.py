@@ -6,7 +6,7 @@ AUTHOR = 'security made in Lëtzebuerg (SMILE) g.i.e.'
 SITENAME = 'MONARC'
 SITEURL = 'http://localhost:8000'
 
-PAGE_ORDER_BY = 'page-order'
+PAGE_ORDER_BY = 'sortorder'
 
 THEME = "./themes/pelican-bootstrap3"
 JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
