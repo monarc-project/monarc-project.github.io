@@ -5,7 +5,7 @@ Installation
 ------------
 
 ```bash
-$ git clone --recursive https://github.com/CASES-LU/website
+$ git clone --recursive https://github.com/CASES-LU/website.git
 $ cd website/
 
 $ sudo -H pip install pew
