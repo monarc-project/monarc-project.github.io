@@ -1,13 +1,19 @@
+MONARC website
+==============
 
+Installation
+------------
 
 ```bash
-git clone --recursive <website-repository-url>
+$ git clone --recursive https://github.com/CASES-LU/website
+$ cd website/
 
+$ sudo -H pip install pew
 $ pew install 3.6.1 --type CPython
 $ pew new --python=$(pew locate_python 3.6.1)  -a . -r requirements.txt monarc-website
 
-$ git clone https://github.com/getpelican/pelican-themes
-$ git clone https://github.com/getpelican/pelican-plugins
-
 $ pelican -s pelicanconf.py
 ``
+
+Deployment
+----------
