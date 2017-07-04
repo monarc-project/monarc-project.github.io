@@ -8,22 +8,25 @@ SITEURL = 'http://localhost:8000'
 
 PAGE_ORDER_BY = 'sortorder'
 
+PATH = 'content'
+TIMEZONE = 'Europe/Paris'
+DEFAULT_LANG = 'en'
+TYPOGRIFY = True
+
 THEME = "./themes/pelican-bootstrap3"
 JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
 PLUGIN_PATHS = ['./plugins']
 PLUGINS = ['i18n_subsites']
+DEFAULT_PAGINATION = 10
 FEED_ALL_ATOM = True
 BOOTSTRAP_FLUID = False
 BOOTSTRAP_NAVBAR_INVERSE = False
 DISPLAY_RECENT_POSTS_ON_SIDEBAR = True
 DISPLAY_CATEGORIES_ON_MENU = False
+DISPLAY_PAGES_ON_MENU = True
+DISPLAY_TAGS_ON_MENU = False
 CC_LICENSE = "CC-BY-SA"
 
-PATH = 'content'
-
-TIMEZONE = 'Europe/Paris'
-
-DEFAULT_LANG = 'en'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -31,6 +34,7 @@ CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
+
 
 # Blogroll
 LINKS = (('CASES', 'https://www.cases.lu'),
@@ -40,7 +44,9 @@ LINKS = (('CASES', 'https://www.cases.lu'),
 SOCIAL = (('GitHub', 'https://github.com/CASES-LU'),
           ('Twitter', 'https://twitter.com/cases_lu'),)
 
-DEFAULT_PAGINATION = 10
+NAVBAR_ELEMENTS = ['menu-items']
+
+
 
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True
