@@ -1,6 +1,5 @@
 Title: Documentation
 Tags: documentation, administration
-sortorder: 2
 
 MONARC technical guide
 ----------------------

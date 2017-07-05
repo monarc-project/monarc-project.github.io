@@ -1,21 +1,17 @@
-Contribution guidelines
-#######################
-
-:date: 2017-07-03
-:sortorder: 5
-:hidden: true
-
+Title: Contribution guidelines
+Date: 2017-07-03
+Hidden: true
 
 The GitHub issue tracker is for bug reports and feature requests.
 Please do not use it to ask questions about how to use MONARC.
 
-How Can I Contribute?
+You can contribute to MONARC by:
+
 * Reporting bugs
 * Suggesting enhancements
-* Pull requests
+* Proposing pull requests
+* Improving the documentation
 
-
-## Help
 
 ## Bug reports
 
@@ -24,14 +20,13 @@ Please be aware of the following things when filing bug reports:
 Please be aware of the following things when filing bug reports:
 
 1. Avoid raising duplicate issues. Use the GitHub issue search feature
-   to check whether your bug report or feature request has been mentioned in
-   the past.
+   to check whether your bug report has been mentioned in the past.
 2. When filing bug reports about exceptions or tracebacks, please include the
-   *complete* traceback.
+   *complete* traceback (logs of Apache, etc.).
 3. Make sure you provide a suitable amount of information. This
    means you should provide: **how to reproduce the issue**,
    **what you expected to happen**, **what actually happens**,
-   **what version of MONQRC you are using** and  **how you installed it**.
+   **what version of MONARC you are using** and  **how you installed it**.
 
 Did you write a patch that fixes a bug?
 
@@ -41,7 +36,9 @@ Did you write a patch that fixes a bug?
 
 
 
-## Feature requests
+## New feature requests
+
+Ideas of new features should always be discussed in an new issue.
 
 Do you intend to add a new feature or change an existing one?
 
@@ -53,8 +50,21 @@ Do you intend to add a new feature or change an existing one?
 
 ## Security issues
 
-Do not open up a GitHub issue if the bug is a security vulnerability,
-and instead refer to our security policy.
+Do not open directly a GitHub issue if the bug is a security vulnerability.
+If you think you have found a potential security vulnerability in MONARC,
+please email us. **Do not file a public issue**.
 
+You can contact:
+
+* [Cédric Bonhomme](mailto:cedric.bonhomme@circl.lu) - PGP fingerprint:
+  [55F5 D60E EFCA 3591 0089 18E7 A1CB 94DE 57B7 A70D](http://pgp.circl.lu/pks/lookup?op=get&search=0xA1CB94DE57B7A70D)
+
+We will respect your privacy and will only publicize your involvement if you
+grant us permission.
 
 ## Contribution to the documentation
+
+Contributions to the documentation are also always welcome.
+
+
+## Help
