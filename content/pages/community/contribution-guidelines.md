@@ -17,8 +17,6 @@ You can contribute to MONARC by:
 
 Please be aware of the following things when filing bug reports:
 
-Please be aware of the following things when filing bug reports:
-
 1. Avoid raising duplicate issues. Use the GitHub issue search feature
    to check whether your bug report has been mentioned in the past.
 2. When filing bug reports about exceptions or tracebacks, please include the
@@ -35,7 +33,6 @@ Did you write a patch that fixes a bug?
   Include the relevant issue number if applicable.
 
 
-
 ## New feature requests
 
 Ideas of new features should always be discussed in an new issue.
@@ -44,8 +41,6 @@ Do you intend to add a new feature or change an existing one?
 
 * Suggest your change in an issue with the tag **new feature**.
 * Open a pull request if you have collected positive feedback.
-
-
 
 
 ## Security issues
@@ -62,9 +57,7 @@ You can contact:
 We will respect your privacy and will only publicize your involvement if you
 grant us permission.
 
+
 ## Contribution to the documentation
 
 Contributions to the documentation are also always welcome.
-
-
-## Help
