@@ -5,7 +5,7 @@ Installation
 ------------
 
 ```bash
-$ git clone --recursive https://github.com/CASES-LU/website.git
+$ git clone --recursive https://github.com/monarc-project/website.git
 $ cd website/
 
 $ sudo -H pip install pew
