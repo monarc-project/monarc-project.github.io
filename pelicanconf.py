@@ -10,6 +10,7 @@ TIMEZONE = 'Europe/Paris'
 DEFAULT_LANG = 'en'
 TYPOGRIFY = True
 PAGE_ORDER_BY = 'sortorder'
+STATIC_PATHS = ['pdfs']
 
 THEME = "./themes/pelican-bootstrap3"
 JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
