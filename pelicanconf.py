@@ -35,14 +35,14 @@ AUTHOR_FEED_RSS = None
 
 # Navbar
 MENUITEMS = (
-        ('About', '/pages/about'),
+        ('News', '/news'),
         ('Documentation', '/pages/documentation'),
         ('Community', '/pages/community/'),
         ('Download', '/pages/download'),
         ('Trainings', '/pages/trainings'),
 )
 
-# Blogroll
+# Links
 LINKS = (('CASES', 'https://www.cases.lu'),
          ('security made in Lëtzebuerg', 'https://securitymadein.lu'),)
 
@@ -52,10 +52,8 @@ SOCIAL = (('GitHub', 'https://github.com/CASES-LU'),
 
 NAVBAR_ELEMENTS = ['menu-items']
 
-
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
-
 PATH_METADATA= '(?P<path_no_ext>.*)\..*'
 ARTICLE_URL = 'news/{date:%Y}/{date:%m}/{date:%d}/{slug}/'
 ARTICLE_SAVE_AS = 'news/{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html'
