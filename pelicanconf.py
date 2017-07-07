@@ -11,6 +11,8 @@ DEFAULT_LANG = 'en'
 TYPOGRIFY = True
 PAGE_ORDER_BY = 'sortorder'
 STATIC_PATHS = ['pdfs']
+SITELOGO = 'images/monarc-logo.png'
+SITELOGO_SIZE = '20px'
 
 THEME = "./themes/pelican-bootstrap3"
 JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}

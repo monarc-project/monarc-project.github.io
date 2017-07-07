@@ -7,7 +7,12 @@ The source code of MONARC is available on
 
 ## Virtual machine
 
+### Pre-built virtual machine for VirtualBox
+
 A pre-built virtual machine is
 [available](https://github.com/CASES-LU/Monarc_demo).
 
-You can generate your own virtual machine with Vagrant.
+### Deployment with Vagrant
+
+You can also generate your own virtual machine with Vagrant.
+See [the instructions](https://github.com/monarc-project/MonarcAppFO-vagrant).
