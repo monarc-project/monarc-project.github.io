@@ -49,7 +49,7 @@ LINKS = (('CASES', 'https://www.cases.lu'),
          ('security made in Lëtzebuerg', 'https://securitymadein.lu'),)
 
 # Social widget
-SOCIAL = (('GitHub', 'https://github.com/CASES-LU'),
+SOCIAL = (('GitHub', 'https://github.com/monarc-project'),
           ('Twitter', 'https://twitter.com/cases_lu'),)
 
 NAVBAR_ELEMENTS = ['menu-items']
