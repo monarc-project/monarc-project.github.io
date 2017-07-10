@@ -8,8 +8,7 @@ Please do not use it to ask questions about how to use MONARC.
 You can contribute to MONARC by:
 
 * Reporting bugs
-* Suggesting enhancements
-* Proposing pull requests
+* Suggesting enhancements or new features
 * Improving the documentation
 
 
@@ -29,33 +28,20 @@ Please be aware of the following things when filing bug reports:
 Did you write a patch that fixes a bug?
 
 * Open a new GitHub pull request with the patch.
-* Ensure the PR description clearly describes the problem and solution.
-  Include the relevant issue number if applicable.
+* Ensure the pull request description clearly describes the problem and the
+  solution. Include the relevant issue number if applicable.
 
+If the bug concerns a
+[security issue](/pages/community/vulnerability-disclosure).
 
 ## New feature requests
 
-Ideas of new features should always be discussed in an new issue.
+Ideas of new features should always be discussed in an new issue on GitHub.
 
 Do you intend to add a new feature or change an existing one?
 
 * Suggest your change in an issue with the tag **new feature**.
 * Open a pull request if you have collected positive feedback.
-
-
-## Security issues
-
-Do not open directly a GitHub issue if the bug is a security vulnerability.
-If you think you have found a potential security vulnerability in MONARC,
-please email us. **Do not file a public issue**.
-
-You can contact:
-
-* [Cédric Bonhomme](mailto:cedric.bonhomme@circl.lu) - PGP fingerprint:
-  [55F5 D60E EFCA 3591 0089 18E7 A1CB 94DE 57B7 A70D](http://pgp.circl.lu/pks/lookup?op=get&search=0xA1CB94DE57B7A70D)
-
-We will respect your privacy and will only publicize your involvement if you
-grant us permission.
 
 
 ## Contribution to the documentation
