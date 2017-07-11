@@ -47,3 +47,16 @@ Do you intend to add a new feature or change an existing one?
 ## Contribution to the documentation
 
 Contributions to the documentation are also always welcome.
+
+Please uses
+[Markdown](https://daringfireball.net/projects/markdown/).
+[MarkdownMode](https://www.emacswiki.org/emacs/MarkdownMode) is of great help
+for that. If you are using the ATOM editor, you should also find some Markdown
+extensions.
+
+Do not version binary files (*.docx* document, etc.). for the
+documentation or anything else. It easier to follow the changes of plain text
+files.
+
+[Pandoc](http://pandoc.org/) is a wonderful tool to convert files from one
+markup format into another.
