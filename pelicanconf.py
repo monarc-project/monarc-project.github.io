@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = 'security made in Lëtzebuerg (SMILE) g.i.e.'
 SITENAME = 'MONARC'
-SITEURL = 'http://localhost:8000'
+SITEURL = 'https://monarc-project.github.io'
 PATH = 'content'
 TIMEZONE = 'Europe/Paris'
 DEFAULT_LANG = 'en'
@@ -45,7 +45,7 @@ MENUITEMS = (
 )
 
 # Links
-LINKS = (('CASES', 'https://www.cases.lu'),
+LINKS = (('CASES', 'https://www.cases.lu/monarc.html'),
          ('security made in Lëtzebuerg', 'https://securitymadein.lu'),)
 
 # Social widget
