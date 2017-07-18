@@ -17,3 +17,9 @@ $ make html
 
 Deployment
 ----------
+
+```bash
+$ pip install ghp-import
+$ ghp-import output
+$ git push git@github.com:monarc-project/monarc-project.github.io.git gh-pages:master
+```
