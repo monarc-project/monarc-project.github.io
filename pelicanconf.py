@@ -37,7 +37,7 @@ AUTHOR_FEED_RSS = None
 
 # Navbar
 MENUITEMS = (
-        ('News', '/news'),
+        # ('News', '/news'),
         ('Documentation', '/pages/documentation'),
         ('Community', '/pages/community/'),
         ('Download', '/pages/download'),
