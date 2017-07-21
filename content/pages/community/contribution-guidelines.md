@@ -7,9 +7,9 @@ Please do not use it to ask questions about how to use MONARC.
 
 You can contribute to MONARC by:
 
-* Reporting bugs
-* Suggesting enhancements or new features
-* Improving the documentation
+* Reporting [bugs](https://github.com/monarc-project/MonarcAppFO/issues/new?labels=bug)
+* Suggesting enhancements or [new features](https://github.com/monarc-project/MonarcAppFO/issues/new?labels=feature+request)
+* Improving the [documentation](https://github.com/monarc-project/MonarcAppFO/issues/new?labels=documentation)
 
 
 ## Bug reports
@@ -40,8 +40,8 @@ Ideas of new features should always be discussed in an new issue on GitHub.
 
 Do you intend to add a new feature or change an existing one?
 
-* Suggest your change in an issue with the tag **new feature**.
-* Open a pull request if you have collected positive feedback.
+* Suggest your change in an issue with the tag [feature request](https://github.com/monarc-project/MonarcAppFO/issues/new?labels=feature+request).
+* Open a pull request if you have collected positive feedback and can implement it yourself.
 
 
 ## Contribution to the documentation
