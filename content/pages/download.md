@@ -17,4 +17,5 @@ A pre-built virtual machine is
 
 You can also generate your own virtual machine with Vagrant.
 See [the instructions](https://github.com/monarc-project/MonarcAppFO-vagrant).
-This method is recommended for development, not production.
+This method is recommended for development, not production. The best method
+if you want to test an up-to-date version of MONARC.
