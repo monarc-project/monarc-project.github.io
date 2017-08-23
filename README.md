@@ -15,6 +15,15 @@ $ pew new --python=$(pew locate_python 3.6.1)  -a . -r requirements.txt monarc-w
 $ make html
 ```
 
+If you want to test with the development server:
+
+```bash
+$ make devserver
+```
+
+And go to the address: http://localhost:8000
+
+
 Deployment
 ----------
 
