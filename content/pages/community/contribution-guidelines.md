@@ -11,6 +11,9 @@ You can contribute to MONARC by:
 * Suggesting enhancements or [new features](https://github.com/monarc-project/MonarcAppFO/issues/new?labels=feature+request)
 * Improving the [documentation](https://github.com/monarc-project/MonarcAppFO/issues/new?labels=documentation)
 
+If you want to contribute to the code you can use our
+[Vagrant development environment](https://github.com/monarc-project/MonarcAppFO/tree/master/vagrant).
+This is more convenient.
 
 ## Bug reports
 

@@ -10,7 +10,7 @@ TIMEZONE = 'Europe/Paris'
 DEFAULT_LANG = 'en'
 TYPOGRIFY = True
 #PAGE_ORDER_BY = 'sortorder'
-STATIC_PATHS = ['pdfs']
+STATIC_PATHS = ['pdfs', 'images']
 SITELOGO = 'images/monarc-logo.png'
 SITELOGO_SIZE = '20px'
 
@@ -46,7 +46,8 @@ MENUITEMS = (
 
 # Links
 LINKS = (('CASES', 'https://www.cases.lu/monarc.html'),
-         ('security made in Lëtzebuerg', 'https://securitymadein.lu'),)
+         ('security made in Lëtzebuerg', 'https://securitymadein.lu'),
+         ('<img src="https://img.shields.io/github/release/monarc-project/MonarcAppFO.svg?style=flat-square" />', 'https://github.com/monarc-project/MonarcAppFO/releases/latest'),)
 
 # Social widget
 SOCIAL = (('GitHub', 'https://github.com/monarc-project'),

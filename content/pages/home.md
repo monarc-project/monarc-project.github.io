@@ -12,3 +12,6 @@ account changes that have been made. This means that considerable time is saved
 in achieving compliance.
 
 MONARC is developed by [CASES](https://www.cases.lu).
+
+<!-- Example of logo:
+![](images/monarc-logo.png){: height="20px" width="20px"} -->
