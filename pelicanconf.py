@@ -10,7 +10,7 @@ TIMEZONE = 'Europe/Paris'
 DEFAULT_LANG = 'en'
 TYPOGRIFY = True
 #PAGE_ORDER_BY = 'sortorder'
-STATIC_PATHS = ['images', 'pdfs']
+STATIC_PATHS = ['images', 'pdfs', 'technical-guide']
 SITELOGO = 'images/monarc-logo.png'
 SITELOGO_SIZE = '20px'
 
@@ -34,6 +34,8 @@ CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
+
+READERS = {"html": None}
 
 # Navbar
 MENUITEMS = (
