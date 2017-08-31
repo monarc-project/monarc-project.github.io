@@ -10,14 +10,14 @@ TIMEZONE = 'Europe/Paris'
 DEFAULT_LANG = 'en'
 TYPOGRIFY = True
 #PAGE_ORDER_BY = 'sortorder'
-STATIC_PATHS = ['pdfs']
+STATIC_PATHS = ['images']
 SITELOGO = 'images/monarc-logo.png'
 SITELOGO_SIZE = '20px'
 
 THEME = "./themes/pelican-bootstrap3"
 JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
 PLUGIN_PATHS = ['./plugins']
-PLUGINS = ['i18n_subsites']
+PLUGINS = ['i18n_subsites', 'pdf']
 DEFAULT_PAGINATION = 10
 FEED_ALL_ATOM = True
 BOOTSTRAP_FLUID = False

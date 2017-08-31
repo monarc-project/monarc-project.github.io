@@ -11,3 +11,15 @@ Consult the [online version](/technical-guide) or download the
 
 MONARC user guide
 -----------------
+
+Quick Start:
+
+* [Online](quick-start)
+
+* [PDF](/pdfs/quick-start.pdf).
+
+Full user-guide:
+
+* [Online](full-user-guide)
+
+* [PDF](/pdfs/full-user-guide.pdf).
