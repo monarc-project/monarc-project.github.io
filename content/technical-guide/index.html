@@ -521,7 +521,12 @@ table.CodeRay td.code>pre{padding:0}
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
 <li><a href="#introduction">1. Introduction</a></li>
-<li><a href="#architecture">2. Architecture</a></li>
+<li><a href="#architecture">2. Architecture</a>
+<ul class="sectlevel2">
+<li><a href="#global-architecture">2.1. Global architecture</a></li>
+<li><a href="#specifications-by-server">2.2. Specifications by server</a></li>
+</ul>
+</li>
 <li><a href="#modules-of-the-project">3. Modules of the project</a></li>
 <li><a href="#requirements-and-deployment">4. Requirements and deployment</a>
 <ul class="sectlevel2">
@@ -572,41 +577,20 @@ with a fix.</p>
 <div class="sect1">
 <h2 id="architecture"><a class="anchor" href="#architecture"></a>2. Architecture</h2>
 <div class="sectionbody">
+<div class="sect2">
+<h3 id="global-architecture"><a class="anchor" href="#global-architecture"></a>2.1. Global architecture</h3>
 <div class="paragraph">
 <p>Basically MONARC is composed of two main parts:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>a back office: for the management of the database, clients and instances of
+<p>a back office: for the management of the database, servers and clients of
 MONARC installation;</p>
 </li>
 <li>
 <p>a front office: for the management of the risks analysis. A front office
 instance can be used without the back office.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>The whole architecture includes an additional reverse proxy and a configuration
-server. It is possible to connect many front offices to one back office.</p>
-</div>
-<div class="paragraph">
-<p><span class="image"><img src="images/monarc-architecture.png" alt="MONARC Architecture"></span></p>
-</div>
-<div class="paragraph">
-<p>It can be deployed with
-<a href="https://www.ansible.com">ansible</a>. More information
-<a href="https://github.com/monarc-project/ansible-ubuntu">here</a>.</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>The configuration server manages the configurations of the back office,
-reverse proxy and different front office(s) through SSH.</p>
-</li>
-<li>
-<p>The database <em>common</em> of the BO should also be available to the FO servers.</p>
 </li>
 </ul>
 </div>
@@ -625,6 +609,110 @@ More information about the installation in
 </td>
 </tr>
 </table>
+</div>
+<div class="paragraph">
+<p>The whole architecture includes an additional reverse proxy and a configuration
+server. It is possible to connect many front offices to one back office.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="images/monarc-architecture.png" alt="MONARC Architecture"></span></p>
+</div>
+<div class="paragraph">
+<p>It can be deployed with
+<a href="https://www.ansible.com">ansible</a>. More information
+<a href="https://github.com/monarc-project/ansible-ubuntu">here</a>.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The configuration server manages the configurations of the back office,
+reverse proxy and different front office(s) via SSH (on the same network
+or through a VPN).</p>
+</li>
+<li>
+<p>The reverse proxy should of course be available from Internet.</p>
+</li>
+<li>
+<p>The database <em>common</em> of the BO should also be available to the FO servers.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="specifications-by-server"><a class="anchor" href="#specifications-by-server"></a>2.2. Specifications by server</h3>
+<div class="paragraph">
+<p>The specifications below are of course only advices. It will vary depending on
+your need.</p>
+</div>
+<div class="paragraph">
+<p>Back office:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>4 vCPU</p>
+</li>
+<li>
+<p>16GB RAM</p>
+</li>
+<li>
+<p>25GB HDD</p>
+</li>
+<li>
+<p>Ubuntu Server 16.04.2 LTS 64 bits</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Front office:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>4vCPU</p>
+</li>
+<li>
+<p>16GB RAM</p>
+</li>
+<li>
+<p>25GB HDD</p>
+</li>
+<li>
+<p>Ubuntu Server 16.04.2 LTS 64 bits</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Reverse proxy:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Not that powerful, but all connections (for the BO or FO) will go through it.
+The bandwidth must be good.</p>
+</li>
+<li>
+<p>Ubuntu Server 16.04.2 LTS 64 bits</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Configuration server:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Not that powerful. Mainly used for the creation of clients on the different
+FOs.</p>
+</li>
+<li>
+<p>Ubuntu Server 16.04.2 LTS 64 bits</p>
+</li>
+<li>
+<p>We have tested with version 2.2.1.0 of ansible.</p>
+</li>
+</ul>
+</div>
 </div>
 </div>
 </div>
