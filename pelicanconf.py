@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = 'security made in Lëtzebuerg (SMILE) g.i.e.'
 SITENAME = 'MONARC'
-SITEURL = 'https://monarc-project.github.io'
+SITEURL = 'http://monarc.lu'
 PATH = 'content'
 TIMEZONE = 'Europe/Paris'
 DEFAULT_LANG = 'en'
