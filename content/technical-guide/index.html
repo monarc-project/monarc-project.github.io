@@ -536,8 +536,8 @@ table.CodeRay td.code>pre{padding:0}
 </li>
 <li><a href="#updates">5. Updates</a>
 <ul class="sectlevel2">
-<li><a href="#system">5.1. System</a></li>
-<li><a href="#monarc">5.2. MONARC</a></li>
+<li><a href="#system-update">5.1. System update</a></li>
+<li><a href="#monarc-update">5.2. MONARC update</a></li>
 </ul>
 </li>
 </ul>
@@ -752,20 +752,20 @@ repositories.</p>
 <td class="tableblock halign-left valign-top"><div><div class="ulist">
 <ul>
 <li>
-<p>MonarcCore (<a href="https://github.com/monarc-project/zm-core">zm-core</a> in vendor/monarc/core)</p>
+<p>MonarcCore (<a href="https://github.com/monarc-project/zm-core">zm-core</a> in <code>vendor/monarc/core</code>)</p>
 </li>
 <li>
-<p>MonarcBO (<a href="https://github.com/monarc-project/zm-backoffice">zm-backoffice</a> in vendor/monarc/backoffice)</p>
+<p>MonarcBO (<a href="https://github.com/monarc-project/zm-backoffice">zm-backoffice</a> in <code>vendor/monarc/backoffice</code>)</p>
 </li>
 </ul>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div><div class="ulist">
 <ul>
 <li>
-<p>MonarcCore (<a href="https://github.com/monarc-project/zm-core">zm-core</a> in vendor/monarc/core)</p>
+<p>MonarcCore (<a href="https://github.com/monarc-project/zm-core">zm-core</a> in <code>vendor/monarc/core</code>)</p>
 </li>
 <li>
-<p>MonarcFO (<a href="https://github.com/monarc-project/zm-client">zm-client</a> in vendor/monarc/frontoffice)</p>
+<p>MonarcFO (<a href="https://github.com/monarc-project/zm-client">zm-client</a> in <code>vendor/monarc/frontoffice</code>)</p>
 </li>
 </ul>
 </div></div></td>
@@ -856,8 +856,12 @@ imagick</p>
 <div class="sect4">
 <h5 id="prepared-virtual-machine"><a class="anchor" href="#prepared-virtual-machine"></a>Prepared virtual machine</h5>
 <div class="paragraph">
-<p>A <a href="https://github.com/monarc-project/MonarcAppFO/releases/latest">virtual machine</a> for
-use with VirtualBox is available if you want to quickly test MONARC.</p>
+<p>A
+<a href="https://github.com/monarc-project/MonarcAppFO/releases/latest">virtual machine</a>
+for use with VirtualBox is available if you want to quickly test MONARC.</p>
+</div>
+<div class="paragraph">
+<p>The best way if you want to try an up-to-date version of MONARC.</p>
 </div>
 </div>
 <div class="sect4">
@@ -879,8 +883,7 @@ $ vagrant up</code></pre>
 The username is <em>admin@admin.test</em> and the password is <em>admin</em>.</p>
 </div>
 <div class="paragraph">
-<p>This method is not recommended for production. But this is the best way
-if you want to try an up-to-date version of MONARC.</p>
+<p>This method is not recommended for production.</p>
 </div>
 </div>
 <div class="sect4">
@@ -905,21 +908,44 @@ if you want to try an up-to-date version of MONARC.</p>
 <div class="sect1">
 <h2 id="updates"><a class="anchor" href="#updates"></a>5. Updates</h2>
 <div class="sectionbody">
+<div class="paragraph">
+<p>Before updating MONARC it is strongly advised to configure database backup.
+For that you just need to create a file <code>data/backup/credentialsmysql.cnf</code>:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="ini">[client]
+host     = localhost
+user     = sql-monarc-user
+password = your-password
+socket   = /var/run/mysqld/mysqld.sock
+[mysql_upgrade]
+host     = localhost
+user     = sql-monarc-user
+password = your-password
+socket   = /var/run/mysqld/mysqld.sock
+basedir  = /usr</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>If this file is not present, a warning message will be displayed during the
+update.</p>
+</div>
 <div class="sect2">
-<h3 id="system"><a class="anchor" href="#system"></a>5.1. System</h3>
+<h3 id="system-update"><a class="anchor" href="#system-update"></a>5.1. System update</h3>
 <div class="paragraph">
 <p>Keep the software of your distribution up-to-date (Apache, PHP, MariaDB, etc.).
 At least the security updates from the GNU/Linux distribution.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="monarc"><a class="anchor" href="#monarc"></a>5.2. MONARC</h3>
+<h3 id="monarc-update"><a class="anchor" href="#monarc-update"></a>5.2. MONARC update</h3>
 <div class="paragraph">
 <p>The master branch should always be working and it is recommended to install
 the project using this one.</p>
 </div>
 <div class="paragraph">
-<p>If you have already installed MONARC and want to upgrade to a later version, you
+<p>If you have already installed MONARC and want to update to a later version, you
 can use the provided script:</p>
 </div>
 <div class="listingblock">
@@ -937,7 +963,7 @@ $ sudo systemctl restart apache2</code></pre>
 <div class="ulist">
 <ul>
 <li>
-<p>backup your databases in case the upgrade fails;</p>
+<p>backup your databases in case the update fails;</p>
 </li>
 <li>
 <p>check the presence of composer;</p>
@@ -972,7 +998,7 @@ $ sudo systemctl restart apache2</code></pre>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2017-08-07 09:49:31 CEST
+Last updated 2017-09-04 22:42:12 CEST
 </div>
 </div>
 <script type="text/x-mathjax-config">
