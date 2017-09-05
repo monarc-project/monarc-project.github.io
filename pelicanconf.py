@@ -6,19 +6,21 @@ AUTHOR = 'security made in Lëtzebuerg (SMILE) g.i.e.'
 SITENAME = 'MONARC'
 SITEURL = 'http://monarc.lu'
 PATH = 'content'
+# PAGE_PATHS = ['pages']
+# ARTICLE_PATHS = ['news']
 TIMEZONE = 'Europe/Paris'
 DEFAULT_LANG = 'en'
 TYPOGRIFY = True
 #PAGE_ORDER_BY = 'sortorder'
-STATIC_PATHS = ['images', 'pdfs', 'technical-guide', 'quick-start', 
+STATIC_PATHS = ['images', 'pdfs', 'technical-guide', 'quick-start',
                 'extra/CNAME']
 EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},}
 SITELOGO = 'images/monarc-logo.png'
 SITELOGO_SIZE = '20px'
 
-THEME = "./themes/pelican-bootstrap3"
+THEME = "themes/pelican-bootstrap3"
 JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
-PLUGIN_PATHS = ['./plugins']
+PLUGIN_PATHS = ['plugins']
 PLUGINS = ['i18n_subsites']
 DEFAULT_PAGINATION = 10
 FEED_ALL_ATOM = True
@@ -41,7 +43,7 @@ READERS = {"html": None}
 
 # Navbar
 MENUITEMS = (
-        # ('News', '/news'),
+        ('News', '/archives'),
         ('Documentation', '/pages/documentation'),
         ('Community', '/pages/community/'),
         ('Download', '/pages/download'),
