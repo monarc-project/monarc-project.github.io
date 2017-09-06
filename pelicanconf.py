@@ -18,12 +18,16 @@ EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},}
 SITELOGO = 'images/monarc-logo.png'
 SITELOGO_SIZE = '20px'
 
-THEME = "themes/pelican-bootstrap3"
+THEME = 'themes/pelican-bootstrap3'
 JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
 PLUGIN_PATHS = ['plugins']
 PLUGINS = ['i18n_subsites']
 DEFAULT_PAGINATION = 10
-FEED_ALL_ATOM = True
+FEED_ALL_ATOM = 'feeds/all.atom.xml'
+FEED_ALL_RSS = None
+TRANSLATION_FEED_ATOM = None
+AUTHOR_FEED_ATOM = None
+AUTHOR_FEED_RSS = None
 BOOTSTRAP_FLUID = False
 BOOTSTRAP_NAVBAR_INVERSE = False
 DISPLAY_RECENT_POSTS_ON_SIDEBAR = True
@@ -31,13 +35,6 @@ DISPLAY_CATEGORIES_ON_MENU = False
 DISPLAY_PAGES_ON_MENU = False
 DISPLAY_TAGS_ON_MENU = False
 CC_LICENSE = "CC-BY-SA"
-
-# Feed generation is usually not desired when developing
-FEED_ALL_ATOM = None
-CATEGORY_FEED_ATOM = None
-TRANSLATION_FEED_ATOM = None
-AUTHOR_FEED_ATOM = None
-AUTHOR_FEED_RSS = None
 
 READERS = {"html": None}
 
@@ -57,7 +54,8 @@ LINKS = (('CASES', 'https://www.cases.lu/monarc.html'),
 
 # Social widget
 SOCIAL = (('GitHub', 'https://github.com/monarc-project'),
-          ('Twitter', 'https://twitter.com/cases_lu'),)
+          ('Twitter', 'https://twitter.com/cases_lu'),
+          ('RSS', FEED_ALL_ATOM),)
 
 NAVBAR_ELEMENTS = ['menu-items']
 
