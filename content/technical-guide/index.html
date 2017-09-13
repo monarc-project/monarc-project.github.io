@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 1.5.4">
 <meta name="description" content="Technical guide of MONARC">
-<meta name="keywords" content="risk-analysis, monarc">
+<meta name="keywords" content="risk-analysis, monarc, technical-guide">
 <meta name="author" content=""security made in Lëtzebuerg" (SMILE) g.i.e.">
 <title>MONARC technical guide</title>
 <style>
@@ -521,13 +521,13 @@ table.CodeRay td.code>pre{padding:0}
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
 <li><a href="#introduction">1. Introduction</a></li>
-<li><a href="#architecture">2. Architecture</a>
+<li><a href="#modules-of-the-project">2. Modules of the project</a></li>
+<li><a href="#architecture">3. Architecture</a>
 <ul class="sectlevel2">
-<li><a href="#global-architecture">2.1. Global architecture</a></li>
-<li><a href="#specifications-by-server">2.2. Specifications by server</a></li>
+<li><a href="#global-architecture">3.1. Global architecture</a></li>
+<li><a href="#specifications-by-server">3.2. Specifications by server</a></li>
 </ul>
 </li>
-<li><a href="#modules-of-the-project">3. Modules of the project</a></li>
 <li><a href="#requirements-and-deployment">4. Requirements and deployment</a>
 <ul class="sectlevel2">
 <li><a href="#requirements">4.1. Requirements</a></li>
@@ -570,172 +570,7 @@ with a fix.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="architecture"><a class="anchor" href="#architecture"></a>2. Architecture</h2>
-<div class="sectionbody">
-<div class="sect2">
-<h3 id="global-architecture"><a class="anchor" href="#global-architecture"></a>2.1. Global architecture</h3>
-<div class="paragraph">
-<p>Basically MONARC is composed of two main parts:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>a back office: for the management of the database, servers and clients of
-MONARC installations;</p>
-</li>
-<li>
-<p>a front office: for the management of the risks analysis. A front office
-instance can be used without the back office.</p>
-</li>
-</ul>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>If you want run your own risk analysis you only need the front office.
-More information about the installation in
-<a href="#only-the-front-office">this section</a>.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-<div class="paragraph">
-<p>The whole architecture includes an additional reverse proxy and a configuration
-server. It is possible to connect many front offices to one back office.</p>
-</div>
-<div class="paragraph">
-<p><span class="image"><img src="images/monarc-architecture.png" alt="MONARC Architecture"></span></p>
-</div>
-<div class="paragraph">
-<p>It can be deployed with
-<a href="https://www.ansible.com">ansible</a>. More information
-<a href="https://github.com/monarc-project/ansible-ubuntu">here</a>.</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>172.18.14.73 - monarc2-rpx.test.your.domain.com</p>
-</li>
-<li>
-<p>172.18.13.71 - monarc2-conf.test.your.domain.com</p>
-</li>
-<li>
-<p>172.18.13.72 - monarc2-master.test.your.domain.com</p>
-</li>
-<li>
-<p>172.18.13.73 - monarc2-fo01.test.your.domain.com</p>
-</li>
-<li>
-<p>172.18.13.74 - monarc2-fo02.test.your.domain.com</p>
-</li>
-</ul>
-</div>
-<div class="sect3">
-<h4 id="network-requirements"><a class="anchor" href="#network-requirements"></a>2.1.1. Network requirements</h4>
-<div class="paragraph">
-<p>The configuration server (CFG) manages the configurations of the back office,
-reverse proxy and different front office(s) via SSH.</p>
-</div>
-<div class="paragraph">
-<p>The reverse proxy (RPX) should of course be available from Internet.</p>
-</div>
-<div class="paragraph">
-<p>The database <em>common</em> of the BO should also be available to the FO servers.</p>
-</div>
-<div class="paragraph">
-<p><a href="http://www.postfix.org">Postfix</a> should be installed on the BO and on the
-FO. Indeed, SMTP is used for the account creation and the password recovery.
-The easiest configuration is to set up Postfix for relaying emails through your
-mail server.</p>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="specifications-by-server"><a class="anchor" href="#specifications-by-server"></a>2.2. Specifications by server</h3>
-<div class="paragraph">
-<p>The specifications below are of course only advices. It will vary depending on
-your need.</p>
-</div>
-<div class="paragraph">
-<p>Back office:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>4 vCPU</p>
-</li>
-<li>
-<p>16GB RAM</p>
-</li>
-<li>
-<p>25GB HDD</p>
-</li>
-<li>
-<p>Ubuntu Server 16.04.2 LTS 64 bits</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>Front office:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>4vCPU</p>
-</li>
-<li>
-<p>16GB RAM</p>
-</li>
-<li>
-<p>25GB HDD</p>
-</li>
-<li>
-<p>Ubuntu Server 16.04.2 LTS 64 bits</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>Reverse proxy:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Not that powerful, but all connections (for the BO or FO) will go through it.
-The bandwidth must be good.</p>
-</li>
-<li>
-<p>Ubuntu Server 16.04.2 LTS 64 bits</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>Configuration server:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Not that powerful. Mainly used for the creation of clients on the different
-FOs.</p>
-</li>
-<li>
-<p>Ubuntu Server 16.04.2 LTS 64 bits</p>
-</li>
-<li>
-<p>We have tested with version 2.2.1.0 of ansible.</p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="modules-of-the-project"><a class="anchor" href="#modules-of-the-project"></a>3. Modules of the project</h2>
+<h2 id="modules-of-the-project"><a class="anchor" href="#modules-of-the-project"></a>2. Modules of the project</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>The source code of MONARC is divided in several modules with dedicated Git
@@ -831,16 +666,224 @@ back office.</p>
 </div>
 </div>
 <div class="sect1">
+<h2 id="architecture"><a class="anchor" href="#architecture"></a>3. Architecture</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="global-architecture"><a class="anchor" href="#global-architecture"></a>3.1. Global architecture</h3>
+<div class="paragraph">
+<p>Basically MONARC is composed of two main parts:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>a back office: for the management of the database, servers and clients of
+MONARC installations;</p>
+</li>
+<li>
+<p>a front office: for the management of the risks analysis. A front office
+instance can be used without the back office.</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>If you want run your own risk analysis you only need the front office.
+More information about the installation in
+<a href="#only-the-front-office">this section</a>.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>The whole architecture includes an additional reverse proxy (<strong>RPX</strong>) and a
+configuration server (<strong>CFG</strong>). It is possible to connect many front offices
+(<strong>FO</strong>) to one back office (<strong>BO</strong>).</p>
+</div>
+<div id="monarc-architecture-schema" class="paragraph">
+<p><span class="image"><img src="images/monarc-architecture.png" alt="MONARC Architecture"></span></p>
+</div>
+<div class="paragraph">
+<p>It is automatically deployed with
+<a href="https://www.ansible.com">ansible</a>. More information
+<a href="https://github.com/monarc-project/ansible-ubuntu">in our ansible script</a>.</p>
+</div>
+<div class="paragraph">
+<p>Example of IPs and FQDNs:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>172.18.14.73 - monarc2-rpx.test.your.domain.com</p>
+</li>
+<li>
+<p>172.18.13.71 - monarc2-conf.test.your.domain.com</p>
+</li>
+<li>
+<p>172.18.13.72 - monarc2-master.test.your.domain.com</p>
+</li>
+<li>
+<p>172.18.13.73 - monarc2-fo01.test.your.domain.com</p>
+</li>
+<li>
+<p>172.18.13.74 - monarc2-fo02.test.your.domain.com</p>
+</li>
+</ul>
+</div>
+<div class="sect3">
+<h4 id="network-requirements"><a class="anchor" href="#network-requirements"></a>3.1.1. Network requirements</h4>
+<div class="paragraph">
+<p>The configuration server (<strong>CFG</strong>) manages the configurations of the back
+office, reverse proxy and different front office(s) via SSH.</p>
+</div>
+<div class="paragraph">
+<p>The reverse proxy (<strong>RPX</strong>) should of course be available from Internet. The
+<strong>DNS</strong> is important for the reverse proxy in order to resolve the FQDNs of the
+servers inside the network.</p>
+</div>
+<div class="paragraph">
+<p>Through the reverse proxy you should be able to contact the <strong>BO</strong> and the
+<strong>FO</strong>s from Internet. No need to able able to contact the configuration server
+from the outside.</p>
+</div>
+<div class="paragraph">
+<p>The database <em>common</em> of the BO should also be available to the FO servers.</p>
+</div>
+<div class="paragraph">
+<p><a href="http://www.postfix.org">Postfix</a> should be installed on the BO and on the
+FO. Indeed, SMTP is used for the account creation and the password recovery.
+The easiest configuration is to set up Postfix for relaying emails through your
+inertnal mail server (<strong>SMTP</strong>).</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="specifications-by-server"><a class="anchor" href="#specifications-by-server"></a>3.2. Specifications by server</h3>
+<div class="paragraph">
+<p>The specifications below are of course only advices. It will vary depending on
+your need.</p>
+</div>
+<div class="paragraph">
+<p>Back office:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>4 vCPU</p>
+</li>
+<li>
+<p>16GB RAM</p>
+</li>
+<li>
+<p>25GB HDD</p>
+</li>
+<li>
+<p>Ubuntu Server 16.04.2 LTS 64 bits</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Front office:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>4vCPU</p>
+</li>
+<li>
+<p>16GB RAM</p>
+</li>
+<li>
+<p>25GB HDD</p>
+</li>
+<li>
+<p>Ubuntu Server 16.04.2 LTS 64 bits</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Reverse proxy:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Not that powerful, but all connections (for the BO or FO) will go through it.
+The bandwidth must be good.</p>
+</li>
+<li>
+<p>Ubuntu Server 16.04.2 LTS 64 bits</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Configuration server:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Not that powerful. Mainly used for the creation of clients on the different
+FOs.</p>
+</li>
+<li>
+<p>Ubuntu Server 16.04.2 LTS 64 bits</p>
+</li>
+<li>
+<p>We have tested with version 2.2.1.0 of ansible.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
 <h2 id="requirements-and-deployment"><a class="anchor" href="#requirements-and-deployment"></a>4. Requirements and deployment</h2>
 <div class="sectionbody">
 <div class="sect2">
 <h3 id="requirements"><a class="anchor" href="#requirements"></a>4.1. Requirements</h3>
+<div class="sect3">
+<h4 id="network"><a class="anchor" href="#network"></a>4.1.1. Network</h4>
 <div class="paragraph">
-<p>The deployment of MONARC has been tested on Debian 9.0, Ubuntu 16.04 LTS and
-Ubuntu 17.04.</p>
+<p>The deployment on the different servers requires an Internet connection since
+the updates are retrieved from our GitHub repositories. If this is hardly
+possible in your environment you need to configure a proxy in order to access
+to Internet. This is an important requirement since all MONARC updates,
+including security updates, are provided from the Git repositories.</p>
+</div>
+<div class="paragraph">
+<p>Our <a href="https://github.com/monarc-project/ansible-ubuntu">ansible playbook</a>
+also needs an Internet connection in order to dynamically deploy new clients.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="tls-certificate"><a class="anchor" href="#tls-certificate"></a>4.1.2. TLS certificate</h4>
+<div class="paragraph">
+<p>Is is strongly advised to use a TLS certificate that will be used on the
+reverse proxy, the back office and the different front offices (see
+<a href="#monarc-architecture-schema">the global architecture</a>).</p>
+</div>
+<div class="paragraph">
+<p>The certificate <strong>yourcert.crt</strong> and the key file <strong>yourcert.key</strong> are by default
+located at <code>/etc/sslkeys/</code> (location configurable using the variables in the
+<code>inventory/hosts</code> file of the ansible playbook). You can also use a single
+<strong>.pem</strong> file, but make sure it includes the certificate and the key.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="system-and-software"><a class="anchor" href="#system-and-software"></a>4.1.3. System and software</h4>
+<div class="paragraph">
+<p>The deployment of MONARC has been tested on Ubuntu 16.04 LTS and Ubuntu 17.04.</p>
 </div>
 <div class="ulist">
 <ul>
+<li>
+<p>Git;</p>
+</li>
 <li>
 <p>PHP (version 7.0 recommended);</p>
 <div class="ulist">
@@ -864,6 +907,7 @@ imagick</p>
 </ul>
 </div>
 </div>
+</div>
 <div class="sect2">
 <h3 id="deployment"><a class="anchor" href="#deployment"></a>4.2. Deployment</h3>
 <div class="sect3">
@@ -880,28 +924,6 @@ for use with VirtualBox is available if you want to quickly test MONARC.</p>
 </div>
 <div class="paragraph">
 <p>The best way if you want to try an up-to-date version of MONARC.</p>
-</div>
-</div>
-<div class="sect4">
-<h5 id="vagrant"><a class="anchor" href="#vagrant"></a>Vagrant</h5>
-<div class="paragraph">
-<p>If you want to deploy the application with Vagrant:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="CodeRay highlight"><code data-lang="bash">$ sudo apt-get install virtualbox vagrant
-$ git clone https://github.com/monarc-project/MonarcAppFO-vagrant.git
-$ cd MonarcAppFO-vagrant/
-$ vagrant up</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Once the virtual machine will be ready go to the address:
-<a href="http://127.0.0.1:5001" class="bare">http://127.0.0.1:5001</a><br>
-The username is <em>admin@admin.test</em> and the password is <em>admin</em>.</p>
-</div>
-<div class="paragraph">
-<p>This method is not recommended for production.</p>
 </div>
 </div>
 <div class="sect4">
@@ -1016,7 +1038,7 @@ $ sudo systemctl restart apache2</code></pre>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2017-09-08 09:59:41 CEST
+Last updated 2017-09-13 09:23:31 CEST
 </div>
 </div>
 <script type="text/x-mathjax-config">
