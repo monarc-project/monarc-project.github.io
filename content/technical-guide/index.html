@@ -7,7 +7,7 @@
 <meta name="generator" content="Asciidoctor 1.5.4">
 <meta name="description" content="Technical guide of MONARC">
 <meta name="keywords" content="risk-analysis, monarc, technical-guide">
-<meta name="author" content=""security made in Lëtzebuerg" (SMILE) g.i.e.">
+<meta name="author" content=""security made in Lëtzebuerg" (SMILE) g.i.e">
 <title>MONARC technical guide</title>
 <style>
 /* Asciidoctor default stylesheet | MIT License | http://asciidoctor.org */
@@ -515,7 +515,7 @@ table.CodeRay td.code>pre{padding:0}
 <div id="header">
 <h1>MONARC technical guide</h1>
 <div class="details">
-<span id="author" class="author">"security made in Lëtzebuerg" (SMILE) g.i.e.</span><br>
+<span id="author" class="author">"security made in Lëtzebuerg" (SMILE) g.i.e</span><br>
 </div>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
@@ -704,15 +704,13 @@ More information about the installation in
 <div class="paragraph">
 <p>The whole architecture includes an additional reverse proxy (<strong>RPX</strong>) and a
 configuration server (<strong>CFG</strong>). It is possible to connect many front offices
-(<strong>FO</strong>) to one back office (<strong>BO</strong>).</p>
+(<strong>FO</strong>) to one back office (<strong>BO</strong>).
+It is automatically deployed with <a href="https://www.ansible.com">ansible</a>.
+More information in the repository of the
+<a href="https://github.com/monarc-project/ansible-ubuntu">ansible playbook</a>.</p>
 </div>
 <div id="monarc-architecture-schema" class="paragraph">
 <p><span class="image"><img src="images/monarc-architecture.png" alt="MONARC Architecture"></span></p>
-</div>
-<div class="paragraph">
-<p>It is automatically deployed with
-<a href="https://www.ansible.com">ansible</a>. More information
-<a href="https://github.com/monarc-project/ansible-ubuntu">in our ansible script</a>.</p>
 </div>
 <div class="paragraph">
 <p>Example of IPs and FQDNs:</p>
@@ -759,85 +757,94 @@ from the outside.</p>
 <p><a href="http://www.postfix.org">Postfix</a> should be installed on the BO and on the
 FO. Indeed, SMTP is used for the account creation and the password recovery.
 The easiest configuration is to set up Postfix for relaying emails through your
-inertnal mail server (<strong>SMTP</strong>).</p>
+internal mail server (<strong>SMTP</strong>).</p>
 </div>
 </div>
 </div>
 <div class="sect2">
 <h3 id="specifications-by-server"><a class="anchor" href="#specifications-by-server"></a>3.2. Specifications by server</h3>
-<div class="paragraph">
-<p>The specifications below are of course only advices. It will vary depending on
-your need.</p>
-</div>
-<div class="paragraph">
-<p>Back office:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>4 vCPU</p>
-</li>
-<li>
-<p>16GB RAM</p>
-</li>
-<li>
-<p>25GB HDD</p>
-</li>
-<li>
-<p>Ubuntu Server 16.04.2 LTS 64 bits</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>Front office:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>4vCPU</p>
-</li>
-<li>
-<p>16GB RAM</p>
-</li>
-<li>
-<p>25GB HDD</p>
-</li>
-<li>
-<p>Ubuntu Server 16.04.2 LTS 64 bits</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>Reverse proxy:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Not that powerful, but all connections (for the BO or FO) will go through it.
-The bandwidth must be good.</p>
-</li>
-<li>
-<p>Ubuntu Server 16.04.2 LTS 64 bits</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>Configuration server:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Specifications given only as advices.</caption>
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top"></th>
+<th class="tableblock halign-left valign-top">Back office</th>
+<th class="tableblock halign-left valign-top">Front office</th>
+<th class="tableblock halign-left valign-top">Reverse proxy</th>
+<th class="tableblock halign-left valign-top">Configuration server</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Number of vCPU</p></th>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>4</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>4</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div></div></td>
+<td class="tableblock halign-left valign-top"><div></div></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">RAM (GB)</p></th>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>16</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>16</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div></div></td>
+<td class="tableblock halign-left valign-top"><div></div></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">HDD (BG)</p></th>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>25</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>25</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div></div></td>
+<td class="tableblock halign-left valign-top"><div></div></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Operating system</p></th>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Ubuntu Server 16.04.2 LTS</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Ubuntu Server 16.04.2 LTS</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Ubuntu Server 16.04.2 LTS</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Ubuntu Server 16.04.2 LTS</p>
+</div></div></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Comment</p></th>
+<td class="tableblock halign-left valign-top"><div></div></td>
+<td class="tableblock halign-left valign-top"><div></div></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Not that powerful. But all connections (for the BO and FOs) will go through
+  it.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
 <p>Not that powerful. Mainly used for the creation of clients on the different
-FOs.</p>
-</li>
-<li>
-<p>Ubuntu Server 16.04.2 LTS 64 bits</p>
-</li>
-<li>
-<p>We have tested with version 2.2.1.0 of ansible.</p>
-</li>
-</ul>
-</div>
+  FOs.</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 </div>
@@ -890,7 +897,7 @@ located at <code>/etc/sslkeys/</code> (location configurable using the variables
 <ul>
 <li>
 <p>PHP extensions: xml, mbstring, mysql, zip, unzip, mcrypt, intl, gettext,
-imagick</p>
+imagick, ssl</p>
 </li>
 </ul>
 </div>
@@ -912,9 +919,6 @@ imagick</p>
 <h3 id="deployment"><a class="anchor" href="#deployment"></a>4.2. Deployment</h3>
 <div class="sect3">
 <h4 id="only-the-front-office"><a class="anchor" href="#only-the-front-office"></a>4.2.1. Only the front office</h4>
-<div class="paragraph">
-<p>Different methods are provided.</p>
-</div>
 <div class="sect4">
 <h5 id="prepared-virtual-machine"><a class="anchor" href="#prepared-virtual-machine"></a>Prepared virtual machine</h5>
 <div class="paragraph">
@@ -974,8 +978,8 @@ update.</p>
 <div class="sect2">
 <h3 id="system-update"><a class="anchor" href="#system-update"></a>5.1. System update</h3>
 <div class="paragraph">
-<p>Keep the software of your distribution up-to-date (Apache, PHP, MariaDB, etc.).
-At least the security updates from the GNU/Linux distribution.</p>
+<p>Keep the software of your distribution up-to-date (Apache, PHP, MariaDB,
+Postfix, etc.). At least the security updates from the GNU/Linux distribution.</p>
 </div>
 </div>
 <div class="sect2">
@@ -1038,7 +1042,7 @@ $ sudo systemctl restart apache2</code></pre>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2017-09-13 09:23:31 CEST
+Last updated 2017-09-13 14:25:22 CEST
 </div>
 </div>
 <script type="text/x-mathjax-config">
