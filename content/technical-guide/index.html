@@ -723,7 +723,7 @@ More information in the repository of the
 <div class="ulist">
 <ul>
 <li>
-<p>172.18.14.73 - monarc2-rpx.test.your.domain.com</p>
+<p>172.18.14.73 - monarc2-rpx.test.your.domain.com - my.monarc.lu</p>
 </li>
 <li>
 <p>172.18.13.71 - monarc2-conf.test.your.domain.com</p>
@@ -738,6 +738,15 @@ More information in the repository of the
 <p>172.18.13.74 - monarc2-fo02.test.your.domain.com</p>
 </li>
 </ul>
+</div>
+<div class="paragraph">
+<p>The <strong>FO</strong> server <em>monarc2-fo01</em> hosts two distinct databases for two clients. An
+Apache Virtual Host is configured for each clients.</p>
+</div>
+<div class="paragraph">
+<p>A user who wants to do a security analysis with MONARC
+will for example access to his MONARC account via the address
+<a href="https://my.monarc.lu/client1" class="bare">https://my.monarc.lu/client1</a> (assuming my.monarc.lu is the FQDN of the <strong>RPX</strong>).</p>
 </div>
 </td>
 </tr>
@@ -874,13 +883,47 @@ internal mail server (<strong>SMTP</strong>).</p>
 <div class="paragraph">
 <p>The deployment on the different servers requires an Internet connection since
 the updates are retrieved from our GitHub repositories. If this is hardly
-possible in your environment you need to configure a proxy in order to access
-to Internet. This is an important requirement since all MONARC updates,
-including security updates, are provided from the Git repositories.</p>
+possible in your environment due to an internal policy, you need to configure a
+proxy in order to access to Internet. This is an important requirement since all
+MONARC updates, including security updates, are provided from the Git repositories.</p>
 </div>
 <div class="paragraph">
 <p>Our <a href="https://github.com/monarc-project/ansible-ubuntu">ansible playbook</a>
 also needs an Internet connection in order to dynamically deploy new clients.</p>
+</div>
+<div class="paragraph">
+<p>The servers (or the proxy) should be able to contact:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>github.com</p>
+</li>
+<li>
+<p>api.github.com</p>
+</li>
+<li>
+<p>pypi.python.org</p>
+</li>
+<li>
+<p>registry.npmjs.org</p>
+</li>
+<li>
+<p>deb.nodesource.com</p>
+</li>
+<li>
+<p>getcomposer.org</p>
+</li>
+<li>
+<p>.packagist.org</p>
+</li>
+<li>
+<p>packagist.phpcomposer.com</p>
+</li>
+<li>
+<p>letsencrypt.org</p>
+</li>
+</ul>
 </div>
 </div>
 <div class="sect3">
