@@ -524,14 +524,29 @@ table.CodeRay td.code>pre{padding:0}
 <li><a href="#modules-of-the-project">2. Modules of the project</a></li>
 <li><a href="#architecture">3. Architecture</a>
 <ul class="sectlevel2">
-<li><a href="#global-architecture">3.1. Global architecture</a></li>
+<li><a href="#global-architecture">3.1. Global architecture</a>
+<ul class="sectlevel3">
+<li><a href="#network-requirements">3.1.1. Network requirements</a></li>
+</ul>
+</li>
 <li><a href="#specifications-by-server">3.2. Specifications by server</a></li>
 </ul>
 </li>
 <li><a href="#requirements-and-deployment">4. Requirements and deployment</a>
 <ul class="sectlevel2">
-<li><a href="#requirements">4.1. Requirements</a></li>
-<li><a href="#deployment">4.2. Deployment</a></li>
+<li><a href="#requirements">4.1. Requirements</a>
+<ul class="sectlevel3">
+<li><a href="#network">4.1.1. Network</a></li>
+<li><a href="#tls-certificate">4.1.2. TLS certificate</a></li>
+<li><a href="#system-and-software">4.1.3. System and software</a></li>
+</ul>
+</li>
+<li><a href="#deployment">4.2. Deployment</a>
+<ul class="sectlevel3">
+<li><a href="#only-the-front-office">4.2.1. Only the front office</a></li>
+<li><a href="#the-back-office-and-the-front-office">4.2.2. The back office and the front office</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li><a href="#updates">5. Updates</a>
@@ -676,7 +691,7 @@ back office.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>a back office: for the management of the database, servers and clients of
+<p>a back office: for the management of the database, FO servers and clients of
 MONARC installations;</p>
 </li>
 <li>
@@ -723,41 +738,54 @@ More information in the repository of the
 <div class="ulist">
 <ul>
 <li>
-<p>172.18.14.73 - monarc2-rpx.test.your.domain.com - my.monarc.lu</p>
+<p>172.18.14.73 - monarc-rpx.private.your.domain.com - my.monarc.lu</p>
 </li>
 <li>
-<p>172.18.13.71 - monarc2-conf.test.your.domain.com</p>
+<p>172.18.13.71 - monarc-conf.private.your.domain.com</p>
 </li>
 <li>
-<p>172.18.13.72 - monarc2-master.test.your.domain.com</p>
+<p>172.18.13.72 - monarc-master.private.your.domain.com</p>
 </li>
 <li>
-<p>172.18.13.73 - monarc2-fo01.test.your.domain.com</p>
+<p>172.18.13.73 - monarc-fo01.private.your.domain.com</p>
 </li>
 <li>
-<p>172.18.13.74 - monarc2-fo02.test.your.domain.com</p>
+<p>172.18.13.74 - monarc-fo02.private.your.domain.com</p>
 </li>
 </ul>
-</div>
-<div class="paragraph">
-<p>The <strong>FO</strong> server <em>monarc2-fo01</em> hosts two distinct databases for two clients. An
-Apache Virtual Host is configured for each clients.</p>
-</div>
-<div class="paragraph">
-<p>A user who wants to do a security analysis with MONARC
-will for example access to his MONARC account via the address
-<a href="https://my.monarc.lu/client1" class="bare">https://my.monarc.lu/client1</a> (assuming my.monarc.lu is the FQDN of the <strong>RPX</strong>).</p>
 </div>
 </td>
 </tr>
 </table>
 </div>
 <div class="paragraph">
+<p>In this example, the <strong>FO</strong> server <em>monarc-fo01</em> hosts two distinct databases
+for two clients. An Apache Virtual Host is also configured for each clients. A
+user who wants to do a security analysis with MONARC will access to his MONARC
+account via the address <a href="https://my.monarc.lu/formation/" class="bare">https://my.monarc.lu/formation/</a></p>
+</div>
+<div class="paragraph">
+<p>Note that the <em>common</em> database of the <strong>BO</strong> is listening on <code>0.0.0.0:3306</code>.</p>
+</div>
+<div id="TLS-certificate" class="paragraph">
 <p>It is strongly recommended to use a TLS certificate on the reverse proxy in
-order to provide a HTTPS connection between Internet and the reverse proxy.
-Depending your setup you will ideally provide a HTTPS connection after the
-reverse proxy. If you want so, make sure to have a TLS certificate for each
-server (or a wildcard certificate).</p>
+order to provide a HTTPS connection between Internet and the reverse proxy. In
+our example, a TLS certificate for my.monarc.lu is used.<br>
+Depending your setup you will ideally provide a HTTPS connection between the
+reverse proxy and the BO/FOs servers. If you want so, make sure to have:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>a certificate for each server, or;</p>
+</li>
+<li>
+<p>a wildcard certificate (e.g.: <em>*.private.your.domain.com</em>), or;</p>
+</li>
+<li>
+<p>a self-signed certificate.</p>
+</li>
+</ul>
 </div>
 <div class="sect3">
 <h4 id="network-requirements"><a class="anchor" href="#network-requirements"></a>3.1.1. Network requirements</h4>
@@ -885,10 +913,11 @@ internal mail server (<strong>SMTP</strong>).</p>
 the updates are retrieved from our GitHub repositories. If this is hardly
 possible in your environment due to an internal policy, you need to configure a
 proxy in order to access to Internet. This is an important requirement since all
-MONARC updates, including security updates, are provided from the Git repositories.</p>
+MONARC updates, including security updates, are provided from the Git
+repositories.</p>
 </div>
 <div class="paragraph">
-<p>Our <a href="https://github.com/monarc-project/ansible-ubuntu">ansible playbook</a>
+<p>The <a href="https://github.com/monarc-project/ansible-ubuntu">ansible playbook</a>
 also needs an Internet connection in order to dynamically deploy new clients.</p>
 </div>
 <div class="paragraph">
@@ -925,13 +954,23 @@ also needs an Internet connection in order to dynamically deploy new clients.</p
 </li>
 </ul>
 </div>
+<div class="paragraph">
+<p>To make the different servers use the proxy, specify the address of your proxy
+in the file <code>/home/ansible/.bash_profile</code>. For example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="bash">export http_proxy=http://proxy.your.domain.com:4128
+export https_proxy=http://proxy.your.domain.com:4128</code></pre>
+</div>
+</div>
 </div>
 <div class="sect3">
 <h4 id="tls-certificate"><a class="anchor" href="#tls-certificate"></a>4.1.2. TLS certificate</h4>
 <div class="paragraph">
 <p>Is is strongly advised to use a TLS certificate on the reverse proxy. Depending
 on your configuration, you may need to secure the connection after the reverse
-proxy (see <a href="#monarc-architecture-schema">the global architecture</a>).</p>
+proxy. See <a href="#TLS-certificate">this section</a>.</p>
 </div>
 <div class="paragraph">
 <p>The certificate <strong>yourcert.crt</strong> and the key file <strong>yourcert.key</strong> are by default
@@ -1007,8 +1046,12 @@ for use with VirtualBox is available if you want to quickly test MONARC.</p>
 <h4 id="the-back-office-and-the-front-office"><a class="anchor" href="#the-back-office-and-the-front-office"></a>4.2.2. The back office and the front office</h4>
 <div class="paragraph">
 <p>The whole architecture can be deployed with
-<a href="https://www.ansible.com">ansible</a>. More information
-<a href="https://github.com/monarc-project/ansible-ubuntu">here</a>.</p>
+<a href="https://www.ansible.com">ansible</a>.</p>
+</div>
+<div class="paragraph">
+<p>You will find more information
+<a href="https://github.com/monarc-project/ansible-ubuntu">here</a> for a deployment
+with ansible.</p>
 </div>
 </div>
 </div>
@@ -1064,37 +1107,35 @@ $ sudo systemctl restart apache2</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>This script will retrieve the updates from the last stable release of MONARC.</p>
-</div>
-<div class="paragraph">
-<p>For more details the script will:</p>
+<p>Updates from the last stable release of MONARC will be retrieved.
+For more details the script will:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>backup your databases in case the update fails;</p>
+<p>backup your databases in case the update fails (if enabled, as explained
+previously);</p>
 </li>
 <li>
 <p>check the presence of composer;</p>
 </li>
 <li>
-<p>retrieve the new code from the Git repositories from the last stable release:</p>
+<p>retrieve the new code from the Git repositories from the last stable release
+(master branch):</p>
 <div class="ulist">
 <ul>
 <li>
-<p>pull updates for module/[MonarcCore, MonarcBO/MonarcFO];</p>
+<p>pull updates for module/[MonarcCore, MonarcBO/MonarcFO] via Git or composer;</p>
 </li>
 <li>
-<p>pull updates for node_modules/[ng_anr, ng_backoffice/ng_client].</p>
+<p>pull updates for node_modules/[ng_anr, ng_backoffice/ng_client] via Git or
+npm.</p>
 </li>
 </ul>
 </div>
 </li>
 <li>
 <p>run the appropriate database upgrade scripts (pathCore, pathBO, pathFO);</p>
-</li>
-<li>
-<p>install/update JavaScript libraries with npm;</p>
 </li>
 <li>
 <p>update the translations.</p>
@@ -1107,7 +1148,7 @@ $ sudo systemctl restart apache2</code></pre>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2017-09-13 14:25:22 CEST
+Last updated 2017-09-28 08:00:21 CEST
 </div>
 </div>
 <script type="text/x-mathjax-config">
