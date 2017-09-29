@@ -19,6 +19,7 @@ SITELOGO = 'images/monarc-logo.png'
 SITELOGO_SIZE = '20px'
 
 THEME = 'themes/pelican-bootstrap3'
+BOOTSTRAP_THEME = 'cerulean'
 JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
 PLUGIN_PATHS = ['plugins']
 PLUGINS = ['i18n_subsites']

@@ -4,17 +4,33 @@ Save_as: index.html
 
 ## What is MONARC?
 
-[CASES](https://www.cases.lu/) promotes information security through the use of behavioural, organizational and technical measures. Depending on its size and its security needs, organisations must react in the most appropriate manner.
-Adopting good practices, taking the necessary measures and adjusting them proportionally: all this is part of the process to ensure information security. Most of all, it depends on performing a risk analysis on a regular
-basis.
+Depending on its size and its security needs, organisations must react in the
+most appropriate manner. Adopting good practices, taking the necessary measures
+and adjusting them proportionally: all this is part of the process to ensure
+information security. Most of all, it depends on performing a risk analysis on
+a regular basis.
 
-Although the profitability of the risk analysis approach is guaranteed, the investment represented by this approach in terms of the required cost and expertise is a barrier for many companies, especially SMEs.
+Although the profitability of the risk analysis approach is guaranteed, the
+investment represented by this approach in terms of the required cost and
+expertise is a barrier for many companies, especially SMEs.
 
-To remedy this situation and allow all organisations, both large and small, to benefit from the advantages that a risk analysis offers, CASES has developed an optimised risk analysis method: [MONARC](https://github.com/monarc-project) (**Optimised Risk Analysis Method**), allowing precise and repeatable risk
+To remedy this situation and allow all organisations, both large and small, to
+benefit from the advantages that a risk analysis offers, CASES has developed an
+optimised risk analysis method: [MONARC](https://github.com/monarc-project)
+(**Optimised Risk Analysis Method**), allowing precise and repeatable risk
 management.
 
-The advantage of MONARC lies in the capitalisation of risk analyses already performed in similar business contexts: the same vulnerabilities regularly appear in many businesses, as they face the same threats and generate similar risks. Most companies have servers, printers, a fleet of smartphones, wi-fi antennas, etc. therefore the vulnerabilities and threats
-are the same. It is therefore sufficient to generalise risk scenarios for these assets (also called objects) by context and/or business.
+The advantage of MONARC lies in the capitalisation of risk analyses already
+performed in similar business contexts: the same vulnerabilities regularly
+appear in many businesses, as they face the same threats and generate similar
+risks. Most companies have servers, printers, a fleet of smartphones, Wi-Fi
+antennas, etc. therefore the vulnerabilities and threats
+are the same. It is therefore sufficient to generalise risk scenarios for these
+assets (also called objects) by context and/or business.
+
+<center>
+![](images/monarc-logo.png#right){: height="200px" width="200px"}
+</center>
 
 <a name="Phases" />
 
@@ -48,7 +64,3 @@ are the same. It is therefore sufficient to generalise risk scenarios for these 
   When the first treatment of risks has been carried out, an ongoing management phase with security monitoring and recurring control of security measures must be entered, in order to improve it in a sustainable manner.
 
   This fourth phase also allows to continuously optimise security by increasing the detail of objects used and by expanding the scope of the risk analysis.
-
-
-<!-- Example of logo:
-![](images/monarc-logo.png){: height="20px" width="20px"} -->
