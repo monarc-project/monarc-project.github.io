@@ -1,5 +1,4 @@
-Title: MONARC Documentation
-Tags: documentation, administration
+Title: Documentation
 
 * ### [Quick Start](/quick-start) [![PDF](/images/pdf.png)](/pdfs/quick-start.pdf)
 
