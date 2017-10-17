@@ -22,3 +22,7 @@ MONARC. More information
 [here](https://github.com/monarc-project/monarc-packer).
 
 
+## SaaS offering
+
+We also provide a [My.Monarc.lu](https://my.monarc.lu/) hosted SaaS offering.
+You can contact us at the address [info@cases.lu](mailto:info@cases.lu?subject=Information about My.Monarc.lu)
