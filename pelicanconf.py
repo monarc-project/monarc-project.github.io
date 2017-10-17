@@ -12,12 +12,12 @@ TIMEZONE = 'Europe/Paris'
 DEFAULT_LANG = 'en'
 TYPOGRIFY = True
 #PAGE_ORDER_BY = 'sortorder'
-STATIC_PATHS = ['images', 'pdfs', 'technical-guide', 'quick-start','user-guide',
+STATIC_PATHS = ['images', 'assets', 'technical-guide', 'quick-start','user-guide',
                 'extra/CNAME']
 EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},}
-SITELOGO = 'images/monarc-logo.png'
+SITELOGO = 'assets/images/monarc-logo.png'
 SITELOGO_SIZE = '20px'
-FAVICON = 'images/monarc-logo.png'
+FAVICON = 'assets/images/monarc-logo.png'
 THEME = 'themes/pelican-bootstrap3'
 BOOTSTRAP_THEME = 'cerulean'
 JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}

@@ -29,7 +29,7 @@ are the same. It is therefore sufficient to generalise risk scenarios for these
 assets (also called objects) by context and/or business.
 
 <center>
-![](images/monarc-logo.png#right){: height="200px" width="200px"}
+![](/assets/images/monarc-logo.png#right){: height="200px" width="200px"}
 </center>
 
 <a name="Phases" />
