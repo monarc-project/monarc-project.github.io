@@ -28,9 +28,9 @@ antennas, etc. therefore the vulnerabilities and threats
 are the same. It is therefore sufficient to generalise risk scenarios for these
 assets (also called objects) by context and/or business.
 
-<center>
-![](/assets/images/monarc-logo.png#right){: height="200px" width="200px"}
-</center>
+<video width="800" height="600" autoplay loop>
+<source src="/assets/video/ScreenCast.mp4" type="video/mp4">
+</video>
 
 <a name="Phases" />
 
