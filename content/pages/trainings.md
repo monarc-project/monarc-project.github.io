@@ -7,7 +7,3 @@ Learn how to master risk analysis with our
 
 * [Workshop MONARC - english](/assets/files/monarc-training/en/Formation_V2-MONARC_En.pdf)
 * [Workshop MONARC - french](/assets/files/monarc-training/fr/Formation_V2-MONARC_Fr.pdf)
-* the latest [Virtual Machine](https://github.com/monarc-project/MonarcAppFO/releases/latest)
-  for VirtualBox
-
-Next MONARC training in Luxembourg is on
