@@ -2,9 +2,9 @@ Title: Trainings
 
 |&nbsp;|||
 |:--|--|--|
-|**Date:**||Tuesday, 7 November 2017|
+|**Date and time:**||Tuesday, 7 November 2017<br/>09h00 - 15h00|
 |&nbsp;|  |  |
-|**Location:**|&nbsp;&nbsp;&nbsp;|CASES / SECURITYMADEIN.LU|
+|**Location:**|&nbsp;&nbsp;&nbsp;|C3 / SECURITYMADEIN.LU|
 |             |                  |16 Boulevard d’Avranches 1160|
 |             |                  |Luxembourg|
 |&nbsp;|  |  |
