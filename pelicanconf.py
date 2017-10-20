@@ -49,8 +49,9 @@ MENUITEMS = (
 )
 
 # Links
-LINKS = (('CASES', 'https://www.cases.lu/monarc.html'),
-         ('security made in Lëtzebuerg', 'https://securitymadein.lu'),
+LINKS = ((' CASES', 'https://www.cases.lu/monarc.html'),
+         ('Cybersecurity Competence Center (C3)', 'https://c-3.lu'),
+         ('SECURITYMADEIN.LU', 'https://securitymadein.lu'),
          ('<img src="https://img.shields.io/github/release/monarc-project/MonarcAppFO.svg?style=flat-square" />', 'https://github.com/monarc-project/MonarcAppFO/releases/latest'),)
 
 # Social widget
