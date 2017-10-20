@@ -22,6 +22,10 @@ Title: Trainings
 |&nbsp;|  |  |
 |**Training materials:**||[Workshop MONARC - french](/assets/files/monarc-training/fr/Formation_V2-MONARC_Fr.pdf)<br/>[Context MyCompany - french](/assets/files/monarc-training/fr/Context_MyCompany_fr_v1.1.pdf)|
 
+
+
 <center>
-[![](/assets/images/register.png)](https://www.eventbrite.com/e/training-monarc-apprenez-a-maitriser-lanalyse-de-risques-tickets-39045216293)<br/>(*Limited to 2 people per company*)
+
+<a href="https://www.eventbrite.com/e/training-monarc-apprenez-a-maitriser-lanalyse-de-risques-tickets-39045216293" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Register</a>
+<br/>(*Limited to 2 people per company*)
 <center/>
