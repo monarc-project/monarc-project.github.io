@@ -1049,9 +1049,179 @@ for use with VirtualBox is available if you want to quickly test MONARC.</p>
 <a href="https://www.ansible.com">ansible</a>.</p>
 </div>
 <div class="paragraph">
+<p><span class="image"><img src="images/monarc-architecture.png" alt="MONARC Architecture"></span></p>
+</div>
+<div class="sect4">
+<h5 id="requirements-2"><a class="anchor" href="#requirements-2"></a>Requirements</h5>
+<div class="ulist">
+<ul>
+<li>
+<p>Git on all servers;</p>
+</li>
+<li>
+<p>Python 2 on all servers. Actually ansible 2.2 features only a tech preview of
+Python 3 support;</p>
+</li>
+<li>
+<p>dnspython on the configuration server;</p>
+</li>
+<li>
+<p>[ansible](<a href="https://www.ansible.com/" class="bare">https://www.ansible.com/</a>) must be installed on the configuration
+server;</p>
+</li>
+<li>
+<p>postfix on the BO and all FO servers.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect4">
+<h5 id="usage"><a class="anchor" href="#usage"></a>Usage</h5>
+<div class="paragraph">
+<p>Install ansible on the configuration server and get the playbook for MONARC:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="bash">sudo apt-get install jq
+sudo -H pip install ansible dnspython
+git clone https://github.com/monarc-project/ansible-ubuntu.git
+cd ansible-ubuntu/</code></pre>
+</div>
+</div>
+<div class="sect5">
+<h6 id="configuration"><a class="anchor" href="#configuration"></a>Configuration</h6>
+<div class="ulist">
+<ul>
+<li>
+<p>create a user named <strong>ansible</strong> on each server;</p>
+</li>
+<li>
+<p>generate a SSH key for the user <strong>ansible</strong> on the configuration server:</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>ssh-keygen -t rsa -C "your_email@example.com"</pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>copy the public key on the other servers:</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>ssh-copy-id ansible@BO
+ssh-copy-id ansible@RPX
+ssh-copy-id ansible@FO</pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>add the user <strong>ansible</strong> in the <strong>sudo</strong> group:</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>sudo usermod -aG sudo ansible</pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>add the user <strong>www-data</strong> in the <strong>ansible</strong> group:</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>sudo usermod -aG ansible www-data</pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>give the permission to ansible to use sudo without password:</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>echo 'ansible ALL=(ALL:ALL) NOPASSWD:ALL' &gt;&gt; /etc/sudoers</pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>create a file <em>inventory/hosts</em>:</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>[dev]
+FO
+
+[dev:vars]
+master= "BO"
+publicHost= "monarc.example.com"
+
+[master]
+BO monarc_sql_password="password"
+
+[rpx]
+RPX.localhost
+
+[monarc:children]
+rpx
+master
+dev
+
+[monarc:vars]
+env_prefix=""
+clientDomain="monarc.example.com"
+emailFrom="info@example.com"
+github_auth_token="&lt;your-github-auth-token&gt;"
+protocol="https"
+certificate="sslcert.crt"
+certificatekey="sslcert.key"
+certificatechain="sslcert.crt"
+bourlalias="monarcbo"
+localDNS="example.net"</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The variable <strong>monarc_sql_password</strong> is the password for the SQL database on
+the BO.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>finally, launch ansible:</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>cd playbook/
+ansible-playbook -i ../inventory/ monarc.yaml --user ansible</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>ansible will install and configure the back office, the front office and the
+reverse proxy. Consequently the configuration server should be able to contact
+these servers through SSH.</p>
+</div>
+<div class="paragraph">
 <p>You will find more information
-<a href="https://github.com/monarc-project/ansible-ubuntu">here</a> for a deployment
-with ansible.</p>
+<a href="https://github.com/monarc-project/ansible-ubuntu">in the ansible playbook</a>.</p>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -1102,8 +1272,8 @@ can use the provided script:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="bash">$ scripts/update-all.sh
-$ sudo systemctl restart apache2</code></pre>
+<pre class="CodeRay highlight"><code data-lang="bash">$ ./scripts/update-all.sh
+$ sudo systemctl restart apache2.service</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1117,7 +1287,7 @@ For more details the script will:</p>
 previously);</p>
 </li>
 <li>
-<p>check the presence of composer;</p>
+<p>check the presence of composer and if needed install it;</p>
 </li>
 <li>
 <p>retrieve the new code from the Git repositories from the last stable release
@@ -1129,7 +1299,7 @@ previously);</p>
 </li>
 <li>
 <p>pull updates for node_modules/[ng_anr, ng_backoffice/ng_client] via Git or
-npm.</p>
+Npm.</p>
 </li>
 </ul>
 </div>
