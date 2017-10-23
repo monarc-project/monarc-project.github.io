@@ -12,7 +12,7 @@ TIMEZONE = 'Europe/Paris'
 DEFAULT_LANG = 'en'
 TYPOGRIFY = True
 #PAGE_ORDER_BY = 'sortorder'
-STATIC_PATHS = ['images', 'assets', 'technical-guide', 'quick-start','user-guide',
+STATIC_PATHS = ['images', 'assets', 'technical-guide', 'quick-start','user-guide','method-guide',
                 'extra/CNAME']
 EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},}
 SITELOGO = 'assets/images/monarc-logo.png'
