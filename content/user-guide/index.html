@@ -550,15 +550,15 @@ table.CodeRay td.code>pre{padding:0}
 </ul>
 </li>
 <li><a href="#evaluation-scales">5. Evaluation Scales</a>
-<ul class="sectlevel3">
+<ul class="sectlevel2">
 <li><a href="#scale-of-impact">5.1. Scale of impact</a></li>
 <li><a href="#scales-of-threats">5.2. Scales of threats</a></li>
 <li><a href="#scales-of-vulnerabilities">5.3. Scales of vulnerabilities</a></li>
-<li><a href="#management-of-operational-risk-acceptance-thresholds">5.4. Management of operational risk acceptance thresholds</a></li>
+<li><a href="#management-of-acceptability-thresholds">5.4. Management of acceptability thresholds</a></li>
 </ul>
 </li>
 <li><a href="#management-of-knowledge-base">6. Management of Knowledge base</a>
-<ul class="sectlevel3">
+<ul class="sectlevel2">
 <li><a href="#type-of-assets">6.1. Type of assets</a></li>
 <li><a href="#threats">6.2. Threats</a></li>
 <li><a href="#vulnérabilities">6.3. Vulnérabilities</a></li>
@@ -775,7 +775,7 @@ Once the analysis has been selected, the dashboard can be retracted in order to 
 </table>
 </div>
 <div class="olist arabic">
-<ol class="arabic">
+<ol class="arabic" start="2">
 <li>
 <p>Navigation panel, users administration and account management.</p>
 </li>
@@ -1796,27 +1796,30 @@ To show this option see <a href="#creating-a-risk-analysis">Creating a Risk Anal
 <div class="sect3">
 <h4 id="operational-risk-sheet"><a class="anchor" href="#operational-risk-sheet"></a>4.4.2. Operational risk sheet</h4>
 <div class="paragraph">
-<p>The risk card is displayed when you click on the "Processing" link in the information risk table.</p>
+<p>The risk card is displayed when you click on the <code>Not treated</code> link in the operational risk table.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="images/OPRiskSheet.png " alt="Operational Risk Sheet"></span></p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Return to risk table.</p>
+<p><code>Back to the list</code>: Return to risk table.</p>
 </li>
 <li>
-<p>Current Risk Values for ROLFP Criteria.</p>
+<p><code>Current risk</code>: Values for risk probability (<code>Prob.</code>) and ROLFP<sup class="footnoteref">[<a class="footnote" href="#_footnote_2" title="View footnote.">2</a>]</sup> Criteria.</p>
 </li>
 <li>
-<p>Residual risk values for the ROLFP criteria (not yet treated). These values should be adjusted according to the recommendation and the measures that will be put in place.</p>
+<p><code>Residual risk</code> : Values for risk probability and ROLFP<sup class="footnoteref">[<a class="footnote" href="#_footnote_2" title="View footnote.">2</a>]</sup> criteria (not yet treated). Those values should be adjusted according to the recommendation and the measures that will be put in place.</p>
 </li>
 <li>
 <p>Reminder of the parameters of the risk table.</p>
 </li>
 <li>
-<p>Creation / Assignment button for adding one or more control(s).</p>
+<p><code>Recommmendations</code> : Creation / Assignment button for adding one or more recommendations.</p>
 </li>
 <li>
-<p>Selection of the type of risk treatment, the 4 values have their sources of ISO / IEC 27005 :</p>
+<p><code>Kind of treatment</code> : Selection of the type of risk treatment, the 4 values have their sources of ISO / IEC 27005 :</p>
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
@@ -1834,13 +1837,22 @@ To show this option see <a href="#creating-a-risk-analysis">Creating a Risk Anal
 </ol>
 </div>
 </li>
-<li>
-<p>Saving the form in order to calculate the residual risk</p>
-</li>
 </ol>
 </div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Once the validation has been done, the risk is treated.
+</td>
+</tr>
+</table>
+</div>
 <div class="paragraph">
-<p>Once the validation has been done, the risk is treated:</p>
+<p><span class="image"><img src="images/OPRiskTreated.png " alt="Operational Risk Treated"></span></p>
 </div>
 </div>
 <div class="sect3">
@@ -1848,10 +1860,13 @@ To show this option see <a href="#creating-a-risk-analysis">Creating a Risk Anal
 <div class="paragraph">
 <p>When an asset is selected in the analysis:</p>
 </div>
+<div class="paragraph">
+<p><span class="image"><img src="images/OPSpecificRisk.png " alt="Operational Specific Risk"></span></p>
+</div>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Click to create a specific risk: A pop-up appears and allows a new risk to be associated with the current asset. If the risk does not exist, it can be created directly.</p>
+<p>Click to <code>create a specific risk</code>: A pop-up appears and allows a new risk to be associated with the current asset. If the risk does not exist, it can be created directly.</p>
 </li>
 </ol>
 </div>
@@ -1868,18 +1883,28 @@ To show this option see <a href="#creating-a-risk-analysis">Creating a Risk Anal
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Calling the menu</p>
-</li>
-<li>
-<p>Calling the Management view of evaluation scales</p>
+<p>Calling the <code>menu</code></p>
 </li>
 </ol>
 </div>
 <div class="paragraph">
-<p>The view "Scales of Evaluations" shows the followinf criterias:</p>
+<p><span class="image"><img src="images/ContextMenuEvaluationScale1.png" alt="ContextMenuEvaluationScale"></span></p>
 </div>
 <div class="olist arabic">
-<ol class="arabic">
+<ol class="arabic" start="2">
+<li>
+<p>Calling the Management view of <code>evaluation scales</code></p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="images/ContextMenuEvaluationScale2.png" alt="ContextMenuEvaluationScale"></span></p>
+</div>
+<div class="paragraph">
+<p>The view "Scales of Evaluations" shows the following criterias:</p>
+</div>
+<div class="ulist">
+<ul>
 <li>
 <p>Scale of impact</p>
 </li>
@@ -1895,7 +1920,7 @@ To show this option see <a href="#creating-a-risk-analysis">Creating a Risk Anal
 <li>
 <p>The management of operational risk acceptance thresholds</p>
 </li>
-</ol>
+</ul>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -1904,71 +1929,102 @@ To show this option see <a href="#creating-a-risk-analysis">Creating a Risk Anal
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-All scales are editable and customizable. However, it is no longer permitted to modify scales as soon as an evaluation has been encoded.
+All scales are editable and customizable.
 </td>
 </tr>
 </table>
 </div>
-<div class="sect3">
-<h4 id="scale-of-impact"><a class="anchor" href="#scale-of-impact"></a>5.1. Scale of impact</h4>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Click to change the number of steps.</p>
-</li>
-<li>
-<p>Click to "Show or Hide" the unused criteria of the analysis.</p>
-</li>
-<li>
-<p>Click on the symbol   to hide an unused column.</p>
-</li>
-<li>
-<p>Click to add a new impact criterion.</p>
-</li>
-<li>
-<p>Click to edit the labels of each step (management is such an Excel table, clicking on a label in order to edit it, by clicking on another, makes the first automatically saves and so on).</p>
-</li>
-</ol>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+However, it is no longer permitted to modify scales as soon as an evaluation has been encoded.
+</td>
+</tr>
+</table>
 </div>
-</div>
-<div class="sect3">
-<h4 id="scales-of-threats"><a class="anchor" href="#scales-of-threats"></a>5.2. Scales of threats</h4>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Click to change the number of steps</p>
-</li>
-<li>
-<p>Click to edit the labels of each echelon (Management is same as scale of impact).</p>
-</li>
-</ol>
-</div>
-</div>
-<div class="sect3">
-<h4 id="scales-of-vulnerabilities"><a class="anchor" href="#scales-of-vulnerabilities"></a>5.3. Scales of vulnerabilities</h4>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Click to change the number of steps</p>
-</li>
-<li>
-<p>Click to edit the labels of each echelon (Management is same as scale of impact).</p>
-</li>
-</ol>
-</div>
-</div>
-<div class="sect3">
-<h4 id="management-of-operational-risk-acceptance-thresholds"><a class="anchor" href="#management-of-operational-risk-acceptance-thresholds"></a>5.4. Management of operational risk acceptance thresholds</h4>
+<div class="sect2">
+<h3 id="scale-of-impact"><a class="anchor" href="#scale-of-impact"></a>5.1. Scale of impact</h3>
 <div class="paragraph">
-<p>For information risks:</p>
-</div>
-<div class="paragraph">
-<p>For operational risks:</p>
+<p><span class="image"><img src="images/ScaleImpact.png" alt="ScaleImpact"></span></p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Modification of threshold values. The table just below updates directly, as well as all the risk tables of the analysis.</p>
+<p>Click to modify the number of scales.</p>
+</li>
+<li>
+<p>Click on <code>Show hidden impacts</code> to show or hide the criteria not used in the analysis.</p>
+</li>
+<li>
+<p>Click on the symbol to hide an unused column.</p>
+</li>
+<li>
+<p>Click on <code>New column name</code> to add a new impact criteria.</p>
+</li>
+<li>
+<p>Click to edit the headings of each scale.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="scales-of-threats"><a class="anchor" href="#scales-of-threats"></a>5.2. Scales of threats</h3>
+<div class="paragraph">
+<p><span class="image"><img src="images/ScaleThreats.png" alt="ScaleThreats"></span></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Click to modify the number of scales</p>
+</li>
+<li>
+<p>Click to edit the heading on each scale (Management identical to the impact scale).</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="scales-of-vulnerabilities"><a class="anchor" href="#scales-of-vulnerabilities"></a>5.3. Scales of vulnerabilities</h3>
+<div class="paragraph">
+<p><span class="image"><img src="images/ScaleVulunerabilities.png" alt="ScaleVulunerabilities"></span></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Click to modify the number of scales</p>
+</li>
+<li>
+<p>Click to edit the heading on each scale (Management identical to the impact scale).</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="management-of-acceptability-thresholds"><a class="anchor" href="#management-of-acceptability-thresholds"></a>5.4. Management of acceptability thresholds</h3>
+<div class="paragraph">
+<p>There are two separate tables for acceptability thresholds, as operational risk and information risk are not calculated in the same way.
+Information risks are calculated using three criteria:</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="images/InformationTresholds.png" alt="InformationTresholds"></span></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Modification of thresholds levels of informations risks. The table displayed above (as well as the risk analysis tables) is updated automatically.</p>
+</li>
+<li>
+<p>Information risks are calculated using three criteria: <code>Impact x Threat x Vulnerability</code></p>
+</li>
+<li>
+<p>Modification of thresholds levels of operational risks. The table displayed above (as well as the risk analysis tables) is updated automatically.</p>
+</li>
+<li>
+<p>Operational riks are calculated using two criteria: <code>Impact x Probability</code></p>
 </li>
 </ol>
 </div>
@@ -1984,32 +2040,45 @@ All scales are editable and customizable. However, it is no longer permitted to 
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Calling the menu</p>
-</li>
-<li>
-<p>Calling the Management view of evaluation scales</p>
+<p>Calling the <code>menu</code></p>
 </li>
 </ol>
 </div>
 <div class="paragraph">
+<p><span class="image"><img src="images/ContextMenuEvaluationScale1.png" alt="ContextMenuEvaluationScale"></span></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="2">
+<li>
+<p>Calling the Management view of Knowledge base</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="images/ContextMenuKB.png" alt="ContextMenuKB"></span></p>
+</div>
+<div class="paragraph">
 <p>All parameters are managed with the same view:</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="images/KBmanagement.png" alt="KBmanagement"></span></p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Selecting the desired parameter tab</p>
+<p><code>Selecting</code> the desired parameter tab</p>
 </li>
 <li>
-<p>Added a parameter according to the active tab.</p>
+<p>Added a <code>parameter</code> according to the active tab.</p>
 </li>
 <li>
-<p>Finding a parameter.</p>
+<p><code>Finding</code> a parameter.</p>
 </li>
 <li>
-<p>Select a parameter (for deletion).</p>
+<p><code>Select</code> a parameter (for deletion).</p>
 </li>
 <li>
-<p>Editing / deleting active parameters.</p>
+<p><code>Editing / deleting</code> active parameters.</p>
 </li>
 </ol>
 </div>
@@ -2029,8 +2098,8 @@ All scales are editable and customizable. However, it is no longer permitted to 
 </li>
 </ul>
 </div>
-<div class="sect3">
-<h4 id="type-of-assets"><a class="anchor" href="#type-of-assets"></a>6.1. Type of assets</h4>
+<div class="sect2">
+<h3 id="type-of-assets"><a class="anchor" href="#type-of-assets"></a>6.1. Type of assets</h3>
 <div class="paragraph">
 <p>There are two types of assets:</p>
 </div>
@@ -2045,44 +2114,44 @@ All scales are editable and customizable. However, it is no longer permitted to 
 </ul>
 </div>
 </div>
-<div class="sect3">
-<h4 id="threats"><a class="anchor" href="#threats"></a>6.2. Threats</h4>
+<div class="sect2">
+<h3 id="threats"><a class="anchor" href="#threats"></a>6.2. Threats</h3>
 <div class="paragraph">
 <p>The essential parameters of threat threats are the association with the CIA criteria. It is important when creating a new threat to properly specify these criteria, because they will condition the risk tables.
 Example: Passive listening (listening, watching without touching anything) is a threat, for example, that affects only the criterion of confidentiality).
 Threats have categories to generate statistics.</p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="vulnérabilities"><a class="anchor" href="#vulnérabilities"></a>6.3. Vulnérabilities</h4>
+<div class="sect2">
+<h3 id="vulnérabilities"><a class="anchor" href="#vulnérabilities"></a>6.3. Vulnérabilities</h3>
 <div class="paragraph">
 <p>Vulnerabilities must describe the risk context in a negative way. The greater the vulnerability, the less existing or effective measures are. Vulnerability is inverse to maturity.
 Example: "Absence of identification of sensitive goods": Low vulnerability if the sensitive goods are identified and vice versa the vulnerability is great if they are not.
 The description of the vulnerability is very important because it appears in the risk table as an additional description that helps the security specialist to refine his questionnaire or the precise points that are sought in relation to a risk.</p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="iso-27002-controls"><a class="anchor" href="#iso-27002-controls"></a>6.4. ISO 27002 controls</h4>
+<div class="sect2">
+<h3 id="iso-27002-controls"><a class="anchor" href="#iso-27002-controls"></a>6.4. ISO 27002 controls</h3>
 <div class="paragraph">
 <p>It is the repository that is used by default to help the implementation of controls with regard to a specific risk.</p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="risks"><a class="anchor" href="#risks"></a>6.5. Risks</h4>
+<div class="sect2">
+<h3 id="risks"><a class="anchor" href="#risks"></a>6.5. Risks</h3>
 <div class="paragraph">
 <p>This table is the core of MONARC&#8217;s knowledge base. It is here that associations are made between "Asset Type", "Threat" and "Vulnerability". It is the combination of the risks inherent in each asset that will be proposed by default when the risk model is created.
 For each association that can be assimilated as a risk scenario, it is possible to associate 1 to 3 security measures from ISO27002 (Guide to good practices in information security).
 Only supporting assets are available for a Threat / Vulnerability association.</p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="tags-operational-risks"><a class="anchor" href="#tags-operational-risks"></a>6.6. Tags (operational risks)</h4>
+<div class="sect2">
+<h3 id="tags-operational-risks"><a class="anchor" href="#tags-operational-risks"></a>6.6. Tags (operational risks)</h3>
 <div class="paragraph">
 <p>Tags represent a categorization of operational risks. It is a logical grouping of risks that can then be associated with primary assets.</p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="operational-risks-2"><a class="anchor" href="#operational-risks-2"></a>6.7. Operational risks</h4>
+<div class="sect2">
+<h3 id="operational-risks-2"><a class="anchor" href="#operational-risks-2"></a>6.7. Operational risks</h3>
 <div class="paragraph">
 <p>It is a list of risks created by default or added specifically. Each risk can be associated with one or more tags, which allows, when depositing an asset in the analysis to propose default risks, as for the risks of the information.</p>
 </div>
@@ -2093,22 +2162,60 @@ Only supporting assets are available for a Threat / Vulnerability association.</
 <h2 id="interviews"><a class="anchor" href="#interviews"></a>7. Interviews</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>The interview table allows during a risk analysis to list in the final report, the various interviews that were necessary to collect the information. Information such as dates, interviewees can be entered for a comprehensive report.
- The menu is always accessible from the main view of MONARC:</p>
+<p>The interview table allows during a risk analysis to list in the final report, the various interviews that were necessary to collect the information. Information such as dates, interviewees can be entered for a comprehensive report.</p>
+</div>
+<div class="paragraph">
+<p>The menu is always accessible from the main view of MONARC:</p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Calling the menu</p>
+<p>Calling the <code>menu</code></p>
 </li>
+</ol>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="images/ContextMenuEvaluationScale1.png" alt="ContextMenuEvaluationScale"></span></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="2">
 <li>
-<p>Calling the Management view of evaluation scales</p>
+<p>Calling the Management view of <code>Interviews</code></p>
 </li>
+</ol>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="images/ContextMenuInterview.png" alt="ContextMenuInterview"></span></p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="images/Interview.png" alt="Interview"></span></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
 <p>Click to encode a new interview</p>
 </li>
+</ol>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="images/InterviewAdd.png" alt="InterviewAdd"></span></p>
+</div>
+<div class="paragraph">
+<p>Some informations have to be entered</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
-<p>Information to be entered: date, names of persons and possibly subjects covered.</p>
+<p><code>Date</code></p>
+</li>
+<li>
+<p><code>Names</code> of persons or name of the department</p>
+</li>
+<li>
+<p>The <code>subjects</code> covered.</p>
+</li>
+<li>
+<p>Once all the fields are filled, <code>create an interview</code></p>
 </li>
 </ol>
 </div>
@@ -2118,39 +2225,64 @@ Only supporting assets are available for a Threat / Vulnerability association.</
 <h2 id="snapshots"><a class="anchor" href="#snapshots"></a>8. Snapshots</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Snapshots allow you to create a full backup of an analysis. It is a function to use regularly during the course, before and after great changes, because it is the only way to go back in the changes.
- The menu is always accessible from the main view of MONARC:</p>
+<p>Snapshots allow you to create a full backup of an analysis.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+It is a function to use regularly during the course, before and after great changes, because it is the only way to go back in the changes.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>The menu is always accessible from the main view of MONARC:</p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Calling the menu</p>
-</li>
-<li>
-<p>Calling the Management view of evaluation scales</p>
+<p>Calling the <code>menu</code></p>
 </li>
 </ol>
 </div>
 <div class="paragraph">
+<p><span class="image"><img src="images/ContextMenuEvaluationScale1.png" alt="ContextMenuEvaluationScale"></span></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="2">
+<li>
+<p>Calling the Management view of <code>Snapshot</code></p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="images/ContextMenuSnapshot.png" alt="ContextMenuSnapshot"></span></p>
+</div>
+<div class="paragraph">
 <p>The following pop-up appears:</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="images/Snapshot.png" alt="Snapshot"></span></p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Creating a Snapshot: Possibility to enter a comment allowing to contextualize the Snapshot.</p>
+<p><code>Create</code> a Snapshot: Possibility to enter a comment allowing to contextualize the Snapshot.
+There are some Possible actions:</p>
+<div class="olist arabic">
+<ol class="arabic" start="2">
+<li>
+<p><code>View</code> a Snapshot</p>
 </li>
 <li>
-<p>Possible actions:</p>
-<div class="olist loweralpha">
-<ol class="loweralpha" type="a">
-<li>
-<p>View a Snapshot</p>
+<p><code>Restore</code> Snapshot. Caution this option will overwrite the current analysis.</p>
 </li>
 <li>
-<p>Restore Snapshot. Caution this option will overwrite the current analysis.</p>
-</li>
-<li>
-<p>Delete a Snapshot.</p>
+<p><code>Delete</code> a Snapshot.</p>
 </li>
 </ol>
 </div>
@@ -2159,6 +2291,9 @@ Only supporting assets are available for a Threat / Vulnerability association.</
 </div>
 <div class="paragraph">
 <p>When viewing a Snapshot, no changes are possible, and the blue bar as shown above is displayed:</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="images/SnapshotReturn.png" alt="SnapshotReturn"></span></p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
@@ -2173,54 +2308,67 @@ Only supporting assets are available for a Threat / Vulnerability association.</
 <h2 id="managing-the-implementation-treatment-plan"><a class="anchor" href="#managing-the-implementation-treatment-plan"></a>9. Managing the implementation treatment plan</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>By clicking on the number 4 on the method bar, the following menu appears:</p>
+<p>By clicking on number 4, the following menu will appear:</p>
 </div>
 <div class="paragraph">
-<p>This view goes beyond the ISO / IEC 27005 standard, because it allows to manage the follow-up of the implementation of the conntrols.
-The current version is in Beta, it is developed but waiting for users to return for improvement.
-By clicking on the link "Managing the Implementation of the Risk Management Plan", the following view appears, listing all the recommendations made by the analysis.</p>
+<p><span class="image"><img src="images/MethodScreenStep4Detailed.png" alt="MethodScreenStep4Detailed"></span></p>
+</div>
+<div class="paragraph">
+<p>This view goes beyond the ISO/IEC 27005, as it enables the user to manage the follow-up to the implementation of the measures.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="images/PTRImplementation.png" alt="PTRImplementation"></span></p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Name of the recommendation</p>
+<p>This is a <code>recommandation</code> established before.</p>
 </li>
 <li>
-<p>Comment on recommendation</p>
+<p>You can put a <code>comment</code> for the implementation of the recommendation.</p>
 </li>
 <li>
-<p>Responsible for the implementation of the recommendation</p>
+<p>For each recommendation you can set a <code>manager</code>.</p>
 </li>
 <li>
-<p>Deadline for the implementation of the recommendation</p>
+<p>For each recommenddation you can set a <code>deadline</code>.</p>
 </li>
 <li>
-<p>Status of Implementation</p>
+<p><code>Status</code> of Implementation.</p>
 </li>
 <li>
-<p>When the recommendation has been implemented, click on action will start the process of updating the risks (continued below)</p>
+<p>Click on <code>the icon</code> to implement the recommenation and switch on the following view.</p>
 </li>
 </ol>
 </div>
 <div class="paragraph">
-<p>This view lists all the risks that are dependent on the recommendation. Then, for each risk, the following information is entered:</p>
+<p><span class="image"><img src="images/RecommendationImplementation.png" alt="RecommendationImplementation"></span></p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Various information concerning the risk</p>
+<p>Set the <code>new control</code>, now in place. It will replace the old one in the risk analysis and also replace the old current risk by the residual risk.</p>
 </li>
 <li>
-<p>Encode the new finding, as is the case after updating the recommendation</p>
-</li>
-<li>
-<p>Launches the pop-up validation of the update below</p>
+<p>Launches the pop-up validation of the update below by clicking on <code>the icon</code>.</p>
 </li>
 </ol>
 </div>
 <div class="paragraph">
-<p>After validation, the risk concerned becomes the current risk, the recommendation is deleted from the risk concerned.
-All validations are stored in a history and can be consulted:</p>
+<p><span class="image"><img src="images/RecommendationImplementationPOPUP.png" alt="RecommendationImplementationPOPUP"></span></p>
+</div>
+<div class="paragraph">
+<p>Follow the same procedure for each recommendation.
+After that go to your risk analysis and make a second iteration.</p>
+</div>
+<div class="paragraph">
+<p>After validation, the risk concerned becomes the current risk, the recommendation is deleted from the risk concerned.</p>
+</div>
+<div class="paragraph">
+<p>All validations are stored in a history and can be consulted:</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="images/RecommendationImplementationHistory.png" alt="RecommendationImplementationHistory"></span></p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
@@ -2228,6 +2376,9 @@ All validations are stored in a history and can be consulted:</p>
 <p>Click to view past recommendations</p>
 </li>
 </ol>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="images/RecommendationImplementationPast.png" alt="RecommendationImplementationPast"></span></p>
 </div>
 </div>
 </div>
@@ -2243,7 +2394,7 @@ All validations are stored in a history and can be consulted:</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2017-10-05 10:04:15 CEST
+Last updated 2017-10-13 13:48:42 CEST
 </div>
 </div>
 <script type="text/x-mathjax-config">
