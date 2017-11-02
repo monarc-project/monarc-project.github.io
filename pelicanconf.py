@@ -50,10 +50,12 @@ MENUITEMS = (
 )
 
 # Links
-LINKS = ((' CASES', 'https://www.cases.lu/monarc.html'),
+LINKS = (('MONARC <i>Cloud</i>', 'https://my.monarc.lu/'),
+         (' CASES', 'https://www.cases.lu/monarc.html'),
          ('Cybersecurity Competence Center (C3)', 'https://c-3.lu'),
          ('SECURITYMADEIN.LU', 'https://securitymadein.lu'),
-         ('<img src="https://img.shields.io/github/release/monarc-project/MonarcAppFO.svg?style=flat-square" />', 'https://github.com/monarc-project/MonarcAppFO/releases/latest'),)
+         ('<img src="https://img.shields.io/github/release/monarc-project/MonarcAppFO.svg?style=flat-square" />',
+            'https://github.com/monarc-project/MonarcAppFO/releases/latest'),)
 
 # Social widget
 SOCIAL = (('GitHub', 'https://github.com/monarc-project'),
@@ -63,11 +65,11 @@ SOCIAL = (('GitHub', 'https://github.com/monarc-project'),
 NAVBAR_ELEMENTS = ['menu-items']
 
 # Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+# RELATIVE_URLS = True
 PATH_METADATA= '(?P<path_no_ext>.*)\..*'
 ARTICLE_URL = 'news/{date:%Y}/{date:%m}/{date:%d}/{slug}/'
 ARTICLE_SAVE_AS = 'news/{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html'
 # PAGE_URL = '{slug}.html'
 # PAGE_SAVE_AS = '{slug}.html'
-PAGE_SAVE_AS= '{path_no_ext}.html'
-PAGE_URL= '{path_no_ext}.html'
+PAGE_SAVE_AS = '{path_no_ext}.html'
+PAGE_URL = '{path_no_ext}.html'
