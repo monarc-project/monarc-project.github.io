@@ -6,4 +6,6 @@ Title: Documentation
 
 * ### [Method guide](/method-guide) [![PDF](/assets/images/pdf.png)](/assets/files/guides/method-guide.pdf)
 
+* ### [Administrator guide](/administrator-guide) [![PDF](/assets/images/pdf.png)](/assets/files/guides/administrator-guide.pdf)
+
 * ### [Technical guide](/technical-guide) [![PDF](/assets/images/pdf.png)](/assets/files/guides/technical-guide.pdf)
