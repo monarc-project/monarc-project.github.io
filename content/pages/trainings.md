@@ -1,8 +1,10 @@
 Title: Trainings
 
+###Next training
+
 |&nbsp;|||
 |:--|--|--|
-|**Date and time:**||Tuesday, 7 November 2017<br/>09h00 - 15h00|
+|**Date and time:**||1st Trimester 2018<br/>09h00 - 15h00|
 |&nbsp;|  |  |
 |**Location:**|&nbsp;&nbsp;&nbsp;|C3 / SECURITYMADEIN.LU|
 |             |                  |16 Boulevard d’Avranches 1160|
@@ -16,13 +18,23 @@ Title: Trainings
 |&nbsp;|  |  |
 |**Level required:**||Basic|
 |&nbsp;|  |  |
-|**Language:**||French|
+|**Language:**||English|
 |&nbsp;|  |  |
-|**Extra requirements:**||A laptop is required|
+|**Extra requirements:**||**A laptop is required**|
 |&nbsp;|  |  |
-|**Training materials:**||[Workshop MONARC - french](/assets/files/monarc-training/fr/Formation_V2-MONARC_Fr.pdf)<br/>[Context MyCompany - french](/assets/files/monarc-training/fr/Context_MyCompany_fr_v1.1.pdf)|
+|**Training materials:**||[Workshop MONARC - english](/assets/files/monarc-training/en/Formation_V2-MONARC_En.pdf)<br/>[Context MyCompany -  english](/assets/files/monarc-training/en/Context_MyCompany_en_v1.0.pdf)|
 
 <center>
+<a href="mailto:formation@cases.lu" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Contact us</a>
+</center>
+
+<!-- <center>
 <a href="https://www.eventbrite.com/e/training-monarc-apprenez-a-maitriser-lanalyse-de-risques-tickets-39045216293" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Register</a>
 <br/>(*Limited to 2 people per company*)
-<center/>
+<center/>  -->
+
+###Past Trainings
+
+* 07-11-2017 [FR]
+* 25-04-2017 [FR]
+* 25-04-2017 [EN]
