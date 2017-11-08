@@ -38,13 +38,14 @@ DISPLAY_RECENT_POSTS_ON_SIDEBAR = True
 DISPLAY_CATEGORIES_ON_MENU = False
 DISPLAY_PAGES_ON_MENU = False
 DISPLAY_TAGS_ON_MENU = False
-CC_LICENSE = "CC-BY-SA"
+CC_LICENSE = 'CC-BY-SA'
+
 
 READERS = {"html": None}
 
 # Navbar
 MENUITEMS = (
-        ('News', '/archives'),
+        ('News', '/news'),
         ('Documentation', '/documentation'),
         ('Community', '/community'),
         ('Download', '/download'),
@@ -71,6 +72,7 @@ NAVBAR_ELEMENTS = ['menu-items']
 PATH_METADATA= '(?P<path_no_ext>.*)\..*'
 ARTICLE_URL = 'news/{date:%Y}/{date:%m}/{date:%d}/{slug}/'
 ARTICLE_SAVE_AS = 'news/{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html'
+INDEX_SAVE_AS = 'news/index.html'
 PAGE_URL = '{slug}/'
 PAGE_SAVE_AS = os.path.join(PAGE_URL, 'index.html')
 # PAGE_SAVE_AS = '{path_no_ext}.html'
