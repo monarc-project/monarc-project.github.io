@@ -1,6 +1,5 @@
 Title: Licenses and copyright
 Date: 2017-07-03
-Hidden: true
 
 ## License
 

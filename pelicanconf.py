@@ -1,10 +1,11 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
+import os
 
 AUTHOR = 'security made in Lëtzebuerg (SMILE) g.i.e.'
 SITENAME = 'MONARC'
-SITEURL = 'http://monarc.lu'
+SITEURL = 'http://monarc.lu/'
 PATH = 'content'
 # PAGE_PATHS = ['pages']
 # ARTICLE_PATHS = ['news']
@@ -25,6 +26,7 @@ JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
 PLUGIN_PATHS = ['plugins']
 PLUGINS = ['i18n_subsites']
 DEFAULT_PAGINATION = 10
+FEED_DOMAIN = SITEURL
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
 FEED_ALL_RSS = None
 TRANSLATION_FEED_ATOM = None
@@ -43,10 +45,10 @@ READERS = {"html": None}
 # Navbar
 MENUITEMS = (
         ('News', '/archives'),
-        ('Documentation', '/pages/documentation'),
-        ('Community', '/pages/community/'),
-        ('Download', '/pages/download'),
-        ('Trainings', '/pages/trainings'),
+        ('Documentation', '/documentation'),
+        ('Community', '/community'),
+        ('Download', '/download'),
+        ('Trainings', '/trainings'),
 )
 
 # Links
@@ -60,7 +62,7 @@ LINKS = (('MONARC <i>Cloud</i>', 'https://my.monarc.lu/'),
 # Social widget
 SOCIAL = (('GitHub', 'https://github.com/monarc-project'),
           ('Twitter', 'https://twitter.com/cases_lu'),
-          ('RSS', FEED_ALL_ATOM),)
+          ('RSS', FEED_DOMAIN + FEED_ALL_ATOM),)
 
 NAVBAR_ELEMENTS = ['menu-items']
 
@@ -69,7 +71,7 @@ NAVBAR_ELEMENTS = ['menu-items']
 PATH_METADATA= '(?P<path_no_ext>.*)\..*'
 ARTICLE_URL = 'news/{date:%Y}/{date:%m}/{date:%d}/{slug}/'
 ARTICLE_SAVE_AS = 'news/{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html'
-# PAGE_URL = '{slug}.html'
-# PAGE_SAVE_AS = '{slug}.html'
-PAGE_SAVE_AS = '{path_no_ext}.html'
-PAGE_URL = '{path_no_ext}.html'
+PAGE_URL = '{slug}/'
+PAGE_SAVE_AS = os.path.join(PAGE_URL, 'index.html')
+# PAGE_SAVE_AS = '{path_no_ext}.html'
+# PAGE_URL = '{path_no_ext}.html'
