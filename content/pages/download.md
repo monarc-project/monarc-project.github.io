@@ -1,5 +1,7 @@
 Title: Download
 
+[TOC]
+
 ## Install MONARC
 
 The source code of MONARC is available on
@@ -10,7 +12,7 @@ The source code of MONARC is available on
 [![Contributors](https://img.shields.io/github/contributors/monarc-project/MonarcAppFO.svg?style=flat-square)](https://github.com/monarc-project/MonarcAppFO/graphs/contributors)
 [![Stars](https://img.shields.io/github/stars/monarc-project/MonarcAppFO.svg?style=flat-square)](https://github.com/monarc-project/MonarcAppFO/stargazers)
 
-## Virtual machine
+### Virtual machine
 
 A virtual machine for VirtualBox is
 [available on the release page](https://github.com/monarc-project/MonarcAppFO/releases/latest)
@@ -20,14 +22,6 @@ This is the easiest method if you want to quickly use MONARC on your computer.
 You can also generate generate your virtual machine with the latest version of
 MONARC. More information
 [here](https://github.com/monarc-project/monarc-packer).
-
-
-### Installing the demo Virtual Machine
-
-#### Download the image
-
-Download the last released image,
-[MONARC_demo.ova](https://github.com/monarc-project/MonarcAppFO/releases/latest)
 
 
 #### Importing the image
@@ -82,5 +76,7 @@ Login / Password : admin@admin.test / admin
 
 ## SaaS offering
 
-We also provide a [My.Monarc.lu](https://my.monarc.lu/) hosted SaaS offering.
+We also provide a free [My.Monarc.lu](https://my.monarc.lu/) hosted SaaS
+offering.
+
 You can contact us at the address [info@cases.lu](mailto:info@cases.lu?subject=Information about My.Monarc.lu)

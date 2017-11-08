@@ -43,6 +43,18 @@ CC_LICENSE = 'CC-BY-SA'
 
 READERS = {"html": None}
 
+MARKDOWN = {
+  'extension_configs': {
+    'markdown.extensions.toc': {
+      'title': 'Table of contents:'
+    },
+    'markdown.extensions.codehilite': {'css_class': 'highlight'},
+    'markdown.extensions.extra': {},
+    'markdown.extensions.meta': {},
+  },
+  'output_format': 'html5',
+}
+
 # Navbar
 MENUITEMS = (
         ('News', '/news'),
