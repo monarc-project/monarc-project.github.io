@@ -22,7 +22,8 @@ Title: Trainings
 |&nbsp;|  |  |
 |**Extra requirements:**||**A laptop is required**|
 |&nbsp;|  |  |
-|**Training materials:**||[Workshop MONARC - english](/assets/files/monarc-training/en/Formation_V2-MONARC_En.pdf)<br/>[Context MyCompany -  english](/assets/files/monarc-training/en/Context_MyCompany_en_v1.0.pdf)|
+|**Training materials:**||Workshop MONARC &nbsp; [![EN](/assets/images/Flag_UK.png)](/assets/files/monarc-training/en/Formation_V2-MONARC_En.pdf) [![FR](/assets/images/Flag_FR.png)](/assets/files/monarc-training/fr/Formation_V2-MONARC_Fr.pdf)<br/>Context MyCompany [![EN](/assets/images/Flag_UK.png)](/assets/files/monarc-training/en/Context_MyCompany_en_v1.0.pdf) [![FR](/assets/images/Flag_FR.png)](/assets/files/monarc-training/fr/Context_MyCompany_fr_v1.1.pdf) |
+
 
 <center>
 <a href="mailto:formation@cases.lu" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Contact us</a>
