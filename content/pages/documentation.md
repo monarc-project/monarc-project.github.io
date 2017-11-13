@@ -9,6 +9,16 @@ Title: Documentation
 * ### [Method guide](/method-guide) [![PDF](/assets/images/pdf.png)](/assets/files/guides/method-guide.pdf)
 
 
+MONARC can be installed in two different ways. It depends on your needs
+and requirements:
+
+ - MONARC Instance Management (also known as MONARC BackOffice or BO)
+ - MONARC (Also known as MONARC FrontOffice or FO)
+
+The below-mentioned documents are geared more towards the first. If you
+need help deciding which version of MONARC suits your needs, please read
+[this article](/product).
+
 
 ## Technical documentation
 

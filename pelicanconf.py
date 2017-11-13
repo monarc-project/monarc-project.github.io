@@ -59,6 +59,7 @@ MARKDOWN = {
 MENUITEMS = (
         ('News', '/news'),
         ('Product', '/product'),
+        ('Service', '/service'),
         ('Documentation', '/documentation'),
         ('Community', '/community'),
         ('Download', '/download'),
