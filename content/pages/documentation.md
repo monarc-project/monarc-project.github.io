@@ -1,10 +1,16 @@
 Title: Documentation
 
+## User documentation
+
 * ### [Quick Start](/quick-start) [![PDF](/assets/images/pdf.png)](/assets/files/guides/quick-start.pdf)
 
 * ### [User guide](/user-guide) [![PDF](/assets/images/pdf.png)](/assets/files/guides/user-guide.pdf)
 
 * ### [Method guide](/method-guide) [![PDF](/assets/images/pdf.png)](/assets/files/guides/method-guide.pdf)
+
+
+
+## Technical documentation
 
 * ### [Administrator guide](/administrator-guide) [![PDF](/assets/images/pdf.png)](/assets/files/guides/administrator-guide.pdf)
 

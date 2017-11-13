@@ -58,6 +58,7 @@ MARKDOWN = {
 # Navbar
 MENUITEMS = (
         ('News', '/news'),
+        ('Product', '/product'),
         ('Documentation', '/documentation'),
         ('Community', '/community'),
         ('Download', '/download'),
