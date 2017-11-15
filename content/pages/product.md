@@ -68,6 +68,10 @@ The back office is appropriate for big organizations or state organizations.
 More derails about the architecture
 [here](/technical-guide#monarc-and-the-back-office).
 
+Since MONARC is an open-source project, you can also have a look at our
+[roadmap](https://github.com/monarc-project/MonarcAppFO/wiki/New-features).
+
+
 ## MONARC Instance Management
 As an operator or service provider having multiple clients that desire
 to use MONARC for their risk assessment, this would be the optimal
@@ -127,6 +131,3 @@ instance in the MONARC Instance Management if multiple instances could
 benefit from that model, effectively removing the need to import and
 update that model on each instance.
 
-
-Since MONARC is an open-source project, you can also have a look at our
-[roadmap](https://github.com/monarc-project/MonarcAppFO/wiki/New-features).
