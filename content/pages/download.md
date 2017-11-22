@@ -79,4 +79,4 @@ Login / Password : admin@admin.test / admin
 We also provide a free [My.Monarc.lu](https://my.monarc.lu/) hosted SaaS
 offering.
 
-You can contact us at the address [info@cases.lu](mailto:info@cases.lu?subject=Information about My.Monarc.lu)
+You can contact us via [this form](https://services.circl.lu/service?name=MONARC).
