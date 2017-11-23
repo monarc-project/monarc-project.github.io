@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 1.5.5">
+<meta name="generator" content="Asciidoctor 1.5.4">
 <meta name="description" content="MONARC Method guide">
 <meta name="keywords" content="risk-analysis, monarc">
 <meta name="author" content="CASES Luxembourg">
@@ -19,6 +19,7 @@ audio:not([controls]){display:none;height:0}
 [hidden],template{display:none}
 script{display:none!important}
 html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
+body{margin:0}
 a{background:transparent}
 a:focus{outline:thin dotted}
 a:active,a:hover{outline:0}
@@ -53,7 +54,7 @@ textarea{overflow:auto;vertical-align:top}
 table{border-collapse:collapse;border-spacing:0}
 *,*:before,*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}
 html,body{font-size:100%}
-body{background:#fff;color:rgba(0,0,0,.8);padding:0;margin:0;font-family:"Noto Serif","DejaVu Serif",serif;font-weight:400;font-style:normal;line-height:1;position:relative;cursor:auto;tab-size:4;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased}
+body{background:#fff;color:rgba(0,0,0,.8);padding:0;margin:0;font-family:"Noto Serif","DejaVu Serif",serif;font-weight:400;font-style:normal;line-height:1;position:relative;cursor:auto}
 a:hover{cursor:pointer}
 img,object,embed{max-width:100%;height:auto}
 object,embed{height:100%}
@@ -65,6 +66,7 @@ img{-ms-interpolation-mode:bicubic}
 .text-center{text-align:center!important}
 .text-justify{text-align:justify!important}
 .hide{display:none}
+body{-webkit-font-smoothing:antialiased}
 img,object,svg{display:inline-block;vertical-align:middle}
 textarea{height:auto;min-height:50px}
 select{width:100%}
@@ -119,16 +121,13 @@ table thead tr th,table thead tr td,table tfoot tr th,table tfoot tr td{padding:
 table tr th,table tr td{padding:.5625em .625em;font-size:inherit;color:rgba(0,0,0,.8)}
 table tr.even,table tr.alt,table tr:nth-of-type(even){background:#f8f8f7}
 table thead tr th,table tfoot tr th,table tbody tr td,table tr td,table tfoot tr td{display:table-cell;line-height:1.6}
+body{tab-size:4}
 h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{line-height:1.2;word-spacing:-.05em}
 h1 strong,h2 strong,h3 strong,#toctitle strong,.sidebarblock>.content>.title strong,h4 strong,h5 strong,h6 strong{font-weight:400}
 .clearfix:before,.clearfix:after,.float-group:before,.float-group:after{content:" ";display:table}
 .clearfix:after,.float-group:after{clear:both}
-*:not(pre)>code{font-size:.9375em;font-style:normal!important;letter-spacing:0;padding:.1em .5ex;word-spacing:-.15em;background-color:#f7f7f8;-webkit-border-radius:4px;border-radius:4px;line-height:1.45;text-rendering:optimizeSpeed;word-wrap:break-word}
-*:not(pre)>code.nobreak{word-wrap:normal}
-*:not(pre)>code.nowrap{white-space:nowrap}
+*:not(pre)>code{font-size:.9375em;font-style:normal!important;letter-spacing:0;padding:.1em .5ex;word-spacing:-.15em;background-color:#f7f7f8;-webkit-border-radius:4px;border-radius:4px;line-height:1.45;text-rendering:optimizeSpeed}
 pre,pre>code{line-height:1.45;color:rgba(0,0,0,.9);font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;font-weight:400;text-rendering:optimizeSpeed}
-em em{font-style:normal}
-strong strong{font-weight:400}
 .keyseq{color:rgba(51,51,51,.8)}
 kbd{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;display:inline-block;color:rgba(0,0,0,.8);font-size:.65em;line-height:1.45;background-color:#f7f7f7;border:1px solid #ccc;-webkit-border-radius:3px;border-radius:3px;-webkit-box-shadow:0 1px 0 rgba(0,0,0,.2),0 0 0 .1em white inset;box-shadow:0 1px 0 rgba(0,0,0,.2),0 0 0 .1em #fff inset;margin:0 .15em;padding:.2em .5em;vertical-align:middle;position:relative;top:-.1em;white-space:nowrap}
 .keyseq kbd:first-child{margin-left:0}
@@ -419,7 +418,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 .hide-for-print{display:none!important}
 .show-for-print{display:inherit!important}}
 </style>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
 <style>
 /* Stylesheet for CodeRay to match GitHub theme | MIT License | http://foundation.zurb.com */
 /*pre.CodeRay {background-color:#f7f7f8;}*/
@@ -568,16 +567,16 @@ table.CodeRay td.code>pre{padding:0}
 </div>
 <div id="content">
 <div class="sect1">
-<h2 id="introduction"><a class="anchor" href="#introduction"></a><a class="link" href="#introduction">1. Introduction</a></h2>
+<h2 id="introduction"><a class="anchor" href="#introduction"></a>1. Introduction</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="purpose"><a class="anchor" href="#purpose"></a><a class="link" href="#purpose">1.1. Purpose</a></h3>
+<h3 id="purpose"><a class="anchor" href="#purpose"></a>1.1. Purpose</h3>
 <div class="paragraph">
 <p>The purpose of this document is to explain the procedures of the MONARC method by describing the various steps offered by the tool.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="other-documents"><a class="anchor" href="#other-documents"></a><a class="link" href="#other-documents">1.2. Other documents</a></h3>
+<h3 id="other-documents"><a class="anchor" href="#other-documents"></a>1.2. Other documents</h3>
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -605,78 +604,100 @@ documentation.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="syntax-used-in-the-document"><a class="anchor" href="#syntax-used-in-the-document"></a><a class="link" href="#syntax-used-in-the-document">1.3. Syntax used in the document</a></h3>
-<div class="hdlist">
-<table>
+<h3 id="syntax-used-in-the-document"><a class="anchor" href="#syntax-used-in-the-document"></a>1.3. Syntax used in the document</h3>
+<table class="tableblock frame-none grid-none spread">
+<colgroup>
+<col style="width: 12.5%;">
+<col style="width: 87.5%;">
+</colgroup>
+<tbody>
 <tr>
-<td class="hdlist1">
-<span class="image"><img src="images/Step.png" alt="Step"></span>
-</td>
-<td class="hdlist2">
-<p>All numbers in white on a red background are used on print-screen views to provide additional
-explanations. Explanations are always after the view with the corresponding numbering. <strong>i.e.</strong> 1.</p>
-</td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/Step.png" alt="Cursor"></span></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>All numbers in white on a red background are used on print-screen views to provide additional explanations. Explanations are always after the view with the corresponding numbering. <strong>i.e.</strong> 1.</p>
+</div></div></td>
 </tr>
-<tr>
-<td class="hdlist1">
-<code>Reference</code>
-</td>
-<td class="hdlist2">
-<p>MONARC Reference</p>
-</td>
-</tr>
+</tbody>
 </table>
-</div>
+<table class="tableblock frame-none grid-none spread">
+<colgroup>
+<col style="width: 12.5%;">
+<col style="width: 87.5%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><div><div class="paragraph">
+<p><code>Reference</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>MONARC Reference</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="sect2">
-<h3 id="syntax-used-in-monarc"><a class="anchor" href="#syntax-used-in-monarc"></a><a class="link" href="#syntax-used-in-monarc">1.4. Syntax used in MONARC</a></h3>
-<div class="hdlist">
-<table>
+<h3 id="syntax-used-in-monarc"><a class="anchor" href="#syntax-used-in-monarc"></a>1.4. Syntax used in MONARC</h3>
+<table class="tableblock frame-none grid-none spread">
+<colgroup>
+<col style="width: 12.5%;">
+<col style="width: 87.5%;">
+</colgroup>
+<tbody>
 <tr>
-<td class="hdlist1">
-<span class="image"><img src="images/Menu.png" alt="Menu"></span>
-</td>
-<td class="hdlist2">
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/Menu.png" alt="Menu"></span></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
 <p>Button that always brings up the menu.</p>
-</td>
+</div></div></td>
 </tr>
-<tr>
-<td class="hdlist1">
-<span class="image"><img src="images/CreateButton.png" alt="Create"></span>
-</td>
-<td class="hdlist2">
-<p>Creating/adding something in
-context (assets, recommendations, etc.).</p>
-</td>
-</tr>
-<tr>
-<td class="hdlist1">
-<span class="image"><img src="images/Cursor.png" alt="Cursor"></span>
-</td>
-<td class="hdlist2">
-<p>Most fields of MONARC display
-additional information when the pointer stay unmoved some time.</p>
-</td>
-</tr>
+</tbody>
 </table>
-</div>
+<table class="tableblock frame-none grid-none spread">
+<colgroup>
+<col style="width: 12.5%;">
+<col style="width: 87.5%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/CreateButton.png" alt="Create"></span></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Creating/adding something in context (assets, recommendations, etc.).</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-none grid-none spread">
+<colgroup>
+<col style="width: 12.5%;">
+<col style="width: 87.5%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/Cursor.png" alt="Cursor"></span></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Most fields of MONARC display additional information when the pointer stay unmoved some time.</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<div style="page-break-after: always;"></div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="monarc-method"><a class="anchor" href="#monarc-method"></a><a class="link" href="#monarc-method">2. Monarc Method</a></h2>
+<h2 id="monarc-method"><a class="anchor" href="#monarc-method"></a>2. Monarc Method</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>MONARC is an iterative and qualitative method of risk analysis in four stages; broadly inspired by ISO/IEC 27005.</p>
 </div>
 <div class="sect2">
-<h3 id="iterative-method"><a class="anchor" href="#iterative-method"></a><a class="link" href="#iterative-method">2.1. Iterative Method</a></h3>
+<h3 id="iterative-method"><a class="anchor" href="#iterative-method"></a>2.1. Iterative Method</h3>
 <div class="paragraph">
 <p>MONARC uses an iterative method which enables the pragmatic progression of risk management. This approach, as recommended by ISO 27005, enables the user to restrict himself to the essentials, then to carry out successive iterations to broaden the target or further refine it to cover more technical aspects. The optimised risk models provided as standard with the tool will enable this type of management to be carried out.</p>
 </div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
-<img src="images/Methode.png" alt="Methode">
+<img src="images/Methode.png" alt="Methode" width="60%">
 </div>
 </div>
 <div class="olist arabic">
@@ -697,7 +718,7 @@ additional information when the pointer stay unmoved some time.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="qualitative-method"><a class="anchor" href="#qualitative-method"></a><a class="link" href="#qualitative-method">2.2. Qualitative method</a></h3>
+<h3 id="qualitative-method"><a class="anchor" href="#qualitative-method"></a>2.2. Qualitative method</h3>
 <div class="paragraph">
 <p>MONARC is a <strong>Qualitative</strong> method,</p>
 </div>
@@ -720,7 +741,7 @@ additional information when the pointer stay unmoved some time.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="method-broadly-based-on-iso-iec-27005"><a class="anchor" href="#method-broadly-based-on-iso-iec-27005"></a><a class="link" href="#method-broadly-based-on-iso-iec-27005">2.3. Method broadly based on ISO/IEC 27005</a></h3>
+<h3 id="method-broadly-based-on-iso-iec-27005"><a class="anchor" href="#method-broadly-based-on-iso-iec-27005"></a>2.3. Method broadly based on ISO/IEC 27005</h3>
 <div class="paragraph">
 <p>The illustration above displays the similarities between ISO/IEC 27005 and MONARC.</p>
 </div>
@@ -739,7 +760,7 @@ additional information when the pointer stay unmoved some time.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="access-to-methodology-screens"><a class="anchor" href="#access-to-methodology-screens"></a><a class="link" href="#access-to-methodology-screens">2.4. Access to methodology screens</a></h3>
+<h3 id="access-to-methodology-screens"><a class="anchor" href="#access-to-methodology-screens"></a>2.4. Access to methodology screens</h3>
 <div class="paragraph">
 <p>Access to the views of the various stages of the method is provided by clicking on the numbers <code>1</code> to <code>4</code>, which are displayed under the Breadcrumbs in the main MONARC view.
 The ISO/IEC 27005 processes are implemented via the views.</p>
@@ -751,11 +772,7 @@ The ISO/IEC 27005 processes are implemented via the views.</p>
 </div>
 </div>
 <div class="sect2">
-<<<<<<< HEAD
 <h3 id="details-of-the-stages"><a class="anchor" href="#details-of-the-stages"></a>2.5. Details of the stages</h3>
-=======
-<h3 id="details-of-the-stages"><a class="anchor" href="#details-of-the-stages"></a><a class="link" href="#details-of-the-stages">2.5. Details of the stages</a></h3>
->>>>>>> a79317d855c5292e1fbd0e2a3416f750f8168ad5
 <div class="imageblock" style="text-align: center">
 <div class="content">
 <img src="images/MethodSteps.png" alt="MethodSteps">
@@ -771,15 +788,12 @@ The ISO/IEC 27005 processes are implemented via the views.</p>
 </li>
 </ol>
 </div>
+<div style="page-break-after: always;"></div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<<<<<<< HEAD
 <h2 id="context-establishment"><a class="anchor" href="#context-establishment"></a>3. Context Establishment</h2>
-=======
-<h2 id="context-establishment"><a class="anchor" href="#context-establishment"></a><a class="link" href="#context-establishment">3. Context Establishment</a></h2>
->>>>>>> a79317d855c5292e1fbd0e2a3416f750f8168ad5
 <div class="sectionbody">
 <div class="paragraph">
 <p>By clicking on number <code>1</code>, the following menu will appear:</p>
@@ -801,7 +815,7 @@ The ISO/IEC 27005 processes are implemented via the views.</p>
 </ol>
 </div>
 <div class="sect2">
-<h3 id="risk-analysis-context"><a class="anchor" href="#risk-analysis-context"></a><a class="link" href="#risk-analysis-context">3.1. Risk analysis context</a></h3>
+<h3 id="risk-analysis-context"><a class="anchor" href="#risk-analysis-context"></a>3.1. Risk analysis context</h3>
 <div class="paragraph">
 <p>This view offers text encoding and formatting functions, enabling the risk analysis target to be contextualised with well-formatted texts that will be documented in the deliverables.</p>
 </div>
@@ -826,11 +840,7 @@ The ISO/IEC 27005 processes are implemented via the views.</p>
 </div>
 </div>
 <div class="sect2">
-<<<<<<< HEAD
 <h3 id="evaluation-of-the-trends-threats-and-synthesis"><a class="anchor" href="#evaluation-of-the-trends-threats-and-synthesis"></a>3.2. Evaluation of the trends, threats and synthesis</h3>
-=======
-<h3 id="evaluation-of-the-trends-threats-and-synthesis"><a class="anchor" href="#evaluation-of-the-trends-threats-and-synthesis"></a><a class="link" href="#evaluation-of-the-trends-threats-and-synthesis">3.2. Evaluation of the trends, threats and synthesis</a></h3>
->>>>>>> a79317d855c5292e1fbd0e2a3416f750f8168ad5
 <div class="paragraph">
 <p><span class="image"><img src="images/TrendEvaluation.png" alt="TrendEvaluation"></span></p>
 </div>
@@ -851,22 +861,14 @@ The ISO/IEC 27005 processes are implemented via the views.</p>
 </ol>
 </div>
 <div class="sect3">
-<<<<<<< HEAD
 <h4 id="trends-assessment"><a class="anchor" href="#trends-assessment"></a>3.2.1. Trends Assessment</h4>
-=======
-<h4 id="trends-assessment"><a class="anchor" href="#trends-assessment"></a><a class="link" href="#trends-assessment">3.2.1. Trends Assessment</a></h4>
->>>>>>> a79317d855c5292e1fbd0e2a3416f750f8168ad5
 <div class="paragraph">
 <p>The assessment of trends provides a series of questions to establish the context from a very general perspective. These questions highlight the selection of key assets which must be taken into account during the analysis, the security criteria, as well as a few indicators concerning the motives of the attack and the external context of the target.
 This list is not exhaustive; you can add questions of your choice at the end of the page.</p>
 </div>
 </div>
 <div class="sect3">
-<<<<<<< HEAD
 <h4 id="threats-assessment"><a class="anchor" href="#threats-assessment"></a>3.2.2. Threats Assessment</h4>
-=======
-<h4 id="threats-assessment"><a class="anchor" href="#threats-assessment"></a><a class="link" href="#threats-assessment">3.2.2. Threats Assessment</a></h4>
->>>>>>> a79317d855c5292e1fbd0e2a3416f750f8168ad5
 <div class="paragraph">
 <p>The assessment of threats, in similar fashion to the assessment of trends, takes the form of a meeting involving key personnel in the organisation.
 The purpose is to review the majority of threats by gathering information on the past and reviewing the general observations made by the group.
@@ -939,11 +941,7 @@ The security expert is responsible for converting the consensus into a probabili
 </div>
 </div>
 <div class="sect3">
-<<<<<<< HEAD
 <h4 id="summary"><a class="anchor" href="#summary"></a>3.2.3. Summary</h4>
-=======
-<h4 id="summary"><a class="anchor" href="#summary"></a><a class="link" href="#summary">3.2.3. Summary</a></h4>
->>>>>>> a79317d855c5292e1fbd0e2a3416f750f8168ad5
 <div class="paragraph">
 <p>In similar fashion to the context of the risk analysis, this view enables the user to summarise the pertinent information gathered during the assessment of trends and threats.
 This text enables the user to enrich the deliverable.</p>
@@ -954,11 +952,7 @@ This text enables the user to enrich the deliverable.</p>
 </div>
 </div>
 <div class="sect2">
-<<<<<<< HEAD
 <h3 id="risks-management-organisation"><a class="anchor" href="#risks-management-organisation"></a>3.3. Risks management organisation</h3>
-=======
-<h3 id="risks-management-organisation"><a class="anchor" href="#risks-management-organisation"></a><a class="link" href="#risks-management-organisation">3.3. Risks management organisation</a></h3>
->>>>>>> a79317d855c5292e1fbd0e2a3416f750f8168ad5
 <div class="paragraph">
 <p>This view enables the user to encode the information on the context of the risk management, for instance, with regard to the roles and responsibilities, the stakeholders, etc.</p>
 </div>
@@ -981,21 +975,13 @@ This text enables the user to enrich the deliverable.</p>
 </div>
 </div>
 <div class="sect2">
-<<<<<<< HEAD
 <h3 id="definition-of-the-risk-evaluation-criteria"><a class="anchor" href="#definition-of-the-risk-evaluation-criteria"></a>3.4. Definition of the risk evaluation criteria</h3>
-=======
-<h3 id="definition-of-the-risk-evaluation-criteria"><a class="anchor" href="#definition-of-the-risk-evaluation-criteria"></a><a class="link" href="#definition-of-the-risk-evaluation-criteria">3.4. Definition of the risk evaluation criteria</a></h3>
->>>>>>> a79317d855c5292e1fbd0e2a3416f750f8168ad5
 <div class="paragraph">
 <p>This involves personalising the scales and impact criteria and consequences.
 MONARC provides values by default which can be personalised depending on the context. All the scales can be modified and the levels personalised. However, it is no longer possible to modify the scales when an assessment has been encoded.</p>
 </div>
 <div class="sect3">
-<<<<<<< HEAD
 <h4 id="impact-scale"><a class="anchor" href="#impact-scale"></a>3.4.1. Impact scale</h4>
-=======
-<h4 id="impact-scale"><a class="anchor" href="#impact-scale"></a><a class="link" href="#impact-scale">3.4.1. Impact scale</a></h4>
->>>>>>> a79317d855c5292e1fbd0e2a3416f750f8168ad5
 <div class="paragraph">
 <p><span class="image"><img src="images/ScaleImpact.png" alt="ScaleImpact"></span></p>
 </div>
@@ -1081,11 +1067,7 @@ MONARC provides values by default which can be personalised depending on the con
 </div>
 </div>
 <div class="sect3">
-<<<<<<< HEAD
 <h4 id="likelihood-scale"><a class="anchor" href="#likelihood-scale"></a>3.4.2. Likelihood scale</h4>
-=======
-<h4 id="likelihood-scale"><a class="anchor" href="#likelihood-scale"></a><a class="link" href="#likelihood-scale">3.4.2. Likelihood scale</a></h4>
->>>>>>> a79317d855c5292e1fbd0e2a3416f750f8168ad5
 <div class="paragraph">
 <p>The scale of threats is used to calculate information risks and the probability of scenarios relating to operational risks</p>
 </div>
@@ -1104,11 +1086,7 @@ MONARC provides values by default which can be personalised depending on the con
 </div>
 </div>
 <div class="sect3">
-<<<<<<< HEAD
 <h4 id="vulnerabilities-scale"><a class="anchor" href="#vulnerabilities-scale"></a>3.4.3. Vulnerabilities scale</h4>
-=======
-<h4 id="vulnerabilities-scale"><a class="anchor" href="#vulnerabilities-scale"></a><a class="link" href="#vulnerabilities-scale">3.4.3. Vulnerabilities scale</a></h4>
->>>>>>> a79317d855c5292e1fbd0e2a3416f750f8168ad5
 <div class="paragraph">
 <p>The scale of vulnerabilities is only used for calculating information risks.</p>
 </div>
@@ -1127,11 +1105,7 @@ MONARC provides values by default which can be personalised depending on the con
 </div>
 </div>
 <div class="sect3">
-<<<<<<< HEAD
 <h4 id="acceptance-thresholds"><a class="anchor" href="#acceptance-thresholds"></a>3.4.4. Acceptance thresholds</h4>
-=======
-<h4 id="acceptance-thresholds"><a class="anchor" href="#acceptance-thresholds"></a><a class="link" href="#acceptance-thresholds">3.4.4. Acceptance thresholds</a></h4>
->>>>>>> a79317d855c5292e1fbd0e2a3416f750f8168ad5
 <div class="paragraph">
 <p>There are two separate tables for acceptability thresholds, as operational risk and information risk are not calculated in the same way.
 Information risks are calculated using three criteria:</p>
@@ -1158,11 +1132,7 @@ Information risks are calculated using three criteria:</p>
 </div>
 </div>
 <div class="sect2">
-<<<<<<< HEAD
 <h3 id="deliverable-context-validation"><a class="anchor" href="#deliverable-context-validation"></a>3.5. Deliverable: Context validation</h3>
-=======
-<h3 id="deliverable-context-validation"><a class="anchor" href="#deliverable-context-validation"></a><a class="link" href="#deliverable-context-validation">3.5. Deliverable: Context validation</a></h3>
->>>>>>> a79317d855c5292e1fbd0e2a3416f750f8168ad5
 <div class="paragraph">
 <p>This deliverable includes all the information gathered and entered in the context establishment phase. It can be used to validate the information provided by the client, before beginning the risk identification.
 A form has to be filled in. When the user clicks on <code>Save</code>, a file in Word format is generated.</p>
@@ -1170,11 +1140,12 @@ A form has to be filled in. When the user clicks on <code>Save</code>, a file in
 <div class="paragraph">
 <p><span class="image"><img src="images/DeliverableContextValidation.png" alt="DeliverableContextValidation"></span></p>
 </div>
+<div style="page-break-after: always;"></div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="context-modeling"><a class="anchor" href="#context-modeling"></a><a class="link" href="#context-modeling">4. Context Modeling</a></h2>
+<h2 id="context-modeling"><a class="anchor" href="#context-modeling"></a>4. Context Modeling</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>By clicking on number <code>2</code>, the following menu will appear:</p>
@@ -1183,15 +1154,9 @@ A form has to be filled in. When the user clicks on <code>Save</code>, a file in
 <p><span class="image"><img src="images/MethodScreenStep2Detailed.png" alt="MethodScreenStep2Detailed"></span></p>
 </div>
 <div class="sect2">
-<<<<<<< HEAD
 <h3 id="identification-of-assets-vulnerabilities-and-impacts-appreciation"><a class="anchor" href="#identification-of-assets-vulnerabilities-and-impacts-appreciation"></a>4.1. Identification of assets, vulnerabilities and impacts appreciation</h3>
 <div class="sect3">
 <h4 id="identification-of-assets"><a class="anchor" href="#identification-of-assets"></a>4.1.1. Identification of assets</h4>
-=======
-<h3 id="identification-of-assets-vulnerabilities-and-impacts-appreciation"><a class="anchor" href="#identification-of-assets-vulnerabilities-and-impacts-appreciation"></a><a class="link" href="#identification-of-assets-vulnerabilities-and-impacts-appreciation">4.1. Identification of assets, vulnerabilities and impacts appreciation</a></h3>
-<div class="sect3">
-<h4 id="identification-of-assets"><a class="anchor" href="#identification-of-assets"></a><a class="link" href="#identification-of-assets">4.1.1. Identification of assets</a></h4>
->>>>>>> a79317d855c5292e1fbd0e2a3416f750f8168ad5
 <div class="paragraph">
 <p>Clicking on the link <code>Identification of assets, vulnerabilities and impacts appreciation</code> will generate the main view of MONARC.
 The purpose is to create the risk model by using the assets in the library.
@@ -1215,11 +1180,7 @@ The <code>Back Office</code> represents the IT and organisational side of the or
 </div>
 </div>
 <div class="sect3">
-<<<<<<< HEAD
 <h4 id="impacts-appreciation"><a class="anchor" href="#impacts-appreciation"></a>4.1.2. Impacts appreciation</h4>
-=======
-<h4 id="impacts-appreciation"><a class="anchor" href="#impacts-appreciation"></a><a class="link" href="#impacts-appreciation">4.1.2. Impacts appreciation</a></h4>
->>>>>>> a79317d855c5292e1fbd0e2a3416f750f8168ad5
 <div class="paragraph">
 <p>For each primary asset, the impact and consequences which may apply must be defined, if the risks in the model arise. By default, all the supporting assets will inherit these impacts, but it is also possible to redefine them.
 When the primary asset is a service, then the <strong>C</strong> (<code>Confidentiality</code>) and the <strong>I</strong> (<code>Integrity</code>) refers to the most sensitive information of the service in question. <strong>A</strong> (<code>Availability</code>) refers to the service and the information, based on the principle that if the information is available, the service will also be available.
@@ -1236,11 +1197,7 @@ For example: In the case of the abovementioned example, the <code>3</code> impac
 </div>
 </div>
 <div class="sect2">
-<<<<<<< HEAD
 <h3 id="summary-of-assets-impact"><a class="anchor" href="#summary-of-assets-impact"></a>4.2. Summary of assets/impact</h3>
-=======
-<h3 id="summary-of-assets-impact"><a class="anchor" href="#summary-of-assets-impact"></a><a class="link" href="#summary-of-assets-impact">4.2. Summary of assets/impact</a></h3>
->>>>>>> a79317d855c5292e1fbd0e2a3416f750f8168ad5
 <div class="paragraph">
 <p>The summary of the assets will provide editorial content that justifies the choice of assets and impact for the deliverable.</p>
 </div>
@@ -1249,11 +1206,7 @@ For example: In the case of the abovementioned example, the <code>3</code> impac
 </div>
 </div>
 <div class="sect2">
-<<<<<<< HEAD
 <h3 id="deliverable-validation-of-the-model"><a class="anchor" href="#deliverable-validation-of-the-model"></a>4.3. Deliverable: Validation of the model</h3>
-=======
-<h3 id="deliverable-validation-of-the-model"><a class="anchor" href="#deliverable-validation-of-the-model"></a><a class="link" href="#deliverable-validation-of-the-model">4.3. Deliverable: Validation of the model</a></h3>
->>>>>>> a79317d855c5292e1fbd0e2a3416f750f8168ad5
 <div class="paragraph">
 <p>This deliverable covers all the significant primary assets of the model.</p>
 </div>
@@ -1277,15 +1230,12 @@ For example: In the case of the abovementioned example, the <code>3</code> impac
 <div class="paragraph">
 <p><span class="image"><img src="images/DeliverableContext.png" alt="DeliverableContext"></span></p>
 </div>
+<div style="page-break-after: always;"></div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<<<<<<< HEAD
 <h2 id="evaluation-and-treatment-of-risks"><a class="anchor" href="#evaluation-and-treatment-of-risks"></a>5. Evaluation and treatment of risks</h2>
-=======
-<h2 id="evaluation-and-treatment-of-risks"><a class="anchor" href="#evaluation-and-treatment-of-risks"></a><a class="link" href="#evaluation-and-treatment-of-risks">5. Evaluation and treatment of risks</a></h2>
->>>>>>> a79317d855c5292e1fbd0e2a3416f750f8168ad5
 <div class="sectionbody">
 <div class="paragraph">
 <p>By clicking on number <code>3</code>, the following menu will appear:</p>
@@ -1297,11 +1247,7 @@ For example: In the case of the abovementioned example, the <code>3</code> impac
 <p>Clicking on the link <code>Estimation, evaluation and risk treatment</code> will generate the main view of MONARC.</p>
 </div>
 <div class="sect2">
-<<<<<<< HEAD
 <h3 id="evaluation-and-treatment-of-risks-2"><a class="anchor" href="#evaluation-and-treatment-of-risks-2"></a>5.1. Evaluation and treatment of risks</h3>
-=======
-<h3 id="evaluation-and-treatment-of-risks-2"><a class="anchor" href="#evaluation-and-treatment-of-risks-2"></a><a class="link" href="#evaluation-and-treatment-of-risks-2">5.1. Evaluation and treatment of risks</a></h3>
->>>>>>> a79317d855c5292e1fbd0e2a3416f750f8168ad5
 <div class="paragraph">
 <p><span class="image"><img src="images/ARFull.png" alt="ARFull"></span></p>
 </div>
@@ -1309,7 +1255,7 @@ For example: In the case of the abovementioned example, the <code>3</code> impac
 <p>The previous phase provided the impact criteria information; now it is necessary to evaluate threats and vulnerabilities in order to calculate risk levels.</p>
 </div>
 <div class="sect3">
-<h4 id="assessment-of-the-probability-of-threats"><a class="anchor" href="#assessment-of-the-probability-of-threats"></a><a class="link" href="#assessment-of-the-probability-of-threats">5.1.1. Assessment of the probability of threats</a></h4>
+<h4 id="assessment-of-the-probability-of-threats"><a class="anchor" href="#assessment-of-the-probability-of-threats"></a>5.1.1. Assessment of the probability of threats</h4>
 <div class="paragraph">
 <p>If the threat assessment made while establishing context provided probabilities (see <a href="#threats-assessment">Threats Assessment</a>), it is necessary to return to this screen to run all the threats of the model.</p>
 </div>
@@ -1322,7 +1268,7 @@ For example: In the case of the abovementioned example, the <code>3</code> impac
 </div>
 </div>
 <div class="sect3">
-<h4 id="assessment-of-vulnerabilities"><a class="anchor" href="#assessment-of-vulnerabilities"></a><a class="link" href="#assessment-of-vulnerabilities">5.1.2. Assessment of vulnerabilities</a></h4>
+<h4 id="assessment-of-vulnerabilities"><a class="anchor" href="#assessment-of-vulnerabilities"></a>5.1.2. Assessment of vulnerabilities</h4>
 <div class="olist arabic">
 <ol class="arabic" start="2">
 <li>
@@ -1335,7 +1281,7 @@ For example: In the case of the abovementioned example, the <code>3</code> impac
 </div>
 </div>
 <div class="sect3">
-<h4 id="risk-processing"><a class="anchor" href="#risk-processing"></a><a class="link" href="#risk-processing">5.1.3. Risk processing</a></h4>
+<h4 id="risk-processing"><a class="anchor" href="#risk-processing"></a>5.1.3. Risk processing</h4>
 <div class="olist arabic">
 <ol class="arabic" start="4">
 <li>
@@ -1377,11 +1323,7 @@ There are four ways to process the risk:</p>
 </div>
 </div>
 <div class="sect2">
-<<<<<<< HEAD
 <h3 id="risk-treatment-plan-management"><a class="anchor" href="#risk-treatment-plan-management"></a>5.2. Risk treatment plan management</h3>
-=======
-<h3 id="risk-treatment-plan-management"><a class="anchor" href="#risk-treatment-plan-management"></a><a class="link" href="#risk-treatment-plan-management">5.2. Risk treatment plan management</a></h3>
->>>>>>> a79317d855c5292e1fbd0e2a3416f750f8168ad5
 <div class="paragraph">
 <p>All risks covered by one of the four procedures described above are registered in the risk management plan, irrespective of whether they are information risks or operational risks.
 The calculation formula is not the same for both types of risk; therefore, it is the importance of the recommendations which establish the order of risk. Nevertheless, it is possible to reset the order of the risk processing plan before generating the final deliverable.</p>
@@ -1391,7 +1333,7 @@ The calculation formula is not the same for both types of risk; therefore, it is
 </div>
 </div>
 <div class="sect2">
-<h3 id="deliverable-end-report"><a class="anchor" href="#deliverable-end-report"></a><a class="link" href="#deliverable-end-report">5.3. Deliverable: End report</a></h3>
+<h3 id="deliverable-end-report"><a class="anchor" href="#deliverable-end-report"></a>5.3. Deliverable: End report</h3>
 <div class="paragraph">
 <p>The deliverable contains a complete list of all the information gathered and entered in MONARC, including that contained in the two previous deliverables.
 A form has to be filled in. Moreover, it is possible to add a <code>summary of risk evaluation</code>. When the user clicks on <code>Save</code>, a file in Word format is generated.</p>
@@ -1399,11 +1341,12 @@ A form has to be filled in. Moreover, it is possible to add a <code>summary of r
 <div class="paragraph">
 <p><span class="image"><img src="images/DeliverableFinal.png" alt="DeliverableFinal"></span></p>
 </div>
+<div style="page-break-after: always;"></div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="implementation-and-monitoring"><a class="anchor" href="#implementation-and-monitoring"></a><a class="link" href="#implementation-and-monitoring">6. Implementation and monitoring</a></h2>
+<h2 id="implementation-and-monitoring"><a class="anchor" href="#implementation-and-monitoring"></a>6. Implementation and monitoring</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>By clicking on number <code>4</code>, the following menu will appear:</p>
@@ -1432,7 +1375,7 @@ A form has to be filled in. Moreover, it is possible to add a <code>summary of r
 <p>For each recommenddation you can set a <code>deadline</code>.</p>
 </li>
 <li>
-<p>Click on the icon to implement the recommenation and switch on the following view.</p>
+<p>Click on the icon <span class="image"><img src="images/Action.png" alt="Action" width="2%"></span> to implement the recommenation and switch on the following view.</p>
 </li>
 </ol>
 </div>
@@ -1445,13 +1388,24 @@ A form has to be filled in. Moreover, it is possible to add a <code>summary of r
 <p>Set the <code>new control</code>, now in place. It will replace the old one in the risk analysis and also replace the old current risk by the residual risk.</p>
 </li>
 <li>
-<p>Definitively validate the measure by clicking on <code>the icon</code>.</p>
+<p>Definitively validate the measure by clicking on icon <span class="image"><img src="images/Check.png" alt="Check" width="2%"></span></p>
 </li>
 </ol>
 </div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
 <div class="paragraph">
 <p>Follow the same procedure for each recommendation.
 After that go to your risk analysis and make a second iteration.</p>
+</div>
+</td>
+</tr>
+</table>
 </div>
 </div>
 </div>
@@ -1467,11 +1421,7 @@ After that go to your risk analysis and make a second iteration.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-<<<<<<< HEAD
 Last updated 2017-11-21 11:15:01 CET
-=======
-Last updated 2017-11-22 22:15:52 CET
->>>>>>> a79317d855c5292e1fbd0e2a3416f750f8168ad5
 </div>
 </div>
 <script type="text/x-mathjax-config">
