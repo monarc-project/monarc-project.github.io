@@ -7,8 +7,8 @@
 <meta name="generator" content="Asciidoctor 1.5.4">
 <meta name="description" content="MONARC User guide">
 <meta name="keywords" content="risk-analysis, monarc">
-<meta name="author" content=""security made in Lëtzebuerg" (SMILE) g.i.e.">
-<title>MONARC User guide</title>
+<meta name="author" content="CASES Luxembourg">
+<title>User Guide</title>
 <style>
 /* Asciidoctor default stylesheet | MIT License | http://asciidoctor.org */
 /* Remove comment around @import statement below when using as a custom stylesheet */
@@ -513,9 +513,10 @@ table.CodeRay td.code>pre{padding:0}
 </head>
 <body class="article toc2 toc-left">
 <div id="header">
-<h1>MONARC User guide</h1>
+<h1>User Guide</h1>
 <div class="details">
-<span id="author" class="author">"security made in Lëtzebuerg" (SMILE) g.i.e.</span><br>
+<span id="author" class="author">CASES Luxembourg</span><br>
+<span id="email" class="email"><a href="mailto:info@cases.lu">info@cases.lu</a></span><br>
 </div>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
@@ -551,17 +552,17 @@ table.CodeRay td.code>pre{padding:0}
 </li>
 <li><a href="#evaluation-scales">5. Evaluation Scales</a>
 <ul class="sectlevel2">
-<li><a href="#scale-of-impact">5.1. Scale of impact</a></li>
-<li><a href="#scales-of-threats">5.2. Scales of threats</a></li>
-<li><a href="#scales-of-vulnerabilities">5.3. Scales of vulnerabilities</a></li>
-<li><a href="#management-of-acceptability-thresholds">5.4. Management of acceptability thresholds</a></li>
+<li><a href="#impact-scale">5.1. Impact scale</a></li>
+<li><a href="#likelihood-scale">5.2. Likelihood scale</a></li>
+<li><a href="#vulnerability-scale">5.3. Vulnerability scale</a></li>
+<li><a href="#acceptance-thresholds">5.4. Acceptance thresholds</a></li>
 </ul>
 </li>
 <li><a href="#management-of-knowledge-base">6. Management of Knowledge base</a>
 <ul class="sectlevel2">
 <li><a href="#type-of-assets">6.1. Type of assets</a></li>
 <li><a href="#threats">6.2. Threats</a></li>
-<li><a href="#vulnérabilities">6.3. Vulnérabilities</a></li>
+<li><a href="#vulnerabilities">6.3. Vulnerabilities</a></li>
 <li><a href="#iso-27002-controls">6.4. ISO 27002 controls</a></li>
 <li><a href="#risks">6.5. Risks</a></li>
 <li><a href="#tags-operational-risks">6.6. Tags (operational risks)</a></li>
@@ -599,11 +600,11 @@ table.CodeRay td.code>pre{padding:0}
 <p><a href="/quick-start"><strong>Quick Start</strong></a>: Provide a quick start with MONARC.</p>
 </li>
 <li>
-<p><a href="/method-guide"><strong>Method guide</strong></a>: Complete documentation of the
+<p><a href="/method-guide"><strong>Method Guide</strong></a>: Complete documentation of the
 method.</p>
 </li>
 <li>
-<p><a href="/technical-guide"><strong>Technical guide</strong></a>: Complete technical
+<p><a href="/technical-guide"><strong>Technical Guide</strong></a>: Complete technical
 documentation.</p>
 </li>
 </ul>
@@ -615,60 +616,82 @@ documentation.</p>
 </div>
 <div class="sect2">
 <h3 id="syntax-used-in-the-document"><a class="anchor" href="#syntax-used-in-the-document"></a>1.3. Syntax used in the document</h3>
-<div class="hdlist">
-<table>
+<table class="tableblock frame-none grid-none spread">
+<colgroup>
+<col style="width: 12.5%;">
+<col style="width: 87.5%;">
+</colgroup>
+<tbody>
 <tr>
-<td class="hdlist1">
-<span class="image"><img src="images/Step.png" alt="Cursor"></span>
-</td>
-<td class="hdlist2">
-<p>All numbers in white on a red background are used on print-screen views to provide additional
-explanations. Explanations are always after the view with the corresponding numbering. <strong>i.e.</strong> 1.</p>
-</td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/Step.png" alt="Cursor"></span></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>All numbers in white on a red background are used on print-screen views to provide additional explanations. Explanations are always after the view with the corresponding numbering. <strong>i.e.</strong> 1.</p>
+</div></div></td>
 </tr>
-<tr>
-<td class="hdlist1">
-<code>Reference</code>
-</td>
-<td class="hdlist2">
-<p>MONARC Reference</p>
-</td>
-</tr>
+</tbody>
 </table>
-</div>
+<table class="tableblock frame-none grid-none spread">
+<colgroup>
+<col style="width: 12.5%;">
+<col style="width: 87.5%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><div><div class="paragraph">
+<p><code>Reference</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>MONARC Reference</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="sect2">
 <h3 id="syntax-used-in-monarc"><a class="anchor" href="#syntax-used-in-monarc"></a>1.4. Syntax used in MONARC</h3>
-<div class="hdlist">
-<table>
+<table class="tableblock frame-none grid-none spread">
+<colgroup>
+<col style="width: 12.5%;">
+<col style="width: 87.5%;">
+</colgroup>
+<tbody>
 <tr>
-<td class="hdlist1">
-<span class="image"><img src="images/Menu.png" alt="Menu"></span>
-</td>
-<td class="hdlist2">
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/Menu.png" alt="Menu"></span></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
 <p>Button that always brings up the menu.</p>
-</td>
+</div></div></td>
 </tr>
-<tr>
-<td class="hdlist1">
-<span class="image"><img src="images/CreateButton.png" alt="Create"></span>
-</td>
-<td class="hdlist2">
-<p>Creating/adding something in
-context (assets, recommendations, etc.).</p>
-</td>
-</tr>
-<tr>
-<td class="hdlist1">
-<span class="image"><img src="images/Cursor.png" alt="Cursor"></span>
-</td>
-<td class="hdlist2">
-<p>Most fields of MONARC display
-additional information when the pointer stay unmoved some time.</p>
-</td>
-</tr>
+</tbody>
 </table>
-</div>
+<table class="tableblock frame-none grid-none spread">
+<colgroup>
+<col style="width: 12.5%;">
+<col style="width: 87.5%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/CreateButton.png" alt="Create"></span></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Creating/adding something in context (assets, recommendations, etc.).</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-none grid-none spread">
+<colgroup>
+<col style="width: 12.5%;">
+<col style="width: 87.5%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/Cursor.png" alt="Cursor"></span></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Most fields of MONARC display additional information when the pointer stay unmoved some time.</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<div style="page-break-after: always;"></div>
 </div>
 </div>
 </div>
@@ -735,7 +758,7 @@ This template is typically used temporarily as a <em>Sandbox</em> to test the co
 <p>Options <strong><em>a</em></strong> or <strong><em>b</em></strong> before selected. It get the source.</p>
 </li>
 <li>
-<p><code>Show inherent operational risks</code>. (see <a href="#operational-risks-2">Operational risks</a>)</p>
+<p><code>Show inherent operational risks</code>. (see <a href="#operational-risks">Operational Risks</a>)</p>
 </li>
 <li>
 <p>Select the preferred language for this new risk analysis. MONARC only present the languages actually available in the selected source.</p>
@@ -769,7 +792,7 @@ This template is typically used temporarily as a <em>Sandbox</em> to test the co
 </td>
 <td class="content">
 Once the analysis has been selected, the dashboard can be retracted in order to optimize the horizontal space by clicking on the symbol
-<span class="image"><img src="images/HideRiskAnalysesPanel.png" alt="Hide Risk Analyses panel icon"></span>.
+<span class="image"><img src="images/HideRiskAnalysesPanel.png" alt="Hide Risk Analyses panel icon" width="3%"></span>.
 </td>
 </tr>
 </table>
@@ -787,6 +810,7 @@ Once the analysis has been selected, the dashboard can be retracted in order to 
 </li>
 </ol>
 </div>
+<div style="page-break-after: always;"></div>
 </div>
 </div>
 </div>
@@ -822,8 +846,10 @@ Once the analysis has been selected, the dashboard can be retracted in order to 
 </li>
 </ul>
 </div>
-<div class="paragraph">
-<p><span class="image"><img src="images/AdminBar.png" alt="Admin Bar"></span></p>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="images/AdminBar.png" alt="Admin Bar" width="20%">
+</div>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
@@ -868,7 +894,7 @@ Once the analysis has been selected, the dashboard can be retracted in order to 
 <div class="sect3">
 <h4 id="user-rights-and-information"><a class="anchor" href="#user-rights-and-information"></a>3.1.2. User rights and information</h4>
 <div class="paragraph">
-<p>After clicking the <span class="image"><img src="images/Edit.png" alt="Edit"></span> icon, the following screen appears:</p>
+<p>After clicking on icon <span class="image"><img src="images/Edit.png" alt="Edit" width="3%"></span>, the following screen appears:</p>
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="images/UserRights.png" alt="User Rights"></span></p>
@@ -908,7 +934,8 @@ Once the analysis has been selected, the dashboard can be retracted in order to 
 <p>Change the language of the consultation. This action only changes the language of the interfaces, the information specific to the data of the analysis remains in the same)</p>
 </li>
 <li>
-<p>Manage general information about the entity (MONARC account).</p>
+<p>Manage general information about the entity (MONARC account).
+&lt;&lt;&lt;</p>
 </li>
 </ol>
 </div>
@@ -946,8 +973,10 @@ Once the analysis has been selected, the dashboard can be retracted in order to 
 <div class="paragraph">
 <p>By clicking on the numbers <code>1</code> to <code>4</code>, a contextual menu appears.</p>
 </div>
-<div class="paragraph">
-<p><span class="image"><img src="images/MethodSteps.png" alt="Method Steps"></span></p>
+<div class="imageblock">
+<div class="content">
+<img src="images/MethodSteps.png" alt="Method Steps">
+</div>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
@@ -966,7 +995,7 @@ Once the analysis has been selected, the dashboard can be retracted in order to 
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-More information about method steps. Consult the <a href="/Method-guide"><strong>method guide</strong></a>.
+More information about method steps. Consult the <a href="/Method-guide"><strong>Method Guide</strong></a>.
 </td>
 </tr>
 </table>
@@ -1029,7 +1058,7 @@ This concept is explained in detail in <a href="#type-of-assets">Type of assets<
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Asset management context menu (details in <a href="#Context menu">[Context menu]</a>).</p>
+<p>Asset management context menu (details in <a href="#context-menu-of-library">Context menu of library</a>).</p>
 </li>
 <li>
 <p>Add an existing asset in the structure, creating a composed asset. There is no limit in the asset tree.</p>
@@ -1082,7 +1111,7 @@ The modification of the operational risk table is based on the knowledge base.
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Asset management context menu (details in <a href="#Context menu">[Context menu]</a>).</p>
+<p>Asset management context menu (details in <a href="#context-menu-of-library">Context menu of library</a>).</p>
 </li>
 <li>
 <p>Add an existing asset in the structure, creating a compound asset. There is no limit in the asset tree.</p>
@@ -1130,7 +1159,7 @@ The risk table is modified from the knowledge base.
 <div class="sect4">
 <h5 id="context-menu-of-library"><a class="anchor" href="#context-menu-of-library"></a>Context menu of library</h5>
 <div class="paragraph">
-<p>By clicking on the <span class="image"><img src="images/Menu.png" alt="context menu"></span> icon, the following context menu appears. Whatever the asset type of the library, the menu is the same.</p>
+<p>By clicking on icon <span class="image"><img src="images/Menu.png" alt="context menu" width="4%"></span>, the following context menu appears. Whatever the asset type of the library, the menu is the same.</p>
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="images/ContextMenu.png" alt="Context Menu"></span></p>
@@ -1168,7 +1197,7 @@ Delete action is definitive, even if the asset is used in the analysis.
 <div class="sect3">
 <h4 id="create-an-asset"><a class="anchor" href="#create-an-asset"></a>4.2.3. Create an Asset</h4>
 <div class="paragraph">
-<p>In the library, after clicking on <span class="image"><img src="images/CreateButton.png" alt="Add Asset"></span>, the following pop-up appears:</p>
+<p>In the library, after clicking on icon <span class="image"><img src="images/CreateButton.png" alt="Add Asset" width="4%"></span>, the following pop-up appears:</p>
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="images/AddAsset.png" alt="Add Asset"></span></p>
@@ -1249,7 +1278,7 @@ Delete action is definitive, even if the asset is used in the analysis.
 <div class="sect3">
 <h4 id="edit-an-asset"><a class="anchor" href="#edit-an-asset"></a>4.2.4. Edit an asset</h4>
 <div class="paragraph">
-<p>The call is made from the <a href="#Context menu">context menu</a> when an asset is selected in the library.</p>
+<p>The call is made from the <a href="#context-menu-of-library">Context menu of library</a> when an asset is selected in the library.</p>
 </div>
 <div class="paragraph">
 <p>For an explanation of all fields that can be changed, see <a href="#create-an-asset">Create an Asset</a>. For technical reasons, the modification does not make it possible to modify:</p>
@@ -1271,7 +1300,7 @@ Delete action is definitive, even if the asset is used in the analysis.
 <div class="sect3">
 <h4 id="importing-an-asset"><a class="anchor" href="#importing-an-asset"></a>4.2.5. Importing an asset</h4>
 <div class="paragraph">
-<p>This pop-up is accessible from the pop-up <a href="#create-an-asset">Add a new asset</a> <span class="image"><img src="images/CreateButton.png" alt="CreateButton"></span></p>
+<p>This pop-up is accessible from the pop-up <a href="#create-an-asset">Add a new asset</a> <span class="image"><img src="images/CreateButton.png" alt="CreateButton" width="4%"></span></p>
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="images/Import.png" alt="Import"></span></p>
@@ -1490,16 +1519,16 @@ This option ensures only the file integrity.
 <p><code>CIA Impact</code>: The CIA criteria that have been assigned to the <code>Department</code> are inherited by default from the supporting assets.</p>
 </li>
 <li>
-<p><code>Prob</code>: Likelihood of threat (see <a href="#scales-of-threats">Scales of threats</a>).</p>
+<p><code>Prob</code>: Likelihood of threat (see <a href="#likelihood-scale">Likelihood scale</a>).</p>
 </li>
 <li>
 <p><code>Existing controls</code>: Describe, in a factual manner, the security control in place concerning the vulnerability or, more broadly, the risk.</p>
 </li>
 <li>
-<p><code>Qualif</code>: Evaluation of the control in place in order to determine the level of vulnerability (see <a href="#scales-of-vulnerabilities">Scales of vulnerabilities</a>).</p>
+<p><code>Qualif</code>: Evaluation of the control in place in order to determine the level of vulnerability (see <a href="#vulnerability-scale">Vulnerability scale</a>).</p>
 </li>
 <li>
-<p><code>Current risk</code>: Risk value calculated according to the risk calculation formula. The colors depend on the risk acceptance grid (see <a href="#Risk acceptance thresholds">[Risk acceptance thresholds]</a>).</p>
+<p><code>Current risk</code>: Risk value calculated according to the risk calculation formula. The colors depend on the risk acceptance grid (see <a href="#acceptance-thresholds">Acceptance thresholds</a>).</p>
 </li>
 <li>
 <p><code>Treatment</code>: Indication if the risk is treated, and link to the risk profile (see <a href="#risk-information-sheet">Risk information sheet</a>).</p>
@@ -1615,7 +1644,7 @@ Threat and vulnerability must exist beforehand.
 <div class="sect3">
 <h4 id="contextual-menu-of-asset"><a class="anchor" href="#contextual-menu-of-asset"></a>4.3.4. Contextual menu of asset</h4>
 <div class="paragraph">
-<p>By clicking on <span class="image"><img src="images/Menu.png" alt="Menu"></span>, the context menu of asset appears:</p>
+<p>By clicking on icon <span class="image"><img src="images/Menu.png" alt="Menu" width="4%"></span>, the context menu of asset appears:</p>
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="images/ContextualMenuAsset.png" alt="Contextual Menu of Asset"></span></p>
@@ -1715,7 +1744,7 @@ confidentiality. Example, <code>3</code> is the consequence for the person in ca
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-To hide the consequences that won&#8217;t consider. Click on icon <span class="image"><img src="images/Hide.png" alt="Hide"></span>. To show it again. Click on <code>Show hidden consequences</code>
+To hide the consequences that won&#8217;t consider. Click on icon <span class="image"><img src="images/Hide.png" alt="Hide" width="3%"></span>. To show it again. Click on <code>Show hidden consequences</code>
 </td>
 </tr>
 </table>
@@ -1765,7 +1794,7 @@ To show this option see <a href="#creating-a-risk-analysis">Creating a Risk Anal
 </table>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="images/FieldsOperRiskTable.png " alt="Fields Operational Risk Table"></span></p>
+<p><span class="image"><img src="images/FieldsOperRiskTable.png" alt="Fields Operational Risk Table"></span></p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
@@ -1799,7 +1828,7 @@ To show this option see <a href="#creating-a-risk-analysis">Creating a Risk Anal
 <p>The risk card is displayed when you click on the <code>Not treated</code> link in the operational risk table.</p>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="images/OPRiskSheet.png " alt="Operational Risk Sheet"></span></p>
+<p><span class="image"><img src="images/OPRiskSheet.png" alt="Operational Risk Sheet"></span></p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
@@ -1852,7 +1881,7 @@ Once the validation has been done, the risk is treated.
 </table>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="images/OPRiskTreated.png " alt="Operational Risk Treated"></span></p>
+<p><span class="image"><img src="images/OPRiskTreated.png" alt="Operational Risk Treated"></span></p>
 </div>
 </div>
 <div class="sect3">
@@ -1861,7 +1890,7 @@ Once the validation has been done, the risk is treated.
 <p>When an asset is selected in the analysis:</p>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="images/OPSpecificRisk.png " alt="Operational Specific Risk"></span></p>
+<p><span class="image"><img src="images/OPSpecificRisk.png" alt="Operational Specific Risk"></span></p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
@@ -1870,6 +1899,7 @@ Once the validation has been done, the risk is treated.
 </li>
 </ol>
 </div>
+<div style="page-break-after: always;"></div>
 </div>
 </div>
 </div>
@@ -1883,7 +1913,7 @@ Once the validation has been done, the risk is treated.
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Calling the <code>menu</code></p>
+<p>Calling the right contextual menu <span class="image"><img src="images/Menu.png" alt="Menu" width="4%"></span></p>
 </li>
 </ol>
 </div>
@@ -1893,7 +1923,7 @@ Once the validation has been done, the risk is treated.
 <div class="olist arabic">
 <ol class="arabic" start="2">
 <li>
-<p>Calling the Management view of <code>evaluation scales</code></p>
+<p>Calling the Management view of <code>Evaluation scales</code></p>
 </li>
 </ol>
 </div>
@@ -1901,18 +1931,18 @@ Once the validation has been done, the risk is treated.
 <p><span class="image"><img src="images/ContextMenuEvaluationScale2.png" alt="ContextMenuEvaluationScale"></span></p>
 </div>
 <div class="paragraph">
-<p>The view "Scales of Evaluations" shows the following criterias:</p>
+<p>The view <code>Evaluation scales</code> shows the following criterias:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Scale of impact</p>
+<p>Impact scale</p>
 </li>
 <li>
-<p>Scale of threats</p>
+<p>Likelihood scale</p>
 </li>
 <li>
-<p>Scale of vulnerability</p>
+<p>Vulnerability scale</p>
 </li>
 <li>
 <p>The management of information risk acceptance thresholds</p>
@@ -1947,7 +1977,7 @@ However, it is no longer permitted to modify scales as soon as an evaluation has
 </table>
 </div>
 <div class="sect2">
-<h3 id="scale-of-impact"><a class="anchor" href="#scale-of-impact"></a>5.1. Scale of impact</h3>
+<h3 id="impact-scale"><a class="anchor" href="#impact-scale"></a>5.1. Impact scale</h3>
 <div class="paragraph">
 <p><span class="image"><img src="images/ScaleImpact.png" alt="ScaleImpact"></span></p>
 </div>
@@ -1972,7 +2002,7 @@ However, it is no longer permitted to modify scales as soon as an evaluation has
 </div>
 </div>
 <div class="sect2">
-<h3 id="scales-of-threats"><a class="anchor" href="#scales-of-threats"></a>5.2. Scales of threats</h3>
+<h3 id="likelihood-scale"><a class="anchor" href="#likelihood-scale"></a>5.2. Likelihood scale</h3>
 <div class="paragraph">
 <p><span class="image"><img src="images/ScaleThreats.png" alt="ScaleThreats"></span></p>
 </div>
@@ -1988,7 +2018,7 @@ However, it is no longer permitted to modify scales as soon as an evaluation has
 </div>
 </div>
 <div class="sect2">
-<h3 id="scales-of-vulnerabilities"><a class="anchor" href="#scales-of-vulnerabilities"></a>5.3. Scales of vulnerabilities</h3>
+<h3 id="vulnerability-scale"><a class="anchor" href="#vulnerability-scale"></a>5.3. Vulnerability scale</h3>
 <div class="paragraph">
 <p><span class="image"><img src="images/ScaleVulunerabilities.png" alt="ScaleVulunerabilities"></span></p>
 </div>
@@ -2004,7 +2034,7 @@ However, it is no longer permitted to modify scales as soon as an evaluation has
 </div>
 </div>
 <div class="sect2">
-<h3 id="management-of-acceptability-thresholds"><a class="anchor" href="#management-of-acceptability-thresholds"></a>5.4. Management of acceptability thresholds</h3>
+<h3 id="acceptance-thresholds"><a class="anchor" href="#acceptance-thresholds"></a>5.4. Acceptance thresholds</h3>
 <div class="paragraph">
 <p>There are two separate tables for acceptability thresholds, as operational risk and information risk are not calculated in the same way.
 Information risks are calculated using three criteria:</p>
@@ -2028,6 +2058,7 @@ Information risks are calculated using three criteria:</p>
 </li>
 </ol>
 </div>
+<div style="page-break-after: always;"></div>
 </div>
 </div>
 </div>
@@ -2040,7 +2071,7 @@ Information risks are calculated using three criteria:</p>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Calling the <code>menu</code></p>
+<p>Calling the right contextual menu <span class="image"><img src="images/Menu.png" alt="Menu" width="4%"></span></p>
 </li>
 </ol>
 </div>
@@ -2050,7 +2081,7 @@ Information risks are calculated using three criteria:</p>
 <div class="olist arabic">
 <ol class="arabic" start="2">
 <li>
-<p>Calling the Management view of Knowledge base</p>
+<p>Calling the Management view of <code>Knowledge base</code></p>
 </li>
 </ol>
 </div>
@@ -2123,7 +2154,7 @@ Threats have categories to generate statistics.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="vulnérabilities"><a class="anchor" href="#vulnérabilities"></a>6.3. Vulnérabilities</h3>
+<h3 id="vulnerabilities"><a class="anchor" href="#vulnerabilities"></a>6.3. Vulnerabilities</h3>
 <div class="paragraph">
 <p>Vulnerabilities must describe the risk context in a negative way. The greater the vulnerability, the less existing or effective measures are. Vulnerability is inverse to maturity.
 Example: "Absence of identification of sensitive goods": Low vulnerability if the sensitive goods are identified and vice versa the vulnerability is great if they are not.
@@ -2155,6 +2186,7 @@ Only supporting assets are available for a Threat / Vulnerability association.</
 <div class="paragraph">
 <p>It is a list of risks created by default or added specifically. Each risk can be associated with one or more tags, which allows, when depositing an asset in the analysis to propose default risks, as for the risks of the information.</p>
 </div>
+<div style="page-break-after: always;"></div>
 </div>
 </div>
 </div>
@@ -2170,7 +2202,7 @@ Only supporting assets are available for a Threat / Vulnerability association.</
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Calling the <code>menu</code></p>
+<p>Calling the right contextual menu <span class="image"><img src="images/Menu.png" alt="Menu" width="4%"></span></p>
 </li>
 </ol>
 </div>
@@ -2219,6 +2251,7 @@ Only supporting assets are available for a Threat / Vulnerability association.</
 </li>
 </ol>
 </div>
+<div style="page-break-after: always;"></div>
 </div>
 </div>
 <div class="sect1">
@@ -2245,7 +2278,7 @@ It is a function to use regularly during the course, before and after great chan
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Calling the <code>menu</code></p>
+<p>Calling the right contextual menu <span class="image"><img src="images/Menu.png" alt="Menu" width="4%"></span></p>
 </li>
 </ol>
 </div>
@@ -2302,6 +2335,7 @@ There are some Possible actions:</p>
 </li>
 </ol>
 </div>
+<div style="page-break-after: always;"></div>
 </div>
 </div>
 <div class="sect1">
@@ -2337,7 +2371,7 @@ There are some Possible actions:</p>
 <p><code>Status</code> of Implementation.</p>
 </li>
 <li>
-<p>Click on <code>the icon</code> to implement the recommenation and switch on the following view.</p>
+<p>Click on icon <span class="image"><img src="images/Action.png" alt="Action" width="2%"></span> to implement the recommenation and switch on the following view.</p>
 </li>
 </ol>
 </div>
@@ -2350,7 +2384,7 @@ There are some Possible actions:</p>
 <p>Set the <code>new control</code>, now in place. It will replace the old one in the risk analysis and also replace the old current risk by the residual risk.</p>
 </li>
 <li>
-<p>Launches the pop-up validation of the update below by clicking on <code>the icon</code>.</p>
+<p>Launches the pop-up validation of the update below by clicking on icon <span class="image"><img src="images/Check.png" alt="Check" width="2%"></span></p>
 </li>
 </ol>
 </div>
@@ -2394,7 +2428,7 @@ After that go to your risk analysis and make a second iteration.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2017-10-13 13:48:42 CEST
+Last updated 2017-11-23 11:25:09 CET
 </div>
 </div>
 <script type="text/x-mathjax-config">

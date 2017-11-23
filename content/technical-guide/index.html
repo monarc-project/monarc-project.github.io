@@ -7,8 +7,8 @@
 <meta name="generator" content="Asciidoctor 1.5.4">
 <meta name="description" content="Technical guide of MONARC">
 <meta name="keywords" content="risk-analysis, monarc, technical-guide">
-<meta name="author" content=""security made in Lëtzebuerg" (SMILE) g.i.e">
-<title>MONARC technical guide</title>
+<meta name="author" content="CASES Luxembourg">
+<title>Technical Guide</title>
 <style>
 /* Asciidoctor default stylesheet | MIT License | http://asciidoctor.org */
 /* Remove comment around @import statement below when using as a custom stylesheet */
@@ -513,14 +513,20 @@ table.CodeRay td.code>pre{padding:0}
 </head>
 <body class="article toc2 toc-left">
 <div id="header">
-<h1>MONARC technical guide</h1>
+<h1>Technical Guide</h1>
 <div class="details">
-<span id="author" class="author">"security made in Lëtzebuerg" (SMILE) g.i.e</span><br>
+<span id="author" class="author">CASES Luxembourg</span><br>
+<span id="email" class="email"><a href="mailto:info@cases.lu">info@cases.lu</a></span><br>
 </div>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a href="#introduction">1. Introduction</a></li>
+<li><a href="#introduction">1. Introduction</a>
+<ul class="sectlevel2">
+<li><a href="#purpose">1.1. Purpose</a></li>
+<li><a href="#other-documents">1.2. Other documents</a></li>
+</ul>
+</li>
 <li><a href="#modules-of-the-project">2. Modules of the project</a></li>
 <li><a href="#architecture">3. Architecture</a>
 <ul class="sectlevel2">
@@ -571,11 +577,13 @@ table.CodeRay td.code>pre{padding:0}
 <div class="sect1">
 <h2 id="introduction"><a class="anchor" href="#introduction"></a>1. Introduction</h2>
 <div class="sectionbody">
-<div class="admonitionblock note">
+<div class="sect2">
+<h3 id="purpose"><a class="anchor" href="#purpose"></a>1.1. Purpose</h3>
+<div class="admonitionblock warning">
 <table>
 <tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-warning" title="Warning"></i>
 </td>
 <td class="content">
 <div class="title">This document is currently under active development and discussion!</div>
@@ -590,6 +598,34 @@ with a fix.</p>
 </td>
 </tr>
 </table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="other-documents"><a class="anchor" href="#other-documents"></a>1.2. Other documents</h3>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="/quick-start"><strong>Quick Start</strong></a>: Provide a quick start with MONARC.</p>
+</li>
+<li>
+<p><a href="/user-guide"><strong>User Guide</strong></a>: Complete documentation of the tool.</p>
+</li>
+<li>
+<p><a href="/method-guide"><strong>Method Guide</strong></a>: Complete documentation of the method.</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
 </div>
 </div>
 </div>
@@ -607,21 +643,16 @@ repositories.</p>
 <col style="width: 33.3333%;">
 <col style="width: 33.3334%;">
 </colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top"></th>
-<th class="tableblock halign-left valign-top">Back office</th>
-<th class="tableblock halign-left valign-top">Front office</th>
-</tr>
-</thead>
 <tbody>
 <tr>
 <th class="tableblock halign-left valign-top"></th>
-<td class="tableblock halign-left valign-top"><div><div class="paragraph">
-<p><a href="https://github.com/monarc-project/MonarcAppBO">MONARC BO</a>: Management of the database, clients and FO servers.</p>
+<td class="tableblock halign-center valign-top"><div><div class="paragraph">
+<p><strong>Back office</strong><br>
+<a href="https://github.com/monarc-project/MonarcAppBO">MONARC BO</a>: Management of the database, clients and FO servers.</p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div><div class="paragraph">
-<p><a href="https://github.com/monarc-project/MonarcAppFO">MONARC</a>: The MONARC front office</p>
+<td class="tableblock halign-center valign-top"><div><div class="paragraph">
+<p><strong>Front office</strong><br>
+<a href="https://github.com/monarc-project/MonarcAppFO">MONARC FO</a>: The MONARC front office.</p>
 </div></div></td>
 </tr>
 <tr>
@@ -733,8 +764,10 @@ It is automatically deployed with <a href="https://www.ansible.com">ansible</a>.
 More information in the repository of the
 <a href="https://github.com/monarc-project/ansible-ubuntu">ansible playbook</a>.</p>
 </div>
-<div id="monarc-architecture-schema" class="paragraph">
-<p><span class="image"><img src="images/monarc-architecture.png" alt="MONARC Architecture"></span></p>
+<div id="monarc-architecture-schema" class="imageblock" style="text-align: center">
+<div class="content">
+<img src="images/monarc-architecture.png" alt="MONARC Architecture">
+</div>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -837,19 +870,19 @@ internal mail server (<strong>SMTP</strong>).</p>
 <thead>
 <tr>
 <th class="tableblock halign-left valign-top"></th>
-<th class="tableblock halign-left valign-top">Back office</th>
-<th class="tableblock halign-left valign-top">Front office</th>
-<th class="tableblock halign-left valign-top">Reverse proxy</th>
-<th class="tableblock halign-left valign-top">Configuration server</th>
+<th class="tableblock halign-center valign-top">Back office</th>
+<th class="tableblock halign-center valign-top">Front office</th>
+<th class="tableblock halign-center valign-top">Reverse proxy</th>
+<th class="tableblock halign-center valign-top">Configuration server</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <th class="tableblock halign-left valign-top"><p class="tableblock">Number of vCPU</p></th>
-<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<td class="tableblock halign-center valign-top"><div><div class="paragraph">
 <p>4</p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<td class="tableblock halign-center valign-top"><div><div class="paragraph">
 <p>4</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div></div></td>
@@ -857,21 +890,21 @@ internal mail server (<strong>SMTP</strong>).</p>
 </tr>
 <tr>
 <th class="tableblock halign-left valign-top"><p class="tableblock">RAM (GB)</p></th>
-<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<td class="tableblock halign-center valign-top"><div><div class="paragraph">
 <p>16</p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<td class="tableblock halign-center valign-top"><div><div class="paragraph">
 <p>16</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div></div></td>
 <td class="tableblock halign-left valign-top"><div></div></td>
 </tr>
 <tr>
-<th class="tableblock halign-left valign-top"><p class="tableblock">HDD (BG)</p></th>
-<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<th class="tableblock halign-left valign-top"><p class="tableblock">HDD (GB)</p></th>
+<td class="tableblock halign-center valign-top"><div><div class="paragraph">
 <p>25</p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<td class="tableblock halign-center valign-top"><div><div class="paragraph">
 <p>25</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div></div></td>
@@ -1078,8 +1111,10 @@ More information about the installation in
 <p>The whole architecture can be deployed with
 <a href="https://www.ansible.com">ansible</a>.</p>
 </div>
-<div class="paragraph">
-<p><span class="image"><img src="images/monarc-architecture.png" alt="MONARC Architecture"></span></p>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="images/monarc-architecture.png" alt="MONARC Architecture">
+</div>
 </div>
 <div class="sect3">
 <h4 id="requirements-2"><a class="anchor" href="#requirements-2"></a>5.2.1. Requirements</h4>
@@ -1375,7 +1410,7 @@ Npm.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2017-10-25 10:38:20 CEST
+Last updated 2017-11-21 15:56:43 CET
 </div>
 </div>
 <script type="text/x-mathjax-config">
