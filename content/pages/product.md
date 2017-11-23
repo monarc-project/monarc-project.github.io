@@ -64,12 +64,12 @@ The table below summarises the functionality of both versions:
     </tbody>
 </table>
 
-The back office is appropriate for big organizations or state organizations.
-More derails about the architecture
+The MONARC Instance Management is appropriate for big organizations or state
+organizations. More derails about the architecture
 [here](/technical-guide#monarc-and-the-back-office).
 
 Since MONARC is an open-source project, you can also have a look at our
-[roadmap](https://github.com/monarc-project/MonarcAppFO/wiki/New-features).
+[roadmap](https://github.com/monarc-project/MonarcAppFO/wiki/Roadmap).
 
 
 ## MONARC Instance Management
