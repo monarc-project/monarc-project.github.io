@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 1.5.5">
+<meta name="generator" content="Asciidoctor 1.5.4">
 <meta name="description" content="MONARC Quick Start">
 <meta name="keywords" content="risk-analysis, monarc">
 <meta name="author" content="CASES Luxembourg">
@@ -19,6 +19,7 @@ audio:not([controls]){display:none;height:0}
 [hidden],template{display:none}
 script{display:none!important}
 html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
+body{margin:0}
 a{background:transparent}
 a:focus{outline:thin dotted}
 a:active,a:hover{outline:0}
@@ -53,7 +54,7 @@ textarea{overflow:auto;vertical-align:top}
 table{border-collapse:collapse;border-spacing:0}
 *,*:before,*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}
 html,body{font-size:100%}
-body{background:#fff;color:rgba(0,0,0,.8);padding:0;margin:0;font-family:"Noto Serif","DejaVu Serif",serif;font-weight:400;font-style:normal;line-height:1;position:relative;cursor:auto;tab-size:4;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased}
+body{background:#fff;color:rgba(0,0,0,.8);padding:0;margin:0;font-family:"Noto Serif","DejaVu Serif",serif;font-weight:400;font-style:normal;line-height:1;position:relative;cursor:auto}
 a:hover{cursor:pointer}
 img,object,embed{max-width:100%;height:auto}
 object,embed{height:100%}
@@ -65,6 +66,7 @@ img{-ms-interpolation-mode:bicubic}
 .text-center{text-align:center!important}
 .text-justify{text-align:justify!important}
 .hide{display:none}
+body{-webkit-font-smoothing:antialiased}
 img,object,svg{display:inline-block;vertical-align:middle}
 textarea{height:auto;min-height:50px}
 select{width:100%}
@@ -119,16 +121,13 @@ table thead tr th,table thead tr td,table tfoot tr th,table tfoot tr td{padding:
 table tr th,table tr td{padding:.5625em .625em;font-size:inherit;color:rgba(0,0,0,.8)}
 table tr.even,table tr.alt,table tr:nth-of-type(even){background:#f8f8f7}
 table thead tr th,table tfoot tr th,table tbody tr td,table tr td,table tfoot tr td{display:table-cell;line-height:1.6}
+body{tab-size:4}
 h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{line-height:1.2;word-spacing:-.05em}
 h1 strong,h2 strong,h3 strong,#toctitle strong,.sidebarblock>.content>.title strong,h4 strong,h5 strong,h6 strong{font-weight:400}
 .clearfix:before,.clearfix:after,.float-group:before,.float-group:after{content:" ";display:table}
 .clearfix:after,.float-group:after{clear:both}
-*:not(pre)>code{font-size:.9375em;font-style:normal!important;letter-spacing:0;padding:.1em .5ex;word-spacing:-.15em;background-color:#f7f7f8;-webkit-border-radius:4px;border-radius:4px;line-height:1.45;text-rendering:optimizeSpeed;word-wrap:break-word}
-*:not(pre)>code.nobreak{word-wrap:normal}
-*:not(pre)>code.nowrap{white-space:nowrap}
+*:not(pre)>code{font-size:.9375em;font-style:normal!important;letter-spacing:0;padding:.1em .5ex;word-spacing:-.15em;background-color:#f7f7f8;-webkit-border-radius:4px;border-radius:4px;line-height:1.45;text-rendering:optimizeSpeed}
 pre,pre>code{line-height:1.45;color:rgba(0,0,0,.9);font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;font-weight:400;text-rendering:optimizeSpeed}
-em em{font-style:normal}
-strong strong{font-weight:400}
 .keyseq{color:rgba(51,51,51,.8)}
 kbd{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;display:inline-block;color:rgba(0,0,0,.8);font-size:.65em;line-height:1.45;background-color:#f7f7f7;border:1px solid #ccc;-webkit-border-radius:3px;border-radius:3px;-webkit-box-shadow:0 1px 0 rgba(0,0,0,.2),0 0 0 .1em white inset;box-shadow:0 1px 0 rgba(0,0,0,.2),0 0 0 .1em #fff inset;margin:0 .15em;padding:.2em .5em;vertical-align:middle;position:relative;top:-.1em;white-space:nowrap}
 .keyseq kbd:first-child{margin-left:0}
@@ -419,7 +418,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 .hide-for-print{display:none!important}
 .show-for-print{display:inherit!important}}
 </style>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
 <style>
 /* Stylesheet for CodeRay to match GitHub theme | MIT License | http://foundation.zurb.com */
 /*pre.CodeRay {background-color:#f7f7f8;}*/
@@ -546,10 +545,10 @@ table.CodeRay td.code>pre{padding:0}
 </div>
 <div id="content">
 <div class="sect1">
-<h2 id="introduction"><a class="anchor" href="#introduction"></a><a class="link" href="#introduction">1. Introduction</a></h2>
+<h2 id="introduction"><a class="anchor" href="#introduction"></a>1. Introduction</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="purpose"><a class="anchor" href="#purpose"></a><a class="link" href="#purpose">1.1. Purpose</a></h3>
+<h3 id="purpose"><a class="anchor" href="#purpose"></a>1.1. Purpose</h3>
 <div class="paragraph">
 <p>The purpose of this document is to help get started quickly with MONARC.
 It explains the main features of the tool and the necessary steps to
@@ -557,7 +556,7 @@ deal with a risk with the default settings.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="other-documents"><a class="anchor" href="#other-documents"></a><a class="link" href="#other-documents">1.2. Other documents</a></h3>
+<h3 id="other-documents"><a class="anchor" href="#other-documents"></a>1.2. Other documents</h3>
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -586,68 +585,88 @@ documentation.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="syntax-used-in-the-document"><a class="anchor" href="#syntax-used-in-the-document"></a><a class="link" href="#syntax-used-in-the-document">1.3. Syntax used in the document</a></h3>
-<div class="hdlist">
-<table>
+<h3 id="syntax-used-in-the-document"><a class="anchor" href="#syntax-used-in-the-document"></a>1.3. Syntax used in the document</h3>
+<table class="tableblock frame-none grid-none spread">
+<colgroup>
+<col style="width: 12.5%;">
+<col style="width: 87.5%;">
+</colgroup>
+<tbody>
 <tr>
-<td class="hdlist1">
-<span class="image"><img src="images/Step.png" alt="Cursor"></span>
-</td>
-<td class="hdlist2">
-<p>All numbers in white on a red
-background are used on print-screen views to provide additional
-explanations. Explanations are always after the view with the
-corresponding numbering. <strong>i.e.</strong> 1.</p>
-</td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/Step.png" alt="Cursor"></span></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>All numbers in white on a red background are used on print-screen views to provide additional explanations. Explanations are always after the view with the corresponding numbering. <strong>i.e.</strong> 1.</p>
+</div></div></td>
 </tr>
-<tr>
-<td class="hdlist1">
-<code>Reference</code>
-</td>
-<td class="hdlist2">
-<p>MONARC Reference</p>
-</td>
-</tr>
+</tbody>
 </table>
-</div>
+<table class="tableblock frame-none grid-none spread">
+<colgroup>
+<col style="width: 12.5%;">
+<col style="width: 87.5%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><div><div class="paragraph">
+<p><code>Reference</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>MONARC Reference</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="sect2">
-<h3 id="syntax-used-in-monarc"><a class="anchor" href="#syntax-used-in-monarc"></a><a class="link" href="#syntax-used-in-monarc">1.4. Syntax used in MONARC</a></h3>
-<div class="hdlist">
-<table>
+<h3 id="syntax-used-in-monarc"><a class="anchor" href="#syntax-used-in-monarc"></a>1.4. Syntax used in MONARC</h3>
+<table class="tableblock frame-none grid-none spread">
+<colgroup>
+<col style="width: 12.5%;">
+<col style="width: 87.5%;">
+</colgroup>
+<tbody>
 <tr>
-<td class="hdlist1">
-<span class="image"><img src="images/Menu.png" alt="Menu"></span>
-</td>
-<td class="hdlist2">
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/Menu.png" alt="Menu"></span></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
 <p>Button that always brings up the menu.</p>
-</td>
+</div></div></td>
 </tr>
-<tr>
-<td class="hdlist1">
-<span class="image"><img src="images/CreateButton.png" alt="Create"></span>
-</td>
-<td class="hdlist2">
-<p>Creating/adding something in
-context (assets, recommendations, etc.).</p>
-</td>
-</tr>
-<tr>
-<td class="hdlist1">
-<span class="image"><img src="images/Cursor.png" alt="Cursor"></span>
-</td>
-<td class="hdlist2">
-<p>Most fields of MONARC display
-additional information when the pointer stay unmoved some time.</p>
-</td>
-</tr>
+</tbody>
 </table>
-</div>
+<table class="tableblock frame-none grid-none spread">
+<colgroup>
+<col style="width: 12.5%;">
+<col style="width: 87.5%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/CreateButton.png" alt="Create"></span></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Creating/adding something in context (assets, recommendations, etc.).</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-none grid-none spread">
+<colgroup>
+<col style="width: 12.5%;">
+<col style="width: 87.5%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/Cursor.png" alt="Cursor"></span></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Most fields of MONARC display additional information when the pointer stay unmoved some time.</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<div style="page-break-after: always;"></div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="creating-the-first-risk-analysis"><a class="anchor" href="#creating-the-first-risk-analysis"></a><a class="link" href="#creating-the-first-risk-analysis">2. Creating the first risk analysis</a></h2>
+<h2 id="creating-the-first-risk-analysis"><a class="anchor" href="#creating-the-first-risk-analysis"></a>2. Creating the first risk analysis</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>After clicking on
@@ -682,10 +701,11 @@ details.</p>
 </li>
 </ol>
 </div>
+<div style="page-break-after: always;"></div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="description-of-the-main-view"><a class="anchor" href="#description-of-the-main-view"></a><a class="link" href="#description-of-the-main-view">3. Description of the main view</a></h2>
+<h2 id="description-of-the-main-view"><a class="anchor" href="#description-of-the-main-view"></a>3. Description of the main view</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p><span class="image"><img src="images/Main.png" alt="Main view"></span></p>
@@ -695,8 +715,7 @@ details.</p>
 <li>
 <p>Risk Analyses panel: Create and select a risk analysis. Once the
 analysis is selected, the dashboard can be retracted to optimize the
-horizontal space by clicking on the symbol
-<span class="image"><img src="images/HideRiskAnalysesPanel.png" alt="Hide Risk Analyses panel icon"></span>.</p>
+horizontal space by clicking on icon <span class="image"><img src="images/HideRiskAnalysesPanel.png" alt="Hide Risk Analyses panel icon" width="3%"></span>.</p>
 </li>
 <li>
 <p>Navigation panel, users administration and account management.</p>
@@ -709,13 +728,14 @@ horizontal space by clicking on the symbol
 </li>
 </ol>
 </div>
+<div style="page-break-after: always;"></div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="simplified-risk-analysis"><a class="anchor" href="#simplified-risk-analysis"></a><a class="link" href="#simplified-risk-analysis">4. Simplified risk analysis</a></h2>
+<h2 id="simplified-risk-analysis"><a class="anchor" href="#simplified-risk-analysis"></a>4. Simplified risk analysis</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="risk-identification-default-modeling"><a class="anchor" href="#risk-identification-default-modeling"></a><a class="link" href="#risk-identification-default-modeling">4.1. Risk identification (default modeling)</a></h3>
+<h3 id="risk-identification-default-modeling"><a class="anchor" href="#risk-identification-default-modeling"></a>4.1. Risk identification (default modeling)</h3>
 <div class="paragraph">
 <p>It is necessary to use the
 assets of the library and place them in the analysis. If the risk
@@ -797,7 +817,7 @@ and supposed to be significant, they do not claim to be exhaustive.
 </div>
 </div>
 <div class="sect2">
-<h3 id="edit-impacts-and-consequences"><a class="anchor" href="#edit-impacts-and-consequences"></a><a class="link" href="#edit-impacts-and-consequences">4.2. Edit impacts and consequences</a></h3>
+<h3 id="edit-impacts-and-consequences"><a class="anchor" href="#edit-impacts-and-consequences"></a>4.2. Edit impacts and consequences</h3>
 <div class="paragraph">
 <p>The aim is to define impacts and consequences for primary assets that can result
 from an occurrence of a
@@ -813,7 +833,7 @@ risk from the model. In the case of this analysis, the primary asset is
 <p>Click on the primary asset <code>Department</code>.</p>
 </li>
 <li>
-<p>Click on the symbol<span class="image"><img src="images/Menu.png" alt="Menu"></span>to display the
+<p>Click on icon <span class="image"><img src="images/Menu.png" alt="Menu" width="4%"></span>to display the
 context menu of the asset.</p>
 </li>
 <li>
@@ -863,7 +883,7 @@ of disclosure of his personal file.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="risk-assessment"><a class="anchor" href="#risk-assessment"></a><a class="link" href="#risk-assessment">4.3. Risk assessment</a></h3>
+<h3 id="risk-assessment"><a class="anchor" href="#risk-assessment"></a>4.3. Risk assessment</h3>
 <div class="paragraph">
 <p><span class="image"><img src="images/RiskAssessment.png" alt="Risk assessment"></span></p>
 </div>
@@ -924,7 +944,7 @@ values, which are directly dependent on the threat.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="risk-treatment"><a class="anchor" href="#risk-treatment"></a><a class="link" href="#risk-treatment">4.4. Risk treatment</a></h3>
+<h3 id="risk-treatment"><a class="anchor" href="#risk-treatment"></a>4.4. Risk treatment</h3>
 <div class="paragraph">
 <p>The risk treatment consists in proposing one of the 4 types of
 treatment, knowing that most of the time the treatment is to reduce the
@@ -953,7 +973,7 @@ risk.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="risk-treatment-plan-management"><a class="anchor" href="#risk-treatment-plan-management"></a><a class="link" href="#risk-treatment-plan-management">4.5. Risk treatment plan management</a></h3>
+<h3 id="risk-treatment-plan-management"><a class="anchor" href="#risk-treatment-plan-management"></a>4.5. Risk treatment plan management</h3>
 <div class="paragraph">
 <p><span class="image"><img src="images/PlanTreatment.png" alt="Plan risk treatment"></span></p>
 </div>
@@ -970,7 +990,7 @@ method and <code>Risk treatment plan management</code>.</p>
 </li>
 <li>
 <p>Order the recommendation positions holding down the left mouse
-button on symbol <span class="image"><img src="images/MoveButton.png" alt="Move button"></span> and move it.</p>
+button on icon <span class="image"><img src="images/MoveButton.png" alt="Move button" width="4%"></span> and move it.</p>
 </li>
 <li>
 <p>Reset the positions in importance order (Imp.)</p>
@@ -1003,11 +1023,7 @@ fully processed and all information has been entered.
 </div>
 <div id="footer">
 <div id="footer-text">
-<<<<<<< HEAD
-Last updated 2017-11-21 15:47:42 CET
-=======
-Last updated 2017-11-22 22:13:12 CET
->>>>>>> a79317d855c5292e1fbd0e2a3416f750f8168ad5
+Last updated 2017-11-23 12:13:35 CET
 </div>
 </div>
 <script type="text/x-mathjax-config">
