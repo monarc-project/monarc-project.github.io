@@ -517,7 +517,7 @@ table.CodeRay td.code>pre{padding:0}
 <div class="details">
 <span id="author" class="author">CASES Luxembourg</span><br>
 <span id="email" class="email"><a href="mailto:info@cases.lu">info@cases.lu</a></span><br>
-<span id="revnumber">version 2017-11-27</span>
+<span id="revnumber">version 2017-12-13</span>
 </div>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
@@ -565,7 +565,12 @@ table.CodeRay td.code>pre{padding:0}
 <li><a href="#updates">6. Updates</a>
 <ul class="sectlevel2">
 <li><a href="#system-update">6.1. System update</a></li>
-<li><a href="#monarc-update">6.2. MONARC update</a></li>
+<li><a href="#monarc-update">6.2. MONARC update</a>
+<ul class="sectlevel3">
+<li><a href="#update-a-single-monarc-instance">6.2.1. Update a single MONARC instance</a></li>
+<li><a href="#update-monarc-when-connected-to-a-back-office">6.2.2. Update MONARC when connected to a back office</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -927,8 +932,18 @@ imagick, ssl</p>
 <td class="tableblock halign-center valign-top"><div><div class="paragraph">
 <p>2</p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div></div></td>
-<td class="tableblock halign-left valign-top"><div></div></td>
+<td class="tableblock halign-left valign-top" rowspan="3"><div><div class="paragraph">
+<p>Not that powerful.</p>
+</div>
+<div class="paragraph">
+<p>But all connections (for the BO and FOs) will go through it.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top" rowspan="3"><div><div class="paragraph">
+<p>Not that powerful.</p>
+</div>
+<div class="paragraph">
+<p>Mainly used for the creation of clients on the different FOs.</p>
+</div></div></td>
 </tr>
 <tr>
 <th class="tableblock halign-left valign-top"><p class="tableblock">RAM (GB)</p></th>
@@ -938,8 +953,6 @@ imagick, ssl</p>
 <td class="tableblock halign-center valign-top"><div><div class="paragraph">
 <p>4</p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div></div></td>
-<td class="tableblock halign-left valign-top"><div></div></td>
 </tr>
 <tr>
 <th class="tableblock halign-left valign-top"><p class="tableblock">HDD (GB)</p></th>
@@ -949,11 +962,9 @@ imagick, ssl</p>
 <td class="tableblock halign-center valign-top"><div><div class="paragraph">
 <p>20</p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div></div></td>
-<td class="tableblock halign-left valign-top"><div></div></td>
 </tr>
 <tr>
-<th class="tableblock halign-left valign-top"><p class="tableblock">Operating system</p></th>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Operating System</p></th>
 <td class="tableblock halign-left valign-top"><div><div class="paragraph">
 <p>Ubuntu Server 16.04 LTS</p>
 </div></div></td>
@@ -965,19 +976,6 @@ imagick, ssl</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div><div class="paragraph">
 <p>Ubuntu Server 16.04 LTS</p>
-</div></div></td>
-</tr>
-<tr>
-<th class="tableblock halign-left valign-top"><p class="tableblock">Comment</p></th>
-<td class="tableblock halign-left valign-top"><div></div></td>
-<td class="tableblock halign-left valign-top"><div></div></td>
-<td class="tableblock halign-left valign-top"><div><div class="paragraph">
-<p>Not that powerful. But all connections (for the BO and FOs) will go through
-  it.</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div><div class="paragraph">
-<p>Not that powerful. Mainly used for the creation of clients on the different
-  FOs.</p>
 </div></div></td>
 </tr>
 </tbody>
@@ -1352,23 +1350,23 @@ Postfix, etc.). At least the security updates from the GNU/Linux distribution.</
 </div>
 <div class="sect2">
 <h3 id="monarc-update"><a class="anchor" href="#monarc-update"></a>6.2. MONARC update</h3>
-<div class="paragraph">
-<p>The master branch should always be working and it is recommended to install
-the project using this one.</p>
-</div>
+<div class="sect3">
+<h4 id="update-a-single-monarc-instance"><a class="anchor" href="#update-a-single-monarc-instance"></a>6.2.1. Update a single MONARC instance</h4>
 <div class="paragraph">
 <p>If you have already installed MONARC and want to update to a later version, you
 can use the provided script:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="bash">$ ./scripts/update-all.sh -b
+<pre class="CodeRay highlight"><code data-lang="bash">$ ./scripts/update-all.sh
 $ sudo systemctl restart apache2.service</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>Updates from the last stable release of MONARC will be retrieved.
-For more details the script will:</p>
+<p>Updates from the last stable release of MONARC will be retrieved.</p>
+</div>
+<div class="paragraph">
+<p>For more details the script will:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -1402,14 +1400,76 @@ Npm.</p>
 </li>
 </ul>
 </div>
+<div class="paragraph">
+<p>Please be aware that by default the update script will run database migrations
+(for "big" and "small" upgrade). This behavior can be changed by passing the
+<code>-b</code> option to the update script.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="update-monarc-when-connected-to-a-back-office"><a class="anchor" href="#update-monarc-when-connected-to-a-back-office"></a>6.2.2. Update MONARC when connected to a back office</h4>
+<div class="paragraph">
+<p>When MONARC is connected to a back office and has been deployed with the
+<a href="https://github.com/monarc-project/ansible-ubuntu">ansible playbook</a>,
+three steps are required for a full proper update.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Update of the back office</p>
+</li>
+<li>
+<p>Update of MONARC</p>
+</li>
+<li>
+<p>Update of the configuration server (ansible playbook)</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Always use the <strong>ansible</strong> user.</p>
+</div>
+<div class="sect4">
+<h5 id="back-office"><a class="anchor" href="#back-office"></a>Back office</h5>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="bash">$ su ansible
+$ cd /var/lib/monarc/bo/MonarcAppBO/
+$ ./scripts/update-all.sh
+$ sudo systemctl restart apache2.service</code></pre>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="front-office"><a class="anchor" href="#front-office"></a>Front office</h5>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="bash">$ su ansible
+$ cd /var/lib/monarc/fo
+$ ./scripts/update-all.sh -b
+$ sudo systemctl restart apache2.service</code></pre>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="configuration-server"><a class="anchor" href="#configuration-server"></a>Configuration server</h5>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="bash">$ su ansible
+$ cd /home/ansible/ansible-ubuntu/
+$ git pull origin master</code></pre>
+</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Version 2017-11-27<br>
-Last updated 2017-11-27 13:27:55 CET
+Version 2017-12-13<br>
+Last updated 2017-12-13 09:55:31 CET
 </div>
 </div>
 <script type="text/x-mathjax-config">
