@@ -4,7 +4,7 @@ Title: Trainings
 
 |&nbsp;|||
 |:--|--|--|
-|**Date and time:**||1st Trimester 2018<br/>09h00 - 15h00|
+|**Date and time:**||March 8, 2018<br/>09h30 - 16h30|
 |&nbsp;|  |  |
 |**Location:**|&nbsp;&nbsp;&nbsp;|C3 / SECURITYMADEIN.LU|
 |             |                  |16 Boulevard d’Avranches 1160|
@@ -25,14 +25,15 @@ Title: Trainings
 |**Training materials:**||Workshop MONARC &nbsp; [![EN](/assets/images/Flag_UK.png)](/assets/files/monarc-training/en/Formation_V2-MONARC_En.pdf) [![FR](/assets/images/Flag_FR.png)](/assets/files/monarc-training/fr/Formation_V2-MONARC_Fr.pdf)<br/>Context MyCompany [![EN](/assets/images/Flag_UK.png)](/assets/files/monarc-training/en/Context_MyCompany_en_v1.0.pdf) [![FR](/assets/images/Flag_FR.png)](/assets/files/monarc-training/fr/Context_MyCompany_fr_v1.1.pdf) |
 
 
-<center>
+<!-- <center>
 <a href="mailto:formation@cases.lu" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Contact us</a>
+</center> -->
+
+<center>
+<a href="https://www.eventbrite.com/e/monarc-training-learn-how-to-master-risk-analysis-tickets-41423002315" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Register</a>
+<br/>(*Limited to 2 people per company*)
 </center>
 
-<!-- <center>
-<a href="https://www.eventbrite.com/e/training-monarc-apprenez-a-maitriser-lanalyse-de-risques-tickets-39045216293" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Register</a>
-<br/>(*Limited to 2 people per company*)
-<center/>  -->
 
 ###Past Trainings
 
