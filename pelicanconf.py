@@ -76,7 +76,7 @@ LINKS = (('MONARC <i>Cloud</i>', 'https://my.monarc.lu/'),
 
 # Social widget
 SOCIAL = (('GitHub', 'https://github.com/monarc-project'),
-          ('Twitter', 'https://twitter.com/cases_lu'),
+          ('Twitter', 'https://twitter.com/MONARCproject'),
           ('RSS', FEED_DOMAIN + FEED_ALL_ATOM),)
 
 NAVBAR_ELEMENTS = ['menu-items']
