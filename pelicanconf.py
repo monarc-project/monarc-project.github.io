@@ -24,7 +24,7 @@ THEME = 'themes/pelican-bootstrap3'
 BOOTSTRAP_THEME = 'cerulean'
 JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
 PLUGIN_PATHS = ['plugins']
-PLUGINS = ['i18n_subsites']
+PLUGINS = ['i18n_subsites', 'sitemap']
 DEFAULT_PAGINATION = 10
 FEED_DOMAIN = SITEURL
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
@@ -40,6 +40,20 @@ DISPLAY_PAGES_ON_MENU = False
 DISPLAY_TAGS_ON_MENU = False
 CC_LICENSE = 'CC-BY-SA'
 
+SITEMAP = {
+    'format': 'txt',
+    'exclude': ['tag/', 'category/'],
+    'priorities': {
+        'articles': 0.5,
+        'indexes': 0.5,
+        'pages': 0.8
+    },
+    'changefreqs': {
+        'articles': 'monthly',
+        'indexes': 'daily',
+        'pages': 'monthly'
+    }
+}
 
 READERS = {"html": None}
 
