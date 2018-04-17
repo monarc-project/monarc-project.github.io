@@ -4,7 +4,7 @@ Title: Trainings
 
 |&nbsp;|||
 |:--|--|--|
-|**Date and time:**||19 June, 2018 <br>9h30|
+|**Date and time:**||19 June, 2018 <br>9h30 - 16h00|
 |&nbsp;|  ||
 |**Location:**|&nbsp;&nbsp;&nbsp;|C3 - EternalBlue room / SECURITYMADEIN.LU|
 |             |                  |16 Boulevard d’Avranches 1160|
