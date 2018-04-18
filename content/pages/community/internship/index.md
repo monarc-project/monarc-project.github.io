@@ -2,6 +2,7 @@ Title: Internship
 Date: 2018-01-31
 Hidden: true
 
+
 ###Internship #1: Improve the database of MONARC, a risk assessment tool
 
 CASES is one of the main actors of cyber security in Luxembourg and is a young and motivated team with expertise in the field of information security.
@@ -22,7 +23,7 @@ CASES has developed an optimised risk analysis method: MONARC (Optimised Risk An
 
 ####Apply:
 
-*	Send the application to [info@cases.lu](mailto:info@cases.lu)
+*	Closed
 
 
 ###Internship #2: Develop new functionalities for MONARC, a risk assessment tool
@@ -45,4 +46,4 @@ CASES has developed an optimised risk analysis method: MONARC (Optimised Risk An
 
 ####Apply:
 
-*	Send the application to [info@cases.lu](mailto:info@cases.lu)
+*	Closed
