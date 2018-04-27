@@ -11,7 +11,9 @@ enhancements.
 ### New
 
 - an administrator of a MONARC front office instance is now able to set custom
-  templates for deliveries per step.
+  templates for deliveries per step. Check out the
+  [documentation](http://monarc.lu/user-guide/#modifying-the-deliveries)
+  for more information.
 
 ### Enhancement
 
