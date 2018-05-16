@@ -5,7 +5,7 @@ import os
 
 AUTHOR = 'security made in Lëtzebuerg (SMILE) g.i.e.'
 SITENAME = 'MONARC'
-SITEURL = 'http://monarc.lu/'
+SITEURL = 'https://www.monarc.lu/'
 PATH = 'content'
 # PAGE_PATHS = ['pages']
 # ARTICLE_PATHS = ['news']
