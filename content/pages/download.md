@@ -72,7 +72,11 @@ Just open your browser and go to this address: http://10.0.0.101/
 
 Login / Password : admin@admin.test / admin
 
+##### Risk Analysis Demo (Only in French)
 
+1. [Create a risk analysis in French](/user-guide/#creating-a-risk-analysis)
+2. Download the risk analysis file <a href="/assets/files/monarc-training/fr/myprint.json" download>(myprint.json)</a>
+3. [Import JSON file](/user-guide/#contextual-menu-of-asset)
 
 ## SaaS offering
 
