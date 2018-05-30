@@ -2,6 +2,8 @@ Title: Presentation
 URL:
 Save_as: index.html
 
+__A method for an optimised analysis of risks.__
+
 ## What is MONARC?
 
 Depending on its size and its security needs, organisations must react in the
