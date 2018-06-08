@@ -85,6 +85,7 @@ LINKS = (('MONARC <i>Cloud</i>', 'https://my.monarc.lu/'),
          ('Roadmap', 'https://github.com/monarc-project/MonarcAppFO/wiki/Roadmap'),
          ('SECURITYMADEIN.LU', 'https://securitymadein.lu'),
          ('Cybersecurity Competence Center (C3)', 'https://c-3.lu'),
+         ('Releases on Freshermeat', 'https://open-source-security-software.net/project/MONARC'),
          ('<img src="https://img.shields.io/github/release/monarc-project/MonarcAppFO.svg?style=flat-square" />',
             'https://github.com/monarc-project/MonarcAppFO/releases/latest'),)
 
