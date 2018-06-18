@@ -74,6 +74,7 @@ MENUITEMS = (
         ('News', '/news'),
         ('Product', '/product'),
         ('Service', '/service'),
+        ('Publications', '/publications'),
         ('Documentation', '/documentation'),
         ('Community', '/community'),
         ('Download', '/download'),
