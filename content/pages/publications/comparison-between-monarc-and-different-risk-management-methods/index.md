@@ -384,7 +384,11 @@ One of the big differences of the IT-Grundschutz method compared to other method
 The tool (GS-tool) allows to optimize the use of the method by selecting the pages of the catalog to be implemented in order to obtain an adequate level of protection.
 One of the major problems of the IT-Grundschutz is that there are latencies in the English translation of the catalogs. Better to be German-speaking, to have up-to-date knowledge databases.
 
-## 8. References
+## ANNEX. Table: Comparison between MONARC and different Risk Management Methods
+
+[Table: Comparison between MONARC and different Risk Management Methods](/table-comparison-between-monarc-and-different-risk-management-methods)
+
+## References
 
 ** ISO 31000:2009 **
 

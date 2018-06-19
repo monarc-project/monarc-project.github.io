@@ -1,7 +1,30 @@
 Title: Publications
 
-|&nbsp;||
-|:--|--|
-|[Comparison between MONARC and different Risk Management Methods](/comparison-between-monarc-and-different-risk-management-methods)|4 September, 2018|
-|&nbsp;|  |
-|[Comparison between MONARC and different Risk Management Methods](/comparison-of-rm-approaches)|4 September, 2018|
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #555555;
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #555555;
+    text-align: center;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f5f5f5;
+}
+</style>
+
+| Description | Date |
+|---|:---:|
+|[Comparison between MONARC and different Risk Management Methods](/comparison-between-monarc-and-different-risk-management-methods)| May 2017 |
+|[Table: Comparison between MONARC and different Risk Management Methods](/table-comparison-between-monarc-and-different-risk-management-methods)| May 2017 |
