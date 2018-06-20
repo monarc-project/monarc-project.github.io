@@ -77,7 +77,7 @@ Information risk management|Yes. The tool can also manage Operational Risks on R
 
 * [Information technology — Security techniques — Information security risk management](https://www.iso.org/standard/56742.html)
 
-** MAGARIT **
+** MAGERIT **
 
 * [Methodology for Information Systems Risk Analysis and Management Book](https://administracionelectronica.gob.es/pae_Home/dam/jcr:80b16a91-75b1-432d-ab23-844a12aab5fc/MAGERIT_v_3_book_1_method_PDF_NIPO_630-14-162-0.pdf)
 * [Methodology for Information Systems Risk Analysis and Management Book I – The Method](https://administracionelectronica.gob.es/pae_Home/dam/jcr:80b16a91-75b1-432d-ab23-844a12aab5fc/MAGERIT_v_3_book_1_method_PDF_NIPO_630-14-162-0.pdf)

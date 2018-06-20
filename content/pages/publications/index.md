@@ -26,5 +26,5 @@ tr:nth-child(even) {
 
 | Description | Date |
 |---|:---:|
-|[Comparison between MONARC and different Risk Management Methods](/comparison-between-monarc-and-different-risk-management-methods)| May 2017 |
-|[Table: Comparison between MONARC and different Risk Management Methods](/table-comparison-between-monarc-and-different-risk-management-methods)| May 2017 |
+|[Comparison between MONARC and different Risk Management Methods](/comparison-between-monarc-and-different-risk-management-methods)| June 2018 |
+|[Table: Comparison between MONARC and different Risk Management Methods](/table-comparison-between-monarc-and-different-risk-management-methods)| June 2018 |

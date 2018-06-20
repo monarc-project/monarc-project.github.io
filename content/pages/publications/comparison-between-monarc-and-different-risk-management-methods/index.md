@@ -386,7 +386,11 @@ One of the major problems of the IT-Grundschutz is that there are latencies in t
 
 ## ANNEX. Table: Comparison between MONARC and different Risk Management Methods
 
-[Table: Comparison between MONARC and different Risk Management Methods](/table-comparison-between-monarc-and-different-risk-management-methods)
+<div align="center">
+  <a href="/table-comparison-between-monarc-and-different-risk-management-methods">
+    <img src="/assets/images/comparison-of-rm/table_zoom.png" width="60%">
+  </a>
+</div>
 
 ## References
 
@@ -398,7 +402,7 @@ One of the major problems of the IT-Grundschutz is that there are latencies in t
 
 * [Information technology — Security techniques — Information security risk management](https://www.iso.org/standard/56742.html)
 
-** MAGARIT **
+** MAGERIT **
 
 * [Methodology for Information Systems Risk Analysis and Management Book](https://administracionelectronica.gob.es/pae_Home/dam/jcr:80b16a91-75b1-432d-ab23-844a12aab5fc/MAGERIT_v_3_book_1_method_PDF_NIPO_630-14-162-0.pdf)
 * [Methodology for Information Systems Risk Analysis and Management Book I – The Method](https://administracionelectronica.gob.es/pae_Home/dam/jcr:80b16a91-75b1-432d-ab23-844a12aab5fc/MAGERIT_v_3_book_1_method_PDF_NIPO_630-14-162-0.pdf)
