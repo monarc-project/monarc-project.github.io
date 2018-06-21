@@ -1,5 +1,7 @@
 Title: Community
 
+## The application
+
 MONARC is a free software project released under the
 [GNU Affero General Public License](https://www.gnu.org/licenses/agpl-3.0.html).
 
@@ -11,3 +13,9 @@ MONARC is a free software project released under the
 
 
 You can also have a look at our [roadmap](https://github.com/monarc-project/MonarcAppFO/wiki/Roadmap).
+
+## The data
+
+We are working on a solution which will let the users share their MONARC JSON
+objects much easier. The source code of the prototype is available here:
+[https://github.com/CASES-LU/MOSP](https://github.com/CASES-LU/MOSP)
