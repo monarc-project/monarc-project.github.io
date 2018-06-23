@@ -41,7 +41,7 @@ tr:nth-child(even) {
 |First version|2013|2009|2008|1997|1999|1995|1994|
 |Last version|v2 2017|2009|2013|v3 2014|Octave Allegro (2007) <br> OCTAVE-S (2005)|2010|2013|
 |Language|<li>French</li><li>English</li><li>German</li><li>Dutch</li> |International|International|<li>Spanish</li><li>English</li><li>Italian (partially)</li>|English|<li>French</li><li>English</li>|<li>German</li><li>English</li>|
-|Sponsor|SecurityMadeIn.lu (Ministry of the Economy of Luxembourg)|International|International|Ministerio de Administraciones Publicas SPAIN (Spanish Ministry for Public Administrations)|Carnegie Mellon |University (USA)|DCSSI France (Direction Centrale de la Sécurité des Systémes d'Information, Premier Ministre) |Federal Office for Information Security Germany (BSI)|
+|Sponsor|SecurityMadeIn.lu (Ministry of the Economy of Luxembourg)|International|International|Ministerio de Administraciones Publicas SPAIN (Spanish Ministry for Public Administrations)|Carnegie Mellon University (USA)|DCSSI France (Direction Centrale de la Sécurité des Systémes d'Information, Premier Ministre) |Federal Office for Information Security Germany (BSI)|
 |Sponsor type|Government|International |International |Government|University|Government|Government|
 |Method |Method|Guideline|Standard, guideline|Method|Method|Method|Method, Standard|
 |Price of the method|Free|Paying|Paying|Free|Free|Free|Free|
