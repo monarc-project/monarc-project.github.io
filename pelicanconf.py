@@ -24,7 +24,7 @@ THEME = 'themes/pelican-bootstrap3'
 BOOTSTRAP_THEME = 'cerulean'
 JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
 PLUGIN_PATHS = ['plugins']
-PLUGINS = ['i18n_subsites', 'sitemap']
+PLUGINS = ['i18n_subsites', 'sitemap', 'pelican-page-hierarchy']
 DEFAULT_PAGINATION = 10
 FEED_DOMAIN = SITEURL
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
@@ -100,6 +100,7 @@ SOCIAL = (('GitHub', 'https://github.com/monarc-project'),
 
 NAVBAR_ELEMENTS = ['menu-items']
 
+
 # Uncomment following line if you want document-relative URLs when developing
 # RELATIVE_URLS = True
 PATH_METADATA= '(?P<path_no_ext>.*)\..*'
@@ -108,5 +109,6 @@ ARTICLE_SAVE_AS = 'news/{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html'
 INDEX_SAVE_AS = 'news/index.html'
 PAGE_URL = '{slug}/'
 PAGE_SAVE_AS = os.path.join(PAGE_URL, 'index.html')
+
 # PAGE_SAVE_AS = '{path_no_ext}.html'
 # PAGE_URL = '{path_no_ext}.html'
