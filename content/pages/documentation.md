@@ -2,11 +2,11 @@ Title: Documentation
 
 ## User documentation
 
-* ### [Quick Start](/quick-start) [![PDF](/assets/images/pdf.png)](/assets/files/guides/quick-start.pdf)
+* ### [Quick Start](/quick-start) [<i class="fa fa-file-pdf-o" aria-hidden="true"></i>](/assets/files/guides/quick-start.pdf)
 
-* ### [User guide](/user-guide) [![PDF](/assets/images/pdf.png)](/assets/files/guides/user-guide.pdf)
+* ### [User guide](/user-guide) [<i class="fa fa-file-pdf-o" aria-hidden="true"></i>](/assets/files/guides/user-guide.pdf)
 
-* ### [Method guide](/method-guide) [![PDF](/assets/images/pdf.png)](/assets/files/guides/method-guide.pdf)
+* ### [Method guide](/method-guide) [<i class="fa fa-file-pdf-o" aria-hidden="true"></i>](/assets/files/guides/method-guide.pdf)
 
 
 MONARC can be installed in two different ways. It depends on your needs
@@ -22,6 +22,6 @@ need help deciding which version of MONARC suits your needs, please read
 
 ## Technical documentation
 
-* ### [Administrator guide](/administrator-guide) [![PDF](/assets/images/pdf.png)](/assets/files/guides/administrator-guide.pdf)
+* ### [Administrator guide](/administrator-guide) [<i class="fa fa-file-pdf-o" aria-hidden="true"></i>](/assets/files/guides/administrator-guide.pdf)
 
-* ### [Technical guide](/technical-guide) [![PDF](/assets/images/pdf.png)](/assets/files/guides/technical-guide.pdf)
+* ### [Technical guide](/technical-guide) [<i class="fa fa-file-pdf-o" aria-hidden="true"></i>](/assets/files/guides/technical-guide.pdf)
