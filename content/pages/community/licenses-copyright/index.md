@@ -19,3 +19,6 @@ are also provided under the same license as the MONARC project.
 - Copyright (C) 2016-2018 Jérôme Lombardi - [https://github.com/jerolomb](https://github.com/jerolomb)
 - Copyright (C) 2016-2018 SMILE gie securitymadein.lu
 - Copyright (C) 2017-2018 Cédric Bonhomme - [https://github.com/cedricbonhomme](https://github.com/cedricbonhomme)
+- Copyright (C) 2016-2017 Guillaume Lesniak
+- Copyright (C) 2016-2017 Thomas Metois
+- Copyright (C) 2016-2017 Jérôme De Almeida

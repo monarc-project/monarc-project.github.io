@@ -7,11 +7,6 @@ Title: Download
 The source code of MONARC is available on
 [GitHub](https://github.com/monarc-project).
 
-[![Latest Release](https://img.shields.io/github/release/monarc-project/MonarcAppFO.svg?style=flat-square)](https://github.com/monarc-project/MonarcAppFO/releases/latest)
-![License](https://img.shields.io/github/license/monarc-project/MonarcAppFO.svg?style=flat-square)
-[![Contributors](https://img.shields.io/github/contributors/monarc-project/MonarcAppFO.svg?style=flat-square)](https://github.com/monarc-project/MonarcAppFO/graphs/contributors)
-[![Stars](https://img.shields.io/github/stars/monarc-project/MonarcAppFO.svg?style=flat-square)](https://github.com/monarc-project/MonarcAppFO/stargazers)
-
 ### Virtual machine
 
 A virtual machine for VirtualBox is
@@ -66,21 +61,27 @@ The server is running when the window of the virtual appliance looks like this :
 ![monarc_cli](/assets/images/trainings/vm_launched.JPG "vm launched")
 
 
-#### Use MONARC
+### Vagrant
+
+Deploy MONARC with [Vagrant](https://github.com/monarc-project/MonarcAppFO/tree/master/vagrant).
+
+### Ansible
+
+Deploy the whole architecture with [Ansible](https://github.com/monarc-project/ansible-ubuntu).
+
+
+
+
+## Use MONARC
 
 Just open your browser and go to this address: http://10.0.0.101/
 
 Login / Password : admin@admin.test / admin
 
-##### Risk Analysis Demo (Only in French)
+
+### Risk Analysis Demo (Only in French)
 
 1. [Create a risk analysis in French](/user-guide/#creating-a-risk-analysis)
 2. Download the risk analysis file <a href="/assets/files/monarc-training/fr/myprint.json" download>(myprint.json)</a>
 3. [Import JSON file](/user-guide/#contextual-menu-of-asset)
 
-## SaaS offering
-
-We also provide a free [My.Monarc.lu](https://my.monarc.lu/) hosted SaaS
-offering.
-
-You can contact us via [this form](https://services.circl.lu/service?name=MONARC).

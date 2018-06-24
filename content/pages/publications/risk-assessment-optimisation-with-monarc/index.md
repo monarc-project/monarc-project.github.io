@@ -144,7 +144,7 @@ MONARC includes 5 levels of optimisations and simplifications:
 
 <div align="center">
   <img src="/assets/images/hack2018-paper/PrimaryAssetRiskExampleVert.png" width="90%">
-  <p><br/><strong>Fig. 2</strong> Aritificial Asset Example</p>
+  <p><br/><strong>Fig. 2</strong> Artificial Asset Example</p>
 </div>
 
 But before we can get into the details, we should highlight how the

@@ -88,6 +88,7 @@ LINKS = (('MONARC <i>Cloud</i>', 'https://my.monarc.lu/'),
          ('SECURITYMADEIN.LU', 'https://securitymadein.lu'),
          ('Cybersecurity Competence Center (C3)', 'https://c-3.lu'),
          ('Freshermeat page', 'https://open-source-security-software.net/project/MONARC'),
+         ('freshcode.club page', 'https://freshcode.club/projects/monarc'),
          ('Subscribe to the releases', 'https://open-source-security-software.net/project/MONARC/releases.atom'),
          ('<img src="https://img.shields.io/github/release/monarc-project/MonarcAppFO.svg?style=flat-square" />',
             'https://github.com/monarc-project/MonarcAppFO/releases/latest'),)
