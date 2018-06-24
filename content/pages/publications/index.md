@@ -24,8 +24,9 @@ tr:nth-child(even) {
 }
 </style>
 
+
 | Description | Date |
 |---|:---:|
-|[Risk Assessment Optimisation with MONARC](/risk-assessment-optimisation-with-monarc) [[PDF](/assets/files/publications/2018-HACK.LU-CASES.pdf)]| June 2018 |
-|[Comparison between MONARC and different Risk Management Methods](/comparison-between-monarc-and-different-risk-management-methods)| June 2018 |
-|[Table: Comparison between MONARC and different Risk Management Methods](/table-comparison-between-monarc-and-different-risk-management-methods)| June 2018 |
+|[Risk Assessment Optimisation with MONARC](/risk-assessment-optimisation-with-monarc) [[PDF](/assets/files/publications/2018-HACK.LU-CASES.pdf)]| June 2018 - [<i class="fa fa-history"></i>](https://github.com/monarc-project/website/commits/master/content/pages/publications/risk-assessment-optimisation-with-monarc/index.md)|
+|[Comparison between MONARC and different Risk Management Methods](/comparison-between-monarc-and-different-risk-management-methods)| June 2018 - [<i class="fa fa-history"></i>](https://github.com/monarc-project/website/commits/master/content/pages/publications/comparison-between-monarc-and-different-risk-management-methods/index.md)|
+|[Table: Comparison between MONARC and different Risk Management Methods](/table-comparison-between-monarc-and-different-risk-management-methods)| June 2018 - [<i class="fa fa-history"></i>](https://github.com/monarc-project/website/commits/master/content/pages/publications/Table:Comparison-between-monarc-and-different-risk-management-methods/index.md)|
