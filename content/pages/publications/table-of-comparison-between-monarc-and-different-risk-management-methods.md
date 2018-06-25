@@ -14,6 +14,18 @@ table {
     font-size: small;
 }
 
+tbody {
+    display:block;
+    max-height:630px;
+    overflow-y:scroll;
+}
+
+thead, tbody tr {
+    display:table;
+    width:100%;
+    table-layout:fixed;
+}
+
 td, th {
     border: 1px solid #555555;
     text-align: left;
