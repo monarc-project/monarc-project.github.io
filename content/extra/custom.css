@@ -9,7 +9,8 @@
 /* Title */
 .navbar-default .navbar-brand {
     background: url(/assets/images/logo-monarc.png) center / contain no-repeat;
-    text-indent: -9999px
+    text-indent: -9999px;
+    width: 110px;
 }
 
 .navbar-default .navbar-brand:hover,
