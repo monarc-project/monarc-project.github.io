@@ -388,7 +388,7 @@ One of the major problems of the IT-Grundschutz is that there are latencies in t
 ## ANNEX. Table: Comparison between MONARC and different Risk Management Methods
 
 <div align="center">
-  <a href="/table-comparison-between-monarc-and-different-risk-management-methods">
+  <a href="/publications/table-of-comparison-between-monarc-and-different-risk-management-methods">
     <img src="/assets/images/comparison-of-rm/table_zoom.png" width="60%">
   </a>
 </div>
