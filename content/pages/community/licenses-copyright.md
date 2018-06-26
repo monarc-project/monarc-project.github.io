@@ -5,7 +5,7 @@ Hidden: false
 ## License
 
 MONARC is a free software project released under the
-[GNU Affero General Public License](https://www.gnu.org/licenses/agpl-3.0.html).
+[GNU Affero General Public License version 3](https://www.gnu.org/licenses/agpl-3.0.html).
 
 ## Copyrights
 
