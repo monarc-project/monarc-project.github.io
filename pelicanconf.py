@@ -23,8 +23,8 @@ EXTRA_PATH_METADATA = {
                         'extra/CNAME': {'path': 'CNAME'},
                         'extra/custom.css': {'path': CUSTOM_CSS},
                     }
-SITELOGO = 'assets/images/monarc-logo.png'
-SITELOGO_SIZE = '20px'
+# SITELOGO = 'assets/images/monarc-logo.png'
+# SITELOGO_SIZE = '20px'
 FAVICON = 'assets/images/monarc-logo.png'
 THEME = 'themes/pelican-bootstrap3'
 BOOTSTRAP_THEME = 'cerulean'
