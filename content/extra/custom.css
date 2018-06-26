@@ -8,8 +8,10 @@
 }
 /* Title */
 .navbar-default .navbar-brand {
-    color: #F8F8F8;
+    background: url(/assets/images/logo-monarc.png) center / contain no-repeat;
+    text-indent: -9999px
 }
+
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
     color: #F8F8F8;
