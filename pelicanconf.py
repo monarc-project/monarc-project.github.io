@@ -6,6 +6,8 @@ import os
 AUTHOR = 'security made in Lëtzebuerg (SMILE) g.i.e.'
 SITENAME = 'MONARC'
 SITEURL = 'https://www.monarc.lu/'
+RELATIVE_URLS = True
+# SITEURL = 'http://127.0.0.1:8000/'
 PATH = 'content'
 # PAGE_PATHS = ['pages']
 # ARTICLE_PATHS = ['news']
@@ -15,8 +17,12 @@ TYPOGRIFY = True
 #PAGE_ORDER_BY = 'sortorder'
 STATIC_PATHS = ['assets', 'administrator-guide', 'technical-guide',
                 'quick-start', 'user-guide', 'method-guide',
-                'extra/CNAME']
-EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},}
+                'extra']
+CUSTOM_CSS = 'static/css/custom.css'
+EXTRA_PATH_METADATA = {
+                        'extra/CNAME': {'path': 'CNAME'},
+                        'extra/custom.css': {'path': CUSTOM_CSS},
+                    }
 SITELOGO = 'assets/images/monarc-logo.png'
 SITELOGO_SIZE = '20px'
 FAVICON = 'assets/images/monarc-logo.png'

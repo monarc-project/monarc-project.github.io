@@ -35,7 +35,7 @@ Did you write a patch that fixes a bug?
   solution. Include the relevant issue number if applicable.
 
 If the bug concerns a
-[security issue](/pages/community/vulnerability-disclosure).
+[security issue](/community/vulnerability-disclosure).
 
 ## New feature requests
 
