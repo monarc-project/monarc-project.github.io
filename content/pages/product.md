@@ -2,6 +2,18 @@ Title: Product
 
 [TOC]
 
+<style>
+th:not(:first-child) {
+  text-align: center;
+}
+
+td:not(:first-child)  {
+  text-align: center;
+  color: #ffd500;
+  text-shadow: 1px 0 grey, -1px 0 grey, 0 -1px grey, 0 1px grey;
+}
+</style>
+
 ## Features summary
 
 There are 2 different [MONARC](https://github.com/monarc-project/MonarcAppFO)
@@ -16,55 +28,57 @@ The table below summarises the functionality of both versions:
     <thead>
         <tr>
             <th>Features</th>
-            <th>MONARC software</th>
-            <th>MONARC Instance Management (back office)</th>
+            <th>MONARC FrontOffice</th>
+            <th>MONARC BackOffice</th>
         </tr>
     </thead>
     <tbody>
         <tr>
             <td>Creation, edition, management of risk analysis</td>
-            <td>&#9989;</td>
+            <td>&#10004;</td>
             <td></td>
         </tr>
         <tr>
             <td>Reports generation</td>
-            <td>&#9989;</td>
+            <td>&#10004;</td>
             <td></td>
         </tr>
         <tr>
             <td>Import and export of risk analysis</td>
-            <td>&#9989;</td>
+            <td>&#10004;</td>
             <td></td>
         </tr>
         <tr>
             <td>Fine management of permissions per projects</td>
-            <td>&#9989;</td>
+            <td>&#10004;</td>
             <td></td>
         </tr>
         <tr>
             <td>Management of users per projects</td>
-            <td>&#9989;</td>
+            <td>&#10004;</td>
             <td></td>
         </tr>
         <tr>
             <td>Database of risk models</td>
-            <td>&#9989;</td>
-            <td>&#9989;</td>
+            <td>&#10004;</td>
+            <td>&#10004;</td>
         </tr>
         <tr>
             <td>Management of risk models</td>
-            <td>&#9989;</td>
-            <td>&#9989; (accross multiple MONARC instances)</td>
+            <td>&#10004;</td>
+            <td>&#10004;<span style="color:#555555;text-shadow:none"> **</span></td>
         </tr>
         <tr>
             <td>Creation and removal of MONARC instances</td>
             <td></td>
-            <td>&#9989;</td>
+            <td>&#10004;</td>
         </tr>
     </tbody>
 </table>
 
-The MONARC Instance Management is appropriate for big organizations or state
+<span style="font-size:small">**<i> Accross multiple MONARC FrontOffice<i/></span>
+
+<br/>The MONARC Instance Management is appropriate for big organizations or state
 organizations. More derails about the architecture
 [here](/technical-guide#monarc-and-the-back-office).
 
@@ -130,4 +144,3 @@ thus share between instance. Or simply import the risk model from one
 instance in the MONARC Instance Management if multiple instances could
 benefit from that model, effectively removing the need to import and
 update that model on each instance.
-
