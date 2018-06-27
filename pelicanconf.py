@@ -17,7 +17,9 @@ TYPOGRIFY = True
 #PAGE_ORDER_BY = 'sortorder'
 STATIC_PATHS = ['assets', 'administrator-guide', 'technical-guide',
                 'quick-start', 'user-guide', 'method-guide',
-                'extra', 'table-of-comparison-between-monarc-and-different-risk-management-methods']
+                'extra',
+                'table-of-comparison-between-monarc-and-different-risk-management-methods',
+                'comparison-between-monarc-and-different-risk-management-methods']
 CUSTOM_CSS = 'static/css/custom.css'
 EXTRA_PATH_METADATA = {
                         'extra/CNAME': {'path': 'CNAME'},

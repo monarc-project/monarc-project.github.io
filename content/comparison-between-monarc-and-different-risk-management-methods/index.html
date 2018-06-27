@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
+<head>
+    <title>Comparison between <span class="caps">MONARC</span> and different Risk Management&nbsp;Methods - MONARC</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link href="../../assets/images/monarc-logo.png" rel="icon">
+
+<link rel="canonical" href="../../publications/comparison-between-monarc-and-different-risk-management-methods/">
+
+        <meta name="author" content="security made in Lëtzebuerg (SMILE) g.i.e." />
+        <meta name="description" content="Table of contents: 1. MONARC 1.1 Description 1.2 MONARC Vs ISO 27005:2011 1.3 MONARC Tool 2. ISO 31000 2.1 Description 2.2 ISO 31000 vs. MONARC 3. ISO 27005:2011 3.1 Description 3.2 ISO 27005 vs. MONARC 4. MAGERIT 4.1 Description 4 …" />
+
+    <meta property="og:site_name" content="MONARC" />
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="Comparison between MONARC and different Risk Management Methods"/>
+    <meta property="og:url" content="../../publications/comparison-between-monarc-and-different-risk-management-methods/"/>
+    <meta property="og:description" content="Table of contents: 1. MONARC 1.1 Description 1.2 MONARC Vs ISO 27005:2011 1.3 MONARC Tool 2. ISO 31000 2.1 Description 2.2 ISO 31000 vs. MONARC 3. ISO 27005:2011 3.1 Description 3.2 ISO 27005 vs. MONARC 4. MAGERIT 4.1 Description 4 …" />
+
+
+
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="../../theme/css/bootstrap.cerulean.min.css" type="text/css"/>
+    <link href="../../theme/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="../../theme/css/pygments/native.css" rel="stylesheet">
+        <link href="../../theme/css/typogrify.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../theme/css/style.css" type="text/css"/>
+        <link href="../../static/css/custom.css" rel="stylesheet">
+
+        <link href="../../feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
+              title="MONARC ATOM Feed"/>
+
+
+
+
+</head>
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="../../" class="navbar-brand">
+MONARC            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                    <li><a href="/news">News</a></li>
+                    <li><a href="/product">Product</a></li>
+                    <li><a href="/service">Service</a></li>
+                    <li><a href="/publications">Publications</a></li>
+                    <li><a href="/documentation">Documentation</a></li>
+                    <li><a href="/community">Community</a></li>
+                    <li><a href="/download">Download</a></li>
+                    <li><a href="/trainings">Trainings</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</div> <!-- /.navbar -->
+
+<!-- Banner -->
+<!-- End Banner -->
+
+<!-- Content Container -->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9">
+    <section id="content" class="body">
+        <h1 class="entry-title">Comparison between <span class="caps">MONARC</span> and different Risk Management&nbsp;Methods</h1>
+        
+        <div class="entry-content">
+            <div class="toc"><span class="toctitle">Table of contents:</span><ul>
+<li><a href="#1-monarc">1. <span class="caps">MONARC</span></a><ul>
+<li><a href="#11-description">1.1&nbsp;Description</a></li>
+<li><a href="#12-monarc-vs-iso-270052011">1.2 <span class="caps">MONARC</span> Vs <span class="caps">ISO</span>&nbsp;27005:2011</a></li>
+<li><a href="#13-monarc-tool">1.3 <span class="caps">MONARC</span>&nbsp;Tool</a></li>
+</ul>
+</li>
+<li><a href="#2-iso-31000">2. <span class="caps">ISO</span> 31000</a><ul>
+<li><a href="#21-description">2.1&nbsp;Description</a></li>
+<li><a href="#22-iso-31000-vs-monarc">2.2 <span class="caps">ISO</span> 31000 vs. <span class="caps">MONARC</span></a></li>
+</ul>
+</li>
+<li><a href="#3-iso-270052011">3. <span class="caps">ISO</span> 27005:2011</a><ul>
+<li><a href="#31-description">3.1&nbsp;Description</a></li>
+<li><a href="#32-iso-27005-vs-monarc">3.2 <span class="caps">ISO</span> 27005 vs. <span class="caps">MONARC</span></a></li>
+</ul>
+</li>
+<li><a href="#4-magerit">4. <span class="caps">MAGERIT</span></a><ul>
+<li><a href="#41-description">4.1&nbsp;Description</a></li>
+<li><a href="#42-magerit-vs-monarc">4.2 Magerit vs. <span class="caps">MONARC</span></a></li>
+</ul>
+</li>
+<li><a href="#5-octave">5. <span class="caps">OCTAVE</span></a><ul>
+<li><a href="#51-description">5.1&nbsp;Description</a></li>
+<li><a href="#52-octave-vs-monarc">5.2 <span class="caps">OCTAVE</span> vs. <span class="caps">MONARC</span></a></li>
+</ul>
+</li>
+<li><a href="#6-ebios">6. <span class="caps">EBIOS</span></a><ul>
+<li><a href="#61-description">6.1&nbsp;Description</a></li>
+<li><a href="#62-ebios-vs-monarc">6.2 <span class="caps">EBIOS</span> vs. <span class="caps">MONARC</span></a></li>
+</ul>
+</li>
+<li><a href="#7-it-grundschutz">7. <span class="caps">IT</span>-Grundschutz</a><ul>
+<li><a href="#71-description">7.1&nbsp;Description</a></li>
+<li><a href="#72-it-grundschutz-vs-monarc">7.2 <span class="caps">IT</span>-Grundschutz vs. <span class="caps">MONARC</span></a></li>
+</ul>
+</li>
+<li><a href="#annex-table-comparison-between-monarc-and-different-risk-management-methods"><span class="caps">ANNEX</span>. Table: Comparison between <span class="caps">MONARC</span> and different Risk Management&nbsp;Methods</a></li>
+<li><a href="#references">References</a></li>
+</ul>
+</div>
+<h2 id="1-monarc">1. <span class="caps">MONARC</span></h2>
+<h3 id="11-description">1.1&nbsp;Description</h3>
+<p><span class="caps">MONARC</span> (in French: “<em>Méthode Optimisée d’aNAlyse des Risques <span class="caps">CASES</span></em>”) simplifies risk management by offering a risk management solution as well as information security governance, based on industry standards. It allows analysis from existing and customisable models to be made in a short amount of time, while remaining compliant with the <span class="caps">ISO</span>/<span class="caps">IEC</span> 27005:2011 international&nbsp;standard.</p>
+<p><span class="caps">MONARC</span> is based on a library of risk models offering objects made of risk scenarios by assets or groups of assets. This approach simplify the management of the most common risks and increase objectivity as well as efficiency. As <span class="caps">MONARC</span> is completely repeatable, these results can be intensified and adjusted to the maturity of each organisation by increasing the depth of risk&nbsp;scenarios.</p>
+<p>The <span class="caps">MONARC</span> risk analysis method is composed of four&nbsp;phases:</p>
+<div align="center">
+  <img src="/assets/images/comparison-of-rm/monarc_1.png" width="60%">
+</div>
+
+<p><strong> Context&nbsp;Establishment </strong></p>
+<p>The first step is to take stock of the context, challenges and priorities of the company or organization that wishes to analyse its risks. This particularly serves to identify key activities and critical processes of the business in order to guide the risk analysis towards the most important elements. To do this, a kick-off meeting is organized with the members of the management and key persons. The goal is to know what makes the company «live» and what could destroy it, to identify the key processes, the internal and external threats as well as organisational, technical and human&nbsp;vulnerabilities.</p>
+<p><strong> Context&nbsp;Modelling </strong></p>
+<p>This phase includes the modelling of objects and trees. The assets were identified in the previous phase. They must now be detailed and formalised in a diagram that displays their&nbsp;interdependencies.</p>
+<p>Impacts are defined at the level of the primary assets (processes or information), following the information gathered in the context establishment phase. The secondary assets inherit the impact of the primary asset to which they are attached (object tree).
+The impact level of the secondary assets can be modified&nbsp;manually.</p>
+<p><strong> Evaluation and treatment of&nbsp;risks </strong></p>
+<p>The assessment consists of quantifying the threats, vulnerabilities and impacts in order to calculate the&nbsp;risks.</p>
+<p>To do this, it is necessary to have reliable information about the exact likelihood of the threats, the ease of exploitation of vulnerabilities and potential impacts; hence the need to rely on metrics that have been validated by&nbsp;experts.</p>
+<p>When the risk assessment identifies a risk that is higher than the acceptable level (risk acceptance grid), risk treatment measures should be implemented in order to reduce the risk down to an acceptable&nbsp;level.</p>
+<p><strong> Implementation and&nbsp;monitoring </strong></p>
+<p>When the first treatment of risks has been carried out, an ongoing management phase with security monitoring and recurring control of security measures must be entered, in order to improve it in a sustainable&nbsp;way.</p>
+<p>This fourth phase also allows to continuously optimising the security by increasing the detail of objects used and by expanding the scope of the risk&nbsp;analysis.</p>
+<h3 id="12-monarc-vs-iso-270052011">1.2 <span class="caps">MONARC</span> Vs <span class="caps">ISO</span>&nbsp;27005:2011</h3>
+<p>The four phases of <span class="caps">MONARC</span> fully respect the <span class="caps">ISO</span>/<span class="caps">IEC</span> 27005:2011 international standard, which contains the guidelines for risk management as related to information security. A comparison with <span class="caps">MONARC</span> is displayed&nbsp;below:</p>
+<div align="center">
+  <img src="/assets/images/comparison-of-rm/monarc_2.png" width="60%">
+</div>
+
+<h3 id="13-monarc-tool">1.3 <span class="caps">MONARC</span>&nbsp;Tool</h3>
+<p>The tool associated with <span class="caps">MONARC</span> allows access to the knowledge bases, as well as modifying and sharing them. <span class="caps">MONARC</span> provides export and import features, so that users can easily exchange risk&nbsp;models.</p>
+<p>The tool also allows a very great modelling feature with &#8220;Drag <span class="amp">&amp;</span> Drop&#8221; function. The proposed hierarchical structure is very simple to use. This is a great advantage as it simplifies the implementation of the changes in the model at each&nbsp;iteration.</p>
+<h2 id="2-iso-31000">2. <span class="caps">ISO</span>&nbsp;31000</h2>
+<h3 id="21-description">2.1&nbsp;Description</h3>
+<p><span class="caps">ISO</span> 31000: 2009 (“<em>Risk management – Principles and guidelines</em>”) is intended to harmonize risk management processes with existing and future standards. It provides guidelines on how to organize and manage effectively all kinds of risks in all kinds of&nbsp;organizations.</p>
+<p><span class="caps">ISO</span> 31000:2009 introduce a new definition of risk, abandons the technical vision (&#8220;<em>risk is the combination of event probability and its consequence</em>&#8220;) to link risks with the objectives of the organization: &#8220;<em>Risk is the effect of uncertainty on objectives</em>&#8220;. This definition is more in line with the management point of&nbsp;view.</p>
+<p><strong> Structure of the&nbsp;standard </strong></p>
+<p>The standard is structured in three&nbsp;parts:</p>
+<ol>
+<li>
+<p>The principles answer the question of why risk management is done. The process of integrating these principles takes place at two levels: the decision-making level and the operational&nbsp;level.</p>
+</li>
+<li>
+<p>The organizational framework explains how to integrate risk management into the strategy of the organization (strategic management) via the iterative process of the Deming wheel&nbsp;(Plan-Do-Check-Act).</p>
+</li>
+<li>
+<p>The management process specifies how to integrate risk management at the operational&nbsp;level</p>
+</li>
+</ol>
+<div align="center">
+  <img src="/assets/images/comparison-of-rm/iso_31000.png" width="70%">
+</div>
+
+<p><strong> What is not <span class="caps">ISO</span>&nbsp;31000? </strong></p>
+<p>A certificate standard that provides detailed instructions: <span class="caps">ISO</span> 31000 only provides the general principles of risk management and highlights the framework and processes that should be implemented. Only 24 pages to describe the&nbsp;norm.</p>
+<h3 id="22-iso-31000-vs-monarc">2.2 <span class="caps">ISO</span> 31000 vs. <span class="caps">MONARC</span></h3>
+<p><span class="caps">ISO</span> 31000 describes how to approach risk management strategically and understandable; and does not offer any specific advice about information security risk assessment nor risk treatment. From a technical point of view, <span class="caps">ISO</span> 31000 lists various risk management processes without a complete&nbsp;description.</p>
+<p><span class="caps">MONARC</span> gives guidelines for information security risk assessment and treatment, it gives the “know-how” to identify assets, threats and vulnerabilities, to assess impact, consequences and probability in order to calculate&nbsp;risk.</p>
+<p><span class="caps">MONARC</span> is compliant with <span class="caps">ISO</span>&nbsp;31000.</p>
+<div align="center">
+  <img src="/assets/images/comparison-of-rm/iso_31000_1.png" width="40%">
+</div>
+
+<h2 id="3-iso-270052011">3. <span class="caps">ISO</span>&nbsp;27005:2011</h2>
+<h3 id="31-description">3.1&nbsp;Description</h3>
+<p><span class="caps">ISO</span>/<span class="caps">IEC</span> 27005:2011 (“<em>Information technology — Security techniques — Information security risk management (second edition)</em>”).</p>
+<p><span class="caps">ISO</span> 27005 provides an iterative framework compliant with <span class="caps">ISO</span> 27001 and set of processes for effective risk management. Half of the standard are appendices that provide examples and very useful information to help the user implement the&nbsp;method.</p>
+<p><span class="caps">ISO</span> 27005 is only dedicated to risk management in information security domain. It proposes either qualitative or quantitative risk management and does not advise any methods or&nbsp;tools.</p>
+<p><span class="caps">ISO</span> 27005 refers to the <span class="caps">ISO</span> 31000 risk management process, but provides much more detail and implementation&nbsp;guidance.</p>
+<p>As shown in the figure below, there are some differences, especially &#8220;decision points&#8221;, which are added to possibly refine the risk assessment and the risk treatment stages.
+There is also an additional risk acceptance process. It ensures that residual risks are explicitly accepted by the management of the organization. This is particularly important in a situation where the implementation of controls is omitted or&nbsp;postponed.</p>
+<div align="center">
+  <img src="/assets/images/comparison-of-rm/iso_27005_1.png" width="50%">
+</div>
+
+<h3 id="32-iso-27005-vs-monarc">3.2 <span class="caps">ISO</span> 27005 vs. <span class="caps">MONARC</span></h3>
+<p><span class="caps">MONARC</span> is fully compliant with <span class="caps">ISO</span>&nbsp;27005.</p>
+<p><span class="caps">ISO</span> 27005 is dedicated to information risks. <span class="caps">MONARC</span> can also manage operational risks for which, the risk treatment is done directly on reputation, operation, legal, financial criterias. The impact to the person can also be considered (in particular for the <span class="caps">GDPR</span>).</p>
+<p><span class="caps">ISO</span> 27005 gives the choice to use a qualitative or quantitative method, <span class="caps">MONARC</span> is a purely qualitative&nbsp;method.</p>
+<p>The free software provided with <span class="caps">MONARC</span> allows to extend the risk management up to the monitoring of the implementation of the security&nbsp;measures.</p>
+<div align="center">
+  <img src="/assets/images/comparison-of-rm/iso_27005_2.png" width="40%">
+</div>
+
+<h2 id="4-magerit">4. <span class="caps">MAGERIT</span></h2>
+<h3 id="41-description">4.1&nbsp;Description</h3>
+<p><span class="caps">MAGERIT</span> (in Spanish: “<em>Metodología de Análisis y Gestión de Riesgos de los Sistemas de Información</em>”) is a method for risk analysis and management for information systems, developed by the Spanish ministry of public&nbsp;administrations.</p>
+<p>This method provides a management framework and a structured approach to risk management in accordance with <span class="caps">ISO</span>&nbsp;27005.</p>
+<p>The method provides valuable knowledge databases based on assets, threats and security measures, as well as different techniques to conduct qualitative or quantitative risk&nbsp;analyzes.</p>
+<p>The analysis approach is structured into three main parts: planning, risk analysis and risk&nbsp;management.</p>
+<p>The distinctive characteristic of the method lies in the modelling of assets which takes into account the dependencies between assets. Dependency values are used to calculate asset degradation values. The impact criteria used for this inheritance link are confidentiality, integrity, availability, authenticity and accountability.
+When calculating the potential impact, 3 values are&nbsp;considered:</p>
+<ul>
+<li>the accumulated impact (depending on the&nbsp;dependencies)</li>
+<li>the deflected impact (intrinsic&nbsp;value)</li>
+<li>the aggregated impact (aggregation of impact&nbsp;values)</li>
+</ul>
+<p>These three types of impacts make it possible to calculate the three associated risks (minimum, median, max&nbsp;&#8230;)</p>
+<p>The analysis approach is as&nbsp;follows:</p>
+<p><strong> Identification of&nbsp;assets </strong></p>
+<ul>
+<li>Information and services are upper&nbsp;assets.</li>
+<li>Other assets are lower assets (types of assets are given by the method and structured into&nbsp;layers).</li>
+</ul>
+<p><strong>  Dependency&nbsp;building </strong></p>
+<p>Assets are organized into a hierarchical tree structure. An upper asset depends on all lower&nbsp;assets.</p>
+<p><strong>  Asset&nbsp;valuation </strong></p>
+<p>Lower assets in the dependencies diagram are said accumulating the value of the assets supported by them. The value may be its own or may be&nbsp;accumulated.</p>
+<p><strong>  Identification and valuation of&nbsp;threats </strong></p>
+<p>Magerit gives a list of typical threats according to a relationship between the types of&nbsp;asset.</p>
+<p><strong> Determination of&nbsp;impact </strong></p>
+<p>Its own plus the accumulated value of the assets that depend on&nbsp;it.</p>
+<p><strong>  Determination of the&nbsp;risk </strong></p>
+<p>Being aware of the threat’s impact to the assets, the risk can be derived directly simply by taking into account the frequency of&nbsp;occurrence.</p>
+<p><strong>&nbsp;Safeguards </strong></p>
+<p>Reducing the frequency of threats and/or impact limitations. Calculation of the residual&nbsp;risk.</p>
+<div align="center">
+  <img src="/assets/images/comparison-of-rm/magerit_1.png" width="50%">
+</div>
+
+<h3 id="42-magerit-vs-monarc">4.2 Magerit vs. <span class="caps">MONARC</span></h3>
+<p>Magerit gives the choice to use a qualitative or quantitative method, <span class="caps">MONARC</span> is only a qualitative&nbsp;method.</p>
+<p>Magerit uses 5 dimensions for impact criteria: confidentiality, integrity, availability, authenticity and traceability. <span class="caps">MONARC</span> only uses 3 dimensions, but provides the direct consequences on the <span class="caps">ROLFP</span> criteria, (Reputation, Operation, Legal, Financial, to the&nbsp;Person)</p>
+<p><span class="caps">ISO</span> 27005 is dedicated to information risks. <span class="caps">MONARC</span> can also manage operational&nbsp;risks.</p>
+<p>The hierarchical model of the assets for the two methods is very&nbsp;similar:</p>
+<ul>
+<li>With Magerit the inherited values of the three types of impacts are set up in the links of&nbsp;dependence.</li>
+<li>With <span class="caps">MONARC</span>, dependency inheritance is always 100% by default, but it is possible to redefine the impact at each level of the&nbsp;hierarchy.</li>
+</ul>
+<p>There is another big difference between Magerit and <span class="caps">MONARC</span> in order to calculate the&nbsp;risk:</p>
+<ul>
+<li>Version v1.0 of Magerit introduced the notion of vulnerability. In v3.0, this notion is replaced by the degradation (amount of damage to the [asset value]) that is a threat&nbsp;parameter.</li>
+<li><span class="caps">MONARC</span> uses the concept of asset vulnerability that is related to the security measures in place and&nbsp;threats.</li>
+</ul>
+<p>Depending on the situation, it is easier to check the security measure in place than evaluated the damage to an&nbsp;asset.</p>
+<p>The two methods have a tool associated. The tool for <span class="caps">MONARC</span> is&nbsp;free.</p>
+<h2 id="5-octave">5. <span class="caps">OCTAVE</span></h2>
+<h3 id="51-description">5.1&nbsp;Description</h3>
+<p><span class="caps">OCTAVE</span>® (“<em>Operationally Critical Threat, Asset, and Vulnerability Evaluation</em>”) is a risk-assessment&nbsp;method.</p>
+<p>There are 3 versions of the <span class="caps">OCTAVE</span> method that address organizations of different sizes. The latest up-to-date version based on the first two is called <span class="caps">OCTAVE</span>&nbsp;Allegro.</p>
+<p>The method consists in a series of workshops conducted and facilitated by an interdisciplinary analysis team drawn from business units throughout the&nbsp;organization.</p>
+<p>Structure of the method: There are four distinct areas of activity that are carried out through eight steps in&nbsp;workshop-style.</p>
+<p>For each step, the method proposes predefined questionnaires and worksheets in order to collect information in a structured&nbsp;way.</p>
+<div align="center">
+  <img src="/assets/images/comparison-of-rm/octave_1.png" width="60%">
+</div>
+
+<p><strong> Establish risk measurement&nbsp;criteria </strong></p>
+<ul>
+<li>Definition of a qualitative set of measures (risk measurement&nbsp;criteria).</li>
+<li>Prioritization of the impact areas from most important to least&nbsp;important.</li>
+</ul>
+<p><strong> Develop an information asset&nbsp;profile </strong></p>
+<ul>
+<li>Identification of a collection of information&nbsp;assets.</li>
+<li>Evaluation of impact, if information is disclosed, modified, destroyed&nbsp;…</li>
+<li>Collection of the necessary information in order to begin the structured risk assessment process (scope, owner, impact criteria, security&nbsp;requirements).</li>
+</ul>
+<p><strong> Identify information asset&nbsp;containers </strong></p>
+<ul>
+<li>Identification of asset containers (supporting asset: hardware, software, people …) either inside or outside of the&nbsp;organization.</li>
+</ul>
+<p><strong> Identify areas of&nbsp;concern </strong></p>
+<ul>
+<li>Identification of areas of concern each of the containers that have been&nbsp;listed.</li>
+<li>Documentation of each area of concern that has been&nbsp;identified.</li>
+<li>Creation of threat&nbsp;scenarios.</li>
+</ul>
+<p><strong> Identify threat&nbsp;scenarios </strong></p>
+<ul>
+<li>
+<p>Identification of additional threat&nbsp;scenarios:</p>
+</li>
+<li>
+<p>A tree structure is used to visually represent a range of threat&nbsp;scenarios.</p>
+</li>
+<li>Threat scenarios questionnaires are&nbsp;reviewed.</li>
+</ul>
+<p><strong> Identify&nbsp;risks </strong></p>
+<ul>
+<li>Determine how threat scenarios that have been recorded on each information asset risk worksheet could affect your&nbsp;organization.</li>
+</ul>
+<p><strong> Analyse&nbsp;risks </strong></p>
+<ul>
+<li>According to risk measurement criteria: Evaluation of the consequences relative to each of the impact&nbsp;areas.</li>
+<li>Calculation of a score for each&nbsp;risk.</li>
+</ul>
+<p><strong> Select Mitigation&nbsp;Approach </strong></p>
+<ul>
+<li>Mitigation of the risk (accept, mitigate or&nbsp;defer).</li>
+<li>Categorization of risks (risk&nbsp;matrix).</li>
+<li>Assignation of a mitigation approach to each of your&nbsp;risks.</li>
+</ul>
+<h3 id="52-octave-vs-monarc">5.2 <span class="caps">OCTAVE</span> vs. <span class="caps">MONARC</span></h3>
+<p><span class="caps">OCTAVE</span> does not require the use of any tool for a first iteration of risk analysis. <span class="caps">MONARC</span> method is closely attached to the&nbsp;tool.</p>
+<p>The identification of threats and threat scenarios is highly dependent on the skills of those involved in <span class="caps">OCTAVE</span>. <span class="caps">MONARC</span> has knowledge databases that provide default relationships between assets and&nbsp;threats.
+ </p>
+<h2 id="6-ebios">6. <span class="caps">EBIOS</span></h2>
+<h3 id="61-description">6.1&nbsp;Description</h3>
+<p><span class="caps">EBIOS</span> (in French: “<em>Expression des Besoins et Identification des Objectifs de Sécurité</em>”) is a method of risks management and risks assessment of the French&nbsp;government.</p>
+<p>The <span class="caps">EBIOS</span> method complies with the requirements of the main information security standards: <span class="caps">ISO</span> 31000 and <span class="caps">ISO</span> 27005, allows implementing <span class="caps">ISO</span> 27001, and exploiting controls of <span class="caps">ISO</span>&nbsp;27002.</p>
+<p>The method is rigorous and exhaustive as the tool that guides the user step by step, without the possibility of bypassing any&nbsp;step.</p>
+<p>Risk models are based on the relationship between primary and asset assets. The tool provides comprehensive basic knowledge on media assets, threats,&nbsp;vulnerabilities&#8230;</p>
+<p>The method follows the below&nbsp;steps:</p>
+<div align="center">
+  <img src="/assets/images/comparison-of-rm/ebios_1.png" width="50%">
+</div>
+
+<p><strong> Context&nbsp;study </strong></p>
+<ul>
+<li>Definition of the context and risk management framework, metrics and scope of&nbsp;study.</li>
+<li>Identifying essential assets and mapping the supporting assets on which they are&nbsp;based.</li>
+</ul>
+<p><strong> Study of feared&nbsp;events </strong></p>
+<ul>
+<li>Identification of security requirements in terms of availability, integrity,&nbsp;confidentiality.</li>
+<li>Identification of impacts: Reputation, operation, legal, financial&nbsp;&#8230;</li>
+</ul>
+<p><strong> Threat scenario&nbsp;study </strong></p>
+<ul>
+<li>Identification and assessment of risk&nbsp;scenarios.</li>
+<li>Study of threats and sources of threats and exploitable&nbsp;vulnerabilities.</li>
+</ul>
+<p><strong> Risk&nbsp;study </strong></p>
+<ul>
+<li>Matching risks and feared events to threat&nbsp;scenarios.</li>
+<li>Risk&nbsp;assessment.</li>
+<li>Identification of the security objective’s to be met in order to address the&nbsp;risks.</li>
+</ul>
+<p><strong> Study of security&nbsp;measures </strong></p>
+<ul>
+<li>Treatment of&nbsp;risks.</li>
+<li>Validation of risk treatment and residual&nbsp;risks.</li>
+<li>Planning for implementing security&nbsp;measures.</li>
+</ul>
+<p>The tool offers many deliverable solutions, according to the objectives of the&nbsp;users.</p>
+<h3 id="62-ebios-vs-monarc">6.2 <span class="caps">EBIOS</span> vs. <span class="caps">MONARC</span></h3>
+<p>The two methods are rather opposite, one proposes a structured and exhaustive approach (sometimes long and complicated), the other proposes a faster approach, based on small iterations that allow rapid evolutions. Software takeover time is not comparable at&nbsp;all.</p>
+<p>Both tools offer an assisted approach and provide comprehensive knowledge databases. <span class="caps">MONARC</span> provides its own knowledge bases, but also those of <span class="caps">EBIOS</span> 2004 where the threats and vulnerabilities are&nbsp;distinct.</p>
+<p>In <span class="caps">EBIOS</span>, risk assessment is based on the likelihood of threat scenarios. In <span class="caps">MONARC</span>, risk assessment is rather based on vulnerabilities of assets, which are easier to evaluate (measures in place or a repository of good&nbsp;practices).</p>
+<p>In <span class="caps">EBIOS</span>, it is necessary to define security requirements, which is very difficult in low-maturity organizations. <span class="caps">MONARC</span> defines a security baseline to be reached with its default risk&nbsp;model.</p>
+<h2 id="7-it-grundschutz">7. <span class="caps">IT</span>-Grundschutz</h2>
+<h3 id="71-description">7.1&nbsp;Description</h3>
+<p><span class="caps">IT</span>-Grundschutz is part of a series of standards, relating to information security and published by the German Federal Office for Information Security (<span class="caps">BSI</span>).</p>
+<p><span class="caps">IT</span>-Grundschutz is more a method of risk management than risk assessment. For a standard context, it is not necessary to carry out a risk analysis, as this has already been&nbsp;done.</p>
+<div align="center">
+  <img src="/assets/images/comparison-of-rm/it-Grundschutz_1.png" width="50%">
+</div>
+
+<p>The methodology consists of several standards that describe the management framework, the implementation of the <span class="caps">ISMS</span>, the risk management and risk assessment method, but above all a catalog of more than 4000 pages containing knowledge bases on assets, threats, vulnerabilities and especially thousands of good practices concerning configurations of all types (Hardware,&nbsp;software…).</p>
+<div align="center">
+  <img src="/assets/images/comparison-of-rm/it-Grundschutz_2.png" width="60%">
+</div>
+
+<p>The objective of the risk assessment is to provide a qualitative method in order to identifying, analysing and evaluating security incidents that may adversely affect the business. The standards describe a risk assessment at two levels: one is designed to achieve a &#8220;standard&#8221; level of security, and a second &#8220;complementary risk analysis&#8221; can be undertaken by organizations that want an approach that is appropriate to their&nbsp;needs.</p>
+<div align="center">
+  <img src="/assets/images/comparison-of-rm/it-Grundschutz_3.png" width="60%">
+</div>
+
+<p>For companies implementing a &#8220;standard&#8221; Information Security Management System based on <span class="caps">IT</span>-Grundschutz, the risk assessment is done by using the <span class="caps">IT</span>-Grundschutz guide books. These contain repositories of common threat scenarios and standard security countermeasures applicable to most <span class="caps">IT</span> environments and grouped by modules corresponding to various business environments and information system&nbsp;components.</p>
+<p>In order to achieve a higher level of information security, a &#8220;supplementary risk analysis based on <span class="caps">IT</span>-Grundschutz&#8221; can also be performed by taking the following&nbsp;steps:</p>
+<p><strong> Prepare an overview of&nbsp;threats </strong></p>
+<p>A list of relevant threats is created for each asset that need to be analysed by using the <span class="caps">IT</span>-Grundschutz&nbsp;catalog.</p>
+<p><strong> Determine additional&nbsp;threats </strong></p>
+<p>Any threats specific to the application scenario are identified via a brainstorming&nbsp;session.</p>
+<p><strong> Assess the&nbsp;threats </strong></p>
+<p>The threat summary is systematically analysed to determine if the implemented and/or planned security measures provide adequate protection for each target object and threat. Thus, all relevant security mechanisms are checked for completeness, strength and&nbsp;reliability.</p>
+<p><strong> Select safeguards for handling&nbsp;risks </strong></p>
+<p>Decisions are made at the managerial level on the way risks not adequately mitigated are to be handled. Options include: reducing risk via safeguards, avoiding risk, transferring risk and accepting&nbsp;risk.</p>
+<p><strong> Consolidate&nbsp;results </strong></p>
+<p>The new security policy and mechanisms as a whole is verified, checked for consistency, user friendliness and adequacy to the target&nbsp;environment.</p>
+<h3 id="72-it-grundschutz-vs-monarc">7.2 <span class="caps">IT</span>-Grundschutz vs. <span class="caps">MONARC</span></h3>
+<p>One of the big differences of the <span class="caps">IT</span>-Grundschutz method compared to other methods is the bottom-up approach. Indeed, security is based on a predefined risk analysis of each element that makes up an information system, not a business asset-based approach.
+The tool (<span class="caps">GS</span>-tool) allows to optimize the use of the method by selecting the pages of the catalog to be implemented in order to obtain an adequate level of protection.
+One of the major problems of the <span class="caps">IT</span>-Grundschutz is that there are latencies in the English translation of the catalogs. Better to be German-speaking, to have up-to-date knowledge&nbsp;databases.</p>
+<h2 id="annex-table-comparison-between-monarc-and-different-risk-management-methods"><span class="caps">ANNEX</span>. Table: Comparison between <span class="caps">MONARC</span> and different Risk Management&nbsp;Methods</h2>
+<div align="center">
+  <a href="/publications/table-of-comparison-between-monarc-and-different-risk-management-methods">
+    <img src="/assets/images/comparison-of-rm/table_zoom.png" width="60%">
+  </a>
+</div>
+
+<h2 id="references">References</h2>
+<p><strong> <span class="caps">ISO</span>&nbsp;31000:2009 </strong></p>
+<ul>
+<li><a href="https://www.iso.org/standard/43170.html">Risk Management – Principles and&nbsp;Guidelines</a></li>
+</ul>
+<p><strong> <span class="caps">ISO</span>&nbsp;27005:2011 </strong></p>
+<ul>
+<li><a href="https://www.iso.org/standard/56742.html">Information technology — Security techniques — Information security risk&nbsp;management</a></li>
+</ul>
+<p><strong> <span class="caps">MAGERIT</span> </strong></p>
+<ul>
+<li><a href="https://administracionelectronica.gob.es/pae_Home/dam/jcr:80b16a91-75b1-432d-ab23-844a12aab5fc/MAGERIT_v_3_book_1_method_PDF_NIPO_630-14-162-0.pdf">Methodology for Information Systems Risk Analysis and Management&nbsp;Book</a></li>
+<li><a href="https://administracionelectronica.gob.es/pae_Home/dam/jcr:80b16a91-75b1-432d-ab23-844a12aab5fc/MAGERIT_v_3_book_1_method_PDF_NIPO_630-14-162-0.pdf">Methodology for Information Systems Risk Analysis and Management Book I – The&nbsp;Method</a></li>
+<li><a href="https://administracionelectronica.gob.es/pae_Home/dam/jcr:9c699ff6-63c4-43cf-8315-baffbf51197f/BIBLIOTECA_PUBLICACIONES_MAGERIT_VOL_II_INGLES.pdf">Methodology for Information Systems Risk Analysis and Management <span class="caps">II</span> - Catalogue of&nbsp;Elements</a></li>
+<li><a href="https://administracionelectronica.gob.es/pae_Home/dam/jcr:eea9fd1f-ced2-40e6-870d-a1ba483dece7/BIBLIOTECA_PUBLICACIONES_MAGERIT_VOL_III_INGLES.pdf">Methodology for Information Systems Risk Analysis and Management <span class="caps">III</span> –&nbsp;Techniques</a></li>
+</ul>
+<p><strong> <span class="caps">OCTAVE</span> </strong></p>
+<ul>
+<li><a href="https://resources.sei.cmu.edu/asset_files/TechnicalReport/2007_005_001_14885.pdf">Introducing <span class="caps">OCTAVE</span> Allegro: Improving the Information Security Risk Assessment&nbsp;Process</a></li>
+<li><a href="http://www.dtic.mil/get-tr-doc/pdf?AD=ADA634139">Method Implementation Guide Version 2.0 Volume 2: Preliminary&nbsp;Activities</a></li>
+<li><a href="ftp://ftp.sei.cmu.edu/pub/documents/04.reports/pdf/04hb003-01-introduction-to-octave-s.pdf">Implementation Guide, Version 1.0 Volume&nbsp;1</a></li>
+<li><a href="ftp://ftp.sei.cmu.edu/pub/documents/04.reports/pdf/04hb003-02-preparation-guidance.pdf">Implementation Guide, Version 1.0 Volume&nbsp;2</a></li>
+<li><a href="ftp://ftp.sei.cmu.edu/pub/documents/04.reports/pdf/04hb003-03-method-guidelines.pdf">Implementation Guide, Version 1.0 Volume&nbsp;3</a></li>
+<li><a href="ftp://ftp.sei.cmu.edu/pub/documents/04.reports/pdf/04hb003-04-organizational-worksheets.pdf">Implementation Guide, Version 1.0  Volume&nbsp;4</a></li>
+<li><a href="ftp://ftp.sei.cmu.edu/pub/documents/04.reports/pdf/04hb003-09-strategy-and-plan-worksheets.pdf">Implementation Guide, Version 1.0 Volume&nbsp;9</a></li>
+</ul>
+<p><strong> <span class="caps">EBIOS</span>&nbsp;2010 </strong></p>
+<ul>
+<li><a href="https://www.ssi.gouv.fr/uploads/2011/10/EBIOS-1-GuideMethodologique-2010-01-25.pdf">La&nbsp;méthodologie</a></li>
+<li><a href="https://www.ssi.gouv.fr/uploads/2011/10/EBIOS-2-BasesDeConnaissances-2010-01-25.pdf">Les bases de&nbsp;connaissances</a></li>
+</ul>
+<p><strong> <span class="caps">IT</span>-Grundschutz </strong></p>
+<ul>
+<li><a href="https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Publications/BSIStandards/standard_100-2_e_pdf.pdf?__blob=publicationFile">Information Security Management Systems (<span class="caps">ISMS</span>)</a></li>
+<li><a href="https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Publications/BSIStandards/standard_100-1_e_pdf.pdf?__blob=publicationFile&amp;v=1"><span class="caps">IT</span>-Grundschutz&nbsp;Methodology</a></li>
+<li><a href="https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Publications/BSIStandards/standard_100-3_e_pdf.pdf?__blob=publicationFile">Risk analysis based on <span class="caps">IT</span>-Grundschutz</a></li>
+<li><a href="https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Grundschutz/download/threats_catalogue.pdf?__blob=publicationFile&amp;v=2"><span class="caps">IT</span>-Grundschutz-Catalogues</a></li>
+</ul>
+<p><strong> <span class="caps">ENISA</span> </strong></p>
+<ul>
+<li><a href="https://www.enisa.europa.eu/publications/information-packages-for-small-and-medium-sized-enterprises-smes/at_download/fullReport">Inventory of risk assessment and risk management&nbsp;methods</a></li>
+<li><a href="https://www.enisa.europa.eu/publications/archive/reference-source-for-threats-vulnerabilities-impacts-and-controls-in-it-risk-assessment-and-risk-management/at_download/fullReport">Reference source for threats, vulnerabilities, impacts and controls in <span class="caps">IT</span> risk assessment and risk&nbsp;management</a></li>
+<li><a href="https://www.enisa.europa.eu/topics/threat-risk-management/risk-management/current-risk/risk-management-inventory/rm-ra-methods"><span class="caps">ENISA</span>&nbsp;Website</a></li>
+</ul>
+        </div>
+    </section>
+        </div>
+        <div class="col-sm-3" id="sidebar">
+            <aside>
+<!-- Sidebar -->
+<section class="well well-sm">
+  <ul class="list-group list-group-flush">
+
+<!-- Sidebar/Social -->
+<li class="list-group-item">
+  <h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Social</span></h4>
+  <ul class="list-group" id="social">
+    <li class="list-group-item"><a href="https://github.com/monarc-project"><i class="fa fa-github-square fa-lg"></i> GitHub</a></li>
+    <li class="list-group-item"><a href="https://twitter.com/MONARCproject"><i class="fa fa-twitter-square fa-lg"></i> Twitter</a></li>
+    <li class="list-group-item"><a href="https://www.monarc.lu/feeds/all.atom.xml"><i class="fa fa-rss-square fa-lg"></i> RSS</a></li>
+  </ul>
+</li>
+<!-- End Sidebar/Social -->
+
+<!-- Sidebar/Recent Posts -->
+<li class="list-group-item">
+  <h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Recent Posts</span></h4>
+  <ul class="list-group" id="recentposts">
+    <li class="list-group-item"><a href="../../news/2018/06/08/monarc-242-released/"><span class="caps">MONARC</span> 2.4.2&nbsp;released</a></li>
+    <li class="list-group-item"><a href="../../news/2018/05/30/monarc-241-released/"><span class="caps">MONARC</span> 2.4.1&nbsp;released</a></li>
+    <li class="list-group-item"><a href="../../news/2018/05/14/monarc-240-released/"><span class="caps">MONARC</span> 2.4.0&nbsp;released</a></li>
+    <li class="list-group-item"><a href="../../news/2018/04/27/monarc-230-released/"><span class="caps">MONARC</span> 2.3.0&nbsp;released</a></li>
+    <li class="list-group-item"><a href="../../news/2018/02/14/monarc-221-released/"><span class="caps">MONARC</span> 2.2.1&nbsp;released</a></li>
+  </ul>
+</li>
+<!-- End Sidebar/Recent Posts -->
+
+<!-- Sidebar/Links -->
+<li class="list-group-item">
+  <h4><i class="fa fa-external-link-square fa-lg"></i><span class="icon-label">Links</span></h4>
+  <ul class="list-group" id="links">
+    <li class="list-group-item">
+      <a href="https://my.monarc.lu/" target="_blank">MONARC <i>Cloud</i></a>
+    </li>
+    <li class="list-group-item">
+      <a href="https://github.com/monarc-project/MonarcAppFO/wiki/Roadmap" target="_blank">Roadmap</a>
+    </li>
+    <li class="list-group-item">
+      <a href="https://securitymadein.lu" target="_blank">SECURITYMADEIN.LU</a>
+    </li>
+    <li class="list-group-item">
+      <a href="https://c-3.lu" target="_blank">Cybersecurity Competence Center (C3)</a>
+    </li>
+    <li class="list-group-item">
+      <a href="https://open-source-security-software.net/project/MONARC" target="_blank">Freshermeat page</a>
+    </li>
+    <li class="list-group-item">
+      <a href="https://freshcode.club/projects/monarc" target="_blank">freshcode.club page</a>
+    </li>
+    <li class="list-group-item">
+      <a href="https://open-source-security-software.net/project/MONARC/releases.atom" target="_blank">Subscribe to the releases</a>
+    </li>
+    <li class="list-group-item">
+      <a href="https://github.com/monarc-project/MonarcAppFO/releases/latest" target="_blank"><img src="https://img.shields.io/github/release/monarc-project/MonarcAppFO.svg?style=flat-square" /></a>
+    </li>
+  </ul>
+</li>
+<!-- End Sidebar/Links -->
+  </ul>
+</section>
+<!-- End Sidebar -->            </aside>
+        </div>
+    </div>
+</div>
+<!-- End Content Container -->
+
+<footer>
+   <div class="container">
+      <hr>
+      <div class="row">
+         <div class="col-xs-10">&copy; 2018 security made in Lëtzebuerg (SMILE) g.i.e.
+            &middot; Powered by <a href="https://github.com/getpelican/pelican-themes/tree/master/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+            <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>                <p><small>  <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.en"><img alt="Creative Commons License" style="border-width:0" src="//i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
+    Content
+  licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">Creative Commons Attribution-ShareAlike 4.0 International License</a>, except where indicated otherwise.
+</small></p>
+         </div>
+         <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p></div>
+      </div>
+   </div>
+</footer>
+<script src="../../theme/js/jquery.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="../../theme/js/bootstrap.min.js"></script>
+
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+<script src="../../theme/js/respond.min.js"></script>
+
+
+
+
+</body>
+</html>
