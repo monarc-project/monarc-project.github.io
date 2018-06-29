@@ -76,7 +76,7 @@ The table below summarises the functionality of both versions:
     </tbody>
 </table>
 
-<span style="font-size:small">**<i> Accross multiple MONARC FrontOffice<i/></span>
+<span style="font-size:small">** <i>Accross multiple MONARC FrontOffice</i></span>
 
 <br/>The MONARC Instance Management is appropriate for big organizations or state
 organizations. More derails about the architecture
