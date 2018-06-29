@@ -30,9 +30,11 @@ antennas, etc. therefore the vulnerabilities and threats
 are the same. It is therefore sufficient to generalise risk scenarios for these
 assets (also called objects) by context and/or business.
 
-<video width="800" height="600" autoplay loop>
+<div class="row">
+<video class="col-md-12" autoplay loop>
 <source src="/assets/video/ScreenCast.mp4" type="video/mp4">
 </video>
+</div>
 
 <a name="Phases" />
 
