@@ -54,7 +54,7 @@ __Spread the word!__
 
 ## Contribute to MONARC
 
-If you are interested in contributing to MONARC you can join us to the
-Summer edition of the Open Source Security Hackathon:
+If you are interested in contributing to MONARC, you can join us at the summer
+edition of the Open Source Security Hackathon:
 
 <script type="text/javascript" src="https://PXXOBTQ-modules.xing-events.com/resources/js/amiandoExport.js"></script><iframe src="https://KBIJFHI-modules.xing-events.com/PXXOBTQ.html?viewType=iframe&distributionChannel=CHANNEL_IFRAME&language=en&useDefaults=false&resizeIFrame=true" frameborder="0" width="650px" height="650px" id="_amiandoIFrame3324603"><p>This page requires frame support. Please use a frame compatible browser to see the ticket sales module.</p><p> Try out the <a href="https://en.xing-events.com/">online event registration system</a> from XING Events.</p></iframe><p style="text-align: left; font-size:10px;"><a href="https://en.xing-events.com?viralRefId=PXXOBTQ&utm_campaign=ev-PXXOBTQ&utm_medium=viral&utm_source=EventWebsite&utm_content=TextLinkBottom&utm_term=text-link" target="_blank" alt="Seminar - Online Event Management" title="Seminar - Online Event Management" >Tutorial - Online Event Management</a> with the ticketing solution from XING Events</p>
