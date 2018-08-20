@@ -49,3 +49,15 @@ Possible solutions:
 * check the Apache error logs for database related problems. This can also be
   caused by a PHP library (for example Doctrine). In this case launch again the
   update script (*scripts/update-all.sh*) then delete the cache of MONARC.
+
+## Is it possible for a back office administrator to change the administrator user of a MONARC instance?
+
+The answer is no. This is a design choice that has been made for security reason.
+An administrator of the back office is only able to create and delete MONARC
+instances (clients) on a MONARC server. The administrator has no access to the
+MONARC instances.
+
+A minimum of one administrator per MONARC instance is recommended.
+The management of users on a MONARC instance is the responsibility of the
+administrator of the instance.
+The administrator of the back office should not be responsible of this.
