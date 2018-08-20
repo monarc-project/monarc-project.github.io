@@ -38,3 +38,14 @@ The best solution is to generate your own token and store it on the server:
 1. [Create](https://github.com/settings/tokens) an OAuth token on GitHub;
 2. Add it to the configuration running ``composer config -g github-oauth.github.com <oauthtoken>``.
    Do this on the MONARC server and on the MONARC back office server.
+
+## A blank screen is displayed
+
+A blank screen is generally caused by a faulty database connection.
+
+Possible solutions:
+
+* check manually the connection to the database;
+* check the Apache error logs for database related problems. This can also be
+  caused by a PHP library (for example Doctrine). In this case launch again the
+  update script (*scripts/update-all.sh*) then delete the cache of MONARC.
