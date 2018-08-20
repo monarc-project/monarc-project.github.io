@@ -6,6 +6,10 @@ Title: Community
 MONARC is lead by the [CASES](https://www.cases.lu) team.
 CASES is also organizing the MONARC [trainings](/trainings).
 
+The full list of
+[contributors](https://github.com/monarc-project/MonarcAppFO/blob/master/AUTHORS)
+is available on GitHub.
+
 If you have any questions about MONARC don't hesitate to contact the team at
 [info@cases.lu](mailto:info@cases.lu).
 
