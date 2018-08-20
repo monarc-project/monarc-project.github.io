@@ -20,6 +20,8 @@ Possible solution:
 
 This is very unlikely a problem of MONARC.
 
+Check the logs in the files */var/log/syslog* and */var/log/mail.log*.
+
 Possible solutions:
 
 * check the configuration of Postfix (/etc/postfix/main.cf) on the MONARC
@@ -58,6 +60,6 @@ instances (clients) on a MONARC server. The administrator has no access to the
 MONARC instances.
 
 A minimum of one administrator per MONARC instance is recommended.
-The management of users on a MONARC instance is the responsibility of the
-administrator of the instance.
+The management of users on a specific MONARC instance is the responsibility
+of administrator of the instance.
 The administrator of the back office should not be responsible of this.
