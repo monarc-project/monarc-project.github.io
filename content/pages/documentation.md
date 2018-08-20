@@ -25,3 +25,5 @@ need help deciding which version of MONARC suits your needs, please read
 * ### [Administrator guide](/administrator-guide) [<i class="fa fa-file-pdf-o" style="color:red" aria-hidden="true"></i>](/assets/files/guides/administrator-guide.pdf)
 
 * ### [Technical guide](/technical-guide) [<i class="fa fa-file-pdf-o" style="color:red" aria-hidden="true"></i>](/assets/files/guides/technical-guide.pdf)
+
+* ### [Common issues](/documentation/common-issues)
