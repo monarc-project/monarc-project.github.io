@@ -1,5 +1,14 @@
 Title: Community
 
+
+## Who
+
+MONARC is lead by the [CASES](https://www.cases.lu) team.
+CASES is also organizing the MONARC [trainings](/trainings).
+
+If you have any questions about MONARC don't hesitate to contact the team at
+[info@cases.lu](mailto:info@cases.lu).
+
 ## The software
 
 MONARC is a free software project released under the
@@ -26,3 +35,4 @@ You can also have a look at our [roadmap](https://github.com/monarc-project/Mona
 We are working on a solution which will let the users share their MONARC JSON
 objects much easier. The source code of the prototype is available here:
 [https://github.com/CASES-LU/MOSP](https://github.com/CASES-LU/MOSP)
+
