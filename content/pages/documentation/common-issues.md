@@ -13,14 +13,16 @@ not up-to-date.
 
 Possible solution:
 
-* delete the cache of MONARC ``data/cache``
+* delete the cache of MONARC in the folder ``data/cache``.
 
 
 ## Not receiving password reset emails
 
 This is very unlikely a problem of MONARC.
 
-* check the configuration of Postix (/etc/postfix/main.cf) on the MONARC
+Possible solutions:
+
+* check the configuration of Postfix (/etc/postfix/main.cf) on the MONARC
   server. Especially the address of the SMTP relay server (the line
   starting with _relayhost_);
 * check the configuration of your SMTP relay server. Most of the time a
