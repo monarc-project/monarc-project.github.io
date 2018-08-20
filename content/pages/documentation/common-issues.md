@@ -26,7 +26,7 @@ This is very unlikely a problem of MONARC.
 * check the configuration of your SMTP relay server. Most of the time a
   rule will block the sending of the email.
 
-## GitHub token problem during MONARC problems
+## GitHub token problem during MONARC update
 
 Because of GitHub's rate limits on their API it can happen that Composer
 prompts for authentication asking your token so it can go ahead with its work.
