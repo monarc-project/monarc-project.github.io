@@ -5,10 +5,10 @@
 <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 1.5.4">
-<meta name="description" content="MONARC Quick Start">
+<meta name="description" content="MONARC Method guide">
 <meta name="keywords" content="risk-analysis, monarc">
 <meta name="author" content="CASES Luxembourg">
-<title>Quick Start</title>
+<title>Method Guide</title>
 <style>
 /* Asciidoctor default stylesheet | MIT License | http://asciidoctor.org */
 /* Remove comment around @import statement below when using as a custom stylesheet */
@@ -513,11 +513,11 @@ table.CodeRay td.code>pre{padding:0}
 </head>
 <body class="article toc2 toc-left">
 <div id="header">
-<h1>Quick Start</h1>
+<h1>Method Guide</h1>
 <div class="details">
 <span id="author" class="author">CASES Luxembourg</span><br>
 <span id="email" class="email"><a href="mailto:info@cases.lu">info@cases.lu</a></span><br>
-<span id="revnumber">version 2018-05-07</span>
+<span id="revnumber">version 2018-05-11</span>
 </div>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
@@ -530,15 +530,42 @@ table.CodeRay td.code>pre{padding:0}
 <li><a href="#syntax-used-in-monarc">1.4. Syntax used in MONARC</a></li>
 </ul>
 </li>
-<li><a href="#creating-the-first-risk-analysis">2. Creating the first risk analysis</a></li>
-<li><a href="#description-of-the-main-view">3. Description of the main view</a></li>
-<li><a href="#simplified-risk-analysis">4. Simplified risk analysis</a>
+<li><a href="#monarc-method">2. Monarc Method</a>
 <ul class="sectlevel2">
-<li><a href="#risk-identification-default-modeling">4.1. Risk identification (default modeling)</a></li>
-<li><a href="#edit-impacts-and-consequences">4.2. Edit impacts and consequences</a></li>
-<li><a href="#risk-assessment">4.3. Risk assessment</a></li>
-<li><a href="#risk-treatment">4.4. Risk treatment</a></li>
-<li><a href="#risk-treatment-plan-management">4.5. Risk treatment plan management</a></li>
+<li><a href="#iterative-method">2.1. Iterative Method</a></li>
+<li><a href="#qualitative-method">2.2. Qualitative method</a></li>
+<li><a href="#method-broadly-based-on-iso-iec-27005">2.3. Method broadly based on ISO/IEC 27005</a></li>
+<li><a href="#access-to-methodology-screens">2.4. Access to methodology screens</a></li>
+<li><a href="#details-of-the-stages">2.5. Details of the stages</a></li>
+</ul>
+</li>
+<li><a href="#context-establishment">3. Context Establishment</a>
+<ul class="sectlevel2">
+<li><a href="#risk-analysis-context">3.1. Risk analysis context</a></li>
+<li><a href="#evaluation-of-the-trends-threats-and-synthesis">3.2. Evaluation of the trends, threats and synthesis</a></li>
+<li><a href="#risks-management-organisation">3.3. Risks management organisation</a></li>
+<li><a href="#definition-of-the-risk-evaluation-criteria">3.4. Definition of the risk evaluation criteria</a></li>
+<li><a href="#deliverable-context-validation">3.5. Deliverable: Context validation</a></li>
+</ul>
+</li>
+<li><a href="#context-modeling">4. Context Modeling</a>
+<ul class="sectlevel2">
+<li><a href="#identification-of-assets-vulnerabilities-and-impacts-appreciation">4.1. Identification of assets, vulnerabilities and impacts appreciation</a></li>
+<li><a href="#summary-of-assets-impact">4.2. Summary of assets/impact</a></li>
+<li><a href="#deliverable-validation-of-the-model">4.3. Deliverable: Validation of the model</a></li>
+</ul>
+</li>
+<li><a href="#evaluation-and-treatment-of-risks">5. Evaluation and treatment of risks</a>
+<ul class="sectlevel2">
+<li><a href="#evaluation-and-treatment-of-risks-2">5.1. Evaluation and treatment of risks</a></li>
+<li><a href="#risk-treatment-plan-management">5.2. Risk treatment plan management</a></li>
+<li><a href="#deliverable-end-report">5.3. Deliverable: End report</a></li>
+</ul>
+</li>
+<li><a href="#implementation-and-monitoring">6. Implementation and monitoring</a>
+<ul class="sectlevel2">
+<li><a href="#implementation-history">6.1. Implementation history</a></li>
+<li><a href="#deliverable-implementation-plan">6.2. Deliverable: Implementation Plan</a></li>
 </ul>
 </li>
 </ul>
@@ -551,9 +578,7 @@ table.CodeRay td.code>pre{padding:0}
 <div class="sect2">
 <h3 id="purpose"><a class="anchor" href="#purpose"></a>1.1. Purpose</h3>
 <div class="paragraph">
-<p>The purpose of this document is to help get started quickly with MONARC.
-It explains the main features of the tool and the necessary steps to
-deal with a risk with the default settings.</p>
+<p>The purpose of this document is to explain the procedures of the MONARC method by describing the various steps offered by the tool.</p>
 </div>
 </div>
 <div class="sect2">
@@ -568,14 +593,13 @@ deal with a risk with the default settings.</p>
 <div class="ulist">
 <ul>
 <li>
-<p><a href="/user-guide"><strong>User Guide</strong></a>: Complete documentation of the tool.</p>
+<p><a href="/documentation/quick-start"><strong>Quick Start</strong></a>: Provide a quick start with MONARC.</p>
 </li>
 <li>
-<p><a href="/method-guide"><strong>Method Guide</strong></a>: Complete documentation of the
-method.</p>
+<p><a href="/documentation/user-guide"><strong>User Guide</strong></a>: Complete documentation of the tool.</p>
 </li>
 <li>
-<p><a href="/technical-guide"><strong>Technical Guide</strong></a>: Complete technical
+<p><a href="/documentation/technical-guide"><strong>Technical Guide</strong></a>: Complete technical
 documentation.</p>
 </li>
 </ul>
@@ -669,7 +693,7 @@ documentation.</p>
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/Export.png" alt="Export"></span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/IconExport.png" alt="Export"></span></p></td>
 <td class="tableblock halign-left valign-top"><div><div class="paragraph">
 <p>Export any table (.csv) or graphic (.png).</p>
 </div></div></td>
@@ -681,339 +705,42 @@ documentation.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="creating-the-first-risk-analysis"><a class="anchor" href="#creating-the-first-risk-analysis"></a>2. Creating the first risk analysis</h2>
+<h2 id="monarc-method"><a class="anchor" href="#monarc-method"></a>2. Monarc Method</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>After clicking on
-<code>Create a risk analysis</code>, the following pop-up appear</p>
-</div>
-<div class="paragraph">
-<p><span class="image"><img src="images/NewRiskAnalysis.png" alt="Create a risk analysis"></span></p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Select <code>List of risks models</code></p>
-</li>
-<li>
-<p>There are at least two choices. Select <code>Modelling CASES</code>, this is
-the default template. It provides sufficient knowledge bases to start an
-analysis.</p>
-</li>
-<li>
-<p>Select your preferred language for this new analysis. (FR/EN/DE/NL)</p>
-</li>
-<li>
-<p>Give your analysis a name, for example <em>My analysis</em>.</p>
-</li>
-<li>
-<p>Optional field, which allows you to describe your analysis with more
-details.</p>
-</li>
-</ol>
-</div>
-<div style="page-break-after: always;"></div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="description-of-the-main-view"><a class="anchor" href="#description-of-the-main-view"></a>3. Description of the main view</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p><span class="image"><img src="images/Main.png" alt="Main view"></span></p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Risk Analyses panel: Create and select a risk analysis. Once the
-analysis is selected, the dashboard can be retracted to optimize the
-horizontal space by clicking on icon <span class="image"><img src="images/HideRiskAnalysesPanel.png" alt="Hide Risk Analyses panel icon" width="3%"></span>.</p>
-</li>
-<li>
-<p>Navigation panel, users administration and account management.</p>
-</li>
-<li>
-<p>Access to steps of the method by clicking on numbers 1 to 4.</p>
-</li>
-<li>
-<p>Contextual working areas of analysis.</p>
-</li>
-</ol>
-</div>
-<div style="page-break-after: always;"></div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="simplified-risk-analysis"><a class="anchor" href="#simplified-risk-analysis"></a>4. Simplified risk analysis</h2>
-<div class="sectionbody">
-<div class="sect2">
-<h3 id="risk-identification-default-modeling"><a class="anchor" href="#risk-identification-default-modeling"></a>4.1. Risk identification (default modeling)</h3>
-<div class="paragraph">
-<p>It is necessary to use the
-assets of the library and place them in the analysis. If the risk
-analysis does not contain any assets, follow the instructions below,
-otherwise go to the next chapter. MONARC proposes by default a structure
-where primary assets (Business) must be placed on the root of the
-analysis and supporting assets below. In order to simplify this step,
-two groups of assets have been created:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><code>Front-Office</code>: This asset group provides the identification of the
-common risks found on the user’s side for a “Human Resources” department
-(for example, risks related to the office, computers, applications,
-physical &amp; environmental risks…).</p>
-</li>
-<li>
-<p><code>Back-Office</code>: These assets group provide the identification of
-transversal risks of the organization related to the IT and to
-organizations in general.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><span class="image"><img src="images/Modelling.png" alt="Modelling"></span></p>
-</div>
-<div class="paragraph">
-<p>Click on the <code>+</code> or the <code>-</code> to expand or wrap all categories of the
-library.</p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>In the category <code>Primary assets</code>, click on <code>Department</code> and then, by
-holding down the left mouse button, move the asset to the analysis area
-just above (Drag and Drop).</p>
-</li>
-<li>
-<p>In the category <code>Model Structure</code> find the assets <code>Front Office</code> and
-<code>Back Office</code> and then, by holding down the left mouse button, move the
-asset on the asset Department, which is now in the analysis area.</p>
-</li>
-</ol>
-</div>
-<div class="paragraph">
-<p><span class="image"><img src="images/Model.png" alt="Model"></span></p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>The risk analysis now offers a model for <em>Department</em>.</p>
-</li>
-<li>
-<p>The <em>Front Office</em> now offers a default identification of the risks
-on the users’ side.</p>
-</li>
-<li>
-<p>The <em>Back Office</em> now offers a default identification of the risks,
-for IT and organization.</p>
-</li>
-<li>
-<p>The total number of risks in this model is 84 (in this case).</p>
-</li>
-</ol>
-</div>
-<div class="admonitionblock important">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-important" title="Important"></i>
-</td>
-<td class="content">
-Identified risks by default are the risks commonly encountered
-and supposed to be significant, they do not claim to be exhaustive.
-</td>
-</tr>
-</table>
-</div>
+<p>MONARC is an iterative and qualitative method of risk analysis in four stages; broadly inspired by ISO/IEC 27005.</p>
 </div>
 <div class="sect2">
-<h3 id="edit-impacts-and-consequences"><a class="anchor" href="#edit-impacts-and-consequences"></a>4.2. Edit impacts and consequences</h3>
+<h3 id="iterative-method"><a class="anchor" href="#iterative-method"></a>2.1. Iterative Method</h3>
 <div class="paragraph">
-<p>The aim is to define impacts and consequences for primary assets that can result
-from an occurrence of a
-risk from the model. In the case of this analysis, the primary asset is
-<em>Department</em>.</p>
+<p>MONARC uses an iterative method which enables the pragmatic progression of risk management. This approach, as recommended by ISO 27005, enables the user to restrict himself to the essentials, then to carry out successive iterations to broaden the target or further refine it to cover more technical aspects. The optimised risk models provided as standard with the tool will enable this type of management to be carried out.</p>
 </div>
-<div class="paragraph">
-<p><span class="image"><img src="images/EditImpacts.png" alt="Edit impacts"></span></p>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="images/Methode.png" alt="Methode" width="60%">
+</div>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Click on the primary asset <code>Department</code>.</p>
+<p><code>Context establishment</code>: Definition of the target of the risk analysis, establishing and describing the context, defining the risk analysis criteria and the structure of the risk approach.</p>
 </li>
 <li>
-<p>Click on icon <span class="image"><img src="images/Menu.png" alt="Menu" width="4%"></span>to display the
-context menu of the asset.</p>
+<p><code>Context modelling</code>: Development phase of the risk model. After having identified the primary assets, they just need to be broken down into support assets on a priority basis. The most common assets are present in the MONARC knowledge base and therefore identification of risk by default is offered. This type of identification may be sufficient in an initial risk iteration; however, it is the responsibility of the risk expert to provide the comprehensive model.</p>
 </li>
 <li>
-<p>Click on <code>Edit impacts</code>.</p>
-</li>
-</ol>
-</div>
-<div class="paragraph">
-<p>The pop-up below appears.</p>
-</div>
-<div class="paragraph">
-<p><span class="image"><img src="images/Impacts.png" alt="Impacts"></span></p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Consultation of impact scales is done through the menu at the top
-right of the screen.</p>
-</li>
-</ol>
-</div>
-<div class="admonitionblock tip">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
-</td>
-<td class="content">
-<em>By leaving the pointer unmoved over the numbers,
-the meaning of this number appears after one second.</em>
-</td>
-</tr>
-</table>
-</div>
-<div class="paragraph">
-<p>When one of the criteria <strong>C</strong> (confidentiality), <strong>I</strong> (integrity) or <strong>A</strong>
-(availability) is allocated, there is a need to ask : what are the
-consequences on the company, and more particularly on its ROLFP, i.e.
-its <strong>R</strong>eputation, its <strong>O</strong>peration, its <strong>L</strong>egal, its <strong>F</strong>inances
-or the impact on the <strong>P</strong>erson (in the sense of personal data).</p>
-</div>
-<div class="paragraph">
-<p>In the case of the above figure, the <code>3</code> (out of 5) impact on
-confidentiality, is explained by the maximum value ROLFP regarding
-confidentiality. Example, <code>3</code> is the consequence for the person in case
-of disclosure of his personal file.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="risk-assessment"><a class="anchor" href="#risk-assessment"></a>4.3. Risk assessment</h3>
-<div class="paragraph">
-<p><span class="image"><img src="images/RiskAssessment.png" alt="Risk assessment"></span></p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Click on a secondary asset, for example <code>Building</code>.</p>
+<p><code>Evaluation and treatment of risks</code>: Risk assessment involves establishing the level of threats and vulnerabilities of the context type under review. The processing of risk entails proposing security measures which tend to lower major risks to acceptable levels and to accept low risks.</p>
 </li>
 <li>
-<p><code>CIA Impact</code>: It has been assigned to the <em>Department</em> is inherited
-by default and are no longer required.</p>
-</li>
-<li>
-<p><code>Threat</code>: <em>Theft or destruction of media, documents or equipment</em> is
-a physical threat that expresses fear of being robbed or destroyed
-materials.</p>
-</li>
-<li>
-<p><code>probability (Prob.)</code> : This is an estimate of the probability on a
-scale of 1 to 4 that the threat occurs. Take, for example, the case of a
-very large company where this threat is above average, so <strong>3</strong>.</p>
-</li>
-<li>
-<p><code>Vulnerability</code>: <em>The principle of least privilege is not
-applied</em>. The security principles searched are to know who has access
-rights and whether they related to the duties of the people involved.</p>
-</li>
-<li>
-<p><code>Existing controls</code>: Describe, in a factual manner, the security
-controls in place regarding this vulnerability or, more broadly, the
-risk in question. Take, for example, a second unfavorable case, for
-example a hospital where the whole building is like a public area.</p>
-</li>
-<li>
-<p><code>Qualification (Qualif.)</code> : In relation to the measure in place
-(point 6 above), the vulnerability qualification is therefore maximum
-<strong>5</strong> out of 5.</p>
-</li>
-<li>
-<p><code>Current Risk</code> : All the parameters for calculating the risk are
-present, the current risk is therefore calculated based on the CIA
-values, which are directly dependent on the threat.</p>
-</li>
-</ol>
-</div>
-<div class="admonitionblock tip">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
-</td>
-<td class="content">
-<em>By leaving the pointer on most fields, a tooltip appears after
-1 second.</em>
-</td>
-</tr>
-</table>
-</div>
-</div>
-<div class="sect2">
-<h3 id="risk-treatment"><a class="anchor" href="#risk-treatment"></a>4.4. Risk treatment</h3>
-<div class="paragraph">
-<p>The risk treatment consists in proposing one of the 4 types of
-treatment, knowing that most of the time the treatment is to reduce the
-risk by allocating a control, or to accept a weak risk. To access click
-on <code>Not treated</code> in <em>Treatment column</em>.</p>
-</div>
-<div class="paragraph">
-<p><span class="image"><img src="images/RiskTreatment.png" alt="Risk treatment"></span></p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Create one or many recommendations.</p>
-</li>
-<li>
-<p>Define the treatment type (according to ISO / IEC 27005).</p>
-</li>
-<li>
-<p>Estimate the risk-reducing value in order to define the residual
-risk.</p>
-</li>
-<li>
-<p>Save the treatment.</p>
+<p><code>Implementation and monitoring</code>: The current MONARC version provides a follow-ups views in terms of the implementation of recommendations. Monitoring involves checking the major changes to the risk analysis context on a regular basis, as well as any major changes beyond said context which would imply a redesign of an analysis iteration.</p>
 </li>
 </ol>
 </div>
 </div>
 <div class="sect2">
-<h3 id="risk-treatment-plan-management"><a class="anchor" href="#risk-treatment-plan-management"></a>4.5. Risk treatment plan management</h3>
+<h3 id="qualitative-method"><a class="anchor" href="#qualitative-method"></a>2.2. Qualitative method</h3>
 <div class="paragraph">
-<p><span class="image"><img src="images/PlanTreatment.png" alt="Plan risk treatment"></span></p>
-</div>
-<div class="paragraph">
-<p>In that case, the risk treatment plan only consists in one risk, but
-once all risks are treated, all risks and information risk
-recommendations will be in the treatment plan.</p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>The call of the pop-up is done by clicking on the 3rd step of the
-method and <code>Risk treatment plan management</code>.</p>
-</li>
-<li>
-<p>Order the recommendation positions holding down the left mouse
-button on icon <span class="image"><img src="images/MoveButton.png" alt="Move button" width="4%"></span> and move it.</p>
-</li>
-<li>
-<p>Reset the positions in importance order (Imp.)</p>
-</li>
-<li>
-<p>Edit recommendation</p>
-</li>
-</ol>
-</div>
-<div class="paragraph">
-<p>A final report of risk analysis can be generated by clicking on the 3rd
-step of the method and <code>Deliverable: final report</code>.</p>
+<p>MONARC is a <strong>Qualitative</strong> method,</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -1022,20 +749,730 @@ step of the method and <code>Deliverable: final report</code>.</p>
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-Deliverables are only relevant when the MONARC method has been
-fully processed and all information has been entered.
+<div class="paragraph">
+<p>the risk parameters are determined on a contextual digital scale which enables the risks to be prioritised.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>This approach is based on ISO/IEC 27005 as it is easier to understand, especially for non-tangible criteria in terms of impact and consequences, such as reputation, operational, legal, etc.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="method-broadly-based-on-iso-iec-27005"><a class="anchor" href="#method-broadly-based-on-iso-iec-27005"></a>2.3. Method broadly based on ISO/IEC 27005</h3>
+<div class="paragraph">
+<p>The illustration above displays the similarities between ISO/IEC 27005 and MONARC.</p>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="images/Monarcvs27005.png" alt="Monarcvs27005" width="60%">
+</div>
+</div>
+<div class="paragraph">
+<p>The sub-stages provided by the method are also in line with ISO/IEC 27005:</p>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="images/MethodDetailed.png" alt="MethodDetailed" width="60%">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="access-to-methodology-screens"><a class="anchor" href="#access-to-methodology-screens"></a>2.4. Access to methodology screens</h3>
+<div class="paragraph">
+<p>Access to the views of the various stages of the method is provided by clicking on the numbers <code>1</code> to <code>4</code>, which are displayed under the Breadcrumbs in the main MONARC view.
+The ISO/IEC 27005 processes are implemented via the views.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/MethodScreen.png" alt="MethodScreen">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="details-of-the-stages"><a class="anchor" href="#details-of-the-stages"></a>2.5. Details of the stages</h3>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="images/MethodSteps.png" alt="MethodSteps">
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Ticking the boxes enables the user to develop the progress status of the method</p>
+</li>
+<li>
+<p>Clicking on the heading provides access to the management contextual sub-screen</p>
+</li>
+</ol>
+</div>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="context-establishment"><a class="anchor" href="#context-establishment"></a>3. Context Establishment</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>By clicking on number <code>1</code>, the following menu will appear:</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="images/MethodScreenStep1Detailed.png" alt="MethodScreenStep1Detailed"></span></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Link to the contextual management pop-ups, see the following chapters.</p>
+</li>
+<li>
+<p>Boxes to tick, indicating that the stage selected has closed. This optional information helps to show the progress of the risk analysis project and display the risk representation graph of the dashboard.</p>
+</li>
+<li>
+<p>Link enabling the <code>Validation of the context</code> deliverable to be generated. As part of a consultancy assignment, for instance, it may be helpful to get the client to validate it.</p>
+</li>
+</ol>
+</div>
+<div class="sect2">
+<h3 id="risk-analysis-context"><a class="anchor" href="#risk-analysis-context"></a>3.1. Risk analysis context</h3>
+<div class="paragraph">
+<p>This view offers text encoding and formatting functions, enabling the risk analysis target to be contextualised with well-formatted texts that will be documented in the deliverables.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="images/RAContext.png" alt="RiskAnalysisContext"></span></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Access to the text formatting functions (bold, italics, paragraph, text size, etc.). The quality of the encoding directly affects that of the deliverable.</p>
+</li>
+<li>
+<p>To display or delete the help area.</p>
+</li>
+<li>
+<p>Help area on the content which is recommended for data entry (<code>Additional information</code>).</p>
+</li>
+<li>
+<p>Chapters recommended by ISO27005. Clicking on the label will place it automatically in the data entry area.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="evaluation-of-the-trends-threats-and-synthesis"><a class="anchor" href="#evaluation-of-the-trends-threats-and-synthesis"></a>3.2. Evaluation of the trends, threats and synthesis</h3>
+<div class="paragraph">
+<p><span class="image"><img src="images/TrendEvaluation.png" alt="TrendEvaluation"></span></p>
+</div>
+<div class="paragraph">
+<p>This stage is divided into three separate parts which structures the data collection necessary for understanding the context to analyse. It is advisable to chair a working party of 5 to 10 people (depending on the organisation), bringing together the members of management, IT, risk management department (if it exists), the heads of departments or key personnel.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><code>Trends Assessment</code>: MONARC provides a series of questions to establish the context from a very general perspective (see <a href="#trends-assessment">Trends Assessment</a>).</p>
+</li>
+<li>
+<p><code>Threats Assessment</code>: Enables the threats to be reviewed from a general viewpoint and, possibly, to evaluate by default in the future model (for more information, see <a href="#threats-assessment">Threats Assessment</a>).</p>
+</li>
+<li>
+<p><code>Summary</code> of key points determined during stages 1 and 2 (for more information, see <a href="#summary">Summary</a>).</p>
+</li>
+</ol>
+</div>
+<div class="sect3">
+<h4 id="trends-assessment"><a class="anchor" href="#trends-assessment"></a>3.2.1. Trends Assessment</h4>
+<div class="paragraph">
+<p>The assessment of trends provides a series of questions to establish the context from a very general perspective. These questions highlight the selection of key assets which must be taken into account during the analysis, the security criteria, as well as a few indicators concerning the motives of the attack and the external context of the target.
+This list is not exhaustive; you can add questions of your choice at the end of the page.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="threats-assessment"><a class="anchor" href="#threats-assessment"></a>3.2.2. Threats Assessment</h4>
+<div class="paragraph">
+<p>The assessment of threats, in similar fashion to the assessment of trends, takes the form of a meeting involving key personnel in the organisation.
+The purpose is to review the majority of threats by gathering information on the past and reviewing the general observations made by the group.
+The principle is to obtain a consensus on the probability of the threat on a scale which is easy to interpret:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Relatively <code>-</code>: Never occurred, really not likely</p>
+</li>
+<li>
+<p>Normal <code>n</code>: No clear position, no opinion</p>
+</li>
+<li>
+<p>Relatively <code>+</code>: Already occurred</p>
+</li>
+<li>
+<p>Relatively <code>++</code>: Already occurred on one or two occasions
+The security expert is responsible for converting the consensus into a probability value of 1 to n which shall be used in the model.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="images/ThreatAssessment.png" alt="ThreatAssessment"></span></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Click on the <code>Threats assessment</code> tab.</p>
+</li>
+<li>
+<p>Heading of the threat.</p>
+</li>
+<li>
+<p>Information on the threat.</p>
+</li>
+<li>
+<p>Observation to encode, information gathering from a group of persons.</p>
+</li>
+<li>
+<p>Information on the security criteria affected by the threat.</p>
+</li>
+<li>
+<p>Choice of the trend, obtained by group consensus.</p>
+</li>
+<li>
+<p>Selection of the probability deduced from point 6 by the security expert.</p>
+</li>
+<li>
+<p>Possibility of subsequently running the threats of the model (after they have been developed).</p>
+</li>
+<li>
+<p><code>Save</code> the information and browse the threats.</p>
+</li>
+</ol>
+</div>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>For point 7 and 8, you have to set the scales of your risk analysis to unhide this funtion (see <a href="#definition-of-the-risk-evaluation-criteria">Definition of the risk evaluation criteria</a>)</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="summary"><a class="anchor" href="#summary"></a>3.2.3. Summary</h4>
+<div class="paragraph">
+<p>In similar fashion to the context of the risk analysis, this view enables the user to summarise the pertinent information gathered during the assessment of trends and threats.
+This text enables the user to enrich the deliverable.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="images/SummaryAssessment.png" alt="SummaryAssessment"></span></p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="risks-management-organisation"><a class="anchor" href="#risks-management-organisation"></a>3.3. Risks management organisation</h3>
+<div class="paragraph">
+<p>This view enables the user to encode the information on the context of the risk management, for instance, with regard to the roles and responsibilities, the stakeholders, etc.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="images/RiskAnalysisContext.png" alt="RiskAnalysisContext"></span></p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>For more information, please see chapter 7.4, of ISO/IEC 27005:2011</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="definition-of-the-risk-evaluation-criteria"><a class="anchor" href="#definition-of-the-risk-evaluation-criteria"></a>3.4. Definition of the risk evaluation criteria</h3>
+<div class="paragraph">
+<p>This involves personalising the scales and impact criteria and consequences.
+MONARC provides values by default which can be personalised depending on the context. All the scales can be modified and the levels personalised. However, it is no longer possible to modify the scales when an assessment has been encoded.</p>
+</div>
+<div class="sect3">
+<h4 id="impact-scale"><a class="anchor" href="#impact-scale"></a>3.4.1. Impact scale</h4>
+<div class="paragraph">
+<p><span class="image"><img src="images/ScaleImpact.png" alt="ScaleImpact"></span></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Click to modify the number of scales.</p>
+</li>
+<li>
+<p>Click on <code>Show hidden impacts</code> to show or hide the criteria not used in the analysis.</p>
+</li>
+<li>
+<p>Click on the symbol to hide an unused column.</p>
+</li>
+<li>
+<p>Click on <code>New column name</code> to add a new impact criteria.</p>
+</li>
+<li>
+<p>Click to edit the headings of each scale.</p>
+</li>
+</ol>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>the management is similar to an Excel table, by clicking on a heading, it is possible to edit it; clicking on another, the first heading will save automatically and so forth.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>By default, the impact and consequence scale includes the following criteria:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>C</strong>onfidentiality</p>
+</li>
+<li>
+<p><strong>I</strong>ntegrity</p>
+</li>
+<li>
+<p><strong>A</strong>vailability</p>
+</li>
+<li>
+<p><strong>R</strong>eputation</p>
+</li>
+<li>
+<p><strong>O</strong>peration</p>
+</li>
+<li>
+<p><strong>L</strong>egal</p>
+</li>
+<li>
+<p><strong>F</strong>inancial</p>
+</li>
+<li>
+<p><strong>P</strong>erson (impact on the person)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>It is also possible to add personalised consequences as well as impact criteria.</p>
+</div>
+<div class="paragraph">
+<p>The same scales are used to process information risk and operational risk; there is simply a difference of interpretation :</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The information risks are evaluated on the CIA<sup class="footnote" id="_footnote_CIA">[<a id="_footnoteref_1" class="footnote" href="#_footnote_1" title="View footnote.">1</a>]</sup> criteria by taking into account the ROLFP<sup class="footnote" id="_footnote_rolfp">[<a id="_footnoteref_2" class="footnote" href="#_footnote_2" title="View footnote.">2</a>]</sup> consequences.</p>
+</li>
+<li>
+<p>Operational risks are directly evaluated on the ROLFP<sup class="footnoteref">[<a class="footnote" href="#_footnote_2" title="View footnote.">2</a>]</sup> criteria</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="likelihood-scale"><a class="anchor" href="#likelihood-scale"></a>3.4.2. Likelihood scale</h4>
+<div class="paragraph">
+<p>The scale of threats is used to calculate information risks and the probability of scenarios relating to operational risks</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="images/ScaleThreats.png" alt="ScaleThreats"></span></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Click to modify the number of scales</p>
+</li>
+<li>
+<p>Click to edit the heading on each scale (Management identical to the impact scale).</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect3">
+<h4 id="vulnerabilities-scale"><a class="anchor" href="#vulnerabilities-scale"></a>3.4.3. Vulnerabilities scale</h4>
+<div class="paragraph">
+<p>The scale of vulnerabilities is only used for calculating information risks.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="images/ScaleVulunerabilities.png" alt="ScaleVulunerabilities"></span></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Click to modify the number of scales</p>
+</li>
+<li>
+<p>Click to edit the heading on each scale (Management identical to the impact scale).</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect3">
+<h4 id="acceptance-thresholds"><a class="anchor" href="#acceptance-thresholds"></a>3.4.4. Acceptance thresholds</h4>
+<div class="paragraph">
+<p>There are two separate tables for acceptability thresholds, as operational risk and information risk are not calculated in the same way.
+Information risks are calculated using three criteria:</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="images/InformationTresholds.png" alt="InformationTresholds"></span></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Modification of thresholds levels of informations risks. The table displayed above (as well as the risk analysis tables) is updated automatically.</p>
+</li>
+<li>
+<p>Information risks are calculated using three criteria: <code>Impact x Threat x Vulnerability</code></p>
+</li>
+<li>
+<p>Modification of thresholds levels of operational risks. The table displayed above (as well as the risk analysis tables) is updated automatically.</p>
+</li>
+<li>
+<p>Operational riks are calculated using two criteria: <code>Impact x Probability</code></p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="deliverable-context-validation"><a class="anchor" href="#deliverable-context-validation"></a>3.5. Deliverable: Context validation</h3>
+<div class="paragraph">
+<p>This deliverable includes all the information gathered and entered in the context establishment phase. It can be used to validate the information provided by the client, before beginning the risk identification.
+A form has to be filled in. When the user clicks on <code>Save</code>, a file in Word format is generated.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="images/DeliverableContextValidation.png" alt="DeliverableContextValidation"></span></p>
+</div>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="context-modeling"><a class="anchor" href="#context-modeling"></a>4. Context Modeling</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>By clicking on number <code>2</code>, the following menu will appear:</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="images/MethodScreenStep2Detailed.png" alt="MethodScreenStep2Detailed"></span></p>
+</div>
+<div class="sect2">
+<h3 id="identification-of-assets-vulnerabilities-and-impacts-appreciation"><a class="anchor" href="#identification-of-assets-vulnerabilities-and-impacts-appreciation"></a>4.1. Identification of assets, vulnerabilities and impacts appreciation</h3>
+<div class="sect3">
+<h4 id="identification-of-assets"><a class="anchor" href="#identification-of-assets"></a>4.1.1. Identification of assets</h4>
+<div class="paragraph">
+<p>Clicking on the link <code>Identification of assets, vulnerabilities and impacts appreciation</code> will generate the main view of MONARC.
+The purpose is to create the risk model by using the assets in the library.
+The principle of the modelling is to place at the root the analysis of the primary assets, then place the support assets which make up the parts above it.
+The context establishment phase is used for determining the primary assets which will be the subject of the analysis. At this stage of the analysis, certain secondary assets may already be known.
+By default, MONARC offers a <code>Front Office</code> and <code>Back Office</code> structure; however, this is not an obligation. It is vital that the construction of the model follows a contextual logic, the assets and terms listed must use the organisation&#8217;s terminology. To do this, the user must not hesitate to rename the assets provided by default by the library.</p>
+</div>
+<div class="paragraph">
+<p>Principe of the <em>front office/back office</em> structure</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="images/FrontBack.png" alt="FrontBack"></span></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>The <code>Front Office</code> represents the “user” side; for example, in the case of a “Human Resources” department we will find employees and the complete IT system to which they have access (office, workstation, hardware, software, individuals, etc.).<br>
+The <code>Back Office</code> represents the IT and organisational side of the organisation that are common to all concerned (building, data centre, network, administrators, common rules, etc.).</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect3">
+<h4 id="impacts-appreciation"><a class="anchor" href="#impacts-appreciation"></a>4.1.2. Impacts appreciation</h4>
+<div class="paragraph">
+<p>For each primary asset, the impact and consequences which may apply must be defined, if the risks in the model arise. By default, all the supporting assets will inherit these impacts, but it is also possible to redefine them.
+When the primary asset is a service, then the <strong>C</strong> (<code>Confidentiality</code>) and the <strong>I</strong> (<code>Integrity</code>) refers to the most sensitive information of the service in question. <strong>A</strong> (<code>Availability</code>) refers to the service and the information, based on the principle that if the information is available, the service will also be available.
+When the primary asset is the information, there is no ambiguity regarding the CIA criteria - it refers to all the information.
+In certain rarer cases, if the <strong>C</strong> associated with a service conveys the confidentiality of the operating procedure (e.g. manufacturing process), the user just has to express the assets in the model separately in the form of an informational asset and a service.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="images/ImpactsConsequences.png" alt="ImpactsConsequences"></span></p>
+</div>
+<div class="paragraph">
+<p>The value of the CIA criteria is deduced automatically according to the ROLFP consequences or other consequences which have been associated with them (maximum value).
+For example: In the case of the abovementioned example, the <code>3</code> impact level on confidentiality is explained by the maximum ROLFP value regarding the confidentiality, which in this case is <code>3</code> in terms of consequence for the person.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="summary-of-assets-impact"><a class="anchor" href="#summary-of-assets-impact"></a>4.2. Summary of assets/impact</h3>
+<div class="paragraph">
+<p>The summary of the assets will provide editorial content that justifies the choice of assets and impact for the deliverable.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="images/SummaryAssetImpact.png" alt="SummaryAssetImpact"></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="deliverable-validation-of-the-model"><a class="anchor" href="#deliverable-validation-of-the-model"></a>4.3. Deliverable: Validation of the model</h3>
+<div class="paragraph">
+<p>This deliverable covers all the significant primary assets of the model.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Those on which the impact is reported as well as the asset summary.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>A form has to be filled in. When the user clicks on <code>Save</code>, a file in Word format is generated.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="images/DeliverableContext.png" alt="DeliverableContext"></span></p>
+</div>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="evaluation-and-treatment-of-risks"><a class="anchor" href="#evaluation-and-treatment-of-risks"></a>5. Evaluation and treatment of risks</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>By clicking on number <code>3</code>, the following menu will appear:</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="images/MethodScreenStep3Detailed.png" alt="MethodScreenStep3Detailed"></span></p>
+</div>
+<div class="paragraph">
+<p>Clicking on the link <code>Estimation, evaluation and risk treatment</code> will generate the main view of MONARC.</p>
+</div>
+<div class="sect2">
+<h3 id="evaluation-and-treatment-of-risks-2"><a class="anchor" href="#evaluation-and-treatment-of-risks-2"></a>5.1. Evaluation and treatment of risks</h3>
+<div class="paragraph">
+<p><span class="image"><img src="images/ARFull.png" alt="ARFull"></span></p>
+</div>
+<div class="paragraph">
+<p>The previous phase provided the impact criteria information; now it is necessary to evaluate threats and vulnerabilities in order to calculate risk levels.</p>
+</div>
+<div class="sect3">
+<h4 id="assessment-of-the-probability-of-threats"><a class="anchor" href="#assessment-of-the-probability-of-threats"></a>5.1.1. Assessment of the probability of threats</h4>
+<div class="paragraph">
+<p>If the threat assessment made while establishing context provided probabilities (see <a href="#threats-assessment">Threats Assessment</a>), it is necessary to return to this screen to run all the threats of the model.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><code>Prob.</code>: Then, when reviewing the model’s risks, the default values may all be revised individually.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect3">
+<h4 id="assessment-of-vulnerabilities"><a class="anchor" href="#assessment-of-vulnerabilities"></a>5.1.2. Assessment of vulnerabilities</h4>
+<div class="olist arabic">
+<ol class="arabic" start="2">
+<li>
+<p>The level of vulnerabilities depends directly on the <code>existing controls</code>. It is necessary to describe all these measures in a factual manner.</p>
+</li>
+<li>
+<p>The <code>qualification</code> of the vulnerability can be set according to the <code>existing controls</code>.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect3">
+<h4 id="risk-processing"><a class="anchor" href="#risk-processing"></a>5.1.3. Risk processing</h4>
+<div class="olist arabic">
+<ol class="arabic" start="4">
+<li>
+<p>Processing risks in MONARC, by clicking on <code>Not treated</code>, involves, in similar fashion to ISO/IEC 27005, making a decision so as to process.
+There are four ways to process the risk:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><code>Accept</code>: The risk is accepted in its current form. No additional action will be initiated.</p>
+</li>
+<li>
+<p><code>Modify/reduce</code>: Measures are put in place to reduce the risk to an acceptable level. The reduction level is then evaluated in order to calculate the residual risk.</p>
+</li>
+<li>
+<p><code>Share</code>: in the case of insurance, for example. This type of processing is specific, as it tends to reduce the risk impact and not the vulnerability. The residual risk cannot be calculated.</p>
+</li>
+<li>
+<p><code>Deny</code>: The cause of the risk is eliminated; after processing, the risk must not longer be present.</p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>It is also possible to add a recommandation to implement see <a href="http://monarc.lu/documentation/user-guide/#risk-information-sheet" target="_blank">Risk information sheet in user guide</a>.</p>
+</div>
 </td>
 </tr>
 </table>
 </div>
 </div>
 </div>
+<div class="sect2">
+<h3 id="risk-treatment-plan-management"><a class="anchor" href="#risk-treatment-plan-management"></a>5.2. Risk treatment plan management</h3>
+<div class="paragraph">
+<p>All risks covered by one of the four procedures described above are registered in the risk management plan, irrespective of whether they are information risks or operational risks.
+The calculation formula is not the same for both types of risk; therefore, it is the importance of the recommendations which establish the order of risk. Nevertheless, it is possible to reset the order of the risk processing plan before generating the final deliverable.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="images/PTR.png" alt="Risk treatment plan"></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="deliverable-end-report"><a class="anchor" href="#deliverable-end-report"></a>5.3. Deliverable: End report</h3>
+<div class="paragraph">
+<p>The deliverable contains a complete list of all the information gathered and entered in MONARC, including that contained in the two previous deliverables.
+A form has to be filled in. Moreover, it is possible to add a <code>summary of risk evaluation</code>. When the user clicks on <code>Save</code>, a file in Word format is generated.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="images/DeliverableFinal.png" alt="DeliverableFinal"></span></p>
+</div>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="implementation-and-monitoring"><a class="anchor" href="#implementation-and-monitoring"></a>6. Implementation and monitoring</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>By clicking on number <code>4</code>, the following menu will appear:</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="images/MethodScreenStep4Detailed.png" alt="MethodScreenStep4Detailed"></span></p>
+</div>
+<div class="paragraph">
+<p>This view goes beyond the ISO/IEC 27005, as it enables the user to manage the follow-up to the implementation of the measures.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="images/PTRImplementation.png" alt="PTRImplementation"></span></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>This is a <code>recommandation</code> established before.</p>
+</li>
+<li>
+<p>You can put a <code>comment</code> for the implementation of the recommendation.</p>
+</li>
+<li>
+<p>For each recommendation you can set a <code>manager</code>.</p>
+</li>
+<li>
+<p>For each recommenddation you can set a <code>deadline</code>.</p>
+</li>
+<li>
+<p>Click on the icon <span class="image"><img src="images/Action.png" alt="Action" width="2%"></span> to implement the recommenation and switch on the following view.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="images/RecommendationImplementation.png" alt="RecommendationImplementation"></span></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Set the <code>new control</code>, now in place. It will replace the old one in the risk analysis and also replace the old current risk by the residual risk.</p>
+</li>
+<li>
+<p>Definitively validate the measure by clicking on icon <span class="image"><img src="images/Check.png" alt="Check" width="2%"></span></p>
+</li>
+</ol>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Follow the same procedure for each recommendation.
+After that go to your risk analysis and make a second iteration.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="sect2">
+<h3 id="implementation-history"><a class="anchor" href="#implementation-history"></a>6.1. Implementation history</h3>
+<div class="paragraph">
+<p>All validations are stored in history and can be consulted:</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="images/RecommendationImplementationHistory.png" alt="RecommendationImplementationHistory"></span></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Click to view past recommendations</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="images/RecommendationImplementationPast.png" alt="RecommendationImplementationPast"></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="deliverable-implementation-plan"><a class="anchor" href="#deliverable-implementation-plan"></a>6.2. Deliverable: Implementation Plan</h3>
+<div class="paragraph">
+<p>The deliverable contains the recommendations to implement table and the implemented recommendations table.
+A form has to be filled in. When the user clicks on <code>Save</code>, a file in Word format is generated.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="images/DeliverableImplementationPlan.png" alt="DeliverableImplementationPlan"></span></p>
+</div>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+</div>
+</div>
+<div id="footnotes">
+<hr>
+<div class="footnote" id="_footnote_1">
+<a href="#_footnoteref_1">1</a>. Confidentiality, Integrity and Availability.
+</div>
+<div class="footnote" id="_footnote_2">
+<a href="#_footnoteref_2">2</a>. Reputation, Operational, Legal, Financial and Personal
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Version 2018-05-07<br>
-Last updated 2018-05-07 11:14:14 CEST
+Version 2018-05-11<br>
+Last updated 2018-05-11 14:13:08 CEST
 </div>
 </div>
 <script type="text/x-mathjax-config">

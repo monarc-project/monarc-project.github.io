@@ -293,7 +293,7 @@ dedicated instance of MONARC.
 
 [^4]: PDCA: plan-do-check-act
 
-[^5]: [MONARC Method Guide](/method-guide)
+[^5]: [MONARC Method Guide](/documentation/method-guide)
 
 [^6]: [MONARC Roadmap](https://github.com/monarc-project/MonarcAppFO/wiki/Roadmap)
 

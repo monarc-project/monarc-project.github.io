@@ -80,7 +80,7 @@ The table below summarises the functionality of both versions:
 
 <br/>The MONARC Instance Management is appropriate for big organizations or state
 organizations. More derails about the architecture
-[here](/technical-guide#monarc-and-the-back-office).
+[here](/documentation/technical-guide#monarc-and-the-back-office).
 
 Since MONARC is an open-source project, you can also have a look at our
 [roadmap](https://github.com/monarc-project/MonarcAppFO/wiki/Roadmap).

@@ -15,11 +15,15 @@ TIMEZONE = 'Europe/Paris'
 DEFAULT_LANG = 'en'
 TYPOGRIFY = True
 #PAGE_ORDER_BY = 'sortorder'
-STATIC_PATHS = ['assets', 'administrator-guide', 'technical-guide',
-                'quick-start', 'user-guide', 'method-guide',
+STATIC_PATHS = ['assets',
                 'extra',
-                'table-comparison-between-monarc-and-different-risk-management-methods',
-                'comparison-between-monarc-and-different-risk-management-methods']
+                'documentation/administrator-guide',
+                'documentation/technical-guide',
+                'documentation/quick-start',
+                'documentation/user-guide',
+                'documentation/method-guide',
+                'table-comparison-between-monarc-and-different-risk-management-methods', # duplicate of content/table-of-comparison-between-monarc-and-different-risk-management-methods
+                'comparison-between-monarc-and-different-risk-management-methods'] # duplicate of content/comparison-between-monarc-and-different-risk-management-methods
 CUSTOM_CSS = 'static/css/custom.css'
 EXTRA_PATH_METADATA = {
                         'extra/CNAME': {'path': 'CNAME'},
