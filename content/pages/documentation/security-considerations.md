@@ -40,7 +40,9 @@ server) are separated:
 * Apache instances with Virtual Hosts.
 
 An administrator of a back office is not able to access to a MONARC instance.
-The administrator can only create or delete clients (instances).
+The administrator can only create or delete clients (instances). Read
+[this section](/documentation/administrator-guide/#management-of-the-clients)
+for more information.
 
 Generally MONARC instances are virtually isolated on one **FO** server. It is
 also possible to isolate instances on different servers in the same subnetwork.
