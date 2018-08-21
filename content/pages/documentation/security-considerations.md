@@ -54,7 +54,9 @@ instances.
 
 The configuration server (**CFG**) must be able to contact the other servers
 via SSH with public encryption key. The corresponding private key must be
-stored only on the configuration server.
+stored only on this server, for example for a system user
+*ansible*. This user will launch periodically the
+[MONARC playbook](https://github.com/monarc-project/ansible-ubuntu) with cron.
 
 
 ## System update
