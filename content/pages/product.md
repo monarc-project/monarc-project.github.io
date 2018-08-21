@@ -19,8 +19,8 @@ td:not(:first-child)  {
 There are 2 different [MONARC](https://github.com/monarc-project/MonarcAppFO)
 installations possible:
 
- - MONARC Instance Management (also known as MONARC BackOffice or BO)
- - MONARC (Also known as MONARC FrontOffice or FO)
+ - MONARC Instance Management (also known as MONARC back office);
+ - MONARC.
 
 The table below summarises the functionality of both versions:
 
