@@ -52,7 +52,7 @@ The reverse proxy is responsible of dispatching the MONARC users to the correct
 instances.
 
 
-## The configuration server
+## Configuration server
 
 The configuration server (**CFG**) must be able to contact the other servers
 via SSH with public encryption key. The corresponding private key must be
