@@ -2,29 +2,34 @@ Title: Download
 
 [TOC]
 
-## Install MONARC
+## Installation of MONARC
+
+### Source code
 
 The source code of MONARC is available on
 [GitHub](https://github.com/monarc-project).
 
+For installation instructions from the source code see
+[here](https://github.com/monarc-project/MonarcAppFO/tree/master/INSTALL).
+
+
 ### Virtual machine
 
-A virtual machine for VirtualBox is
+If you would like to test MONARC and don’t want to do an installation,
+a virtual machine for VirtualBox is
 [available on the release page](https://github.com/monarc-project/MonarcAppFO/releases/latest)
 (.ova file).   
-This is the easiest method if you want to quickly use MONARC on your computer.
 
 You can also generate generate your virtual machine with the latest version of
 MONARC. More information
 [here](https://github.com/monarc-project/monarc-packer).
 
-
 #### Importing the image
 
 You will need a tool for virtualization which accepts .ova files.
-In this guide, [VirtualBox](https://www.virtualbox.) will be used.
+In this guide, [VirtualBox](https://www.virtualbox.org) will be used.
 
-Import the image in your application by either just double-click on the .ova
+Import the image by either just double-click on the .ova
 file (if VirtualBox is associated with .ova files) or launch VirtualBox and
 click on File -> Import appliance.
 
@@ -48,7 +53,6 @@ _**NOTE:**_ The box "cable connected" has to be ticked.
 
 ![monarc_cli](/assets/images/trainings/network.JPG "Image - network")
 
-
 #### Run the server
 
 Now that the image is installed and configured, you can run the server by
@@ -65,6 +69,8 @@ The server is running when the window of the virtual appliance looks like this :
 
 Deploy MONARC with [Vagrant](https://github.com/monarc-project/MonarcAppFO/tree/master/vagrant).
 
+Vagrant is convenient to use in order to setup your development environment.
+
 ### Ansible
 
 Deploy the whole architecture with [Ansible](https://github.com/monarc-project/ansible-ubuntu).
@@ -72,14 +78,17 @@ Deploy the whole architecture with [Ansible](https://github.com/monarc-project/a
 
 
 
-## Use MONARC
+## Usage of MONARC
 
-Just open your browser and go to this address: http://10.0.0.101/
+Open your Web browser and go to this address (depending on your
+configuration):  
+[http://10.0.0.101](http://10.0.0.101)
 
-Login / Password : admin@admin.test / admin
+* Login: admin@admin.test
+* Password: admin
 
 
-### Risk Analysis Demo
+### Import a risk analysis demo
 
 1. [Create a risk analysis in French](/documentation/user-guide/#creating-a-risk-analysis)
 2. Download the risk analysis file <a href="/assets/files/monarc-training/fr/myprint.json" download>(myprint.json)</a>
