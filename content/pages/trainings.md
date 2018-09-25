@@ -4,7 +4,7 @@ Title: Trainings
 
 |&nbsp;|||
 |:--|--|--|
-|**Date and time**|| To confirm|
+|**Date and time**|| 19 December, 2018. 9h30 - 17h00|
 |&nbsp;|  ||
 |**Location**|&nbsp;&nbsp;&nbsp;|C3 - EternalBlue room / SECURITYMADEIN.LU|
 |             |                  |16 Boulevard d’Avranches 1160|
@@ -26,7 +26,7 @@ Title: Trainings
 |&nbsp;|  |  |
 |**Price**||Free (No show fee: 40€ HT - Cancellation is possible up to 48 hours before the start of the training) |
 |&nbsp;|  |  |
-|**Registration** |   | <script type="text/javascript" src="https://KBIJFHI-modules.xing-events.com/resources/js/amiandoExport.js"></script><iframe src="https://KBIJFHI-modules.xing-events.com/KBIJFHI.html?viewType=iframe&distributionChannel=CHANNEL_IFRAME&language=en&useDefaults=false&resizeIFrame=true" frameborder="0" width="650px" height="650px" id="_amiandoIFrame3324603"><p>This page requires frame support. Please use a frame compatible browser to see the ticket sales module.</p><p> Try out the <a href="https://en.xing-events.com/">online event registration system</a> from XING Events.</p></iframe><p style="text-align: left; font-size:10px;"><a href="https://en.xing-events.com?viralRefId=KBIJFHI&utm_campaign=ev-KBIJFHI&utm_medium=viral&utm_source=EventWebsite&utm_content=TextLinkBottom&utm_term=text-link" target="_blank" alt="Seminar - Online Event Management" title="Seminar - Online Event Management" >Tutorial - Online Event Management</a> with the ticketing solution from XING Events</p>  |
+|**Registration** |   | <script type="text/javascript" src="https://OCTUXDH-modules.xing-events.com/resources/js/amiandoExport.js"></script><iframe src="https://OCTUXDH-modules.xing-events.com/OCTUXDH.html?viewType=iframe&distributionChannel=CHANNEL_IFRAME&language=en&useDefaults=false&resizeIFrame=true" frameborder="0" width="650px" id="_amiandoIFrame3398677"><p>This page requires frame support. Please use a frame compatible browser to see the ticket sales module.</p><p> Try out the <a href="https://en.xing-events.com/">online event registration system</a> from XING Events.</p></iframe>More participants thanks to <a href="https://en.xing-events.com?viralRefId=OCTUXDH&utm_campaign=ev-OCTUXDH&utm_medium=viral&utm_source=EventWebsite&utm_content=TextLinkBottom&utm_term=text-link" target="_blank" alt="XING Events" title="XING Events">online event management solutions</a> from XING Events.  |
 
 ### Past Trainings
 
