@@ -34,9 +34,16 @@ You can also have a look at our [roadmap](https://github.com/monarc-project/Mona
 [![Stars](https://img.shields.io/github/stars/monarc-project/MonarcAppFO.svg?style=flat-square)](https://github.com/monarc-project/MonarcAppFO/stargazers)
 
 
-## The data models
+## The data
 
 We are working on a solution which will let the users share their MONARC JSON
-objects much easier. The source code of the prototype is available here:
+objects much easier:  
+[http://objects.monarc.lu](http://objects.monarc.lu)
+
+The source code of the prototype is available here:  
 [https://github.com/CASES-LU/MOSP](https://github.com/CASES-LU/MOSP)
 
+MONARC objects (threats, assets, vulnerabilities) are licensed under
+[CC0 1.0 Universal (CC0 1.0)](https://creativecommons.org/publicdomain/zero/1.0/) - Public Domain Dedication.
+If a specific author wants to license an object under a different license,
+a pull request can be requested.
