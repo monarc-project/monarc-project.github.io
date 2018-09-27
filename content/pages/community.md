@@ -26,8 +26,6 @@ MONARC is a free software project released under the
 
 You can also have a look at our [roadmap](https://github.com/monarc-project/MonarcAppFO/wiki/Roadmap).
 
-<script type='text/javascript' src='https://www.openhub.net/p/monarc/widgets/project_factoids_stats?format=js'></script>
-
 [![Latest Release](https://img.shields.io/github/release/monarc-project/MonarcAppFO.svg?style=flat-square)](https://github.com/monarc-project/MonarcAppFO/releases/latest)
 ![License](https://img.shields.io/github/license/monarc-project/MonarcAppFO.svg?style=flat-square)
 [![Contributors](https://img.shields.io/github/contributors/monarc-project/MonarcAppFO.svg?style=flat-square)](https://github.com/monarc-project/MonarcAppFO/graphs/contributors)
