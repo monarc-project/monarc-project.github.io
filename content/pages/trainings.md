@@ -22,7 +22,7 @@ Title: Trainings
 |&nbsp;|  |  |
 |**Extra requirements**||**A laptop is required**|
 |&nbsp;|  |  |
-|**Training materials**||Workshop MONARC &nbsp; [![][en]](/assets/files/monarc-training/en/Formation_V2-MONARC_Env1.1.pdf) [![][fr]](/assets/files/monarc-training/fr/Formation_V2-MONARC_Fr.pdf)<br/>Context MyCompany [![][en]](/assets/files/monarc-training/en/Context_MyCompany_en_v1.0.pdf) [![][fr]](/assets/files/monarc-training/fr/Context_MyCompany_fr_v1.1.pdf)<br/><a href="/assets/files/monarc-training/en/MyPrintWorkshop.json" download>MyPrintWorkshop.json</a><br/><a href="/assets/files/monarc-training/en/MyPrint-withvalues.json" download>MyPrint-withvalues.json</a><br/><a href="/assets/files/monarc-training/en/Workshop-Printingservices.json" download>Workshop-Printingservices.json</a>
+|**Training materials**||Workshop MONARC &nbsp; [![][en]](/assets/files/monarc-training/en/Formation_V2-MONARC_Env1.1.pdf) [![][fr]](/assets/files/monarc-training/fr/Formation_V2-MONARC_Fr.pdf) [![][nl]](/assets/files/monarc-training/nl/Formation_V2-MONARC_NL.pdf)<br/>Context MyCompany [![][en]](/assets/files/monarc-training/en/Context_MyCompany_en_v1.0.pdf) [![][fr]](/assets/files/monarc-training/fr/Context_MyCompany_fr_v1.1.pdf)<br/><a href="/assets/files/monarc-training/en/MyPrintWorkshop.json" download>MyPrintWorkshop.json</a><br/><a href="/assets/files/monarc-training/en/MyPrint-withvalues.json" download>MyPrint-withvalues.json</a><br/><a href="/assets/files/monarc-training/en/Workshop-Printingservices.json" download>Workshop-Printingservices.json</a>
 |&nbsp;|  |  |
 |**Price**||Free (No show fee: 40€ HT - Cancellation is possible up to 48 hours before the start of the training) |
 |&nbsp;|  |  |
@@ -40,3 +40,4 @@ Title: Trainings
 
 [en]: /assets/images/gb.svg "EN"
 [fr]: /assets/images/fr.svg "FR"
+[nl]: /assets/images/nl.svg "NL"
