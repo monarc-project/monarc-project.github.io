@@ -518,7 +518,7 @@ table.CodeRay td.code>pre{padding:0}
 <div class="details">
 <span id="author" class="author">CASES Luxembourg</span><br>
 <span id="email" class="email"><a href="mailto:info@cases.lu">info@cases.lu</a></span><br>
-<span id="revnumber">version 2018-10-09</span>
+<span id="revnumber">version 2018-10-10</span>
 </div>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
@@ -836,7 +836,8 @@ internal mail server (<strong>SMTP</strong>).</p>
 <div class="sect2">
 <h3 id="system-and-software"><a class="anchor" href="#system-and-software"></a><a class="link" href="#system-and-software">4.1. System and software</a></h3>
 <div class="paragraph">
-<p>The deployment of MONARC has been tested on Ubuntu 16.04 LTS and Ubuntu 18.04 LTS.</p>
+<p>The deployment of MONARC has been tested on Ubuntu 16.04 LTS and Ubuntu 18.04 LTS.
+In order to install MONARC you will need the folowing requirements:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -854,7 +855,7 @@ internal mail server (<strong>SMTP</strong>).</p>
 </div>
 </li>
 <li>
-<p>Node.js:</p>
+<p>JavaScript:</p>
 <div class="ulist">
 <ul>
 <li>
@@ -867,12 +868,17 @@ internal mail server (<strong>SMTP</strong>).</p>
 <p>Apache 2;</p>
 </li>
 <li>
-<p>MariaDB;</p>
-</li>
-<li>
-<p>Postfix (SMTP is used for the account creation and password recovery).</p>
+<p>MariaDB.</p>
 </li>
 </ul>
+</div>
+<div class="paragraph">
+<p>Postfix, or an equivalent software, is required for the account creation and
+password recovery features.</p>
+</div>
+<div class="paragraph">
+<p>You will find more details
+<a href="https://github.com/monarc-project/MonarcAppFO/tree/master/INSTALL">here</a>.</p>
 </div>
 </div>
 <div class="sect2">
@@ -1024,14 +1030,18 @@ export https_proxy=http://proxy.your.domain.com:4128</code></pre>
 <div class="sect2">
 <h3 id="tls-certificate"><a class="anchor" href="#tls-certificate"></a><a class="link" href="#tls-certificate">4.4. TLS certificate</a></h3>
 <div class="paragraph">
-<p>Is is strongly advised to use a TLS certificate on the reverse proxy.
-See <a href="#TLS-certificate">this section</a>.</p>
+<p>Is is strongly advised to use a TLS certificate.</p>
 </div>
 <div class="paragraph">
-<p>The certificate <strong>yourcert.crt</strong> and the key file <strong>yourcert.key</strong> are by default
-located at <code>/etc/sslkeys/</code> (location configurable using the variables in the
-<code>inventory/hosts</code> file of the ansible playbook). You can also use a single
-<strong>.pem</strong> file, but make sure it includes the certificate and the key.</p>
+<p>In the case you are using MONARC with a back office you can set
+the certificate on the reverse proxy. The ansible playbook is
+compatible Let&#8217;s Encrypt auto-renew certificates.
+You will find more information
+<a href="https://github.com/monarc-project/ansible-ubuntu">in the ansible playbook</a>.</p>
+</div>
+<div class="paragraph">
+<p>If you are not using a back office you can simply configure
+the certificate on the front office server.</p>
 </div>
 </div>
 </div>
@@ -1442,8 +1452,8 @@ $ git pull origin master</code></pre>
 </div>
 <div id="footer">
 <div id="footer-text">
-Version 2018-10-09<br>
-Last updated 2018-10-09 08:18:05 CEST
+Version 2018-10-10<br>
+Last updated 2018-10-10 10:29:36 CEST
 </div>
 </div>
 <script type="text/x-mathjax-config">
