@@ -23,7 +23,7 @@ CASES has developed an optimised risk analysis method: MONARC (Optimised Risk An
 
 ####Apply:
 
-*	Closed
+*	Please contact [info@cases.lu](mailto:info@cases.lu) to get in touch with us.
 
 
 ###Internship #2: Develop new functionalities for MONARC, a risk assessment tool
@@ -46,4 +46,4 @@ CASES has developed an optimised risk analysis method: MONARC (Optimised Risk An
 
 ####Apply:
 
-*	Closed
+*	Please contact [info@cases.lu](mailto:info@cases.lu) to get in touch with us.
