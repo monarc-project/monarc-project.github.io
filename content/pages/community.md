@@ -22,7 +22,7 @@ MONARC is a free software project released under the
 1. [Licenses and copyright](/community/licenses-and-copyright)
 2. [Contribution guidelines](/community/contribution-guidelines)
 3. [Vulnerability disclosure](/community/vulnerability-disclosure)
-4. [<s>Internship</s>](/internship)
+4. [Internship](/internship)
 
 You can also have a look at our [roadmap](https://github.com/monarc-project/MonarcAppFO/wiki/Roadmap).
 

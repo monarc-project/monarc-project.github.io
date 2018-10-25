@@ -92,6 +92,7 @@ MENUITEMS = (
         ('Community', '/community'),
         ('Download', '/download'),
         ('Trainings', '/trainings'),
+        ('Work with us', '/internship')
 )
 
 # Links
