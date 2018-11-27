@@ -14,7 +14,7 @@ Version 2.7.4 of MONARC has been released with several fixes.
 - Fixed an issue when operational raw risks are hidden before an import [f382c91](https://github.com/monarc-project/zm-client/commit/f382c91fe624ea12d0c5b67c897879c359f09dd8);
 - Fixed some minor issues in the views [cbbd94e](https://github.com/monarc-project/ng-anr/commit/cbbd94e7a019e7fa7dd8acf11334e9d4290166a7);
 - Fixed several bugs in the reports generation (in the PHPWord library) caused
-  by special characters.
+  by some special characters.
 
 
 ## Updating
