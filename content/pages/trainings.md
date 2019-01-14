@@ -4,7 +4,7 @@ Title: Trainings
 
 |&nbsp;|||
 |:--|--|--|
-|**Date and time**|| March, 2019. 9h30 - 16h00|
+|**Date and time**|| 28 March, 2019. 9h30 - 16h00|
 |&nbsp;|  ||
 |**Location**|&nbsp;&nbsp;&nbsp;|C3 - EternalBlue room / SECURITYMADEIN.LU|
 |             |                  |16 Boulevard d’Avranches 1160|
