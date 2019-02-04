@@ -8,7 +8,7 @@ Title: Documentation
 
 * ### [Method guide](/documentation/method-guide) [<i class="fa fa-file-pdf-o" style="color:red" aria-hidden="true"></i>](/assets/files/guides/method-guide.pdf)
 
-* ### [MONARC Objects Sharing Platform](/documentation/MOSP-documentation) [<i class="fa fa-file-pdf-o" style="color:red" aria-hidden="true"></i>](/assets/files/guides/MOSP-documentation.pdf)
+* ### [MONARC Objects Sharing Platform](/documentation/MOSP-documentation/) [<i class="fa fa-file-pdf-o" style="color:red" aria-hidden="true"></i>](/assets/files/guides/MOSP-documentation.pdf)
 
 ## Technical documentation
 

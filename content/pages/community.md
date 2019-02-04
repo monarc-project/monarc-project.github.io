@@ -52,4 +52,4 @@ available objects:
 
 These objects can be imported in the knowledge base of your MONARC instance.
 A documentation is available here
-([HTML](/documentation/MOSP-documentation), [PDF](/assets/files/guides/MOSP-documentation.pdf)).
+([HTML](/documentation/MOSP-documentation/), [PDF](/assets/files/guides/MOSP-documentation.pdf)).
