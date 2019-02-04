@@ -34,14 +34,22 @@ You can also have a look at our [roadmap](https://github.com/monarc-project/Mona
 
 ## The data
 
-We are working on a solution which will let the users share their MONARC JSON
-objects much easier:  
-[http://objects.monarc.lu](http://objects.monarc.lu)
+Primary objects used in MONARC are available through
+the [MONARC Objects Sharing Plarform](http://objects.monarc.lu).
 
-The source code of the prototype is available here:  
-[https://github.com/CASES-LU/MOSP](https://github.com/CASES-LU/MOSP)
-
-MONARC objects (threats, assets, vulnerabilities) are licensed under
+MONARC objects (threats, assets, vulnerabilities, referentials, etc.) are licensed under
 [CC0 1.0 Universal (CC0 1.0)](https://creativecommons.org/publicdomain/zero/1.0/) - Public Domain Dedication.
 If a specific author wants to license an object under a different license,
 a pull request can be requested.
+
+### Kind of objects
+
+We are currently working on populating the database. You can already have a look at the
+available objects:
+
+* [Security referentials](http://objects.monarc.lu/schema/12)
+* [Security referentials mapping](http://objects.monarc.lu/schema/13)
+
+These objects can be imported in the knowledge base of your MONARC instance.
+A documentation is available here
+([HTML](/documentation/MOSP-documentation), [PDF](/assets/files/guides/MOSP-documentation.pdf)).

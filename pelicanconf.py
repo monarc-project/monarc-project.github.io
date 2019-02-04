@@ -22,6 +22,7 @@ STATIC_PATHS = ['assets',
                 'documentation/quick-start',
                 'documentation/user-guide',
                 'documentation/method-guide',
+                'documentation/MOSP-documentation',
                 'table-comparison-between-monarc-and-different-risk-management-methods', # duplicate of content/table-of-comparison-between-monarc-and-different-risk-management-methods
                 'comparison-between-monarc-and-different-risk-management-methods'] # duplicate of content/comparison-between-monarc-and-different-risk-management-methods
 CUSTOM_CSS = 'static/css/custom.css'
@@ -87,9 +88,9 @@ MENUITEMS = (
         ('News', '/news'),
         ('Product', '/product'),
         ('Service', '/service'),
+        ('Community', '/community'),
         ('Publications', '/publications'),
         ('Documentation', '/documentation'),
-        ('Community', '/community'),
         ('Download', '/download'),
         ('Trainings', '/trainings'),
         ('Work with us', '/internship')
@@ -97,11 +98,11 @@ MENUITEMS = (
 
 # Links
 LINKS = (('MONARC <i>Cloud</i>', 'https://my.monarc.lu/'),
+         ('Objects Sharing Platform', 'http://objects.monarc.lu'),
          ('Roadmap', 'https://github.com/monarc-project/MonarcAppFO/wiki/Roadmap'),
          ('SECURITYMADEIN.LU', 'https://securitymadein.lu'),
          ('Cybersecurity Competence Center (C3)', 'https://c-3.lu'),
          ('Freshermeat page', 'https://open-source-security-software.net/project/MONARC'),
-         ('freshcode.club page', 'https://freshcode.club/projects/monarc'),
          ('Subscribe to the releases', 'https://open-source-security-software.net/project/MONARC/releases.atom'),
          ('<img src="https://img.shields.io/github/release/monarc-project/MonarcAppFO.svg?style=flat-square" />',
             'https://github.com/monarc-project/MonarcAppFO/releases/latest'),)

@@ -22,7 +22,7 @@ optimised risk analysis method: [MONARC](https://github.com/monarc-project)
 (**Optimised Risk Analysis Method**), allowing precise and repeatable risk
 management.
 
-The advantage of MONARC lies in the capitalisation of risk analyses already
+The advantage of MONARC lies in the capitalisation of risk analysis already
 performed in similar business contexts: the same vulnerabilities regularly
 appear in many businesses, as they face the same threats and generate similar
 risks. Most companies have servers, printers, a fleet of smartphones, Wi-Fi

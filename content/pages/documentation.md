@@ -8,17 +8,7 @@ Title: Documentation
 
 * ### [Method guide](/documentation/method-guide) [<i class="fa fa-file-pdf-o" style="color:red" aria-hidden="true"></i>](/assets/files/guides/method-guide.pdf)
 
-
-MONARC can be installed in two different ways. It depends on your needs
-and requirements:
-
- - MONARC Instance Management (also known as MONARC back office);
- - MONARC.
-
-The below-mentioned documents are geared more towards the first. If you
-need help deciding which version of MONARC suits your needs, please read
-[this article](/product).
-
+* ### [MONARC Objects Sharing Platform](/documentation/MOSP-documentation) [<i class="fa fa-file-pdf-o" style="color:red" aria-hidden="true"></i>](/assets/files/guides/MOSP-documentation.pdf)
 
 ## Technical documentation
 
