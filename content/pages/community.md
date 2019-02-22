@@ -35,20 +35,24 @@ You can also have a look at our [roadmap](https://github.com/monarc-project/Mona
 ## The data
 
 Primary objects used in MONARC are available through
-the [MONARC Objects Sharing Plarform](http://objects.monarc.lu).
+the [MONARC Objects Sharing Plarform](https://objects.monarc.lu).
 
-MONARC objects (threats, assets, vulnerabilities, referentials, etc.) are licensed under
-[CC0 1.0 Universal (CC0 1.0)](https://creativecommons.org/publicdomain/zero/1.0/) - Public Domain Dedication.
+MONARC objects (threats, assets, vulnerabilities, referentials, etc.) are
+licensed under
+[CC0 1.0 Universal (CC0 1.0)](https://creativecommons.org/publicdomain/zero/1.0/)
+- Public Domain Dedication.
 If a specific author wants to license an object under a different license,
 a pull request can be requested.
 
 ### Kind of objects
 
-We are currently working on populating the database. You can already have a look at the
-available objects:
+We are currently working on populating the database.
+You can already have a look at the
+[available objects](https://objects.monarc.lu/organization/MONARC) from the
+MONARC project:
 
-* [Security referentials](http://objects.monarc.lu/schema/12)
-* [Security referentials mapping](http://objects.monarc.lu/schema/13)
+* [Security referentials](https://objects.monarc.lu/schema/12)
+* [Security referentials mapping](https://objects.monarc.lu/schema/13)
 
 These objects can be imported in the knowledge base of your MONARC instance.
 A documentation is available here

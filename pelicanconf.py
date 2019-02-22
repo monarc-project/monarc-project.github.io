@@ -98,7 +98,7 @@ MENUITEMS = (
 
 # Links
 LINKS = (('MONARC <i>Cloud</i>', 'https://my.monarc.lu/'),
-         ('Objects Sharing Platform', 'http://objects.monarc.lu'),
+         ('Objects Sharing Platform', 'https://objects.monarc.lu'),
          ('Roadmap', 'https://github.com/monarc-project/MonarcAppFO/wiki/Roadmap'),
          ('SECURITYMADEIN.LU', 'https://securitymadein.lu'),
          ('Cybersecurity Competence Center (C3)', 'https://c-3.lu'),
