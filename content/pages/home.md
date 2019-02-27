@@ -2,10 +2,10 @@ Title: Presentation
 URL:
 Save_as: index.html
 
-__A method for an optimised analysis of risks.__
+__MONARC is a tool and a method allowing an optimised, precise and repeatable
+risk assessment.__
 
 ## What is MONARC?
-
 Depending on its size and its security needs, organisations must react in the
 most appropriate manner. Adopting good practices, taking the necessary measures
 and adjusting them proportionally: all this is part of the process to ensure
@@ -37,34 +37,53 @@ assets (also called objects) by context and/or business.
 </div>
 
 <a name="Phases" />
-
 ## Phases of MONARC
 
 <a name="Context" />
-
 ### 1. Context Establishment
-  The first step is to take stock of the context, challenges and priorities of the company or organization that wishes to analyse its risks. This particularly serves to identify key activities and critical processes of the business in order to guide the risk analysis towards the most important elements. To do this, a kick-off meeting is organized with the members of the management and key individuals. The goal is to know what makes the company «live» and what could destroy it, to identify the key processes, the internal and external threats as well as organisational, technical and human vulnerabilities.
+The first step is to take stock of the context, challenges and priorities of the
+company or organization that wishes to analyse its risks. This particularly
+serves to identify key activities and critical processes of the business in
+order to guide the risk analysis towards the most important elements. To do
+this, a kick-off meeting is organized with the members of the management and key
+individuals. The goal is to know what makes the company «live» and what could
+destroy it, to identify the key processes, the internal and external threats as
+well as organisational, technical and human vulnerabilities.
+
 
 <a name="Modelling" />
-
 ### 2. Context Modelling
-  This phase includes the modelling of objects and trees. The assets were identified in the previous phase. They must now be detailed and formalised in a diagram that displays their interdependencies.
+This phase includes the modelling of objects and trees. The assets were
+identified in the previous phase. They must now be detailed and formalised in a
+diagram that displays their interdependencies.
 
-  Impacts are defined at the level of the primary assets (processes or information), following the information gathered in the context establishment phase. The secondary assets inherit the impact of the primary asset to which they are attached (object tree). The impact level of the secondary assets can be modified manually.
+Impacts are defined at the level of the primary assets (processes or
+information), following the information gathered in the context establishment
+phase. The secondary assets inherit the impact of the primary asset to which
+they are attached (object tree). The impact level of the secondary assets can be
+modified manually.
+
 
 <a name="Evaluation" />
-
 ### 3. Evaluation and treatment of risks
-  The assessment consists of quantifying the threats, vulnerabilities and impacts in order to calculate the risks.
+The assessment consists of quantifying the threats, vulnerabilities and impacts
+in order to calculate the risks.
 
-  To do this, it is necessary to have quality information about the exact likelihood of the threats, the ease of exploitation of vulnerabilities and potential impacts; hence the need to rely on metrics that have been validated by experts.  
+To do this, it is necessary to have quality information about the exact
+likelihood of the threats, the ease of exploitation of vulnerabilities and
+potential impacts; hence the need to rely on metrics that have been validated by
+experts.  
 
-  When the risk assessment identifies a risk that is higher than the acceptable level (risk acceptance grid), risk treatment measures should be implemented in order to reduce the risk down to an acceptable level.
+When the risk assessment identifies a risk that is higher than the acceptable
+level (risk acceptance grid), risk treatment measures should be implemented in
+order to reduce the risk down to an acceptable level.
+
 
 <a name="Implementation" />
-
 ### 4. Implementation and monitoring
+When the first treatment of risks has been carried out, an ongoing management
+phase with security monitoring and recurring control of security measures must
+be entered, in order to improve it in a sustainable manner.
 
-  When the first treatment of risks has been carried out, an ongoing management phase with security monitoring and recurring control of security measures must be entered, in order to improve it in a sustainable manner.
-
-  This fourth phase also allows to continuously optimise security by increasing the detail of objects used and by expanding the scope of the risk analysis.
+This fourth phase also allows to continuously optimise security by increasing
+the detail of objects used and by expanding the scope of the risk analysis.
