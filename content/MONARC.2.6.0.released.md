@@ -16,7 +16,7 @@ Version 2.6.0 of MONARC has been released.
   version checking is performed thanks to a
   [dedicated service](https://version.monarc.lu/version/MONARC).
 
-![](/assets/images/posts/20180720_143151.png#center "Version checking")
+![Version checking](/assets/images/posts/20180720_143151.png#center "Version checking")
 
 ### Enhancement
 

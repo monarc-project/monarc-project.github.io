@@ -5,7 +5,7 @@ import os
 
 AUTHOR = 'security made in Lëtzebuerg (SMILE) g.i.e.'
 SITENAME = 'MONARC'
-SITEURL = 'https://www.monarc.lu/'
+SITEURL = 'https://www.monarc.lu'
 RELATIVE_URLS = True
 # SITEURL = 'http://127.0.0.1:8000/'
 PATH = 'content'

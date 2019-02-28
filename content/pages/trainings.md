@@ -22,7 +22,7 @@ Title: Trainings
 |&nbsp;|  |  |
 |**Extra requirements**||**A laptop is required**|
 |&nbsp;|  |  |
-|**Training materials**||Workshop MONARC &nbsp; [![][en]](/assets/files/monarc-training/en/Formation_V2-MONARC_Env1.1.pdf) [![][fr]](/assets/files/monarc-training/fr/Formation_V2-MONARC_Fr.pdf) [![][nl]](/assets/files/monarc-training/nl/Formation_V2-MONARC_NL.pdf)<br/>Context MyCompany [![][en]](/assets/files/monarc-training/en/Context_MyCompany_en_v1.0.pdf) [![][fr]](/assets/files/monarc-training/fr/Context_MyCompany_fr_v1.1.pdf)<br/><a href="/assets/files/monarc-training/en/MyPrintWorkshop.json" download>MyPrintWorkshop.json</a><br/><a href="/assets/files/monarc-training/en/MyPrint-withvalues.json" download>MyPrint-withvalues.json</a><br/><a href="/assets/files/monarc-training/en/Workshop-Printingservices.json" download>Workshop-Printingservices.json</a>
+|**Training materials**||Workshop MONARC &nbsp; [![English][en]](/assets/files/monarc-training/en/Formation_V2-MONARC_Env1.1.pdf) [![Français][fr]](/assets/files/monarc-training/fr/Formation_V2-MONARC_Fr.pdf) [![Dutch][nl]](/assets/files/monarc-training/nl/Formation_V2-MONARC_NL.pdf)<br/>Context MyCompany [![English][en]](/assets/files/monarc-training/en/Context_MyCompany_en_v1.0.pdf) [![Français][fr]](/assets/files/monarc-training/fr/Context_MyCompany_fr_v1.1.pdf)<br/><a href="/assets/files/monarc-training/en/MyPrintWorkshop.json" download>MyPrintWorkshop.json</a><br/><a href="/assets/files/monarc-training/en/MyPrint-withvalues.json" download>MyPrint-withvalues.json</a><br/><a href="/assets/files/monarc-training/en/Workshop-Printingservices.json" download>Workshop-Printingservices.json</a>
 |&nbsp;|  |  |
 |**Price**||Free (No show fee: 40€ HT - Cancellation is possible up to 48 hours before the start of the training) |
 |&nbsp;|  |  |
@@ -30,15 +30,15 @@ Title: Trainings
 
 ### Past Trainings
 
-* 19-12-2018 ![][en]
-* 04-09-2018 ![][en]
-* 19-06-2018 ![][fr] (Cancelled)
-* 08-03-2018 ![][en]
-* 07-11-2017 ![][fr]
-* 25-04-2017 ![][fr]
-* 25-04-2017 ![][en]
+* 19-12-2018 ![English][en]
+* 04-09-2018 ![English][en]
+* 19-06-2018 ![Français][fr] (Cancelled)
+* 08-03-2018 ![English][en]
+* 07-11-2017 ![Français][fr]
+* 25-04-2017 ![Français][fr]
+* 25-04-2017 ![English][en]
 
 
-[en]: /assets/images/gb.svg "EN"
-[fr]: /assets/images/fr.svg "FR"
-[nl]: /assets/images/nl.svg "NL"
+[en]: /assets/images/gb.svg "English"
+[fr]: /assets/images/fr.svg "Français"
+[nl]: /assets/images/nl.svg "Dutch"
