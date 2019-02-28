@@ -1,7 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
-from __future__ import unicode_literals
+
 import os
+import urllib.parse
 
 AUTHOR = 'security made in Lëtzebuerg (SMILE) g.i.e.'
 SITENAME = 'MONARC'
@@ -97,7 +98,7 @@ MENUITEMS = (
 )
 
 # Links
-LINKS = (('MONARC <i>Cloud</i>', 'https://my.monarc.lu/'),
+LINKS = (('MONARC <i>Cloud</i>', 'https://my.monarc.lu'),
          ('Objects Sharing Platform', 'https://objects.monarc.lu'),
          ('Roadmap', 'https://github.com/monarc-project/MonarcAppFO/wiki/Roadmap'),
          ('SECURITYMADEIN.LU', 'https://securitymadein.lu'),
@@ -110,7 +111,7 @@ LINKS = (('MONARC <i>Cloud</i>', 'https://my.monarc.lu/'),
 # Social widget
 SOCIAL = (('GitHub', 'https://github.com/monarc-project'),
           ('Twitter', 'https://twitter.com/MONARCproject'),
-          ('RSS', FEED_DOMAIN + FEED_ALL_ATOM),)
+          ('RSS', urllib.parse.urljoin(FEED_DOMAIN, FEED_ALL_ATOM)),)
 
 NAVBAR_ELEMENTS = ['menu-items']
 

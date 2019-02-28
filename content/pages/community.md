@@ -42,17 +42,11 @@ licensed under
 [CC0 1.0 Universal (CC0 1.0)](https://creativecommons.org/publicdomain/zero/1.0/)
 - Public Domain Dedication.
 If a specific author wants to license an object under a different license,
-a pull request can be requested.
-
-### Kind of objects
+a pull request can be requested.d
 
 We are currently working on populating the database.
 You can already have a look at the
-[available objects](https://objects.monarc.lu/organization/MONARC) from the
-MONARC project:
-
-* [Security referentials](https://objects.monarc.lu/schema/12)
-* [Security referentials mapping](https://objects.monarc.lu/schema/13)
+[available objects from the MONARC project](https://objects.monarc.lu/organization/MONARC).
 
 These objects can be imported in the knowledge base of your MONARC instance.
 A documentation is available here
