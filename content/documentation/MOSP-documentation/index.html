@@ -530,90 +530,348 @@ table.CodeRay td.code>pre{padding:0}
 <div class="details">
 <span id="author" class="author">CASES Luxembourg</span><br>
 <span id="email" class="email"><a href="mailto:info@cases.lu">info@cases.lu</a></span><br>
-<span id="revnumber">version 2019-02-04</span>
+<span id="revnumber">version 2019-02-28</span>
 </div>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a href="#introduction">1. Introduction</a>
+<li><a href="#introduction">1. Introduction</a></li>
+<li><a href="#objects-involved-in-mosp">2. Objects involved in MOSP</a>
 <ul class="sectlevel2">
-<li><a href="#json-schema">1.1. JSON schema</a></li>
-<li><a href="#objects">1.2. Objects</a></li>
+<li><a href="#json-schema">2.1. JSON schema</a>
+<ul class="sectlevel3">
+<li><a href="#example-of-schemas">2.1.1. Example of schemas</a></li>
 </ul>
 </li>
-<li><a href="#creating-a-new-object">2. Creating a new object</a>
-<ul class="sectlevel2">
-<li><a href="#select-a-schema">2.1. Select a schema</a></li>
-<li><a href="#edit-object-definition">2.2. Edit object definition</a></li>
+<li><a href="#objects">2.2. Objects</a></li>
 </ul>
 </li>
-<li><a href="#exporting-an-object-for-use-in-monarc">3. Exporting an object for use in MONARC</a></li>
-<li><a href="#using-the-api">4. Using the API</a></li>
+<li><a href="#using-the-platform">3. Using the platform</a>
+<ul class="sectlevel2">
+<li><a href="#creating-a-new-object">3.1. Creating a new object</a></li>
+<li><a href="#select-a-schema">3.2. Select a schema</a></li>
+<li><a href="#edit-object-definition">3.3. Edit object definition</a></li>
+<li><a href="#exporting-an-object-for-use-in-monarc">3.4. Exporting an object for use in MONARC</a></li>
+</ul>
+</li>
+<li><a href="#using-the-api">4. Using the API</a>
+<ul class="sectlevel2">
+<li><a href="#endpoint-for-schemas">4.1. Endpoint for Schemas</a></li>
+<li><a href="#endpoint-for-json-objects">4.2. Endpoint for JSON objects</a>
+<ul class="sectlevel3">
+<li><a href="#getting-the-list-of-json-objects">4.2.1. Getting the list of JSON objects</a></li>
+<li><a href="#creating-a-new-object-2">4.2.2. Creating a new object</a></li>
+</ul>
+</li>
+<li><a href="#more-complex-queries">4.3. More complex queries</a></li>
+</ul>
+</li>
+<li><a href="#permissions">5. Permissions</a>
+<ul class="sectlevel2">
+<li><a href="#schemas">5.1. Schemas</a></li>
+<li><a href="#objects-2">5.2. Objects</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
 <div id="content">
+<div id="preamble">
+<div class="sectionbody">
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>This document is also available as a
+<a href="https://www.monarc.lu/assets/files/guides/MOSP-documentation.pdf">PDF file</a>.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
 <div class="sect1">
 <h2 id="introduction"><a class="anchor" href="#introduction"></a><a class="link" href="#introduction">1. Introduction</a></h2>
 <div class="sectionbody">
+<div class="paragraph">
+<p>This document is intented to be a presentation and a user guide to <a href="https://github.com/CASES-LU/MOSP">MOSP</a>, a platform to create, edit and share valid JSON objects.</p>
+</div>
+<div class="paragraph">
+<p>MOSP supports any kind of JSON objects, you just have to specify a <a href="#json-schema">JSON schema</a>.
+The instance <a href="https://objects.monarc.lu">objects.monarc.lu</a>, operated by <a href="https://www.cases.lu">CASES</a>, is dedicated to gather security related objects in the first place aimed to be used with <a href="https://www.monarc.lu">MONARC</a>.</p>
+</div>
+<div class="paragraph">
+<p>Objects officially provided by the MONARC project are available at <a href="https://objects.monarc.lu/organization/MONARC">https://objects.monarc.lu/organization/MONARC</a>.
+Note that any <strong>object</strong> created with a <strong>JSON schema</strong> provided by the MONARC project will be compatible with the MONARC software.
+In other words, you can use our JSON schemas in order to create objects (referentials, mapping, etc.) for a usage in your own security analysis.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="objects-involved-in-mosp"><a class="anchor" href="#objects-involved-in-mosp"></a><a class="link" href="#objects-involved-in-mosp">2. Objects involved in MOSP</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The core concept of MOSP lies on the <a href="#json-schema">JSON schemas</a> and <a href="#objects">JSON Objects</a>.
+Each objects you create within MOSP will be conforms to a selected schema.</p>
+</div>
 <div class="sect2">
-<h3 id="json-schema"><a class="anchor" href="#json-schema"></a><a class="link" href="#json-schema">1.1. JSON schema</a></h3>
+<h3 id="json-schema"><a class="anchor" href="#json-schema"></a><a class="link" href="#json-schema">2.1. JSON schema</a></h3>
 <div class="paragraph">
 <p>A JSON schema describes and validates your existing data format(s).
 This ensures the quality of client submitted data.
 MOSP also uses JSON schemas for the generation of the object editor.</p>
 </div>
 <div class="paragraph">
-<p>For example the JSON schema available here validates the Security
-referentials used in MONARC.
-When creating a new object with MOSP you have first to choose a JSON schema.</p>
+<p>For example the JSON schema available <a href="https://objects.monarc.lu/schema/view/12">here</a> validates the Security referentials used in MONARC.
+When creating a new object with MOSP you have first to choose a JSON schema and an owning organization. A user account can be bind to one or
+multiple organizations.</p>
 </div>
 <div class="paragraph">
 <p>You can use any available schemas in order to create shareable JSON objects.
-It is possible to keep an object private even if the goal of this platform is
-to promote the sharing of information. JSON schemas are always public.</p>
+It is possible to keep an object private (draft state) even if the goal of this platform is to promote the sharing of information. JSON schemas are always public.</p>
+</div>
+<div class="sect3">
+<h4 id="example-of-schemas"><a class="anchor" href="#example-of-schemas"></a><a class="link" href="#example-of-schemas">2.1.1. Example of schemas</a></h4>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://objects.monarc.lu/schema/12">Security referentials</a></p>
+</li>
+<li>
+<p><a href="https://objects.monarc.lu/schema/13">Security referentials mapping</a></p>
+</li>
+</ul>
+</div>
 </div>
 </div>
 <div class="sect2">
-<h3 id="objects"><a class="anchor" href="#objects"></a><a class="link" href="#objects">1.2. Objects</a></h3>
+<h3 id="objects"><a class="anchor" href="#objects"></a><a class="link" href="#objects">2.2. Objects</a></h3>
 
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="creating-a-new-object"><a class="anchor" href="#creating-a-new-object"></a><a class="link" href="#creating-a-new-object">2. Creating a new object</a></h2>
+<h2 id="using-the-platform"><a class="anchor" href="#using-the-platform"></a><a class="link" href="#using-the-platform">3. Using the platform</a></h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="select-a-schema"><a class="anchor" href="#select-a-schema"></a><a class="link" href="#select-a-schema">2.1. Select a schema</a></h3>
+<h3 id="creating-a-new-object"><a class="anchor" href="#creating-a-new-object"></a><a class="link" href="#creating-a-new-object">3.1. Creating a new object</a></h3>
+
+</div>
+<div class="sect2">
+<h3 id="select-a-schema"><a class="anchor" href="#select-a-schema"></a><a class="link" href="#select-a-schema">3.2. Select a schema</a></h3>
 <div class="paragraph">
 <p><span class="image"><img src="images/new-object-from-schema.png" alt="EditionJsonObject"></span></p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="edit-object-definition"><a class="anchor" href="#edit-object-definition"></a><a class="link" href="#edit-object-definition">2.2. Edit object definition</a></h3>
+<h3 id="edit-object-definition"><a class="anchor" href="#edit-object-definition"></a><a class="link" href="#edit-object-definition">3.3. Edit object definition</a></h3>
 <div class="paragraph">
 <p><span class="image"><img src="images/object-json-edition.png" alt="EditionJsonObject"></span></p>
 </div>
+<div class="paragraph">
+<p>The forms above is generated form the validating JSON schema.
+Validation errors are displayed in the grey box at the right of the interface.</p>
 </div>
 </div>
+<div class="sect2">
+<h3 id="exporting-an-object-for-use-in-monarc"><a class="anchor" href="#exporting-an-object-for-use-in-monarc"></a><a class="link" href="#exporting-an-object-for-use-in-monarc">3.4. Exporting an object for use in MONARC</a></h3>
+<div class="paragraph">
+<p>Objects exported from MOSP can be imported in your projects via the <a href="https://www.monarc.lu/documentation/user-guide/#management-of-knowledge-base">knowledge base</a> of MONARC.</p>
 </div>
-<div class="sect1">
-<h2 id="exporting-an-object-for-use-in-monarc"><a class="anchor" href="#exporting-an-object-for-use-in-monarc"></a><a class="link" href="#exporting-an-object-for-use-in-monarc">3. Exporting an object for use in MONARC</a></h2>
-<div class="sectionbody">
-
+</div>
 </div>
 </div>
 <div class="sect1">
 <h2 id="using-the-api"><a class="anchor" href="#using-the-api"></a><a class="link" href="#using-the-api">4. Using the API</a></h2>
 <div class="sectionbody">
+<div class="paragraph">
+<p>An API is provided in order to interact with the service programmatically.</p>
+</div>
+<div class="sect2">
+<h3 id="endpoint-for-schemas"><a class="anchor" href="#endpoint-for-schemas"></a><a class="link" href="#endpoint-for-schemas">4.1. Endpoint for Schemas</a></h3>
+<div class="paragraph">
+<p>Getting the list of schemas:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="bash">https://objects.monarc.lu/api/v1/schema</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Getting information about a schema:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="bash">https://objects.monarc.lu/api/v1/schema/13</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="endpoint-for-json-objects"><a class="anchor" href="#endpoint-for-json-objects"></a><a class="link" href="#endpoint-for-json-objects">4.2. Endpoint for JSON objects</a></h3>
+<div class="sect3">
+<h4 id="getting-the-list-of-json-objects"><a class="anchor" href="#getting-the-list-of-json-objects"></a><a class="link" href="#getting-the-list-of-json-objects">4.2.1. Getting the list of JSON objects</a></h4>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="bash">https://objects.monarc.lu/api/v1/json_object</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="creating-a-new-object-2"><a class="anchor" href="#creating-a-new-object-2"></a><a class="link" href="#creating-a-new-object-2">4.2.2. Creating a new object</a></h4>
+<div class="listingblock console">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="asciidoc">$ json_object='{}'
+$ curl -i --user username:password \
+    -H &quot;Content-Type: application/json&quot; \
+    -H &quot;Accept: application/json&quot; -X POST \
+    -d '{&quot;name&quot;:&quot;NIST&quot;,&quot;description&quot;:&quot;Recommended Security Controls for Federal Information Systems and Organizations. (Rev.5)&quot; ,&quot;org_id&quot;:2,&quot;json_object&quot;:'&quot;$json_object&quot;'}' \
+    https://objects.monarc.lu/api/v1/json_object
 
+HTTP/1.0 400 BAD REQUEST
+Content-Type: application/json
+Content-Length: 85
+Vary: Cookie
+
+{
+  &quot;message&quot;: &quot;You are not allowed to create/edit object from this organization.&quot;
+}</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="bash">$ json_object='{}'
+$ curl -i --user username:password \
+    -H &quot;Content-Type: application/json&quot; \
+    -H &quot;Accept: application/json&quot; -X POST \
+    -d '{&quot;name&quot;:&quot;NIST&quot;,&quot;description&quot;:&quot;Recommended Security Controls for Federal Information Systems and Organizations. (Rev.5)&quot; ,&quot;org_id&quot;:3,&quot;json_object&quot;:'&quot;$json_object&quot;'}' \
+    https://objects.monarc.lu/api/v1/json_object
+
+HTTP/1.0 400 BAD REQUEST
+Content-Type: application/json
+Content-Length: 85
+Vary: Cookie
+Date: Thu, 21 Feb 2019 09:07:26 GMT
+
+{
+  &quot;message&quot;: &quot;You must provide the id of a schema.&quot;
+}</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="bash">$ json_object='{}'
+$ curl -i --user username:password \
+    -H &quot;Content-Type: application/json&quot; \
+    -H &quot;Accept: application/json&quot; -X POST \
+    -d '{&quot;name&quot;:&quot;NIST&quot;,&quot;description&quot;:&quot;Recommended Security Controls for Federal Information Systems and Organizations. (Rev.5)&quot; ,&quot;org_id&quot;:3,&quot;schema_id&quot;:12,&quot;json_object&quot;:'&quot;$json_object&quot;'}' \
+    https://objects.monarc.lu/api/v1/json_object
+
+HTTP/1.0 400 BAD REQUEST
+Content-Type: application/json
+Content-Length: 85
+Vary: Cookie
+Date: Thu, 21 Feb 2019 09:07:26 GMT
+
+{
+  &quot;message&quot;: &quot;The object submitted is not validated by the schema.&quot;
+}</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="bash">$ json_object='{&quot;label&quot;:&quot;NIST SP 800-53&quot;,&quot;measures&quot;:[{&quot;category&quot;: &quot;Access Control&quot;,&quot;code&quot;: &quot;AC-1&quot;,&quot;label&quot;: &quot;Access Control Policy and Procedures&quot;,&quot;uuid&quot;: &quot;ebf10522-0f57-4880-aa73-e28a206b7be4&quot;}],&quot;uuid&quot;: &quot;cfd2cd50-95fa-4143-b0e5-794249bacae1&quot;,&quot;version&quot;: &quot;5.0&quot;}'
+$ curl -i --user username:password \
+    -H &quot;Content-Type: application/json&quot; \
+    -H &quot;Accept: application/json&quot; -X POST \
+    -d '{&quot;name&quot;:&quot;NIST&quot;,&quot;description&quot;:&quot;Recommended Security Controls for Federal Information Systems and Organizations. (Rev.5)&quot; ,&quot;org_id&quot;:3,&quot;schema_id&quot;:12,&quot;json_object&quot;:'&quot;$json_object&quot;'}' \
+    https://objects.monarc.lu/api/v1/json_object
+
+HTTP/1.0 201 CREATED
+Content-Type: application/json
+Content-Length: 2392
+Location: https://objects.monarc.lu/api/v1/json_object/30
+Vary: Accept, Cookie
+Content-Type: application/json
+Date: Thu, 21 Feb 2019 09:34:39 GMT</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The content of the newly created object is also returned.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="more-complex-queries"><a class="anchor" href="#more-complex-queries"></a><a class="link" href="#more-complex-queries">4.3. More complex queries</a></h3>
+<div class="paragraph">
+<p>Getting all objects owned by the MONARC organization:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="bash">https://objects.monarc.lu/api/v1/json_object?q={&quot;name&quot;:&quot;organization&quot;,&quot;op&quot;:&quot;has&quot;,&quot;val&quot;:{&quot;name&quot;:&quot;name&quot;,&quot;op&quot;:&quot;eq&quot;,&quot;val&quot;: &quot;MONARC&quot;}}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Getting all schemas owned by the MONARC organization:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="bash">https://objects.monarc.lu/api/v1/schema?q={&quot;filters&quot;:[{&quot;name&quot;:&quot;organization&quot;,&quot;op&quot;:&quot;has&quot;,&quot;val&quot;:{&quot;name&quot;:&quot;name&quot;,&quot;op&quot;:&quot;eq&quot;,&quot;val&quot;:&quot;MONARC&quot;}}]}</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="bash">https://objects.monarc.lu/api/v1/json_object?q={&quot;name&quot;:&quot;schema&quot;,&quot;op&quot;:&quot;has&quot;,&quot;val&quot;:{&quot;name&quot;:&quot;name&quot;,&quot;op&quot;:&quot;eq&quot;,&quot;val&quot;: &quot;Security referentials&quot;}}</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="permissions"><a class="anchor" href="#permissions"></a><a class="link" href="#permissions">5. Permissions</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This section details the management of permissions in MOSP.</p>
+</div>
+<div class="sect2">
+<h3 id="schemas"><a class="anchor" href="#schemas"></a><a class="link" href="#schemas">5.1. Schemas</a></h3>
+<div class="paragraph">
+<p>Schemas are always public.</p>
+</div>
+<div class="paragraph">
+<p>You can only create an object in one of the organizations your account is
+linked to.</p>
+</div>
+<div class="paragraph">
+<p>In order to edit a schema your account must be linked to the owning
+organization of the schema.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="objects-2"><a class="anchor" href="#objects-2"></a><a class="link" href="#objects-2">5.2. Objects</a></h3>
+<div class="paragraph">
+<p>An object can be public or private (draft mode).</p>
+</div>
+<div class="paragraph">
+<p>You can only create an object in one of the organizations your account is linked to.
+Since all schemas are public you can instantiate a new object with the schema of your choice.</p>
+</div>
+<div class="paragraph">
+<p>In order to see a private object or to edit an object your account
+should be linked to the owning organization of this object.</p>
+</div>
+</div>
 </div>
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Version 2019-02-04<br>
-Last updated 2019-02-04 08:13:46 CET
+Version 2019-02-28<br>
+Last updated 2019-02-28 13:50:10 CET
 </div>
 </div>
 <script type="text/x-mathjax-config">
