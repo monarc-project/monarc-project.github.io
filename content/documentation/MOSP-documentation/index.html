@@ -530,7 +530,7 @@ table.CodeRay td.code>pre{padding:0}
 <div class="details">
 <span id="author" class="author">CASES Luxembourg</span><br>
 <span id="email" class="email"><a href="mailto:info@cases.lu">info@cases.lu</a></span><br>
-<span id="revnumber">version 2019-02-28</span>
+<span id="revnumber">version 2019-03-04</span>
 </div>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
@@ -606,7 +606,7 @@ table.CodeRay td.code>pre{padding:0}
 The instance <a href="https://objects.monarc.lu">objects.monarc.lu</a>, operated by <a href="https://www.cases.lu">CASES</a>, is dedicated to gather security related objects in the first place aimed to be used with <a href="https://www.monarc.lu">MONARC</a>.</p>
 </div>
 <div class="paragraph">
-<p>Objects officially provided by the MONARC project are available at <a href="https://objects.monarc.lu/organization/MONARC">https://objects.monarc.lu/organization/MONARC</a>.
+<p>Objects officially provided by the MONARC project are available <a href="https://objects.monarc.lu/organization/MONARC">here</a>.
 Note that any <strong>object</strong> created with a <strong>JSON schema</strong> provided by the MONARC project will be compatible with the MONARC software.
 In other words, you can use our JSON schemas in order to create objects (referentials, mapping, etc.) for a usage in your own security analysis.</p>
 </div>
@@ -617,7 +617,7 @@ In other words, you can use our JSON schemas in order to create objects (referen
 <div class="sectionbody">
 <div class="paragraph">
 <p>The core concept of MOSP lies on the <a href="#json-schema">JSON schemas</a> and <a href="#objects">JSON Objects</a>.
-Each objects you create within MOSP will be conforms to a selected schema.</p>
+Each objects you create within MOSP will conform to a selected schema.</p>
 </div>
 <div class="sect2">
 <h3 id="json-schema"><a class="anchor" href="#json-schema"></a><a class="link" href="#json-schema">2.1. JSON schema</a></h3>
@@ -626,14 +626,22 @@ Each objects you create within MOSP will be conforms to a selected schema.</p>
 This ensures the quality of client submitted data.
 MOSP also uses JSON schemas for the generation of the object editor.</p>
 </div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
 <div class="paragraph">
-<p>For example the JSON schema available <a href="https://objects.monarc.lu/schema/view/12">here</a> validates the Security referentials used in MONARC.
-When creating a new object with MOSP you have first to choose a JSON schema and an owning organization. A user account can be bind to one or
-multiple organizations.</p>
+<p>JSON schemas are always public.</p>
+</div>
+</td>
+</tr>
+</table>
 </div>
 <div class="paragraph">
-<p>You can use any available schemas in order to create shareable JSON objects.
-It is possible to keep an object private (draft state) even if the goal of this platform is to promote the sharing of information. JSON schemas are always public.</p>
+<p>For example, the JSON schema available <a href="https://objects.monarc.lu/schema/view/12">here</a> validates the Security referentials used in MONARC.</p>
 </div>
 <div class="sect3">
 <h4 id="example-of-schemas"><a class="anchor" href="#example-of-schemas"></a><a class="link" href="#example-of-schemas">2.1.1. Example of schemas</a></h4>
@@ -660,7 +668,31 @@ It is possible to keep an object private (draft state) even if the goal of this 
 <div class="sectionbody">
 <div class="sect2">
 <h3 id="creating-a-new-object"><a class="anchor" href="#creating-a-new-object"></a><a class="link" href="#creating-a-new-object">3.1. Creating a new object</a></h3>
-
+<div class="paragraph">
+<p>When creating a new object with MOSP you have to:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>choose a JSON schema from the ones available on the platform;</p>
+</li>
+<li>
+<p>specify a name and a brief description;</p>
+</li>
+<li>
+<p>choose an owning organization (a user account can be bound to one or multiple organizations);</p>
+</li>
+<li>
+<p>specify if the object will be public or private. Please limit the use of private objects. Our goal is to empower the sharing of information. Private objects can be useful for drafts.</p>
+</li>
+<li>
+<p>choose at least one license from the proposed.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>You can use any available schemas in order to create shareable JSON objects.</p>
+</div>
 </div>
 <div class="sect2">
 <h3 id="select-a-schema"><a class="anchor" href="#select-a-schema"></a><a class="link" href="#select-a-schema">3.2. Select a schema</a></h3>
@@ -674,14 +706,23 @@ It is possible to keep an object private (draft state) even if the goal of this 
 <p><span class="image"><img src="images/object-json-edition.png" alt="EditionJsonObject"></span></p>
 </div>
 <div class="paragraph">
-<p>The forms above is generated form the validating JSON schema.
-Validation errors are displayed in the grey box at the right of the interface.</p>
+<p>The form above is generated thanks to the JSON schema.
+Using this form ensures that you will create valid objects.</p>
+</div>
+<div class="paragraph">
+<p>If you update the schema related to an already defined object, eventual validation errors will be displayed in the gray box at the right of the interface.</p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="exporting-an-object-for-use-in-monarc"><a class="anchor" href="#exporting-an-object-for-use-in-monarc"></a><a class="link" href="#exporting-an-object-for-use-in-monarc">3.4. Exporting an object for use in MONARC</a></h3>
 <div class="paragraph">
 <p>Objects exported from MOSP can be imported in your projects via the <a href="https://www.monarc.lu/documentation/user-guide/#management-of-knowledge-base">knowledge base</a> of MONARC.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="images/export-objects-from-MOSP-for-MONARC.png" alt="Exporting an object for use in MONARC"></span></p>
+</div>
+<div class="paragraph">
+<p>MONARC will be able to handle the CSV or the JSON export.</p>
 </div>
 </div>
 </div>
@@ -723,9 +764,9 @@ Validation errors are displayed in the grey box at the right of the interface.</
 </div>
 <div class="sect3">
 <h4 id="creating-a-new-object-2"><a class="anchor" href="#creating-a-new-object-2"></a><a class="link" href="#creating-a-new-object-2">4.2.2. Creating a new object</a></h4>
-<div class="listingblock console">
+<div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="asciidoc">$ json_object='{}'
+<pre class="CodeRay highlight"><code data-lang="bash">$ json_object='{}'
 $ curl -i --user username:password \
     -H &quot;Content-Type: application/json&quot; \
     -H &quot;Accept: application/json&quot; -X POST \
@@ -870,8 +911,8 @@ should be linked to the owning organization of this object.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Version 2019-02-28<br>
-Last updated 2019-02-28 13:50:10 CET
+Version 2019-03-04<br>
+Last updated 2019-03-04 13:02:30 CET
 </div>
 </div>
 <script type="text/x-mathjax-config">
