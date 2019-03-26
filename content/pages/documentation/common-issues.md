@@ -63,3 +63,31 @@ A minimum of one administrator per MONARC instance is recommended.
 The management of users on a specific MONARC instance is the responsibility
 of administrator of the instance.
 The administrator of the back office should not be responsible of this.
+
+## Adding a new administrator without access to the MONARC Web interface
+
+Considering, for example, that an employee with administrator rights on MONARC
+recently left the company.
+
+You must have a SSH access to the server where MONARC is installed.
+
+**Situation 1**
+
+If you are using MONARC without back office, simply run this command at the
+root of MONARC:
+
+    $ php ./vendor/robmorgan/phinx/bin/phinx seed:run -c ./module/MonarcFO/migrations/phinx.php
+
+This will create a new administrator account with the login *admin@admin.test*
+and the password *admin*.
+
+**Situation 2**
+
+If you are using a back office, as explained in the previous section, it is not
+possible to change the adminstrator of a MONARC instance or to add a new one.
+Clients databases are separated.  
+A simple solution would be to update the email address of the former
+administrator directly in the client database (on the FO server), with your own
+email address.
+Then you will be able to use the passord recovery feature of MONARC.
+
