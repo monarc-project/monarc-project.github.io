@@ -84,10 +84,9 @@ and the password *admin*.
 **Situation 2**
 
 If you are using a back office, as explained in the previous section, it is not
-possible to change the adminstrator of a MONARC instance or to add a new one.
+possible to change the administrator of a MONARC instance or to add a new one.
 Clients databases are separated.  
 A simple solution would be to update the email address of the former
 administrator directly in the client database (on the FO server), with your own
 email address.
-Then you will be able to use the passord recovery feature of MONARC.
-
+Then you will be able to use the password recovery feature of MONARC.
