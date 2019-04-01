@@ -4,11 +4,12 @@ Title: Download
 
 ## Installation of MONARC
 
+Different options are available to install MONARC.
+
 ### Source code
 
 The source code of MONARC is available on
 [GitHub](https://github.com/monarc-project).
-
 For installation instructions from the source code see
 [here](https://github.com/monarc-project/MonarcAppFO/tree/master/INSTALL).
 
@@ -30,7 +31,6 @@ MONARC. More information
 ### Vagrant
 
 Deploy MONARC with [Vagrant](https://github.com/monarc-project/MonarcAppFO/tree/master/vagrant).
-
 Vagrant is convenient to use in order to setup your development environment.
 
 ### Ansible
@@ -39,13 +39,12 @@ Deploy the whole architecture with [Ansible](https://github.com/monarc-project/a
 Use this method only if you want to use a back office.
 
 
-
 ## Usage of MONARC
 
-Open your Web browser and go to this address (depending on your
-configuration):  
-[http://10.0.0.101](http://10.0.0.101)
+With your Web browser:
 
+* go to the address [http://10.0.0.101](http://10.0.0.101) (depending on your
+  configuration and the installation method)
 * Login: admin@admin.test
 * Password: admin
 
@@ -56,3 +55,10 @@ configuration):
 2. Download the risk analysis file <a href="/assets/files/monarc-training/fr/MyPrint.json" download>(MyPrint FR)</a> or
    <a href="/assets/files/monarc-training/en/MyPrint-With-Values.json" download>(MyPrint EN)</a>
 3. [Import JSON file](/documentation/user-guide/#contextual-menu-of-asset)
+
+
+
+## Having troubles?
+
+Have a look at the section of [common issues](/documentation/common-issues).
+If you do not find your answer, [ask the community](community/contribution-guidelines).
