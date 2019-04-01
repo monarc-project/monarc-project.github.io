@@ -2,8 +2,6 @@ Title: Security Considerations
 Date: 2018-08-21
 Hidden: false
 
-> This document is currently under development.
-
 [TOC]
 
 ## Architecture
