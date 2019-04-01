@@ -61,4 +61,4 @@ With your Web browser:
 ## Having troubles?
 
 Have a look at the section of [common issues](/documentation/common-issues).
-If you do not find your answer, [ask the community](community/contribution-guidelines).
+If you do not find your answer, [ask the community](/community/contribution-guidelines).
