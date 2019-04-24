@@ -11,6 +11,9 @@ Version 2.8.1 of MONARC has been released with several improvements.
 
 - the dashboard can now be exported to a CSV file or to a presentation file (.pptx).
 
+![Dashboard export to presentation file](/assets/images/posts/dashboard-export-to-presentation.png#center "Dashboard export to presentation file")
+
+
 ### Enhancement
 
 - Improve the treatment of a risk ([#114](https://github.com/monarc-project/MonarcAppFO/issues/114));
