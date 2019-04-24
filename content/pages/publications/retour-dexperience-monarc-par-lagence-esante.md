@@ -13,7 +13,7 @@ Dans un premier temps, nous avons adopté la méthode française d’analyse de 
 
 #### Comment s'est déroulée la migration vers l'outil MONARC ?
 
-J'ai eu l'opportunité de bénéficier d'une formation gratuite proposée par CASES. Cela m'a ainsi permis de discuter avec les créateurs de la solution, mais aussi de prendre facilement l'outil en main. Une journée de formation suffit amplement dans le cas où l'on a déjà une expérience en analyse de risques, autrement il est important de l'acquérir en amont au travers de formations complémentaires. Une description simplifiée de ce type d'analyse de risques est mise à disposition sur le site de CASES (https://cases.lu/knowhow/bestpractices/RiskManagement_fr.html).
+J'ai eu l'opportunité de bénéficier d'une formation gratuite proposée par CASES. Cela m'a ainsi permis de discuter avec les créateurs de la solution, mais aussi de prendre facilement l'outil en main. Une journée de formation suffit amplement dans le cas où l'on a déjà une expérience en analyse de risques, autrement il est important de l'acquérir en amont au travers de formations complémentaires. Une description simplifiée de ce type d'analyse de risques est mise à disposition sur le site de [CASES](https://cases.lu/knowhow/bestpractices/RiskManagement_fr.html).
 
 #### Après un an d'utilisation, quels sont vos retours d'expériences ?
 
