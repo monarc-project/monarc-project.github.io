@@ -52,8 +52,7 @@ With your Web browser:
 ### Import a risk analysis demo
 
 1. [Create a risk analysis](/documentation/user-guide/#creating-a-risk-analysis)
-2. Download the risk analysis file <a href="/assets/files/monarc-training/fr/MyPrint.json" download>(MyPrint FR)</a> or
-   <a href="/assets/files/monarc-training/en/MyPrint-With-Values.json" download>(MyPrint EN)</a>
+2. Download the risk analysis file <a href="/assets/files/monarc-training/fr/MyPrintFR.json" download>(MyPrint FR)</a> or <a href="/assets/files/monarc-training/en/MyPrintEN.json" download>(MyPrint EN)</a>
 3. [Import JSON file](/documentation/user-guide/#contextual-menu-of-asset)
 
 
