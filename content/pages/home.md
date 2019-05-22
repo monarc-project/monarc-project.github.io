@@ -31,7 +31,7 @@ are the same. It is therefore sufficient to generalise risk scenarios for these
 assets (also called objects) by context and/or business.
 
 <div class="row">
-<video class="col-md-12" autoplay loop>
+<video class="col-md-12" autoplay="true" muted="true">
 <source src="/assets/video/ScreenCast.mp4" type="video/mp4">
 </video>
 </div>
