@@ -17,6 +17,10 @@ Version 2.8.2 of MONARC has been released with several improvements.
   in the knowledge base of your analysis from MOSP without leaving the MONARC
   user interface.
 
+![Import a risk from MOSP](/assets/images/posts/import_risk_from_MOSP.png#center "Import a risk from MOSP")
+Example with the risk object
+[7f9f704b-4f02-11e9-b3ea-0800277f0571](https://objects.monarc.lu/object/7f9f704b-4f02-11e9-b3ea-0800277f0571).
+
 ### Enhancement
 
 - Adding referential afterwards does not update the knowledge base
