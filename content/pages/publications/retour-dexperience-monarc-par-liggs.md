@@ -12,7 +12,7 @@ L’IGSS n’ayant pas l’ensemble des compétences en interne, nous sommes all
 
 ### Quel a été l’apport des équipes de CASES dans votre travail d’analyse de risques ?
 
-Le travail effectué en ###coopération avec CASES comprenait une formation à la méthode, l’analyse des processus et des flux d’information de notre traitement et du conseil. Nous avons rapidement avancé sur les risques de sécurité de l’information et acquis la méthode d’analyse applicable aux risques opérationnels. L’équipe CASES a été particulièrement efficace et pédagogue.
+Le travail effectué en coopération avec CASES comprenait une formation à la méthode, l’analyse des processus et des flux d’information de notre traitement et du conseil. Nous avons rapidement avancé sur les risques de sécurité de l’information et acquis la méthode d’analyse applicable aux risques opérationnels. L’équipe CASES a été particulièrement efficace et pédagogue.
 
 ### Quels avantages trouvez-vous à MONARC ?
 
