@@ -28,7 +28,7 @@ tr:nth-child(even) {
 
 | Description | Date |
 |---|:---:|
-|[Retour d'expérience MONARC par l'IGSS](/publications/retour-dexperience-monarc-par-ligss) | July 2019 - [<i class="fa fa-history"></i>](https://github.com/monarc-project/website/commits/master/content/pages/publications/retour-dexperience-monarc-par-ligss.md)|
+|[Retour d'expérience MONARC par l'IGSS](/publications/retour-dexperience-monarc-par-ligss) | September 2019 - [<i class="fa fa-history"></i>](https://github.com/monarc-project/website/commits/master/content/pages/publications/retour-dexperience-monarc-par-ligss.md)|
 |[Retour d'expérience MONARC par l'ANSSI](/publications/retour-dexperience-monarc-par-lanssi) | May 2019 - [<i class="fa fa-history"></i>](https://github.com/monarc-project/website/commits/master/content/pages/publications/retour-dexperience-monarc-par-lanssi.md)|
 |[Retour d'expérience MONARC par l'Agence eSanté](/publications/retour-dexperience-monarc-par-lagence-esante) | April 2019 - [<i class="fa fa-history"></i>](https://github.com/monarc-project/website/commits/master/content/pages/publications/retour-dexperience-monarc-par-lagence-esante.md)|
 |[Risk Assessment Optimisation with MONARC](/publications/risk-assessment-optimisation-with-monarc) [<i class="fa fa-file-pdf-o" style="color:red" aria-hidden="true"></i>](/assets/files/publications/2018-HACK.LU-CASES.pdf)| June 2018 - [<i class="fa fa-history"></i>](https://github.com/monarc-project/website/commits/master/content/pages/publications/risk-assessment-optimisation-with-monarc/index.md)|
