@@ -4,7 +4,7 @@ Title: Trainings
 
 |&nbsp;|||
 |:--|--|--|
-|**Date and time**|| |
+|**Date and time**|| December 2019 (the exact date to be confirmed) |
 |&nbsp;|  ||
 |**Location**|&nbsp;&nbsp;&nbsp;|C3 - EternalBlue room / SECURITYMADEIN.LU|
 |             |                  |16 Boulevard d’Avranches 1160|
