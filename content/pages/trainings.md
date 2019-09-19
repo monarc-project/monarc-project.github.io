@@ -4,7 +4,7 @@ Title: Trainings
 
 |&nbsp;|||
 |:--|--|--|
-|**Date and time**||September 18th 2019, 9:00 to 16:00 |
+|**Date and time**|| |
 |&nbsp;|  ||
 |**Location**|&nbsp;&nbsp;&nbsp;|C3 - EternalBlue room / SECURITYMADEIN.LU|
 |             |                  |16 Boulevard d’Avranches 1160|
@@ -18,7 +18,7 @@ Title: Trainings
 |&nbsp;|  |  |
 |**Level required**||Basic|
 |&nbsp;|  |  |
-|**Language**|| English|
+|**Language**|| |
 |&nbsp;|  |  |
 |**Extra requirements**||**A laptop is required**|
 |&nbsp;|  |  |
@@ -30,6 +30,7 @@ Title: Trainings
 
 ### Past Trainings
 
+* 18-09-2019 ![English][en]
 * 28-03-2019 ![Français][fr]
 * 19-12-2018 ![English][en]
 * 04-09-2018 ![English][en]
