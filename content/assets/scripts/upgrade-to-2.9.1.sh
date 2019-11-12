@@ -9,7 +9,7 @@ if [[ $EUID -eq 0 ]]; then
     exit 1
 fi
 
-
+# Checks the version of PHP
 vercomp () {
     if [[ $1 == $2 ]]
     then
@@ -51,6 +51,8 @@ if [[ $(vercomp $PHP_VERSION 7.2.0 ; echo $?) -eq 2  ]]; then
     sleep 3
 fi
 
+# Update the root repository of MONARC
+git pull origin master
 
 # Clean old directories
 rm -Rf vendor/
