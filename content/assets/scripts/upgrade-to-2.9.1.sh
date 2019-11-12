@@ -29,7 +29,7 @@ if [[ -d ./../../vendor/monarc/frontoffice ]]; then
 else
     ln -s ./../../vendor/monarc/backoffice BackOffice
 fi
-
+cd ../..
 
 # Update all the project
 ./scripts/update-all.sh -c
