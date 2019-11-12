@@ -3,8 +3,8 @@
 
 # Everything must be executed with the normal user.
 if [[ $EUID -eq 0 ]]; then
-  echo "This script must not be executed with root privileges." 2>&1
-  exit 1
+    echo "This script must not be executed with root privileges." 2>&1
+    exit 1
 fi
 
 # Clean old directories
@@ -24,7 +24,12 @@ composer install -o
 # Create new symlinks
 cd module/Monarc
 ln -s ./../../vendor/monarc/core Core
-ln -s ./../../vendor/monarc/frontoffice FrontOffice
+if [[ -d ./../../vendor/monarc/frontoffice ]]; then
+    ln -s ./../../vendor/monarc/frontoffice FrontOffice
+else
+    ln -s ./../../vendor/monarc/backoffice BackOffice
+fi
+
 
 # Update all the project
 ./scripts/update-all.sh -c
