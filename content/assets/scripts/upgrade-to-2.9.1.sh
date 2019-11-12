@@ -44,7 +44,7 @@ vercomp () {
 PHP_VERSION=`php -v | grep ^PHP | cut -d ' ' -f2 | cut -d '-' -f1`
 
 
-if [[ vercomp $PHP_VERSION 7.2.0 -eq 2  ]]
+if [[ $(vercomp $PHP_VERSION 7.2.0 ; echo $?) -eq 2  ]]; then
     echo -e "${RED}You are using an old version of PHP: $PHP_VERSION${NC}"
     echo "The migration should works but we advise you to update."
     echo "https://www.php.net/supported-versions.php"
