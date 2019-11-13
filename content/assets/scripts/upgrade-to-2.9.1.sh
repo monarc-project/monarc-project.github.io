@@ -64,6 +64,7 @@ fi
 echo  -e "${GREEN}Removing old vendor, module and cache directories…${NC}"
 rm -Rf vendor/
 rm -Rf module/
+rm -Rf data/DoctrineORMModule 2>/dev/null
 rm -Rf data/cache 2>/dev/null
 
 # Create new required directories
