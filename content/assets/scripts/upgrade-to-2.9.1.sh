@@ -6,7 +6,7 @@ NC='\033[0m' # No Color
 
 # Everything must be executed with the normal user.
 if [[ $EUID -eq 0 ]]; then
-    echo "${RED}This script must not be executed with root privileges.${NC}" 2>&1
+    echo  -e "${RED}This script must not be executed with root privileges.${NC}" 2>&1
     exit 1
 fi
 
@@ -53,7 +53,7 @@ if [[ $(vercomp $PHP_VERSION 7.2.0 ; echo $?) -eq 2  ]]; then
 fi
 
 # Update the root repository of MONARC
-echo "${GREEN}Updating root of the project…${NC}"
+echo  -e "${GREEN}Updating root of the project…${NC}"
 git pull origin master
 if [[ $? -ne 0 ]]; then
     echo -e "${RED}Error when updating root of the project.${NC}"
@@ -61,24 +61,24 @@ if [[ $? -ne 0 ]]; then
 fi
 
 # Clean old directories
-echo "${GREEN}Removing old vendor, module and cache directories…${NC}"
+echo  -e "${GREEN}Removing old vendor, module and cache directories…${NC}"
 rm -Rf vendor/
 rm -Rf module/
 rm -Rf data/cache
 
 # Create new required directories
-echo "${GREEN}Creating new module and cache directories…${NC}"
+echo  -e "${GREEN}Creating new module and cache directories…${NC}"
 mkdir -p module/Monarc
 mkdir -p data/cache
 mkdir -p data/DoctrineORMModule
 mkdir -p data/LazyServices/Proxy
 
 # Update PHP dependencies of MONARC
-echo "${GREEN}Installing new PHP backend…${NC}"
+echo  -e "${GREEN}Installing new PHP backend…${NC}"
 composer install -o
 
 # Create new symlinks
-echo "${GREEN}Creating new symlinks…${NC}"
+echo  -e "${GREEN}Creating new symlinks…${NC}"
 cd module/Monarc
 ln -s ./../../vendor/monarc/core Core
 if [[ -d ./../../vendor/monarc/frontoffice ]]; then
@@ -89,11 +89,11 @@ fi
 cd ../..
 
 # Update all the project
-echo "${GREEN}Updating the whole project…${NC}"
+echo  -e "${GREEN}Updating the whole project…${NC}"
 ./scripts/update-all.sh -c
 
 
-echo "${GREEN}Upgrade finished.${NC}"
+echo  -e "${GREEN}Upgrade finished.${NC}"
 echo "Checks the permission of the folder data/"
 
 
