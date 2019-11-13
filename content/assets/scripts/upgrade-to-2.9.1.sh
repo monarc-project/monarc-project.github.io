@@ -64,13 +64,13 @@ fi
 echo  -e "${GREEN}Removing old vendor, module and cache directories…${NC}"
 rm -Rf vendor/
 rm -Rf module/
-rm -Rf data/cache
+rm -Rf data/cache 2>/dev/null
 
 # Create new required directories
 echo  -e "${GREEN}Creating new module and cache directories…${NC}"
 mkdir -p module/Monarc
-mkdir -p data/cache
-mkdir -p data/DoctrineORMModule
+mkdir -p data/cache 2>/dev/null
+mkdir -p data/DoctrineORMModule 2>/dev/null
 mkdir -p data/LazyServices/Proxy
 
 # Update PHP dependencies of MONARC
