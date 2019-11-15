@@ -12,9 +12,9 @@ Title: Documentation
 
 ## Technical documentation
 
-* ### [Administrator guide](/documentation/administrator-guide) [<i class="fa fa-file-pdf-o" style="color:red" aria-hidden="true"></i>](/assets/files/guides/administrator-guide.pdf)
-
 * ### [Technical guide](/documentation/technical-guide) [<i class="fa fa-file-pdf-o" style="color:red" aria-hidden="true"></i>](/assets/files/guides/technical-guide.pdf)
+
+* ### [Administrator guide](/documentation/administrator-guide) [<i class="fa fa-file-pdf-o" style="color:red" aria-hidden="true"></i>](/assets/files/guides/administrator-guide.pdf)
 
 * ### [Common issues](/documentation/common-issues)
 
