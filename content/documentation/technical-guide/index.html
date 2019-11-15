@@ -437,7 +437,6 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 #footer-text{color:rgba(0,0,0,.6);font-size:.9em}}
 @media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
 </style>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body class="book toc2 toc-left">
 <div id="header">
@@ -445,7 +444,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="details">
 <span id="author" class="author">CASES Luxembourg</span><br>
 <span id="email" class="email"><a href="mailto:info@cases.lu">info@cases.lu</a></span><br>
-<span id="revnumber">version 2019-11-11</span>
+<span id="revnumber">version 2019-11-15</span>
 </div>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
@@ -456,47 +455,47 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#other-documents">1.2. Other documents</a></li>
 </ul>
 </li>
-<li><a href="#modules-of-the-project">2. Modules of the project</a></li>
+<li><a href="#requirements">2. Requirements</a>
+<ul class="sectlevel2">
+<li><a href="#system-and-software">2.1. System and software</a></li>
+<li><a href="#specifications-by-server">2.2. Specifications by server</a></li>
+<li><a href="#network">2.3. Network</a></li>
+<li><a href="#tls-certificate">2.4. TLS certificate</a></li>
+</ul>
+</li>
 <li><a href="#architecture">3. Architecture</a>
 <ul class="sectlevel2">
-<li><a href="#global-architecture">3.1. Global architecture</a></li>
-<li><a href="#network-requirements">3.2. Network requirements</a></li>
+<li><a href="#modules-of-the-project">3.1. Modules of the project</a></li>
+<li><a href="#global-architecture">3.2. Global architecture</a></li>
+<li><a href="#network-requirements">3.3. Network requirements</a></li>
 </ul>
 </li>
-<li><a href="#requirements">4. Requirements</a>
+<li><a href="#deployment">4. Deployment</a>
 <ul class="sectlevel2">
-<li><a href="#system-and-software">4.1. System and software</a></li>
-<li><a href="#specifications-by-server">4.2. Specifications by server</a></li>
-<li><a href="#network">4.3. Network</a></li>
-<li><a href="#tls-certificate">4.4. TLS certificate</a></li>
+<li><a href="#monarc">4.1. MONARC</a>
+<ul class="sectlevel3">
+<li><a href="#prepared-virtual-machine">4.1.1. Prepared virtual machine</a></li>
+<li><a href="#manual-deployment">4.1.2. Manual deployment</a></li>
 </ul>
 </li>
-<li><a href="#deployment">5. Deployment</a>
+<li><a href="#monarc-and-the-back-office">4.2. MONARC and the back office</a>
+<ul class="sectlevel3">
+<li><a href="#requirements-2">4.2.1. Requirements</a></li>
+<li><a href="#usage">4.2.2. Usage</a></li>
+<li><a href="#configuration">4.2.3. Configuration</a></li>
+<li><a href="#launch-ansible-periodically-with-cron">4.2.4. Launch ansible periodically with cron</a></li>
+<li><a href="#update-the-ansible-playbook">4.2.5. Update the ansible playbook</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#updates">5. Updates</a>
 <ul class="sectlevel2">
-<li><a href="#monarc">5.1. MONARC</a>
+<li><a href="#system-update">5.1. System update</a></li>
+<li><a href="#monarc-update">5.2. MONARC update</a>
 <ul class="sectlevel3">
-<li><a href="#prepared-virtual-machine">5.1.1. Prepared virtual machine</a></li>
-<li><a href="#manual-deployment">5.1.2. Manual deployment</a></li>
-</ul>
-</li>
-<li><a href="#monarc-and-the-back-office">5.2. MONARC and the back office</a>
-<ul class="sectlevel3">
-<li><a href="#requirements-2">5.2.1. Requirements</a></li>
-<li><a href="#usage">5.2.2. Usage</a></li>
-<li><a href="#configuration">5.2.3. Configuration</a></li>
-<li><a href="#launch-ansible-periodically-with-cron">5.2.4. Launch ansible periodically with cron</a></li>
-<li><a href="#update-the-ansible-playbook">5.2.5. Update the ansible playbook</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#updates">6. Updates</a>
-<ul class="sectlevel2">
-<li><a href="#system-update">6.1. System update</a></li>
-<li><a href="#monarc-update">6.2. MONARC update</a>
-<ul class="sectlevel3">
-<li><a href="#update-a-single-monarc-instance">6.2.1. Update a single MONARC instance</a></li>
-<li><a href="#update-monarc-when-connected-to-a-back-office">6.2.2. Update MONARC when connected to a back office</a></li>
+<li><a href="#update-a-single-monarc-instance">5.2.1. Update a single MONARC instance</a></li>
+<li><a href="#update-monarc-when-connected-to-a-back-office">5.2.2. Update MONARC when connected to a back office</a></li>
 </ul>
 </li>
 </ul>
@@ -525,7 +524,7 @@ with a fix.</p>
 <table>
 <tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<div class="title">Note</div>
 </td>
 <td class="content">
 <div class="ulist">
@@ -549,221 +548,13 @@ with a fix.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="modules-of-the-project"><a class="anchor" href="#modules-of-the-project"></a><a class="link" href="#modules-of-the-project">2. Modules of the project</a></h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>The source code of MONARC is divided in several modules with dedicated Git
-repositories.</p>
-</div>
-<table class="tableblock frame-all grid-all stretch">
-<caption class="title">Summary of the different modules of the project</caption>
-<colgroup>
-<col style="width: 33.3333%;">
-<col style="width: 33.3333%;">
-<col style="width: 33.3334%;">
-</colgroup>
-<tbody>
-<tr>
-<th class="tableblock halign-left valign-top"></th>
-<td class="tableblock halign-center valign-top"><div class="content"><div class="paragraph">
-<p><strong><a href="https://github.com/monarc-project/MonarcAppBO">Back Office</a></strong></p>
-</div></div></td>
-<td class="tableblock halign-center valign-top"><div class="content"><div class="paragraph">
-<p><strong><a href="https://github.com/monarc-project/MonarcAppFO">MONARC</a></strong></p>
-</div></div></td>
-</tr>
-<tr>
-<th class="tableblock halign-left valign-top"><p class="tableblock">Modules</p></th>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
-<ul>
-<li>
-<p>MonarcCore (<a href="https://github.com/monarc-project/zm-core">zm-core</a> in <code>vendor/monarc/core</code>)</p>
-</li>
-<li>
-<p>MonarcBO (<a href="https://github.com/monarc-project/zm-backoffice">zm-backoffice</a> in <code>vendor/monarc/backoffice</code>)</p>
-</li>
-</ul>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
-<ul>
-<li>
-<p>MonarcCore (<a href="https://github.com/monarc-project/zm-core">zm-core</a> in <code>vendor/monarc/core</code>)</p>
-</li>
-<li>
-<p>MonarcFO (<a href="https://github.com/monarc-project/zm-client">zm-client</a> in <code>vendor/monarc/frontoffice</code>)</p>
-</li>
-</ul>
-</div></div></td>
-</tr>
-<tr>
-<th class="tableblock halign-left valign-top"><p class="tableblock">Interfaces (in node_modules/)</p></th>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
-<ul>
-<li>
-<p><a href="https://github.com/monarc-project/ng-anr">ng_anr</a></p>
-</li>
-<li>
-<p><a href="https://github.com/monarc-project/ng-backoffice">ng_backoffice</a></p>
-</li>
-</ul>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
-<ul>
-<li>
-<p><a href="https://github.com/monarc-project/ng-anr">ng_anr</a></p>
-</li>
-<li>
-<p><a href="https://github.com/monarc-project/ng-client">ng_client</a></p>
-</li>
-</ul>
-</div></div></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="sect1">
-<h2 id="architecture"><a class="anchor" href="#architecture"></a><a class="link" href="#architecture">3. Architecture</a></h2>
+<h2 id="requirements"><a class="anchor" href="#requirements"></a><a class="link" href="#requirements">2. Requirements</a></h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="global-architecture"><a class="anchor" href="#global-architecture"></a><a class="link" href="#global-architecture">3.1. Global architecture</a></h3>
+<h3 id="system-and-software"><a class="anchor" href="#system-and-software"></a><a class="link" href="#system-and-software">2.1. System and software</a></h3>
 <div class="paragraph">
-<p>Basically MONARC is composed of two main parts:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>a back office: for the management of the security models, FO servers and
-clients of MONARC installations;</p>
-</li>
-<li>
-<p>a front office: for the management of the risks analysis. A front office
-instance can be used without the back office.</p>
-</li>
-</ul>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>If you want run your own risk analysis you only need the front office.
-More information about the installation in
-<a href="#monarc">this section</a>.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-<div class="paragraph">
-<p>The whole architecture includes an additional reverse proxy (<strong>RPX</strong>) and a
-configuration server (<strong>CFG</strong>). It is possible to connect many front offices
-(<strong>FO</strong>) to one back office (<strong>BO</strong>).
-The deployement is managed with <a href="https://www.ansible.com">ansible</a>.
-More information in the repository of the
-<a href="https://github.com/monarc-project/ansible-ubuntu">ansible playbook</a>.</p>
-</div>
-<div id="monarc-architecture-schema" class="imageblock text-center">
-<div class="content">
-<img src="images/monarc-architecture.png" alt="MONARC Architecture">
-</div>
-</div>
-<div class="paragraph">
-<p><a href="https://github.com/CASES-LU/MOSP">MOSP</a> is a platform to create, edit
-and share JSON objects.
-The goal is to gather security related JSON objects, in the first place aimed
-to be used with <a href="https://github.com/monarc-project/MonarcAppFO">MONARC</a>.
-You can use any available schemas in order to create new JSON objects.
-You can have a look at <a href="https://objects.monarc.lu">official instance</a> operated
-by <a href="https://github.com/CASES-LU">CASES</a>. MONARC instances can directly query
-MOSP in order to update their knowledge base. You can have a look at the
-<a href="https://www.monarc.lu/documentation/MOSP-documentation/">documentation of MOSP</a>.</p>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-<div class="title">Example of IPs and FQDNs:</div>
-<div class="ulist">
-<ul>
-<li>
-<p>172.18.14.73 - monarc-rpx.private.your.domain.com - my.monarc.lu</p>
-</li>
-<li>
-<p>172.18.13.71 - monarc-conf.private.your.domain.com</p>
-</li>
-<li>
-<p>172.18.13.72 - monarc-master.private.your.domain.com</p>
-</li>
-<li>
-<p>172.18.13.73 - monarc-fo01.private.your.domain.com</p>
-</li>
-<li>
-<p>172.18.13.74 - monarc-fo02.private.your.domain.com</p>
-</li>
-</ul>
-</div>
-</td>
-</tr>
-</table>
-</div>
-<div class="paragraph">
-<p>In this example, the <strong>FO</strong> server <em>monarc-fo01</em> hosts two distinct databases
-for two clients. An Apache Virtual Host is also configured for each clients. A
-user who wants to do a security analysis with MONARC will access to his MONARC
-account via the address <a href="https://my.monarc.lu/formation/" class="bare">https://my.monarc.lu/formation/</a></p>
-</div>
-<div class="paragraph">
-<p>Note that the <em>common</em> database of the <strong>BO</strong> is listening on <code>0.0.0.0:3306</code>.</p>
-</div>
-<div id="TLS-certificate" class="paragraph">
-<p>It is strongly recommended to use a TLS certificate on the reverse proxy in
-order to provide a HTTPS connection between Internet and the reverse proxy. In
-our example, a TLS certificate for my.monarc.lu is used.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="network-requirements"><a class="anchor" href="#network-requirements"></a><a class="link" href="#network-requirements">3.2. Network requirements</a></h3>
-<div class="paragraph">
-<p>The configuration server (<strong>CFG</strong>) manages the configurations of the back
-office, reverse proxy and different front office(s) via SSH.</p>
-</div>
-<div class="paragraph">
-<p>The reverse proxy (<strong>RPX</strong>) should of course be available from Internet. The
-<strong>DNS</strong> is important for the reverse proxy in order to resolve the FQDNs of the
-servers inside the network.</p>
-</div>
-<div class="paragraph">
-<p>Through the reverse proxy you should be able to contact the <strong>BO</strong> and the
-<strong>FO</strong>s from Internet. No need to able able to contact the configuration server
-from the outside.</p>
-</div>
-<div class="paragraph">
-<p>The database <em>common</em> of the BO should also be available to the FO servers.</p>
-</div>
-<div class="paragraph">
-<p><a href="http://www.postfix.org">Postfix</a> should be installed on the BO and on the
-FO. Indeed, SMTP is used for the account creation and the password recovery.
-The easiest configuration is to set up Postfix for relaying emails through your
-internal mail server (<strong>SMTP</strong>).</p>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="requirements"><a class="anchor" href="#requirements"></a><a class="link" href="#requirements">4. Requirements</a></h2>
-<div class="sectionbody">
-<div class="sect2">
-<h3 id="system-and-software"><a class="anchor" href="#system-and-software"></a><a class="link" href="#system-and-software">4.1. System and software</a></h3>
-<div class="paragraph">
-<p>The deployment of MONARC has been tested on Ubuntu 16.04 LTS and Ubuntu 18.04 LTS.
-In order to install MONARC you will need the folowing requirements:</p>
+<p>The deployment of MONARC is mainly tested on Ubuntu 18.04 LTS.
+In order to install MONARC you will need the following requirements:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -771,7 +562,7 @@ In order to install MONARC you will need the folowing requirements:</p>
 <p>Git;</p>
 </li>
 <li>
-<p>PHP (version 7.1 or 7.2):</p>
+<p>PHP (version 7.1, 7.2 or 7.3):</p>
 <div class="ulist">
 <ul>
 <li>
@@ -803,12 +594,12 @@ In order to install MONARC you will need the folowing requirements:</p>
 password recovery features.</p>
 </div>
 <div class="paragraph">
-<p>You will find more details
+<p>You will find more details about the installation
 <a href="https://github.com/monarc-project/MonarcAppFO/tree/master/INSTALL">here</a>.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="specifications-by-server"><a class="anchor" href="#specifications-by-server"></a><a class="link" href="#specifications-by-server">4.2. Specifications by server</a></h3>
+<h3 id="specifications-by-server"><a class="anchor" href="#specifications-by-server"></a><a class="link" href="#specifications-by-server">2.2. Specifications by server</a></h3>
 <table class="tableblock frame-all grid-all stretch">
 <caption class="title">Minimum requirements</caption>
 <colgroup>
@@ -867,21 +658,6 @@ password recovery features.</p>
 <p>20</p>
 </div></div></td>
 </tr>
-<tr>
-<th class="tableblock halign-left valign-top"><p class="tableblock">Operating System</p></th>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Ubuntu Server 18.04 LTS</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Ubuntu Server 18.04 LTS</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Ubuntu Server 18.04 LTS</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Ubuntu Server 18.04 LTS</p>
-</div></div></td>
-</tr>
 </tbody>
 </table>
 <div class="paragraph">
@@ -892,7 +668,7 @@ It is always better to forecast more memory and disk space for MONARC
 </div>
 </div>
 <div class="sect2">
-<h3 id="network"><a class="anchor" href="#network"></a><a class="link" href="#network">4.3. Network</a></h3>
+<h3 id="network"><a class="anchor" href="#network"></a><a class="link" href="#network">2.3. Network</a></h3>
 <div class="paragraph">
 <p>The deployment on the different servers requires an Internet connection since
 the updates are retrieved from our GitHub repositories. If this is hardly
@@ -954,7 +730,7 @@ export https_proxy=http://proxy.your.domain.com:4128</code></pre>
 </div>
 </div>
 <div class="sect2">
-<h3 id="tls-certificate"><a class="anchor" href="#tls-certificate"></a><a class="link" href="#tls-certificate">4.4. TLS certificate</a></h3>
+<h3 id="tls-certificate"><a class="anchor" href="#tls-certificate"></a><a class="link" href="#tls-certificate">2.4. TLS certificate</a></h3>
 <div class="paragraph">
 <p>Is is strongly advised to use a TLS certificate.</p>
 </div>
@@ -973,15 +749,221 @@ the certificate on the front office server.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="deployment"><a class="anchor" href="#deployment"></a><a class="link" href="#deployment">5. Deployment</a></h2>
+<h2 id="architecture"><a class="anchor" href="#architecture"></a><a class="link" href="#architecture">3. Architecture</a></h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="monarc"><a class="anchor" href="#monarc"></a><a class="link" href="#monarc">5.1. MONARC</a></h3>
+<h3 id="modules-of-the-project"><a class="anchor" href="#modules-of-the-project"></a><a class="link" href="#modules-of-the-project">3.1. Modules of the project</a></h3>
+<div class="paragraph">
+<p>The source code of MONARC is divided in several modules with dedicated Git
+repositories.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Summary of the different modules of the project</caption>
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<tbody>
+<tr>
+<th class="tableblock halign-left valign-top"></th>
+<td class="tableblock halign-center valign-top"><div class="content"><div class="paragraph">
+<p><strong><a href="https://github.com/monarc-project/MonarcAppFO">MONARC</a></strong></p>
+</div></div></td>
+<td class="tableblock halign-center valign-top"><div class="content"><div class="paragraph">
+<p><strong><a href="https://github.com/monarc-project/MonarcAppBO">Back Office</a></strong></p>
+</div></div></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Modules</p></th>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>MonarcCore (<a href="https://github.com/monarc-project/zm-core">zm-core</a> in <code>vendor/monarc/core</code>)</p>
+</li>
+<li>
+<p>MonarcFO (<a href="https://github.com/monarc-project/zm-client">zm-client</a> in <code>vendor/monarc/frontoffice</code>)</p>
+</li>
+</ul>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>MonarcCore (<a href="https://github.com/monarc-project/zm-core">zm-core</a> in <code>vendor/monarc/core</code>)</p>
+</li>
+<li>
+<p>MonarcBO (<a href="https://github.com/monarc-project/zm-backoffice">zm-backoffice</a> in <code>vendor/monarc/backoffice</code>)</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Interfaces (in node_modules/)</p></th>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p><a href="https://github.com/monarc-project/ng-anr">ng_anr</a></p>
+</li>
+<li>
+<p><a href="https://github.com/monarc-project/ng-client">ng_client</a></p>
+</li>
+</ul>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p><a href="https://github.com/monarc-project/ng-anr">ng_anr</a></p>
+</li>
+<li>
+<p><a href="https://github.com/monarc-project/ng-backoffice">ng_backoffice</a></p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="global-architecture"><a class="anchor" href="#global-architecture"></a><a class="link" href="#global-architecture">3.2. Global architecture</a></h3>
+<div class="paragraph">
+<p>Basically MONARC is composed of two main parts:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>a back office: for the management of the security models, FO servers and
+clients of MONARC installations;</p>
+</li>
+<li>
+<p>a front office: for the management of the risks analysis. A front office
+instance can be used without the back office.</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>If you want run your own risk analysis you only need the front office.
+More information about the installation in
+<a href="#monarc">this section</a>.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>The whole architecture includes an additional reverse proxy (<strong>RPX</strong>) and a
+configuration server (<strong>CFG</strong>). It is possible to connect many front offices
+(<strong>FO</strong>) to one back office (<strong>BO</strong>).
+The deployement is managed with <a href="https://www.ansible.com">ansible</a>.
+More information in the repository of the
+<a href="https://github.com/monarc-project/ansible-ubuntu">ansible playbook</a>.</p>
+</div>
+<div id="monarc-architecture-schema" class="imageblock text-center">
+<div class="content">
+<img src="images/monarc-architecture.png" alt="MONARC Architecture">
+</div>
+</div>
+<div class="paragraph">
+<p><a href="https://github.com/CASES-LU/MOSP">MOSP</a> is a platform to create, edit
+and share JSON objects.
+The goal is to gather security related JSON objects, in the first place aimed
+to be used with <a href="https://github.com/monarc-project/MonarcAppFO">MONARC</a>.
+You can use any available schemas in order to create new JSON objects.
+You can have a look at <a href="https://objects.monarc.lu">official instance</a> operated
+by <a href="https://github.com/CASES-LU">CASES</a>. MONARC instances can directly query
+MOSP in order to update their knowledge base. You can have a look at the
+<a href="https://www.monarc.lu/documentation/MOSP-documentation/">documentation of MOSP</a>.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+<div class="title">Example of IPs and FQDNs:</div>
+<div class="ulist">
+<ul>
+<li>
+<p>172.18.14.73 - monarc-rpx.private.your.domain.com - my.monarc.lu</p>
+</li>
+<li>
+<p>172.18.13.71 - monarc-conf.private.your.domain.com</p>
+</li>
+<li>
+<p>172.18.13.72 - monarc-master.private.your.domain.com</p>
+</li>
+<li>
+<p>172.18.13.73 - monarc-fo01.private.your.domain.com</p>
+</li>
+<li>
+<p>172.18.13.74 - monarc-fo02.private.your.domain.com</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>In this example, the <strong>FO</strong> server <em>monarc-fo01</em> hosts two distinct databases
+for two clients. An Apache Virtual Host is also configured for each clients. A
+user who wants to do a security analysis with MONARC will access to his MONARC
+account via the address <a href="https://my.monarc.lu/formation/" class="bare">https://my.monarc.lu/formation/</a></p>
+</div>
+<div class="paragraph">
+<p>Note that the <em>common</em> database of the <strong>BO</strong> is listening on <code>0.0.0.0:3306</code>.</p>
+</div>
+<div id="TLS-certificate" class="paragraph">
+<p>It is strongly recommended to use a TLS certificate on the reverse proxy in
+order to provide a HTTPS connection between Internet and the reverse proxy. In
+our example, a TLS certificate for my.monarc.lu is used.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="network-requirements"><a class="anchor" href="#network-requirements"></a><a class="link" href="#network-requirements">3.3. Network requirements</a></h3>
+<div class="paragraph">
+<p>The configuration server (<strong>CFG</strong>) manages the configurations of the back
+office, reverse proxy and different front office(s) via SSH.</p>
+</div>
+<div class="paragraph">
+<p>The reverse proxy (<strong>RPX</strong>) should of course be available from Internet. The
+<strong>DNS</strong> is important for the reverse proxy in order to resolve the FQDNs of the
+servers inside the network.</p>
+</div>
+<div class="paragraph">
+<p>Through the reverse proxy you should be able to contact the <strong>BO</strong> and the
+<strong>FO</strong>s from Internet. No need to able able to contact the configuration server
+from the outside.</p>
+</div>
+<div class="paragraph">
+<p>The database <em>common</em> of the BO should also be available to the FO servers.</p>
+</div>
+<div class="paragraph">
+<p><a href="http://www.postfix.org">Postfix</a> should be installed on the BO and on the
+FO. Indeed, SMTP is used for the account creation and the password recovery.
+The easiest configuration is to set up Postfix for relaying emails through your
+internal mail server (<strong>SMTP</strong>).</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="deployment"><a class="anchor" href="#deployment"></a><a class="link" href="#deployment">4. Deployment</a></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="monarc"><a class="anchor" href="#monarc"></a><a class="link" href="#monarc">4.1. MONARC</a></h3>
 <div class="paragraph">
 <p>If you want to install MONARC to manage your risk analysis.</p>
 </div>
 <div class="sect3">
-<h4 id="prepared-virtual-machine"><a class="anchor" href="#prepared-virtual-machine"></a><a class="link" href="#prepared-virtual-machine">5.1.1. Prepared virtual machine</a></h4>
+<h4 id="prepared-virtual-machine"><a class="anchor" href="#prepared-virtual-machine"></a><a class="link" href="#prepared-virtual-machine">4.1.1. Prepared virtual machine</a></h4>
 <div class="paragraph">
 <p>A
 <a href="https://github.com/monarc-project/MonarcAppFO/releases/latest">virtual machine</a>
@@ -990,7 +972,7 @@ The best way if you want an up-to-date version of MONARC.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="manual-deployment"><a class="anchor" href="#manual-deployment"></a><a class="link" href="#manual-deployment">5.1.2. Manual deployment</a></h4>
+<h4 id="manual-deployment"><a class="anchor" href="#manual-deployment"></a><a class="link" href="#manual-deployment">4.1.2. Manual deployment</a></h4>
 <div class="paragraph">
 <p>Follow the instructions
 <a href="https://github.com/monarc-project/MonarcAppFO/tree/master/INSTALL">here</a>.</p>
@@ -998,7 +980,7 @@ The best way if you want an up-to-date version of MONARC.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="monarc-and-the-back-office"><a class="anchor" href="#monarc-and-the-back-office"></a><a class="link" href="#monarc-and-the-back-office">5.2. MONARC and the back office</a></h3>
+<h3 id="monarc-and-the-back-office"><a class="anchor" href="#monarc-and-the-back-office"></a><a class="link" href="#monarc-and-the-back-office">4.2. MONARC and the back office</a></h3>
 <div class="paragraph">
 <p>If you want to install MONARC and the back office.</p>
 </div>
@@ -1006,7 +988,7 @@ The best way if you want an up-to-date version of MONARC.</p>
 <table>
 <tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<div class="title">Note</div>
 </td>
 <td class="content">
 <div class="paragraph">
@@ -1029,7 +1011,7 @@ More information about the installation in
 </div>
 </div>
 <div class="sect3">
-<h4 id="requirements-2"><a class="anchor" href="#requirements-2"></a><a class="link" href="#requirements-2">5.2.1. Requirements</a></h4>
+<h4 id="requirements-2"><a class="anchor" href="#requirements-2"></a><a class="link" href="#requirements-2">4.2.1. Requirements</a></h4>
 <div class="ulist">
 <ul>
 <li>
@@ -1046,7 +1028,7 @@ of MONARC).</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="usage"><a class="anchor" href="#usage"></a><a class="link" href="#usage">5.2.2. Usage</a></h4>
+<h4 id="usage"><a class="anchor" href="#usage"></a><a class="link" href="#usage">4.2.2. Usage</a></h4>
 <div class="paragraph">
 <p>Install ansible on the configuration server and get the playbook for MONARC:</p>
 </div>
@@ -1060,7 +1042,7 @@ cd ansible-ubuntu/</code></pre>
 </div>
 </div>
 <div class="sect3">
-<h4 id="configuration"><a class="anchor" href="#configuration"></a><a class="link" href="#configuration">5.2.3. Configuration</a></h4>
+<h4 id="configuration"><a class="anchor" href="#configuration"></a><a class="link" href="#configuration">4.2.3. Configuration</a></h4>
 <div class="ulist">
 <ul>
 <li>
@@ -1194,7 +1176,7 @@ these servers through SSH.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="launch-ansible-periodically-with-cron"><a class="anchor" href="#launch-ansible-periodically-with-cron"></a><a class="link" href="#launch-ansible-periodically-with-cron">5.2.4. Launch ansible periodically with cron</a></h4>
+<h4 id="launch-ansible-periodically-with-cron"><a class="anchor" href="#launch-ansible-periodically-with-cron"></a><a class="link" href="#launch-ansible-periodically-with-cron">4.2.4. Launch ansible periodically with cron</a></h4>
 <div class="listingblock">
 <div class="content">
 <pre class="CodeRay highlight"><code data-lang="bash">$ crontab -l
@@ -1213,7 +1195,7 @@ and eventually a new server) for the newly created client.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="update-the-ansible-playbook"><a class="anchor" href="#update-the-ansible-playbook"></a><a class="link" href="#update-the-ansible-playbook">5.2.5. Update the ansible playbook</a></h4>
+<h4 id="update-the-ansible-playbook"><a class="anchor" href="#update-the-ansible-playbook"></a><a class="link" href="#update-the-ansible-playbook">4.2.5. Update the ansible playbook</a></h4>
 <div class="listingblock">
 <div class="content">
 <pre class="CodeRay highlight"><code data-lang="bash">$ cd /home/ansible/ansible-ubuntu/
@@ -1225,7 +1207,7 @@ $ git pull origin master</code></pre>
 </div>
 </div>
 <div class="sect1">
-<h2 id="updates"><a class="anchor" href="#updates"></a><a class="link" href="#updates">6. Updates</a></h2>
+<h2 id="updates"><a class="anchor" href="#updates"></a><a class="link" href="#updates">5. Updates</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Before updating MONARC it is advised to configure database backup.
@@ -1251,16 +1233,16 @@ basedir  = /usr</code></pre>
 update.</p>
 </div>
 <div class="sect2">
-<h3 id="system-update"><a class="anchor" href="#system-update"></a><a class="link" href="#system-update">6.1. System update</a></h3>
+<h3 id="system-update"><a class="anchor" href="#system-update"></a><a class="link" href="#system-update">5.1. System update</a></h3>
 <div class="paragraph">
 <p>Keep the software of your distribution up-to-date (Apache, PHP, MariaDB,
 Postfix, etc.). At least the security updates from the GNU/Linux distribution.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="monarc-update"><a class="anchor" href="#monarc-update"></a><a class="link" href="#monarc-update">6.2. MONARC update</a></h3>
+<h3 id="monarc-update"><a class="anchor" href="#monarc-update"></a><a class="link" href="#monarc-update">5.2. MONARC update</a></h3>
 <div class="sect3">
-<h4 id="update-a-single-monarc-instance"><a class="anchor" href="#update-a-single-monarc-instance"></a><a class="link" href="#update-a-single-monarc-instance">6.2.1. Update a single MONARC instance</a></h4>
+<h4 id="update-a-single-monarc-instance"><a class="anchor" href="#update-a-single-monarc-instance"></a><a class="link" href="#update-a-single-monarc-instance">5.2.1. Update a single MONARC instance</a></h4>
 <div class="paragraph">
 <p>If you have already installed MONARC and want to update to a later version, you
 can use the provided script:</p>
@@ -1314,7 +1296,7 @@ This behavior can be changed by passing the <code>-b</code> option to the update
 </div>
 </div>
 <div class="sect3">
-<h4 id="update-monarc-when-connected-to-a-back-office"><a class="anchor" href="#update-monarc-when-connected-to-a-back-office"></a><a class="link" href="#update-monarc-when-connected-to-a-back-office">6.2.2. Update MONARC when connected to a back office</a></h4>
+<h4 id="update-monarc-when-connected-to-a-back-office"><a class="anchor" href="#update-monarc-when-connected-to-a-back-office"></a><a class="link" href="#update-monarc-when-connected-to-a-back-office">5.2.2. Update MONARC when connected to a back office</a></h4>
 <div class="paragraph">
 <p>When MONARC is connected to a back office and has been deployed with the
 <a href="https://github.com/monarc-project/ansible-ubuntu">ansible playbook</a>,
@@ -1379,8 +1361,8 @@ $ git pull origin master</code></pre>
 </div>
 <div id="footer">
 <div id="footer-text">
-Version 2019-11-11<br>
-Last updated 2019-11-11 14:26:45 +0100
+Version 2019-11-15<br>
+Last updated 2019-11-15 13:28:13 +0100
 </div>
 </div>
 <style>
