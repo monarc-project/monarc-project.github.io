@@ -64,18 +64,14 @@ fi
 echo  -e "${GREEN}Removing old vendor, module and cache directories…${NC}"
 rm -Rf vendor/
 rm -Rf module/
-rm -Rf data/DoctrineORMModule 2>/dev/null
-rm -Rf data/cache 2>/dev/null
 
 # Create new required directories
 echo  -e "${GREEN}Creating new module and cache directories…${NC}"
 mkdir -p module/Monarc
-mkdir -p data/cache 2>/dev/null
-mkdir -p data/DoctrineORMModule 2>/dev/null
-mkdir -p data/LazyServices/Proxy
 
 # Update PHP dependencies of MONARC
 echo  -e "${GREEN}Installing new PHP backend…${NC}"
+composer clear-cache
 composer install -o
 
 # Create new symlinks
