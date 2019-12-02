@@ -45,7 +45,7 @@ With your Web browser:
 
 * go to the address [http://10.0.0.101](http://10.0.0.101) (depending on your
   configuration and the installation method)
-* Login: admin@admin.test
+* Login: admin@admin.localhost
 * Password: admin
 
 
