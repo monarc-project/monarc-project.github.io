@@ -61,7 +61,7 @@ will works as usual.
 
 ```bash
 $ sha512sum upgrade-to-2.9.1.sh
-953cdc7badb26e4487f1200976c817717ddca1ed0667a69c8371b0782b590fd6141e8f00fc29bc51f18a4973418772774ea8f7310cb5fd73102aa178bf18f0de  upgrade-to-2.9.1.sh
+76a908ff39ae0d3ada2ccbf254979e733ef993ac650a41c27c03dc2f6f2c164ac22ba1862a155fb9bd05d7f7bdcc064287d7e2eb2a2cf3c2f2cd4e35389be6ae  upgrade-to-2.9.1.sh
 ```
 
 This script can be used in order to update MONARC and the

@@ -52,6 +52,12 @@ if [[ $(vercomp $PHP_VERSION 7.2.0 ; echo $?) -eq 2  ]]; then
     sleep 3
 fi
 
+if ! [ -x "$(command -v composer)" ]; then
+  echo -e "${RED}Composer is not installed.${NC} Please install it:" >&2
+  echo '    $ sudo apt-get install composer'
+  exit 1
+fi
+
 # Update the root repository of MONARC
 echo  -e "${GREEN}Updating root of the project…${NC}"
 git pull origin master
