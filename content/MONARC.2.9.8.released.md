@@ -10,7 +10,7 @@ Version 2.9.8 of MONARC has been released with several fixes.
 ### Fix
 
 - Library categories management issues
-  ([#221](https://github.com/monarc-project/MonarcAppFO/issues/221);
+  ([#221](https://github.com/monarc-project/MonarcAppFO/issues/221));
 - Library -> global asset -> delete asset
   ([#229](https://github.com/monarc-project/MonarcAppFO/issues/229));
 - Library -> asset -> Asset used in the risks analysis
