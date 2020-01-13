@@ -7,6 +7,24 @@ Summary: Release 2.9.8 of MONARC
 
 Version 2.9.8 of MONARC has been released with several fixes.
 
+---
+
+>This release as well as previous releases since 2.9.0 contain(s) important fixes:
+>
+> - preventing losing recommendations during assets removal from your analysis;
+> - library categories management fixes;
+> - global objects operations fixes (impact propagation, existing controls field modification);
+> - snapshots creation without comment;
+> - other fixes and improvements.
+> 
+> We would recommend you to upgrade to the version to avoid those issues.
+> 
+> If your current version is lower then 2.9.1, please don't forget to follow the upgrade instructions:
+> [2.9.1 release notes](https://www.monarc.lu/news/2019/11/25/monarc-291-released/).
+
+---
+
+
 ### Fix
 
 - Library categories management issues
