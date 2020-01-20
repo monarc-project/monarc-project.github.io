@@ -30,7 +30,7 @@ Title: Trainings
 
 ### Past Trainings
 
-* 18-09-2019 ![French][fr]
+* 02-12-2019 ![French][fr]
 * 18-09-2019 ![English][en]
 * 28-03-2019 ![Français][fr]
 * 19-12-2018 ![English][en]
