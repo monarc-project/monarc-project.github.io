@@ -4,7 +4,7 @@ Title: Trainings
 
 |&nbsp;|||
 |:--|--|--|
-|**Date and time**|| December 2, 2019 - 9h30 to 16h00|
+|**Date and time**|| April, 2020 - 9h30 to 16h00|
 |&nbsp;|  ||
 |**Location**|&nbsp;&nbsp;&nbsp;|C3 - EternalBlue room / SECURITYMADEIN.LU|
 |             |                  |16 Boulevard d’Avranches 1160|
@@ -18,7 +18,7 @@ Title: Trainings
 |&nbsp;|  |  |
 |**Level required**||Basic|
 |&nbsp;|  |  |
-|**Language**|| French |
+|**Language**|| English |
 |&nbsp;|  |  |
 |**Extra requirements**||**A laptop is required**|
 |&nbsp;|  |  |
@@ -30,6 +30,7 @@ Title: Trainings
 
 ### Past Trainings
 
+* 18-09-2019 ![French][fr]
 * 18-09-2019 ![English][en]
 * 28-03-2019 ![Français][fr]
 * 19-12-2018 ![English][en]
