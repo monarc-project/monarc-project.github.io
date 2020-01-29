@@ -3,6 +3,8 @@ Title: Community
 
 ## Who
 
+### Developers
+
 MONARC is lead by the [CASES](https://www.cases.lu) team.
 CASES is also organizing the MONARC [trainings](/trainings).
 
@@ -12,6 +14,12 @@ is available on GitHub.
 
 If you have any questions about MONARC don't hesitate to contact the team at
 [info@cases.lu](mailto:info@cases.lu).
+
+### Our users
+
+MONARC fits the needs of very small companies and big governmental entities.
+You can check some users of MONARC on our [dedicated page](/community/users).
+
 
 ## The software
 
