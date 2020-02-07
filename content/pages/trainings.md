@@ -4,7 +4,7 @@ Title: Trainings
 
 |&nbsp;|||
 |:--|--|--|
-|**Date and time**|| 28 April, 2020 - 9h30 to 16h00|
+|**Date and time**|| April 28th, 2020 - 9h30 to 16h00|
 |&nbsp;|  ||
 |**Location**|&nbsp;&nbsp;&nbsp;|C3 - EternalBlue room / SECURITYMADEIN.LU|
 |             |                  |16 Boulevard d’Avranches 1160|
