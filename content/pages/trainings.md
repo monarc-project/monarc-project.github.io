@@ -47,7 +47,9 @@ table {
 | 2019-03-28 | C3 - Luxembourg               | ![French][fr]    |                        |
 | 2018-12-19 | C3 - Luxembourg               | ![English][en]   |                        |
 | 2018-09-04 | C3 - Luxembourg               | ![English][en]   |                        |
+| 2018-03-27 | SPF BOSA - Belgium            | ![English][en]   |                        |
 | 2018-03-08 | C3 - Luxembourg               | ![English][en]   |                        |
+| 2018-02-27 | SPF BOSA - Belgium            | ![French][fr]    |                        |
 | 2017-11-07 | C3 - Luxembourg               | ![French][fr]    |                        |
 | 2017-04-25 | C3 - Luxembourg               | ![French][fr]    |                        |
 | 2017-04-25 | C3 - Luxembourg               | ![English][en]   |                        |
