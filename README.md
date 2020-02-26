@@ -17,7 +17,7 @@ $ pipenv install
 $ pipenv shell
 $ make html
 $ ghp-import output
-$ git push git@github.com:monarc-project/monarc-project.github.io.git gh-pages:master
+$ git push git@github.com:monarc-project/monarc-project.github.io.git gh-pages:master -f
 ```
 
 ## Development server
