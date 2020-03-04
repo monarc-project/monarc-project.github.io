@@ -16,7 +16,7 @@ Version 2.8.3 of MONARC has been released with several hotfixes.
 ### Fix
 
 - SOA is not imported [#166](https://github.com/monarc-project/MonarcAppFO/issues/166);
-- Drag & drop in risk treatment plan fails after 1 change [#167](https://github.com/monarc-project/MonarcAppFO/issues/166);
+- Drag & drop in risk treatment plan fails after 1 change [#167](https://github.com/monarc-project/MonarcAppFO/issues/167);
 - Underscore "_" is not considered as a special character in password reset [#169](https://github.com/monarc-project/MonarcAppFO/issues/169);
 - Error when duplicating object [#171](https://github.com/monarc-project/MonarcAppFO/issues/171);
 - Add objects in model/anr from common DB [#172](https://github.com/monarc-project/MonarcAppFO/issues/172);
