@@ -106,3 +106,5 @@ ENV/
 
 output/
 *.pid
+
+.idea

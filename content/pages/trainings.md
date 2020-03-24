@@ -1,5 +1,11 @@
 Title: Trainings
 
+<style>
+table {
+    width:100%;
+}
+</style>
+
 ### Next training
 
 |&nbsp;|||
@@ -32,16 +38,26 @@ Title: Trainings
 
 ### Past Trainings
 
-* 02-12-2019 ![French][fr]
-* 18-09-2019 ![English][en]
-* 28-03-2019 ![Français][fr]
-* 19-12-2018 ![English][en]
-* 04-09-2018 ![English][en]
-* 19-06-2018 ![Français][fr] (Cancelled)
-* 08-03-2018 ![English][en]
-* 07-11-2017 ![Français][fr]
-* 25-04-2017 ![Français][fr]
-* 25-04-2017 ![English][en]
+
+| Date       | Location                      | Language         | Presentation material  |
+|------------| ----------------------------- | ---------------- | ---------------------- |
+| 2020-02-13 | Centre de crise - Belgium     | ![French][fr]    |                        |
+| 2020-02-12 | Centre de crise - Belgium     | ![English][en]   | [<i class="fa fa-file-pdf-o" style="color:red" aria-hidden="true"></i>](/assets/files/trainings/2020-02-12_MONARC-training.pdf) |
+| 2019-12-02 | C3 - Luxembourg               | ![French][fr]    |                        |
+| 2019-08-18 | C3 - Luxembourg               | ![English][en]   |                        |
+| 2019-06-12 | Approach - Belgium            | ![English][en]   |                        |
+| 2019-03-28 | C3 - Luxembourg               | ![French][fr]    |                        |
+| 2018-12-19 | C3 - Luxembourg               | ![English][en]   |                        |
+| 2018-09-04 | C3 - Luxembourg               | ![English][en]   |                        |
+| 2018-03-27 | SPF BOSA - Belgium            | ![English][en]   |                        |
+| 2018-03-08 | C3 - Luxembourg               | ![English][en]   |                        |
+| 2018-02-27 | SPF BOSA - Belgium            | ![French][fr]    |                        |
+| 2017-11-07 | C3 - Luxembourg               | ![French][fr]    |                        |
+| 2017-04-25 | C3 - Luxembourg               | ![French][fr]    |                        |
+| 2017-04-25 | C3 - Luxembourg               | ![English][en]   |                        |
+|            |                               |                  |                        |
+
+
 
 
 [en]: /assets/images/gb.svg "English"
