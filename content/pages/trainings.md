@@ -9,6 +9,8 @@ Title: Trainings
 |**Location**|&nbsp;&nbsp;&nbsp;|C3 - EternalBlue room / SECURITYMADEIN.LU|
 |             |                  |16 Boulevard d’Avranches 1160|
 |             |                  |Luxembourg|
+|&nbsp;|  ||
+|             |                  |**COVID-19 News** In case of quarantine, it will be given online|
 |&nbsp;|  |  |
 |**Objective**||Master the risk analysis tool MONARC.|
 |&nbsp;|  |  |
