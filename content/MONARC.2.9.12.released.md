@@ -20,10 +20,10 @@ Version 2.9.12 of MONARC has been released with several fixes and new features.
 
 ### Fix
 
-- Remove comment field of threat in export object of library 
+- Remove comment field of threat in export object of library
   ([#245](https://github.com/monarc-project/MonarcAppFO/issues/245)).
-- Edition and creation of operational risk linked a tag in use on risk analysis 
-  ([#262](https://github.com/monarc-project/MonarcAppFO/issues/262)). 
+- Edition and creation of operational risk linked a tag in use on risk analysis
+  ([#262](https://github.com/monarc-project/MonarcAppFO/issues/262)).
 
 
 
