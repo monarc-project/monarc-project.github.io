@@ -16,7 +16,13 @@ table {
 |             |                  |16 Boulevard d’Avranches 1160|
 |             |                  |Luxembourg|
 |&nbsp;|  ||
-|             |                  |**COVID-19 News** In case of quarantine, it will be an online training. All the required information will be available soon.|
+|             |                  |**COVID-19 News**|
+|             |                  |Due to the quarantine the training will be online.|
+|             |                  |The beginning time is 9:30 on BigBlueButton platform.|
+|             |                  |The access link and password will be sent to registered emails on Monday, April 27.|
+|             |                  |Please use one of the following browsers: Firefox or Chrome to have better experience with the platform.|
+|             |                  |If you are not familiar with BigBlueButton platform,|
+|             |                  |please watch the "Overview for viewers" tutorial video available here: https://bigbluebutton.org/html5.|
 |&nbsp;|  |  |
 |**Objective**||Master the risk analysis tool MONARC.|
 |&nbsp;|  |  |
