@@ -10,19 +10,14 @@ table {
 
 |&nbsp;|||
 |:--|--|--|
-|**Date and time**|| April 28th, 2020 - 9h30 to 16h00|
+|**Date and time**|| To be announced.|
 |&nbsp;|  ||
 |**Location**|&nbsp;&nbsp;&nbsp;|C3 - EternalBlue room / SECURITYMADEIN.LU|
 |             |                  |16 Boulevard d’Avranches 1160|
 |             |                  |Luxembourg|
 |&nbsp;|  ||
 |             |                  |**COVID-19 News**|
-|             |                  |Due to the quarantine the training will be online.|
-|             |                  |The beginning time is 9:30 on BigBlueButton platform.|
-|             |                  |The access link and password will be sent to registered emails on Monday, April 27.|
-|             |                  |Please use one of the following browsers: Firefox or Chrome to have better experience with the platform.|
-|             |                  |If you are not familiar with BigBlueButton platform,|
-|             |                  |please watch the "Overview for viewers" tutorial video available here: https://bigbluebutton.org/html5.|
+|             |                  |Due to the quarantine trainings will be online.|
 |&nbsp;|  |  |
 |**Objective**||Master the risk analysis tool MONARC.|
 |&nbsp;|  |  |
@@ -45,23 +40,24 @@ table {
 ### Past Trainings
 
 
-| Date       | Location                      | Language         | Presentation material  |
-|------------| ----------------------------- | ---------------- | ---------------------- |
-| 2020-02-13 | Centre de crise - Belgium     | ![French][fr]    |                        |
-| 2020-02-12 | Centre de crise - Belgium     | ![English][en]   | [<i class="fa fa-file-pdf-o" style="color:red" aria-hidden="true"></i>](/assets/files/trainings/2020-02-12_MONARC-training.pdf) |
-| 2019-12-02 | C3 - Luxembourg               | ![French][fr]    |                        |
-| 2019-08-18 | C3 - Luxembourg               | ![English][en]   |                        |
-| 2019-06-12 | Approach - Belgium            | ![English][en]   |                        |
-| 2019-03-28 | C3 - Luxembourg               | ![French][fr]    |                        |
-| 2018-12-19 | C3 - Luxembourg               | ![English][en]   |                        |
-| 2018-09-04 | C3 - Luxembourg               | ![English][en]   |                        |
-| 2018-03-27 | SPF BOSA - Belgium            | ![English][en]   |                        |
-| 2018-03-08 | C3 - Luxembourg               | ![English][en]   |                        |
-| 2018-02-27 | SPF BOSA - Belgium            | ![French][fr]    |                        |
-| 2017-11-07 | C3 - Luxembourg               | ![French][fr]    |                        |
-| 2017-04-25 | C3 - Luxembourg               | ![French][fr]    |                        |
-| 2017-04-25 | C3 - Luxembourg               | ![English][en]   |                        |
-|            |                               |                  |                        |
+| Date       | Location                                     | Language        | Presentation material  |
+|------------| -------------------------------------------- | --------------- | ---------------------- |
+| 2020-04-28 | BigBlueButton platform of securitymadein.lu  | ![English][en]  |                        |
+| 2020-02-13 | Centre de crise - Belgium                    | ![French][fr]   |                        |
+| 2020-02-12 | Centre de crise - Belgium                    | ![English][en]  | [<i class="fa fa-file-pdf-o" style="color:red" aria-hidden="true"></i>](/assets/files/trainings/2020-02-12_MONARC-training.pdf) |
+| 2019-12-02 | C3 - Luxembourg                              | ![French][fr]   |                        |
+| 2019-08-18 | C3 - Luxembourg                              | ![English][en]  |                        |
+| 2019-06-12 | Approach - Belgium                           | ![English][en]  |                        |
+| 2019-03-28 | C3 - Luxembourg                              | ![French][fr]   |                        |
+| 2018-12-19 | C3 - Luxembourg                              | ![English][en]  |                        |
+| 2018-09-04 | C3 - Luxembourg                              | ![English][en]  |                        |
+| 2018-03-27 | SPF BOSA - Belgium                           | ![English][en]  |                        |
+| 2018-03-08 | C3 - Luxembourg                              | ![English][en]  |                        |
+| 2018-02-27 | SPF BOSA - Belgium                           | ![French][fr]   |                        |
+| 2017-11-07 | C3 - Luxembourg                              | ![French][fr]   |                        |
+| 2017-04-25 | C3 - Luxembourg                              | ![French][fr]   |                        |
+| 2017-04-25 | C3 - Luxembourg                              | ![English][en]  |                        |
+|            |                                              |                 |                        |
 
 
 
