@@ -6,6 +6,8 @@ table {
 }
 </style>
 
+[TOC]
+
 ### Next training
 
 |&nbsp;|||
@@ -31,7 +33,7 @@ table {
 |&nbsp;|  |  |
 |**Extra requirements**||**A laptop is required**|
 |&nbsp;|  |  |
-|**Training materials**||Workshop MONARC &nbsp; [![English][en]](/assets/files/monarc-training/en/Formation_V2-MONARC_Env1.1.pdf) [![Français][fr]](/assets/files/monarc-training/fr/Formation_V2-MONARC_Fr.pdf) [![Dutch][nl]](/assets/files/monarc-training/nl/Formation_V2-MONARC_NL.pdf)<br/>Context MyCompany [![English][en]](/assets/files/monarc-training/en/Context_MyCompany_en_v1.0.pdf) [![Français][fr]](/assets/files/monarc-training/fr/Context_MyCompany_fr_v1.1.pdf)<br/>MyPrint workshop &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/assets/files/monarc-training/en/MyPrintEN.json" download>![English][en] <a href="/assets/files/monarc-training/fr/MyPrintFR.json" download>![Français][fr]
+|**Training materials**||Workshop MONARC &nbsp; [![English][en]](/assets/files/monarc-training/en/Formation_V2-MONARC_Env1.1.pdf) [![Français][fr]](/assets/files/monarc-training/fr/Formation_V2-MONARC_Fr.pdf) [![Dutch][nl]](/assets/files/monarc-training/nl/Formation_V2-MONARC_NL.pdf)<br/>Context MyCompany [![English][en]](/assets/files/monarc-training/en/Context_MyCompany_en_v1.0.pdf) [![Français][fr]](/assets/files/monarc-training/fr/Context_MyCompany_fr_v1.1.pdf)<br/>MyPrint workshop &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/assets/files/monarc-training/en/MyPrintEN.json" download>![English][en] <a href="/assets/files/monarc-training/fr/MyPrintFR.json" download>![Français][fr]<br />Check out the [community training materials](/trainings#community-training-materials).
 |&nbsp;|  |  |
 |**Price**||Free (No show fee: 40€ HT - Cancellation is possible up to 48 hours before the start of the training) |
 |&nbsp;|  |  |
@@ -60,6 +62,9 @@ table {
 |            |                                              |                 |                        |
 
 
+### Community training materials
+
+- [MONARC Workshop in German](/assets/files/monarc-training/de/MONARC_K8_ger_16x9_Download_monarc_lu.pdf), provided by [KonzeptAcht](http://konzeptacht.de)
 
 
 [en]: /assets/images/gb.svg "English"
