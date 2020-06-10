@@ -1,0 +1,27 @@
+name: Publish website
+
+on:
+  push:
+    branches:
+      - source  # default branch with the source code of the website
+
+jobs:
+  deploy:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: 'recursive'
+
+      - run: |
+          pip install poetry
+          poetry install
+          poetry run make html
+          poetry run ghp-import output
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.PERSONAL_TOKEN }}
+          publish_dir: ./output
+          publish_branch: master  # deploying branch
