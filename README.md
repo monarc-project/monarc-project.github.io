@@ -4,7 +4,7 @@ MONARC website
 # Installation
 
 ```bash
-$ git clone --recursive https://github.com/monarc-project/website.git
+$ git clone --recursive https://github.com/monarc-project/monarc-project.github.io.git
 $ cd website/
 $ poetry install
 ```
