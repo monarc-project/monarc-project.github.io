@@ -6,7 +6,7 @@ MONARC website
 ```bash
 $ git clone --recursive https://github.com/monarc-project/website.git
 $ cd website/
-$ pipenv install
+$ poetry install
 ```
 
 # Deployment
@@ -14,7 +14,7 @@ $ pipenv install
 ## Generate and publish
 
 ```bash
-$ pipenv shell
+$ poetry shell
 $ make html
 $ ghp-import output
 $ git push git@github.com:monarc-project/monarc-project.github.io.git gh-pages:master -f
