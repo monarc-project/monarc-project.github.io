@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
+<head>
+    <title>Risk Assessment Optimisation with <span class="caps">MONARC</span> - MONARC</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link href="../../assets/images/monarc-logo.png" rel="icon">
+
+<link rel="canonical" href="../../publications/risk-assessment-optimisation-with-monarc/">
+
+        <meta name="author" content="security made in Lëtzebuerg (SMILE) g.i.e." />
+        <meta name="description" content="Abstract: There are many solutions to cover risk assessment: from big software solutions to standalone applications – even based on spreadsheets. A risk assessment takes a significant amount of time and becomes expensive rather quickly resulting in the impossibility for small companies to perform such an analysis. MONARC aims to make …" />
+
+    <meta property="og:site_name" content="MONARC" />
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="Risk Assessment Optimisation with MONARC"/>
+    <meta property="og:url" content="../../publications/risk-assessment-optimisation-with-monarc/"/>
+    <meta property="og:description" content="Abstract: There are many solutions to cover risk assessment: from big software solutions to standalone applications – even based on spreadsheets. A risk assessment takes a significant amount of time and becomes expensive rather quickly resulting in the impossibility for small companies to perform such an analysis. MONARC aims to make …" />
+
+
+
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="../../theme/css/bootstrap.cerulean.min.css" type="text/css"/>
+    <link href="../../theme/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="../../theme/css/pygments/native.css" rel="stylesheet">
+        <link href="../../theme/css/typogrify.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../theme/css/style.css" type="text/css"/>
+        <link href="../../static/css/custom.css" rel="stylesheet">
+
+        <link href="../../feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
+              title="MONARC ATOM Feed"/>
+
+
+</head>
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="../../" class="navbar-brand">
+MONARC            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                    <li><a href="/news">News</a></li>
+                    <li><a href="/product">Product</a></li>
+                    <li><a href="/service">Service</a></li>
+                    <li><a href="/community">Community</a></li>
+                    <li><a href="/publications">Publications</a></li>
+                    <li><a href="/documentation">Documentation</a></li>
+                    <li><a href="/download">Download</a></li>
+                    <li><a href="/trainings">Trainings</a></li>
+                    <li><a href="/internship">Work with us</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</div> <!-- /.navbar -->
+
+<!-- Banner -->
+<!-- End Banner -->
+
+<!-- Content Container -->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9">
+    <section id="content" class="body">
+        <h1 class="entry-title">Risk Assessment Optimisation with <span class="caps">MONARC</span></h1>
+        
+        <div class="entry-content">
+            <p><br/><strong> Abstract: </strong> There are many solutions to cover risk assessment: from big software
+solutions to standalone applications – even based on spreadsheets. A
+risk assessment takes a significant amount of time and becomes expensive
+rather quickly resulting in the impossibility for small companies to
+perform such an analysis. <span class="caps">MONARC</span> aims to make performing more accessible
+through optimisations and sharing. Each of these reduce the time needed
+to perform such an assessment and subsequenty, money. Finally, after the
+development of the tool, <span class="caps">MONARC</span> has been released as open source
+software (<span class="caps">GNU</span> Affero General Public License version&nbsp;3).</p>
+<p>In this paper, we will introduce <span class="caps">MONARC</span>, the optimisation and sharing
+features. The presentation will include a live demo of the introduced&nbsp;features.</p>
+<p><strong> Index Terms </strong> - risk-analysis, governance, security, cybersecurity, threat,
+vulnerabilities, risk-assessment, risk-evaluation,&nbsp;risk-treatment</p>
+<h2 id="introduction">Introduction</h2>
+<p>There are many solutions to cover risk assessment: from big software
+solutions to standalone applications – the initial proof of concept for
+<span class="caps">MONARC</span> was based, like others too, on spreadsheets. However, a certain
+number of these solutions are either limited in functionality or tend to
+be difficult to use. Additionally, performing a risk assessment takes a
+significant amount of time and becomes expensive rather quickly. It does
+not help financially that the risk assessment should be done
+periodically and that each time recommendations usually result in the
+implementation of controls, which add to the&nbsp;cost.</p>
+<p>To reduce the cost of a risk analysis, both in terms of money and time,
+experts from <span class="caps">CASES</span><sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> have developped the <span class="caps">MONARC</span> platform<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup> which
+provides pragmatic, inexpensive optimisations. These optimisations are
+the result of years of experience in the field. The saved time and
+finances allow for more available resources to implement a&nbsp;recommendations.</p>
+<p>The other bigger advantage of the <span class="caps">MONARC</span> solution - and that adds on top
+of the optimisation - is the sharing of everything; the risk models and
+even the source code<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup>. No license fees, no special
+commercial/non-commercial use models etc. It is under the <span class="caps">GNU</span> Affero
+General Public License version&nbsp;3.</p>
+<h2 id="what-is-monarc">What is <span class="caps">MONARC</span></h2>
+<p>Depending on its size and its security needs, organisations must react
+in the most appropriate manner. Adopting good practices, taking the
+necessary measures and adjusting them proportionally: all this is part
+of the process to ensure information security. Most of all, it depends
+on performing a risk analysis on a regular basis. Although the
+profitability of the risk analysis approach is guaranteed, the
+investment represented in terms of the required cost and expertise is a
+barrier for many companies, especially small and medium sized
+enterprises&nbsp;(SMEs).</p>
+<p><span class="caps">MONARC</span> aims to remedy this situation by allowing all organisations, no
+matter the size, to benefit from the advantages that a risk analysis
+offers. As a method it allows to perform a repeatable and precise risk&nbsp;management.</p>
+<p>The advantage of <span class="caps">MONARC</span> lies in the capitalisation of risk analyses
+already performed in similar business contexts: the same vulnerabilities
+regularly appear in many businesses, as they face the same threats and
+generate comparable risks. Most companies have servers, printers, a
+fleet of smartphones, Wi-Fi antennas, etc. It is therefor sufficient to
+generalise risk scenarios for many assets (also called objects) by
+context and/or&nbsp;business.</p>
+<h2 id="phases-of-monarc">Phases of <span class="caps">MONARC</span></h2>
+<p>The phases of <span class="caps">MONARC</span> start with the context establishment (or plan)
+phase, followed by the context modelling (or do) phase, the evaluations
+(or check) phase and finally the implementation and monitoring (or act)
+phase. Thus it is similar to the <span class="caps">PDCA</span><sup id="fnref:4"><a class="footnote-ref" href="#fn:4">4</a></sup> method. The relation between
+each phase can be seen in Figure 1.
+<div align="center">
+  <img src="/assets/images/hack2018-paper/method.png" width="50%">
+  <p><br/><strong>Fig. 1</strong> <span class="caps">MONARC</span>, a method in four&nbsp;phases</p>
+</div></p>
+<h4 id="context-establishment">Context&nbsp;Establishment</h4>
+<p>The first step is to take stock of the context, challenges and
+priorities of the company or organization that wishes to analyse its
+risks. This particularly serves to identify key activities and critical
+processes of the business in order to guide the risk analysis towards
+the most important elements. To do this, a kick-off meeting is organized
+with the members of the management and key individuals. The goal is to
+know what makes the company “live” and what could destroy it, to
+identify the key processes, the internal and external threats as well as
+organisational, technical and human&nbsp;vulnerabilities.</p>
+<h4 id="context-modelling">Context&nbsp;Modelling</h4>
+<p>This phase includes the modelling of objects (secondary assets) and
+trees. The primary assets were identified in the previous phase. They
+must now be detailed and formalised in a diagram that displays their
+interdependence. Impacts are defined at the level of the primary assets
+(processes or information), following the information gathered in the
+context establishment phase. The secondary assets inherit the impact of
+the primary asset to which they are attached (object tree). The impact
+level of the secondary assets can be modified&nbsp;manually.</p>
+<h4 id="evaluation-and-treatment-of-risks">Evaluation and treatment of&nbsp;risks</h4>
+<p>The assessment consists of quantifying the threats, vulnerabilities and
+impacts in order to calculate the risks. To do this, it is necessary to
+have quality information about the exact likelihood of the threats, the
+ease of exploitation of vulnerabilities and potential impacts; hence the
+need to rely on metrics that have been validated by experts. When the
+risk assessment identifies a risk that is higher than the acceptable
+level (risk acceptance grid also known as risk appetite), risk treatment
+measures should be implemented in order to reduce the risk to an
+acceptable&nbsp;level.</p>
+<h4 id="implementation-and-monitoring">Implementation and&nbsp;monitoring</h4>
+<p>When the first treatment of risks has been carried out, an ongoing
+management phase with security monitoring and recurring control of
+security measures must be entered, in order to improve it in a
+sustainable&nbsp;manner.</p>
+<p>This fourth phase also allows to continuously optimise security by
+increasing the detail of objects used and by expanding the scope of the
+risk&nbsp;analysis.</p>
+<h2 id="optmisations">Optmisations</h2>
+<p><span class="caps">MONARC</span> includes 5 levels of optimisations and&nbsp;simplifications:</p>
+<ol>
+<li>
+<p>Assets with attached&nbsp;risks;</p>
+</li>
+<li>
+<p>Heritage of&nbsp;impacts;</p>
+</li>
+<li>
+<p>Global&nbsp;assets;</p>
+</li>
+<li>
+<p>Import and export of assets including (or excluding) the&nbsp;evaluation;</p>
+</li>
+<li>
+<p>Generation of&nbsp;reports/deliverables.</p>
+</li>
+</ol>
+<div align="center">
+  <img src="/assets/images/hack2018-paper/PrimaryAssetRiskExampleVert.png" width="90%">
+  <p><br/><strong>Fig. 2</strong> Artificial Asset&nbsp;Example</p>
+</div>
+
+<p>But before we can get into the details, we should highlight how the
+assets and risks are defined, as they are essential to understand the
+optimisations&nbsp;possible.</p>
+<p>There are two risk types&nbsp;existing:</p>
+<ol>
+<li>
+<p>Operational risks which are directly connected to primary assets.
+    These do not have direct threats nor vulnerability and thus are
+    evaluated differently (<em>impact * probability</em>);</p>
+</li>
+<li>
+<p>Informational risks which are based on the relation of
+    vulnerability, threat and&nbsp;impact.</p>
+</li>
+</ol>
+<p>This also explains that there are two types of&nbsp;assets:</p>
+<ol>
+<li>
+<p>Primary assets, like core business (departments, information,&nbsp;etc&#8230;);</p>
+</li>
+<li>
+<p>Supporting assets, like servers, employees, buildings,&nbsp;etc.</p>
+</li>
+</ol>
+<p>In general, an asset includes a special set of risks. Looking at the
+example in Figure 2, we have a printing service which has
+a building and a printer. The building has risks attached and so does
+the printer. Now that the basic structure of modelling assets is known,
+we can touch on the different parts of&nbsp;optimisation.</p>
+<h4 id="assets-and-their-risks">Assets and their&nbsp;risks</h4>
+<p>The modelling of assets takes some time, especially if the risks have to
+be identified for each asset first. Identifying these risks takes time
+and a risk can be forgotten easily. Thus coming back, adding the missing
+risk and only then continuing the risk assessment reduces productivity.
+To limit the time lost, we allow to define assets with risks already
+attached. In that way, when the asset is added to the analysis, the
+risks attached to that asset are automatically added as&nbsp;well.</p>
+<h4 id="heritage-of-impacts-and-risks">Heritage of impacts and&nbsp;risks</h4>
+<p>As previously discussed, each risk has an impact and its context is
+given by the asset the risk is attached to. The context of that asset is
+the parent asset and so forth. So the optimisation here is, since the
+primary asset gives the context to each of the child assets, only the
+primary asset needs to be impacted: the child assets will automatically
+inherit the impacts (using a top-down approach). It is still possible to
+manually evaluate each impact but for most situations, this is really
+accelerating the evaluation&nbsp;process.</p>
+<p>In contrast to the heritage of impacts, the risks of the supporting
+assets are automatically inherited to the primary asset. Because if a
+supporting asset fails, the primary asset is impacted or fails as well.
+As such, the heritage is not only top-down but also&nbsp;bottom-up.</p>
+<h4 id="global-assets">Global&nbsp;assets</h4>
+<p>Sometimes it is the case to have supporting assets that support multiple
+primary assets: a building for example. The optimisation in this case is
+to introduce global assets. This means that less risks have to be
+evaluated. As an example: the building, as it is the same for many
+services, only needs to be evaluated once – the one with the highest&nbsp;impact.</p>
+<h4 id="deliverable-generation">Deliverable&nbsp;generation</h4>
+<p>Inputting all this information is great, but if it cannot be exported to
+report to management, all the work is less productive. Therefore,
+deliverables can be generated at specific moments: at the end of each
+phase – <span class="caps">MONARC</span> has four phases<sup id="fnref:5"><a class="footnote-ref" href="#fn:5">5</a></sup>.</p>
+<h4 id="import-and-export">Import and&nbsp;export</h4>
+<p>Not only can the tool generate reports to present to management but
+there is an import and export feature built in. This allows for one
+department to create a risk model that can then be shared amongst
+departments. It also allows to be shared publicly of course. This again
+optimises and reduces the work time: the model already exists and does
+not need to be created first. Thus, the workload can be distributed over
+the community and reduces the cost of every individual organisation by
+some margin avoiding double&nbsp;work.</p>
+<h2 id="sharing-and-community">Sharing and&nbsp;community</h2>
+<p>Sharing is a big part of this software: sharing the code, sharing assets
+and risk models and finally, sharing a whole analysis. The latter part
+is very interesting to companies with multiple departments (maybe even
+international): they can ask their departments to perform a risk
+analysis with a certain model. Then they can combine the analysis and
+can define rather quickly how the company risks look in&nbsp;general.</p>
+<p>Sharing assets or risk models is an interesting concept as it allows for
+some organisation to create an asset (or composition thereof) and it
+linked risks. Once such an asset has been defined, that organisation can
+then export that asset and make it available to any interested party.
+The latter can then import it and can immediately start with the
+evaluation process instead of first having to build the asset
+themselves. The sharing can of course be selective: each asset can be
+chosen and exported and then, the exporter can choose with whom to&nbsp;share.</p>
+<p>Finally, we share the code so that everyone can enjoy what has been
+created by everyone. The goal is to have a tool for the community
+created by the&nbsp;community.</p>
+<h2 id="ongoing-and-future-works">Ongoing and future&nbsp;works</h2>
+<p>Future work will&nbsp;enhance:</p>
+<ol>
+<li>
+<p>The overall <span class="caps">MONARC</span> platform with new functions, such as a statement of applicability (<span class="caps">SOA</span>), improvements for
+the new dashboard and hopefully your&nbsp;ideas/contributions.</p>
+</li>
+<li>
+<p>The sharing of <span class="caps">MONARC</span> objects with a new tool and by trying to educate a
+community not so used to the sharing of&nbsp;information.</p>
+</li>
+</ol>
+<p>Our short to mid-term roadmap is also available<sup id="fnref:6"><a class="footnote-ref" href="#fn:6">6</a></sup>. We do not really
+have a strict long term roadmap - no false&nbsp;promises.</p>
+<p>We are working on a solution<sup id="fnref:7"><a class="footnote-ref" href="#fn:7">7</a></sup> which will let the users share their
+<span class="caps">MONARC</span> <span class="caps">JSON</span> objects much easier. The source code is under <span class="caps">GNU</span> Affero
+General Public License version 3. It will also help the users to build
+valid security objects, thanks to validations against <span class="caps">JSON</span> schemas. In
+order to gather a maximum of security related objects in this repository
+the platform will accept contributions that are not only for <span class="caps">MONARC</span>.
+Furthermore security objects are editable via a Web form generated from
+the schemas. So that every security researcher will be able to
+contribute with her/his&nbsp;work.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>In this paper we briefly presented the <span class="caps">MONARC</span> method and platform,
+highlighting its contribution to the community: optimisations and the
+ability to easily share the information. Each of the presented
+optimisations and even the sharing part will reduce the amount of
+resources needed to perform a risk&nbsp;analysis.</p>
+<p>During the presentation a short live demo where each of the
+aforementioned optimisations and sharing will be demonstrated on a
+dedicated instance of <span class="caps">MONARC</span>.</p>
+<div class="footnote">
+<hr>
+<ol>
+<li id="fn:1">
+<p><a href="https://www.cases.lu/"><span class="caps">CASES</span></a>&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p><a href="https://www.monarc.lu"><span class="caps">MONARC</span>: Optimised Risk Assessment Methodology by <span class="caps">CASES</span></a>&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:3">
+<p><a href="https://github.com/monarc-project">Github Project Page</a>&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+<li id="fn:4">
+<p><span class="caps">PDCA</span>: plan-do-check-act&#160;<a class="footnote-backref" href="#fnref:4" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+</li>
+<li id="fn:5">
+<p><a href="/documentation/method-guide"><span class="caps">MONARC</span> Method Guide</a>&#160;<a class="footnote-backref" href="#fnref:5" title="Jump back to footnote 5 in the text">&#8617;</a></p>
+</li>
+<li id="fn:6">
+<p><a href="https://github.com/monarc-project/MonarcAppFO/wiki/Roadmap"><span class="caps">MONARC</span> Roadmap</a>&#160;<a class="footnote-backref" href="#fnref:6" title="Jump back to footnote 6 in the text">&#8617;</a></p>
+</li>
+<li id="fn:7">
+<p><a href="https://github.com/CASES-LU/MOSP"><span class="caps">MOSP</span></a>&#160;<a class="footnote-backref" href="#fnref:7" title="Jump back to footnote 7 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+        </div>
+    </section>
+        </div>
+        <div class="col-sm-3" id="sidebar">
+            <aside>
+<!-- Sidebar -->
+<section class="well well-sm">
+  <ul class="list-group list-group-flush">
+
+<!-- Sidebar/Social -->
+<li class="list-group-item">
+  <h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Social</span></h4>
+  <ul class="list-group" id="social">
+    <li class="list-group-item"><a href="https://github.com/monarc-project"><i class="fa fa-github-square fa-lg"></i> GitHub</a></li>
+    <li class="list-group-item"><a href="https://twitter.com/MONARCproject"><i class="fa fa-twitter-square fa-lg"></i> Twitter</a></li>
+    <li class="list-group-item"><a href="https://www.monarc.lu/feeds/all.atom.xml"><i class="fa fa-rss-square fa-lg"></i> RSS</a></li>
+  </ul>
+</li>
+<!-- End Sidebar/Social -->
+
+<!-- Sidebar/Recent Posts -->
+<li class="list-group-item">
+  <h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Recent Posts</span></h4>
+  <ul class="list-group" id="recentposts">
+    <li class="list-group-item"><a href="../../news/2020/06/03/monarc-2915-released/"><span class="caps">MONARC</span> 2.9.15&nbsp;released</a></li>
+    <li class="list-group-item"><a href="../../news/2020/04/24/monarc-2914-released/"><span class="caps">MONARC</span> 2.9.14&nbsp;released</a></li>
+    <li class="list-group-item"><a href="../../news/2020/04/14/monarc-2913-released/"><span class="caps">MONARC</span> 2.9.13&nbsp;released</a></li>
+    <li class="list-group-item"><a href="../../news/2020/03/20/monarc-2912-released/"><span class="caps">MONARC</span> 2.9.12&nbsp;released</a></li>
+    <li class="list-group-item"><a href="../../news/2020/02/24/monarc-2911-released/"><span class="caps">MONARC</span> 2.9.11&nbsp;released</a></li>
+  </ul>
+</li>
+<!-- End Sidebar/Recent Posts -->
+
+<!-- Sidebar/Links -->
+<li class="list-group-item">
+  <h4><i class="fa fa-external-link-square fa-lg"></i><span class="icon-label">Links</span></h4>
+  <ul class="list-group" id="links">
+    <li class="list-group-item">
+      <a href="https://my.monarc.lu" target="_blank">MONARC <i>Cloud</i></a>
+    </li>
+    <li class="list-group-item">
+      <a href="https://objects.monarc.lu" target="_blank">Objects Sharing Platform</a>
+    </li>
+    <li class="list-group-item">
+      <a href="https://open-source-security-software.net/project/MONARC/releases.atom" target="_blank">Subscribe to the releases</a>
+    </li>
+    <li class="list-group-item">
+      <a href="https://cases.lu" target="_blank">CASES</a>
+    </li>
+    <li class="list-group-item">
+      <a href="https://github.com/monarc-project/MonarcAppFO/releases/latest" target="_blank"><img src="https://img.shields.io/github/release/monarc-project/MonarcAppFO.svg?style=flat-square" /></a>
+    </li>
+  </ul>
+</li>
+<!-- End Sidebar/Links -->
+  </ul>
+</section>
+<!-- End Sidebar -->            </aside>
+        </div>
+    </div>
+</div>
+<!-- End Content Container -->
+
+<footer>
+   <div class="container">
+      <hr>
+      <div class="row">
+         <div class="col-xs-10">&copy; 2020 security made in Lëtzebuerg (SMILE) g.i.e.
+            &middot; Powered by <a href="https://github.com/getpelican/pelican-themes/tree/master/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+            <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>                <p><small>  <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.en"><img alt="Creative Commons License" style="border-width:0" src="//i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
+    Content
+  licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">Creative Commons Attribution-ShareAlike 4.0 International License</a>, except where indicated otherwise.
+</small></p>
+         </div>
+         <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p></div>
+      </div>
+   </div>
+</footer>
+<script src="../../theme/js/jquery.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="../../theme/js/bootstrap.min.js"></script>
+
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+<script src="../../theme/js/respond.min.js"></script>
+
+
+
+
+</body>
+</html>

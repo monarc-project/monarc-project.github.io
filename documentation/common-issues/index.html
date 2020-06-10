@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
+<head>
+    <title>Common&nbsp;issues - MONARC</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link href="../../assets/images/monarc-logo.png" rel="icon">
+
+<link rel="canonical" href="../../documentation/common-issues/">
+
+        <meta name="author" content="security made in Lëtzebuerg (SMILE) g.i.e." />
+        <meta name="description" content="Table of contents: Problem after an update Not receiving password reset emails GitHub token problem during MONARC update A blank screen is displayed Is it possible for a back office administrator to change the administrator user of a MONARC instance? Adding a new administrator without access to the MONARC Web …" />
+
+    <meta property="og:site_name" content="MONARC" />
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="Common issues"/>
+    <meta property="og:url" content="../../documentation/common-issues/"/>
+    <meta property="og:description" content="Table of contents: Problem after an update Not receiving password reset emails GitHub token problem during MONARC update A blank screen is displayed Is it possible for a back office administrator to change the administrator user of a MONARC instance? Adding a new administrator without access to the MONARC Web …" />
+
+
+
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="../../theme/css/bootstrap.cerulean.min.css" type="text/css"/>
+    <link href="../../theme/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="../../theme/css/pygments/native.css" rel="stylesheet">
+        <link href="../../theme/css/typogrify.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../theme/css/style.css" type="text/css"/>
+        <link href="../../static/css/custom.css" rel="stylesheet">
+
+        <link href="../../feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
+              title="MONARC ATOM Feed"/>
+
+
+</head>
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="../../" class="navbar-brand">
+MONARC            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                    <li><a href="/news">News</a></li>
+                    <li><a href="/product">Product</a></li>
+                    <li><a href="/service">Service</a></li>
+                    <li><a href="/community">Community</a></li>
+                    <li><a href="/publications">Publications</a></li>
+                    <li><a href="/documentation">Documentation</a></li>
+                    <li><a href="/download">Download</a></li>
+                    <li><a href="/trainings">Trainings</a></li>
+                    <li><a href="/internship">Work with us</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</div> <!-- /.navbar -->
+
+<!-- Banner -->
+<!-- End Banner -->
+
+<!-- Content Container -->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9">
+    <section id="content" class="body">
+        <h1 class="entry-title">Common&nbsp;issues</h1>
+        
+        <div class="entry-content">
+            <div class="toc"><span class="toctitle">Table of contents:</span><ul>
+<li><a href="#problem-after-an-update">Problem after an&nbsp;update</a></li>
+<li><a href="#not-receiving-password-reset-emails">Not receiving password reset&nbsp;emails</a></li>
+<li><a href="#github-token-problem-during-monarc-update">GitHub token problem during <span class="caps">MONARC</span>&nbsp;update</a></li>
+<li><a href="#a-blank-screen-is-displayed">A blank screen is&nbsp;displayed</a></li>
+<li><a href="#is-it-possible-for-a-back-office-administrator-to-change-the-administrator-user-of-a-monarc-instance">Is it possible for a back office administrator to change the administrator user of a <span class="caps">MONARC</span>&nbsp;instance?</a></li>
+<li><a href="#adding-a-new-administrator-without-access-to-the-monarc-web-interface">Adding a new administrator without access to the <span class="caps">MONARC</span> Web&nbsp;interface</a></li>
+</ul>
+</div>
+<h2 id="problem-after-an-update">Problem after an&nbsp;update</h2>
+<p>After an update you may need to delete the cache of <span class="caps">MONARC</span>.
+For example if you noticed that the version number of <span class="caps">MONARC</span>,
+in the left menu, is wrong or <span class="caps">MONARC</span> still says that it is
+not&nbsp;up-to-date.</p>
+<p>Possible&nbsp;solution:</p>
+<ul>
+<li>delete the cache of <span class="caps">MONARC</span> in the folder <code>data/cache</code>.</li>
+</ul>
+<h2 id="not-receiving-password-reset-emails">Not receiving password reset&nbsp;emails</h2>
+<p>This is very unlikely a problem of <span class="caps">MONARC</span>.</p>
+<p>Check the logs in the files <em>/var/log/syslog</em> and <em>/var/log/mail.log</em>.</p>
+<p>Possible&nbsp;solutions:</p>
+<ul>
+<li>check the configuration of Postfix (/etc/postfix/main.cf) on the <span class="caps">MONARC</span>
+  server. Especially the address of the <span class="caps">SMTP</span> relay server (the line
+  starting with <em>relayhost</em>);</li>
+<li>check the configuration of your <span class="caps">SMTP</span> relay server. Most of the time a
+  rule will block the sending of the&nbsp;email.</li>
+</ul>
+<h2 id="github-token-problem-during-monarc-update">GitHub token problem during <span class="caps">MONARC</span>&nbsp;update</h2>
+<p>Because of GitHub&#8217;s rate limits on their <span class="caps">API</span> it can happen that Composer
+prompts for authentication asking your token so it can go ahead with its&nbsp;work.</p>
+<p>The best solution is to generate your own token and store it on the&nbsp;server:</p>
+<ol>
+<li><a href="https://github.com/settings/tokens">Create</a> an OAuth token on&nbsp;GitHub;</li>
+<li>Add it to the configuration running <code>composer config -g github-oauth.github.com &lt;oauthtoken&gt;</code>.
+   Do this on the <span class="caps">MONARC</span> server and on the <span class="caps">MONARC</span> back office&nbsp;server.</li>
+</ol>
+<h2 id="a-blank-screen-is-displayed">A blank screen is&nbsp;displayed</h2>
+<p>A blank screen is generally caused by a faulty database&nbsp;connection.</p>
+<p>Possible&nbsp;solutions:</p>
+<ul>
+<li>check manually the connection to the&nbsp;database;</li>
+<li>check the Apache error logs for database related problems. This can also be
+  caused by a <span class="caps">PHP</span> library (for example Doctrine). In this case launch again the
+  update script (<em>scripts/update-all.sh</em>) then delete the cache of <span class="caps">MONARC</span>.</li>
+</ul>
+<h2 id="is-it-possible-for-a-back-office-administrator-to-change-the-administrator-user-of-a-monarc-instance">Is it possible for a back office administrator to change the administrator user of a <span class="caps">MONARC</span>&nbsp;instance?</h2>
+<p>The answer is no. This is a design choice that has been made for security reason.
+An administrator of the back office is only able to create and delete <span class="caps">MONARC</span>
+instances (clients) on a <span class="caps">MONARC</span> server. The administrator has no access to the
+<span class="caps">MONARC</span>&nbsp;instances.</p>
+<p>A minimum of one administrator per <span class="caps">MONARC</span> instance is recommended.
+The management of users on a specific <span class="caps">MONARC</span> instance is the responsibility
+of administrator of the instance.
+The administrator of the back office should not be responsible of&nbsp;this.</p>
+<h2 id="adding-a-new-administrator-without-access-to-the-monarc-web-interface">Adding a new administrator without access to the <span class="caps">MONARC</span> Web&nbsp;interface</h2>
+<p>Considering, for example, that an employee with administrator rights on <span class="caps">MONARC</span>
+recently left the&nbsp;company.</p>
+<p>You must have a <span class="caps">SSH</span> access to the server where <span class="caps">MONARC</span> is&nbsp;installed.</p>
+<p><strong>Situation&nbsp;1</strong></p>
+<p>If you are using <span class="caps">MONARC</span> without back office, simply run this command at the
+root of <span class="caps">MONARC</span>:</p>
+<div class="highlight"><pre><span></span><code>$ php ./vendor/robmorgan/phinx/bin/phinx seed:run -c ./module/MonarcFO/migrations/phinx.php
+</code></pre></div>
+
+
+<p>This will create a new administrator account with the login <em>admin@admin.test</em>
+and the password <em>admin</em>.</p>
+<p><strong>Situation&nbsp;2</strong></p>
+<p>If you are using a back office, as explained in the previous section, it is not
+possible to change the administrator of a <span class="caps">MONARC</span> instance or to add a new one.
+Clients databases are separated.<br>
+A simple solution would be to update the email address of the former
+administrator directly in the client database (on the <span class="caps">FO</span> server), with your own
+email address.
+Then you will be able to use the password recovery feature of <span class="caps">MONARC</span>.</p>
+        </div>
+    </section>
+        </div>
+        <div class="col-sm-3" id="sidebar">
+            <aside>
+<!-- Sidebar -->
+<section class="well well-sm">
+  <ul class="list-group list-group-flush">
+
+<!-- Sidebar/Social -->
+<li class="list-group-item">
+  <h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Social</span></h4>
+  <ul class="list-group" id="social">
+    <li class="list-group-item"><a href="https://github.com/monarc-project"><i class="fa fa-github-square fa-lg"></i> GitHub</a></li>
+    <li class="list-group-item"><a href="https://twitter.com/MONARCproject"><i class="fa fa-twitter-square fa-lg"></i> Twitter</a></li>
+    <li class="list-group-item"><a href="https://www.monarc.lu/feeds/all.atom.xml"><i class="fa fa-rss-square fa-lg"></i> RSS</a></li>
+  </ul>
+</li>
+<!-- End Sidebar/Social -->
+
+<!-- Sidebar/Recent Posts -->
+<li class="list-group-item">
+  <h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Recent Posts</span></h4>
+  <ul class="list-group" id="recentposts">
+    <li class="list-group-item"><a href="../../news/2020/06/03/monarc-2915-released/"><span class="caps">MONARC</span> 2.9.15&nbsp;released</a></li>
+    <li class="list-group-item"><a href="../../news/2020/04/24/monarc-2914-released/"><span class="caps">MONARC</span> 2.9.14&nbsp;released</a></li>
+    <li class="list-group-item"><a href="../../news/2020/04/14/monarc-2913-released/"><span class="caps">MONARC</span> 2.9.13&nbsp;released</a></li>
+    <li class="list-group-item"><a href="../../news/2020/03/20/monarc-2912-released/"><span class="caps">MONARC</span> 2.9.12&nbsp;released</a></li>
+    <li class="list-group-item"><a href="../../news/2020/02/24/monarc-2911-released/"><span class="caps">MONARC</span> 2.9.11&nbsp;released</a></li>
+  </ul>
+</li>
+<!-- End Sidebar/Recent Posts -->
+
+<!-- Sidebar/Links -->
+<li class="list-group-item">
+  <h4><i class="fa fa-external-link-square fa-lg"></i><span class="icon-label">Links</span></h4>
+  <ul class="list-group" id="links">
+    <li class="list-group-item">
+      <a href="https://my.monarc.lu" target="_blank">MONARC <i>Cloud</i></a>
+    </li>
+    <li class="list-group-item">
+      <a href="https://objects.monarc.lu" target="_blank">Objects Sharing Platform</a>
+    </li>
+    <li class="list-group-item">
+      <a href="https://open-source-security-software.net/project/MONARC/releases.atom" target="_blank">Subscribe to the releases</a>
+    </li>
+    <li class="list-group-item">
+      <a href="https://cases.lu" target="_blank">CASES</a>
+    </li>
+    <li class="list-group-item">
+      <a href="https://github.com/monarc-project/MonarcAppFO/releases/latest" target="_blank"><img src="https://img.shields.io/github/release/monarc-project/MonarcAppFO.svg?style=flat-square" /></a>
+    </li>
+  </ul>
+</li>
+<!-- End Sidebar/Links -->
+  </ul>
+</section>
+<!-- End Sidebar -->            </aside>
+        </div>
+    </div>
+</div>
+<!-- End Content Container -->
+
+<footer>
+   <div class="container">
+      <hr>
+      <div class="row">
+         <div class="col-xs-10">&copy; 2020 security made in Lëtzebuerg (SMILE) g.i.e.
+            &middot; Powered by <a href="https://github.com/getpelican/pelican-themes/tree/master/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+            <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>                <p><small>  <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.en"><img alt="Creative Commons License" style="border-width:0" src="//i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
+    Content
+  licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">Creative Commons Attribution-ShareAlike 4.0 International License</a>, except where indicated otherwise.
+</small></p>
+         </div>
+         <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p></div>
+      </div>
+   </div>
+</footer>
+<script src="../../theme/js/jquery.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="../../theme/js/bootstrap.min.js"></script>
+
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+<script src="../../theme/js/respond.min.js"></script>
+
+
+
+
+</body>
+</html>
