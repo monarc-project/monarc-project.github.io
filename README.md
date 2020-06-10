@@ -13,7 +13,7 @@ $ poetry install # you can also use pipenv install
 
 ## Check and publish
 
-You can directly push your changes but it is preferable to first test locally:
+You can directly push your changes but it is preferable to first check locally:
 
 ```bash
 $ poetry shell # you can also use pipenv shell
@@ -31,5 +31,6 @@ $ git commit -S -am "<your comment>"
 $ git push origin source
 ```
 
-The website will be created thanks to GitHub Actions and the result deployed
-on the GitHub Organization Pages.
+The website will be automatically generated thanks to GitHub Actions and the
+result deployed on the GitHub Organization Pages
+(available [here](https://www.monarc.lu)).
