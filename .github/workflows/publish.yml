@@ -6,7 +6,7 @@ on:
       - source  # default branch with the source code of the website
 
 jobs:
-  deploy:
+  build:
 
     runs-on: ubuntu-latest
 
