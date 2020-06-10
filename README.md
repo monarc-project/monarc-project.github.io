@@ -4,26 +4,32 @@ MONARC website
 # Installation
 
 ```bash
-$ git clone --recursive https://github.com/monarc-project/monarc-project.github.io.git
-$ cd website/
-$ poetry install
+$ git clone --recursive https://github.com/monarc-project/monarc-project.github.io
+$ cd monarc-project.github.io/
+$ poetry install # you can also use pipenv install
 ```
 
 # Deployment
 
-## Generate and publish
+## Check and publish
+
+You can directly push your changes but it is preferable to first test locally:
 
 ```bash
-$ poetry shell
+$ poetry shell # you can also use pipenv shell
+# generation of the static website:
 $ make html
-$ ghp-import output
-$ git push git@github.com:monarc-project/monarc-project.github.io.git gh-pages:master -f
-```
-
-## Development server
-
-If you want to test with the development server, type in the virtualenv:
-
-```bash
+# or test with the development server:
 $ make devserver
 ```
+
+Once everything looks fine, publish the changes:
+
+
+```bash
+$ git commit -S -am "<your comment>"
+$ git push origin source
+```
+
+The website will be created thanks to GitHub Actions and the result deployed
+on the GitHub Organization Pages.
