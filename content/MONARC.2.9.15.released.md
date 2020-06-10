@@ -19,7 +19,7 @@ Version 2.9.15 of MONARC has been released with several fixes.
 - Improvements and fixes for German translations
   ([#293](https://github.com/monarc-project/MonarcAppFO/issues/293));
 - Dashboard Diagrams “No Data” 2.9.14
-  ([#294](https://github.com/monarc-project/MonarcAppFO/issues/294));
+  ([#294](https://github.com/monarc-project/MonarcAppFO/issues/294)).
 
 
 ## Updating
