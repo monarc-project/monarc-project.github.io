@@ -32,5 +32,5 @@ $ git push origin source
 ```
 
 The website will be automatically generated thanks to GitHub Actions and the
-result deployed on the GitHub Organization Pages
+result deployed on the MONARC GitHub Organization Pages
 (available [here](https://www.monarc.lu)).
