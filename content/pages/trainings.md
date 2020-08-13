@@ -12,14 +12,10 @@ table {
 
 |&nbsp;|||
 |:--|--|--|
-|**Date and time**|| To be announced.|
+|**Date and time**|| 23th September 2020 - 9h30 - 16h00|
 |&nbsp;|  ||
-|**Location**|&nbsp;&nbsp;&nbsp;|C3 - EternalBlue room / SECURITYMADEIN.LU|
-|             |                  |16 Boulevard d’Avranches 1160|
-|             |                  |Luxembourg|
-|&nbsp;|  ||
-|             |                  |**COVID-19 News**|
-|             |                  |Due to the quarantine trainings will be online.|
+|**Location**|&nbsp;&nbsp;&nbsp;|Online / [BigBlueButton](https://bigbluebutton.org/) platform of SECURITYMADEIN.LU|
+|&nbsp;|  |Check your network connection to BigBlueButton [here](https://test.bigbluebutton.org/)  |
 |&nbsp;|  |  |
 |**Objective**||Master the risk analysis tool MONARC.|
 |&nbsp;|  |  |
@@ -29,15 +25,15 @@ table {
 |&nbsp;|  |  |
 |**Level required**||Basic|
 |&nbsp;|  |  |
-|**Language**|| English |
+|**Language**|| French |
 |&nbsp;|  |  |
 |**Extra requirements**||**A laptop is required**|
 |&nbsp;|  |  |
 |**Training materials**||Workshop MONARC &nbsp; [![English][en]](/assets/files/monarc-training/en/Formation_V2-MONARC_Env1.1.pdf) [![Français][fr]](/assets/files/monarc-training/fr/Formation_V2-MONARC_Fr.pdf) [![Dutch][nl]](/assets/files/monarc-training/nl/Formation_V2-MONARC_NL.pdf)<br/>Context MyCompany [![English][en]](/assets/files/monarc-training/en/Context_MyCompany_en_v1.0.pdf) [![Français][fr]](/assets/files/monarc-training/fr/Context_MyCompany_fr_v1.1.pdf)<br/>MyPrint workshop &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/assets/files/monarc-training/en/MyPrintEN.json" download>![English][en] <a href="/assets/files/monarc-training/fr/MyPrintFR.json" download>![Français][fr]<br />Check out the [community training materials](/trainings#community-training-materials).
 |&nbsp;|  |  |
-|**Price**||Free (No show fee: 40€ HT - Cancellation is possible up to 48 hours before the start of the training) |
+|**Price**||Free| /*(No show fee: 40€ HT - Cancellation is possible up to 48 hours before the start of the training) |*/
 |&nbsp;|  |  |
-|**Registration** |   | <script type="text/javascript" src="https://www.xing-events.com/resources/js/amiandoExport.js"></script><iframe src="https://VODXDDK-modules.xing-events.com/VODXDDK.html?viewType=iframe&distributionChannel=CHANNEL_IFRAME&language=en&useDefaults=false&resizeIFrame=true" frameborder="0" width="650px" id="_amiandoIFrame3806799"><p>This page requires frame support. Please use a frame compatible browser to see the ticket sales module.</p><p> Try out the <a href="https://en.xing-events.com/">online event registration system</a> from XING Events.</p></iframe>More participants thanks to <a href="https://en.xing-events.com?viralRefId=VODXDDK&utm_campaign=ev-VODXDDK&utm_medium=viral&utm_source=EventWebsite&utm_content=TextLinkBottom&utm_term=text-link" target="_blank" alt="XING Events" title="XING Events">online event management solutions</a> from XING Events.|
+|**Registration** |   | <script type="text/javascript" src="https://www.xing-events.com/resources/js/amiandoExport.js"></script><iframe src="https://HVZCZWW-modules.xing-events.com/HVZCZWW.html?viewType=iframe&distributionChannel=CHANNEL_IFRAME&language=en&useDefaults=false&resizeIFrame=true" frameborder="0" width="650px" id="_amiandoIFrame3806799"><p>This page requires frame support. Please use a frame compatible browser to see the ticket sales module.</p><p> Try out the <a href="https://en.xing-events.com/">online event registration system</a> from XING Events.</p></iframe>More participants thanks to <a href="https://en.xing-events.com?viralRefId=HVZCZWW&utm_campaign=ev-HVZCZWW&utm_medium=viral&utm_source=EventWebsite&utm_content=TextLinkBottom&utm_term=text-link" target="_blank" alt="XING Events" title="XING Events">online event management solutions</a> from XING Events.|
 
 ### Past Trainings
 
