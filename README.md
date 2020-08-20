@@ -23,6 +23,14 @@ $ make html
 $ make devserver
 ```
 
+In case if `make devserver` command fails, it can be replaced with:
+```
+pip install invoke
+invoke build
+invoke serve
+```
+
+
 Once everything looks fine, publish the changes:
 
 
