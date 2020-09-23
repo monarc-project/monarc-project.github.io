@@ -25,9 +25,12 @@ $ make devserver
 
 In case if `make devserver` command fails, it can be replaced with:
 ```
-pip install invoke
-invoke build
-invoke serve
+# only once:
+$ pip install invoke
+$ invoke build
+
+# to start dev server:
+$ invoke serve
 ```
 
 

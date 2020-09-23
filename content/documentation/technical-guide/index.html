@@ -969,6 +969,15 @@ internal mail server (<strong>SMTP</strong>).</p>
 <a href="https://github.com/monarc-project/MonarcAppFO/releases/latest">virtual machine</a>
 for use with VirtualBox is available.
 The best way if you want an up-to-date version of MONARC.</p>
+<p>
+When the image is imported into your VirtualBox application, you need to perform the following steps to launch Monarc:
+<ul>
+<li>Configure your VM: Setting -> Network -> select Bridged Adapter.</li>
+<li>Start the VM and login in the CLI interface (login and password are provided on the GitHub release page, usually monarc:password).</li>
+<li>Execute <code data-lang="bash">ip address</code> command in the CLI and find ip v4 address.</li>
+<li>Use the ip in your browser to launch the application (eg. http://192.168.0.188).</li>
+</ul>
+</p>
 </div>
 </div>
 <div class="sect3">
