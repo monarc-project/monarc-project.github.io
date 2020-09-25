@@ -12,7 +12,7 @@ table {
 
 |&nbsp;|||
 |:--|--|--|
-|**Date and time**|| 23 September 2020 - 9h30-16h00|
+|**Date and time**|| 3 December 2020 - 9h30-16h00|
 |&nbsp;|  ||
 |**Location**|&nbsp;&nbsp;&nbsp;|Online / [BigBlueButton](https://bigbluebutton.org/) platform of SECURITYMADEIN.LU|
 |&nbsp;|  |Check your network connection to BigBlueButton [here](https://test.bigbluebutton.org/)  |
@@ -25,7 +25,7 @@ table {
 |&nbsp;|  |  |
 |**Level required**||Basic|
 |&nbsp;|  |  |
-|**Language**|| French |
+|**Language**|| English |
 |&nbsp;|  |  |
 |**Extra requirements**||**A laptop is required**|
 |&nbsp;|  |  |
@@ -33,13 +33,16 @@ table {
 |&nbsp;|  |  |
 |**Price**||Free| /*(No show fee: 40€ HT - Cancellation is possible up to 48 hours before the start of the training) |*/
 |&nbsp;|  |  |
-|**Registration** |   | <script type="text/javascript" src="https://www.xing-events.com/resources/js/amiandoExport.js"></script><iframe src="https://HVZCZWW-modules.xing-events.com/HVZCZWW.html?viewType=iframe&distributionChannel=CHANNEL_IFRAME&language=en&useDefaults=false&resizeIFrame=true" frameborder="0" width="650px" id="_amiandoIFrame3806799"><p>This page requires frame support. Please use a frame compatible browser to see the ticket sales module.</p><p> Try out the <a href="https://en.xing-events.com/">online event registration system</a> from XING Events.</p></iframe>More participants thanks to <a href="https://en.xing-events.com?viralRefId=HVZCZWW&utm_campaign=ev-HVZCZWW&utm_medium=viral&utm_source=EventWebsite&utm_content=TextLinkBottom&utm_term=text-link" target="_blank" alt="XING Events" title="XING Events">online event management solutions</a> from XING Events.|
+|**Registration** |   |Soon to be open|
+
+<!-- <script type="text/javascript" src="https://www.xing-events.com/resources/js/amiandoExport.js"></script><iframe src="https://HVZCZWW-modules.xing-events.com/HVZCZWW.html?viewType=iframe&distributionChannel=CHANNEL_IFRAME&language=en&useDefaults=false&resizeIFrame=true" frameborder="0" width="650px" id="_amiandoIFrame3806799"><p>This page requires frame support. Please use a frame compatible browser to see the ticket sales module.</p><p> Try out the <a href="https://en.xing-events.com/">online event registration system</a> from XING Events.</p></iframe>More participants thanks to <a href="https://en.xing-events.com?viralRefId=HVZCZWW&utm_campaign=ev-HVZCZWW&utm_medium=viral&utm_source=EventWebsite&utm_content=TextLinkBottom&utm_term=text-link" target="_blank" alt="XING Events" title="XING Events">online event management solutions</a> from XING Events. -->
 
 ### Past Trainings
 
 
 | Date       | Location                                     | Language        | Presentation material  |
 |------------| -------------------------------------------- | --------------- | ---------------------- |
+| 2020-09-23 | BigBlueButton platform of securitymadein.lu  | ![French][FR]  |                        |
 | 2020-04-28 | BigBlueButton platform of securitymadein.lu  | ![English][en]  |                        |
 | 2020-02-13 | Centre de crise - Belgium                    | ![French][fr]   |                        |
 | 2020-02-12 | Centre de crise - Belgium                    | ![English][en]  | [<i class="fa fa-file-pdf-o" style="color:red" aria-hidden="true"></i>](/assets/files/trainings/2020-02-12_MONARC-training.pdf) |
