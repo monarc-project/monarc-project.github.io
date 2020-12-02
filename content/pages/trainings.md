@@ -42,7 +42,8 @@ table {
 
 | Date       | Location                                     | Language        | Presentation material  |
 |------------| -------------------------------------------- | --------------- | ---------------------- |
-| 2020-09-23 | BigBlueButton platform of securitymadein.lu  | ![French][FR]  |                        |
+| 2020-12-03 | BigBlueButton platform of securitymadein.lu  | ![English][en]  | [<i class="fa fa-file-pdf-o" style="color:red" aria-hidden="true"></i>](/assets/files/trainings/2020-12-03_MONARC-training.pdf)                       |
+| 2020-09-23 | BigBlueButton platform of securitymadein.lu  | ![French][FR]   |                        |
 | 2020-04-28 | BigBlueButton platform of securitymadein.lu  | ![English][en]  |                        |
 | 2020-02-13 | Centre de crise - Belgium                    | ![French][fr]   |                        |
 | 2020-02-12 | Centre de crise - Belgium                    | ![English][en]  | [<i class="fa fa-file-pdf-o" style="color:red" aria-hidden="true"></i>](/assets/files/trainings/2020-02-12_MONARC-training.pdf) |
