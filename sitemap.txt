@@ -28,6 +28,7 @@ https://www.monarc.lu/publications/table-of-comparison-between-monarc-and-differ
 https://www.monarc.lu/trainings/
 https://www.monarc.lu/community/users/
 https://www.monarc.lu/community/vulnerability-disclosure/
+https://www.monarc.lu/news/2021/02/26/monarc-2102-released/
 https://www.monarc.lu/news/2020/12/18/monarc-2101-released/
 https://www.monarc.lu/news/2020/08/20/monarc-2916-released/
 https://www.monarc.lu/news/2020/06/03/monarc-2915-released/
