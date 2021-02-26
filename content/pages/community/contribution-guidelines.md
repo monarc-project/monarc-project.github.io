@@ -39,12 +39,19 @@ If the bug concerns a
 
 ## New feature requests
 
-Ideas of new features should always be discussed in an new issue on GitHub.
+Ideas of new features should always be discussed.
 
 Do you intend to add a new feature or change an existing one?
 
-* Suggest your change in an issue with the tag [feature request](https://github.com/monarc-project/MonarcAppFO/issues/new?labels=feature+request).
+* Suggest or [discuss about your change](https://github.com/monarc-project/MonarcAppFO/discussions/categories/ideas);
 * Open a pull request if you have collected positive feedback and can implement it yourself.
+
+
+## Contribution to the translations
+
+If you are willing to improve the translations of MONARC or if MONARC is not
+yet available in your language, you can help us via our
+[internationalization platform](https://translate.monarc.lu/projects/monarc/).
 
 
 ## Contribution to the documentation
@@ -61,5 +68,5 @@ Do not version binary files (*.docx* document, etc.). for the
 documentation or anything else. It easier to follow the changes of plain text
 files.
 
-[Pandoc](http://pandoc.org/) is a wonderful tool to convert files from one
+[Pandoc](http://pandoc.org) is a wonderful tool to convert files from one
 markup format into another.

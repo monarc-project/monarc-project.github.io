@@ -1,5 +1,0 @@
-pelican
-markdown
-typogrify
-xhtml2pdf
-ghp-import
