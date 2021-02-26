@@ -21,6 +21,9 @@ Version 2.10.2 of MONARC has been released with several fixes and a new feature.
 - Enable or disable the statistics sharing per analyse
   ([#329](https://github.com/monarc-project/MonarcAppFO/issues/329)).
 
+* * *
+
+![Preview of the new MONARC Global dashboard and the current Cybersecurity Landscape with data from the Stats Service](/assets/images/posts/MONARCv2.10.2_global-dashboard.png#center "Preview of the new MONARC Global dashboard and the current Cybersecurity Landscape with data from the Stats Service")
 
 ## Updating
 
@@ -35,3 +38,8 @@ The documentation, architecture and installation instructions of Stats Service c
 
 You can also download the new virtual machine
 [here](https://github.com/monarc-project/MonarcAppFO/releases/tag/v.2.10.2).
+
+
+## MONARC in your language
+
+> You can now help us to make MONARC available in your language via [our platform](https://translate.monarc.lu/projects/monarc/) powered by [Weblate](https://weblate.org).
