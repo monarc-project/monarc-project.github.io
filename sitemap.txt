@@ -28,6 +28,8 @@ https://www.monarc.lu/publications/table-of-comparison-between-monarc-and-differ
 https://www.monarc.lu/trainings/
 https://www.monarc.lu/community/users/
 https://www.monarc.lu/community/vulnerability-disclosure/
+https://www.monarc.lu/news/2020/12/18/monarc-2101-released/
+https://www.monarc.lu/news/2020/08/20/monarc-2916-released/
 https://www.monarc.lu/news/2020/06/03/monarc-2915-released/
 https://www.monarc.lu/news/2020/04/24/monarc-2914-released/
 https://www.monarc.lu/news/2020/04/14/monarc-2913-released/
@@ -70,4 +72,4 @@ https://www.monarc.lu/category/monarc.html
 https://www.monarc.lu/tag/monarc.html
 https://www.monarc.lu/tag/new-release.html
 https://www.monarc.lu/tag/internships.html
-https://www.monarc.lu/author/security-made-in-letzebuerg-smile-gie.html
+https://www.monarc.lu/author/securitymadeinlu-gie.html
