@@ -38,7 +38,9 @@ You can also have a look at our [roadmap](https://github.com/monarc-project/Mona
 ![License](https://img.shields.io/github/license/monarc-project/MonarcAppFO.svg?style=flat-square)
 [![Contributors](https://img.shields.io/github/contributors/monarc-project/MonarcAppFO.svg?style=flat-square)](https://github.com/monarc-project/MonarcAppFO/graphs/contributors)
 [![Stars](https://img.shields.io/github/stars/monarc-project/MonarcAppFO.svg?style=flat-square)](https://github.com/monarc-project/MonarcAppFO/stargazers)
-
+[![Workflow](https://github.com/monarc-project/MonarcAppFO/workflows/build/badge.svg)](https://github.com/monarc-project/MonarcAppFO/actions?query=build)
+[![Translation status](https://translate.monarc.lu/widgets/monarc/-/svg-badge.svg)](https://translate.monarc.lu/engage/monarc/)
+[![Twitter](https://img.shields.io/twitter/follow/MONARCProject.svg?style=social&label=Follow)](https://twitter.com/MONARCproject)
 
 ## The data
 

@@ -47,6 +47,13 @@ Do you intend to add a new feature or change an existing one?
 * Open a pull request if you have collected positive feedback and can implement it yourself.
 
 
+## Contribution to the translations
+
+If you are willing to improve the translations of MONARC or if MONARC is not
+yet available in your language, you can help us via our
+[internationalization platform](https://translate.monarc.lu/projects/monarc/).
+
+
 ## Contribution to the documentation
 
 Contributions to the documentation are also always welcome.

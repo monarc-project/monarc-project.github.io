@@ -100,7 +100,7 @@ MENUITEMS = (
 # Links
 LINKS = (('MONARC <i>Cloud</i>', 'https://my.monarc.lu'),
          ('Objects Sharing Platform', 'https://objects.monarc.lu'),
-         ('MONARC dashboard', 'https://dashboard.monarc.lu'),
+         ('MONARC Cybersecurity Landscape', 'https://dashboard.monarc.lu'),
          ('Subscribe to the releases', 'https://open-source-security-software.net/project/MONARC/releases.atom'),
          ('CASES', 'https://cases.lu'),
          ('<img src="https://img.shields.io/github/release/monarc-project/MonarcAppFO.svg?style=flat-square" />',
