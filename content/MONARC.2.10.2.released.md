@@ -41,6 +41,6 @@ You can also download the new virtual machine
 [here](https://github.com/monarc-project/MonarcAppFO/releases/tag/v2.10.2).
 
 
-## MONARC in your language
+## MONARC is in your language
 
 > You can now help us to make MONARC available in your language via [our platform](https://translate.monarc.lu/projects/monarc/) powered by [Weblate](https://weblate.org).
