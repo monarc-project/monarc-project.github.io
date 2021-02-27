@@ -22,6 +22,7 @@ Version 2.10.2 of MONARC has been released with several fixes and a new feature.
   ([#329](https://github.com/monarc-project/MonarcAppFO/issues/329)).
 
 * * *
+Global Dashboard is now available in the VM image (the details are on the [GitHub Release v2.10.2 page](https://github.com/monarc-project/MonarcAppFO/releases/tag/v2.10.2)): 
 
 ![Preview of the new MONARC Global dashboard and the current Cybersecurity Landscape with data from the Stats Service](/assets/images/posts/MONARCv2.10.2_global-dashboard.png#center "Preview of the new MONARC Global dashboard and the current Cybersecurity Landscape with data from the Stats Service")
 
@@ -37,7 +38,7 @@ If you would like to use the new statistics feature then [StatsService](https://
 The documentation, architecture and installation instructions of Stats Service can be found [here](https://monarc-stats-service.readthedocs.io/en/latest).
 
 You can also download the new virtual machine
-[here](https://github.com/monarc-project/MonarcAppFO/releases/tag/v.2.10.2).
+[here](https://github.com/monarc-project/MonarcAppFO/releases/tag/v2.10.2).
 
 
 ## MONARC in your language
