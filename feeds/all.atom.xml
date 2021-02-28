@@ -15,6 +15,7 @@
   (&lt;a href="https://github.com/monarc-project/MonarcAppFO/issues/329"&gt;#329&lt;/a&gt;).&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
+&lt;p&gt;Global Dashboard is now available in the &lt;span class="caps"&gt;VM&lt;/span&gt; image. The details are on the &lt;a href="https://github.com/monarc-project/MonarcAppFO/releases/tag/v2.10.2"&gt;GitHub Release v2.10.2 page&lt;/a&gt;. &lt;/p&gt;
 &lt;p&gt;&lt;img alt="Preview of the new MONARC Global dashboard and the current Cybersecurity Landscape with data from the Stats Service" src="/assets/images/posts/MONARCv2.10.2_global-dashboard.png#center" title="Preview of the new MONARC Global dashboard and the current Cybersecurity Landscape with data from the Stats Service"&gt;&lt;/p&gt;
 &lt;h2 id="updating"&gt;Updating&lt;/h2&gt;
 &lt;p&gt;To update, please follow the 
@@ -24,8 +25,8 @@
 &lt;p&gt;If you would like to use the new statistics feature then &lt;a href="https://github.com/monarc-project/stats-service"&gt;StatsService&lt;/a&gt; has to be setup as well.
 The documentation, architecture and installation instructions of Stats Service can be found &lt;a href="https://monarc-stats-service.readthedocs.io/en/latest"&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;You can also download the new virtual machine
-&lt;a href="https://github.com/monarc-project/MonarcAppFO/releases/tag/v.2.10.2"&gt;here&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id="monarc-in-your-language"&gt;&lt;span class="caps"&gt;MONARC&lt;/span&gt; in your&amp;nbsp;language&lt;/h2&gt;
+&lt;a href="https://github.com/monarc-project/MonarcAppFO/releases/tag/v2.10.2"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="monarc-is-in-your-language"&gt;&lt;span class="caps"&gt;MONARC&lt;/span&gt; is in your&amp;nbsp;language&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;You can now help us to make &lt;span class="caps"&gt;MONARC&lt;/span&gt; available in your language via &lt;a href="https://translate.monarc.lu/projects/monarc/"&gt;our platform&lt;/a&gt; powered by &lt;a href="https://weblate.org"&gt;Weblate&lt;/a&gt;.&lt;/p&gt;
 &lt;/blockquote&gt;</content><category term="monarc"></category><category term="monarc"></category><category term="new-release"></category></entry><entry><title>MONARC 2.10.1 released</title><link href="https://www.monarc.lu/news/2020/12/18/monarc-2101-released/" rel="alternate"></link><published>2020-12-18T00:00:00+01:00</published><updated>2020-12-18T00:00:00+01:00</updated><author><name>SECURITYMADEIN.LU g.i.e.</name></author><id>tag:www.monarc.lu,2020-12-18:/news/2020/12/18/monarc-2101-released/</id><summary type="html">&lt;p&gt;Release 2.10.1 of &lt;span class="caps"&gt;MONARC&lt;/span&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;Version 2.10.1 of &lt;span class="caps"&gt;MONARC&lt;/span&gt; has been released with several fixes and a new&amp;nbsp;feature.&lt;/p&gt;
