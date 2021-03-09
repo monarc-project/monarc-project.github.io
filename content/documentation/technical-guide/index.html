@@ -561,15 +561,15 @@ table.CodeRay td.code{padding:0 0 0 .75em}
 <li><a href="#network-requirements">3.3. Network requirements</a></li>
 </ul>
 </li>
-<li><a href="#deployment">4. Deployment</a>
+<li><a href="#installation-deployment">4. Installation / Deployment</a>
 <ul class="sectlevel2">
-<li><a href="#monarc">4.1. MONARC</a>
+<li><a href="#monarc-front-office-application">4.1. MONARC Front Office application</a>
 <ul class="sectlevel3">
 <li><a href="#prepared-virtual-machine">4.1.1. Prepared virtual machine</a></li>
 <li><a href="#manual-deployment">4.1.2. Manual deployment</a></li>
 </ul>
 </li>
-<li><a href="#monarc-and-the-back-office">4.2. MONARC and the back office</a>
+<li><a href="#monarc-back-office-application">4.2. MONARC Back Office application.</a>
 <ul class="sectlevel3">
 <li><a href="#requirements-2">4.2.1. Requirements</a></li>
 <li><a href="#usage">4.2.2. Usage</a></li>
@@ -1057,20 +1057,61 @@ internal mail server (<strong>SMTP</strong>).</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="deployment"><a class="anchor" href="#deployment"></a><a class="link" href="#deployment">4. Deployment</a></h2>
+<h2 id="installation-deployment"><a class="anchor" href="#installation-deployment"></a><a class="link" href="#installation-deployment">4. Installation / Deployment</a></h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="monarc"><a class="anchor" href="#monarc"></a><a class="link" href="#monarc">4.1. MONARC</a></h3>
+<h3 id="monarc-front-office-application"><a class="anchor" href="#monarc-front-office-application"></a><a class="link" href="#monarc-front-office-application">4.1. MONARC Front Office application</a></h3>
 <div class="paragraph">
-<p>If you want to install MONARC to manage your risk analysis.</p>
+<p>There are 2 ways of installing or deployment of the MONARC Front Office application.</p>
 </div>
 <div class="sect3">
 <h4 id="prepared-virtual-machine"><a class="anchor" href="#prepared-virtual-machine"></a><a class="link" href="#prepared-virtual-machine">4.1.1. Prepared virtual machine</a></h4>
 <div class="paragraph">
-<p>A
-<a href="https://github.com/monarc-project/MonarcAppFO/releases/latest">virtual machine</a>
-for use with VirtualBox is available.
-The best way if you want an up-to-date version of MONARC.</p>
+<p>Virtual machine can be used in case if you would like to have a locally installed instance of the MONARC Front Office
+on you PC or laptop. It is possible to use the VM installation on server, but not recommended.</p>
+</div>
+<div class="paragraph">
+<p>Here are the steps to be performed in order to launch the application:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Install Virtual Box application. Can be downloaded <a href="https://www.virtualbox.org/wiki/Downloads">here</a>.</p>
+</li>
+<li>
+<p>Download the <a href="https://github.com/monarc-project/MonarcAppFO/releases/latest">image</a> from the last release of MONARC (file with the <code>*.ova</code> extension).</p>
+</li>
+<li>
+<p>Import the image into your VirtualBox application: Menu <code>File</code> &#8594; <code>Import Appliance</code>, select the *.ova image and follow the steps.</p>
+</li>
+<li>
+<p>Configure the imported image: <code>Setting</code> &#8594; <code>Network</code> &#8594; select <code>Bridged Adapter</code> and click OK.</p>
+</li>
+<li>
+<p>Start the VM and login in the CLI interface. Login and password are provided on the GitHub <a href="https://github.com/monarc-project/MonarcAppFO/releases/latest">release page</a>,
+section <code>SSH login (Ubuntu credentials)</code> (usually login: <code>monarc</code>, password: <code>password</code>).</p>
+</li>
+<li>
+<p>Execute <code>ip address</code> command in the CLI and find ip v4 address. Should be something like <code>192.168.0.123</code>, where the last 3 digits are different.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="images/monarc_vm_ip_address.png" alt="MONARC Architecture"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Use the ip in your browser to launch the application (eg. <a href="http://192.168.0.188" class="bare">http://192.168.0.188</a>). Recommended to use Mozilla Firefox or Google Chrome.</p>
+</li>
+<li>
+<p>Login to your application. the credentials are provided on the GitHub <a href="https://github.com/monarc-project/MonarcAppFO/releases/latest">release page</a>,
+section <code>MONARC application</code> and usually login: <code>admin@admin.localhost</code>, password: <code>admin</code>.</p>
+</li>
+<li>
+<p>Profit! Create and perform your risk analyzes.</p>
+</li>
+</ul>
 </div>
 </div>
 <div class="sect3">
@@ -1082,9 +1123,9 @@ The best way if you want an up-to-date version of MONARC.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="monarc-and-the-back-office"><a class="anchor" href="#monarc-and-the-back-office"></a><a class="link" href="#monarc-and-the-back-office">4.2. MONARC and the back office</a></h3>
+<h3 id="monarc-back-office-application"><a class="anchor" href="#monarc-back-office-application"></a><a class="link" href="#monarc-back-office-application">4.2. MONARC Back Office application.</a></h3>
 <div class="paragraph">
-<p>If you want to install MONARC and the back office.</p>
+<p>In case if you would like to install the MONARC Back Office application.</p>
 </div>
 <div class="admonitionblock note">
 <table>

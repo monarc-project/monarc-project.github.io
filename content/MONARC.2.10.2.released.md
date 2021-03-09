@@ -22,7 +22,7 @@ Version 2.10.2 of MONARC has been released with several fixes and a new feature.
   ([#329](https://github.com/monarc-project/MonarcAppFO/issues/329)).
 
 * * *
-Global Dashboard is now available in the VM image. The details are on the [GitHub Release v2.10.2 page](https://github.com/monarc-project/MonarcAppFO/releases/tag/v2.10.2). 
+Global Dashboard is now available in the Virtual Machine image. The details are on the [GitHub Release v2.10.2 page](https://github.com/monarc-project/MonarcAppFO/releases/tag/v2.10.2). 
 
 ![Preview of the new MONARC Global dashboard and the current Cybersecurity Landscape with data from the Stats Service](/assets/images/posts/MONARCv2.10.2_global-dashboard.png#center "Preview of the new MONARC Global dashboard and the current Cybersecurity Landscape with data from the Stats Service")
 
