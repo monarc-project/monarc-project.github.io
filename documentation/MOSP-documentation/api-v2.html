@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
+<meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.10">
-<meta name="description" content="MONARC Objects Sharing Platform">
-<meta name="keywords" content="risk-analysis, monarc, MOSP">
-<meta name="author" content="CASES Luxembourg">
-<title>MONARC Objects Sharing Platform</title>
+<title>API v2</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /* Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
 /* Uncomment @import statement to use as custom stylesheet */
@@ -440,278 +438,116 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </head>
 <body class="article toc2 toc-left">
 <div id="header">
-<h1>MONARC Objects Sharing Platform</h1>
-<div class="details">
-<span id="author" class="author">CASES Luxembourg</span><br>
-<span id="email" class="email"><a href="mailto:info@cases.lu">info@cases.lu</a></span><br>
-<span id="revnumber">version 2021-03-31</span>
-</div>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
-<ul class="sectlevel1">
-<li><a href="#introduction">1. Introduction</a></li>
-<li><a href="#objects-involved-in-mosp">2. Objects involved in MOSP</a>
 <ul class="sectlevel2">
-<li><a href="#json-schema">2.1. JSON schema</a>
+<li><a href="#_api_v2">API v2</a>
 <ul class="sectlevel3">
-<li><a href="#example-of-schemas">2.1.1. Example of schemas</a></li>
+<li><a href="#_clients_using_this_api">Clients using this API</a></li>
+<li><a href="#_examples">Examples</a></li>
 </ul>
 </li>
-<li><a href="#objects">2.2. Objects</a>
-<ul class="sectlevel3">
-<li><a href="#example-of-objects">2.2.1. Example of objects</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#using-the-platform">3. Using the platform</a>
-<ul class="sectlevel2">
-<li><a href="#creating-a-new-object">3.1. Creating a new object</a></li>
-<li><a href="#select-a-schema">3.2. Select a schema</a></li>
-<li><a href="#edit-object-definition">3.3. Edit object definition</a></li>
-<li><a href="#exporting-an-object-for-use-in-monarc">3.4. Exporting an object for use in MONARC</a></li>
-</ul>
-</li>
-<li><a href="#using-the-api">4. Using the API</a></li>
-<li><a href="#permissions">5. Permissions</a>
-<ul class="sectlevel2">
-<li><a href="#schemas">5.1. Schemas</a></li>
-<li><a href="#objects-2">5.2. Objects</a></li>
-</ul>
-</li>
-<li><a href="#schemas-external-references">6. Schemas external references</a></li>
 </ul>
 </div>
 </div>
 <div id="content">
-<div class="sect1">
-<h2 id="introduction"><a class="anchor" href="#introduction"></a><a class="link" href="#introduction">1. Introduction</a></h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>This document is intended to be a presentation and a user guide to
-<a href="https://github.com/CASES-LU/MOSP">MOSP</a>, a platform to create, edit and share valid JSON objects.</p>
-</div>
-<div class="paragraph">
-<p>MOSP supports any kind of JSON objects, you just have to specify a <a href="#json-schema">JSON schema</a>.
-The instance <a href="https://objects.monarc.lu">objects.monarc.lu</a> is operated by <a href="https://www.cases.lu">CASES</a>.
-It is dedicated to gather security related objects, in the first place aimed to be used with <a href="https://www.monarc.lu">MONARC</a>.</p>
-</div>
-<div class="paragraph">
-<p>Objects officially provided by the MONARC project are available <a href="https://objects.monarc.lu/organization/MONARC">here</a>.
-Note that any <strong>object</strong> created with a <strong>JSON schema</strong> provided by the MONARC project will be compatible with the MONARC software.
-In other words, you can use our JSON schemas in order to create objects (standards, mapping, etc.) for a usage in your own security analysis.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="objects-involved-in-mosp"><a class="anchor" href="#objects-involved-in-mosp"></a><a class="link" href="#objects-involved-in-mosp">2. Objects involved in MOSP</a></h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>The core concept of MOSP lies on the <a href="#json-schema">JSON schemas</a> and <a href="#objects">JSON Objects</a>.
-Each objects you create within MOSP will conform to a selected schema.</p>
-</div>
 <div class="sect2">
-<h3 id="json-schema"><a class="anchor" href="#json-schema"></a><a class="link" href="#json-schema">2.1. JSON schema</a></h3>
+<h3 id="_api_v2">API v2</h3>
 <div class="paragraph">
-<p>A JSON schema describes and validates your existing data format(s).
-This ensures the quality of client submitted data.
-MOSP also uses JSON schemas for the generation of the object editor.</p>
+<p>The API version 2 uses the OpenAPI Specification for its documentation. It is
+available <a href="https://objects.monarc.lu/api/v2">here</a>.</p>
 </div>
 <div class="paragraph">
-<p>For example, the JSON schema available <a href="https://objects.monarc.lu/schema/view/12">here</a>
-validates the security standards used in MONARC.</p>
+<p>If you want to query MOSP programmatically you can use
+<a href="https://pypi.org/project/pymosp/">PyMOSP</a>, a Python library to access MOSP.</p>
 </div>
 <div class="sect3">
-<h4 id="example-of-schemas"><a class="anchor" href="#example-of-schemas"></a><a class="link" href="#example-of-schemas">2.1.1. Example of schemas</a></h4>
+<h4 id="_clients_using_this_api">Clients using this API</h4>
 <div class="ulist">
 <ul>
 <li>
-<p><a href="https://objects.monarc.lu/schema/12">Security standards</a></p>
+<p><a href="https://www.monarc.lu">MONARC</a></p>
 </li>
 <li>
-<p><a href="https://objects.monarc.lu/schema/13">Security standards mapping</a></p>
+<p><a href="https://pypi.org/project/PyMOSP/">PyMOSP</a></p>
+</li>
+<li>
+<p><a href="https://github.com/monarc-project/stats-service">MONARC Stats Service</a> (with PyMOSP)</p>
 </li>
 </ul>
 </div>
 </div>
-</div>
-<div class="sect2">
-<h3 id="objects"><a class="anchor" href="#objects"></a><a class="link" href="#objects">2.2. Objects</a></h3>
 <div class="sect3">
-<h4 id="example-of-objects"><a class="anchor" href="#example-of-objects"></a><a class="link" href="#example-of-objects">2.2.1. Example of objects</a></h4>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="https://objects.monarc.lu/object/view/5139">Internet of Things - IoT [EN</a>]</p>
-</li>
-<li>
-<p><a href="https://objects.monarc.lu/object/98ca84fb-db87-11e8-ac77-0800279aaa2b">ISO/IEC 27002</a></p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="using-the-platform"><a class="anchor" href="#using-the-platform"></a><a class="link" href="#using-the-platform">3. Using the platform</a></h2>
-<div class="sectionbody">
-<div class="sect2">
-<h3 id="creating-a-new-object"><a class="anchor" href="#creating-a-new-object"></a><a class="link" href="#creating-a-new-object">3.1. Creating a new object</a></h3>
+<h4 id="_examples">Examples</h4>
+<div class="sect4">
+<h5 id="_create_a_new_object">Create a new object</h5>
 <div class="paragraph">
-<p>When creating a new object with MOSP you have to:</p>
+<p>With curl:</p>
 </div>
-<div class="ulist">
-<ul>
-<li>
-<p>choose a JSON schema from the ones available on the platform;</p>
-</li>
-<li>
-<p>specify a name and a brief description;</p>
-</li>
-<li>
-<p>choose an owning organization (a user account can be bound to one or multiple organizations);</p>
-</li>
-<li>
-<p>choose at least one license from the proposed.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>You can use any available schemas in order to create shareable JSON objects.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="select-a-schema"><a class="anchor" href="#select-a-schema"></a><a class="link" href="#select-a-schema">3.2. Select a schema</a></h3>
-<div class="paragraph">
-<p><span class="image"><img src="images/new-object-from-schema.png" alt="EditionJsonObject"></span></p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="edit-object-definition"><a class="anchor" href="#edit-object-definition"></a><a class="link" href="#edit-object-definition">3.3. Edit object definition</a></h3>
-<div class="paragraph">
-<p><span class="image"><img src="images/object-json-edition.png" alt="EditionJsonObject"></span></p>
-</div>
-<div class="paragraph">
-<p>The form above is generated thanks to the JSON schema.
-Using this form ensures that you will create valid objects.</p>
-</div>
-<div class="paragraph">
-<p>If you update the schema related to an already defined object, eventual validation errors will be displayed in the gray box at the right of the interface.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="exporting-an-object-for-use-in-monarc"><a class="anchor" href="#exporting-an-object-for-use-in-monarc"></a><a class="link" href="#exporting-an-object-for-use-in-monarc">3.4. Exporting an object for use in MONARC</a></h3>
-<div class="paragraph">
-<p>Objects exported from MOSP can be imported in your projects via the
-<a href="https://www.monarc.lu/documentation/user-guide/#management-of-knowledge-base">knowledge base</a> of MONARC.</p>
-</div>
-<div class="paragraph">
-<p><span class="image"><img src="images/export-objects-from-MOSP-for-MONARC.png" alt="Exporting an object for use in MONARC"></span></p>
-</div>
-<div class="paragraph">
-<p>MONARC will be able to handle the CSV or the JSON export.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="using-the-api"><a class="anchor" href="#using-the-api"></a><a class="link" href="#using-the-api">4. Using the API</a></h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>APIs are provided in order to interact with the service programmatically.</p>
-</div>
-<div class="paragraph">
-<p>The section <a href="api-v2.html#API v2">API v2</a> describes the API v2.</p>
-</div>
-<div class="paragraph">
-<p>The <a href="api-v1.html#API v1">API v1</a> is still available but is really discouraged
-to be used.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="permissions"><a class="anchor" href="#permissions"></a><a class="link" href="#permissions">5. Permissions</a></h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>This section details the management of permissions in MOSP.</p>
-</div>
-<div class="sect2">
-<h3 id="schemas"><a class="anchor" href="#schemas"></a><a class="link" href="#schemas">5.1. Schemas</a></h3>
-<div class="paragraph">
-<p>You can only create an object in one of the organizations your account is
-linked to.</p>
-</div>
-<div class="paragraph">
-<p>In order to edit a schema your account must be linked to the owning
-organization of the schema.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="objects-2"><a class="anchor" href="#objects-2"></a><a class="link" href="#objects-2">5.2. Objects</a></h3>
-<div class="paragraph">
-<p>You can only create an object in one of the organizations your account is linked to.
-Since all schemas are public you can instantiate a new object with the schema of your choice.</p>
-</div>
-<div class="paragraph">
-<p>In order to edit an object your account should be linked to the owning
-organization of this object.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="schemas-external-references"><a class="anchor" href="#schemas-external-references"></a><a class="link" href="#schemas-external-references">6. Schemas external references</a></h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>If there are external references between the schemas available in your MOSP
-instance, the relations will be analyzed by MOSP in order to link objects.</p>
-</div>
-<div id="mosp-references-schemas" class="imageblock text-center">
+<div class="listingblock">
 <div class="content">
-<img src="images/link_schemas.png" alt="References between schemas">
-</div>
-</div>
-<div id="mosp-relations-schema" class="imageblock text-center">
-<div class="content">
-<img src="images/relations-in-schema.png" alt="Relations in a schema">
+<pre class="highlight"><code class="language-bash" data-lang="bash">object='[
+  {
+    "name": "New vulnerability",
+    "description": "Description of this new object",
+    "schema_id": 14,
+    "org_id": 2,
+    "json_object": {
+      "code": "10",
+      "description": "",
+      "label": "Possibility of installing correction programmes, updates, patches, hotfixes, etc.",
+      "language": "EN",
+      "uuid": "69fbfe01-4591-11e9-9173-0800277f0572"
+    },
+    "licenses": [
+      {
+        "license_id": "CC0-1.0"
+      }
+    ]
+  }
+]'
+
+curl -X POST "https://objects.monarc.lu/api/v2/object/" -H  "accept: application/json" -H  "X-API-KEY: &lt;your-token&gt;" -H  "Content-Type: application/json" -d $object</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>Theses links are considered during the edition of objects (<a href="#edit-object-definition">Edit object definition</a>).</p>
+<p>With PyMOSP:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-python" data-lang="python">import pymosp
+
+token = os.getenv("MOSP_TOKEN")
+mosp = pymosp.PyMOSP("https://objects.monarc.lu/api/v2/", token)
+
+new_objects = [
+    {
+        "name": "Possibility of installing correction programmes, updates, patches, hotfixes, etc.",
+        "description": "",
+        "licenses": [{"license_id": "CC0-1.0"}],
+        "schema_id": 14,
+        "org_id": 16,
+        "json_object": {
+            "code": "10",
+            "description": "",
+            "label": "Possibility of installing correction programmes, updates, patches, hotfixes, etc.",
+            "language": "EN",
+            "uuid": "69fbfe01-4591-11e9-9173-0800277f0572",
+        }
+    }
+]
+
+r = mosp.add_objects(new_objects)</code></pre>
+</div>
+</div>
 </div>
 </div>
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Version 2021-03-31<br>
-Last updated 2021-03-31 23:11:32 +0200
+Last updated 2021-03-31 23:19:30 +0200
 </div>
 </div>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  messageStyle: "none",
-  tex2jax: {
-    inlineMath: [["\\(", "\\)"]],
-    displayMath: [["\\[", "\\]"]],
-    ignoreClass: "nostem|nolatexmath"
-  },
-  asciimath2jax: {
-    delimiters: [["\\$", "\\$"]],
-    ignoreClass: "nostem|noasciimath"
-  },
-  TeX: { equationNumbers: { autoNumber: "none" } }
-})
-MathJax.Hub.Register.StartupHook("AsciiMath Jax Ready", function () {
-  MathJax.InputJax.AsciiMath.postfilterHooks.Add(function (data, node) {
-    if ((node = data.script.parentNode) && (node = node.parentNode) && node.classList.contains('stemblock')) {
-      data.math.root.display = "block"
-    }
-    return data
-  })
-})
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_HTMLorMML"></script>
 </body>
 </html>
