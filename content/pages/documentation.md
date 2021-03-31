@@ -8,7 +8,7 @@ Title: Documentation
 
 * ### [Method guide](/documentation/method-guide) [<i class="fa fa-file-pdf-o" style="color:red" aria-hidden="true"></i>](/assets/files/guides/method-guide.pdf)
 
-* ### [MONARC Objects Sharing Platform](/documentation/MOSP-documentation/) [<i class="fa fa-file-pdf-o" style="color:red" aria-hidden="true"></i>](/assets/files/guides/MOSP-documentation.pdf)
+* ### [MONARC Objects Sharing Platform](/documentation/MOSP-documentation/)
 
 * ### [MONARC Stats Service](https://monarc-stats-service.readthedocs.io) [<i class="fa fa-file-pdf-o" style="color:red" aria-hidden="true"></i>](https://monarc-stats-service.readthedocs.io/_/downloads/en/latest/pdf/)
 
