@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Search &#8212; MONARC Stats Service 0.3.0 documentation</title>
+    <title>Blueprint root &#8212; MONARC Stats Service 0.3.0 documentation</title>
     
   <link href="_static/css/theme.css" rel="stylesheet" />
   <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -27,22 +27,17 @@
     
   <link rel="preload" as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js">
 
-    
     <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
     <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script src="_static/searchtools.js"></script>
-    <script src="_static/language_data.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="#" />
-  <script src="searchindex.js" defer></script>
-  
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Blueprint stats" href="stats.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
-
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
     
@@ -62,7 +57,7 @@
       <h1 class="site-logo" id="site-title">MONARC Stats Service 0.3.0 documentation</h1>
       
     </a>
-</div><form class="bd-search d-flex align-items-center" action="#" method="get">
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
@@ -111,7 +106,7 @@
   Blueprints
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="api-v1.html">
    API v1
@@ -122,8 +117,8 @@
    Blueprint stats
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="root.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Blueprint root
   </a>
  </li>
@@ -160,6 +155,23 @@
             </button>
             
             
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/root.rst.txt"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.rst</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
             <!-- Source interaction buttons -->
 
 <div class="dropdown-buttons-trigger">
@@ -171,10 +183,12 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/monarc-project/stats-service/issues/new?title=Issue%20on%20page%20%2Fsearch.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/monarc-project/stats-service/issues/new?title=Issue%20on%20page%20%2Froot.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        
+        <a class="edit-button" href="https://github.com/monarc-project/stats-service/edit/master/docs/root.rst"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
     </div>
 </div>
 
@@ -192,6 +206,19 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#routes">
+   Routes
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -200,33 +227,72 @@
         
               <div>
                 
-  <h1 id="search-documentation">Search</h1>
-  <div id="fallback" class="admonition warning">
-  <script>$('#fallback').hide();</script>
-  <p>
-    Please activate JavaScript to enable the search
-    functionality.
-  </p>
-  </div>
-  <p>
-    Searching for multiple words only shows matches that contain
-    all words.
-  </p>
-  <form action="" method="get">
-    <input type="text" name="q" aria-labelledby="search-documentation" value="" />
-    <input type="submit" value="search" />
-    <span id="search-progress" style="padding-left: 10px"></span>
-  </form>
-  
-  <div id="search-results">
-  
-  </div>
+  <div class="section" id="blueprint-root">
+<h1>Blueprint root<a class="headerlink" href="#blueprint-root" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="routes">
+<h2>Routes<a class="headerlink" href="#routes" title="Permalink to this headline">¶</a></h2>
+<table class="table">
+<colgroup>
+<col style="width: 27%" />
+<col style="width: 11%" />
+<col style="width: 17%" />
+<col style="width: 46%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Endpoint</p></th>
+<th class="head"><p>Methods</p></th>
+<th class="head"><p>Rule</p></th>
+<th class="head"><p>Comment</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>root_bp.about</p></td>
+<td><p>GET</p></td>
+<td><p>/about</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>root_bp.about_json</p></td>
+<td><p>GET</p></td>
+<td><p>/about.json</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>root_bp.about_more</p></td>
+<td><p>GET</p></td>
+<td><p>/about/more</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>root_bp.evolution</p></td>
+<td><p>GET</p></td>
+<td><p>/evolution</p></td>
+<td><p>Evolution of the stats (charts)</p></td>
+</tr>
+<tr class="row-even"><td><p>root_bp.help</p></td>
+<td><p>GET</p></td>
+<td><p>/help</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>root_bp.home</p></td>
+<td><p>GET</p></td>
+<td><p>/</p></td>
+<td><p>Main page with the stats (charts)</p></td>
+</tr>
+<tr class="row-even"><td><p>root_bp.human</p></td>
+<td><p>GET</p></td>
+<td><p>/human.txt</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
 
               </div>
               
         
         <div class='prev-next-bottom'>
             
+    <a class='left-prev' id="prev-link" href="stats.html" title="previous page">Blueprint stats</a>
 
         </div>
         

@@ -118,6 +118,11 @@
    Blueprint stats
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="root.html">
+   Blueprint root
+  </a>
+ </li>
 </ul>
 
     </div>
@@ -235,8 +240,8 @@
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#creating-a-client">
-     Creating a client
+    <a class="reference internal nav-link" href="#create-a-client">
+     Create a client
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
@@ -247,6 +252,26 @@
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#delete-a-client">
      Delete a client
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#set-a-location-for-a-client">
+     Set a location for a client
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#unset-the-location-for-a-client">
+     Unset the location for a client
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#activate-the-stats-sharing-for-a-client">
+     Activate the stats sharing for a client
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#deactivate-the-stats-sharing-for-a-client">
+     Deactivate the stats sharing for a client
     </a>
    </li>
   </ul>
@@ -347,22 +372,22 @@ Options:
 </div>
 <div class="section" id="clients">
 <h2><a class="toc-backref" href="#id2">Clients</a><a class="headerlink" href="#clients" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="creating-a-client">
-<h3>Creating a client<a class="headerlink" href="#creating-a-client" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="create-a-client">
+<h3>Create a client<a class="headerlink" href="#create-a-client" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ flask client_create --help
 Usage: flask client_create <span class="o">[</span>OPTIONS<span class="o">]</span>
 
-  Create a new client.
+Create a new <span class="nb">local</span> client.
 
 Options:
-  --name TEXT   Name of the client.  <span class="o">[</span>required<span class="o">]</span>
-  --uuid TEXT   UUID of the client.
-  --token TEXT  Token of the client.
-  --role TEXT   Role of the client <span class="o">(</span>user or admin<span class="o">)</span>.  <span class="o">[</span>default: user<span class="o">]</span>
-  --help        Show this message and exit.
+--name TEXT   Name of the client.  <span class="o">[</span>required<span class="o">]</span>
+--uuid TEXT   UUID of the client.
+--token TEXT  Token of the client.
+--role TEXT   Role of the client <span class="o">(</span>user or admin<span class="o">)</span>.  <span class="o">[</span>default: user<span class="o">]</span>
+--help        Show this message and exit.
 </pre></div>
 </div>
-<p>Actually a client name must be specified and is unique.</p>
+<p>A client name must be specified and is unique.</p>
 <p>Example:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ flask client_create --name CASES
 UUID: fb9b4d21-4082-445c-a6e6-5d42a1cd9202
@@ -408,6 +433,62 @@ Options:
   -y, --yes    Automatically reply yes to the confirmation message <span class="k">for</span> the
                deletion of the client.
 
+  --help       Show this message and exit.
+</pre></div>
+</div>
+</div>
+<div class="section" id="set-a-location-for-a-client">
+<h3>Set a location for a client<a class="headerlink" href="#set-a-location-for-a-client" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ flask client_coordinates_set --help
+Usage: flask client_coordinates_set <span class="o">[</span>OPTIONS<span class="o">]</span>
+
+Set the coordinates of the client specified with its UUID.
+
+Options:
+--uuid TEXT       UUID of the client.  <span class="o">[</span>required<span class="o">]</span>
+--latitude TEXT   Latitude of the client.  <span class="o">[</span>required<span class="o">]</span>
+--longitude TEXT  Longitude of the client.  <span class="o">[</span>required<span class="o">]</span>
+--help            Show this message and exit.
+</pre></div>
+</div>
+</div>
+<div class="section" id="unset-the-location-for-a-client">
+<h3>Unset the location for a client<a class="headerlink" href="#unset-the-location-for-a-client" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ flask client_coordinates_unset --help
+Usage: flask client_coordinates_unset <span class="o">[</span>OPTIONS<span class="o">]</span>
+
+  Unset the coordinates of the client specified with its UUID.
+
+Options:
+  --uuid TEXT  UUID of the client.  <span class="o">[</span>required<span class="o">]</span>
+  --help       Show this message and exit.
+</pre></div>
+</div>
+</div>
+<div class="section" id="activate-the-stats-sharing-for-a-client">
+<h3>Activate the stats sharing for a client<a class="headerlink" href="#activate-the-stats-sharing-for-a-client" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ flask client_sharing_activate --help
+Usage: flask client_sharing_activate <span class="o">[</span>OPTIONS<span class="o">]</span>
+
+  Set the is_sharing_enabled attribute of a <span class="nb">local</span> client, specified with its
+  UUID, to True.
+
+Options:
+  --uuid TEXT  UUID of the client.  <span class="o">[</span>required<span class="o">]</span>
+  --help       Show this message and exit.
+</pre></div>
+</div>
+</div>
+<div class="section" id="deactivate-the-stats-sharing-for-a-client">
+<h3>Deactivate the stats sharing for a client<a class="headerlink" href="#deactivate-the-stats-sharing-for-a-client" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ flask client_sharing_deactivate --help
+Usage: flask client_sharing_deactivate <span class="o">[</span>OPTIONS<span class="o">]</span>
+
+  Set the is_sharing_enabled attribute of a <span class="nb">local</span> client, specified with its
+  UUID, to False.
+
+Options:
+  --uuid TEXT  UUID of the client.  <span class="o">[</span>required<span class="o">]</span>
   --help       Show this message and exit.
 </pre></div>
 </div>
