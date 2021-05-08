@@ -10,7 +10,7 @@ Title: Documentation
 
 * ### [MONARC Objects Sharing Platform](/documentation/MOSP-documentation/)
 
-* ### [MONARC Stats Service](https://monarc-stats-service.readthedocs.io) [<i class="fa fa-file-pdf-o" style="color:red" aria-hidden="true"></i>](https://monarc-stats-service.readthedocs.io/_/downloads/en/latest/pdf/)
+* ### [MONARC Stats Service](/documentation/stats-service/)
 
 ## Technical documentation
 

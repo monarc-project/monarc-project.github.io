@@ -24,6 +24,7 @@ STATIC_PATHS = ['assets',
                 'documentation/user-guide',
                 'documentation/method-guide',
                 'documentation/MOSP-documentation',
+                'documentation/stats-service',
                 'table-comparison-between-monarc-and-different-risk-management-methods', # duplicate of content/table-of-comparison-between-monarc-and-different-risk-management-methods
                 'comparison-between-monarc-and-different-risk-management-methods'] # duplicate of content/comparison-between-monarc-and-different-risk-management-methods
 CUSTOM_CSS = 'static/css/custom.css'

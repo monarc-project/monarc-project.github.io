@@ -1,0 +1,10 @@
+Blueprint dashboard
+===================
+
+At that time this blueprint simply consist of the ``/dashboard`` route which returns
+a simple HTML file.
+
+Endpoints
+---------
+
+- /dashboard

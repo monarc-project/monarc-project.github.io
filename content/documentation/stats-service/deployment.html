@@ -1,0 +1,280 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Deployment &mdash; MONARC Stats Service 0.1.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="API v1" href="api-v1.html" />
+    <link rel="prev" title="Presentation" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> MONARC Stats Service
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Deployment</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#from-the-source">From the source</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#to-heroku">To Heroku</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#from-the-python-package-index">From the Python Package Index</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="api-v1.html">API v1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stats.html">Blueprint stats</a></li>
+<li class="toctree-l1"><a class="reference internal" href="command-line-interface.html">Command Line Interface</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">MONARC Stats Service</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Deployment</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/deployment.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="deployment">
+<h1>Deployment<a class="headerlink" href="#deployment" title="Permalink to this headline">¶</a></h1>
+<p>MONARC Stats service can be deployed via several ways:</p>
+<div class="contents local topic" id="contents">
+<ul class="simple">
+<li><p><a class="reference internal" href="#from-the-source" id="id1">From the source</a></p></li>
+<li><p><a class="reference internal" href="#to-heroku" id="id2">To Heroku</a></p></li>
+<li><p><a class="reference internal" href="#from-the-python-package-index" id="id3">From the Python Package Index</a></p></li>
+</ul>
+</div>
+<div class="section" id="from-the-source">
+<h2><a class="toc-backref" href="#id1">From the source</a><a class="headerlink" href="#from-the-source" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ sudo apt install postgresql
+$ git clone https://github.com/monarc-project/stats-service
+$ <span class="nb">cd</span> stats-service/
+$ cp instance/production.py.cfg instance/production.py
+$ poetry install
+$ poetry shell
+$ <span class="nb">export</span> <span class="nv">FLASK_APP</span><span class="o">=</span>runserver.py
+$ <span class="nb">export</span> <span class="nv">FLASK_ENV</span><span class="o">=</span>development
+$ flask db_create
+$ flask db_init
+</pre></div>
+</div>
+</div>
+<div class="section" id="to-heroku">
+<h2><a class="toc-backref" href="#id2">To Heroku</a><a class="headerlink" href="#to-heroku" title="Permalink to this headline">¶</a></h2>
+<p>You can use this button:</p>
+<a class="reference external image-reference" href="https://heroku.com/deploy?template=https://github.com/CASES-LU/MOSP"><img alt="Documentation Status" src="https://www.herokucdn.com/deploy/button.png" /></a>
+<p>or via command line:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ git clone https://github.com/monarc-project/stats-service
+$ <span class="nb">cd</span> stats-service/
+$ heroku create --region eu &lt;name-of-your-instance&gt;
+$ heroku addons:add heroku-postgresql:hobby-dev
+$ heroku config:set <span class="nv">HEROKU</span><span class="o">=</span><span class="m">1</span>
+$ heroku config:set <span class="nv">INSTANCE_URL</span><span class="o">=</span>https://&lt;name-of-your-instance&gt;.herokuapp.com
+$ heroku config:set <span class="nv">FLASK_APP</span><span class="o">=</span><span class="s1">&#39;runserver.py&#39;</span>
+$ heroku config:set <span class="nv">FLASK_ENV</span><span class="o">=</span><span class="s1">&#39;development&#39;</span>
+$ git push heroku master
+</pre></div>
+</div>
+<p>A demo instance is available
+<a class="reference external" href="https://monarc-stats-service.herokuapp.com/api/v1/">here</a>.</p>
+<p>Create a new organization:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>heroku run flask create_organization --name &lt;name-of-the-organization&gt;
+</pre></div>
+</div>
+<p>All commands (<a class="reference internal" href="command-line-interface.html#cli"><span class="std std-ref">Command Line Interface</span></a>) are available. Just prefix with <code class="docutils literal notranslate"><span class="pre">heroku</span> <span class="pre">run</span></code>.</p>
+</div>
+<div class="section" id="from-the-python-package-index">
+<h2><a class="toc-backref" href="#id3">From the Python Package Index</a><a class="headerlink" href="#from-the-python-package-index" title="Permalink to this headline">¶</a></h2>
+<a class="reference external image-reference" href="https://pypi.org/project/statsservice"><img alt="PyPi version" src="https://img.shields.io/pypi/v/statsservice.svg?style=flat-square" /></a>
+<p>MONARC Stats service is available on <a class="reference external" href="https://pypi.org/project/statsservice">PyPI</a>.</p>
+<p>First install and configure PostgreSQL:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo apt install postgresql
+</pre></div>
+</div>
+<p>Then install the application:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ pipx install statsservice
+$ monarc-stats-service
+ * Serving Flask app <span class="s2">&quot;statsservice.bootstrap&quot;</span> <span class="o">(</span>lazy loading<span class="o">)</span>
+ * Environment: production
+ * Debug mode: off
+ * Running on http://127.0.0.1:5000/ <span class="o">(</span>Press CTRL+C to quit<span class="o">)</span>
+</pre></div>
+</div>
+<p>If you want to use a custom configuration file:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ curl https://raw.githubusercontent.com/monarc-project/stats-service/master/instance/production.py.cfg -o production.py
+$ <span class="nb">export</span> <span class="nv">STATS_CONFIG</span><span class="o">=</span>~/production.py
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="api-v1.html" class="btn btn-neutral float-right" title="API v1" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="Presentation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Cédric Bonhomme &lt;cedric@cedricbonhomme.org&gt;
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
