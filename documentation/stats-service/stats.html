@@ -1,0 +1,474 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blueprint stats &#8212; MONARC Stats Service 0.3.0 documentation</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet" />
+  <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="API v1" href="api-v1.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+      
+      <h1 class="site-logo" id="site-title">MONARC Stats Service 0.3.0 documentation</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <p class="caption">
+ <span class="caption-text">
+  Technical considerations
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="installation.html">
+   Installation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="updates.html">
+   Updates
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="command-line-interface.html">
+   Command Line Interface
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="logging.html">
+   Logging
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Conceptual considerations
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="architecture.html">
+   Architecture
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Blueprints
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="api-v1.html">
+   API v1
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Blueprint stats
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/stats.rst.txt"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.rst</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/monarc-project/stats-service"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/monarc-project/stats-service/issues/new?title=Issue%20on%20page%20%2Fstats.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/monarc-project/stats-service/edit/master/docs/stats.rst"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#endpoints">
+   Endpoints
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#threats">
+     Threats
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vulnerabilities">
+     Vulnerabilities
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#risks">
+     Risks
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="blueprint-stats">
+<h1>Blueprint stats<a class="headerlink" href="#blueprint-stats" title="Permalink to this headline">¶</a></h1>
+<p>The goal of this blueprint is to return formatted custom stats. It is in
+read-only mode with only public routes (no authentication required).</p>
+<div class="section" id="endpoints">
+<h2>Endpoints<a class="headerlink" href="#endpoints" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>/stats. At that time this route simply returns a HTML file. Some charts can be
+displayed for example with the data from the following routes.</p></li>
+<li><p>/stats/threats.json</p></li>
+<li><p>/stats/vulnerabilities.json</p></li>
+<li><p>/stats/risks.json</p></li>
+</ul>
+<div class="section" id="threats">
+<h3>Threats<a class="headerlink" href="#threats" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ curl http://127.0.0.1:5000/stats/threats.json?processor<span class="o">=</span>threat_average_on_date<span class="p">&amp;</span><span class="nv">days</span><span class="o">=</span><span class="m">100</span>
+<span class="o">{</span>
+  <span class="s2">&quot;b402d4e0-4576-11e9-9173-0800277f0571&quot;</span>: <span class="o">{</span>
+    <span class="s2">&quot;2020-07-13&quot;</span>: <span class="o">{</span>
+      <span class="s2">&quot;averageRate&quot;</span>: <span class="m">2</span>.32,
+      <span class="s2">&quot;count&quot;</span>: <span class="m">10</span>.0,
+      <span class="s2">&quot;maxRisk&quot;</span>: <span class="m">35</span>.5
+    <span class="o">}</span>,
+    <span class="s2">&quot;2020-07-14&quot;</span>: <span class="o">{</span>
+      <span class="s2">&quot;averageRate&quot;</span>: <span class="m">3</span>.0,
+      <span class="s2">&quot;count&quot;</span>: <span class="m">8</span>.0,
+      <span class="s2">&quot;maxRisk&quot;</span>: <span class="m">34</span>.0
+    <span class="o">}</span>,
+    <span class="s2">&quot;2020-07-27&quot;</span>: <span class="o">{</span>
+      <span class="s2">&quot;averageRate&quot;</span>: <span class="m">3</span>.0,
+      <span class="s2">&quot;count&quot;</span>: <span class="m">8</span>.0,
+      <span class="s2">&quot;maxRisk&quot;</span>: <span class="m">34</span>.0
+    <span class="o">}</span>,
+    <span class="s2">&quot;2020-07-28&quot;</span>: <span class="o">{</span>
+      <span class="s2">&quot;averageRate&quot;</span>: <span class="m">2</span>.82,
+      <span class="s2">&quot;count&quot;</span>: <span class="m">12</span>.0,
+      <span class="s2">&quot;maxRisk&quot;</span>: <span class="m">36</span>.0
+    <span class="o">}</span>,
+    <span class="s2">&quot;2020-07-29&quot;</span>: <span class="o">{</span>
+      <span class="s2">&quot;averageRate&quot;</span>: <span class="m">3</span>.0,
+      <span class="s2">&quot;count&quot;</span>: <span class="m">8</span>.0,
+      <span class="s2">&quot;maxRisk&quot;</span>: <span class="m">34</span>.0
+    <span class="o">}</span>,
+    <span class="s2">&quot;2020-07-31&quot;</span>: <span class="o">{</span>
+      <span class="s2">&quot;averageRate&quot;</span>: <span class="m">2</span>.82,
+      <span class="s2">&quot;count&quot;</span>: <span class="m">6</span>.0,
+      <span class="s2">&quot;maxRisk&quot;</span>: <span class="m">36</span>.0
+    <span class="o">}</span>
+  <span class="o">}</span>,
+  <span class="s2">&quot;b402d523-4576-11e9-9173-0800277f0571&quot;</span>: <span class="o">{</span>
+    <span class="s2">&quot;2020-07-13&quot;</span>: <span class="o">{</span>
+      <span class="s2">&quot;averageRate&quot;</span>: <span class="m">2</span>.87,
+      <span class="s2">&quot;count&quot;</span>: <span class="m">8</span>.0,
+      <span class="s2">&quot;maxRisk&quot;</span>: <span class="m">45</span>.0
+    <span class="o">}</span>,
+    <span class="s2">&quot;2020-07-14&quot;</span>: <span class="o">{</span>
+      <span class="s2">&quot;averageRate&quot;</span>: <span class="m">2</span>.87,
+      <span class="s2">&quot;count&quot;</span>: <span class="m">8</span>.0,
+      <span class="s2">&quot;maxRisk&quot;</span>: <span class="m">45</span>.0
+    <span class="o">}</span>,
+    ...
+  <span class="o">}</span>
+  ...
+<span class="o">}</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>if the parameter <code class="docutils literal notranslate"><span class="pre">days</span></code> is not specified the default value is 365.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">threat_average_on_date</span></code> is also the default processor.</p></li>
+</ul>
+</div>
+<div class="section" id="vulnerabilities">
+<h3>Vulnerabilities<a class="headerlink" href="#vulnerabilities" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ curl http://127.0.0.1:5000/stats/vulnerabilities.json?processor<span class="o">=</span>vulnerability_average_on_date<span class="p">&amp;</span><span class="nv">days</span><span class="o">=</span><span class="m">100</span>
+<span class="o">{</span>
+  <span class="s2">&quot;69fbfe14-4591-11e9-9173-0800277f0571&quot;</span>: <span class="o">{</span>
+    <span class="s2">&quot;2020-08-01&quot;</span>: <span class="o">{</span>
+      <span class="s2">&quot;averageRate&quot;</span>: <span class="m">2</span>.0,
+      <span class="s2">&quot;count&quot;</span>: <span class="m">3</span>.0,
+      <span class="s2">&quot;maxRisk&quot;</span>: <span class="m">18</span>.0
+    <span class="o">}</span>,
+    <span class="s2">&quot;2020-08-03&quot;</span>: <span class="o">{</span>
+      <span class="s2">&quot;averageRate&quot;</span>: <span class="m">2</span>.0,
+      <span class="s2">&quot;count&quot;</span>: <span class="m">3</span>.0,
+      <span class="s2">&quot;maxRisk&quot;</span>: <span class="m">18</span>.0
+    <span class="o">}</span>
+  <span class="o">}</span>,
+  <span class="s2">&quot;69fbfe5f-4591-11e9-9173-0800277f0571&quot;</span>: <span class="o">{</span>
+    <span class="s2">&quot;2020-08-01&quot;</span>: <span class="o">{</span>
+      <span class="s2">&quot;averageRate&quot;</span>: <span class="m">1</span>.0,
+      <span class="s2">&quot;count&quot;</span>: <span class="m">1</span>.0,
+      <span class="s2">&quot;maxRisk&quot;</span>: <span class="m">6</span>.0
+      <span class="o">}</span>,
+      ...
+    <span class="o">}</span>
+    ...
+  <span class="o">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="risks">
+<h3>Risks<a class="headerlink" href="#risks" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ curl http://127.0.0.1:5000/stats/risks.json?processor<span class="o">=</span>risk_averages_on_date
+<span class="o">{</span>
+  <span class="s2">&quot;current&quot;</span>: <span class="o">{</span>
+    <span class="s2">&quot;informational&quot;</span>: <span class="o">{</span>
+      <span class="s2">&quot;High risks&quot;</span>: <span class="o">{</span>
+        <span class="s2">&quot;2020-10-01&quot;</span>: <span class="m">8</span>.0,
+        <span class="s2">&quot;2020-10-12&quot;</span>: <span class="m">8</span>.0
+      <span class="o">}</span>,
+      <span class="s2">&quot;Low risks&quot;</span>: <span class="o">{</span>
+        <span class="s2">&quot;2020-10-01&quot;</span>: <span class="m">66</span>.0,
+        <span class="s2">&quot;2020-10-12&quot;</span>: <span class="m">12</span>.0
+      <span class="o">}</span>,
+      <span class="s2">&quot;Medium risks&quot;</span>: <span class="o">{</span>
+        <span class="s2">&quot;2020-10-01&quot;</span>: <span class="m">27</span>.0,
+        <span class="s2">&quot;2020-10-12&quot;</span>: <span class="m">27</span>.0
+      <span class="o">}</span>
+    <span class="o">}</span>,
+    <span class="s2">&quot;operational&quot;</span>: <span class="o">{</span>
+      <span class="s2">&quot;High risks&quot;</span>: <span class="o">{</span>
+        <span class="s2">&quot;2020-10-01&quot;</span>: <span class="m">10</span>.0,
+        <span class="s2">&quot;2020-10-12&quot;</span>: <span class="m">10</span>.0
+      <span class="o">}</span>,
+      <span class="s2">&quot;Low risks&quot;</span>: <span class="o">{</span>
+        <span class="s2">&quot;2020-10-01&quot;</span>: <span class="m">18</span>.0,
+        <span class="s2">&quot;2020-10-12&quot;</span>: <span class="m">18</span>.0
+      <span class="o">}</span>,
+      <span class="s2">&quot;Medium risks&quot;</span>: <span class="o">{</span>
+        <span class="s2">&quot;2020-10-01&quot;</span>: <span class="m">0</span>.0,
+        <span class="s2">&quot;2020-10-12&quot;</span>: <span class="m">0</span>.0
+      <span class="o">}</span>
+    <span class="o">}</span>
+  <span class="o">}</span>,
+  <span class="s2">&quot;residual&quot;</span>: <span class="o">{</span>
+    <span class="s2">&quot;informational&quot;</span>: <span class="o">{</span>
+      <span class="s2">&quot;High risks&quot;</span>: <span class="o">{</span>
+        <span class="s2">&quot;2020-10-01&quot;</span>: <span class="m">1</span>.0,
+        <span class="s2">&quot;2020-10-12&quot;</span>: <span class="m">1</span>.0
+      <span class="o">}</span>,
+      <span class="s2">&quot;Low risks&quot;</span>: <span class="o">{</span>
+        <span class="s2">&quot;2020-10-01&quot;</span>: <span class="m">74</span>.0,
+        <span class="s2">&quot;2020-10-12&quot;</span>: <span class="m">74</span>.0
+      <span class="o">}</span>,
+      <span class="s2">&quot;Medium risks&quot;</span>: <span class="o">{</span>
+        <span class="s2">&quot;2020-10-01&quot;</span>: <span class="m">26</span>.0,
+        <span class="s2">&quot;2020-10-12&quot;</span>: <span class="m">26</span>.0
+      <span class="o">}</span>
+    <span class="o">}</span>,
+    <span class="s2">&quot;operational&quot;</span>: <span class="o">{</span>
+      <span class="s2">&quot;High risks&quot;</span>: <span class="o">{</span>
+        <span class="s2">&quot;2020-10-01&quot;</span>: <span class="m">0</span>.0,
+        <span class="s2">&quot;2020-10-12&quot;</span>: <span class="m">0</span>.0
+      <span class="o">}</span>,
+      <span class="s2">&quot;Low risks&quot;</span>: <span class="o">{</span>
+        <span class="s2">&quot;2020-10-01&quot;</span>: <span class="m">28</span>.0,
+        <span class="s2">&quot;2020-10-12&quot;</span>: <span class="m">28</span>.0
+      <span class="o">}</span>,
+      <span class="s2">&quot;Medium risks&quot;</span>: <span class="o">{</span>
+        <span class="s2">&quot;2020-10-01&quot;</span>: <span class="m">0</span>.0,
+        <span class="s2">&quot;2020-10-12&quot;</span>: <span class="m">0</span>.0
+      <span class="o">}</span>
+    <span class="o">}</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ curl http://127.0.0.1:5000/stats/risks.json?processor<span class="o">=</span>risk_averages
+<span class="o">{</span>
+  <span class="s2">&quot;current&quot;</span>: <span class="o">{</span>
+    <span class="s2">&quot;informational&quot;</span>: <span class="o">{</span>
+      <span class="s2">&quot;High risks&quot;</span>: <span class="m">8</span>.0,
+      <span class="s2">&quot;Low risks&quot;</span>: <span class="m">30</span>.0,
+      <span class="s2">&quot;Medium risks&quot;</span>: <span class="m">27</span>.0
+    <span class="o">}</span>,
+    <span class="s2">&quot;operational&quot;</span>: <span class="o">{</span>
+      <span class="s2">&quot;High risks&quot;</span>: <span class="m">10</span>.0,
+      <span class="s2">&quot;Low risks&quot;</span>: <span class="m">18</span>.0,
+      <span class="s2">&quot;Medium risks&quot;</span>: <span class="m">0</span>.0
+    <span class="o">}</span>
+  <span class="o">}</span>,
+  <span class="s2">&quot;residual&quot;</span>: <span class="o">{</span>
+    <span class="s2">&quot;informational&quot;</span>: <span class="o">{</span>
+      <span class="s2">&quot;High risks&quot;</span>: <span class="m">1</span>.0,
+      <span class="s2">&quot;Low risks&quot;</span>: <span class="m">74</span>.0,
+      <span class="s2">&quot;Medium risks&quot;</span>: <span class="m">26</span>.0
+    <span class="o">}</span>,
+    <span class="s2">&quot;operational&quot;</span>: <span class="o">{</span>
+      <span class="s2">&quot;High risks&quot;</span>: <span class="m">0</span>.0,
+      <span class="s2">&quot;Low risks&quot;</span>: <span class="m">28</span>.0,
+      <span class="s2">&quot;Medium risks&quot;</span>: <span class="m">0</span>.0
+    <span class="o">}</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="api-v1.html" title="previous page">API v1</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Cédric Bonhomme <cedric@cedricbonhomme.org><br/>
+        
+            &copy; Copyright SECURITYMADEIN.LU &lt;info@cases.lu&gt;.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>
