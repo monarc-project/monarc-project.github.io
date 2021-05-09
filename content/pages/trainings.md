@@ -12,7 +12,7 @@ table {
 
 |&nbsp;|||
 |:--|--|--|
-|**Date and time**|| 14th april 2021 - 9h30-16h00|
+|**Date and time**|| To be announced.|
 |&nbsp;|  ||
 |**Location**|&nbsp;&nbsp;&nbsp;|Online / [BigBlueButton](https://bigbluebutton.org/) platform of SECURITYMADEIN.LU|
 |&nbsp;|  |Check your network connection to BigBlueButton [here](https://test.bigbluebutton.org/)  |
@@ -25,7 +25,7 @@ table {
 |&nbsp;|  |  |
 |**Level required**||Basic|
 |&nbsp;|  |  |
-|**Language**|| French ![French][FR] |
+|**Language**|| To be announced. |
 |&nbsp;|  |  |
 |**Extra requirements**||**A laptop is required**|
 |&nbsp;|  |  |
@@ -42,6 +42,7 @@ table {
 
 | Date       | Location                                     | Language        | Presentation material  |
 |------------| -------------------------------------------- | --------------- | ---------------------- |
+| 2021-04-14 | BigBlueButton platform of securitymadein.lu  | ![French][FR]   |                        |
 | 2020-12-03 | BigBlueButton platform of securitymadein.lu  | ![English][en]  | [<i class="fa fa-file-pdf-o" style="color:red" aria-hidden="true"></i>](/assets/files/trainings/2020-12-03_MONARC-training.pdf)                       |
 | 2020-09-23 | BigBlueButton platform of securitymadein.lu  | ![French][FR]   |                        |
 | 2020-04-28 | BigBlueButton platform of securitymadein.lu  | ![English][en]  |                        |
