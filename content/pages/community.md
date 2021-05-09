@@ -59,5 +59,4 @@ You can already have a look at the
 [available objects from the MONARC project](https://objects.monarc.lu/organization/MONARC).
 
 These objects can be imported in the knowledge base of your MONARC instance.
-A documentation is available here
-([HTML](/documentation/MOSP-documentation/), [PDF](/assets/files/guides/MOSP-documentation.pdf)).
+A documentation is available [here](/documentation/MOSP-documentation/).
