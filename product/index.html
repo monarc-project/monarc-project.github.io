@@ -13,13 +13,13 @@
 <link rel="canonical" href="../product/">
 
         <meta name="author" content="SECURITYMADEIN.LU g.i.e." />
-        <meta name="description" content="Table of contents: Features summary MONARC Instance Management MONARC User management Import and export th:not(:first-child) { text-align: center; } td:not(:first-child) { text-align: center; color: #ffd500; text-shadow: 1px 0 grey, -1px 0 grey, 0 -1px grey, 0 1px grey; } Features summary There are 2 different MONARC installations possible: MONARC; MONARC …" />
+        <meta name="description" content="Table of contents: Features summary MONARC User management Import and export MONARC Instance Management - Back Office MONARC Stats Service th:not(:first-child) { text-align: center; } td:not(:first-child) { text-align: center; color: #ffd500; text-shadow: 1px 0 grey, -1px 0 grey, 0 -1px grey, 0 1px grey; } Features summary There are 2 different …" />
 
     <meta property="og:site_name" content="MONARC" />
     <meta property="og:type" content="article"/>
     <meta property="og:title" content="Product"/>
     <meta property="og:url" content="../product/"/>
-    <meta property="og:description" content="Table of contents: Features summary MONARC Instance Management MONARC User management Import and export th:not(:first-child) { text-align: center; } td:not(:first-child) { text-align: center; color: #ffd500; text-shadow: 1px 0 grey, -1px 0 grey, 0 -1px grey, 0 1px grey; } Features summary There are 2 different MONARC installations possible: MONARC; MONARC …" />
+    <meta property="og:description" content="Table of contents: Features summary MONARC User management Import and export MONARC Instance Management - Back Office MONARC Stats Service th:not(:first-child) { text-align: center; } td:not(:first-child) { text-align: center; color: #ffd500; text-shadow: 1px 0 grey, -1px 0 grey, 0 -1px grey, 0 1px grey; } Features summary There are 2 different …" />
 
 
 
@@ -83,12 +83,13 @@ MONARC            </a>
         <div class="entry-content">
             <div class="toc"><span class="toctitle">Table of contents:</span><ul>
 <li><a href="#features-summary">Features&nbsp;summary</a></li>
-<li><a href="#monarc-instance-management"><span class="caps">MONARC</span> Instance&nbsp;Management</a></li>
 <li><a href="#monarc"><span class="caps">MONARC</span></a><ul>
 <li><a href="#user-management">User&nbsp;management</a></li>
 <li><a href="#import-and-export">Import and&nbsp;export</a></li>
 </ul>
 </li>
+<li><a href="#monarc-instance-management-back-office"><span class="caps">MONARC</span> Instance Management - Back&nbsp;Office</a></li>
+<li><a href="#monarc-stats-service"><span class="caps">MONARC</span> Stats&nbsp;Service</a></li>
 </ul>
 </div>
 <style>
@@ -169,32 +170,6 @@ organizations. More derails about the architecture
 <a href="/documentation/technical-guide#monarc-and-the-back-office">here</a>.</p>
 <p>Since <span class="caps">MONARC</span> is an open-source project, you can also have a look at our
 <a href="https://github.com/monarc-project/MonarcAppFO/wiki/Roadmap">roadmap</a>.</p>
-<h2 id="monarc-instance-management"><span class="caps">MONARC</span> Instance&nbsp;Management</h2>
-<p>As an operator or service provider having multiple clients that desire
-to use <span class="caps">MONARC</span> for their risk assessment, this would be the optimal
-solution. It provides a centralised management of all the instances.
-This means that you as service provider have a dashboard-like view of
-how many clients you have. You can add and remove <span class="caps">MONARC</span> Instances
-(Front Offices) and import Risk Models that are automatically accessible
-to all your&nbsp;instances.</p>
-<blockquote>
-<p>As a bank, you might have different departments in different countries
-and thus the risk assessment varies - yet the model stays the same. Thus
-this would be a much easier way to share objects between departments
-with a centralised import - no need to import the model in each&nbsp;instance!</p>
-</blockquote>
-<p>It is to be noted, that you do not have access to the different
-instances and that the user management for each instance is done on the
-instance itself. This is a conscious choice to allow an administrator to
-create instances but not give access at the same time. This gives the
-admin for each <span class="caps">MONARC</span> instance the power to really manage the access of
-their&nbsp;instance.</p>
-<p>It is to be noted that the <span class="caps">MONARC</span> instance management is only
-interesting, if the implementation should result in some sort of cloud and you are the
-service provider. If you only wish to conduct risk assessment and your
-are a single small to medium sized company, we suggest you have an
-installation of a single <span class="caps">MONARC</span> instance without the Instance
-Management. This will take less&nbsp;maintenance.</p>
 <h2 id="monarc"><span class="caps">MONARC</span></h2>
 <p>The risk assessment is done in a <span class="caps">MONARC</span> instance, not the Instance
 Management. Each instance has, after all, its own user management -
@@ -224,6 +199,47 @@ thus share between instance. Or simply import the risk model from one
 instance in the <span class="caps">MONARC</span> Instance Management if multiple instances could
 benefit from that model, effectively removing the need to import and
 update that model on each&nbsp;instance.</p>
+<h2 id="monarc-instance-management-back-office"><span class="caps">MONARC</span> Instance Management - Back&nbsp;Office</h2>
+<p>As an operator or service provider having multiple clients that desire
+to use <span class="caps">MONARC</span> for their risk assessment, this would be the optimal
+solution. It provides a centralised management of all the instances.
+This means that you as service provider have a dashboard-like view of
+how many clients you have. You can add and remove <span class="caps">MONARC</span> Instances
+(Front Offices) and import Risk Models that are automatically accessible
+to all your&nbsp;instances.</p>
+<blockquote>
+<p>As a bank, you might have different departments in different countries
+and thus the risk assessment varies - yet the model stays the same. Thus
+this would be a much easier way to share objects between departments
+with a centralised import - no need to import the model in each&nbsp;instance!</p>
+</blockquote>
+<p>It is to be noted, that you do not have access to the different
+instances and that the user management for each instance is done on the
+instance itself. This is a conscious choice to allow an administrator to
+create instances but not give access at the same time. This gives the
+admin for each <span class="caps">MONARC</span> instance the power to really manage the access of
+their&nbsp;instance.</p>
+<p>It is to be noted that the <span class="caps">MONARC</span> instance management is only
+interesting, if the implementation should result in some sort of cloud and you are the
+service provider. If you only wish to conduct risk assessment and your
+are a single small to medium sized company, we suggest you have an
+installation of a single <span class="caps">MONARC</span> instance without the Instance
+Management. This will take less&nbsp;maintenance.</p>
+<h2 id="monarc-stats-service"><span class="caps">MONARC</span> Stats&nbsp;Service</h2>
+<p><a href="https://github.com/monarc-project/stats-service"><span class="caps">MONARC</span> Stats Service</a> is a libre
+software which is&nbsp;providing:</p>
+<ul>
+<li>an <span class="caps">API</span> in order to <strong>collect</strong> statistics from one or several
+  <a href="https://github.com/monarc-project/MonarcAppFO"><span class="caps">MONARC</span></a> instances and to <strong>return</strong>
+  these statistics with different filters and aggregation&nbsp;methods;</li>
+<li>a dashboard that summarizes the <strong>current cybersecurity landscape</strong>. The charts are
+  based on the statistics&nbsp;collected.</li>
+</ul>
+<p>This software can be deployed just next to a <span class="caps">MONARC</span> instance or on a dedicated&nbsp;server.</p>
+<p>The public official instance operated by <a href="https://www.cases.lu"><span class="caps">CASES</span></a> is
+available at <a href="https://dashboard.monarc.lu">https://dashboard.monarc.lu</a>.</p>
+<p>The documentation can be viewed online
+<a href="https://www.monarc.lu/documentation/stats-service/">here</a>.</p>
         </div>
     </section>
         </div>
