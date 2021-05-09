@@ -8,9 +8,6 @@ Title: Documentation
 
 * ### [Method guide](/documentation/method-guide) [<i class="fa fa-file-pdf-o" style="color:red" aria-hidden="true"></i>](/assets/files/guides/method-guide.pdf)
 
-* ### [MONARC Objects Sharing Platform](/documentation/MOSP-documentation/)
-
-* ### [MONARC Stats Service](/documentation/stats-service/)
 
 ## Technical documentation
 
@@ -21,3 +18,10 @@ Title: Documentation
 * ### [Common issues](/documentation/common-issues)
 
 * ### [Security considerations](/documentation/security-considerations)
+
+
+## Satellite projects
+
+* ### [MONARC Objects Sharing Platform](/documentation/MOSP-documentation/)
+
+* ### [MONARC Stats Service](/documentation/stats-service/)

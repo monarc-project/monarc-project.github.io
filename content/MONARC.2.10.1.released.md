@@ -30,9 +30,9 @@ To update, please follow the
 If you are coming from MONARC 2.9.0 please read
 [this](/news/2019/11/25/monarc-291-released/#updating).
 
-If you would like to use the new statistics feature then [StatsService](https://github.com/monarc-project/stats-service) has to be setup as well.
+If you would like to use the new statistics feature then [Stats Service](https://github.com/monarc-project/stats-service) has to be setup as well.
 
-The documentation, architecture and installation instructions of StatsService can be found [here](https://monarc-stats-service.readthedocs.io/en/latest).
+The documentation, architecture and installation instructions of StatsService can be found [here](https://www.monarc.lu/documentation/stats-service/).
 
 You can also download the new virtual machine
 [here](https://github.com/monarc-project/MonarcAppFO/releases/tag/v2.10.1).

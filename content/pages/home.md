@@ -1,11 +1,10 @@
-Title: Presentation
+Title: What is MONARC?
 URL:
 Save_as: index.html
 
 __MONARC is a tool and a method allowing an optimised, precise and repeatable
 risk assessment.__
 
-## What is MONARC?
 Depending on its size and its security needs, organisations must react in the
 most appropriate manner. Adopting good practices, taking the necessary measures
 and adjusting them proportionally: all this is part of the process to ensure
@@ -31,9 +30,13 @@ are the same. It is therefore sufficient to generalise risk scenarios for these
 assets (also called objects) by context and/or business.
 
 <div class="row">
-<video class="col-md-12" autoplay="true" muted="true">
+<div class="col col-md-12 d-none d-md-block d-lg-none">
+<div class="embed-responsive embed-responsive-16by9">
+<video autoplay="true" muted="true">
 <source src="/assets/video/ScreenCast.mp4" type="video/mp4">
+</div>
 </video>
+</div>
 </div>
 
 <a name="Phases" />
