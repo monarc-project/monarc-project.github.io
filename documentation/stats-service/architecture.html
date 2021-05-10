@@ -237,11 +237,6 @@
      Scenario 3
     </a>
    </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#scenario-4">
-     Scenario 4
-    </a>
-   </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -278,23 +273,33 @@
 <h2>High level architecture<a class="headerlink" href="#high-level-architecture" title="Permalink to this headline">¶</a></h2>
 <img alt="Organization level" src="_images/architecture-stats-organization-level.png" />
 <p>MONARC clients hosted on FO1 and FO2 push regularly stats about risk analysis to
-a local Stats Service instance (dashboard.my.monarc.lu).</p>
-<p>A company has the possibility to <a class="reference external" href="command-line-interface.html#pushing-data">push stats</a>
-from selected clients with the same
-account on, for example, dashboard.monarc.lu. The service behind dashboard.monarc.lu
-is operated by CASES Luxembourg and aims to provide relevant data about the
-current cybersecurity trends, focused in the Luxembourg area.</p>
+a local Stats Service instance (dashboard.my.monarc.lu). This local Stats Service
+instance provides the required functionalities for the Global Dashboard of the MONARC
+clients. This step is the <strong>collection of stats</strong> and is local.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The collection of stats can be disabled per analysis.</p>
+</div>
+<p>The next step is the <strong>sharing of stats</strong>. Indeed, a company has the possibility to
+<a class="reference external" href="command-line-interface.html#pushing-data">push stats</a>
+from the local Stats Service to, for example, dashboard.monarc.lu.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The sharing of stats can be disabled per client.</p>
+</div>
+<p>The service behind dashboard.monarc.lu is operated by CASES Luxembourg and aims to
+provide relevant data about the current cybersecurity trends, focused in the Luxembourg area.</p>
 </div>
 <div class="section" id="examples">
 <h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
 <p>The following diagrams presents the idea behind the decentralized nature of
-Stats Service.</p>
+i Stats Service.</p>
 <div class="section" id="scenario-1">
 <h3>Scenario 1<a class="headerlink" href="#scenario-1" title="Permalink to this headline">¶</a></h3>
 <img alt="Stats Service API interaction with MONARC" src="_images/architecture-stats-scenario1.png" />
-<p>The Stats Service is installed on a dedicated server, gathering stats sent by the
-front office (FO). It can also return the aggregated stats to the MONARC backend (FO)
-for the dashboard of the MONARC users (with the CEO role).</p>
+<p>The Stats Service API (<em>stats</em>) is installed on the same server where the MONARC back
+office is deployed. Not on on a dedicated server. The server hosting the back office of
+MONARC is a good choice.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>The Stats Service only communicates with the backend of MONARC thanks to
@@ -306,21 +311,12 @@ for the dashboard of the MONARC users (with the CEO role).</p>
 <div class="section" id="scenario-2">
 <h3>Scenario 2<a class="headerlink" href="#scenario-2" title="Permalink to this headline">¶</a></h3>
 <img alt="Stats Service API interaction with MONARC" src="_images/architecture-stats-scenario2.png" />
-<p>In the company A, the difference is that Stats Service API (<em>stats</em>) is
-installed on the same server where the MONARC back office is deployed. Not on
-on a dedicated server. The server hosting the back office of MONARC is a good choice.</p>
+<p>The Stats Service is installed on a dedicated server.</p>
 </div>
 <div class="section" id="scenario-3">
 <h3>Scenario 3<a class="headerlink" href="#scenario-3" title="Permalink to this headline">¶</a></h3>
-<img alt="Stats Service API interaction with MONARC" src="_images/architecture-stats-scenario3.png" />
-<p><em>stats</em> collects data from the two MONARC front offices of the company B.
-These aggregated data can be used for the dashboard for the CEO role of MONARC
-client instances in this company. But also, in the future, for the MONARC back office.</p>
-</div>
-<div class="section" id="scenario-4">
-<h3>Scenario 4<a class="headerlink" href="#scenario-4" title="Permalink to this headline">¶</a></h3>
-<img alt="Stats Service API interaction with MONARC" src="_images/architecture-stats-scenario4.png" />
-<p>Wendy is simply connected to a MONARC front office deployed in a local
+<img alt="Stats Service API interaction with MONARC" src="_static/architecture-stats-scenario4.png" />
+<p>The user is simply connected to a MONARC front office deployed in a local
 Virtual Box instance. Stats Service (<em>stats</em>) is running next to MONARC in this virtual
 machine.</p>
 </div>
@@ -330,7 +326,7 @@ machine.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>In all scenario, <strong>locally collected</strong> statistics (in <em>stats</em> node)
-can optionally be sent to <a class="reference external" href="https://dashboard.monarc.lu">dashboard.monarc.lu</a> which is
+can optionally be shared with <a class="reference external" href="https://dashboard.monarc.lu">dashboard.monarc.lu</a> which is
 a global instance. It’s the same software. You can configure the
 global dashboard statistics <strong>sharing</strong> option in the
 <a class="reference external" href="https://www.monarc.lu/documentation/user-guide/#global-dashboard">General Settings / Sharing statistics</a>
