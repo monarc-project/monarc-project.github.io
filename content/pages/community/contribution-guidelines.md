@@ -2,20 +2,24 @@ Title: Contribution guidelines
 Date: 2017-07-03
 Hidden: false
 
-The GitHub issue tracker is for bug reports and feature requests.
-Please do not use it to ask questions about how to use MONARC.
 
 You can contribute to MONARC by:
 
-* Reporting [bugs](https://github.com/monarc-project/MonarcAppFO/issues/new?labels=bug)
-* Suggesting enhancements or [new features](https://github.com/monarc-project/MonarcAppFO/issues/new?labels=feature+request)
-* Improving the [documentation](https://github.com/monarc-project/MonarcAppFO/issues/new?labels=documentation)
+* Reporting [bugs](https://github.com/monarc-project/MonarcAppFO/issues/new?assignees=&labels=bug%2C+potential-bug%2C+needs+triage&template=bug_report.md)
+* Suggesting enhancements or [new features](https://github.com/monarc-project/MonarcAppFO/discussions/categories/ideas)
+* Improving the documentation.
 
 If you want to contribute to the code you can use our
 [Vagrant development environment](https://github.com/monarc-project/MonarcAppFO/tree/master/vagrant).
-This is more convenient.
+
 
 ## Bug reports
+
+The bug tracker is for tracking bugs, todos and confirmed new features.
+If you want to submit a feature request please discuss about it here:
+https://github.com/monarc-project/MonarcAppFO/discussions
+
+Do not use the bug tracker to ask questions about how to use MONARC.
 
 Please be aware of the following things when filing bug reports:
 
@@ -37,13 +41,14 @@ Did you write a patch that fixes a bug?
 If the bug concerns a
 [security issue](/community/vulnerability-disclosure).
 
+
 ## New feature requests
 
 Ideas of new features should always be discussed.
 
 Do you intend to add a new feature or change an existing one?
 
-* Suggest or [discuss about your change](https://github.com/monarc-project/MonarcAppFO/discussions/categories/ideas);
+* Suggest and [discuss about your idea](https://github.com/monarc-project/MonarcAppFO/discussions/categories/ideas);
 * Open a pull request if you have collected positive feedback and can implement it yourself.
 
 

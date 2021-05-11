@@ -15,11 +15,11 @@ are also provided under the same license as the MONARC project.
 
 ## Copyright holders
 
-- Copyright (C) 2016-2020 SMILE gie securitymadein.lu
-- Copyright (C) 2016-2020 Juan Rocha - [https://github.com/jfrocha](https://github.com/jfrocha)
-- Copyright (C) 2016-2020 Jérôme Lombardi - [https://github.com/jerolomb](https://github.com/jerolomb)
-- Copyright (C) 2017-2020 Cédric Bonhomme - [https://www.cedricbonhomme.org](https://www.cedricbonhomme.org)
-- Copyright (C) 2019-2020 Ruslan Baidan - [https://github.com/ruslanbaidan](https://github.com/ruslanbaidan)
+- Copyright (C) 2016-2021 SMILE gie securitymadein.lu
+- Copyright (C) 2016-2021 Juan Rocha - [https://github.com/jfrocha](https://github.com/jfrocha)
+- Copyright (C) 2016-2021 Jérôme Lombardi - [https://github.com/jerolomb](https://github.com/jerolomb)
+- Copyright (C) 2017-2021 Cédric Bonhomme - [https://www.cedricbonhomme.org](https://www.cedricbonhomme.org)
+- Copyright (C) 2019-2021 Ruslan Baidan - [https://github.com/ruslanbaidan](https://github.com/ruslanbaidan)
 - Copyright (C) 2016-2017 Guillaume Lesniak
 - Copyright (C) 2016-2017 Thomas Metois
 - Copyright (C) 2016-2017 Jérôme De Almeida
