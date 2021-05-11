@@ -16,8 +16,8 @@ If you want to contribute to the code you can use our
 ## Bug reports
 
 The bug tracker is for tracking bugs, todos and confirmed new features.
-If you want to submit a feature request please discuss about it here:
-https://github.com/monarc-project/MonarcAppFO/discussions
+If you want to submit a feature request please discuss about it
+[here](https://github.com/monarc-project/MonarcAppFO/discussions).
 
 Do not use the bug tracker to ask questions about how to use MONARC.
 

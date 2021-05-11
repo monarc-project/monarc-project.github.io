@@ -9,7 +9,7 @@ on [my.monarc.lu](https://my.monarc.lu), for free.
 If you work for an organization you can request access by
 [contacting us](mailto:info@cases.lu?subject=Access to MONARC SaaS).
 
-We only provide organizational account with a **corporate email address**.
+We only provide organizational account with a **personal corporate email address**.
 The registration requires one contact email per organization.
 
 If you want to simply test MONARC **please** use the
