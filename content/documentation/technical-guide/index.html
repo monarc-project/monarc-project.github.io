@@ -573,7 +573,7 @@ In order to install MONARC you will need the following requirements:</p>
 <p>Git;</p>
 </li>
 <li>
-<p>PHP (version 7.1, 7.2 or 7.3):</p>
+<p>PHP (version 7.4):</p>
 <div class="ulist">
 <ul>
 <li>
@@ -871,7 +871,7 @@ More information about the installation in
 <p>The whole architecture includes an additional reverse proxy (<strong>RPX</strong>) and a
 configuration server (<strong>CFG</strong>). It is possible to connect many front offices
 (<strong>FO</strong>) to one back office (<strong>BO</strong>).
-The deployement is managed with <a href="https://www.ansible.com">ansible</a>.
+The deployment is managed with <a href="https://www.ansible.com">ansible</a>.
 More information in the repository of the
 <a href="https://github.com/monarc-project/ansible-ubuntu">ansible playbook</a>.</p>
 </div>
@@ -890,6 +890,10 @@ You can have a look at <a href="https://objects.monarc.lu">official instance</a>
 by <a href="https://github.com/CASES-LU">CASES</a>. MONARC instances can directly query
 MOSP in order to update their knowledge base. You can have a look at the
 <a href="https://www.monarc.lu/documentation/MOSP-documentation/">documentation of MOSP</a>.</p>
+</div>
+<div class="paragraph">
+<p><a href="https://github.com/monarc-project/stats-service">Stats Service</a> is an API
+for the collection and processing of stats data from different MONARC instances.</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -1420,7 +1424,7 @@ that can be used for the community and future weather forecast.
 The shared data do not have an identification of Monarc Front Office instance.</p>
 </div>
 <div class="paragraph">
-<p>An architecture of Monarc Front Offices and Back Offices instance(s) communicated with Stats Service(s) and Global Statistics can be found <a href="https://monarc-stats-service.readthedocs.io/en/latest/architecture.html"><strong>here</strong></a>.</p>
+<p>An architecture of Monarc Front Offices and Back Offices instance(s) communicated with Stats Service(s) and Global Statistics can be found <a href="https://www.monarc.lu/documentation/stats-service/architecture.html"><strong>here</strong></a>.</p>
 </div>
 <div class="sect2">
 <h3 id="installation-of-the-stats-service"><a class="anchor" href="#installation-of-the-stats-service"></a><a class="link" href="#installation-of-the-stats-service">6.1. Installation of the Stats Service</a></h3>
@@ -1434,7 +1438,7 @@ The reason is that all the Front Office instances as well as Back Office need to
 But having a separate (virtual) server for StatsService is also a good solution.</p>
 </div>
 <div class="paragraph">
-<p>The installation instructions as well as system requirements can be found <a href="https://monarc-stats-service.readthedocs.io/en/latest/installation.html">here</a>.
+<p>The installation instructions as well as system requirements can be found <a href="https://www.monarc.lu/documentation/stats-service/installation.html">here</a>.
 Stats Service project is available on <a href="https://github.com/monarc-project/stats-service">GitHub</a>.</p>
 </div>
 </div>
