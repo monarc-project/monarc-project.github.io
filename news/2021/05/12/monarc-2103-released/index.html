@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
 <head>
-    <title>MONARC 2.9.15 released - MONARC</title>
+    <title>MONARC 2.10.3 released - MONARC</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -10,18 +10,18 @@
 
     <link href="../../../../../assets/images/monarc-logo.png" rel="icon">
 
-<link rel="canonical" href="../../../../../news/2020/06/03/monarc-2915-released/">
+<link rel="canonical" href="../../../../../news/2021/05/12/monarc-2103-released/">
 
         <meta name="author" content="SECURITYMADEIN.LU g.i.e." />
         <meta name="keywords" content="monarc,new-release" />
-        <meta name="description" content="Release 2.9.15 of MONARC" />
+        <meta name="description" content="Release 2.10.3 of MONARC" />
 
         <meta property="og:site_name" content="MONARC" />
         <meta property="og:type" content="article"/>
-        <meta property="og:title" content="MONARC 2.9.15 released"/>
-        <meta property="og:url" content="../../../../../news/2020/06/03/monarc-2915-released/"/>
-        <meta property="og:description" content="Release 2.9.15 of MONARC"/>
-        <meta property="article:published_time" content="2020-06-03" />
+        <meta property="og:title" content="MONARC 2.10.3 released"/>
+        <meta property="og:url" content="../../../../../news/2021/05/12/monarc-2103-released/"/>
+        <meta property="og:description" content="Release 2.10.3 of MONARC"/>
+        <meta property="article:published_time" content="2021-05-12" />
             <meta property="article:section" content="monarc" />
             <meta property="article:tag" content="monarc" />
             <meta property="article:tag" content="new-release" />
@@ -88,10 +88,10 @@ MONARC            </a>
         <article>
             <header class="page-header">
                 <h1>
-                    <a href="../../../../../news/2020/06/03/monarc-2915-released/"
+                    <a href="../../../../../news/2021/05/12/monarc-2103-released/"
                        rel="bookmark"
-                       title="Permalink to MONARC 2.9.15 released">
-                        <span class="caps">MONARC</span> 2.9.15&nbsp;released
+                       title="Permalink to MONARC 2.10.3 released">
+                        <span class="caps">MONARC</span> 2.10.3&nbsp;released
                     </a>
                 </h1>
             </header>
@@ -101,7 +101,7 @@ MONARC            </a>
 <footer class="post-info">
     <span class="label label-default">Date</span>
     <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2020-06-03T00:00:00+02:00"> Wed 03 June 2020</time>
+        <i class="fa fa-calendar"></i><time datetime="2021-05-12T00:00:00+02:00"> Wed 12 May 2021</time>
     </span>
 
 
@@ -115,27 +115,54 @@ MONARC            </a>
     
 </footer><!-- /.post-info -->                    </div>
                 </div>
-                <p>Version 2.9.15 of <span class="caps">MONARC</span> has been released with several&nbsp;fixes.</p>
+                <p>Version 2.10.3 Includes bug-fixes, new features and an&nbsp;enhancement.</p>
+<h3 id="new">New</h3>
+<ul>
+<li>Implement the <span class="caps">UI</span> language management
+  (<a href="https://github.com/monarc-project/MonarcAppFO/issues/318">#318</a>)</li>
+<li>Implementation of the library objects import and assets export from/to <span class="caps">MOSP</span>
+  (<a href="https://github.com/monarc-project/MonarcAppFO/issues/320">#320</a>)</li>
+<li>Possibility to export items from the Knowledge Base
+  (<a href="https://github.com/monarc-project/MonarcAppFO/issues/321">#321</a>)</li>
+<li>Send <span class="caps">MONARC</span> version to Stats Service
+  (<a href="https://github.com/monarc-project/MonarcAppFO/issues/341">#341</a>)</li>
+</ul>
 <h3 id="fix">Fix</h3>
 <ul>
-<li>Impossible to export an analysis when a user has deleted a category of a measure
-  (<a href="https://github.com/monarc-project/MonarcAppFO/issues/282">#282</a>);</li>
-<li>Matched referentials cannot be unlinked
-  (<a href="https://github.com/monarc-project/MonarcAppFO/issues/289">#289</a>);</li>
-<li>Orphan categories of controls on import function
-  (<a href="https://github.com/monarc-project/MonarcAppFO/issues/290">#290</a>);</li>
-<li>Improvements and fixes for German translations
-  (<a href="https://github.com/monarc-project/MonarcAppFO/issues/293">#293</a>);</li>
-<li>Dashboard Diagrams “No Data” 2.9.14
-  (<a href="https://github.com/monarc-project/MonarcAppFO/issues/294">#294</a>).</li>
+<li>[Front Office] export of measure related to &#8220;amvs&#8221; stoped working since v2.10.1
+  (<a href="https://github.com/monarc-project/MonarcAppFO/issues/340">#340</a>)</li>
+</ul>
+<h3 id="enhancement">Enhancement</h3>
+<ul>
+<li>Improve the import speed of analyses and instances (<em>partially done</em>).
+  (<a href="https://github.com/monarc-project/MonarcAppFO/issues/248">#248</a>)</li>
 </ul>
 <h2 id="updating">Updating</h2>
 <p>To update, please follow the 
 <a href="http://monarc.lu/documentation/technical-guide/#monarc-update">guide</a>.</p>
 <p>If you are coming from <span class="caps">MONARC</span> 2.9.0 please read
 <a href="/news/2019/11/25/monarc-291-released/#updating">this</a>.</p>
+<p>If you would like to use the new statistics feature then <a href="https://github.com/monarc-project/stats-service">StatsService</a> has to be setup as well.
+The documentation, architecture and installation instructions of Stats Service can be found <a href="https://monarc-stats-service.readthedocs.io/en/latest">here</a>.</p>
 <p>You can also download the new virtual machine
-<a href="https://github.com/monarc-project/MonarcAppFO/releases/tag/v2.9.15">here</a>.</p>
+<a href="https://github.com/monarc-project/MonarcAppFO/releases/tag/v2.10.3">here</a>.</p>
+<h2 id="monarc-is-in-your-language"><span class="caps">MONARC</span> is in your&nbsp;language</h2>
+<blockquote>
+<p>You can now help us to make <span class="caps">MONARC</span> available in your language via <a href="https://translate.monarc.lu/projects/monarc/">our platform</a> powered by <a href="https://weblate.org">Weblate</a>.</p>
+</blockquote>
+<h2 id="the-virtualbox-demo-image"><a href="#vm-image">The VirtualBox demo&nbsp;image</a></h2>
+<blockquote>
+<p><a href="https://my.monarc.lu/static/vm/MONARC_v2_10_3.ova" download>Download the image</a>.</p>
+<p>Login and Passwords for <span class="caps">MONARC</span> App and VirtualBox demo image (format:&nbsp;username:password):</p>
+<p><span class="caps">MONARC</span> application: admin@admin.localhost:admin
+<span class="caps">SSH</span> login (Ubuntu credentials): monarc:password
+Mysql root login: root:7e4195ac73cd3be6b08f84bfcd8df22e6fc844c719d9a632f28bd6d29d95c700
+Mysql <span class="caps">MONARC</span> login: sqlmonarcuser:ac9a093eaea88120909374679aa625355077e1888274b36180cd66bf8019d842
+sha512sum: 4de7e6631cd8a753313eb59581f20618626c93f46785e95744bd5727dab8de70558b8aff52941d25893a6977d051fedceebd7bea970e4936640f938341b84c93
+sha1sum:&nbsp;e3b0631dee78a9d0d7f2e50fff80064104047edf</p>
+<p><span class="caps">MONARC</span> is available on port&nbsp;80.</p>
+<p><span class="caps">MONARC</span> Stats Service is available on port&nbsp;5005.</p>
+</blockquote>
             </div>
             <!-- /.entry-content -->
         </article>
