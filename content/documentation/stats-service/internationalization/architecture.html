@@ -1,0 +1,407 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Architecture &#8212; MONARC Stats Service 0.3.0 documentation</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet" />
+  <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="API v1" href="api-v1.html" />
+    <link rel="prev" title="Logging" href="logging.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <p class="caption">
+ <span class="caption-text">
+  Technical considerations
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="installation.html">
+   Installation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="updates.html">
+   Updates
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="command-line-interface.html">
+   Command Line Interface
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="logging.html">
+   Logging
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Conceptual considerations
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Architecture
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Blueprints
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="api-v1.html">
+   API v1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="stats.html">
+   Blueprint stats
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="root.html">
+   Blueprint root
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav><h4>Docs by version</h4>
+
+<h5>Releases</h5>
+<ul>
+  <li><a href="../v0.4.0/architecture.html">v0.4.0</a></li>
+  <li><a href="../v0.3.0/architecture.html">v0.3.0</a></li>
+  <li><a href="../v0.2.0/architecture.html">v0.2.0</a></li>
+  <li><a href="../v0.1.9/index.html">v0.1.9</a></li>
+  <li><a href="../v0.1.10/index.html">v0.1.10</a></li>
+</ul>
+<h5>In Development</h5>
+<ul>
+  <li><a href="../admin-endpoint/architecture.html">admin-endpoint</a></li>
+  <li><a href="../dashboard-test/architecture.html">dashboard-test</a></li>
+  <li><a href="../feature/is-sharing-enabled/architecture.html">feature/is-sharing-enabled</a></li>
+  <li><a href="architecture.html">internationalization</a></li>
+  <li><a href="../master/architecture.html">master</a></li>
+  <li><a href="../mosp-lookup/architecture.html">mosp-lookup</a></li>
+</ul>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/architecture.rst.txt"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.rst</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/monarc-project/stats-service"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/monarc-project/stats-service/issues/new?title=Issue%20on%20page%20%2Farchitecture.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/monarc-project/stats-service/edit/master/docs/architecture.rst"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#high-level-architecture">
+   High level architecture
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#examples">
+   Examples
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#scenario-1">
+     Scenario 1
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#scenario-2">
+     Scenario 2
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#scenario-3">
+     Scenario 3
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#scenario-4">
+     Scenario 4
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#important-notes">
+   Important notes
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#integration-with-external-services">
+   Integration with external services
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#mosp">
+     MOSP
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+
+<p>
+  <strong>
+    
+    You're reading the documentation for a development version.
+    For the latest released version, please have a look at <a href="../master/architecture.html">master</a>.
+    
+  </strong>
+</p>
+
+
+  <div class="section" id="architecture">
+<h1>Architecture<a class="headerlink" href="#architecture" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="high-level-architecture">
+<h2>High level architecture<a class="headerlink" href="#high-level-architecture" title="Permalink to this headline">¶</a></h2>
+<img alt="Organization level" src="_images/architecture-stats-organization-level.png" />
+<p>MONARC clients hosted on FO1 and FO2 push regularly stats about risk analysis to
+a local Stats Service instance (dashboard.my.monarc.lu).</p>
+<p>A company has the possibility to <a class="reference external" href="command-line-interface.html#pushing-data">push stats</a>
+from selected clients with the same
+account on, for example, dashboard.monarc.lu. The service behind dashboard.monarc.lu
+is operated by CASES Luxembourg and aims to provide relevant data about the
+current cybersecurity trends, focused in the Luxembourg area.</p>
+</div>
+<div class="section" id="examples">
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<p>The following diagrams presents the idea behind the decentralized nature of
+Stats Service.</p>
+<div class="section" id="scenario-1">
+<h3>Scenario 1<a class="headerlink" href="#scenario-1" title="Permalink to this headline">¶</a></h3>
+<img alt="Stats Service API interaction with MONARC" src="_images/architecture-stats-scenario1.png" />
+<p>The Stats Service is installed on a dedicated server, gathering stats sent by the
+front office (FO). It can also return the aggregated stats to the MONARC backend (FO)
+for the dashboard of the MONARC users (with the CEO role).</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The Stats Service only communicates with the backend of MONARC thanks to
+<a class="reference internal" href="api-v1.html"><span class="doc">its API</span></a>.</p>
+</div>
+<p>The stats collection (from the FO to the stats node) can be triggered with a
+<a class="reference external" href="installation.html#integration-with-monarc-and-collect-of-the-stats">cron job</a>.</p>
+</div>
+<div class="section" id="scenario-2">
+<h3>Scenario 2<a class="headerlink" href="#scenario-2" title="Permalink to this headline">¶</a></h3>
+<img alt="Stats Service API interaction with MONARC" src="_images/architecture-stats-scenario2.png" />
+<p>In the company A, the difference is that Stats Service API (<em>stats</em>) is
+installed on the same server where the MONARC back office is deployed. Not on
+on a dedicated server. The server hosting the back office of MONARC is a good choice.</p>
+</div>
+<div class="section" id="scenario-3">
+<h3>Scenario 3<a class="headerlink" href="#scenario-3" title="Permalink to this headline">¶</a></h3>
+<img alt="Stats Service API interaction with MONARC" src="_images/architecture-stats-scenario3.png" />
+<p><em>stats</em> collects data from the two MONARC front offices of the company B.
+These aggregated data can be used for the dashboard for the CEO role of MONARC
+client instances in this company. But also, in the future, for the MONARC back office.</p>
+</div>
+<div class="section" id="scenario-4">
+<h3>Scenario 4<a class="headerlink" href="#scenario-4" title="Permalink to this headline">¶</a></h3>
+<img alt="Stats Service API interaction with MONARC" src="_images/architecture-stats-scenario4.png" />
+<p>Wendy is simply connected to a MONARC front office deployed in a local
+Virtual Box instance. Stats Service (<em>stats</em>) is running next to MONARC in this virtual
+machine.</p>
+</div>
+</div>
+<div class="section" id="important-notes">
+<h2>Important notes<a class="headerlink" href="#important-notes" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In all scenario, <strong>locally collected</strong> statistics (in <em>stats</em> node)
+can optionally be sent to <a class="reference external" href="https://dashboard.monarc.lu">dashboard.monarc.lu</a> which is
+a global instance. It’s the same software. You can configure the
+global dashboard statistics <strong>sharing</strong> option in the
+<a class="reference external" href="https://www.monarc.lu/documentation/user-guide/#global-dashboard">General Settings / Sharing statistics</a>
+view of your MONARC instance
+(<a class="reference external" href="https://www.monarc.lu/documentation/user-guide/images/GlobalDashboardGlobalSetting.png">see here</a>).</p>
+<p>However, stats must always be collected in your local Stats Service instance.
+This is required for the proper functioning of the global dashboard of your MONARC instance.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>It is as well possible to run your own alternative to dashboard.monarc.lu. And then
+you can configure the variable <em>REMOTE_STATS_SERVER</em> of your local Stats Service
+instance with the address of your “global” instance.</p>
+</div>
+</div>
+<div class="section" id="integration-with-external-services">
+<h2>Integration with external services<a class="headerlink" href="#integration-with-external-services" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="mosp">
+<h3>MOSP<a class="headerlink" href="#mosp" title="Permalink to this headline">¶</a></h3>
+<p>A Stats Service instance is able to query MOSP.</p>
+</div>
+</div>
+</div>
+
+
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="logging.html" title="previous page">Logging</a>
+    <a class='right-next' id="next-link" href="api-v1.html" title="next page">API v1</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Cédric Bonhomme <cedric@cedricbonhomme.org><br/>
+        
+            &copy; Copyright SECURITYMADEIN.LU &lt;info@cases.lu&gt;.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>
