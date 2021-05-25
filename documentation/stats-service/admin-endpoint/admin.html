@@ -240,6 +240,11 @@
      Activate the sharing for a client
     </a>
    </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#update-stats-service">
+     Update Stats Service
+    </a>
+   </li>
   </ul>
  </li>
 </ul>
@@ -316,6 +321,19 @@ order to use endpoints of the admin blueprint.</p>
 <span class="o">}</span>
 </pre></div>
 </div>
+</div>
+<div class="section" id="update-stats-service">
+<h3>Update Stats Service<a class="headerlink" href="#update-stats-service" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ curl -H  <span class="s2">&quot;X-API-KEY: 5USubuFK_FXB7fXoMq_Nt0CHRo9SxQW0J_FarVG5fCJmXckz6T1qgE2wtV_aFiGTGvBi1Xr45-CayfgpC-_MMA&quot;</span>  http://127.0.0.1:5000/admin/update.json
+<span class="o">{</span>
+  <span class="s2">&quot;output&quot;</span>: <span class="s2">&quot;b&#39;Already up to date.\\n&#39;b&#39;\\n&#39;b&#39;&gt; stats-service@0.4.0 postinstall\\n&#39;b&#39;&gt; cd statsservice/static/ ; ln -sf ../../node_modules npm_components\\n&#39;b&#39;\\n&#39;b&#39;\\n&#39;b&#39;added 11 packages, and audited 12 packages in 777ms\\n&#39;b&#39;\\n&#39;b&#39;2 packages are looking for funding\\n&#39;b&#39;  run `npm fund` for details\\n&#39;b&#39;\\n&#39;b&#39;found 0 vulnerabilities\\n&#39;b&#39;Installing dependencies from lock file\\n&#39;b&#39;\\n&#39;b&#39;No dependencies to install or update\\n&#39;b&#39;\\n&#39;b&#39;Installing the current project: statsservice (0.4.0)\\n&#39;b&#39;\\xe2\\x9c\\xa8 \\xf0\\x9f\\x8c\\x9f \\xe2\\x9c\\xa8\\n&#39;b&#39;\\x1b[0;32mStats Service updated. You can now restart the service.\\x1b[0m Examples:\\n&#39;b&#39;    sudo systemctl restart statsservice.service\\n&#39;b&#39;    sudo systemctl restart apache2.service\\n&#39;&quot;</span>,
+  <span class="s2">&quot;result&quot;</span>: <span class="s2">&quot;OK&quot;</span>
+<span class="o">}</span>
+</pre></div>
+</div>
+<p>The output of the
+<a class="reference external" href="https://github.com/monarc-project/stats-service/blob/master/contrib/update.sh">Shell update script</a>
+for Stats Service is returned.</p>
 </div>
 </div>
 </div>
