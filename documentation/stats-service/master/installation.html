@@ -117,6 +117,7 @@
 
     </div>
 </nav><h4>Docs by version</h4>
+
 <h5>Releases</h5>
 <ul>
   <li><a href="../v0.4.0/installation.html">v0.4.0</a></li>
@@ -127,8 +128,14 @@
 </ul>
 <h5>In Development</h5>
 <ul>
+  <li><a href="../admin-endpoint/installation.html">admin-endpoint</a></li>
+  <li><a href="../dashboard-test/installation.html">dashboard-test</a></li>
+  <li><a href="../feature/is-sharing-enabled/installation.html">feature/is-sharing-enabled</a></li>
+  <li><a href="../internationalization/installation.html">internationalization</a></li>
   <li><a href="installation.html">master</a></li>
+  <li><a href="../mosp-lookup/installation.html">mosp-lookup</a></li>
 </ul>
+
 </div>
 
 
@@ -314,7 +321,7 @@
 <li><p>A GNU/Linux distribution (tested on Debian and Ubuntu);</p></li>
 <li><p>Python: version &gt;= 3.8 (preferably use <a class="reference external" href="https://github.com/pyenv/pyenv">pyenv</a>)
 and a dependency manager (for example <a class="reference external" href="https://python-poetry.org">Poetry</a>);</p></li>
-<li><p>A PostgreSQL server 12.x: persistent storage.</p></li>
+<li><p>A PostgreSQL server &gt;= 12.x: persistent storage.</p></li>
 </ul>
 <p>Additionally:</p>
 <ul class="simple">
@@ -407,6 +414,7 @@ $ git push heroku master
 </div>
 <div class="section" id="docker">
 <h3><a class="toc-backref" href="#id5">Docker</a><a class="headerlink" href="#docker" title="Permalink to this headline">¶</a></h3>
+<p>Deployment with Docker is well suited for development purposes.</p>
 <p>Depending on how you installed Docker on your system, you might have to use <code class="docutils literal notranslate"><span class="pre">sudo</span></code>,
 which is discouraged.</p>
 <div class="section" id="from-the-repository-currently-the-recommended-way-with-docker">

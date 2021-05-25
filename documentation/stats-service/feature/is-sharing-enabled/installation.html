@@ -1,0 +1,545 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Installation &#8212; MONARC Stats Service 0.3.0 documentation</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet" />
+  <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Updates" href="updates.html" />
+    <link rel="prev" title="Presentation" href="index.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Installation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="updates.html">
+   Updates
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="command-line-interface.html">
+   Command Line Interface
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="logging.html">
+   Logging
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="architecture.html">
+   Architecture
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="api-v1.html">
+   API v1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="stats.html">
+   Blueprint stats
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav><h4>Docs by version</h4>
+
+<h5>Releases</h5>
+<ul>
+  <li><a href="../../v0.4.0/installation.html">v0.4.0</a></li>
+  <li><a href="../../v0.3.0/installation.html">v0.3.0</a></li>
+  <li><a href="../../v0.2.0/installation.html">v0.2.0</a></li>
+  <li><a href="../../v0.1.9/installation.html">v0.1.9</a></li>
+  <li><a href="../../v0.1.10/installation.html">v0.1.10</a></li>
+</ul>
+<h5>In Development</h5>
+<ul>
+  <li><a href="../../admin-endpoint/installation.html">admin-endpoint</a></li>
+  <li><a href="../../dashboard-test/installation.html">dashboard-test</a></li>
+  <li><a href="installation.html">feature/is-sharing-enabled</a></li>
+  <li><a href="../../internationalization/installation.html">internationalization</a></li>
+  <li><a href="../../master/installation.html">master</a></li>
+  <li><a href="../../mosp-lookup/installation.html">mosp-lookup</a></li>
+</ul>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/installation.rst.txt"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.rst</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/monarc-project/stats-service"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/monarc-project/stats-service/issues/new?title=Issue%20on%20page%20%2Finstallation.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/monarc-project/stats-service/edit/master/docs/installation.rst"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#prerequisites">
+   Prerequisites
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#deployment">
+   Deployment
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#from-the-source">
+     From the source
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#to-heroku">
+     To Heroku
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#from-the-python-package-index">
+     From the Python Package Index
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#service-management">
+   Service management
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#daemon">
+     Daemon
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#accessing-logs">
+       Accessing logs
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#mod-wsgi">
+     mod_wsgi
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#integration-with-monarc-and-collect-of-the-stats">
+   Integration with MONARC and collect of the stats
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+
+<p>
+  <strong>
+    
+    You're reading the documentation for a development version.
+    For the latest released version, please have a look at <a href="../../master/installation.html">master</a>.
+    
+  </strong>
+</p>
+
+
+  <div class="section" id="installation">
+<h1>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="prerequisites">
+<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this headline">¶</a></h2>
+<p>Generally speaking, requirements are the following:</p>
+<ul class="simple">
+<li><p>A GNU/Linux distribution (tested on Debian and Ubuntu);</p></li>
+<li><p>Python: version &gt;= 3.6.12 and a dependency manager (for example <a class="reference external" href="https://python-poetry.org">Poetry</a>);</p></li>
+<li><p>A PostgreSQL server 12.x: persistent storage.</p></li>
+</ul>
+<p>Additionally:</p>
+<ul class="simple">
+<li><p>A cron daemon: running scheduled tasks for pushing or pulling stats data.</p></li>
+</ul>
+<p>Creation of a PostgreSQL user:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ sudo apt install postgresql
+$ sudo -u postgres createuser &lt;username&gt;
+$ sudo -u postgres psql
+psql <span class="o">(</span><span class="m">11</span>.2 <span class="o">(</span>Ubuntu <span class="m">11</span>.2-1<span class="o">))</span>
+Type <span class="s2">&quot;help&quot;</span> <span class="k">for</span> help.
+<span class="nv">postgres</span><span class="o">=</span><span class="c1"># ALTER USER &lt;username&gt; WITH encrypted password &#39;&lt;password&gt;&#39;;</span>
+<span class="nv">postgres</span><span class="o">=</span><span class="c1"># ALTER USER &lt;username&gt; WITH SUPERUSER;</span>
+ALTER ROLE
+postgres-# <span class="se">\q</span>
+</pre></div>
+</div>
+<p>The user name and password chosen must be specified later in the configuration file.</p>
+</div>
+<div class="section" id="deployment">
+<h2>Deployment<a class="headerlink" href="#deployment" title="Permalink to this headline">¶</a></h2>
+<p>The service can be deployed via several ways:</p>
+<div class="contents local topic" id="contents">
+<ul class="simple">
+<li><p><a class="reference internal" href="#from-the-source" id="id3">From the source</a></p></li>
+<li><p><a class="reference internal" href="#to-heroku" id="id4">To Heroku</a></p></li>
+<li><p><a class="reference internal" href="#from-the-python-package-index" id="id5">From the Python Package Index</a></p></li>
+</ul>
+</div>
+<div class="section" id="from-the-source">
+<h3><a class="toc-backref" href="#id3">From the source</a><a class="headerlink" href="#from-the-source" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ sudo apt install python3-pip python3-venv
+$ curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py <span class="p">|</span> python3
+$ <span class="nb">echo</span>  <span class="s1">&#39;export PATH=&quot;$PATH:$HOME/.poetry/bin&quot;&#39;</span> &gt;&gt; ~/.bashrc
+$ . ~/.bashrc
+
+$ git clone https://github.com/monarc-project/stats-service
+$ <span class="nb">cd</span> stats-service/
+$ npm install
+$ cp instance/production.py.cfg instance/production.py  <span class="c1"># configure appropriately</span>
+$ poetry install <span class="c1"># install the application</span>
+$ <span class="nb">export</span> <span class="nv">STATS_CONFIG</span><span class="o">=</span>production.py
+$ <span class="nv">FLASK_APP</span><span class="o">=</span>runserver.py poetry run flask db_create <span class="c1"># database creation</span>
+$ <span class="nv">FLASK_APP</span><span class="o">=</span>runserver.py poetry run flask db_init <span class="c1"># database initialization</span>
+
+$ <span class="nv">FLASK_APP</span><span class="o">=</span>runserver.py <span class="nv">FLASK_ENV</span><span class="o">=</span>development poetry run flask run
+</pre></div>
+</div>
+<p>For production you should use <a class="reference external" href="https://gunicorn.org">Gunicorn</a> or <code class="docutils literal notranslate"><span class="pre">mod_wsgi</span></code>.
+Please read the <a class="reference internal" href="#service-management"><span class="std std-ref">Service management</span></a> section.</p>
+<p>Check the version:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ curl http://127.0.0.1:5000/about.json
+<span class="o">{</span>
+  <span class="s2">&quot;api_v1_root&quot;</span>: <span class="s2">&quot;/api/v1/&quot;</span>,
+  <span class="s2">&quot;version&quot;</span>: <span class="s2">&quot;v0.1.9 - 05abfe1&quot;</span>,
+  <span class="s2">&quot;version_url&quot;</span>: <span class="s2">&quot;https://github.com/monarc-project/stats-service/commits/05abfe1&quot;</span>
+<span class="o">}</span>
+</pre></div>
+</div>
+<p>Install with a script:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ curl -sSL https://raw.githubusercontent.com/monarc-project/stats-service/master/contrib/install.sh <span class="p">|</span> bash
+</pre></div>
+</div>
+</div>
+<div class="section" id="to-heroku">
+<h3><a class="toc-backref" href="#id4">To Heroku</a><a class="headerlink" href="#to-heroku" title="Permalink to this headline">¶</a></h3>
+<p>You can use this button:</p>
+<a class="reference external image-reference" href="https://heroku.com/deploy?template=https://github.com/monarc-project/stats-service"><img alt="Documentation Status" src="https://www.herokucdn.com/deploy/button.png" /></a>
+<p>or via command line:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ git clone https://github.com/monarc-project/stats-service
+$ <span class="nb">cd</span> stats-service/
+$ heroku create --region eu &lt;name-of-your-instance&gt;
+$ heroku addons:add heroku-postgresql:hobby-dev
+$ heroku buildpacks:add --index <span class="m">1</span> heroku/python
+$ heroku buildpacks:add --index <span class="m">2</span> https://github.com/heroku/heroku-buildpack-nodejs
+$ heroku config:set <span class="nv">HEROKU</span><span class="o">=</span><span class="m">1</span>
+$ heroku config:set <span class="nv">INSTANCE_URL</span><span class="o">=</span>https://&lt;name-of-your-instance&gt;.herokuapp.com
+$ heroku config:set <span class="nv">FLASK_APP</span><span class="o">=</span><span class="s1">&#39;runserver.py&#39;</span>
+$ heroku config:set <span class="nv">FLASK_ENV</span><span class="o">=</span><span class="s1">&#39;development&#39;</span>
+$ git push heroku master
+</pre></div>
+</div>
+<p>Create a new client:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>heroku run flask client_create --name &lt;name-of-the-client&gt; --role admin
+</pre></div>
+</div>
+<p>All commands (<a class="reference internal" href="command-line-interface.html#cli"><span class="std std-ref">Command Line Interface</span></a>) are available. Just prefix with <code class="docutils literal notranslate"><span class="pre">heroku</span> <span class="pre">run</span></code>.</p>
+</div>
+<div class="section" id="from-the-python-package-index">
+<h3><a class="toc-backref" href="#id5">From the Python Package Index</a><a class="headerlink" href="#from-the-python-package-index" title="Permalink to this headline">¶</a></h3>
+<p>If you use this method not all functionalities will be working, for the moment.</p>
+<a class="reference external image-reference" href="https://pypi.org/project/statsservice"><img alt="PyPi version" src="https://img.shields.io/pypi/v/statsservice.svg?style=flat-square" /></a>
+<p>MONARC Stats service is available on <a class="reference external" href="https://pypi.org/project/statsservice">PyPI</a>.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ pipx install statsservice
+$ monarc-stats-service
+ * Serving Flask app <span class="s2">&quot;statsservice.bootstrap&quot;</span> <span class="o">(</span>lazy loading<span class="o">)</span>
+ * Environment: production
+ * Debug mode: off
+ * Running on http://127.0.0.1:5000/ <span class="o">(</span>Press CTRL+C to quit<span class="o">)</span>
+</pre></div>
+</div>
+<p>If you want to use a custom configuration file:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ curl https://raw.githubusercontent.com/monarc-project/stats-service/master/instance/production.py.cfg -o production.py
+$ <span class="nb">export</span> <span class="nv">STATS_CONFIG</span><span class="o">=</span>~/production.py
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="service-management">
+<span id="id1"></span><h2>Service management<a class="headerlink" href="#service-management" title="Permalink to this headline">¶</a></h2>
+<p>Several solutions are available:</p>
+<div class="contents local topic" id="id2">
+<ul class="simple">
+<li><p><a class="reference internal" href="#daemon" id="id6">Daemon</a></p></li>
+<li><p><a class="reference internal" href="#mod-wsgi" id="id7">mod_wsgi</a></p></li>
+</ul>
+</div>
+<div class="section" id="daemon">
+<h3><a class="toc-backref" href="#id6">Daemon</a><a class="headerlink" href="#daemon" title="Permalink to this headline">¶</a></h3>
+<p>Whichever way you installed the service, you can choose to use systemd to start
+it. Simply create a file <code class="docutils literal notranslate"><span class="pre">/etc/systemd/system/statsservice.service</span></code> with the
+following contents:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[Unit]</span>
+<span class="na">Description</span><span class="o">=</span><span class="s">MONARC Stats service</span>
+<span class="na">After</span><span class="o">=</span><span class="s">network.target</span>
+
+<span class="k">[Service]</span>
+<span class="na">User</span><span class="o">=</span><span class="s">monarc</span>
+<span class="na">Environment</span><span class="o">=</span><span class="s">FLASK_APP=runserver.py</span>
+<span class="na">Environment</span><span class="o">=</span><span class="s">FLASK_ENV=production</span>
+<span class="na">Environment</span><span class="o">=</span><span class="s">STATS_CONFIG=production.py</span>
+<span class="na">WorkingDirectory</span><span class="o">=</span><span class="s">/home/monarc/stats-service</span>
+<span class="na">ExecStart</span><span class="o">=</span><span class="s">/home/monarc/.poetry/bin/poetry run flask run</span>
+<span class="na">Restart</span><span class="o">=</span><span class="s">always</span>
+
+<span class="k">[Install]</span>
+<span class="na">WantedBy</span><span class="o">=</span><span class="s">multi-user.target</span>
+</pre></div>
+</div>
+<p>You may need to adjust it a bit (for example if you want to use Gunicorn). After adding
+this file to your system, you can start the new systemd service with these commands:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ sudo systemctl daemon-reload
+$ sudo systemctl <span class="nb">enable</span> statsservice.service
+$ sudo systemctl start statsservice
+$ systemctl status statsservice.service
+</pre></div>
+</div>
+<div class="section" id="accessing-logs">
+<h4>Accessing logs<a class="headerlink" href="#accessing-logs" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ journalctl -u statsservice
+</pre></div>
+</div>
+<p>to follow the logs:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ journalctl -u statsservice -f
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="mod-wsgi">
+<h3><a class="toc-backref" href="#id7">mod_wsgi</a><a class="headerlink" href="#mod-wsgi" title="Permalink to this headline">¶</a></h3>
+<p>Create a file <code class="docutils literal notranslate"><span class="pre">/etc/apache2/sites-available/statsservice.monarc.lu.conf</span></code>
+with a content similar to:</p>
+<div class="highlight-apacheconf notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;VirtualHost</span> <span class="s">*:80</span><span class="nt">&gt;</span>
+        <span class="nb">ServerName</span> stats.monarc.lu
+
+        <span class="nb">ServerAdmin</span> webmaster@localhost
+        <span class="nb">DocumentRoot</span> <span class="sx">/home/monarc/stats-service</span>
+
+        <span class="nb">WSGIDaemonProcess</span> statsservice <span class="k">user</span>=www-data <span class="k">group</span>=www-data threads=5 python-home=/home/monarc/.local/share/virtualenvs/statsservice-_tH16p6s/ python-path=/home/monarc/stats-service
+        <span class="nb">WSGIScriptAlias</span> / <span class="sx">/home/monarc/stats-service/webserver.wsgi</span>
+
+        <span class="nt">&lt;Directory</span> <span class="s">/home/monarc/stats-service</span><span class="nt">&gt;</span>
+            <span class="nb">WSGIApplicationGroup</span> %{GLOBAL}
+            <span class="nb">WSGIProcessGroup</span> statsservice
+            <span class="nb">WSGIPassAuthorization</span> <span class="k">On</span>
+
+            <span class="nb">Options</span> Indexes FollowSymLinks
+            <span class="nb">Require</span> <span class="k">all</span> granted
+        <span class="nt">&lt;/Directory&gt;</span>
+
+        <span class="nb">SetEnv</span> STATS_CONFIG production.py
+
+
+        <span class="c"># Available loglevels: trace8, ..., trace1, debug, info, notice, warn,</span>
+        <span class="c"># error, crit, alert, emerg.</span>
+        <span class="c"># It is also possible to configure the loglevel for particular</span>
+        <span class="c"># modules, e.g.</span>
+        <span class="c">#LogLevel info ssl:warn</span>
+        <span class="nb">CustomLog</span> <span class="sx">/var/log/apache2/stats-service/access.log</span> combined
+        <span class="nb">ErrorLog</span> <span class="sx">/var/log/apache2/stats-service/error.log</span>
+
+        <span class="c"># For most configuration files from conf-available/, which are</span>
+        <span class="c"># enabled or disabled at a global level, it is possible to</span>
+        <span class="c"># include a line for only one particular virtual host. For example the</span>
+        <span class="c"># following line enables the CGI configuration for this host only</span>
+        <span class="c"># after it has been globally disabled with &quot;a2disconf&quot;.</span>
+        <span class="c">#Include conf-available/serve-cgi-bin.conf</span>
+<span class="nt">&lt;/VirtualHost&gt;</span>
+</pre></div>
+</div>
+<p>And a file:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ cat stats-service/webserver.wsgi
+<span class="c1">#! /usr/bin/env python</span>
+
+<span class="nv">python_home</span> <span class="o">=</span> <span class="s1">&#39;/home/monarc/.local/share/virtualenvs/statsservice-_tH16p6s&#39;</span>
+
+<span class="nv">activate_this</span> <span class="o">=</span> python_home + <span class="s1">&#39;/bin/activate_this.py&#39;</span>
+with open<span class="o">(</span>activate_this<span class="o">)</span> as file_:
+    exec<span class="o">(</span>file_.read<span class="o">()</span>, dict<span class="o">(</span><span class="nv">__file__</span><span class="o">=</span>activate_this<span class="o">))</span>
+
+from runserver import application
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="integration-with-monarc-and-collect-of-the-stats">
+<h2>Integration with MONARC and collect of the stats<a class="headerlink" href="#integration-with-monarc-and-collect-of-the-stats" title="Permalink to this headline">¶</a></h2>
+<p>The technical guide of MONARC provides information about the
+<a class="reference external" href="https://www.monarc.lu/documentation/technical-guide/#stats-service">integration of Stats Service with MONARC</a>.
+Especially related to the configuration of the cron job (which triggers a PHP
+command) on the MONARC Front Office. The cron job is responsible for collecting
+local statistics and sending those statistics to the Stats Service.</p>
+</div>
+</div>
+
+
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="index.html" title="previous page">Presentation</a>
+    <a class='right-next' id="next-link" href="updates.html" title="next page">Updates</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Cédric Bonhomme <cedric@cedricbonhomme.org><br/>
+        
+            &copy; Copyright SECURITYMADEIN.LU &lt;info@cases.lu&gt;.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>
