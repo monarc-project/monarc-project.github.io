@@ -64,12 +64,12 @@ Technical details about the VM:
       SSH login (Ubuntu credentials): monarc:password
     
     Database:
-      Mysql root login: root:7e4195ac73cd3be6b08f84bfcd8df22e6fc844c719d9a632f28bd6d29d95c700
-      Mysql MONARC login: sqlmonarcuser:ac9a093eaea88120909374679aa625355077e1888274b36180cd66bf8019d842
+      Mysql root login: root:a77f8b5d8071563459dd26f775ea5627925ff1333c0a0d9a0be1ba8fd78be928
+      Mysql MONARC login: sqlmonarcuser:754c5f7ffa714cca51291ec1181e9cec883d1b1caa6d8b991e40c74d59c0410a
     
     Image integrity check:
-      sha512sum: 4de7e6631cd8a753313eb59581f20618626c93f46785e95744bd5727dab8de70558b8aff52941d25893a6977d051fedceebd7bea970e4936640f938341b84c93
-      sha1sum: e3b0631dee78a9d0d7f2e50fff80064104047edf
+      sha512sum: 306ba5a3a113d84633380bfab740fe73132e257e50d2a549427f59bf3ccba57ac4e76701f3c196334517b1610acca46ea81d2091e25ed2f6933b72027cf3c4ce
+      sha1sum: 6109c1b8e697704c7a46a9467531713cd6aaec51
      
     MONARC is available on port 80.
 
