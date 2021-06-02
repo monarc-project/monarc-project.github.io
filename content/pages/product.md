@@ -94,7 +94,7 @@ user and risk analysis.
 
 ### User management
 User management is done by the administrators of each instance (there
-can be mutliple administrators per instance). So if a user creates a
+can be multiple administrators per instance). So if a user creates a
 risk analysis to perform a risk assessment, she or he have read/write
 permissions for that analysis only. No user sees or can access the risk
 analysis from any other users by default. It is the work of the instance
