@@ -117,7 +117,6 @@
 
     </div>
 </nav><h4>Docs by version</h4>
-
 <h5>Releases</h5>
 <ul>
   <li><a href="../v0.4.0/installation.html">v0.4.0</a></li>
@@ -135,7 +134,6 @@
   <li><a href="installation.html">master</a></li>
   <li><a href="../mosp-lookup/installation.html">mosp-lookup</a></li>
 </ul>
-
 </div>
 
 
@@ -563,7 +561,7 @@ with a content similar to:</p>
         <span class="nb">ServerAdmin</span> webmaster@localhost
         <span class="nb">DocumentRoot</span> <span class="sx">/home/monarc/stats-service</span>
 
-        <span class="nb">WSGIDaemonProcess</span> statsservice <span class="k">user</span>=www-data <span class="k">group</span>=www-data threads=5 python-home=/home/monarc/.local/share/virtualenvs/statsservice-_tH16p6s/ python-path=/home/monarc/stats-service
+        <span class="nb">WSGIDaemonProcess</span> statsservice <span class="k">user</span>=www-data <span class="k">group</span>=www-data threads=5 python-home=/home/ansible/.cache/pypoetry/virtualenvs/statsservice-KKeyDYL6-py3.8 python-path=/var/lib/monarc/stats-service/
         <span class="nb">WSGIScriptAlias</span> / <span class="sx">/home/monarc/stats-service/webserver.wsgi</span>
 
         <span class="nt">&lt;Directory</span> <span class="s">/home/monarc/stats-service</span><span class="nt">&gt;</span>
@@ -585,13 +583,6 @@ with a content similar to:</p>
         <span class="c">#LogLevel info ssl:warn</span>
         <span class="nb">CustomLog</span> <span class="sx">/var/log/apache2/stats-service/access.log</span> combined
         <span class="nb">ErrorLog</span> <span class="sx">/var/log/apache2/stats-service/error.log</span>
-
-        <span class="c"># For most configuration files from conf-available/, which are</span>
-        <span class="c"># enabled or disabled at a global level, it is possible to</span>
-        <span class="c"># include a line for only one particular virtual host. For example the</span>
-        <span class="c"># following line enables the CGI configuration for this host only</span>
-        <span class="c"># after it has been globally disabled with &quot;a2disconf&quot;.</span>
-        <span class="c">#Include conf-available/serve-cgi-bin.conf</span>
 <span class="nt">&lt;/VirtualHost&gt;</span>
 </pre></div>
 </div>
@@ -599,7 +590,7 @@ with a content similar to:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ cat stats-service/webserver.wsgi
 <span class="c1">#! /usr/bin/env python</span>
 
-<span class="nv">python_home</span> <span class="o">=</span> <span class="s1">&#39;/home/monarc/.local/share/virtualenvs/statsservice-_tH16p6s&#39;</span>
+<span class="nv">python_home</span> <span class="o">=</span> <span class="s1">&#39;/home/ansible/.cache/pypoetry/virtualenvs/statsservice-KKeyDYL6-py3.8&#39;</span>
 
 <span class="nv">activate_this</span> <span class="o">=</span> python_home + <span class="s1">&#39;/bin/activate_this.py&#39;</span>
 with open<span class="o">(</span>activate_this<span class="o">)</span> as file_:
