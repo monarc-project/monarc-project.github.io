@@ -43,12 +43,12 @@ Login and Password for VirtualBox demo image (format: username:password):
   SSH login (Ubuntu credentials): monarc:password
 
 Database:
-  Mysql root login: root:151bb570c12d6c01817550a5663b0fbf4d9714a7732d55348031e5d5311b7d4a
-  Mysql MONARC login: sqlmonarcuser:6411bef11826d8a4ab64c092bd99ddc79b5b4670085985e6449357f6f526dc31
+  Mysql root login: root:1e1e89e230337021f2ee45380e73c99ce1fdf84f7e3f4c0a612df15d16ec7b7e
+  Mysql MONARC login: sqlmonarcuser:99c6ecc8d3933f0957cf8749fafe9f7f266cfb9eadc7e0a09c5f550c419aafcf
 
 Image integrity check:
-  sha512sum: 5ee03a2b1f8f36118aa4492b6d224bcecdf30c71c7ac6b0abbf551b35067f604cd4e66c2c2ea9373cc74faf33ff5c16d1c66169abf2eeb84b28bd4bb5a61e1fd
-  sha1sum: 7ef34e716044a39641e67fbc1773b5bbe4e6b8d0
+  sha512sum: 9c26930b03076b3b77e7f0ee16cc68dd4f3e069f1277d25159ba00d6ba8b7ecd7574ba73299db907bedf72c29b4880aa45e17d6fa7d78543e133fe698f2d7bfc
+  sha1sum: bc1f8b318b1676f22e22fc148c25c10fda8a97f8
 
 MONARC is available on port 80.
 
