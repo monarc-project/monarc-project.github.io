@@ -1,32 +1,20 @@
-Title: MONARC 2.10.3 released
-Date: 2021-05-12
-Modified: 2021-05-12
+Title: MONARC 2.10.4 released
+Date: 2021-06-24
+Modified: 2021-06-24
 Category: monarc
 Tags: monarc, new-release
-Summary: Release 2.10.3 of MONARC
+Summary: Release 2.10.4 of MONARC
 
-Version 2.10.3 Includes bug-fixes, new features and an enhancement.
+Version 2.10.4 includes bug-fixes.
 
 ### New
 
-- Implement the UI language management
-  ([#318](https://github.com/monarc-project/MonarcAppFO/issues/318))
-- Implementation of the library objects import and assets export from/to MOSP
-  ([#320](https://github.com/monarc-project/MonarcAppFO/issues/320))
-- Possibility to export items from the Knowledge Base
-  ([#321](https://github.com/monarc-project/MonarcAppFO/issues/321))
-- Send MONARC version to Stats Service
-  ([#341](https://github.com/monarc-project/MonarcAppFO/issues/341))
-
-### Fix
-
-- [Front Office] export of measure related to "amvs" stoped working since v2.10.1
-  ([#340](https://github.com/monarc-project/MonarcAppFO/issues/340))
-
-### Enhancement
-
-- Improve the import speed of analyses and instances (*partially done*).
-  ([#248](https://github.com/monarc-project/MonarcAppFO/issues/248))
+- Foreign Key Error by when deactivating information security risks.
+  ([#358](https://github.com/monarc-project/MonarcAppFO/issues/358))
+- Dashboard cartography error for risk lists.
+  ([#359](https://github.com/monarc-project/MonarcAppFO/issues/359))
+- [FrontOffice] Snapshots creation error.
+  ([#362](https://github.com/monarc-project/MonarcAppFO/issues/362))
 
 
 ## Updating
@@ -40,8 +28,7 @@ If you are coming from MONARC 2.9.0 please read
 If you would like to use the new statistics feature then [StatsService](https://github.com/monarc-project/stats-service) has to be setup as well.
 The documentation, architecture and installation instructions of Stats Service can be found [here](https://www.monarc.lu/documentation/stats-service).
 
-You can also download the new virtual machine
-[here](https://github.com/monarc-project/MonarcAppFO/releases/tag/v2.10.3).
+More details and notes are available on [GitHub](https://github.com/monarc-project/MonarcAppFO/releases/tag/v2.10.4).
 
 
 ## MONARC is in your language
@@ -52,7 +39,7 @@ You can now help us to make MONARC available in your language via [our platform]
 ## <a href="#vm-image">The VirtualBox demo image</a>
 
 Download the OVA image of this release
-[here](https://my.monarc.lu/static/vm/MONARC_v2_10_3.ova).
+[here](https://my.monarc.lu/static/vm/MONARC_v2_10_4.ova).
 Technical details about the VM:
 
 
@@ -64,12 +51,12 @@ Technical details about the VM:
       SSH login (Ubuntu credentials): monarc:password
     
     Database:
-      Mysql root login: root:ba61f1703dd9978bdd28983ffcbe7b588456a4cd9d3feb842d139e7d482d813d
-      Mysql MONARC login: sqlmonarcuser:2e96f8809756702e625ae2ae085ffe7934272cb4e2c995283d6ed7e16dc3f6de
+      Mysql root login: root:e17e0f1693af87db1b56f034cd9da0177bfc9f94e434be7c67db4132d4d093b6
+      Mysql MONARC login: sqlmonarcuser:417ec2fa52648ad2c11aecbc008b7f779acbb1772ef49d77e13aac4e9c3c5178
     
     Image integrity check:
-      sha512sum: 953764ae65db51c82a6966f8bb3de80897806318b30dacfc77ce6b6463d5dc9860ca553f3c1c73e80a2592933c0605668d7a6f6736967b882439c5c932f1ec44got
-      sha1sum: aeec03eaba7a9df98bb7a2c218cc7051d8e0fe83
+      sha512sum: ae3f2533411e3d493e99884cd77b759a2d2569fe9cc5b7d3f9af3e8259dbeb067a36334f39f69759457981ed8a75b35eb6529f456730d4c9081a0abf08c4399e
+      sha1sum: 7feb5208e842baca20391e7eb1c5c793e1a67910
      
     MONARC is available on port 80.
 
