@@ -1,5 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>MONARC</title><link href="https://www.monarc.lu/" rel="alternate"></link><link href="https://www.monarc.lu/feeds/all.atom.xml" rel="self"></link><id>https://www.monarc.lu/</id><updated>2021-05-12T00:00:00+02:00</updated><entry><title>MONARC 2.10.3 released</title><link href="https://www.monarc.lu/news/2021/05/12/monarc-2103-released/" rel="alternate"></link><published>2021-05-12T00:00:00+02:00</published><updated>2021-05-12T00:00:00+02:00</updated><author><name>SECURITYMADEIN.LU g.i.e.</name></author><id>tag:www.monarc.lu,2021-05-12:/news/2021/05/12/monarc-2103-released/</id><summary type="html">&lt;p&gt;Release 2.10.3 of &lt;span class="caps"&gt;MONARC&lt;/span&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;Version 2.10.3 Includes bug-fixes, new features and an&amp;nbsp;enhancement.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>MONARC</title><link href="https://www.monarc.lu/" rel="alternate"></link><link href="https://www.monarc.lu/feeds/all.atom.xml" rel="self"></link><id>https://www.monarc.lu/</id><updated>2021-06-24T00:00:00+02:00</updated><entry><title>MONARC 2.10.4 released</title><link href="https://www.monarc.lu/news/2021/06/24/monarc-2104-released/" rel="alternate"></link><published>2021-06-24T00:00:00+02:00</published><updated>2021-06-24T00:00:00+02:00</updated><author><name>SECURITYMADEIN.LU g.i.e.</name></author><id>tag:www.monarc.lu,2021-06-24:/news/2021/06/24/monarc-2104-released/</id><summary type="html">&lt;p&gt;Release 2.10.4 of &lt;span class="caps"&gt;MONARC&lt;/span&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;Version 2.10.4 includes&amp;nbsp;bug-fixes.&lt;/p&gt;
+&lt;h3 id="new"&gt;New&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Foreign Key Error by when deactivating information security risks.
+  (&lt;a href="https://github.com/monarc-project/MonarcAppFO/issues/358"&gt;#358&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Dashboard cartography error for risk lists.
+  (&lt;a href="https://github.com/monarc-project/MonarcAppFO/issues/359"&gt;#359&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;[FrontOffice] Snapshots creation error.
+  (&lt;a href="https://github.com/monarc-project/MonarcAppFO/issues/362"&gt;#362&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="updating"&gt;Updating&lt;/h2&gt;
+&lt;p&gt;To update, please follow the 
+&lt;a href="http://monarc.lu/documentation/technical-guide/#monarc-update"&gt;guide&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you are coming from &lt;span class="caps"&gt;MONARC&lt;/span&gt; 2.9.0 please read
+&lt;a href="/news/2019/11/25/monarc-291-released/#updating"&gt;this&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you would like to use the new statistics feature then &lt;a href="https://github.com/monarc-project/stats-service"&gt;StatsService&lt;/a&gt; has to be setup as well.
+The documentation, architecture and installation instructions of Stats Service can be found &lt;a href="https://www.monarc.lu/documentation/stats-service"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;More details and notes are available on &lt;a href="https://github.com/monarc-project/MonarcAppFO/releases/tag/v2.10.4"&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="monarc-is-in-your-language"&gt;&lt;span class="caps"&gt;MONARC&lt;/span&gt; is in your&amp;nbsp;language&lt;/h2&gt;
+&lt;p&gt;You can now help us to make &lt;span class="caps"&gt;MONARC&lt;/span&gt; available in your language via &lt;a href="https://translate.monarc.lu/projects/monarc/"&gt;our platform&lt;/a&gt; powered by &lt;a href="https://weblate.org"&gt;Weblate&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="the-virtualbox-demo-image"&gt;&lt;a href="#vm-image"&gt;The VirtualBox demo&amp;nbsp;image&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Download the &lt;span class="caps"&gt;OVA&lt;/span&gt; image of this release
+&lt;a href="https://my.monarc.lu/static/vm/MONARC_v2_10_4.ova"&gt;here&lt;/a&gt;.
+Technical details about the &lt;span class="caps"&gt;VM&lt;/span&gt;:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;Login and Password for MONARC App (format: username:password):
+  MONARC application: admin@admin.localhost:admin
+
+Login and Password for VirtualBox demo image (format: username:password):
+  SSH login (Ubuntu credentials): monarc:password
+
+Database:
+  Mysql root login: root:e17e0f1693af87db1b56f034cd9da0177bfc9f94e434be7c67db4132d4d093b6
+  Mysql MONARC login: sqlmonarcuser:417ec2fa52648ad2c11aecbc008b7f779acbb1772ef49d77e13aac4e9c3c5178
+
+Image integrity check:
+  sha512sum: ae3f2533411e3d493e99884cd77b759a2d2569fe9cc5b7d3f9af3e8259dbeb067a36334f39f69759457981ed8a75b35eb6529f456730d4c9081a0abf08c4399e
+  sha1sum: 7feb5208e842baca20391e7eb1c5c793e1a67910
+
+MONARC is available on port 80.
+
+MONARC Stats Service is available on port 5005.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="monarc"></category><category term="monarc"></category><category term="new-release"></category></entry><entry><title>MONARC 2.10.3 released</title><link href="https://www.monarc.lu/news/2021/05/12/monarc-2103-released/" rel="alternate"></link><published>2021-05-12T00:00:00+02:00</published><updated>2021-05-12T00:00:00+02:00</updated><author><name>SECURITYMADEIN.LU g.i.e.</name></author><id>tag:www.monarc.lu,2021-05-12:/news/2021/05/12/monarc-2103-released/</id><summary type="html">&lt;p&gt;Release 2.10.3 of &lt;span class="caps"&gt;MONARC&lt;/span&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;Version 2.10.3 Includes bug-fixes, new features and an&amp;nbsp;enhancement.&lt;/p&gt;
 &lt;h3 id="new"&gt;New&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Implement the &lt;span class="caps"&gt;UI&lt;/span&gt; language management
