@@ -12,7 +12,7 @@ table {
 
 |&nbsp;|||
 |:--|--|--|
-|**Date and time**|| To be announced.|
+|**Date and time**|| September 29th 2021 - 9h30 - 16h00 |
 |&nbsp;|  ||
 |**Location**|&nbsp;&nbsp;&nbsp;|Online / [BigBlueButton](https://bigbluebutton.org/) platform of SECURITYMADEIN.LU|
 |&nbsp;|  |Check your network connection to BigBlueButton [here](https://test.bigbluebutton.org/)  |
@@ -25,7 +25,7 @@ table {
 |&nbsp;|  |  |
 |**Level required**||Basic|
 |&nbsp;|  |  |
-|**Language**|| To be announced. |
+|**Language**|| English |
 |&nbsp;|  |  |
 |**Extra requirements**||**A laptop is required**|
 |&nbsp;|  |  |
@@ -35,7 +35,7 @@ table {
 |&nbsp;|  |  |
 |**Registration** |   ||
 
-<script type="text/javascript" src="https://www.xing-events.com/resources/js/amiandoExport.js"></script><iframe title="Ticket shop" src="https://WEXNEQM-modules.xing-events.com/WEXNEQM.html?viewType=iframe&distributionChannel=CHANNEL_IFRAME&language=en&useDefaults=false&resizeIFrame=true" frameborder="0" width="650px" id="_amiandoIFrame4507735"><p>This page requires frame support. Please use a frame compatible browser to see the ticket sales module.</p><p> Try out the <a href="https://en.xing-events.com/">online event registration system</a> from XING Events.</p></iframe>More participants thanks to <a href="https://en.xing-events.com?viralRefId=WEXNEQM&utm_campaign=ev-WEXNEQM&utm_medium=viral&utm_source=EventWebsite&utm_content=TextLinkBottom&utm_term=text-link" target="_blank" alt="XING Events" title="XING Events">online event management solutions</a> from XING Events.
+<script type="text/javascript" src="https://www.xing-events.com/resources/js/amiandoExport.js"></script><iframe title="Ticket shop" src="https://TJMJZND.xing-events.com/TJMJZND.html?viewType=iframe&distributionChannel=CHANNEL_IFRAME&language=en&resizeIFrame=true" frameborder="0" width="650px" id="_amiandoIFrame4747701"><p>This page requires frame support. Please use a frame compatible browser to see the ticket sales module.</p></iframe>
 
 ### Past Trainings
 
