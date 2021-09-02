@@ -7,7 +7,7 @@ Summary: Release 2.10.4 of MONARC
 
 Version 2.10.4 includes bug-fixes.
 
-### New
+### Fix
 
 - Foreign Key Error by when deactivating information security risks.
   ([#358](https://github.com/monarc-project/MonarcAppFO/issues/358))
