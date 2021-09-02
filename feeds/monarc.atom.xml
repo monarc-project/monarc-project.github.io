@@ -1,6 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>MONARC - monarc</title><link href="https://www.monarc.lu/" rel="alternate"></link><link href="https://www.monarc.lu/feeds/monarc.atom.xml" rel="self"></link><id>https://www.monarc.lu/</id><updated>2021-06-24T00:00:00+02:00</updated><entry><title>MONARC 2.10.4 released</title><link href="https://www.monarc.lu/news/2021/06/24/monarc-2104-released/" rel="alternate"></link><published>2021-06-24T00:00:00+02:00</published><updated>2021-06-24T00:00:00+02:00</updated><author><name>SECURITYMADEIN.LU g.i.e.</name></author><id>tag:www.monarc.lu,2021-06-24:/news/2021/06/24/monarc-2104-released/</id><summary type="html">&lt;p&gt;Release 2.10.4 of &lt;span class="caps"&gt;MONARC&lt;/span&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;Version 2.10.4 includes&amp;nbsp;bug-fixes.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>MONARC - monarc</title><link href="https://www.monarc.lu/" rel="alternate"></link><link href="https://www.monarc.lu/feeds/monarc.atom.xml" rel="self"></link><id>https://www.monarc.lu/</id><updated>2021-09-02T00:00:00+02:00</updated><entry><title>MONARC 2.11.0 released</title><link href="https://www.monarc.lu/news/2021/09/02/monarc-2110-released/" rel="alternate"></link><published>2021-09-02T00:00:00+02:00</published><updated>2021-09-02T00:00:00+02:00</updated><author><name>SECURITYMADEIN.LU g.i.e.</name></author><id>tag:www.monarc.lu,2021-09-02:/news/2021/09/02/monarc-2110-released/</id><summary type="html">&lt;p&gt;Release 2.11.0 of &lt;span class="caps"&gt;MONARC&lt;/span&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;Version 2.11.0 includes a major new feature and various&amp;nbsp;bug-fixes.&lt;/p&gt;
 &lt;h3 id="new"&gt;New&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;having the possibility to define custom scales for operational risks
+  (&lt;a href="https://github.com/monarc-project/MonarcAppFO/issues/353"&gt;#353&lt;/a&gt;);&lt;/li&gt;
+&lt;li&gt;introduction of the risk context and the risk owner
+  (&lt;a href="https://github.com/monarc-project/MonarcAppFO/issues/21"&gt;#21&lt;/a&gt;,
+  &lt;a href="https://github.com/monarc-project/MonarcAppFO/issues/186"&gt;#186&lt;/a&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img alt="Custom scales for operational risks" src="/assets/images/posts/evaluation-scales-custom-op-risks.png#center" title="Custom scales for operational risks"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Example of custom operational risk" src="/assets/images/posts/custom-op-risks-example.png#center" title="Example of custom operational risk"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Context and owner of risk" src="/assets/images/posts/context-and-owner.png#center" title="Context and owner of risk"&gt;&lt;/p&gt;
+&lt;h3 id="fix"&gt;Fix&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;update-all.sh: Could not read from remote repository
+  (&lt;a href="https://github.com/monarc-project/MonarcAppFO/issues/365"&gt;#365&lt;/a&gt;);&lt;/li&gt;
+&lt;li&gt;some files in script do not have the correct permissions
+  (&lt;a href="https://github.com/monarc-project/MonarcAppFO/issues/364"&gt;#364&lt;/a&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="updating"&gt;Updating&lt;/h2&gt;
+&lt;p&gt;To update, please follow the 
+&lt;a href="http://monarc.lu/documentation/technical-guide/#monarc-update"&gt;guide&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you would like to use the new statistics feature then
+&lt;a href="https://github.com/monarc-project/stats-service"&gt;StatsService&lt;/a&gt; has to be setup
+as well.
+The documentation, architecture and installation instructions of Stats Service
+can be found &lt;a href="https://www.monarc.lu/documentation/stats-service"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;More details and notes are available on
+&lt;a href="https://github.com/monarc-project/MonarcAppFO/releases/tag/v2.11.0"&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="the-virtualbox-demo-image"&gt;&lt;a href="#vm-image"&gt;The VirtualBox demo&amp;nbsp;image&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Download the &lt;span class="caps"&gt;OVA&lt;/span&gt; image of this release
+&lt;a href="https://my.monarc.lu/static/vm/MONARC_v2.11.0_65bed51382debaf4f87c9774618cb75df3d6044f.ova"&gt;here&lt;/a&gt;.
+Technical details about the &lt;span class="caps"&gt;VM&lt;/span&gt;:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;Login and Password for MONARC App (format: username:password):
+  MONARC application: admin@admin.localhost:admin
+
+Login and Password for VirtualBox demo image (format: username:password):
+  SSH login (Ubuntu credentials): monarc:password
+
+Database:
+  Mysql root login: root:a7daab4243ed998c7e61dc6e4aa48f64dda354021778379ec11e75430534693e
+  Mysql MONARC login: sqlmonarcuser:8c125ed24f4cf1fe50ec8ac4450c81c98b65475677956242bb9385e97fa4027d
+
+Image integrity check:
+  sha512sum: a39110feac44558acf0d018d14978040f970cc306554ab3c02ad1af1bde5a3a94a5f7da3e5cd20d9ee2146ed02cbc7f69a7a9533766c173d989f02ec4d523290
+  sha1sum: a304f8301e5c0116f8c94d6a143eb48b189f03fa
+
+MONARC is available on port 80.
+
+MONARC Stats Service is available on port 5005.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="monarc"></category><category term="monarc"></category><category term="new-release"></category></entry><entry><title>MONARC 2.10.4 released</title><link href="https://www.monarc.lu/news/2021/06/24/monarc-2104-released/" rel="alternate"></link><published>2021-06-24T00:00:00+02:00</published><updated>2021-06-24T00:00:00+02:00</updated><author><name>SECURITYMADEIN.LU g.i.e.</name></author><id>tag:www.monarc.lu,2021-06-24:/news/2021/06/24/monarc-2104-released/</id><summary type="html">&lt;p&gt;Release 2.10.4 of &lt;span class="caps"&gt;MONARC&lt;/span&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;Version 2.10.4 includes&amp;nbsp;bug-fixes.&lt;/p&gt;
+&lt;h3 id="fix"&gt;Fix&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Foreign Key Error by when deactivating information security risks.
   (&lt;a href="https://github.com/monarc-project/MonarcAppFO/issues/358"&gt;#358&lt;/a&gt;)&lt;/li&gt;

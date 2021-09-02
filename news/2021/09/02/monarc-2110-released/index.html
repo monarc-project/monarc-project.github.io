@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
 <head>
-    <title>MONARC 2.2.0 released - MONARC</title>
+    <title>MONARC 2.11.0 released - MONARC</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -10,18 +10,18 @@
 
     <link href="../../../../../assets/images/monarc-logo.png" rel="icon">
 
-<link rel="canonical" href="../../../../../news/2018/02/01/monarc-220-released/">
+<link rel="canonical" href="../../../../../news/2021/09/02/monarc-2110-released/">
 
         <meta name="author" content="SECURITYMADEIN.LU g.i.e." />
         <meta name="keywords" content="monarc,new-release" />
-        <meta name="description" content="Release 2.2.0 of MONARC" />
+        <meta name="description" content="Release 2.11.0 of MONARC" />
 
         <meta property="og:site_name" content="MONARC" />
         <meta property="og:type" content="article"/>
-        <meta property="og:title" content="MONARC 2.2.0 released"/>
-        <meta property="og:url" content="../../../../../news/2018/02/01/monarc-220-released/"/>
-        <meta property="og:description" content="Release 2.2.0 of MONARC"/>
-        <meta property="article:published_time" content="2018-02-01" />
+        <meta property="og:title" content="MONARC 2.11.0 released"/>
+        <meta property="og:url" content="../../../../../news/2021/09/02/monarc-2110-released/"/>
+        <meta property="og:description" content="Release 2.11.0 of MONARC"/>
+        <meta property="article:published_time" content="2021-09-02" />
             <meta property="article:section" content="monarc" />
             <meta property="article:tag" content="monarc" />
             <meta property="article:tag" content="new-release" />
@@ -88,10 +88,10 @@ MONARC            </a>
         <article>
             <header class="page-header">
                 <h1>
-                    <a href="../../../../../news/2018/02/01/monarc-220-released/"
+                    <a href="../../../../../news/2021/09/02/monarc-2110-released/"
                        rel="bookmark"
-                       title="Permalink to MONARC 2.2.0 released">
-                        <span class="caps">MONARC</span> 2.2.0&nbsp;released
+                       title="Permalink to MONARC 2.11.0 released">
+                        <span class="caps">MONARC</span> 2.11.0&nbsp;released
                     </a>
                 </h1>
             </header>
@@ -101,7 +101,7 @@ MONARC            </a>
 <footer class="post-info">
     <span class="label label-default">Date</span>
     <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2018-02-01T00:00:00+01:00"> Thu 01 February 2018</time>
+        <i class="fa fa-calendar"></i><time datetime="2021-09-02T00:00:00+02:00"> Thu 02 September 2021</time>
     </span>
 
 
@@ -115,39 +115,57 @@ MONARC            </a>
     
 </footer><!-- /.post-info -->                    </div>
                 </div>
-                <p>Version 2.2.0 of <span class="caps">MONARC</span> has been released including multiple bug fixes and&nbsp;enhancements.</p>
+                <p>Version 2.11.0 includes a major new feature and various&nbsp;bug-fixes.</p>
 <h3 id="new">New</h3>
 <ul>
-<li>generate deliverable on 4th step of method&nbsp;(#51)</li>
-<li>export all of risk analysis data&nbsp;(#28)</li>
+<li>having the possibility to define custom scales for operational risks
+  (<a href="https://github.com/monarc-project/MonarcAppFO/issues/353">#353</a>);</li>
+<li>introduction of the risk context and the risk owner
+  (<a href="https://github.com/monarc-project/MonarcAppFO/issues/21">#21</a>,
+  <a href="https://github.com/monarc-project/MonarcAppFO/issues/186">#186</a>).</li>
 </ul>
-<h3 id="enhancement">Enhancement</h3>
-<ul>
-<li>option of export tables in a csv file&nbsp;(#52)</li>
-<li>show version <span class="caps">MONARC</span> on left panel&nbsp;(#50)</li>
-<li>ensures new users (of the back office) are created with a level of
-  permissions&nbsp;(#48)</li>
-<li>the back office displays the appropriate view based on the user permissions&nbsp;(#48)</li>
-<li>set the selected attribute for the search filter of models in the back&nbsp;office</li>
-</ul>
+<p><img alt="Custom scales for operational risks" src="/assets/images/posts/evaluation-scales-custom-op-risks.png#center" title="Custom scales for operational risks"></p>
+<p><img alt="Example of custom operational risk" src="/assets/images/posts/custom-op-risks-example.png#center" title="Example of custom operational risk"></p>
+<p><img alt="Context and owner of risk" src="/assets/images/posts/context-and-owner.png#center" title="Context and owner of risk"></p>
 <h3 id="fix">Fix</h3>
 <ul>
-<li>user operational risk - tag&nbsp;(#55)</li>
-<li>operational risk - tag&nbsp;(#54)</li>
-<li>detach a tag from an asset&nbsp;(#53)</li>
-<li>operational risk importation&nbsp;(#64)</li>
-<li>various minor fixes in the back office (management of&nbsp;models)</li>
+<li>update-all.sh: Could not read from remote repository
+  (<a href="https://github.com/monarc-project/MonarcAppFO/issues/365">#365</a>);</li>
+<li>some files in script do not have the correct permissions
+  (<a href="https://github.com/monarc-project/MonarcAppFO/issues/364">#364</a>).</li>
 </ul>
 <h2 id="updating">Updating</h2>
-<p>To update, check out our
-<a href="http://monarc.lu/technical-guide/#monarc-update">update</a>&nbsp;instructions.</p>
-<p>This release includes a consequent changes in the database of the back office
-and in the synchronization process of the deliveries templates (between the
-back office and the different clients instances). If you are using a back
-office, be careful to also update your ansible playbook
-(<a href="http://monarc.lu/technical-guide/#update-monarc-when-connected-to-a-back-office">instructions</a>).</p>
-<p>You can also download the new virtual machine
-<a href="https://github.com/monarc-project/MonarcAppFO/releases/tag/v2.2.0">here</a>.</p>
+<p>To update, please follow the 
+<a href="http://monarc.lu/documentation/technical-guide/#monarc-update">guide</a>.</p>
+<p>If you would like to use the new statistics feature then
+<a href="https://github.com/monarc-project/stats-service">StatsService</a> has to be setup
+as well.
+The documentation, architecture and installation instructions of Stats Service
+can be found <a href="https://www.monarc.lu/documentation/stats-service">here</a>.</p>
+<p>More details and notes are available on
+<a href="https://github.com/monarc-project/MonarcAppFO/releases/tag/v2.11.0">GitHub</a>.</p>
+<h2 id="the-virtualbox-demo-image"><a href="#vm-image">The VirtualBox demo&nbsp;image</a></h2>
+<p>Download the <span class="caps">OVA</span> image of this release
+<a href="https://my.monarc.lu/static/vm/MONARC_v2.11.0_65bed51382debaf4f87c9774618cb75df3d6044f.ova">here</a>.
+Technical details about the <span class="caps">VM</span>:</p>
+<div class="highlight"><pre><span></span><code>Login and Password for MONARC App (format: username:password):
+  MONARC application: admin@admin.localhost:admin
+
+Login and Password for VirtualBox demo image (format: username:password):
+  SSH login (Ubuntu credentials): monarc:password
+
+Database:
+  Mysql root login: root:a7daab4243ed998c7e61dc6e4aa48f64dda354021778379ec11e75430534693e
+  Mysql MONARC login: sqlmonarcuser:8c125ed24f4cf1fe50ec8ac4450c81c98b65475677956242bb9385e97fa4027d
+
+Image integrity check:
+  sha512sum: a39110feac44558acf0d018d14978040f970cc306554ab3c02ad1af1bde5a3a94a5f7da3e5cd20d9ee2146ed02cbc7f69a7a9533766c173d989f02ec4d523290
+  sha1sum: a304f8301e5c0116f8c94d6a143eb48b189f03fa
+
+MONARC is available on port 80.
+
+MONARC Stats Service is available on port 5005.
+</code></pre></div>
             </div>
             <!-- /.entry-content -->
         </article>
