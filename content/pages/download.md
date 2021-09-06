@@ -17,8 +17,7 @@ For installation instructions from the source code see
 
 If you would like to test MONARC and don't want to do an installation,
 a virtual machine for VirtualBox is
-[available on the release page](https://github.com/monarc-project/MonarcAppFO/releases/latest)
-(.ova file).   
+[available](https://my.monarc.lu/static/vm/) (.ova file).
 
 Import the image by either just double-click on the .ova
 file (if VirtualBox is associated with .ova files) or launch VirtualBox and
