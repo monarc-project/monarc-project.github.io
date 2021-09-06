@@ -30,7 +30,7 @@ can be found &lt;a href="https://www.monarc.lu/documentation/stats-service"&gt;h
 &lt;a href="https://github.com/monarc-project/MonarcAppFO/releases/tag/v2.11.0"&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id="the-virtualbox-demo-image"&gt;&lt;a href="#vm-image"&gt;The VirtualBox demo&amp;nbsp;image&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Download the &lt;span class="caps"&gt;OVA&lt;/span&gt; image of this release
-&lt;a href="https://my.monarc.lu/static/vm/MONARC_v2.11.0_65bed51382debaf4f87c9774618cb75df3d6044f.ova"&gt;here&lt;/a&gt;.
+&lt;a href="https://my.monarc.lu/static/vm/MONARC_v2.11.0-p1_5a1cb27573703cc335f496eb85da9b6401213fd0.ova"&gt;here&lt;/a&gt;.
 Technical details about the &lt;span class="caps"&gt;VM&lt;/span&gt;:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;Login and Password for MONARC App (format: username:password):
   MONARC application: admin@admin.localhost:admin
@@ -39,12 +39,12 @@ Login and Password for VirtualBox demo image (format: username:password):
   SSH login (Ubuntu credentials): monarc:password
 
 Database:
-  Mysql root login: root:a7daab4243ed998c7e61dc6e4aa48f64dda354021778379ec11e75430534693e
-  Mysql MONARC login: sqlmonarcuser:8c125ed24f4cf1fe50ec8ac4450c81c98b65475677956242bb9385e97fa4027d
+  Mysql root login: root:6e989f699d98915480fa97295572be236a5ba3f8e06d301726902493442b96f3
+  Mysql MONARC login: sqlmonarcuser:29051bf49db7497222f8004c127d04c65cef9e245aa25ef656258887a8158a52
 
 Image integrity check:
-  sha512sum: a39110feac44558acf0d018d14978040f970cc306554ab3c02ad1af1bde5a3a94a5f7da3e5cd20d9ee2146ed02cbc7f69a7a9533766c173d989f02ec4d523290
-  sha1sum: a304f8301e5c0116f8c94d6a143eb48b189f03fa
+  sha512sum: ad8b4429a0e0d21f1f094234d1cf63bc3431d119ce6e022bfa06e4b2f0a07c3eba327c1e10e600b60c0ebdf194f20df6756bd36ec1f6bcd80bf4740cc3fdba96
+  sha1sum: 63b1e11205f5c69394c5f2d09eac77df3556ad84
 
 MONARC is available on port 80.
 
