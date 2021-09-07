@@ -39,7 +39,8 @@ You can now help us to make MONARC available in your language via [our platform]
 ## <a href="#vm-image">The VirtualBox demo image</a>
 
 Download the OVA image of this release
-[here](https://my.monarc.lu/static/vm/MONARC_v2_10_4.ova).
+[here](https://vm.monarc.lu/MONARC_v2.10.4@f76b07a/).
+
 Technical details about the VM:
 
 
