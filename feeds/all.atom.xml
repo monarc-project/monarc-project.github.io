@@ -30,26 +30,7 @@ can be found &lt;a href="https://www.monarc.lu/documentation/stats-service"&gt;h
 &lt;a href="https://github.com/monarc-project/MonarcAppFO/releases/tag/v2.11.0"&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id="the-virtualbox-demo-image"&gt;&lt;a href="#vm-image"&gt;The VirtualBox demo&amp;nbsp;image&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Download the &lt;span class="caps"&gt;OVA&lt;/span&gt; image of this release
-&lt;a href="https://vm.monarc.lu/MONARC_v2.11.0-p1@5a1cb27/"&gt;here&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Technical details about the &lt;span class="caps"&gt;VM&lt;/span&gt;:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;Login and Password for MONARC App (format: username:password):
-  MONARC application: admin@admin.localhost:admin
-
-Login and Password for VirtualBox demo image (format: username:password):
-  SSH login (Ubuntu credentials): monarc:password
-
-Database:
-  Mysql root login: root:6e989f699d98915480fa97295572be236a5ba3f8e06d301726902493442b96f3
-  Mysql MONARC login: sqlmonarcuser:29051bf49db7497222f8004c127d04c65cef9e245aa25ef656258887a8158a52
-
-Image integrity check:
-  sha512sum: ad8b4429a0e0d21f1f094234d1cf63bc3431d119ce6e022bfa06e4b2f0a07c3eba327c1e10e600b60c0ebdf194f20df6756bd36ec1f6bcd80bf4740cc3fdba96
-  sha1sum: 63b1e11205f5c69394c5f2d09eac77df3556ad84
-
-MONARC is available on port 80.
-
-MONARC Stats Service is available on port 5005.
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="monarc"></category><category term="monarc"></category><category term="new-release"></category></entry><entry><title>MONARC 2.10.4 released</title><link href="https://www.monarc.lu/news/2021/06/24/monarc-2104-released/" rel="alternate"></link><published>2021-06-24T00:00:00+02:00</published><updated>2021-06-24T00:00:00+02:00</updated><author><name>SECURITYMADEIN.LU g.i.e.</name></author><id>tag:www.monarc.lu,2021-06-24:/news/2021/06/24/monarc-2104-released/</id><summary type="html">&lt;p&gt;Release 2.10.4 of &lt;span class="caps"&gt;MONARC&lt;/span&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;Version 2.10.4 includes&amp;nbsp;bug-fixes.&lt;/p&gt;
+&lt;a href="https://vm.monarc.lu/MONARC_v2.11.0-p1@5a1cb27/"&gt;here&lt;/a&gt;.&lt;/p&gt;</content><category term="monarc"></category><category term="monarc"></category><category term="new-release"></category></entry><entry><title>MONARC 2.10.4 released</title><link href="https://www.monarc.lu/news/2021/06/24/monarc-2104-released/" rel="alternate"></link><published>2021-06-24T00:00:00+02:00</published><updated>2021-06-24T00:00:00+02:00</updated><author><name>SECURITYMADEIN.LU g.i.e.</name></author><id>tag:www.monarc.lu,2021-06-24:/news/2021/06/24/monarc-2104-released/</id><summary type="html">&lt;p&gt;Release 2.10.4 of &lt;span class="caps"&gt;MONARC&lt;/span&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;Version 2.10.4 includes&amp;nbsp;bug-fixes.&lt;/p&gt;
 &lt;h3 id="fix"&gt;Fix&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Foreign Key Error by when deactivating information security risks.
@@ -67,30 +48,11 @@ MONARC Stats Service is available on port 5005.
 &lt;p&gt;If you would like to use the new statistics feature then &lt;a href="https://github.com/monarc-project/stats-service"&gt;StatsService&lt;/a&gt; has to be setup as well.
 The documentation, architecture and installation instructions of Stats Service can be found &lt;a href="https://www.monarc.lu/documentation/stats-service"&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;More details and notes are available on &lt;a href="https://github.com/monarc-project/MonarcAppFO/releases/tag/v2.10.4"&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id="monarc-is-in-your-language"&gt;&lt;span class="caps"&gt;MONARC&lt;/span&gt; is in your&amp;nbsp;language&lt;/h2&gt;
+&lt;h2 id="monarc-in-your-language"&gt;&lt;span class="caps"&gt;MONARC&lt;/span&gt; in your&amp;nbsp;language&lt;/h2&gt;
 &lt;p&gt;You can now help us to make &lt;span class="caps"&gt;MONARC&lt;/span&gt; available in your language via &lt;a href="https://translate.monarc.lu/projects/monarc/"&gt;our platform&lt;/a&gt; powered by &lt;a href="https://weblate.org"&gt;Weblate&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id="the-virtualbox-demo-image"&gt;&lt;a href="#vm-image"&gt;The VirtualBox demo&amp;nbsp;image&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Download the &lt;span class="caps"&gt;OVA&lt;/span&gt; image of this release
-&lt;a href="https://vm.monarc.lu/MONARC_v2.10.4@f76b07a/"&gt;here&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Technical details about the &lt;span class="caps"&gt;VM&lt;/span&gt;:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;Login and Password for MONARC App (format: username:password):
-  MONARC application: admin@admin.localhost:admin
-
-Login and Password for VirtualBox demo image (format: username:password):
-  SSH login (Ubuntu credentials): monarc:password
-
-Database:
-  Mysql root login: root:bc17550830486f893127ba8efd4acacc880754cbedddd01a00819b395c53a3fa
-  Mysql MONARC login: sqlmonarcuser:2043e9a647bd2a76ac7466c7afc3b86958a6780f933eb05a545294932bb8a1fb
-
-Image integrity check:
-  sha512sum: 80ecf52111c795c879fcb299cfed155fc83c052317f09e6396ef438f9ce85490ec918b66418e38846fe59bbfca415a7ba053d410ac431a0eb87c48634a2a9b5b
-  sha1sum: ef35b819f37e3931e06e9d33124159779222988b
-
-MONARC is available on port 80.
-
-MONARC Stats Service is available on port 5005.
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="monarc"></category><category term="monarc"></category><category term="new-release"></category></entry><entry><title>MONARC 2.10.3 released</title><link href="https://www.monarc.lu/news/2021/05/12/monarc-2103-released/" rel="alternate"></link><published>2021-05-12T00:00:00+02:00</published><updated>2021-05-12T00:00:00+02:00</updated><author><name>SECURITYMADEIN.LU g.i.e.</name></author><id>tag:www.monarc.lu,2021-05-12:/news/2021/05/12/monarc-2103-released/</id><summary type="html">&lt;p&gt;Release 2.10.3 of &lt;span class="caps"&gt;MONARC&lt;/span&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;Version 2.10.3 Includes bug-fixes, new features and an&amp;nbsp;enhancement.&lt;/p&gt;
+&lt;a href="https://vm.monarc.lu/MONARC_v2.10.4@f76b07a/"&gt;here&lt;/a&gt;.&lt;/p&gt;</content><category term="monarc"></category><category term="monarc"></category><category term="new-release"></category></entry><entry><title>MONARC 2.10.3 released</title><link href="https://www.monarc.lu/news/2021/05/12/monarc-2103-released/" rel="alternate"></link><published>2021-05-12T00:00:00+02:00</published><updated>2021-05-12T00:00:00+02:00</updated><author><name>SECURITYMADEIN.LU g.i.e.</name></author><id>tag:www.monarc.lu,2021-05-12:/news/2021/05/12/monarc-2103-released/</id><summary type="html">&lt;p&gt;Release 2.10.3 of &lt;span class="caps"&gt;MONARC&lt;/span&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;Version 2.10.3 includes bug-fixes, new features and an&amp;nbsp;enhancement.&lt;/p&gt;
 &lt;h3 id="new"&gt;New&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Implement the &lt;span class="caps"&gt;UI&lt;/span&gt; language management
@@ -117,34 +79,18 @@ MONARC Stats Service is available on port 5005.
 &lt;a href="http://monarc.lu/documentation/technical-guide/#monarc-update"&gt;guide&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;If you are coming from &lt;span class="caps"&gt;MONARC&lt;/span&gt; 2.9.0 please read
 &lt;a href="/news/2019/11/25/monarc-291-released/#updating"&gt;this&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;If you would like to use the new statistics feature then &lt;a href="https://github.com/monarc-project/stats-service"&gt;StatsService&lt;/a&gt; has to be setup as well.
-The documentation, architecture and installation instructions of Stats Service can be found &lt;a href="https://www.monarc.lu/documentation/stats-service"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you would like to use the new statistics feature then
+&lt;a href="https://github.com/monarc-project/stats-service"&gt;Stats Service&lt;/a&gt; has to be
+setup as well.
+The documentation, architecture and installation instructions of Stats Service
+can be found &lt;a href="https://www.monarc.lu/documentation/stats-service"&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;You can also download the new virtual machine
 &lt;a href="https://github.com/monarc-project/MonarcAppFO/releases/tag/v2.10.3"&gt;here&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id="monarc-is-in-your-language"&gt;&lt;span class="caps"&gt;MONARC&lt;/span&gt; is in your&amp;nbsp;language&lt;/h2&gt;
+&lt;h2 id="monarc-in-your-language"&gt;&lt;span class="caps"&gt;MONARC&lt;/span&gt; in your&amp;nbsp;language&lt;/h2&gt;
 &lt;p&gt;You can now help us to make &lt;span class="caps"&gt;MONARC&lt;/span&gt; available in your language via &lt;a href="https://translate.monarc.lu/projects/monarc/"&gt;our platform&lt;/a&gt; powered by &lt;a href="https://weblate.org"&gt;Weblate&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id="the-virtualbox-demo-image"&gt;&lt;a href="#vm-image"&gt;The VirtualBox demo&amp;nbsp;image&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Download the &lt;span class="caps"&gt;OVA&lt;/span&gt; image of this release
-&lt;a href="https://vm.monarc.lu/MONARC_v2.10.3@b1c3577/"&gt;here&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Technical details about the &lt;span class="caps"&gt;VM&lt;/span&gt;:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;Login and Password for MONARC App (format: username:password):
-  MONARC application: admin@admin.localhost:admin
-
-Login and Password for VirtualBox demo image (format: username:password):
-  SSH login (Ubuntu credentials): monarc:password
-
-Database:
-  Mysql root login: root:ba61f1703dd9978bdd28983ffcbe7b588456a4cd9d3feb842d139e7d482d813d
-  Mysql MONARC login: sqlmonarcuser:2e96f8809756702e625ae2ae085ffe7934272cb4e2c995283d6ed7e16dc3f6de
-
-Image integrity check:
-  sha512sum: 953764ae65db51c82a6966f8bb3de80897806318b30dacfc77ce6b6463d5dc9860ca553f3c1c73e80a2592933c0605668d7a6f6736967b882439c5c932f1ec44got
-  sha1sum: aeec03eaba7a9df98bb7a2c218cc7051d8e0fe83
-
-MONARC is available on port 80.
-
-MONARC Stats Service is available on port 5005.
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="monarc"></category><category term="monarc"></category><category term="new-release"></category></entry><entry><title>MONARC 2.10.2 released</title><link href="https://www.monarc.lu/news/2021/02/26/monarc-2102-released/" rel="alternate"></link><published>2021-02-26T00:00:00+01:00</published><updated>2021-02-26T00:00:00+01:00</updated><author><name>SECURITYMADEIN.LU g.i.e.</name></author><id>tag:www.monarc.lu,2021-02-26:/news/2021/02/26/monarc-2102-released/</id><summary type="html">&lt;p&gt;Release 2.10.2 of &lt;span class="caps"&gt;MONARC&lt;/span&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;Version 2.10.2 of &lt;span class="caps"&gt;MONARC&lt;/span&gt; has been released with several fixes and a new&amp;nbsp;feature.&lt;/p&gt;
+&lt;a href="https://vm.monarc.lu/MONARC_v2.10.3@b1c3577/"&gt;here&lt;/a&gt;.&lt;/p&gt;</content><category term="monarc"></category><category term="monarc"></category><category term="new-release"></category></entry><entry><title>MONARC 2.10.2 released</title><link href="https://www.monarc.lu/news/2021/02/26/monarc-2102-released/" rel="alternate"></link><published>2021-02-26T00:00:00+01:00</published><updated>2021-02-26T00:00:00+01:00</updated><author><name>SECURITYMADEIN.LU g.i.e.</name></author><id>tag:www.monarc.lu,2021-02-26:/news/2021/02/26/monarc-2102-released/</id><summary type="html">&lt;p&gt;Release 2.10.2 of &lt;span class="caps"&gt;MONARC&lt;/span&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;Version 2.10.2 of &lt;span class="caps"&gt;MONARC&lt;/span&gt; has been released with several fixes and a new&amp;nbsp;feature.&lt;/p&gt;
 &lt;h3 id="fix"&gt;Fix&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Export an asset
