@@ -30,8 +30,8 @@ can be found &lt;a href="https://www.monarc.lu/documentation/stats-service"&gt;h
 &lt;a href="https://github.com/monarc-project/MonarcAppFO/releases/tag/v2.11.0"&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id="the-virtualbox-demo-image"&gt;&lt;a href="#vm-image"&gt;The VirtualBox demo&amp;nbsp;image&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Download the &lt;span class="caps"&gt;OVA&lt;/span&gt; image of this release
-&lt;a href="https://my.monarc.lu/static/vm/MONARC_v2.11.0-p1_5a1cb27573703cc335f496eb85da9b6401213fd0.ova"&gt;here&lt;/a&gt;.
-Technical details about the &lt;span class="caps"&gt;VM&lt;/span&gt;:&lt;/p&gt;
+&lt;a href="https://vm.monarc.lu/MONARC_v2.11.0-p1@5a1cb27/"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Technical details about the &lt;span class="caps"&gt;VM&lt;/span&gt;:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;Login and Password for MONARC App (format: username:password):
   MONARC application: admin@admin.localhost:admin
 
@@ -71,8 +71,8 @@ The documentation, architecture and installation instructions of Stats Service c
 &lt;p&gt;You can now help us to make &lt;span class="caps"&gt;MONARC&lt;/span&gt; available in your language via &lt;a href="https://translate.monarc.lu/projects/monarc/"&gt;our platform&lt;/a&gt; powered by &lt;a href="https://weblate.org"&gt;Weblate&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id="the-virtualbox-demo-image"&gt;&lt;a href="#vm-image"&gt;The VirtualBox demo&amp;nbsp;image&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Download the &lt;span class="caps"&gt;OVA&lt;/span&gt; image of this release
-&lt;a href="https://my.monarc.lu/static/vm/MONARC_v2_10_4.ova"&gt;here&lt;/a&gt;.
-Technical details about the &lt;span class="caps"&gt;VM&lt;/span&gt;:&lt;/p&gt;
+&lt;a href="https://vm.monarc.lu/MONARC_v2.10.4@f76b07a/"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Technical details about the &lt;span class="caps"&gt;VM&lt;/span&gt;:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;Login and Password for MONARC App (format: username:password):
   MONARC application: admin@admin.localhost:admin
 
@@ -125,8 +125,8 @@ The documentation, architecture and installation instructions of Stats Service c
 &lt;p&gt;You can now help us to make &lt;span class="caps"&gt;MONARC&lt;/span&gt; available in your language via &lt;a href="https://translate.monarc.lu/projects/monarc/"&gt;our platform&lt;/a&gt; powered by &lt;a href="https://weblate.org"&gt;Weblate&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id="the-virtualbox-demo-image"&gt;&lt;a href="#vm-image"&gt;The VirtualBox demo&amp;nbsp;image&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Download the &lt;span class="caps"&gt;OVA&lt;/span&gt; image of this release
-&lt;a href="https://my.monarc.lu/static/vm/MONARC_v2_10_3.ova"&gt;here&lt;/a&gt;.
-Technical details about the &lt;span class="caps"&gt;VM&lt;/span&gt;:&lt;/p&gt;
+&lt;a href="https://vm.monarc.lu/MONARC_v2.10.3@b1c3577/"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Technical details about the &lt;span class="caps"&gt;VM&lt;/span&gt;:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;Login and Password for MONARC App (format: username:password):
   MONARC application: admin@admin.localhost:admin
 
