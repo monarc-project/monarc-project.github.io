@@ -50,25 +50,3 @@ More details and notes are available on
 
 Download the OVA image of this release
 [here](https://vm.monarc.lu/MONARC_v2.11.0-p1@5a1cb27/).
-
-Technical details about the VM:
-
-
-    :::BBCode
-    Login and Password for MONARC App (format: username:password):
-      MONARC application: admin@admin.localhost:admin
-    
-    Login and Password for VirtualBox demo image (format: username:password):
-      SSH login (Ubuntu credentials): monarc:password
-    
-    Database:
-      Mysql root login: root:6e989f699d98915480fa97295572be236a5ba3f8e06d301726902493442b96f3
-      Mysql MONARC login: sqlmonarcuser:29051bf49db7497222f8004c127d04c65cef9e245aa25ef656258887a8158a52
-    
-    Image integrity check:
-      sha512sum: ad8b4429a0e0d21f1f094234d1cf63bc3431d119ce6e022bfa06e4b2f0a07c3eba327c1e10e600b60c0ebdf194f20df6756bd36ec1f6bcd80bf4740cc3fdba96
-      sha1sum: 63b1e11205f5c69394c5f2d09eac77df3556ad84
-     
-    MONARC is available on port 80.
-
-    MONARC Stats Service is available on port 5005.
