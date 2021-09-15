@@ -18,15 +18,13 @@ For installation instructions from the source code see
 If you would like to test MONARC and don't want to do an installation,
 a virtual machine for VirtualBox is [available](https://vm.monarc.lu).
 
-Import the image by either just double-click on the .ova
-file (if VirtualBox is associated with .ova files) or launch VirtualBox and
-click on *File* -> *Import appliance*.
+    :::BBCode
+    Import the image by either just double-click on the .ova
+    file (if VirtualBox is associated with .ova files) or launch VirtualBox and
+    click on *File* -> *Import appliance*.
 
-More detailed instructions are available [here](https://www.monarc.lu/documentation/technical-guide/#prepared-virtual-machine).
+    More detailed instructions are available [here](https://www.monarc.lu/documentation/technical-guide/#prepared-virtual-machine).
 
-You can also generate generate your virtual machine with the latest version of
-MONARC. More information
-[here](https://github.com/monarc-project/monarc-packer).
 
 ### Vagrant
 
