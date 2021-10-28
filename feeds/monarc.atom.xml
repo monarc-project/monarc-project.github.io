@@ -1,5 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>MONARC - monarc</title><link href="https://www.monarc.lu/" rel="alternate"></link><link href="https://www.monarc.lu/feeds/monarc.atom.xml" rel="self"></link><id>https://www.monarc.lu/</id><updated>2021-09-02T00:00:00+02:00</updated><entry><title>MONARC 2.11.0 released</title><link href="https://www.monarc.lu/news/2021/09/02/monarc-2110-released/" rel="alternate"></link><published>2021-09-02T00:00:00+02:00</published><updated>2021-09-02T00:00:00+02:00</updated><author><name>SECURITYMADEIN.LU g.i.e.</name></author><id>tag:www.monarc.lu,2021-09-02:/news/2021/09/02/monarc-2110-released/</id><summary type="html">&lt;p&gt;Release 2.11.0 of &lt;span class="caps"&gt;MONARC&lt;/span&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;Version 2.11.0 includes a major new feature and various&amp;nbsp;bug-fixes.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>MONARC - monarc</title><link href="https://www.monarc.lu/" rel="alternate"></link><link href="https://www.monarc.lu/feeds/monarc.atom.xml" rel="self"></link><id>https://www.monarc.lu/</id><updated>2021-10-28T00:00:00+02:00</updated><entry><title>MONARC 2.11.1 released</title><link href="https://www.monarc.lu/news/2021/10/28/monarc-2111-released/" rel="alternate"></link><published>2021-10-28T00:00:00+02:00</published><updated>2021-10-28T00:00:00+02:00</updated><author><name>SECURITYMADEIN.LU g.i.e.</name></author><id>tag:www.monarc.lu,2021-10-28:/news/2021/10/28/monarc-2111-released/</id><summary type="html">&lt;p&gt;Release 2.11.1 of &lt;span class="caps"&gt;MONARC&lt;/span&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;Version 2.11.1 includes a new feature and various&amp;nbsp;bug-fixes.&lt;/p&gt;
+&lt;h3 id="new"&gt;New&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Add import of referential mapping from &lt;span class="caps"&gt;MOSP&lt;/span&gt;
+  (&lt;a href="https://github.com/monarc-project/MonarcAppFO/issues/391"&gt;#391&lt;/a&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="fix"&gt;Fix&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Subsuming &lt;span class="caps"&gt;CIA&lt;/span&gt; criteria according to the maximum criteria does not work
+  (&lt;a href="https://github.com/monarc-project/MonarcAppFO/issues/339"&gt;#339&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Incorrect sum and list of risks under the secondary assets
+  (&lt;a href="https://github.com/monarc-project/MonarcAppFO/issues/367"&gt;#367&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;If impact adjustments are made not only at the level of the primary assets but also at the level of the secondary assets, these assets are listed more than once
+  (&lt;a href="https://github.com/monarc-project/MonarcAppFO/issues/387"&gt;#387&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Recommendation status change error in the Knowledge Base
+  (&lt;a href="https://github.com/monarc-project/MonarcAppFO/issues/393"&gt;#393&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Import issue of setting operational risks values
+  (&lt;a href="https://github.com/monarc-project/MonarcAppFO/issues/394"&gt;#394&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Fix possible circular iteration of the instance root -&amp;gt; parent -&amp;gt; child rendering
+  (&lt;a href="https://github.com/monarc-project/MonarcAppFO/issues/395"&gt;#395&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Mathematical representation of large numbers in the dashboard
+  (&lt;a href="https://github.com/monarc-project/MonarcAppFO/issues/398"&gt;#398&lt;/a&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="updating"&gt;Updating&lt;/h2&gt;
+&lt;p&gt;To update, please follow the 
+&lt;a href="http://monarc.lu/documentation/technical-guide/#monarc-update"&gt;guide&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you would like to use the new statistics feature then
+&lt;a href="https://github.com/monarc-project/stats-service"&gt;StatsService&lt;/a&gt; has to be setup
+as well.
+The documentation, architecture and installation instructions of Stats Service
+can be found &lt;a href="https://www.monarc.lu/documentation/stats-service"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;More details and notes are available on
+&lt;a href="https://github.com/monarc-project/MonarcAppFO/releases/tag/v2.11.1"&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="the-virtualbox-demo-image"&gt;&lt;a href="#vm-image"&gt;The VirtualBox demo&amp;nbsp;image&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Download the &lt;span class="caps"&gt;OVA&lt;/span&gt; image of this release
+&lt;a href="https://vm.monarc.lu/MONARC_v2.11.1@3874f70/"&gt;here&lt;/a&gt;.&lt;/p&gt;</content><category term="monarc"></category><category term="monarc"></category><category term="new-release"></category></entry><entry><title>MONARC 2.11.0 released</title><link href="https://www.monarc.lu/news/2021/09/02/monarc-2110-released/" rel="alternate"></link><published>2021-09-02T00:00:00+02:00</published><updated>2021-09-02T00:00:00+02:00</updated><author><name>SECURITYMADEIN.LU g.i.e.</name></author><id>tag:www.monarc.lu,2021-09-02:/news/2021/09/02/monarc-2110-released/</id><summary type="html">&lt;p&gt;Release 2.11.0 of &lt;span class="caps"&gt;MONARC&lt;/span&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;Version 2.11.0 includes a major new feature and various&amp;nbsp;bug-fixes.&lt;/p&gt;
 &lt;h3 id="new"&gt;New&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;having the possibility to define custom scales for operational risks
