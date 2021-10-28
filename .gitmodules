@@ -3,4 +3,4 @@
 	url = https://github.com/getpelican/pelican-themes.git
 [submodule "plugins"]
 	path = plugins
-	url = https://github.com/getpelican/pelican-plugins
+	url = https://github.com/getpelican/pelican-plugins.git
