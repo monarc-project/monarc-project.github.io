@@ -47,4 +47,4 @@ More details and notes are available on
 ## <a href="#vm-image">The VirtualBox demo image</a>
 
 Download the OVA image of this release
-[here](https://vm.monarc.lu/MONARC_v2.11.1@3874f70/).
+[here](https://vm.monarc.lu/MONARC_v2.11.1@2ee9e1f/).
