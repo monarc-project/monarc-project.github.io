@@ -35,7 +35,7 @@ table {
 |&nbsp;|  |  |
 |**Registration** |   ||
 
-<script type="text/javascript" src="https://www.xing-events.com/resources/js/amiandoExport.js"></script><iframe title="Ticket shop" src="https://NZDGTYN.xing-events.com/NZDGTYN.html?viewType=iframe&distributionChannel=CHANNEL_IFRAME&language=en&resizeIFrame=true" frameborder="0" width="650px" id="_amiandoIFrame4855070"><p>This page requires frame support. Please use a frame compatible browser to see the ticket sales module.</p></ifram
+<script type="text/javascript" src="https://www.xing-events.com/resources/js/amiandoExport.js"></script><iframe title="Ticket shop" src="https://NZDGTYN.xing-events.com/NZDGTYN.html?viewType=iframe&distributionChannel=CHANNEL_IFRAME&language=en&resizeIFrame=true" frameborder="0" width="650px" id="_amiandoIFrame4855070"><p>This page requires frame support. Please use a frame compatible browser to see the ticket sales module.</p></iframe>
 
 ### Past Trainings
 
