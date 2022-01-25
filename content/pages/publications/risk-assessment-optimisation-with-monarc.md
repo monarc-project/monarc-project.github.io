@@ -1,6 +1,7 @@
 Title: Risk Assessment Optimisation with MONARC
 Date: 2018-06-20
 Hidden: false
+Slug: publications/risk-assessment-optimisation-with-monarc
 
 <br/>** Abstract: ** There are many solutions to cover risk assessment: from big software
 solutions to standalone applications – even based on spreadsheets. A

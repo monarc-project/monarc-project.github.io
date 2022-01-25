@@ -1,6 +1,7 @@
 Title: Retour d’expérience MONARC par l’ANSSI
 Date: 2019-04-24
 Hidden: false
+Slug: publications/retour-dexperience-monarc-par-lanssi
 
 L’Agence nationale de la sécurité des systèmes d’information Luxembourg (ANSSI.lu), créée en 2015, compte parmi ses missions la définition de la politique générale de sécurité de l’information de l’État luxembourgeois ainsi que l’accompagnement d’entités étatiques dans leur approche risque.
 

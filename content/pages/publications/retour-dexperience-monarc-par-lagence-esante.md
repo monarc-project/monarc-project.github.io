@@ -1,6 +1,7 @@
 Title: Retour d'expérience MONARC par l'Agence eSanté
 Date: 2019-04-24
 Hidden: false
+Slug: publications/retour-dexperience-monarc-par-lagence-esante
 
 
 Depuis 2011, l'Agence eSanté est en charge du déploiement de la plateforme de partage et d'échange de données médicales pour les professionnels de la santé du Luxembourg. Dans le cadre de ces activités, la sécurité des informations transmises est particulièrement importante et nécessite l'utilisation d'outils efficients. À ce titre, l'Agence a adopté depuis plus d'un an la méthode d’analyse de risques MONARC développée par CASES.

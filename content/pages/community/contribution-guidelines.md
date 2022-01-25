@@ -1,6 +1,7 @@
 Title: Contribution guidelines
 Date: 2017-07-03
 Hidden: false
+Slug: community/contribution-guidelines
 
 
 You can contribute to MONARC by:

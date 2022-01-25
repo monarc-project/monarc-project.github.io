@@ -1,7 +1,7 @@
 Title: They are using MONARC
 Date: 2020-01-28
 Modified: 2020-01-28
-Slug: users
+Slug: community/users
 Summary: They are using MONARC
 
 
