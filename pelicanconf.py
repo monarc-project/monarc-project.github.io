@@ -17,14 +17,7 @@ DEFAULT_LANG = 'en'
 TYPOGRIFY = True
 #PAGE_ORDER_BY = 'sortorder'
 STATIC_PATHS = ['assets',
-                'extra',
-                'documentation/administrator-guide',
-                'documentation/technical-guide',
-                'documentation/quick-start',
-                'documentation/user-guide',
-                'documentation/method-guide',
-                'documentation/MOSP-documentation',
-                'documentation/stats-service']
+                'extra']
 CUSTOM_CSS = 'static/css/custom.css'
 EXTRA_PATH_METADATA = {
                         'extra/CNAME': {'path': 'CNAME'},
