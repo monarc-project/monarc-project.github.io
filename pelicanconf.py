@@ -11,20 +11,13 @@ RELATIVE_URLS = True
 # SITEURL = 'http://127.0.0.1:8000/'
 PATH = 'content'
 # PAGE_PATHS = ['pages']
-# ARTICLE_PATHS = ['news']
+ARTICLE_PATHS = ['pages/news']
 TIMEZONE = 'Europe/Paris'
 DEFAULT_LANG = 'en'
 TYPOGRIFY = True
 #PAGE_ORDER_BY = 'sortorder'
 STATIC_PATHS = ['assets',
-                'extra',
-                'documentation/administrator-guide',
-                'documentation/technical-guide',
-                'documentation/quick-start',
-                'documentation/user-guide',
-                'documentation/method-guide',
-                'documentation/MOSP-documentation',
-                'documentation/stats-service']
+                'extra']
 CUSTOM_CSS = 'static/css/custom.css'
 EXTRA_PATH_METADATA = {
                         'extra/CNAME': {'path': 'CNAME'},

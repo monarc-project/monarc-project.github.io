@@ -1,6 +1,7 @@
 Title: Retour d’expérience MONARC par l’IGSS
 Date: 2019-07-23
 Hidden: false
+Slug: publications/retour-dexperience-monarc-par-liggs
 
 Dans le cadre de nos rencontres avec les utilisateurs de l’outil et de la méthode MONARC, nous avons rencontré Florence Thomas, business intelligence analyst au sein de l’Inspection générale de la sécurité sociale (IGSS). Cette structure, placée sous l’autorité du Ministère de la sécurité sociale, a pour mission l’élaboration des mesures législatives et règlementaires de la sécurité sociale, le contrôle des institutions de sécurité sociale, l’analyse et l’évaluation des régimes de protection sociale.
 

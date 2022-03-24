@@ -12,7 +12,7 @@ table {
 
 |&nbsp;|||
 |:--|--|--|
-|**Date and time**|| April 2022 - 9h30 - 16h30. |
+|**Date and time**|| April 19, 2022 - 9h30 - 16h30. |
 |&nbsp;|  ||
 |**Location**|&nbsp;&nbsp;&nbsp;|Online / [BigBlueButton](https://bigbluebutton.org/) platform of SECURITYMADEIN.LU|
 |&nbsp;|  |Check your network connection to BigBlueButton [here](https://test.bigbluebutton.org/)  |
@@ -35,7 +35,7 @@ table {
 |&nbsp;|  |  |
 |**Registration** |   ||
 
-<script type="text/javascript" src="https://www.xing-events.com/resources/js/amiandoExport.js"></script><iframe title="Billetterie" src="https://TDWKOFV.xing-events.com/TDWKOFV.html?viewType=iframe&distributionChannel=CHANNEL_IFRAME&language=fr&resizeIFrame=true" frameborder="0" width="650px" id="_amiandoIFrame4816577"><p>Cette page utilise des Frames. Veuillez donc utiliser un navigateur supportant les Frames pour voir le widget de la billetterie en ligne.</p></iframe>
+<script type="text/javascript" src="https://www.xing-events.com/resources/js/amiandoExport.js"></script><iframe title="Ticket shop" src="https://NZDGTYN.xing-events.com/NZDGTYN.html?viewType=iframe&distributionChannel=CHANNEL_IFRAME&language=en&resizeIFrame=true" frameborder="0" width="650px" id="_amiandoIFrame4855070"><p>This page requires frame support. Please use a frame compatible browser to see the ticket sales module.</p></iframe>
 
 ### Past Trainings
 

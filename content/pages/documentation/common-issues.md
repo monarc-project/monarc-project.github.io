@@ -1,6 +1,7 @@
 Title: Common issues
 Date: 2018-08-20
 Hidden: false
+Slug: documentation/common-issues
 
 [TOC]
 
