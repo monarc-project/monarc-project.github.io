@@ -6,7 +6,8 @@ Slug: community/contribution-guidelines
 
 You can contribute to MONARC by:
 
-* Reporting [bugs](https://github.com/monarc-project/MonarcAppFO/issues/new?assignees=&labels=bug%2C+potential-bug%2C+needs+triage&template=bug_report.md)
+* Reporting confirmed
+  [bugs](https://github.com/monarc-project/MonarcAppFO/issues/new?assignees=&labels=bug%2C+potential-bug%2C+needs+triage&template=bug_report.md)
 * Suggesting enhancements or [new features](https://github.com/monarc-project/MonarcAppFO/discussions/categories/ideas)
 * Improving the documentation.
 

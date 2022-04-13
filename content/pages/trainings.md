@@ -15,7 +15,7 @@ table {
 |**Date and time**|| April 19, 2022 - 9h30 - 16h30. |
 |&nbsp;|  ||
 |**Location**|&nbsp;&nbsp;&nbsp;|Online / [BigBlueButton](https://bigbluebutton.org/) platform of SECURITYMADEIN.LU|
-|&nbsp;|  |Check your network connection to BigBlueButton [here](https://test.bigbluebutton.org/)  |
+|&nbsp;|  |<i class="fa fa-exclamation-triangle"></i> Check your network connection to BigBlueButton [here](https://test.bigbluebutton.org).  |
 |&nbsp;|  |  |
 |**Objective**||Master the risk analysis tool MONARC.|
 |&nbsp;|  |  |
