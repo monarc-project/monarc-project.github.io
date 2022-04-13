@@ -1,7 +1,7 @@
 Title: Licenses and copyright
 Date: 2017-07-03
 Hidden: false
-Slug: community/licenses-copyright
+Slug: community/licenses-and-copyright
 
 ## License
 
