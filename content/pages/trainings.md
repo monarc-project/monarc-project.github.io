@@ -42,6 +42,7 @@ table {
 
 | Date       | Location                                     | Language        | Presentation material  |
 |------------| -------------------------------------------- | --------------- | ---------------------- |
+| 2022-04-19 | BigBlueButton platform of securitymadein.lu  | ![English][en]   | [<i class="fa fa-file-pdf-o" style="color:red" aria-hidden="true"></i>](/assets/files/trainings/20220419_MONARC-training.pdf)   |
 | 2021-12-16 | BigBlueButton platform of securitymadein.lu  | ![French][FR]   |                        |
 | 2021-09-29 | BigBlueButton platform of securitymadein.lu  | ![English][en]   | [<i class="fa fa-file-pdf-o" style="color:red" aria-hidden="true"></i>](/assets/files/trainings/20210929_MONARC-training.pdf)   |
 | 2021-04-14 | BigBlueButton platform of securitymadein.lu  | ![French][FR]   |                        |
