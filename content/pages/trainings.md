@@ -12,7 +12,7 @@ table {
 
 |&nbsp;|||
 |:--|--|--|
-|**Date and time**|| April 19, 2022 - 9h30 - 16h30. |
+|**Date and time**|| Septembre 2022 - 9h30 - 16h30. |
 |&nbsp;|  ||
 |**Location**|&nbsp;&nbsp;&nbsp;|Online / [BigBlueButton](https://bigbluebutton.org/) platform of SECURITYMADEIN.LU|
 |&nbsp;|  |<i class="fa fa-exclamation-triangle"></i> Check your network connection to BigBlueButton [here](https://test.bigbluebutton.org).  |
@@ -25,7 +25,7 @@ table {
 |&nbsp;|  |  |
 |**Level required**||Basic|
 |&nbsp;|  |  |
-|**Language**|| English ![English][en] |
+|**Language**|| French ![French][fr] |
 |&nbsp;|  |  |
 |**Extra requirements**||**A laptop is required**|
 |&nbsp;|  |  |
@@ -33,9 +33,9 @@ table {
 |&nbsp;|  |  |
 |**Price**||Free| /*(No show fee: 40€ HT - Cancellation is possible up to 48 hours before the start of the training) |*/
 |&nbsp;|  |  |
-|**Registration** |   ||
+|**Registration** |   |Coming soon|
 
-<script type="text/javascript" src="https://www.xing-events.com/resources/js/amiandoExport.js"></script><iframe title="Ticket shop" src="https://NZDGTYN.xing-events.com/NZDGTYN.html?viewType=iframe&distributionChannel=CHANNEL_IFRAME&language=en&resizeIFrame=true" frameborder="0" width="650px" id="_amiandoIFrame4855070"><p>This page requires frame support. Please use a frame compatible browser to see the ticket sales module.</p></iframe>
+<!-- <script type="text/javascript" src="https://www.xing-events.com/resources/js/amiandoExport.js"></script><iframe title="Ticket shop" src="https://NZDGTYN.xing-events.com/NZDGTYN.html?viewType=iframe&distributionChannel=CHANNEL_IFRAME&language=en&resizeIFrame=true" frameborder="0" width="650px" id="_amiandoIFrame4855070"><p>This page requires frame support. Please use a frame compatible browser to see the ticket sales module.</p></iframe> -->
 
 ### Past Trainings
 
