@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Installation &#8212; MONARC Stats Service 0.3.0 documentation</title>
     
-  <link href="_static/css/theme.css" rel="stylesheet" />
-  <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -18,29 +19,43 @@
   <link rel="preload" as="font" type="font/woff2" crossorigin
     href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=62ba249389abaaa9ffc34bf36a076bdc1d65ee18" type="text/css" />
     
-      
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
 
-    
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
-    
-  <link rel="preload" as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js">
-
-    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
-    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=f31d14ad54b65d19161ba51d4ffff3a77ae00456"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Updates" href="updates.html" />
     <link rel="prev" title="Presentation" href="index.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
     
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
     
     <div class="container-fluid" id="banner"></div>
 
@@ -49,11 +64,12 @@
     <div class="container-xl">
       <div class="row">
           
-<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
-    
-        <nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        <p class="caption">
+        <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Technical considerations
  </span>
@@ -80,7 +96,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Conceptual considerations
  </span>
@@ -92,7 +108,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Blueprints
  </span>
@@ -117,6 +133,7 @@
 
     </div>
 </nav><h4>Docs by version</h4>
+
 <h5>Releases</h5>
 <ul>
   <li><a href="installation.html">v0.4.0</a></li>
@@ -130,90 +147,200 @@
   <li><a href="../admin-endpoint/installation.html">admin-endpoint</a></li>
   <li><a href="../dashboard-test/installation.html">dashboard-test</a></li>
   <li><a href="../feature/is-sharing-enabled/installation.html">feature/is-sharing-enabled</a></li>
-  <li><a href="../internationalization/installation.html">internationalization</a></li>
   <li><a href="../master/installation.html">master</a></li>
   <li><a href="../mosp-lookup/installation.html">mosp-lookup</a></li>
 </ul>
 </div>
-
-
-          
-
-
-          
-<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
-    
-    <div class="topbar container-xl fixed-top">
-    <div class="topbar-contents row">
-        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
-        <div class="col pl-md-4 topbar-main">
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
             
-            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-                <i class="fas fa-bars"></i>
-                <i class="fas fa-arrow-left"></i>
-                <i class="fas fa-arrow-up"></i>
-            </button>
-            
-            
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
-            class="fas fa-download"></i></button>
-
-    <div class="dropdown-buttons">
-        <!-- ipynb file if we had a myst markdown file -->
-        
-        <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/installation.rst.txt"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.rst</button></a>
-        <!-- Download PDF via print -->
-        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
-    </div>
-</div>
-
-            <!-- Source interaction buttons -->
-
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
-    <div class="dropdown-buttons sourcebuttons">
-        <a class="repository-button"
-            href="https://github.com/monarc-project/stats-service"><button type="button" class="btn btn-secondary topbarbtn"
-                data-toggle="tooltip" data-placement="left" title="Source repository"><i
-                    class="fab fa-github"></i>repository</button></a>
-        <a class="issues-button"
-            href="https://github.com/monarc-project/stats-service/issues/new?title=Issue%20on%20page%20%2Finstallation.html&body=Your%20issue%20content%20here."><button
-                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
-                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        <a class="edit-button" href="https://github.com/monarc-project/stats-service/edit/master/docs/installation.rst"><button
-                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
-                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
-    </div>
-</div>
-
-            <!-- Full screen (wrap in <a> to have style consistency -->
-
-<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-        title="Fullscreen mode"><i
-            class="fas fa-expand"></i></button></a>
-
-            <!-- Launch buttons -->
-
-        </div>
-
-        <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show">
-            
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
+            <div class="navbar_extra_footer">
+            Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
             </div>
-            <nav id="bd-toc-nav">
-                <ul class="visible nav section-nav flex-column">
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/monarc-project/stats-service"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/monarc-project/stats-service/issues/new?title=Issue%20on%20page%20%2Finstallation.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/monarc-project/stats-service/edit/master/docs/installation.rst"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Edit this page"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="headerbtn__text-container">suggest edit</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/installation.rst.txt"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.rst</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#prerequisites">
    Prerequisites
@@ -299,13 +426,114 @@
  </li>
 </ul>
 
-            </nav>
-        </div>
-    </div>
+    </nav>
 </div>
-    <div id="main-content" class="row">
-        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
-        
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Installation</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#prerequisites">
+   Prerequisites
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#deployment">
+   Deployment
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#from-the-source">
+     From the source
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#to-heroku">
+     To Heroku
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#docker">
+     Docker
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#from-the-repository-currently-the-recommended-way-with-docker">
+       From the repository (currently the recommended way with Docker)
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#from-the-docker-hub">
+       From the Docker Hub
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#from-the-github-registry">
+       From the GitHub registry
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#from-the-python-package-index">
+     From the Python Package Index
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#service-management">
+   Service management
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#daemon">
+     Daemon
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#accessing-logs">
+       Accessing logs
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#gnu-screen">
+     GNU Screen
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#mod-wsgi-apache-module">
+     mod_wsgi Apache module
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#integration-with-monarc-and-collect-of-the-stats">
+   Integration with MONARC and collect of the stats
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
               <div>
                 
 
@@ -319,9 +547,9 @@
 
 
   <div class="section" id="installation">
-<h1>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h1>
+<h1>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">#</a></h1>
 <div class="section" id="prerequisites">
-<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this headline">¶</a></h2>
+<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this headline">#</a></h2>
 <p>Generally speaking, requirements are the following:</p>
 <ul class="simple">
 <li><p>A GNU/Linux distribution (tested on Debian and Ubuntu);</p></li>
@@ -348,7 +576,7 @@ postgres-# <span class="se">\q</span>
 <p>The user name and password chosen must be specified later in the configuration file.</p>
 </div>
 <div class="section" id="deployment">
-<h2>Deployment<a class="headerlink" href="#deployment" title="Permalink to this headline">¶</a></h2>
+<h2>Deployment<a class="headerlink" href="#deployment" title="Permalink to this headline">#</a></h2>
 <p>The service can be deployed via several ways:</p>
 <div class="contents local topic" id="contents">
 <ul class="simple">
@@ -359,7 +587,7 @@ postgres-# <span class="se">\q</span>
 </ul>
 </div>
 <div class="section" id="from-the-source">
-<h3><a class="toc-backref" href="#id3">From the source</a><a class="headerlink" href="#from-the-source" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id3">From the source</a><a class="headerlink" href="#from-the-source" title="Permalink to this headline">#</a></h3>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ sudo apt install python3-pip python3-venv
 $ curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py <span class="p">|</span> python3
 $ <span class="nb">echo</span>  <span class="s1">&#39;export PATH=&quot;$PATH:$HOME/.poetry/bin&quot;&#39;</span> &gt;&gt; ~/.bashrc
@@ -394,7 +622,7 @@ Please read the <a class="reference internal" href="#service-management"><span c
 </div>
 </div>
 <div class="section" id="to-heroku">
-<h3><a class="toc-backref" href="#id4">To Heroku</a><a class="headerlink" href="#to-heroku" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id4">To Heroku</a><a class="headerlink" href="#to-heroku" title="Permalink to this headline">#</a></h3>
 <p>You can use this button:</p>
 <a class="reference external image-reference" href="https://heroku.com/deploy?template=https://github.com/monarc-project/stats-service"><img alt="Documentation Status" src="https://www.herokucdn.com/deploy/button.png" /></a>
 <p>or via command line:</p>
@@ -419,11 +647,11 @@ $ git push heroku master
 <p>A demo instance is available [here](<a class="reference external" href="https://monarc-stats-service.herokuapp.com">https://monarc-stats-service.herokuapp.com</a>).</p>
 </div>
 <div class="section" id="docker">
-<h3><a class="toc-backref" href="#id5">Docker</a><a class="headerlink" href="#docker" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id5">Docker</a><a class="headerlink" href="#docker" title="Permalink to this headline">#</a></h3>
 <p>Depending on how you installed Docker on your system, you might have to use <code class="docutils literal notranslate"><span class="pre">sudo</span></code>,
 which is discouraged.</p>
 <div class="section" id="from-the-repository-currently-the-recommended-way-with-docker">
-<h4>From the repository (currently the recommended way with Docker)<a class="headerlink" href="#from-the-repository-currently-the-recommended-way-with-docker" title="Permalink to this headline">¶</a></h4>
+<h4>From the repository (currently the recommended way with Docker)<a class="headerlink" href="#from-the-repository-currently-the-recommended-way-with-docker" title="Permalink to this headline">#</a></h4>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ git clone https://github.com/monarc-project/stats-service
 $ docker-compose up -d
 </pre></div>
@@ -448,7 +676,7 @@ Created at: <span class="m">2021</span>-03-04 <span class="m">10</span>:23:59.00
 </div>
 </div>
 <div class="section" id="from-the-docker-hub">
-<h4>From the Docker Hub<a class="headerlink" href="#from-the-docker-hub" title="Permalink to this headline">¶</a></h4>
+<h4>From the Docker Hub<a class="headerlink" href="#from-the-docker-hub" title="Permalink to this headline">#</a></h4>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ docker pull caseslu/statsservice:latest
 $ docker run --name statsservice -d -p <span class="m">5000</span>:5000 --rm caseslu/statsservice
 </pre></div>
@@ -459,7 +687,7 @@ $ docker run --name statsservice -d -p <span class="m">5000</span>:5000 --rm cas
 </div>
 </div>
 <div class="section" id="from-the-github-registry">
-<h4>From the GitHub registry<a class="headerlink" href="#from-the-github-registry" title="Permalink to this headline">¶</a></h4>
+<h4>From the GitHub registry<a class="headerlink" href="#from-the-github-registry" title="Permalink to this headline">#</a></h4>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ <span class="nb">echo</span> <span class="nv">$YOUR</span>-GITHUB-TOKEN <span class="p">|</span> docker login https://docker.pkg.github.com -u &lt;your-github-username&gt; --password-stdin
 $ docker pull docker.pkg.github.com/monarc-project/stats-service/statsservice:master
 $ docker run --name statsservice -d -p <span class="m">5000</span>:5000 --rm docker.pkg.github.com/monarc-project/stats-service/statsservice:master
@@ -468,7 +696,7 @@ $ docker run --name statsservice -d -p <span class="m">5000</span>:5000 --rm doc
 </div>
 </div>
 <div class="section" id="from-the-python-package-index">
-<h3><a class="toc-backref" href="#id6">From the Python Package Index</a><a class="headerlink" href="#from-the-python-package-index" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id6">From the Python Package Index</a><a class="headerlink" href="#from-the-python-package-index" title="Permalink to this headline">#</a></h3>
 <p>If you use this method not all functionalities will be working (some web assets
 won’t be available), for the moment.</p>
 <a class="reference external image-reference" href="https://pypi.org/project/statsservice"><img alt="PyPi version" src="https://img.shields.io/pypi/v/statsservice.svg?style=flat-square" /></a>
@@ -489,7 +717,7 @@ $ <span class="nb">export</span> <span class="nv">STATS_CONFIG</span><span class
 </div>
 </div>
 <div class="section" id="service-management">
-<span id="id1"></span><h2>Service management<a class="headerlink" href="#service-management" title="Permalink to this headline">¶</a></h2>
+<span id="id1"></span><h2>Service management<a class="headerlink" href="#service-management" title="Permalink to this headline">#</a></h2>
 <p>Several solutions are available:</p>
 <div class="contents local topic" id="id2">
 <ul class="simple">
@@ -499,24 +727,24 @@ $ <span class="nb">export</span> <span class="nv">STATS_CONFIG</span><span class
 </ul>
 </div>
 <div class="section" id="daemon">
-<h3><a class="toc-backref" href="#id7">Daemon</a><a class="headerlink" href="#daemon" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id7">Daemon</a><a class="headerlink" href="#daemon" title="Permalink to this headline">#</a></h3>
 <p>In the case you have installed Stats Service from sources.</p>
 <p>Create a file <code class="docutils literal notranslate"><span class="pre">/etc/systemd/system/statsservice.service</span></code> with the following contents:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[Unit]</span>
-<span class="na">Description</span><span class="o">=</span><span class="s">MONARC Stats service</span>
-<span class="na">After</span><span class="o">=</span><span class="s">network.target</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[Unit]</span><span class="w"></span>
+<span class="na">Description</span><span class="o">=</span><span class="s">MONARC Stats service</span><span class="w"></span>
+<span class="na">After</span><span class="o">=</span><span class="s">network.target</span><span class="w"></span>
 
-<span class="k">[Service]</span>
-<span class="na">User</span><span class="o">=</span><span class="s">monarc</span>
-<span class="na">Environment</span><span class="o">=</span><span class="s">FLASK_APP=runserver.py</span>
-<span class="na">Environment</span><span class="o">=</span><span class="s">FLASK_ENV=production</span>
-<span class="na">Environment</span><span class="o">=</span><span class="s">STATS_CONFIG=production.py</span>
-<span class="na">WorkingDirectory</span><span class="o">=</span><span class="s">/home/monarc/stats-service</span>
-<span class="na">ExecStart</span><span class="o">=</span><span class="s">/home/monarc/.poetry/bin/poetry run flask run</span>
-<span class="na">Restart</span><span class="o">=</span><span class="s">always</span>
+<span class="k">[Service]</span><span class="w"></span>
+<span class="na">User</span><span class="o">=</span><span class="s">monarc</span><span class="w"></span>
+<span class="na">Environment</span><span class="o">=</span><span class="s">FLASK_APP=runserver.py</span><span class="w"></span>
+<span class="na">Environment</span><span class="o">=</span><span class="s">FLASK_ENV=production</span><span class="w"></span>
+<span class="na">Environment</span><span class="o">=</span><span class="s">STATS_CONFIG=production.py</span><span class="w"></span>
+<span class="na">WorkingDirectory</span><span class="o">=</span><span class="s">/home/monarc/stats-service</span><span class="w"></span>
+<span class="na">ExecStart</span><span class="o">=</span><span class="s">/home/monarc/.poetry/bin/poetry run flask run</span><span class="w"></span>
+<span class="na">Restart</span><span class="o">=</span><span class="s">always</span><span class="w"></span>
 
-<span class="k">[Install]</span>
-<span class="na">WantedBy</span><span class="o">=</span><span class="s">multi-user.target</span>
+<span class="k">[Install]</span><span class="w"></span>
+<span class="na">WantedBy</span><span class="o">=</span><span class="s">multi-user.target</span><span class="w"></span>
 </pre></div>
 </div>
 <p>You may need to adjust it a bit (for example if you want to use Gunicorn). After adding
@@ -528,7 +756,7 @@ $ systemctl status statsservice.service
 </pre></div>
 </div>
 <div class="section" id="accessing-logs">
-<h4>Accessing logs<a class="headerlink" href="#accessing-logs" title="Permalink to this headline">¶</a></h4>
+<h4>Accessing logs<a class="headerlink" href="#accessing-logs" title="Permalink to this headline">#</a></h4>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ journalctl -u statsservice
 </pre></div>
 </div>
@@ -539,7 +767,7 @@ $ systemctl status statsservice.service
 </div>
 </div>
 <div class="section" id="gnu-screen">
-<h3><a class="toc-backref" href="#id8">GNU Screen</a><a class="headerlink" href="#gnu-screen" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id8">GNU Screen</a><a class="headerlink" href="#gnu-screen" title="Permalink to this headline">#</a></h3>
 <p>You can simply execute Stats Service in a screen session.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ screen -S statsservice
 $ <span class="nb">export</span> <span class="nv">STATS_CONFIG</span><span class="o">=</span>production.py
@@ -559,45 +787,45 @@ $
 </div>
 </div>
 <div class="section" id="mod-wsgi-apache-module">
-<h3><a class="toc-backref" href="#id9">mod_wsgi Apache module</a><a class="headerlink" href="#mod-wsgi-apache-module" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id9">mod_wsgi Apache module</a><a class="headerlink" href="#mod-wsgi-apache-module" title="Permalink to this headline">#</a></h3>
 <p>Create a file <code class="docutils literal notranslate"><span class="pre">/etc/apache2/sites-available/statsservice.monarc.lu.conf</span></code>
 with a content similar to:</p>
-<div class="highlight-apacheconf notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;VirtualHost</span> <span class="s">*:80</span><span class="nt">&gt;</span>
-        <span class="nb">ServerName</span> dashboard.monarc.lu
+<div class="highlight-apacheconf notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;VirtualHost</span><span class="w"> </span><span class="s">*:80</span><span class="nt">&gt;</span><span class="w"></span>
+<span class="w">        </span><span class="nb">ServerName</span><span class="w"> </span>dashboard.monarc.lu<span class="w"></span>
 
-        <span class="nb">ServerAdmin</span> webmaster@localhost
-        <span class="nb">DocumentRoot</span> <span class="sx">/home/monarc/stats-service</span>
+<span class="w">        </span><span class="nb">ServerAdmin</span><span class="w"> </span>webmaster@localhost<span class="w"></span>
+<span class="w">        </span><span class="nb">DocumentRoot</span><span class="w"> </span><span class="sx">/home/monarc/stats-service</span><span class="w"></span>
 
-        <span class="nb">WSGIDaemonProcess</span> statsservice <span class="k">user</span>=www-data <span class="k">group</span>=www-data threads=5 python-home=/home/monarc/.local/share/virtualenvs/statsservice-_tH16p6s/ python-path=/home/monarc/stats-service
-        <span class="nb">WSGIScriptAlias</span> / <span class="sx">/home/monarc/stats-service/webserver.wsgi</span>
+<span class="w">        </span><span class="nb">WSGIDaemonProcess</span><span class="w"> </span>statsservice<span class="w"> </span><span class="k">user</span>=www-data<span class="w"> </span><span class="k">group</span>=www-data<span class="w"> </span>threads=5<span class="w"> </span>python-home=/home/monarc/.local/share/virtualenvs/statsservice-_tH16p6s/<span class="w"> </span>python-path=/home/monarc/stats-service<span class="w"></span>
+<span class="w">        </span><span class="nb">WSGIScriptAlias</span><span class="w"> </span>/<span class="w"> </span><span class="sx">/home/monarc/stats-service/webserver.wsgi</span><span class="w"></span>
 
-        <span class="nt">&lt;Directory</span> <span class="s">/home/monarc/stats-service</span><span class="nt">&gt;</span>
-            <span class="nb">WSGIApplicationGroup</span> %{GLOBAL}
-            <span class="nb">WSGIProcessGroup</span> statsservice
-            <span class="nb">WSGIPassAuthorization</span> <span class="k">On</span>
+<span class="w">        </span><span class="nt">&lt;Directory</span><span class="w"> </span><span class="s">/home/monarc/stats-service</span><span class="nt">&gt;</span><span class="w"></span>
+<span class="w">            </span><span class="nb">WSGIApplicationGroup</span><span class="w"> </span>%{GLOBAL}<span class="w"></span>
+<span class="w">            </span><span class="nb">WSGIProcessGroup</span><span class="w"> </span>statsservice<span class="w"></span>
+<span class="w">            </span><span class="nb">WSGIPassAuthorization</span><span class="w"> </span><span class="k">On</span><span class="w"></span>
 
-            <span class="nb">Options</span> Indexes FollowSymLinks
-            <span class="nb">Require</span> <span class="k">all</span> granted
-        <span class="nt">&lt;/Directory&gt;</span>
+<span class="w">            </span><span class="nb">Options</span><span class="w"> </span>Indexes<span class="w"> </span>FollowSymLinks<span class="w"></span>
+<span class="w">            </span><span class="nb">Require</span><span class="w"> </span><span class="k">all</span><span class="w"> </span>granted<span class="w"></span>
+<span class="w">        </span><span class="nt">&lt;/Directory&gt;</span><span class="w"></span>
 
-        <span class="nb">SetEnv</span> STATS_CONFIG production.py
+<span class="w">        </span><span class="nb">SetEnv</span><span class="w"> </span>STATS_CONFIG<span class="w"> </span>production.py<span class="w"></span>
 
 
-        <span class="c"># Available loglevels: trace8, ..., trace1, debug, info, notice, warn,</span>
-        <span class="c"># error, crit, alert, emerg.</span>
-        <span class="c"># It is also possible to configure the loglevel for particular</span>
-        <span class="c"># modules, e.g.</span>
-        <span class="c">#LogLevel info ssl:warn</span>
-        <span class="nb">CustomLog</span> <span class="sx">/var/log/apache2/stats-service/access.log</span> combined
-        <span class="nb">ErrorLog</span> <span class="sx">/var/log/apache2/stats-service/error.log</span>
+<span class="w">        </span><span class="c"># Available loglevels: trace8, ..., trace1, debug, info, notice, warn,</span><span class="w"></span>
+<span class="w">        </span><span class="c"># error, crit, alert, emerg.</span><span class="w"></span>
+<span class="w">        </span><span class="c"># It is also possible to configure the loglevel for particular</span><span class="w"></span>
+<span class="w">        </span><span class="c"># modules, e.g.</span><span class="w"></span>
+<span class="w">        </span><span class="c">#LogLevel info ssl:warn</span><span class="w"></span>
+<span class="w">        </span><span class="nb">CustomLog</span><span class="w"> </span><span class="sx">/var/log/apache2/stats-service/access.log</span><span class="w"> </span>combined<span class="w"></span>
+<span class="w">        </span><span class="nb">ErrorLog</span><span class="w"> </span><span class="sx">/var/log/apache2/stats-service/error.log</span><span class="w"></span>
 
-        <span class="c"># For most configuration files from conf-available/, which are</span>
-        <span class="c"># enabled or disabled at a global level, it is possible to</span>
-        <span class="c"># include a line for only one particular virtual host. For example the</span>
-        <span class="c"># following line enables the CGI configuration for this host only</span>
-        <span class="c"># after it has been globally disabled with &quot;a2disconf&quot;.</span>
-        <span class="c">#Include conf-available/serve-cgi-bin.conf</span>
-<span class="nt">&lt;/VirtualHost&gt;</span>
+<span class="w">        </span><span class="c"># For most configuration files from conf-available/, which are</span><span class="w"></span>
+<span class="w">        </span><span class="c"># enabled or disabled at a global level, it is possible to</span><span class="w"></span>
+<span class="w">        </span><span class="c"># include a line for only one particular virtual host. For example the</span><span class="w"></span>
+<span class="w">        </span><span class="c"># following line enables the CGI configuration for this host only</span><span class="w"></span>
+<span class="w">        </span><span class="c"># after it has been globally disabled with &quot;a2disconf&quot;.</span><span class="w"></span>
+<span class="w">        </span><span class="c">#Include conf-available/serve-cgi-bin.conf</span><span class="w"></span>
+<span class="nt">&lt;/VirtualHost&gt;</span><span class="w"></span>
 </pre></div>
 </div>
 <p>And a file:</p>
@@ -616,7 +844,7 @@ from runserver import application
 </div>
 </div>
 <div class="section" id="integration-with-monarc-and-collect-of-the-stats">
-<h2>Integration with MONARC and collect of the stats<a class="headerlink" href="#integration-with-monarc-and-collect-of-the-stats" title="Permalink to this headline">¶</a></h2>
+<h2>Integration with MONARC and collect of the stats<a class="headerlink" href="#integration-with-monarc-and-collect-of-the-stats" title="Permalink to this headline">#</a></h2>
 <p>The technical guide of MONARC provides information about the
 <a class="reference external" href="https://www.monarc.lu/documentation/technical-guide/#stats-service">integration of Stats Service with MONARC</a>.
 Especially related to the configuration of the cron job (which triggers a PHP
@@ -629,34 +857,48 @@ local statistics and sending those statistics to the Stats Service.</p>
 
               </div>
               
-        
-        <div class='prev-next-bottom'>
-            
-    <a class='left-prev' id="prev-link" href="index.html" title="previous page">Presentation</a>
-    <a class='right-next' id="next-link" href="updates.html" title="next page">Updates</a>
-
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="index.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Presentation</p>
         </div>
-        
+    </a>
+    <a class='right-next' id="next-link" href="updates.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Updates</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
         </div>
     </div>
-    <footer class="footer mt-5 mt-md-0">
-    <div class="container">
-      <p>
-        
-          By Cédric Bonhomme <cedric@cedricbonhomme.org><br/>
-        
-            &copy; Copyright SECURITYMADEIN.LU &lt;info@cases.lu&gt;.<br/>
-      </p>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Cédric Bonhomme <cedric@cedricbonhomme.org><br/>
+  
+      &copy; Copyright SECURITYMADEIN.LU &lt;info@cases.lu&gt;.<br/>
+</p>
+        </footer>
     </div>
-  </footer>
-</main>
+    
+</div>
 
 
       </div>
     </div>
   
-  <script src="_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
 
-  
+
   </body>
 </html>
