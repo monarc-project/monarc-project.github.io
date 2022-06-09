@@ -88,6 +88,7 @@ MONARC            </a>
 <li><a href="#a-blank-screen-is-displayed">A blank screen is&nbsp;displayed</a></li>
 <li><a href="#is-it-possible-for-a-back-office-administrator-to-change-the-administrator-user-of-a-monarc-instance">Is it possible for a back office administrator to change the administrator user of a <span class="caps">MONARC</span>&nbsp;instance?</a></li>
 <li><a href="#adding-a-new-administrator-without-access-to-the-monarc-web-interface">Adding a new administrator without access to the <span class="caps">MONARC</span> Web&nbsp;interface</a></li>
+<li><a href="#file-missing-error-during-the-import"><span class="dquo">&#8220;</span>File missing&#8221; error during the&nbsp;import</a></li>
 </ul>
 </div>
 <h2 id="problem-after-an-update">Problem after an&nbsp;update</h2>
@@ -157,6 +158,11 @@ A simple solution would be to update the email address of the former
 administrator directly in the client database (on the <span class="caps">FO</span> server), with your own
 email address.
 Then you will be able to use the password recovery feature of <span class="caps">MONARC</span>.</p>
+<h2 id="file-missing-error-during-the-import"><span class="dquo">&#8220;</span>File missing&#8221; error during the&nbsp;import</h2>
+<p><strong>Reason:</strong> Importing file is bigger than allowed by the php.ini server&nbsp;configuration.</p>
+<p><strong>Solution:</strong> Change the php.ini settings,
+described <a href="https://github.com/monarc-project/MonarcAppFO/blob/master/vagrant/bootstrap.sh#L22-L26">here</a>
+and restart the apache&nbsp;service.</p>
         </div>
     </section>
         </div>
