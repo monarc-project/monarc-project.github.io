@@ -91,3 +91,13 @@ A simple solution would be to update the email address of the former
 administrator directly in the client database (on the FO server), with your own
 email address.
 Then you will be able to use the password recovery feature of MONARC.
+
+
+## "File missing" error during the import
+
+**Reason:** Importing file is bigger than allowed by the php.ini server configuration.
+
+**Solution:** Change the php.ini settings,
+described [here](https://github.com/monarc-project/MonarcAppFO/blob/master/vagrant/bootstrap.sh#L22-L26)
+and restart the apache service.
+
