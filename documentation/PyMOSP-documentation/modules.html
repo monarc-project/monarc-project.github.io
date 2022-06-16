@@ -285,16 +285,40 @@ title="Print to PDF"
 <dl class="py method">
 <dt class="sig sig-object py" id="pymosp.PyMOSP.add_objects">
 <span class="sig-name descname"><span class="pre">add_objects</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">objects</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pythonify</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pymosp.PyMOSP.add_objects" title="Permalink to this definition">#</a></dt>
-<dd><p>Add a new object on a MOSP instance.</p>
+<dd><p>Add one or several objects on a MOSP instance.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>objects</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">MOSPObject</span></code>]) – event to add</p></li>
+<li><p><strong>objects</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">MOSPObject</span></code>]) – list of objects to add</p></li>
 <li><p><strong>pythonify</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code>) – Returns a PyMOSP Object instead of the plain json output</p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type</dt>
-<dd class="field-even"><p><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">MOSPObject</span></code>]]</p>
+</dl>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">mosp</span> <span class="o">=</span> <span class="n">pymosp</span><span class="o">.</span><span class="n">PyMOSP</span><span class="p">(</span><span class="n">mosp_instance</span><span class="p">,</span> <span class="n">token</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">new_objects</span> <span class="o">=</span> <span class="p">[</span>
+<span class="go">    {</span>
+<span class="go">        &quot;name&quot;: &quot;Possibility of installing correction programmes, etc.&quot;,</span>
+<span class="go">        &quot;description&quot;: &quot;Description of the new object.&quot;,</span>
+<span class="go">        &quot;licenses&quot;: [{&quot;license_id&quot;: &quot;CC0-1.0&quot;}],</span>
+<span class="go">        &quot;schema_id&quot;: 3,</span>
+<span class="go">        &quot;org_id&quot;: 1,</span>
+<span class="go">        &quot;json_object&quot;: {</span>
+<span class="go">            &quot;code&quot;: &quot;10&quot;,</span>
+<span class="go">            &quot;description&quot;: &quot;Description of the new object.&quot;,</span>
+<span class="go">            &quot;label&quot;: &quot;Possibility of installing correction programmes, etc.&quot;,</span>
+<span class="go">            &quot;type&quot;: &quot;Primary&quot;,</span>
+<span class="go">            &quot;version&quot;: 1,</span>
+<span class="go">            &quot;language&quot;: &quot;EN&quot;,</span>
+<span class="go">            &quot;uuid&quot;: &quot;69fbfe01-4591-11e9-9173-0800277f0572&quot;,</span>
+<span class="go">        }</span>
+<span class="go">    }</span>
+<span class="go">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">r</span> <span class="o">=</span> <span class="n">mosp</span><span class="o">.</span><span class="n">add_objects</span><span class="p">(</span><span class="n">new_objects</span><span class="p">)</span>
+</pre></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">MOSPObject</span></code>]]</p>
 </dd>
 </dl>
 </dd></dl>
@@ -317,7 +341,12 @@ Returns the HTTP status code from the MOSP instance.</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="pymosp.PyMOSP.objects">
 <span class="sig-name descname"><span class="pre">objects</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pythonify</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pymosp.PyMOSP.objects" title="Permalink to this definition">#</a></dt>
-<dd><p>Get all the events from the MOSP instance.</p>
+<dd><p>Get all the objects from the MOSP instance.
+Filters can be used with the <code class="docutils literal notranslate"><span class="pre">params</span></code> parameter.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">params</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;organization&quot;</span><span class="p">:</span> <span class="s2">&quot;MONARC&quot;</span><span class="p">,</span> <span class="s2">&quot;schema&quot;</span><span class="p">:</span> <span class="s2">&quot;Library objects&quot;</span><span class="p">}</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">r</span> <span class="o">=</span> <span class="n">mosp</span><span class="o">.</span><span class="n">objects</span><span class="p">(</span><span class="n">params</span><span class="o">=</span><span class="n">params</span><span class="p">)</span>
+</pre></div>
+</div>
 <dl class="field-list simple">
 <dt class="field-odd">Return type</dt>
 <dd class="field-odd"><p><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">MOSPObject</span></code>]]</p>
@@ -328,7 +357,7 @@ Returns the HTTP status code from the MOSP instance.</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="pymosp.PyMOSP.schemas">
 <span class="sig-name descname"><span class="pre">schemas</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pythonify</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pymosp.PyMOSP.schemas" title="Permalink to this definition">#</a></dt>
-<dd><p>Get all the events from the MOSP instance.</p>
+<dd><p>Get all the schemas from the MOSP instance.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Return type</dt>
 <dd class="field-odd"><p><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">MOSPObject</span></code>]]</p>
