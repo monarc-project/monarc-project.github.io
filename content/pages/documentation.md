@@ -24,4 +24,6 @@ Title: Documentation
 
 * ### [MONARC Objects Sharing Platform]({static}/documentation/MOSP-documentation)
 
+* ### [PyMOSP]({static}/documentation/PyMOSP-documentation)
+
 * ### [MONARC Stats Service]({static}/documentation/stats-service)
