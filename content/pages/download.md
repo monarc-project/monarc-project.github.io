@@ -9,9 +9,15 @@ Different options are available to install MONARC.
 ### Source code
 
 The source code of MONARC is available on
-[GitHub](https://github.com/monarc-project).
+[GitHub](https://github.com/monarc-project/MonarcAppFO).
+
 For installation instructions from the source code see
 [here](https://github.com/monarc-project/MonarcAppFO/tree/master/INSTALL).
+
+A bundle is also available as an archive (.tar.gz)
+[here](https://github.com/monarc-project/MonarcAppFO/releases/latest). This
+archive contains the core MONARC backend and the frontend (with dependencies).
+
 
 ### Virtual machine
 

@@ -15,7 +15,7 @@ ARTICLE_PATHS = ['pages/news']
 TIMEZONE = 'Europe/Paris'
 DEFAULT_LANG = 'en'
 TYPOGRIFY = True
-#PAGE_ORDER_BY = 'sortorder'
+# PAGE_ORDER_BY = 'sortorder'
 STATIC_PATHS = ['assets',
                 'extra']
 CUSTOM_CSS = 'static/css/custom.css'
@@ -71,7 +71,7 @@ MARKDOWN = {
     'markdown.extensions.codehilite': {'css_class': 'highlight'},
     'markdown.extensions.extra': {},
     'markdown.extensions.meta': {},
-    'markdown.extensions.tables':{},
+    'markdown.extensions.tables': {},
   },
   'output_format': 'html5',
 }
@@ -108,7 +108,7 @@ NAVBAR_ELEMENTS = ['menu-items']
 
 # Uncomment following line if you want document-relative URLs when developing
 # RELATIVE_URLS = True
-PATH_METADATA= '(?P<path_no_ext>.*)\..*'
+PATH_METADATA = '(?P<path_no_ext>.*)\..*'
 ARTICLE_URL = 'news/{date:%Y}/{date:%m}/{date:%d}/{slug}/'
 ARTICLE_SAVE_AS = 'news/{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html'
 INDEX_SAVE_AS = 'news/index.html'

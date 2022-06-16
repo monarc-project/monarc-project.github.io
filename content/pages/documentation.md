@@ -22,7 +22,7 @@ Title: Documentation
 
 ## Satellite projects
 
-* ### [MONARC Objects Sharing Platform]({static}/documentation/MOSP-documentation)
+* ### [MOSP - MONARC Objects Sharing Platform]({static}/documentation/MOSP-documentation)
 
 * ### [PyMOSP]({static}/documentation/PyMOSP-documentation)
 
