@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Index &#8212; MOSP 0.13.0 documentation</title>
     
-  <link href="_static/css/theme.css" rel="stylesheet" />
-  <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -22,20 +22,23 @@
       
 
     
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
     
-  <link rel="preload" as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
 
-    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
-    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script src="_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
     <link rel="index" title="Index" href="#" />
     <link rel="search" title="Search" href="search.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
     
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
@@ -49,24 +52,19 @@
           
 <div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
     
-        <div class="navbar-brand-box">
-    <a class="navbar-brand text-wrap" href="index.html">
-      
-      
-      <h1 class="site-logo" id="site-title">MOSP 0.13.0 documentation</h1>
-      
-    </a>
-</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
-  <i class="icon fas fa-search"></i>
-  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+        <nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        <p class="caption">
+        <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Contents:
  </span>
 </p>
 <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="installation.html">
+   Installation
+  </a>
+ </li>
  <li class="toctree-l1">
   <a class="reference internal" href="models.html">
    Models
@@ -75,11 +73,6 @@
  <li class="toctree-l1">
   <a class="reference internal" href="security-model.html">
    Security model
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="api-v1.html">
-   API v1
   </a>
  </li>
  <li class="toctree-l1">
@@ -92,14 +85,22 @@
    Using the platform
   </a>
  </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="modules.html">
+   Module index
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="simple">
+  </ul>
+ </li>
 </ul>
 
     </div>
-</nav> <!-- To handle the deprecated key -->
-
-<div class="navbar_extra_footer">
-  Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
-</div>
+</nav><h4>Docs by version</h4>
 
 </div>
 
@@ -127,6 +128,22 @@
             
             <!-- Source interaction buttons -->
 
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/CASES-LU/MOSP"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/CASES-LU/MOSP/issues/new?title=Issue%20on%20page%20%2Fgenindex.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
             <!-- Full screen (wrap in <a> to have style consistency -->
 
 <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
@@ -139,52 +156,238 @@
         </div>
 
         <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
         </div>
     </div>
 </div>
     <div id="main-content" class="row">
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
-        
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1></h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                    </div>
+                </div>
+            </div>
+            
               <div>
                 
 
 <h1 id="index">Index</h1>
 
 <div class="genindex-jumpbox">
+ <a href="#C"><strong>C</strong></a>
+ | <a href="#E"><strong>E</strong></a>
+ | <a href="#G"><strong>G</strong></a>
+ | <a href="#I"><strong>I</strong></a>
+ | <a href="#J"><strong>J</strong></a>
+ | <a href="#M"><strong>M</strong></a>
+ | <a href="#O"><strong>O</strong></a>
+ | <a href="#R"><strong>R</strong></a>
+ | <a href="#S"><strong>S</strong></a>
+ | <a href="#U"><strong>U</strong></a>
+ | <a href="#V"><strong>V</strong></a>
  
 </div>
+<h2 id="C">C</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules.html#mosp.lib.objects_utils.check_duplicates">check_duplicates() (in module mosp.lib.objects_utils)</a>
+</li>
+      <li><a href="modules.html#mosp.models.user.User.check_password">check_password() (mosp.models.user.User method)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules.html#mosp.models.collection.Collection">Collection (class in mosp.models.collection)</a>
+</li>
+      <li><a href="modules.html#mosp.models.jsonobject.JsonObject.create_new_version">create_new_version() (mosp.models.jsonobject.JsonObject method)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="E">E</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules.html#mosp.models.event.Event">Event (class in mosp.models.event)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="G">G</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules.html#mosp.lib.collections_utils.generate_collections_atom_feed">generate_collections_atom_feed() (in module mosp.lib.collections_utils)</a>
+</li>
+      <li><a href="modules.html#mosp.lib.objects_utils.generate_diff">generate_diff() (in module mosp.lib.objects_utils)</a>
+</li>
+      <li><a href="modules.html#mosp.lib.objects_utils.generate_misp_galaxy_cluster">generate_misp_galaxy_cluster() (in module mosp.lib.objects_utils)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules.html#mosp.lib.objects_utils.generate_objects_atom_feed">generate_objects_atom_feed() (in module mosp.lib.objects_utils)</a>
+</li>
+      <li><a href="modules.html#mosp.lib.objects_utils.generate_tar_gz_archive">generate_tar_gz_archive() (in module mosp.lib.objects_utils)</a>
+</li>
+      <li><a href="modules.html#mosp.models.user.User.get_id">get_id() (mosp.models.user.User method)</a>
+</li>
+      <li><a href="modules.html#mosp.lib.misc_utils.get_redirect_target">get_redirect_target() (in module mosp.lib.misc_utils)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="I">I</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules.html#mosp.lib.misc_utils.is_safe_url">is_safe_url() (in module mosp.lib.misc_utils)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="J">J</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules.html#mosp.models.jsonobject.JsonObject">JsonObject (class in mosp.models.jsonobject)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="M">M</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li>
+    module
+
+      <ul>
+        <li><a href="modules.html#module-mosp">mosp</a>
+</li>
+        <li><a href="modules.html#module-mosp.commands">mosp.commands</a>
+</li>
+        <li><a href="modules.html#module-mosp.lib.collections_utils">mosp.lib.collections_utils</a>
+</li>
+        <li><a href="modules.html#module-mosp.lib.misc_utils">mosp.lib.misc_utils</a>
+</li>
+        <li><a href="modules.html#module-mosp.lib.objects_utils">mosp.lib.objects_utils</a>
+</li>
+        <li><a href="modules.html#module-mosp.lib.user_utils">mosp.lib.user_utils</a>
+</li>
+      </ul></li>
+      <li>
+    mosp
+
+      <ul>
+        <li><a href="modules.html#module-mosp">module</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li>
+    mosp.commands
+
+      <ul>
+        <li><a href="modules.html#module-mosp.commands">module</a>
+</li>
+      </ul></li>
+      <li>
+    mosp.lib.collections_utils
+
+      <ul>
+        <li><a href="modules.html#module-mosp.lib.collections_utils">module</a>
+</li>
+      </ul></li>
+      <li>
+    mosp.lib.misc_utils
+
+      <ul>
+        <li><a href="modules.html#module-mosp.lib.misc_utils">module</a>
+</li>
+      </ul></li>
+      <li>
+    mosp.lib.objects_utils
+
+      <ul>
+        <li><a href="modules.html#module-mosp.lib.objects_utils">module</a>
+</li>
+      </ul></li>
+      <li>
+    mosp.lib.user_utils
+
+      <ul>
+        <li><a href="modules.html#module-mosp.lib.user_utils">module</a>
+</li>
+      </ul></li>
+  </ul></td>
+</tr></table>
+
+<h2 id="O">O</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules.html#mosp.models.organization.Organization">Organization (class in mosp.models.organization)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="R">R</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules.html#mosp.models.jsonobject.JsonObject.restore_from_version">restore_from_version() (mosp.models.jsonobject.JsonObject method)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="S">S</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules.html#mosp.models.schema.Schema">Schema (class in mosp.models.schema)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="U">U</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules.html#mosp.models.user.User">User (class in mosp.models.user)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="V">V</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules.html#mosp.models.version.Version">Version (class in mosp.models.version)</a>
+</li>
+  </ul></td>
+</tr></table>
+
 
 
               </div>
               
-        
-        <div class='prev-next-bottom'>
             
-
-        </div>
-        
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+            
         </div>
     </div>
-    <footer class="footer mt-5 mt-md-0">
-    <div class="container">
-      <p>
-        
-          By Cédric Bonhomme <cedric@cedricbonhomme.org><br/>
-        
-            &copy; Copyright SECURITYMADEIN.LU &lt;info@cases.lu&gt;.<br/>
-      </p>
-    </div>
-  </footer>
+    <footer class="footer">
+  <p>
+    
+      By Cédric Bonhomme <cedric@cedricbonhomme.org><br/>
+    
+        &copy; Copyright SECURITYMADEIN.LU &lt;info@cases.lu&gt;.<br/>
+  </p>
+</footer>
 </main>
 
 
       </div>
     </div>
   
-  <script src="_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
 
-  
   </body>
 </html>

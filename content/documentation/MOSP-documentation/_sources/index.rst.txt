@@ -27,17 +27,18 @@ analysis.
    :maxdepth: 3
    :caption: Contents:
    :hidden:
-   
+
+   installation
    models
    security-model
-   api-v1
    api-v2
    usage
-
+   modules
 
 
 Indices and tables
 ==================
 
 * :ref:`genindex`
+* :ref:`modindex`
 * :ref:`search`
