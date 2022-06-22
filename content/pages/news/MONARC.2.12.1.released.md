@@ -1,6 +1,6 @@
 Title: MONARC 2.12.1 released
-Date: 2021-06-22
-Modified: 2021-06-22
+Date: 2022-06-22
+Modified: 2022-06-22
 Category: monarc
 Tags: monarc, new-release
 Summary: Release 2.12.1 of MONARC
