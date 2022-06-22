@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
 <head>
-    <title>MONARC 2.0.4 released - MONARC</title>
+    <title>MONARC 2.12.1 released - MONARC</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -10,18 +10,18 @@
 
     <link href="../../../../../assets/images/monarc-logo.png" rel="icon">
 
-<link rel="canonical" href="../../../../../news/2017/10/27/monarc-204-released/">
+<link rel="canonical" href="../../../../../news/2021/06/22/monarc-2121-released/">
 
         <meta name="author" content="SECURITYMADEIN.LU g.i.e." />
         <meta name="keywords" content="monarc,new-release" />
-        <meta name="description" content="Release 2.0.4 of MONARC" />
+        <meta name="description" content="Release 2.12.1 of MONARC" />
 
         <meta property="og:site_name" content="MONARC" />
         <meta property="og:type" content="article"/>
-        <meta property="og:title" content="MONARC 2.0.4 released"/>
-        <meta property="og:url" content="../../../../../news/2017/10/27/monarc-204-released/"/>
-        <meta property="og:description" content="Release 2.0.4 of MONARC"/>
-        <meta property="article:published_time" content="2017-10-27" />
+        <meta property="og:title" content="MONARC 2.12.1 released"/>
+        <meta property="og:url" content="../../../../../news/2021/06/22/monarc-2121-released/"/>
+        <meta property="og:description" content="Release 2.12.1 of MONARC"/>
+        <meta property="article:published_time" content="2021-06-22" />
             <meta property="article:section" content="monarc" />
             <meta property="article:tag" content="monarc" />
             <meta property="article:tag" content="new-release" />
@@ -88,10 +88,10 @@ MONARC            </a>
         <article>
             <header class="page-header">
                 <h1>
-                    <a href="../../../../../news/2017/10/27/monarc-204-released/"
+                    <a href="../../../../../news/2021/06/22/monarc-2121-released/"
                        rel="bookmark"
-                       title="Permalink to MONARC 2.0.4 released">
-                        <span class="caps">MONARC</span> 2.0.4&nbsp;released
+                       title="Permalink to MONARC 2.12.1 released">
+                        <span class="caps">MONARC</span> 2.12.1&nbsp;released
                     </a>
                 </h1>
             </header>
@@ -101,7 +101,7 @@ MONARC            </a>
 <footer class="post-info">
     <span class="label label-default">Date</span>
     <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2017-10-27T00:00:00+02:00"> Fri 27 October 2017</time>
+        <i class="fa fa-calendar"></i><time datetime="2021-06-22T00:00:00+02:00"> Tue 22 June 2021</time>
     </span>
 
 
@@ -115,19 +115,30 @@ MONARC            </a>
     
 </footer><!-- /.post-info -->                    </div>
                 </div>
-                <p>Version 2.0.4 of <span class="caps">MONARC</span> has been released including several&nbsp;fixes.</p>
-<h1 id="fix">Fix</h1>
+                <p>Version 2.12.1 includes new features, bug-fixes and various&nbsp;improvements.</p>
+<h3 id="new">New</h3>
 <ul>
-<li>fix a bug with salted passwords that prevented users to update their
-  password via the profile page. Users may have to use the password recovery
-  functionality (zm-core) Reported by Nicolas <span class="caps">SCHWARTZ</span>, Cyber Security Team of
-  PwC Luxembourg. A <span class="caps">CVE</span> number is&nbsp;reserved.</li>
-<li>set default deliveries in english&nbsp;(zm-client);</li>
-<li>block the probability in the threat assessment in 1.2 of the method&nbsp;(ng-anr).</li>
+<li><a href="https://github.com/monarc-project/MonarcAppFO/discussions/439">compliance&nbsp;scale</a></li>
+<li><a href="https://github.com/monarc-project/MonarcAppFO/discussions/437">metadata&nbsp;assets</a></li>
+<li><a href="https://github.com/monarc-project/MonarcAppFO/discussions/442">two-factor&nbsp;authentication</a></li>
+<li>new build deployment is available and based on GitHub&nbsp;Actions</li>
 </ul>
-<p>Please upgrade your installation as soon as&nbsp;possible.</p>
-<p>You can download the new virtual machine
-<a href="https://github.com/monarc-project/MonarcAppFO/releases/tag/v2.0.4">here</a>.</p>
+<h3 id="fix">Fix</h3>
+<ul>
+<li>[Stats provider] removed the leading slash in the <span class="caps">URI</span>
+  (<a href="https://github.com/monarc-project/zm-client/commit/e7dfba1cf64322bc3e83630df6729b525d7d5c8d">e7dfba1</a>)</li>
+<li>Fixed the assets, threats, vulnerabilities fetching for analysis based on a specific model
+  (<a href="https://github.com/monarc-project/zm-client/commit/017bf289f7a8373bba19b9b1f7bc1012d740553f">017bf28</a>)</li>
+</ul>
+<h2 id="updating">Updating</h2>
+<p>To update, please follow the 
+<a href="https://monarc.lu/documentation/technical-guide/#monarc-update">guide</a>.</p>
+<p>More details and notes are available on
+<a href="https://github.com/monarc-project/MonarcAppFO/blob/v2.12.1/CHANGELOG.md">GitHub</a>.</p>
+<h2 id="download">Download</h2>
+<p>Download the <span class="caps">OVA</span> image of this release
+<a href="https://vm.monarc.lu/MONARC_v2.12.1@c1eaddd/">here</a>.</p>
+<p>Or use the <a href="https://github.com/monarc-project/MonarcAppFO/releases/download/v2.12.1/MonarcAppFO-v2.12.1.tar.gz">release bundle</a>.</p>
             </div>
             <!-- /.entry-content -->
         </article>

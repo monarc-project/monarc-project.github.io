@@ -87,7 +87,30 @@ The documentation, architecture and installation instructions of Stats Service c
 &lt;p&gt;You can now help us to make &lt;span class="caps"&gt;MONARC&lt;/span&gt; available in your language via &lt;a href="https://translate.monarc.lu/projects/monarc/"&gt;our platform&lt;/a&gt; powered by &lt;a href="https://weblate.org"&gt;Weblate&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id="the-virtualbox-demo-image"&gt;&lt;a href="#vm-image"&gt;The VirtualBox demo&amp;nbsp;image&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Download the &lt;span class="caps"&gt;OVA&lt;/span&gt; image of this release
-&lt;a href="https://vm.monarc.lu/MONARC_v2.10.4@f76b07a/"&gt;here&lt;/a&gt;.&lt;/p&gt;</content><category term="monarc"></category><category term="monarc"></category><category term="new-release"></category></entry><entry><title>MONARC 2.10.3 released</title><link href="https://www.monarc.lu/news/2021/05/12/monarc-2103-released/" rel="alternate"></link><published>2021-05-12T00:00:00+02:00</published><updated>2021-05-12T00:00:00+02:00</updated><author><name>SECURITYMADEIN.LU g.i.e.</name></author><id>tag:www.monarc.lu,2021-05-12:/news/2021/05/12/monarc-2103-released/</id><summary type="html">&lt;p&gt;Release 2.10.3 of &lt;span class="caps"&gt;MONARC&lt;/span&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;Version 2.10.3 includes bug-fixes, new features and an&amp;nbsp;enhancement.&lt;/p&gt;
+&lt;a href="https://vm.monarc.lu/MONARC_v2.10.4@f76b07a/"&gt;here&lt;/a&gt;.&lt;/p&gt;</content><category term="monarc"></category><category term="monarc"></category><category term="new-release"></category></entry><entry><title>MONARC 2.12.1 released</title><link href="https://www.monarc.lu/news/2021/06/22/monarc-2121-released/" rel="alternate"></link><published>2021-06-22T00:00:00+02:00</published><updated>2021-06-22T00:00:00+02:00</updated><author><name>SECURITYMADEIN.LU g.i.e.</name></author><id>tag:www.monarc.lu,2021-06-22:/news/2021/06/22/monarc-2121-released/</id><summary type="html">&lt;p&gt;Release 2.12.1 of &lt;span class="caps"&gt;MONARC&lt;/span&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;Version 2.12.1 includes new features, bug-fixes and various&amp;nbsp;improvements.&lt;/p&gt;
+&lt;h3 id="new"&gt;New&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/monarc-project/MonarcAppFO/discussions/439"&gt;compliance&amp;nbsp;scale&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/monarc-project/MonarcAppFO/discussions/437"&gt;metadata&amp;nbsp;assets&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/monarc-project/MonarcAppFO/discussions/442"&gt;two-factor&amp;nbsp;authentication&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;new build deployment is available and based on GitHub&amp;nbsp;Actions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="fix"&gt;Fix&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;[Stats provider] removed the leading slash in the &lt;span class="caps"&gt;URI&lt;/span&gt;
+  (&lt;a href="https://github.com/monarc-project/zm-client/commit/e7dfba1cf64322bc3e83630df6729b525d7d5c8d"&gt;e7dfba1&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fixed the assets, threats, vulnerabilities fetching for analysis based on a specific model
+  (&lt;a href="https://github.com/monarc-project/zm-client/commit/017bf289f7a8373bba19b9b1f7bc1012d740553f"&gt;017bf28&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="updating"&gt;Updating&lt;/h2&gt;
+&lt;p&gt;To update, please follow the 
+&lt;a href="https://monarc.lu/documentation/technical-guide/#monarc-update"&gt;guide&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;More details and notes are available on
+&lt;a href="https://github.com/monarc-project/MonarcAppFO/blob/v2.12.1/CHANGELOG.md"&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="download"&gt;Download&lt;/h2&gt;
+&lt;p&gt;Download the &lt;span class="caps"&gt;OVA&lt;/span&gt; image of this release
+&lt;a href="https://vm.monarc.lu/MONARC_v2.12.1@c1eaddd/"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Or use the &lt;a href="https://github.com/monarc-project/MonarcAppFO/releases/download/v2.12.1/MonarcAppFO-v2.12.1.tar.gz"&gt;release bundle&lt;/a&gt;.&lt;/p&gt;</content><category term="monarc"></category><category term="monarc"></category><category term="new-release"></category></entry><entry><title>MONARC 2.10.3 released</title><link href="https://www.monarc.lu/news/2021/05/12/monarc-2103-released/" rel="alternate"></link><published>2021-05-12T00:00:00+02:00</published><updated>2021-05-12T00:00:00+02:00</updated><author><name>SECURITYMADEIN.LU g.i.e.</name></author><id>tag:www.monarc.lu,2021-05-12:/news/2021/05/12/monarc-2103-released/</id><summary type="html">&lt;p&gt;Release 2.10.3 of &lt;span class="caps"&gt;MONARC&lt;/span&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;Version 2.10.3 includes bug-fixes, new features and an&amp;nbsp;enhancement.&lt;/p&gt;
 &lt;h3 id="new"&gt;New&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Implement the &lt;span class="caps"&gt;UI&lt;/span&gt; language management
