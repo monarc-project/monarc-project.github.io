@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Logging &#8212; MONARC Stats Service 0.3.0 documentation</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -116,6 +117,7 @@
 
 <h5>Releases</h5>
 <ul>
+  <li><a href="../v0.5.2/logging.html">v0.5.2</a></li>
   <li><a href="../v0.5.1/logging.html">v0.5.1</a></li>
   <li><a href="../v0.5.0/logging.html">v0.5.0</a></li>
   <li><a href="../v0.4.0/logging.html">v0.4.0</a></li>
@@ -374,7 +376,7 @@ title="Print to PDF"
 </p>
 
 
-  <div class="section" id="logging">
+  <section id="logging">
 <h1>Logging<a class="headerlink" href="#logging" title="Permalink to this headline">#</a></h1>
 <p>Format of the log messages:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">log_format</span><span class="o">=</span><span class="s2">&quot;</span><span class="si">%(asctime)s</span><span class="s2"> </span><span class="si">%(levelname)s</span><span class="s2"> </span><span class="si">%(name)s</span><span class="s2"> </span><span class="si">%(funcName)s</span><span class="s2"> </span><span class="si">%(lineno)s</span><span class="s2">: </span><span class="si">%(message)s</span><span class="s2">&quot;</span>
@@ -386,7 +388,7 @@ title="Print to PDF"
 </div>
 <p>You can define the path of the log file in the configuration file. The default is
 <code class="docutils literal notranslate"><span class="pre">./var/stats.log</span></code>. If not specified <code class="docutils literal notranslate"><span class="pre">sys.stderr</span></code> will be used.</p>
-<div class="section" id="modules-with-logging">
+<section id="modules-with-logging">
 <h2>Modules with logging<a class="headerlink" href="#modules-with-logging" title="Permalink to this headline">#</a></h2>
 <p>You can expect log messages from the following modules:</p>
 <ul class="simple">
@@ -395,8 +397,8 @@ title="Print to PDF"
 <li><p>statsservice.api.v1.processed</p></li>
 <li><p>statsservice.commands.stats</p></li>
 </ul>
-</div>
-</div>
+</section>
+</section>
 
 
 

@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Installation &#8212; MONARC Stats Service 0.3.0 documentation</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -116,6 +117,7 @@
 
 <h5>Releases</h5>
 <ul>
+  <li><a href="../../v0.5.2/installation.html">v0.5.2</a></li>
   <li><a href="../../v0.5.1/installation.html">v0.5.1</a></li>
   <li><a href="../../v0.5.0/installation.html">v0.5.0</a></li>
   <li><a href="../../v0.4.0/installation.html">v0.4.0</a></li>
@@ -474,9 +476,9 @@ title="Print to PDF"
 </p>
 
 
-  <div class="section" id="installation">
+  <section id="installation">
 <h1>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">#</a></h1>
-<div class="section" id="prerequisites">
+<section id="prerequisites">
 <h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this headline">#</a></h2>
 <p>Generally speaking, requirements are the following:</p>
 <ul class="simple">
@@ -501,8 +503,8 @@ postgres-# <span class="se">\q</span>
 </pre></div>
 </div>
 <p>The user name and password chosen must be specified later in the configuration file.</p>
-</div>
-<div class="section" id="deployment">
+</section>
+<section id="deployment">
 <h2>Deployment<a class="headerlink" href="#deployment" title="Permalink to this headline">#</a></h2>
 <p>The service can be deployed via several ways:</p>
 <div class="contents local topic" id="contents">
@@ -512,7 +514,7 @@ postgres-# <span class="se">\q</span>
 <li><p><a class="reference internal" href="#from-the-python-package-index" id="id5">From the Python Package Index</a></p></li>
 </ul>
 </div>
-<div class="section" id="from-the-source">
+<section id="from-the-source">
 <h3><a class="toc-backref" href="#id3">From the source</a><a class="headerlink" href="#from-the-source" title="Permalink to this headline">#</a></h3>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ sudo apt install python3-pip python3-venv
 $ curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py <span class="p">|</span> python3
@@ -546,8 +548,8 @@ Please read the <a class="reference internal" href="#service-management"><span c
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ curl -sSL https://raw.githubusercontent.com/monarc-project/stats-service/master/contrib/install.sh <span class="p">|</span> bash
 </pre></div>
 </div>
-</div>
-<div class="section" id="to-heroku">
+</section>
+<section id="to-heroku">
 <h3><a class="toc-backref" href="#id4">To Heroku</a><a class="headerlink" href="#to-heroku" title="Permalink to this headline">#</a></h3>
 <p>You can use this button:</p>
 <a class="reference external image-reference" href="https://heroku.com/deploy?template=https://github.com/monarc-project/stats-service"><img alt="Documentation Status" src="https://www.herokucdn.com/deploy/button.png" /></a>
@@ -570,8 +572,8 @@ $ git push heroku master
 </pre></div>
 </div>
 <p>All commands (<a class="reference internal" href="command-line-interface.html#cli"><span class="std std-ref">Command Line Interface</span></a>) are available. Just prefix with <code class="docutils literal notranslate"><span class="pre">heroku</span> <span class="pre">run</span></code>.</p>
-</div>
-<div class="section" id="from-the-python-package-index">
+</section>
+<section id="from-the-python-package-index">
 <h3><a class="toc-backref" href="#id5">From the Python Package Index</a><a class="headerlink" href="#from-the-python-package-index" title="Permalink to this headline">#</a></h3>
 <p>If you use this method not all functionalities will be working, for the moment.</p>
 <a class="reference external image-reference" href="https://pypi.org/project/statsservice"><img alt="PyPi version" src="https://img.shields.io/pypi/v/statsservice.svg?style=flat-square" /></a>
@@ -589,9 +591,9 @@ $ monarc-stats-service
 $ <span class="nb">export</span> <span class="nv">STATS_CONFIG</span><span class="o">=</span>~/production.py
 </pre></div>
 </div>
-</div>
-</div>
-<div class="section" id="service-management">
+</section>
+</section>
+<section id="service-management">
 <span id="id1"></span><h2>Service management<a class="headerlink" href="#service-management" title="Permalink to this headline">#</a></h2>
 <p>Several solutions are available:</p>
 <div class="contents local topic" id="id2">
@@ -600,7 +602,7 @@ $ <span class="nb">export</span> <span class="nv">STATS_CONFIG</span><span class
 <li><p><a class="reference internal" href="#mod-wsgi" id="id7">mod_wsgi</a></p></li>
 </ul>
 </div>
-<div class="section" id="daemon">
+<section id="daemon">
 <h3><a class="toc-backref" href="#id6">Daemon</a><a class="headerlink" href="#daemon" title="Permalink to this headline">#</a></h3>
 <p>Whichever way you installed the service, you can choose to use systemd to start
 it. Simply create a file <code class="docutils literal notranslate"><span class="pre">/etc/systemd/system/statsservice.service</span></code> with the
@@ -630,7 +632,7 @@ $ sudo systemctl start statsservice
 $ systemctl status statsservice.service
 </pre></div>
 </div>
-<div class="section" id="accessing-logs">
+<section id="accessing-logs">
 <h4>Accessing logs<a class="headerlink" href="#accessing-logs" title="Permalink to this headline">#</a></h4>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ journalctl -u statsservice
 </pre></div>
@@ -639,9 +641,9 @@ $ systemctl status statsservice.service
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ journalctl -u statsservice -f
 </pre></div>
 </div>
-</div>
-</div>
-<div class="section" id="mod-wsgi">
+</section>
+</section>
+<section id="mod-wsgi">
 <h3><a class="toc-backref" href="#id7">mod_wsgi</a><a class="headerlink" href="#mod-wsgi" title="Permalink to this headline">#</a></h3>
 <p>Create a file <code class="docutils literal notranslate"><span class="pre">/etc/apache2/sites-available/statsservice.monarc.lu.conf</span></code>
 with a content similar to:</p>
@@ -696,17 +698,17 @@ with open<span class="o">(</span>activate_this<span class="o">)</span> as file_:
 from runserver import application
 </pre></div>
 </div>
-</div>
-</div>
-<div class="section" id="integration-with-monarc-and-collect-of-the-stats">
+</section>
+</section>
+<section id="integration-with-monarc-and-collect-of-the-stats">
 <h2>Integration with MONARC and collect of the stats<a class="headerlink" href="#integration-with-monarc-and-collect-of-the-stats" title="Permalink to this headline">#</a></h2>
 <p>The technical guide of MONARC provides information about the
 <a class="reference external" href="https://www.monarc.lu/documentation/technical-guide/#stats-service">integration of Stats Service with MONARC</a>.
 Especially related to the configuration of the cron job (which triggers a PHP
 command) on the MONARC Front Office. The cron job is responsible for collecting
 local statistics and sending those statistics to the Stats Service.</p>
-</div>
-</div>
+</section>
+</section>
 
 
 

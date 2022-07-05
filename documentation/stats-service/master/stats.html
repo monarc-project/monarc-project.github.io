@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Blueprint stats &#8212; MONARC Stats Service 0.4.0 documentation</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -153,6 +154,7 @@
 
 <h5>Releases</h5>
 <ul>
+  <li><a href="../v0.5.2/stats.html">v0.5.2</a></li>
   <li><a href="../v0.5.1/stats.html">v0.5.1</a></li>
   <li><a href="../v0.5.0/stats.html">v0.5.0</a></li>
   <li><a href="../v0.4.0/stats.html">v0.4.0</a></li>
@@ -434,11 +436,11 @@ title="Print to PDF"
                 
 
 
-  <div class="section" id="blueprint-stats">
+  <section id="blueprint-stats">
 <h1>Blueprint stats<a class="headerlink" href="#blueprint-stats" title="Permalink to this headline">#</a></h1>
 <p>The goal of this blueprint is to return formatted custom stats. It is in
 read-only mode with only public routes (no authentication required).</p>
-<div class="section" id="routes">
+<section id="routes">
 <h2>Routes<a class="headerlink" href="#routes" title="Permalink to this headline">#</a></h2>
 <table class="table">
 <colgroup>
@@ -472,7 +474,7 @@ read-only mode with only public routes (no authentication required).</p>
 </tr>
 </tbody>
 </table>
-<div class="section" id="threats">
+<section id="threats">
 <h3>Threats<a class="headerlink" href="#threats" title="Permalink to this headline">#</a></h3>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ curl http://127.0.0.1:5000/stats/threats.json?processor<span class="o">=</span>threat_average_on_date<span class="p">&amp;</span><span class="nv">days</span><span class="o">=</span><span class="m">100</span>
 <span class="o">{</span>
@@ -529,8 +531,8 @@ read-only mode with only public routes (no authentication required).</p>
 <li><p>if the parameter <code class="docutils literal notranslate"><span class="pre">days</span></code> is not specified the default value is 365.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">threat_average_on_date</span></code> is also the default processor.</p></li>
 </ul>
-</div>
-<div class="section" id="vulnerabilities">
+</section>
+<section id="vulnerabilities">
 <h3>Vulnerabilities<a class="headerlink" href="#vulnerabilities" title="Permalink to this headline">#</a></h3>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ curl http://127.0.0.1:5000/stats/vulnerabilities.json?processor<span class="o">=</span>vulnerability_average_on_date<span class="p">&amp;</span><span class="nv">days</span><span class="o">=</span><span class="m">100</span>
 <span class="o">{</span>
@@ -558,8 +560,8 @@ read-only mode with only public routes (no authentication required).</p>
   <span class="o">}</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="risks">
+</section>
+<section id="risks">
 <h3>Risks<a class="headerlink" href="#risks" title="Permalink to this headline">#</a></h3>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ curl http://127.0.0.1:5000/stats/risks.json?processor<span class="o">=</span>risk_averages_on_date
 <span class="o">{</span>
@@ -655,9 +657,9 @@ read-only mode with only public routes (no authentication required).</p>
 <span class="o">}</span>
 </pre></div>
 </div>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
 
 
