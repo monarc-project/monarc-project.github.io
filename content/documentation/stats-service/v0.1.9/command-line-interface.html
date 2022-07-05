@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Command Line Interface &#8212; MONARC Stats Service 0.1.0 documentation</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -96,6 +97,7 @@
 
 <h5>Releases</h5>
 <ul>
+  <li><a href="../v0.5.2/command-line-interface.html">v0.5.2</a></li>
   <li><a href="../v0.5.1/command-line-interface.html">v0.5.1</a></li>
   <li><a href="../v0.5.0/command-line-interface.html">v0.5.0</a></li>
   <li><a href="../v0.4.0/command-line-interface.html">v0.4.0</a></li>
@@ -466,7 +468,7 @@ title="Print to PDF"
 </p>
 
 
-  <div class="section" id="command-line-interface">
+  <section id="command-line-interface">
 <span id="cli"></span><h1>Command Line Interface<a class="headerlink" href="#command-line-interface" title="Permalink to this headline">#</a></h1>
 <p>In this section commands are presented per categories:</p>
 <div class="contents local topic" id="contents">
@@ -477,9 +479,9 @@ title="Print to PDF"
 <li><p><a class="reference internal" href="#interactions-with-mosp" id="id4">Interactions with MOSP</a></p></li>
 </ul>
 </div>
-<div class="section" id="database">
+<section id="database">
 <h2><a class="toc-backref" href="#id1">Database</a><a class="headerlink" href="#database" title="Permalink to this headline">#</a></h2>
-<div class="section" id="creation-of-the-database">
+<section id="creation-of-the-database">
 <h3>Creation of the database<a class="headerlink" href="#creation-of-the-database" title="Permalink to this headline">#</a></h3>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ poetry run flask db_create --help
 Usage: flask db_create <span class="o">[</span>OPTIONS<span class="o">]</span>
@@ -490,8 +492,8 @@ Options:
   --help  Show this message and exit.
 </pre></div>
 </div>
-</div>
-<div class="section" id="initialization-of-the-database">
+</section>
+<section id="initialization-of-the-database">
 <h3>Initialization of the database<a class="headerlink" href="#initialization-of-the-database" title="Permalink to this headline">#</a></h3>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ poetry run flask db_init --help
 Usage: flask db_init <span class="o">[</span>OPTIONS<span class="o">]</span>
@@ -502,8 +504,8 @@ Options:
   --help  Show this message and exit.
 </pre></div>
 </div>
-</div>
-<div class="section" id="drop-all-collections-from-the-database">
+</section>
+<section id="drop-all-collections-from-the-database">
 <h3>Drop all collections from the database<a class="headerlink" href="#drop-all-collections-from-the-database" title="Permalink to this headline">#</a></h3>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ flask drop_all_collections --help
 Usage: flask drop_all_collections <span class="o">[</span>OPTIONS<span class="o">]</span>
@@ -515,11 +517,11 @@ Options:
 </pre></div>
 </div>
 <p>Will ask for confirmation and eventually drop all collections.</p>
-</div>
-</div>
-<div class="section" id="organizations">
+</section>
+</section>
+<section id="organizations">
 <h2><a class="toc-backref" href="#id2">Organizations</a><a class="headerlink" href="#organizations" title="Permalink to this headline">#</a></h2>
-<div class="section" id="creating-an-organization">
+<section id="creating-an-organization">
 <h3>Creating an organization<a class="headerlink" href="#creating-an-organization" title="Permalink to this headline">#</a></h3>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ flask create_organization --help
 Usage: flask create_organization <span class="o">[</span>OPTIONS<span class="o">]</span>
@@ -538,8 +540,8 @@ Name: CASES
 Token: SylsDTZTBk2zAkg016vW_aCuO1XQDXPsxrLuI1TG7z5sYvUfRlVf5R4g6kDnLI_o-c5iqrswrWzPANDKXmtV7Q
 </pre></div>
 </div>
-</div>
-<div class="section" id="listing-organizations">
+</section>
+<section id="listing-organizations">
 <h3>Listing organizations<a class="headerlink" href="#listing-organizations" title="Permalink to this headline">#</a></h3>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ flask list_organizations
 Name: CASES
@@ -549,11 +551,11 @@ Name: CIRCL
 Token: uJn2zUA361NANAz6dbtstAaAjq3hL28dscxzCjeUOHpIYC87K8nfOAPtRsTGAqT0iwzs7TEgq5DdD0kkwQDhmw
 </pre></div>
 </div>
-</div>
-</div>
-<div class="section" id="stats">
+</section>
+</section>
+<section id="stats">
 <h2><a class="toc-backref" href="#id3">Stats</a><a class="headerlink" href="#stats" title="Permalink to this headline">#</a></h2>
-<div class="section" id="pushing-data">
+<section id="pushing-data">
 <h3>Pushing data<a class="headerlink" href="#pushing-data" title="Permalink to this headline">#</a></h3>
 <p>Pushing data to a central stats server.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ flask push-stats --help
@@ -571,13 +573,13 @@ Options:
 <p>This command can be executed for example with cron.</p>
 <p>The address of the central stats server must be specified in the configuration
 file.</p>
-</div>
-<div class="section" id="pulling-data">
+</section>
+<section id="pulling-data">
 <h3>Pulling data<a class="headerlink" href="#pulling-data" title="Permalink to this headline">#</a></h3>
 <p>Pulling data from a central stats server.</p>
-</div>
-</div>
-<div class="section" id="interactions-with-mosp">
+</section>
+</section>
+<section id="interactions-with-mosp">
 <h2><a class="toc-backref" href="#id4">Interactions with MOSP</a><a class="headerlink" href="#interactions-with-mosp" title="Permalink to this headline">#</a></h2>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ flask is_object_published --help
 Usage: flask is_object_published <span class="o">[</span>OPTIONS<span class="o">]</span>
@@ -589,8 +591,8 @@ Options:
   --help       Show this message and exit.
 </pre></div>
 </div>
-</div>
-</div>
+</section>
+</section>
 
 
 

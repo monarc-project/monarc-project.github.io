@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Architecture &#8212; MONARC Stats Service 0.3.0 documentation</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -116,6 +117,7 @@
 
 <h5>Releases</h5>
 <ul>
+  <li><a href="../v0.5.2/architecture.html">v0.5.2</a></li>
   <li><a href="../v0.5.1/architecture.html">v0.5.1</a></li>
   <li><a href="../v0.5.0/architecture.html">v0.5.0</a></li>
   <li><a href="../v0.4.0/architecture.html">v0.4.0</a></li>
@@ -438,11 +440,11 @@ title="Print to PDF"
 </p>
 
 
-  <div class="section" id="architecture">
+  <section id="architecture">
 <h1>Architecture<a class="headerlink" href="#architecture" title="Permalink to this headline">#</a></h1>
 <p>These architecture diagrams presents the idea behind the decentralized nature
 of the Stats Service API.</p>
-<div class="section" id="scenario-1">
+<section id="scenario-1">
 <h2>Scenario 1<a class="headerlink" href="#scenario-1" title="Permalink to this headline">#</a></h2>
 <img alt="Stats Service API interaction with MONARC" src="_images/architecture-stats-scenario1.png" />
 <p>The Stats Service is installed on a dedicated server, gathering stats sent by the
@@ -455,29 +457,29 @@ for the dashboard of the MONARC users (with the CEO role).</p>
 </div>
 <p>The stats collection (from the FO to the stats node) can be triggered with a
 <a class="reference external" href="installation.html#integration-with-monarc-and-collect-of-the-stats">cron job</a>.</p>
-</div>
-<div class="section" id="scenario-2">
+</section>
+<section id="scenario-2">
 <h2>Scenario 2<a class="headerlink" href="#scenario-2" title="Permalink to this headline">#</a></h2>
 <img alt="Stats Service API interaction with MONARC" src="_images/architecture-stats-scenario2.png" />
 <p>In the company A, the difference is that Stats Service API (<em>stats</em>) is
 installed on the same server where the MONARC back office is deployed. Not on
 on a dedicated server. The server hosting the back office of MONARC is a good choice.</p>
-</div>
-<div class="section" id="scenario-3">
+</section>
+<section id="scenario-3">
 <h2>Scenario 3<a class="headerlink" href="#scenario-3" title="Permalink to this headline">#</a></h2>
 <img alt="Stats Service API interaction with MONARC" src="_images/architecture-stats-scenario3.png" />
 <p><em>stats</em> collects data from the two MONARC front offices of the company B.
 These aggregated data can be used for the dashboard for the CEO role of MONARC
 client instances in this company. But also, in the future, for the MONARC back office.</p>
-</div>
-<div class="section" id="scenario-4">
+</section>
+<section id="scenario-4">
 <h2>Scenario 4<a class="headerlink" href="#scenario-4" title="Permalink to this headline">#</a></h2>
 <img alt="Stats Service API interaction with MONARC" src="_images/architecture-stats-scenario4.png" />
 <p>Wendy is simply connected to a MONARC front office deployed in a local
 Virtual Box instance. Stats Service (<em>stats</em>) is running next to MONARC in this virtual
 machine.</p>
-</div>
-<div class="section" id="important-notes">
+</section>
+<section id="important-notes">
 <h2>Important notes<a class="headerlink" href="#important-notes" title="Permalink to this headline">#</a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -497,15 +499,15 @@ This is required for the proper functioning of the global dashboard of your MONA
 you can configure the variable <em>REMOTE_STATS_SERVER</em> of your local Stats Service
 instance with the address of your “global” instance.</p>
 </div>
-</div>
-<div class="section" id="integration-with-external-services">
+</section>
+<section id="integration-with-external-services">
 <h2>Integration with external services<a class="headerlink" href="#integration-with-external-services" title="Permalink to this headline">#</a></h2>
-<div class="section" id="mosp">
+<section id="mosp">
 <h3>MOSP<a class="headerlink" href="#mosp" title="Permalink to this headline">#</a></h3>
 <p>A Stats Service instance is able to query MOSP.</p>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
 
 

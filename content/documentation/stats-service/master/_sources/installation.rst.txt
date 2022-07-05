@@ -112,7 +112,7 @@ A client should be already created, check:
 
 .. code-block:: bash
 
-    $ docker exec -it statsservice_web /bin/bash
+    $ docker exec -it statsservice /bin/bash
 
     root@f31ef9cad854:/statsservice# flask client_list
     UUID: 014ad826-3608-42c2-94d3-4c14cd0702d3
@@ -188,6 +188,7 @@ Ansible with Docker
           ENVIRONMENT: "production"
           INSTANCE_URL: "{{ monarc_statsservice_url }}"
           SCRIPT_NAME: "{{ monarc_statsservice_url | urlsplit('path') }}"
+          CLIENT_REGISTRATION_OPEN: "1"
         networks:
           - name: "statsservice"
         ports:
@@ -204,9 +205,6 @@ Ansible with Docker
 From the Python Package Index
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-If you use this method not all functionalities will be working (some web assets
-won't be available), for the moment.
-
 .. only:: html
 
     .. image:: https://img.shields.io/pypi/v/statsservice.svg?style=flat-square
@@ -214,7 +212,7 @@ won't be available), for the moment.
        :alt: PyPi version
 
 MONARC Stats service is available on `PyPI <https://pypi.org/project/statsservice>`_.
-
+You can install it with ``pip`` or ``pipx``:
 
 .. code-block:: bash
 
@@ -234,6 +232,25 @@ If you want to use a custom configuration file:
     $ export STATS_CONFIG=~/production.py
 
 
+Commands available directly from your shell:
+
+.. code-block:: bash
+
+    $ monarc-stats-service-client-list
+    UUID: 27de7a61-4337-470d-a84d-e763ca5df634
+    Name: test2
+    Role: 1
+    Token: engY0Y9uaky9itxG3WZ14gOmKQx6Ggiv2_k9Yp_cPvo02jBRk8LnJbAw_MMTVSeICNMHT9qIPIpqwMFZ8A6NXQ
+    Sharing Enabled: True
+    Created at: 2021-08-26 12:29:56.773914
+
+    $ monarc-stats-service-client-create --name company-name
+    UUID: c4acaf14-335e-43a4-8418-abbc2e97cba8
+    Name: company-name
+    Role: 1
+    Token: qESjcgSSnizue6XkYTexrGOvWQ3kudJgCyEG1ok5MP9KG6bv47RIMnJIjCJbLXuQJWXlFsECvtUUlJCE4FVlbw
+    Sharing Enabled: True
+    Created at: 2022-07-05 09:08:06.683513
 
 
 .. _service-management:
@@ -251,9 +268,8 @@ Several solutions are available:
 Daemon
 ~~~~~~
 
-In the case you have installed Stats Service from sources.
-
-Create a file ``/etc/systemd/system/statsservice.service`` with the following contents:
+In the case you have installed Stats Service from sources,
+create a file ``/etc/systemd/system/statsservice.service`` with the following contents:
 
 .. code-block:: ini
 
@@ -273,7 +289,30 @@ Create a file ``/etc/systemd/system/statsservice.service`` with the following co
     [Install]
     WantedBy=multi-user.target
 
-You may need to adjust it a bit (for example if you want to use Gunicorn). After adding
+
+In the case you have installed Stats Service from the Docker registry,
+create a file ``/etc/systemd/system/statsservice.service`` with the following contents:
+
+.. code-block:: ini
+
+    [Unit]
+    Description=MONARC Stats service
+    Requires=docker.service
+    After=docker.service
+
+    [Service]
+    Type=oneshot
+    RemainAfterExit=yes
+    WorkingDirectory=/home/monarc/stats-service
+    ExecStart=/usr/bin/docker-compose up -d
+    ExecStop=/usr/bin/docker-compose down
+    TimeoutStartSec=0
+
+    [Install]
+    WantedBy=multi-user.target
+
+
+You may need to adjust your systemd service file. After adding
 this file to your system, you can start the new systemd service with these commands:
 
 .. code-block:: bash
@@ -282,6 +321,22 @@ this file to your system, you can start the new systemd service with these comma
     $ sudo systemctl enable statsservice.service
     $ sudo systemctl start statsservice
     $ systemctl status statsservice.service
+
+
+Later, if you want to connect in the container you can do:
+
+.. code-block:: bash
+
+    $ docker exec -it statsservice /bin/bash
+
+    root@f31ef9cad854:/statsservice# flask client_list
+    UUID: 014ad826-3608-42c2-94d3-4c14cd0702d3
+    Name: admin
+    Role: 2
+    Token: c3ff95aa569afa36f5395317fb77dc300507fe3c
+    Sharing Enabled: True
+    Created at: 2022-06-30 10:44:17.118606
+
 
 Accessing logs
 ``````````````

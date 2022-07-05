@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>API v1 &#8212; MONARC Stats Service 0.3.0 documentation</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -136,6 +137,7 @@
 
 <h5>Releases</h5>
 <ul>
+  <li><a href="../v0.5.2/api-v1.html">v0.5.2</a></li>
   <li><a href="../v0.5.1/api-v1.html">v0.5.1</a></li>
   <li><a href="../v0.5.0/api-v1.html">v0.5.0</a></li>
   <li><a href="../v0.4.0/api-v1.html">v0.4.0</a></li>
@@ -436,12 +438,12 @@ title="Print to PDF"
 </p>
 
 
-  <div class="section" id="api-v1">
+  <section id="api-v1">
 <h1>API v1<a class="headerlink" href="#api-v1" title="Permalink to this headline">#</a></h1>
 <p>Blueprint dedicated to the main API. It is composed of two namespaces, <em>client</em> and
 <em>stats</em>, that are used for the endpoints <code class="docutils literal notranslate"><span class="pre">api/v1/stats</span></code> and <code class="docutils literal notranslate"><span class="pre">api/v1/client</span></code>.</p>
 <p>New namespaces are easily plugable via the file: <code class="docutils literal notranslate"><span class="pre">api/v1/__init__.py</span></code>.</p>
-<div class="section" id="security-model">
+<section id="security-model">
 <h2>Security model<a class="headerlink" href="#security-model" title="Permalink to this headline">#</a></h2>
 <p>First, an overview of the security model.</p>
 <p>Clients needs to have an account on the Stats Service and a token in order to submit
@@ -450,8 +452,8 @@ new stats and to query the API. New clients can be created with the
 <p>The token must be submitted in the headers of the requests with the key
 <code class="docutils literal notranslate"><span class="pre">X-API-KEY</span></code>, as explained below. It is not needed to submit an additional id,
 tokens are unique.</p>
-</div>
-<div class="section" id="openapi-specification">
+</section>
+<section id="openapi-specification">
 <h2>OpenAPI Specification<a class="headerlink" href="#openapi-specification" title="Permalink to this headline">#</a></h2>
 <p>Specification also available at
 <a class="reference external" href="https://dashboard.monarc.lu/api/v1/">https://dashboard.monarc.lu/api/v1</a>.</p>
@@ -950,10 +952,10 @@ tokens are unique.</p>
 <span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="detailed-examples-with-the-api">
+</section>
+<section id="detailed-examples-with-the-api">
 <h2>Detailed examples with the API<a class="headerlink" href="#detailed-examples-with-the-api" title="Permalink to this headline">#</a></h2>
-<div class="section" id="getting-stats-for-a-client">
+<section id="getting-stats-for-a-client">
 <h3>Getting stats for a client<a class="headerlink" href="#getting-stats-for-a-client" title="Permalink to this headline">#</a></h3>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ curl -X GET <span class="s2">&quot;http://127.0.0.1:5000/api/v1/stats&quot;</span> -H  <span class="s2">&quot;accept: application/json&quot;</span> -H  <span class="s2">&quot;X-API-KEY: rddPRk9_t-Z4GOgmY2UL2blKB1DxWB_0yhDlqcsF9p63eXs-oLCdm2c9YgP7cOqGz71GK1tc8lrCenD8AvEr-g&quot;</span>
 <span class="o">{</span>
@@ -975,8 +977,8 @@ tokens are unique.</p>
 <span class="s1">&#39;http://127.0.0.1:5000/api/v1/stats&#39;</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="invoking-a-processor">
+</section>
+<section id="invoking-a-processor">
 <h3>Invoking a processor<a class="headerlink" href="#invoking-a-processor" title="Permalink to this headline">#</a></h3>
 <p>Processors are utilities to process stats data. Processors are currently defined in
 <code class="docutils literal notranslate"><span class="pre">statsservice/lib/processors.py</span></code>. They operate on different kind of stats:</p>
@@ -1033,9 +1035,9 @@ the parameters <code class="docutils literal notranslate"><span class="pre">risk
 <span class="s2"> - risks_state: current or residual.&quot;</span>
 </pre></div>
 </div>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
 
 

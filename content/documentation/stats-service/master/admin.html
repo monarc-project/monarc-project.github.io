@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Blueprint admin &#8212; MONARC Stats Service 0.4.0 documentation</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -152,6 +153,7 @@
 
 <h5>Releases</h5>
 <ul>
+  <li><a href="../v0.5.2/admin.html">v0.5.2</a></li>
   <li><a href="../v0.5.1/admin.html">v0.5.1</a></li>
   <li><a href="../v0.5.0/admin.html">v0.5.0</a></li>
   <li><a href="../v0.4.0/index.html">v0.4.0</a></li>
@@ -443,14 +445,14 @@ title="Print to PDF"
                 
 
 
-  <div class="section" id="blueprint-admin">
+  <section id="blueprint-admin">
 <h1>Blueprint admin<a class="headerlink" href="#blueprint-admin" title="Permalink to this headline">#</a></h1>
-<div class="section" id="security-model">
+<section id="security-model">
 <h2>Security model<a class="headerlink" href="#security-model" title="Permalink to this headline">#</a></h2>
 <p>Clients needs to have an activated account with <strong>admin</strong> permissions and a token in
 order to use endpoints of the admin blueprint.</p>
-</div>
-<div class="section" id="routes">
+</section>
+<section id="routes">
 <h2>Routes<a class="headerlink" href="#routes" title="Permalink to this headline">#</a></h2>
 <table class="table">
 <colgroup>
@@ -484,10 +486,10 @@ order to use endpoints of the admin blueprint.</p>
 </tr>
 </tbody>
 </table>
-</div>
-<div class="section" id="examples">
+</section>
+<section id="examples">
 <h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">#</a></h2>
-<div class="section" id="activate-the-sharing-for-a-client">
+<section id="activate-the-sharing-for-a-client">
 <h3>Activate the sharing for a client<a class="headerlink" href="#activate-the-sharing-for-a-client" title="Permalink to this headline">#</a></h3>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ curl -H  <span class="s2">&quot;X-API-KEY: 5USubuFK_FXB7fXoMq_Nt0CHRo9SxQW0J_FarVG5fCJmXckz6T1qgE2wtV_aFiGTGvBi1Xr45-CayfgpC-_MMA&quot;</span>  http://127.0.0.1:5000/admin/client_sharing_activate.json/52629c82-f907-47e9-b568-bacc197b750d
 <span class="o">{</span>
@@ -495,8 +497,8 @@ order to use endpoints of the admin blueprint.</p>
 <span class="o">}</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="update-stats-service">
+</section>
+<section id="update-stats-service">
 <h3>Update Stats Service<a class="headerlink" href="#update-stats-service" title="Permalink to this headline">#</a></h3>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ curl -H  <span class="s2">&quot;X-API-KEY: 5USubuFK_FXB7fXoMq_Nt0CHRo9SxQW0J_FarVG5fCJmXckz6T1qgE2wtV_aFiGTGvBi1Xr45-CayfgpC-_MMA&quot;</span>  http://127.0.0.1:5000/admin/update.json
 <span class="o">{</span>
@@ -508,9 +510,9 @@ order to use endpoints of the admin blueprint.</p>
 <p>The output of the
 <a class="reference external" href="https://github.com/monarc-project/stats-service/blob/master/contrib/update.sh">Shell update script</a>
 for Stats Service is returned.</p>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
 
 
