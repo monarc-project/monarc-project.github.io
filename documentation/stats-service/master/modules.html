@@ -96,17 +96,10 @@
    Logging
   </a>
  </li>
- <li class="toctree-l1 current active has-children">
+ <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    Module index
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
-  <label for="toctree-checkbox-1">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul class="simple">
-  </ul>
  </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
@@ -127,25 +120,42 @@
  </span>
 </p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="api-v1.html">
-   API v1
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="blueprints.html">
+   Available blueprints
   </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="root.html">
-   Blueprint root
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="stats.html">
-   Blueprint stats
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="admin.html">
-   Blueprint admin
-  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="api-v1.html">
+     API v1
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="root.html">
+     Blueprint root
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="map.html">
+     Map
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="stats.html">
+     Blueprint stats
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="admin.html">
+     Blueprint admin
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -362,6 +372,16 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#indices-and-tables">
+   Indices and tables
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-statsservice">
+   statsservice
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#models">
    Models
   </a>
@@ -396,6 +416,16 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#indices-and-tables">
+   Indices and tables
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-statsservice">
+   statsservice
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#models">
    Models
   </a>
@@ -424,9 +454,16 @@ title="Print to PDF"
 
   <section id="module-index">
 <h1>Module index<a class="headerlink" href="#module-index" title="Permalink to this headline">#</a></h1>
-<div class="toctree-wrapper compound">
-</div>
-<span class="target" id="module-statsservice"></span><dl class="py function">
+<section id="indices-and-tables">
+<h2>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
+</ul>
+</section>
+<section id="module-statsservice">
+<span id="statsservice"></span><h2>statsservice<a class="headerlink" href="#module-statsservice" title="Permalink to this headline">#</a></h2>
+<dl class="py function">
 <dt class="sig sig-object py" id="statsservice.get_version">
 <span class="sig-prename descclassname"><span class="pre">statsservice.</span></span><span class="sig-name descname"><span class="pre">get_version</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#statsservice.get_version" title="Permalink to this definition">#</a></dt>
 <dd><p>Get the current version of the software. First it checks if the environment
@@ -439,6 +476,7 @@ it uses <code class="docutils literal notranslate"><span class="pre">Git</span> 
 </dl>
 </dd></dl>
 
+</section>
 <section id="models">
 <h2>Models<a class="headerlink" href="#models" title="Permalink to this headline">#</a></h2>
 <dl class="py class">
