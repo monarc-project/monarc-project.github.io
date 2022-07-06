@@ -5,13 +5,21 @@ Slug: community/users
 Summary: They are using MONARC
 
 
-![Stëftung Hëllef Doheem](/assets/images/community/users/shd_logo.png) [Stëftung Hëllef Doheem](http://shd.lu){:target="_blank"}
-
-![CCN](/assets/images/community/users/ccb_logo.svg) [Centre for Cyber security Belgium](https://ccb.belgium.be){:target="_blank"}
-
-![CCN](/assets/images/community/users/anssi-lu_logo.gif) [ANSSI - Luxembourg](https://cybersecurite.public.lu){:target="_blank"}
-
+### And many others ! Why not you ?
 
 ---
 
-And many others. Why not you?
+[![Stëftung Hëllef Doheem](/assets/images/community/users/shd_logo.png)](https://www.shd.lu){:target="_blank"}
+
+[![KonzeptAcht GmbH](/assets/images/community/users/k8_logo.png)](https://www.konzeptacht.de){:target="_blank"}
+
+[![Centre for Cyber security Belgium](/assets/images/community/users/ccb_logo.png)](https://ccb.belgium.be){:target="_blank"}
+
+[![ANSSI-LU](/assets/images/community/users/anssi-lu_logo.png)](https://cybersecurite.public.lu){:target="_blank"}
+
+[![Elvinger Hoss Prussen](/assets/images/community/users/Elvinger-Hoss_logo.png)](https://www.elvingerhoss.lu){:target="_blank"}
+
+[![ILR](/assets/images/community/users/ilr_logo.png)](https://web.ilr.lu){:target="_blank"}
+
+[![IBPT](/assets/images/community/users/ibpt_logo.png)](https://ibpt.be){:target="_blank"}
+
