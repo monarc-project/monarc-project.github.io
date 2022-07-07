@@ -87,17 +87,10 @@
    Using the platform
   </a>
  </li>
- <li class="toctree-l1 has-children">
+ <li class="toctree-l1">
   <a class="reference internal" href="modules.html">
    Module index
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
-  <label for="toctree-checkbox-1">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul class="simple">
-  </ul>
  </li>
 </ul>
 
@@ -200,6 +193,11 @@
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#docker">
+     Docker
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#heroku">
      Heroku
     </a>
@@ -242,6 +240,11 @@
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#docker">
+     Docker
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#heroku">
      Heroku
     </a>
@@ -270,6 +273,19 @@
 and a dependency manager (for example <a class="reference external" href="https://python-poetry.org">Poetry</a>);</p></li>
 <li><p>A PostgreSQL server &gt;= 12.x: persistent storage.</p></li>
 </ul>
+</div>
+<div class="section" id="deployment">
+<h2>Deployment<a class="headerlink" href="#deployment" title="Permalink to this headline">¶</a></h2>
+<p>The service can be deployed via several ways:</p>
+<div class="contents local topic" id="contents">
+<ul class="simple">
+<li><p><a class="reference internal" href="#from-the-source" id="id1">From the source</a></p></li>
+<li><p><a class="reference internal" href="#docker" id="id2">Docker</a></p></li>
+<li><p><a class="reference internal" href="#heroku" id="id3">Heroku</a></p></li>
+</ul>
+</div>
+<div class="section" id="from-the-source">
+<h3><a class="toc-backref" href="#id1">From the source</a><a class="headerlink" href="#from-the-source" title="Permalink to this headline">¶</a></h3>
 <p>Creation of a PostgreSQL user:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ sudo apt install postgresql
 $ sudo -u postgres createuser &lt;username&gt;
@@ -282,24 +298,12 @@ ALTER ROLE
 postgres-# <span class="se">\q</span>
 </pre></div>
 </div>
-<p>The user name and password chosen must be specified later in the configuration file.</p>
-</div>
-<div class="section" id="deployment">
-<h2>Deployment<a class="headerlink" href="#deployment" title="Permalink to this headline">¶</a></h2>
-<p>The service can be deployed via several ways:</p>
-<div class="contents local topic" id="contents">
-<ul class="simple">
-<li><p><a class="reference internal" href="#from-the-source" id="id1">From the source</a></p></li>
-<li><p><a class="reference internal" href="#heroku" id="id2">Heroku</a></p></li>
-</ul>
-</div>
-<div class="section" id="from-the-source">
-<h3><a class="toc-backref" href="#id1">From the source</a><a class="headerlink" href="#from-the-source" title="Permalink to this headline">¶</a></h3>
-<p>Clone the repository and use a Python virtualenv.</p>
+<p>The user name and password chosen must be specified later in the configuration file.
+Get the source code and install the software:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ sudo apt install python3-pip python3-venv
 $ curl -sSL https://install.python-poetry.org <span class="p">|</span> python3 -
 
-$ git clone https://github.com/CASES-LU/MOSP.git
+$ git clone https://github.com/CASES-LU/MOSP
 $ <span class="nb">cd</span> MOSP/
 $ npm install
 $ poetry install --no-dev
@@ -323,14 +327,29 @@ $ flask run
 </div>
 <p>For production you should use <a class="reference external" href="https://gunicorn.org">Gunicorn</a> or <code class="docutils literal notranslate"><span class="pre">mod_wsgi</span></code>.</p>
 </div>
+<div class="section" id="docker">
+<h3><a class="toc-backref" href="#id2">Docker</a><a class="headerlink" href="#docker" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ git clone https://github.com/CASES-LU/MOSP
+$ <span class="nb">cd</span> MOSP/
+$ docker-compose up -d
+</pre></div>
+</div>
+<p>MOSP will be available at:
+<a class="reference external" href="http://127.0.0.1:5000">http://127.0.0.1:5000</a></p>
+<p>You can connect with the login <em>admin</em> and the password <em>password</em>.</p>
+<p>If you want to connect in the container:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ docker <span class="nb">exec</span> -it mosp /bin/bash
+</pre></div>
+</div>
+</div>
 <div class="section" id="heroku">
-<h3><a class="toc-backref" href="#id2">Heroku</a><a class="headerlink" href="#heroku" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id3">Heroku</a><a class="headerlink" href="#heroku" title="Permalink to this headline">¶</a></h3>
 <p>Simply with this button:</p>
 <a class="reference external image-reference" href="https://heroku.com/deploy?template=https://github.com/CASES-LU/MOSP"><img alt="Latest release" src="https://www.herokucdn.com/deploy/button.png" /></a>
 <p>And voilà !</p>
 <p>The default credentials are <em>admin</em> for the login and <em>password</em> for the password.</p>
 <p>Alternatively, Deploy to Heroku manually:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ git clone https://github.com/CASES-LU/MOSP.git
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ git clone https://github.com/CASES-LU/MOSP
 $ <span class="nb">cd</span> MOSP/
 $ heroku create --region eu &lt;name-of-your-instance&gt;
 $ heroku addons:add heroku-postgresql:hobby-dev
