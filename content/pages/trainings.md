@@ -12,7 +12,7 @@ table {
 
 |&nbsp;|||
 |:--|--|--|
-|**Date and time**|| 29th Septembre 2022 - 9h30 - 16h30. |
+|**Date and time**|| 7th December 2022 - 9h30 - 16h30. |
 |&nbsp;|  ||
 |**Location**|&nbsp;&nbsp;&nbsp;|Online / [BigBlueButton](https://bigbluebutton.org/) platform of SECURITYMADEIN.LU|
 |&nbsp;|  |<i class="fa fa-exclamation-triangle"></i> Check your network connection to BigBlueButton [here](https://test.bigbluebutton.org).  |
@@ -25,7 +25,7 @@ table {
 |&nbsp;|  |  |
 |**Level required**||Basic|
 |&nbsp;|  |  |
-|**Language**|| French ![French][fr] |
+|**Language**|| English ![English][en] |
 |&nbsp;|  |  |
 |**Extra requirements**||**A laptop is required**|
 |&nbsp;|  |  |
@@ -33,15 +33,15 @@ table {
 |&nbsp;|  |  |
 |**Price**||Free| /*(No show fee: 40€ HT - Cancellation is possible up to 48 hours before the start of the training) |*/
 |&nbsp;|  |  |
-|**Registration** |   ||
+|**Registration** | |Coming soon|
 
-<script type="text/javascript" src="https://www.xing-events.com/resources/js/amiandoExport.js"></script><iframe title="Ticket shop" src="https://xing-events.com/monarc.html?viewType=iframe&distributionChannel=CHANNEL_IFRAME&language=en&resizeIFrame=true" frameborder="0" width="650px" id="_amiandoIFrame4855070"><p>This page requires frame support. Please use a frame compatible browser to see the ticket sales module.</p></iframe>
 
 ### Past Trainings
 
 
 | Date       | Location                                     | Language        | Presentation material  |
 |------------| -------------------------------------------- | --------------- | ---------------------- |
+| 2022-09-29 | BigBlueButton platform of securitymadein.lu  | ![French][FR]   |                        |
 | 2022-04-19 | BigBlueButton platform of securitymadein.lu  | ![English][en]   | [<i class="fa fa-file-pdf-o" style="color:red" aria-hidden="true"></i>](/assets/files/trainings/20220419_MONARC-training.pdf)   |
 | 2021-12-16 | BigBlueButton platform of securitymadein.lu  | ![French][FR]   |                        |
 | 2021-09-29 | BigBlueButton platform of securitymadein.lu  | ![English][en]   | [<i class="fa fa-file-pdf-o" style="color:red" aria-hidden="true"></i>](/assets/files/trainings/20210929_MONARC-training.pdf)   |
