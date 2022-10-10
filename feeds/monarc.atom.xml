@@ -1,5 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>MONARC - monarc</title><link href="https://www.monarc.lu/" rel="alternate"></link><link href="https://www.monarc.lu/feeds/monarc.atom.xml" rel="self"></link><id>https://www.monarc.lu/</id><updated>2022-06-29T00:00:00+02:00</updated><entry><title>MONARC 2.12.2 released</title><link href="https://www.monarc.lu/news/2022/06/29/monarc-2122-released/" rel="alternate"></link><published>2022-06-29T00:00:00+02:00</published><updated>2022-06-29T00:00:00+02:00</updated><author><name>SECURITYMADEIN.LU g.i.e.</name></author><id>tag:www.monarc.lu,2022-06-29:/news/2022/06/29/monarc-2122-released/</id><summary type="html">&lt;p&gt;Release 2.12.2 of &lt;span class="caps"&gt;MONARC&lt;/span&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;Version 2.12.2 includes a bugfix that solves an issue when exporting
+<feed xmlns="http://www.w3.org/2005/Atom"><title>MONARC - monarc</title><link href="https://www.monarc.lu/" rel="alternate"></link><link href="https://www.monarc.lu/feeds/monarc.atom.xml" rel="self"></link><id>https://www.monarc.lu/</id><updated>2022-10-10T00:00:00+02:00</updated><entry><title>MONARC 2.12.3 released</title><link href="https://www.monarc.lu/news/2022/10/10/monarc-2123-released/" rel="alternate"></link><published>2022-10-10T00:00:00+02:00</published><updated>2022-10-10T00:00:00+02:00</updated><author><name>SECURITYMADEIN.LU g.i.e.</name></author><id>tag:www.monarc.lu,2022-10-10:/news/2022/10/10/monarc-2123-released/</id><summary type="html">&lt;p&gt;Release 2.12.3 of &lt;span class="caps"&gt;MONARC&lt;/span&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;Version 2.12.3 includes a bugfix and some new&amp;nbsp;features.&lt;/p&gt;
+&lt;h3 id="new"&gt;New&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;[FrontOffice] Added a possibility to import assets in the library from &lt;span class="caps"&gt;CSV&lt;/span&gt;&amp;nbsp;files.&lt;/li&gt;
+&lt;li&gt;[FrontOffice, BackOffice] Link multiple specific models per&amp;nbsp;client.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="fix"&gt;Fix&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;[FrontOffice] Error when adding a tag to instantiate an object.
+  (&lt;a href="https://github.com/monarc-project/MonarcAppFO/issues/459"&gt;#459&lt;/a&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="updating"&gt;Updating&lt;/h2&gt;
+&lt;p&gt;To update, please follow the 
+&lt;a href="https://monarc.lu/documentation/technical-guide/#monarc-update"&gt;guide&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;More details and notes are available on
+&lt;a href="https://github.com/monarc-project/MonarcAppFO/releases/tag/v2.12.3"&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="download"&gt;Download&lt;/h2&gt;
+&lt;p&gt;Download the &lt;span class="caps"&gt;OVA&lt;/span&gt; image of this release
+&lt;a href="https://vm.monarc.lu/MONARC_v2.12.3@0cb8fbb/"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Or use the &lt;a href="https://github.com/monarc-project/MonarcAppFO/releases/download/v2.12.3/MonarcAppFO-v2.12.3.tar.gz"&gt;release bundle&lt;/a&gt;.&lt;/p&gt;</content><category term="monarc"></category><category term="monarc"></category><category term="new-release"></category></entry><entry><title>MONARC 2.12.2 released</title><link href="https://www.monarc.lu/news/2022/06/29/monarc-2122-released/" rel="alternate"></link><published>2022-06-29T00:00:00+02:00</published><updated>2022-06-29T00:00:00+02:00</updated><author><name>SECURITYMADEIN.LU g.i.e.</name></author><id>tag:www.monarc.lu,2022-06-29:/news/2022/06/29/monarc-2122-released/</id><summary type="html">&lt;p&gt;Release 2.12.2 of &lt;span class="caps"&gt;MONARC&lt;/span&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;Version 2.12.2 includes a bugfix that solves an issue when exporting
 a risk analysis with a statement of&amp;nbsp;applicability.&lt;/p&gt;
 &lt;h2 id="updating"&gt;Updating&lt;/h2&gt;
 &lt;p&gt;To update, please follow the 
