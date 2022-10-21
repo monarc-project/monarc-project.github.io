@@ -161,7 +161,7 @@ software which is providing:
 
 This software can be deployed just next to a MONARC instance or on a dedicated server.
 
-The public official instance operated by [CASES](https://www.cases.lu) is
+The public official instance operated by [NC3-LU](https://nc3-lu.github.io) is
 available at [https://dashboard.monarc.lu](https://dashboard.monarc.lu).
 
 The documentation can be viewed online

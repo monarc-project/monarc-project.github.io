@@ -84,7 +84,7 @@ introduce [MOSP](https://objects.monarc.lu) (MONARC Objects Sharing Platform).
 
 Basically MOSP is a platform to create, edit and share valid JSON objects.  
 MOSP supports any kind of JSON objects, you just have to specify a JSON schema.
-The instance objects.monarc.lu, operated by [CASES](https://www.cases.lu),
+The instance objects.monarc.lu, operated by [NC3-LU](https://nc3-lu.github.io),
 is dedicated to gather security related objects in the first place aimed to be used
 with MONARC. And our instance is [open](https://objects.monarc.lu/login).
 

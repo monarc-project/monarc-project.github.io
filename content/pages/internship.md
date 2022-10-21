@@ -26,7 +26,7 @@ management.
 
 #### Apply:
 
-*	Please contact [info@cases.lu](mailto:info@cases.lu) to get in touch with us.
+*	Please contact [opensource@nc3.lu](mailto:opensource@nc3.lu) to get in touch with us.
 
 
 ### Internship 2: Develop new functionalities for MONARC, a risk assessment tool
@@ -49,4 +49,4 @@ CASES has developed an optimised risk analysis method: MONARC (Optimised Risk An
 
 #### Apply:
 
-*	Please contact [info@cases.lu](mailto:info@cases.lu) to get in touch with us.
+*	Please contact [opensource@nc3.lu](mailto:opensource@nc3.lu) to get in touch with us.

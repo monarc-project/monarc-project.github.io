@@ -9,7 +9,7 @@ Dans le cadre de nos rencontres avec les utilisateurs de l’outil et de la mét
 
 Dans le cadre de ses missions, l’IGSS recueille, centralise, traite et gère sous forme « pseudonymisée » des données individuelles de citoyens. Ces données sont régulièrement demandées par des institutions ou des organismes de recherche dans un but statistique pour effectuer des analyses et évaluations. Dans une mission d’intérêt public, l’IGSS leur met à disposition certains ensembles de données. Depuis 2018, ces données sont mises à disposition via la [Luxembourg Microdata Platform on Labour and Social Protection](https://igss.gouvernement.lu/fr/microdata-platform.html). Pour réaliser cette plateforme qui facilite l’accès aux données pour la recherche tout en garantissant des niveaux élevés de qualité et de sécurité conformément au Règlement Général sur la Protection des Données (RGPD), un travail d’analyse de risques était donc nécessaire.
 
-L’IGSS n’ayant pas l’ensemble des compétences en interne, nous sommes allés chercher des solutions auprès de tiers. Nous avons eu l’opportunité de rencontrer l’équipe de [CASES](https://www.cases.lu/) qui nous a présenté l’outil et la méthode MONARC.
+L’IGSS n’ayant pas l’ensemble des compétences en interne, nous sommes allés chercher des solutions auprès de tiers. Nous avons eu l’opportunité de rencontrer l’équipe de [CASES](https://www.cases.lu) qui nous a présenté l’outil et la méthode MONARC.
 
 ### Quel a été l’apport des équipes de CASES dans votre travail d’analyse de risques ?
 
