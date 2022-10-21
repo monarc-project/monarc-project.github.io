@@ -94,7 +94,7 @@ LINKS = (('MONARC <i>Cloud</i>', 'https://my.monarc.lu'),
          ('Objects Sharing Platform', 'https://objects.monarc.lu'),
          ('MONARC Cybersecurity Landscape', 'https://dashboard.monarc.lu'),
          ('Subscribe to the releases', 'https://open-source-security-software.net/project/MONARC/releases.atom'),
-         ('NCC-LU', 'https://nc3-lu.github.io'),
+         ('NC3-LU', 'https://nc3-lu.github.io'),
          ('<img src="https://img.shields.io/github/release/monarc-project/MonarcAppFO.svg?style=flat-square" />',
             'https://github.com/monarc-project/MonarcAppFO/releases/latest'),)
 
