@@ -33,7 +33,10 @@ table {
 |&nbsp;|  |  |
 |**Price**||Free| /*(No show fee: 40€ HT - Cancellation is possible up to 48 hours before the start of the training) |*/
 |&nbsp;|  |  |
-|**Registration** | |Coming soon|
+|**Registration** | ||
+
+
+<script type="text/javascript" src="https://www.xing-events.com/resources/js/amiandoExport.js"></script><iframe title="Ticket shop" src="https://TNYMZBY.xing-events.com/TNYMZBY.html?viewType=iframe&distributionChannel=CHANNEL_IFRAME&language=en&resizeIFrame=true" frameborder="0" width="650px" id="_amiandoIFrame5186918"><p>This page requires frame support. Please use a frame compatible browser to see the ticket sales module.</p></iframe>
 
 
 ### Past Trainings
