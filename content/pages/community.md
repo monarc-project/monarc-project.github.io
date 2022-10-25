@@ -5,7 +5,7 @@ Title: Community
 
 ### Developers
 
-MONARC is lead by the [NC3-LU](https://nc3-lu.github.io) team.
+MONARC is lead by the [NC3-LU](https://opensource.nc3.lu) team.
 NC3-LU is also organizing the MONARC [trainings](/trainings).
 
 The full list of
