@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>MONARC - monarc</title><link href="https://www.monarc.lu/" rel="alternate"></link><link href="https://www.monarc.lu/feeds/monarc.atom.xml" rel="self"></link><id>https://www.monarc.lu/</id><updated>2022-10-10T00:00:00+02:00</updated><entry><title>MONARC 2.12.3 released</title><link href="https://www.monarc.lu/news/2022/10/10/monarc-2123-released/" rel="alternate"></link><published>2022-10-10T00:00:00+02:00</published><updated>2022-10-10T00:00:00+02:00</updated><author><name>Luxembourg House of Cybersecurity</name></author><id>tag:www.monarc.lu,2022-10-10:/news/2022/10/10/monarc-2123-released/</id><summary type="html">&lt;p&gt;Release 2.12.3 of &lt;span class="caps"&gt;MONARC&lt;/span&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;Version 2.12.3 includes a bugfix and some new&amp;nbsp;features.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>MONARC - monarc</title><link href="https://www.monarc.lu/" rel="alternate"></link><link href="https://www.monarc.lu/feeds/monarc.atom.xml" rel="self"></link><id>https://www.monarc.lu/</id><updated>2022-11-14T00:00:00+01:00</updated><entry><title>MONARC 2.12.4 released</title><link href="https://www.monarc.lu/news/2022/11/14/monarc-2124-released/" rel="alternate"></link><published>2022-11-14T00:00:00+01:00</published><updated>2022-11-14T00:00:00+01:00</updated><author><name>Luxembourg House of Cybersecurity</name></author><id>tag:www.monarc.lu,2022-11-14:/news/2022/11/14/monarc-2124-released/</id><summary type="html">&lt;p&gt;Release 2.12.4 of &lt;span class="caps"&gt;MONARC&lt;/span&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;Version 2.12.4 includes some new&amp;nbsp;features.&lt;/p&gt;
+&lt;h3 id="new"&gt;New&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;[FrontOffice] Implemented new dashboard chart views and a curve line that represents the average number&amp;nbsp;tendency.&lt;/li&gt;
+&lt;li&gt;[FrontOffice] Added a possibility to enforce all the instance&amp;#8217;s users to enable 2-Factor&amp;nbsp;Authentication.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="updating"&gt;Updating&lt;/h2&gt;
+&lt;p&gt;To update, please follow the 
+&lt;a href="https://monarc.lu/documentation/technical-guide/#monarc-update"&gt;guide&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;More details and notes are available on
+&lt;a href="https://github.com/monarc-project/MonarcAppFO/releases/tag/v2.12.4"&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="download"&gt;Download&lt;/h2&gt;
+&lt;p&gt;Download the &lt;span class="caps"&gt;OVA&lt;/span&gt; image of this release
+&lt;a href="https://vm.monarc.lu/MONARC_v2.12.4@84ded71/"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Or use the &lt;a href="https://github.com/monarc-project/MonarcAppFO/releases/download/v2.12.4/MonarcAppFO-v2.12.4.tar.gz"&gt;release bundle&lt;/a&gt;.&lt;/p&gt;</content><category term="monarc"></category><category term="monarc"></category><category term="new-release"></category></entry><entry><title>MONARC 2.12.3 released</title><link href="https://www.monarc.lu/news/2022/10/10/monarc-2123-released/" rel="alternate"></link><published>2022-10-10T00:00:00+02:00</published><updated>2022-10-10T00:00:00+02:00</updated><author><name>Luxembourg House of Cybersecurity</name></author><id>tag:www.monarc.lu,2022-10-10:/news/2022/10/10/monarc-2123-released/</id><summary type="html">&lt;p&gt;Release 2.12.3 of &lt;span class="caps"&gt;MONARC&lt;/span&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;Version 2.12.3 includes a bugfix and some new&amp;nbsp;features.&lt;/p&gt;
 &lt;h3 id="new"&gt;New&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;[FrontOffice] Added a possibility to import assets in the library from &lt;span class="caps"&gt;CSV&lt;/span&gt;&amp;nbsp;files.&lt;/li&gt;
