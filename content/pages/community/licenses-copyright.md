@@ -16,7 +16,7 @@ are also provided under the same license as the MONARC project.
 
 ## Copyright holders
 
-- Copyright (C) 2016-2022 SMILE gie securitymadein.lu
+- Copyright (C) 2016-2022 Luxembourg House of Cybersecurity
 - Copyright (C) 2016-2022 Juan Rocha - [https://github.com/jfrocha](https://github.com/jfrocha)
 - Copyright (C) 2016-2022 Jérôme Lombardi - [https://github.com/jerolomb](https://github.com/jerolomb)
 - Copyright (C) 2017-2022 Cédric Bonhomme - [https://www.cedricbonhomme.org](https://www.cedricbonhomme.org)
