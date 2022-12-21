@@ -1,5 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>MONARC</title><link href="https://www.monarc.lu/" rel="alternate"></link><link href="https://www.monarc.lu/feeds/all.atom.xml" rel="self"></link><id>https://www.monarc.lu/</id><updated>2022-11-14T00:00:00+01:00</updated><entry><title>MONARC 2.12.4 released</title><link href="https://www.monarc.lu/news/2022/11/14/monarc-2124-released/" rel="alternate"></link><published>2022-11-14T00:00:00+01:00</published><updated>2022-11-14T00:00:00+01:00</updated><author><name>Luxembourg House of Cybersecurity</name></author><id>tag:www.monarc.lu,2022-11-14:/news/2022/11/14/monarc-2124-released/</id><summary type="html">&lt;p&gt;Release 2.12.4 of &lt;span class="caps"&gt;MONARC&lt;/span&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;Version 2.12.4 includes some new&amp;nbsp;features.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>MONARC</title><link href="https://www.monarc.lu/" rel="alternate"></link><link href="https://www.monarc.lu/feeds/all.atom.xml" rel="self"></link><id>https://www.monarc.lu/</id><updated>2022-12-21T00:00:00+01:00</updated><entry><title>MONARC 2.12.5 released</title><link href="https://www.monarc.lu/news/2022/12/21/monarc-2125-released/" rel="alternate"></link><published>2022-12-21T00:00:00+01:00</published><updated>2022-12-21T00:00:00+01:00</updated><author><name>Luxembourg House of Cybersecurity</name></author><id>tag:www.monarc.lu,2022-12-21:/news/2022/12/21/monarc-2125-released/</id><summary type="html">&lt;p&gt;Release 2.12.5 of &lt;span class="caps"&gt;MONARC&lt;/span&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;Version 2.12.5 includes some new features and&amp;nbsp;fixes.&lt;/p&gt;
+&lt;h3 id="new"&gt;New&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;[FrontOffice] Rebranding of Monarc app (logos, titles) according to the &amp;#8220;Cases&amp;#8221; -&amp;gt; &amp;#8220;&lt;span class="caps"&gt;NC3&lt;/span&gt;&amp;#8221;&amp;nbsp;move.&lt;/li&gt;
+&lt;li&gt;[FrontOffice] Improved the analyses import&amp;nbsp;speed.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="fix"&gt;Fix&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed the autocomplete for passwords. Password filling for Import brakes the&amp;nbsp;execution.&lt;/li&gt;
+&lt;li&gt;Record of processing activities processor creation &lt;span class="caps"&gt;JS&lt;/span&gt;&amp;nbsp;error.&lt;/li&gt;
+&lt;li&gt;Fixed the long names displaying for assets (responsive&amp;nbsp;view).&lt;/li&gt;
+&lt;li&gt;Dashboard&amp;nbsp;fixes.&lt;/li&gt;
+&lt;li&gt;Added the possibility to modify the threat&amp;#8217;s&amp;nbsp;theme.&lt;/li&gt;
+&lt;li&gt;Updated and added missing&amp;nbsp;translations.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="updating"&gt;Updating&lt;/h2&gt;
+&lt;p&gt;To update, please follow the 
+&lt;a href="https://monarc.lu/documentation/technical-guide/#monarc-update"&gt;guide&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;More details and notes are available on
+&lt;a href="https://github.com/monarc-project/MonarcAppFO/releases/tag/v2.12.5"&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="download"&gt;Download&lt;/h2&gt;
+&lt;p&gt;Download the &lt;span class="caps"&gt;OVA&lt;/span&gt; image of this release
+&lt;a href="https://vm.monarc.lu/MONARC_v2.12.5@1fbb68c/"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Or use the &lt;a href="https://github.com/monarc-project/MonarcAppFO/releases/download/v2.12.5/MonarcAppFO-v2.12.5.tar.gz"&gt;release bundle&lt;/a&gt;.&lt;/p&gt;</content><category term="monarc"></category><category term="monarc"></category><category term="new-release"></category></entry><entry><title>MONARC 2.12.4 released</title><link href="https://www.monarc.lu/news/2022/11/14/monarc-2124-released/" rel="alternate"></link><published>2022-11-14T00:00:00+01:00</published><updated>2022-11-14T00:00:00+01:00</updated><author><name>Luxembourg House of Cybersecurity</name></author><id>tag:www.monarc.lu,2022-11-14:/news/2022/11/14/monarc-2124-released/</id><summary type="html">&lt;p&gt;Release 2.12.4 of &lt;span class="caps"&gt;MONARC&lt;/span&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;Version 2.12.4 includes some new&amp;nbsp;features.&lt;/p&gt;
 &lt;h3 id="new"&gt;New&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;[FrontOffice] Implemented new dashboard chart views and a curve line that represents the average number&amp;nbsp;tendency.&lt;/li&gt;
