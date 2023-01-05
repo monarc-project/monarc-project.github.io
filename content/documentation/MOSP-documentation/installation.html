@@ -145,14 +145,14 @@
         aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
     <div class="dropdown-buttons sourcebuttons">
         <a class="repository-button"
-            href="https://github.com/CASES-LU/MOSP"><button type="button" class="btn btn-secondary topbarbtn"
+            href="https://github.com/NC3-LU/MOSP"><button type="button" class="btn btn-secondary topbarbtn"
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/CASES-LU/MOSP/issues/new?title=Issue%20on%20page%20%2Finstallation.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/NC3-LU/MOSP/issues/new?title=Issue%20on%20page%20%2Finstallation.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        <a class="edit-button" href="https://github.com/CASES-LU/MOSP/edit/master/docs/installation.rst"><button
+        <a class="edit-button" href="https://github.com/NC3-LU/MOSP/edit/master/docs/installation.rst"><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
     </div>
@@ -287,84 +287,84 @@ and a dependency manager (for example <a class="reference external" href="https:
 <div class="section" id="from-the-source">
 <h3><a class="toc-backref" href="#id1">From the source</a><a class="headerlink" href="#from-the-source" title="Permalink to this headline">¶</a></h3>
 <p>Creation of a PostgreSQL user:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ sudo apt install postgresql
-$ sudo -u postgres createuser &lt;username&gt;
-$ sudo -u postgres psql
-psql <span class="o">(</span><span class="m">11</span>.2 <span class="o">(</span>Ubuntu <span class="m">11</span>.2-1<span class="o">))</span>
-Type <span class="s2">&quot;help&quot;</span> <span class="k">for</span> help.
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>postgresql
+$<span class="w"> </span>sudo<span class="w"> </span>-u<span class="w"> </span>postgres<span class="w"> </span>createuser<span class="w"> </span>&lt;username&gt;
+$<span class="w"> </span>sudo<span class="w"> </span>-u<span class="w"> </span>postgres<span class="w"> </span>psql
+psql<span class="w"> </span><span class="o">(</span><span class="m">11</span>.2<span class="w"> </span><span class="o">(</span>Ubuntu<span class="w"> </span><span class="m">11</span>.2-1<span class="o">))</span>
+Type<span class="w"> </span><span class="s2">&quot;help&quot;</span><span class="w"> </span><span class="k">for</span><span class="w"> </span>help.
 <span class="nv">postgres</span><span class="o">=</span><span class="c1"># ALTER USER &lt;username&gt; WITH encrypted password &#39;&lt;password&gt;&#39;;</span>
 <span class="nv">postgres</span><span class="o">=</span><span class="c1"># ALTER USER &lt;username&gt; WITH SUPERUSER;</span>
-ALTER ROLE
-postgres-# <span class="se">\q</span>
+ALTER<span class="w"> </span>ROLE
+postgres-#<span class="w"> </span><span class="se">\q</span>
 </pre></div>
 </div>
 <p>The user name and password chosen must be specified later in the configuration file.
 Get the source code and install the software:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ sudo apt install python3-pip python3-venv
-$ curl -sSL https://install.python-poetry.org <span class="p">|</span> python3 -
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>python3-pip<span class="w"> </span>python3-venv
+$<span class="w"> </span>curl<span class="w"> </span>-sSL<span class="w"> </span>https://install.python-poetry.org<span class="w"> </span><span class="p">|</span><span class="w"> </span>python3<span class="w"> </span>-
 
-$ git clone https://github.com/CASES-LU/MOSP
-$ <span class="nb">cd</span> MOSP/
-$ npm install
-$ poetry install --no-dev
-$ poetry shell
-$ pybabel compile -d mosp/translations
-$ <span class="nb">export</span> <span class="nv">FLASK_APP</span><span class="o">=</span>runserver.py
-$ <span class="nb">export</span> <span class="nv">FLASK_ENV</span><span class="o">=</span>development
-$ flask db_create
-$ flask db_init
-$ flask import_licenses_from_spdx
-$ flask create_admin --login &lt;login&gt; --password &lt;password&gt;
-$ flask run
- * Serving Flask app <span class="s2">&quot;runserver&quot;</span> <span class="o">(</span>lazy loading<span class="o">)</span>
- * Environment: development
- * Debug mode: on
- * Running on http://127.0.0.1:5000/ <span class="o">(</span>Press CTRL+C to quit<span class="o">)</span>
- * Restarting with stat
- * Debugger is active!
- * Debugger PIN: <span class="m">221</span>-873-938
+$<span class="w"> </span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/NC3-LU/MOSP
+$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>MOSP/
+$<span class="w"> </span>npm<span class="w"> </span>install
+$<span class="w"> </span>poetry<span class="w"> </span>install<span class="w"> </span>--no-dev
+$<span class="w"> </span>poetry<span class="w"> </span>shell
+$<span class="w"> </span>pybabel<span class="w"> </span>compile<span class="w"> </span>-d<span class="w"> </span>mosp/translations
+$<span class="w"> </span><span class="nb">export</span><span class="w"> </span><span class="nv">FLASK_APP</span><span class="o">=</span>runserver.py
+$<span class="w"> </span><span class="nb">export</span><span class="w"> </span><span class="nv">FLASK_ENV</span><span class="o">=</span>development
+$<span class="w"> </span>flask<span class="w"> </span>db_create
+$<span class="w"> </span>flask<span class="w"> </span>db_init
+$<span class="w"> </span>flask<span class="w"> </span>import_licenses_from_spdx
+$<span class="w"> </span>flask<span class="w"> </span>create_admin<span class="w"> </span>--login<span class="w"> </span>&lt;login&gt;<span class="w"> </span>--password<span class="w"> </span>&lt;password&gt;
+$<span class="w"> </span>flask<span class="w"> </span>run
+<span class="w"> </span>*<span class="w"> </span>Serving<span class="w"> </span>Flask<span class="w"> </span>app<span class="w"> </span><span class="s2">&quot;runserver&quot;</span><span class="w"> </span><span class="o">(</span>lazy<span class="w"> </span>loading<span class="o">)</span>
+<span class="w"> </span>*<span class="w"> </span>Environment:<span class="w"> </span>development
+<span class="w"> </span>*<span class="w"> </span>Debug<span class="w"> </span>mode:<span class="w"> </span>on
+<span class="w"> </span>*<span class="w"> </span>Running<span class="w"> </span>on<span class="w"> </span>http://127.0.0.1:5000/<span class="w"> </span><span class="o">(</span>Press<span class="w"> </span>CTRL+C<span class="w"> </span>to<span class="w"> </span>quit<span class="o">)</span>
+<span class="w"> </span>*<span class="w"> </span>Restarting<span class="w"> </span>with<span class="w"> </span>stat
+<span class="w"> </span>*<span class="w"> </span>Debugger<span class="w"> </span>is<span class="w"> </span>active!
+<span class="w"> </span>*<span class="w"> </span>Debugger<span class="w"> </span>PIN:<span class="w"> </span><span class="m">221</span>-873-938
 </pre></div>
 </div>
 <p>For production you should use <a class="reference external" href="https://gunicorn.org">Gunicorn</a> or <code class="docutils literal notranslate"><span class="pre">mod_wsgi</span></code>.</p>
 </div>
 <div class="section" id="docker">
 <h3><a class="toc-backref" href="#id2">Docker</a><a class="headerlink" href="#docker" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ git clone https://github.com/CASES-LU/MOSP
-$ <span class="nb">cd</span> MOSP/
-$ docker-compose up -d
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/NC3-LU/MOSP
+$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>MOSP/
+$<span class="w"> </span>docker-compose<span class="w"> </span>up<span class="w"> </span>-d
 </pre></div>
 </div>
 <p>MOSP will be available at:
 <a class="reference external" href="http://127.0.0.1:5000">http://127.0.0.1:5000</a></p>
 <p>You can connect with the login <em>admin</em> and the password <em>password</em>.</p>
 <p>If you want to connect in the container:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ docker <span class="nb">exec</span> -it mosp /bin/bash
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>docker<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>-it<span class="w"> </span>mosp<span class="w"> </span>/bin/bash
 </pre></div>
 </div>
 </div>
 <div class="section" id="heroku">
 <h3><a class="toc-backref" href="#id3">Heroku</a><a class="headerlink" href="#heroku" title="Permalink to this headline">¶</a></h3>
 <p>Simply with this button:</p>
-<a class="reference external image-reference" href="https://heroku.com/deploy?template=https://github.com/CASES-LU/MOSP"><img alt="Latest release" src="https://www.herokucdn.com/deploy/button.png" /></a>
+<a class="reference external image-reference" href="https://heroku.com/deploy?template=https://github.com/NC3-LU/MOSP"><img alt="Latest release" src="https://www.herokucdn.com/deploy/button.png" /></a>
 <p>And voilà !</p>
 <p>The default credentials are <em>admin</em> for the login and <em>password</em> for the password.</p>
 <p>Alternatively, Deploy to Heroku manually:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ git clone https://github.com/CASES-LU/MOSP
-$ <span class="nb">cd</span> MOSP/
-$ heroku create --region eu &lt;name-of-your-instance&gt;
-$ heroku addons:add heroku-postgresql:hobby-dev
-$ heroku config:set <span class="nv">HEROKU</span><span class="o">=</span><span class="s1">&#39;1&#39;</span>
-$ heroku buildpacks:add --index <span class="m">1</span> heroku/python
-$ heroku buildpacks:add --index <span class="m">2</span> https://github.com/heroku/heroku-buildpack-nodejs
-$ git push heroku master
-$ heroku run init
-$ heroku run flask import_licenses_from_spdx
-$ heroku ps:scale <span class="nv">web</span><span class="o">=</span><span class="m">1</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/NC3-LU/MOSP
+$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>MOSP/
+$<span class="w"> </span>heroku<span class="w"> </span>create<span class="w"> </span>--region<span class="w"> </span>eu<span class="w"> </span>&lt;name-of-your-instance&gt;
+$<span class="w"> </span>heroku<span class="w"> </span>addons:add<span class="w"> </span>heroku-postgresql:hobby-dev
+$<span class="w"> </span>heroku<span class="w"> </span>config:set<span class="w"> </span><span class="nv">HEROKU</span><span class="o">=</span><span class="s1">&#39;1&#39;</span>
+$<span class="w"> </span>heroku<span class="w"> </span>buildpacks:add<span class="w"> </span>--index<span class="w"> </span><span class="m">1</span><span class="w"> </span>heroku/python
+$<span class="w"> </span>heroku<span class="w"> </span>buildpacks:add<span class="w"> </span>--index<span class="w"> </span><span class="m">2</span><span class="w"> </span>https://github.com/heroku/heroku-buildpack-nodejs
+$<span class="w"> </span>git<span class="w"> </span>push<span class="w"> </span>heroku<span class="w"> </span>master
+$<span class="w"> </span>heroku<span class="w"> </span>run<span class="w"> </span>init
+$<span class="w"> </span>heroku<span class="w"> </span>run<span class="w"> </span>flask<span class="w"> </span>import_licenses_from_spdx
+$<span class="w"> </span>heroku<span class="w"> </span>ps:scale<span class="w"> </span><span class="nv">web</span><span class="o">=</span><span class="m">1</span>
 </pre></div>
 </div>
 <p>If you want to create other users programmatically:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ heroku run flask create_user --login &lt;nickname&gt; --password &lt;password&gt;
-$ heroku run flask create_admin --login &lt;nickname&gt; --password &lt;password&gt;
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>heroku<span class="w"> </span>run<span class="w"> </span>flask<span class="w"> </span>create_user<span class="w"> </span>--login<span class="w"> </span>&lt;nickname&gt;<span class="w"> </span>--password<span class="w"> </span>&lt;password&gt;
+$<span class="w"> </span>heroku<span class="w"> </span>run<span class="w"> </span>flask<span class="w"> </span>create_admin<span class="w"> </span>--login<span class="w"> </span>&lt;nickname&gt;<span class="w"> </span>--password<span class="w"> </span>&lt;password&gt;
 </pre></div>
 </div>
 </div>
@@ -401,7 +401,7 @@ $ heroku run flask create_admin --login &lt;nickname&gt; --password &lt;password
     
       By Cédric Bonhomme <cedric@cedricbonhomme.org><br/>
     
-        &copy; Copyright SECURITYMADEIN.LU &lt;info@cases.lu&gt;.<br/>
+        &copy; Copyright Luxembourg House of Cybersecurity &lt;opensource@nc3.lu&gt;.<br/>
   </p>
 </footer>
 </main>
