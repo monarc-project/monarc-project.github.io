@@ -94,13 +94,12 @@ LINKS = (('MONARC <i>Cloud</i>', 'https://my.monarc.lu'),
          ('Objects Sharing Platform', 'https://objects.monarc.lu'),
          ('MONARC Cybersecurity Landscape', 'https://dashboard.monarc.lu'),
          ('Subscribe to the releases', 'https://open-source-security-software.net/project/MONARC/releases.atom'),
-         ('NC3-LU', 'https://opensource.nc3.lu'),
+         ('NC3-LU', 'https://www.nc3.lu'),
          ('<img src="https://img.shields.io/github/release/monarc-project/MonarcAppFO.svg?style=flat-square" />',
             'https://github.com/monarc-project/MonarcAppFO/releases/latest'),)
 
 # Social widget
 SOCIAL = (('GitHub', 'https://github.com/monarc-project'),
-          ('Twitter', 'https://twitter.com/MONARCproject'),
           ('RSS', urllib.parse.urljoin(FEED_DOMAIN, FEED_ALL_ATOM)),)
 
 NAVBAR_ELEMENTS = ['menu-items']
