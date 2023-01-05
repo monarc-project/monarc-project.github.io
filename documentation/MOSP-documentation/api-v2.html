@@ -145,14 +145,14 @@
         aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
     <div class="dropdown-buttons sourcebuttons">
         <a class="repository-button"
-            href="https://github.com/CASES-LU/MOSP"><button type="button" class="btn btn-secondary topbarbtn"
+            href="https://github.com/NC3-LU/MOSP"><button type="button" class="btn btn-secondary topbarbtn"
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/CASES-LU/MOSP/issues/new?title=Issue%20on%20page%20%2Fapi-v2.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/NC3-LU/MOSP/issues/new?title=Issue%20on%20page%20%2Fapi-v2.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        <a class="edit-button" href="https://github.com/CASES-LU/MOSP/edit/master/docs/api-v2.rst"><button
+        <a class="edit-button" href="https://github.com/NC3-LU/MOSP/edit/master/docs/api-v2.rst"><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
     </div>
@@ -282,7 +282,7 @@ access MOSP.</p>
 <span class="s1">    }</span>
 <span class="s1">]&#39;</span>
 
-curl -X POST <span class="s2">&quot;https://objects.monarc.lu/api/v2/object/&quot;</span> -H  <span class="s2">&quot;accept: application/json&quot;</span> -H  <span class="s2">&quot;X-API-KEY: &lt;your-token&gt;&quot;</span> -H  <span class="s2">&quot;Content-Type: application/json&quot;</span> -d <span class="nv">$object</span>
+curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span><span class="s2">&quot;https://objects.monarc.lu/api/v2/object/&quot;</span><span class="w"> </span>-H<span class="w">  </span><span class="s2">&quot;accept: application/json&quot;</span><span class="w"> </span>-H<span class="w">  </span><span class="s2">&quot;X-API-KEY: &lt;your-token&gt;&quot;</span><span class="w"> </span>-H<span class="w">  </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span>-d<span class="w"> </span><span class="nv">$object</span>
 </pre></div>
 </div>
 <p>With PyMOSP:</p>
@@ -345,7 +345,7 @@ curl -X POST <span class="s2">&quot;https://objects.monarc.lu/api/v2/object/&quo
     
       By Cédric Bonhomme <cedric@cedricbonhomme.org><br/>
     
-        &copy; Copyright SECURITYMADEIN.LU &lt;info@cases.lu&gt;.<br/>
+        &copy; Copyright Luxembourg House of Cybersecurity &lt;opensource@nc3.lu&gt;.<br/>
   </p>
 </footer>
 </main>
