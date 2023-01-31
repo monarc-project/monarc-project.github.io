@@ -16,7 +16,7 @@ investment represented by this approach in terms of the required cost and
 expertise is a barrier for many companies, especially SMEs.
 
 To remedy this situation and allow all organisations, both large and small, to
-benefit from the advantages that a risk analysis offers, CASES has developed an
+benefit from the advantages that a risk analysis offers, NC3 has developed an
 optimised risk analysis method: [MONARC](https://github.com/monarc-project)
 (**Optimised Risk Analysis Method**), allowing precise and repeatable risk
 management.
