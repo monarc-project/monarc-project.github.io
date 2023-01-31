@@ -14,7 +14,6 @@ https://www.monarc.lu/community/contribution-guidelines/
 https://www.monarc.lu/documentation/
 https://www.monarc.lu/download/
 https://www.monarc.lu/
-https://www.monarc.lu/internship/
 https://www.monarc.lu/community/licenses-and-copyright/
 https://www.monarc.lu/product/
 https://www.monarc.lu/publications/
