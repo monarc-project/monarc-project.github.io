@@ -13,7 +13,7 @@ $ poetry install
 
 ## Check and publish
 
-You can directly push your changes but it is preferable to first check locally:
+You can directly push your changes, but it is preferable to first check locally:
 
 ```bash
 $ poetry shell # you can also use pipenv shell
