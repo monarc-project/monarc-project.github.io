@@ -1,5 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>MONARC</title><link href="https://www.monarc.lu/" rel="alternate"></link><link href="https://www.monarc.lu/feeds/all.atom.xml" rel="self"></link><id>https://www.monarc.lu/</id><updated>2022-12-21T00:00:00+01:00</updated><entry><title>MONARC 2.12.5 released</title><link href="https://www.monarc.lu/news/2022/12/21/monarc-2125-released/" rel="alternate"></link><published>2022-12-21T00:00:00+01:00</published><updated>2022-12-21T00:00:00+01:00</updated><author><name>Luxembourg House of Cybersecurity</name></author><id>tag:www.monarc.lu,2022-12-21:/news/2022/12/21/monarc-2125-released/</id><summary type="html">&lt;p&gt;Release 2.12.5 of &lt;span class="caps"&gt;MONARC&lt;/span&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;Version 2.12.5 includes some new features and&amp;nbsp;fixes.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>MONARC</title><link href="https://www.monarc.lu/" rel="alternate"></link><link href="https://www.monarc.lu/feeds/all.atom.xml" rel="self"></link><id>https://www.monarc.lu/</id><updated>2023-04-25T00:00:00+02:00</updated><entry><title>MONARC 2.12.6 released</title><link href="https://www.monarc.lu/news/2023/04/25/monarc-2126-released/" rel="alternate"></link><published>2023-04-25T00:00:00+02:00</published><updated>2023-04-25T00:00:00+02:00</updated><author><name>Luxembourg House of Cybersecurity</name></author><id>tag:www.monarc.lu,2023-04-25:/news/2023/04/25/monarc-2126-released/</id><summary type="html">&lt;p&gt;Release 2.12.6 of &lt;span class="caps"&gt;MONARC&lt;/span&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;Version 2.12.6 includes some new features and&amp;nbsp;fixes.&lt;/p&gt;
+&lt;h3 id="new"&gt;New&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;[FrontOffice] Analysis background&amp;nbsp;import.&lt;/li&gt;
+&lt;li&gt;Support of &lt;span class="caps"&gt;PHP8&lt;/span&gt;.&lt;/li&gt;
+&lt;li&gt;[FrontOffice] Specific error message on a wrong password input of analysis&amp;nbsp;import.&lt;/li&gt;
+&lt;li&gt;[BackOffice] Update clients&amp;#8217; data and linked models via Ansible and new flags &amp;#8220;2FAEnforced&amp;#8221; and&amp;nbsp;&amp;#8220;isBackgroundImportActive&amp;#8221;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="fix"&gt;Fix&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;[FrontOffice] Recommendations modification from the Knowledge Base when due date is&amp;nbsp;set.&lt;/li&gt;
+&lt;li&gt;[FrontOffice] Recommendations modification fix of loading the linked recommendation&amp;nbsp;set.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="updating"&gt;Updating&lt;/h2&gt;
+&lt;p&gt;One of the new features of the Release v2.12.6 is upgrade of php to v8.x.
+It would be recommended to perform php version upgrade to php 8.0 or 8.1.&lt;br&gt;
+In case if on the Monarc server used Ubuntu distributive, then it would be a good move to upgrade it to 22.04 or later,  &lt;br&gt;
+because it comes with available php8.1 by&amp;nbsp;default.&lt;/p&gt;
+&lt;p&gt;The specific php packages that can be used (example with php8.0 / Ubuntu):  &lt;br&gt;
+&lt;code&gt;sudo apt-get install -y php8.0 php8.0-cli php8.0-common php8.0-mysql php8.0-zip php8.0-gd php8.0-mbstring php8.0-curl php8.0-xml php8.0-bcmath php8.0-intl php8.0-imagic&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;php8&lt;/code&gt; module also has to be enabled for Apache and previous used version disabled (in case if was&amp;nbsp;enabled):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;a2dismod php7.4&lt;/code&gt; (could be different one enabled, to check: &lt;code&gt;sudo a2query -m&lt;/code&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;a2enmod php8.0&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;Notes on new features&amp;nbsp;configuration.&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;[FrontOffice] Analysis background&amp;nbsp;import.&lt;/p&gt;
+&lt;p&gt;To enable and use the Background import feature there are 2 necessary actions needs to be&amp;nbsp;preformed.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Add/enable the configuration option in the Monarc config &lt;a href="https://github.com/monarc-project/MonarcAppFO/blob/master/config/autoload/local.php.dist#L120-L123"&gt;local.php&lt;/a&gt;, &lt;code&gt;isBackgroundProcessActive&lt;/code&gt; has to be &lt;code&gt;true&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Add a crontab job to execute the import in background mode. For multiple FrontOffice clients installation the crontab could be (to run every 30 seconds):&lt;br&gt;
+&lt;code&gt;* * * * * www-data              cd /var/lib/monarc/fo &amp;amp;&amp;amp; /var/lib/monarc/fo/scripts/run-background-import-for-all-clients.sh &amp;gt; /dev/null 2&amp;gt;&amp;amp;1&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;* * * * * www-data ( sleep 30 ; cd /var/lib/monarc/fo &amp;amp;&amp;amp; /var/lib/monarc/fo/scripts/run-background-import-for-all-clients.sh &amp;gt; /dev/null 2&amp;gt;&amp;amp;1 )&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;For a single client the following command can be executed from crontab:
+    &lt;code&gt;bin/console monarc:import-analyses&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;[BackOffice] Update clients&amp;#8217; data and linked models via Ansible and new flags &amp;#8220;2FAEnforced&amp;#8221; and&amp;nbsp;&amp;#8220;isBackgroundImportActive&amp;#8221;.&lt;/p&gt;
+&lt;p&gt;To be able to use the Back Office feature of clients update, a new release of the &lt;span class="caps"&gt;BO&lt;/span&gt; application should be used along with ansible&amp;nbsp;changes:     &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/monarc-project/MonarcAppBO/releases/tag/v2.12.6"&gt;BackOffice release&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;A new Ansible &lt;a href="(https://github.com/monarc-project/ansible-ubuntu/blob/master/playbook/cronjob_update.sh)"&gt;cronjob&lt;/a&gt; has to be added to the system&amp;nbsp;crontab.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/monarc-project/ansible-ubuntu/blob/master/playbook/monarcbo/files/update_monarc_clients.sh"&gt;A new script&lt;/a&gt; has to be added to the BackOffice server &lt;code&gt;/usr/local/bin/update_monarc_clients.sh&lt;/code&gt;. &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The standard steps to perform the Monarc update: 
+&lt;a href="https://monarc.lu/documentation/technical-guide/#monarc-update"&gt;guide&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;More details and notes are available on
+&lt;a href="https://github.com/monarc-project/MonarcAppFO/releases/tag/v2.12.6"&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="download"&gt;Download&lt;/h2&gt;
+&lt;p&gt;Download the &lt;span class="caps"&gt;OVA&lt;/span&gt; image of this release
+&lt;a href="https://vm.monarc.lu/MONARC_v2.6.0@c23cc82/"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Or use the &lt;a href="https://github.com/monarc-project/MonarcAppFO/releases/download/v2.12.6/MonarcAppFO-v2.12.6.tar.gz"&gt;release bundle&lt;/a&gt;.&lt;/p&gt;</content><category term="monarc"></category><category term="monarc"></category><category term="new-release"></category></entry><entry><title>MONARC 2.12.5 released</title><link href="https://www.monarc.lu/news/2022/12/21/monarc-2125-released/" rel="alternate"></link><published>2022-12-21T00:00:00+01:00</published><updated>2022-12-21T00:00:00+01:00</updated><author><name>Luxembourg House of Cybersecurity</name></author><id>tag:www.monarc.lu,2022-12-21:/news/2022/12/21/monarc-2125-released/</id><summary type="html">&lt;p&gt;Release 2.12.5 of &lt;span class="caps"&gt;MONARC&lt;/span&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;Version 2.12.5 includes some new features and&amp;nbsp;fixes.&lt;/p&gt;
 &lt;h3 id="new"&gt;New&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;[FrontOffice] Rebranding of Monarc app (logos, titles) according to the &amp;#8220;Cases&amp;#8221; -&amp;gt; &amp;#8220;&lt;span class="caps"&gt;NC3&lt;/span&gt;&amp;#8221;&amp;nbsp;move.&lt;/li&gt;
@@ -597,10 +661,10 @@ update to at least &lt;span class="caps"&gt;PHP&lt;/span&gt; 7.2. &lt;span class
 &lt;/ul&gt;
 &lt;p&gt;Once you have checked that your system met the minimum requirements you can
 update your &lt;span class="caps"&gt;MONARC&lt;/span&gt; instance with the following&amp;nbsp;command:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ &lt;span class="nb"&gt;cd&lt;/span&gt; /var/lib/monarc/fo
-$ rm -Rf data/DoctrineORMModule data/cache
-$ mkdir -p data/LazyServices/Proxy &lt;span class="c1"&gt;# set owners to www-data&lt;/span&gt;
-$ curl -sSL https://www.monarc.lu/assets/scripts/upgrade-to-2.9.1.sh &lt;span class="p"&gt;|&lt;/span&gt; bash
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;cd&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;/var/lib/monarc/fo
+$&lt;span class="w"&gt; &lt;/span&gt;rm&lt;span class="w"&gt; &lt;/span&gt;-Rf&lt;span class="w"&gt; &lt;/span&gt;data/DoctrineORMModule&lt;span class="w"&gt; &lt;/span&gt;data/cache
+$&lt;span class="w"&gt; &lt;/span&gt;mkdir&lt;span class="w"&gt; &lt;/span&gt;-p&lt;span class="w"&gt; &lt;/span&gt;data/LazyServices/Proxy&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="c1"&gt;# set owners to www-data&lt;/span&gt;
+$&lt;span class="w"&gt; &lt;/span&gt;curl&lt;span class="w"&gt; &lt;/span&gt;-sSL&lt;span class="w"&gt; &lt;/span&gt;https://www.monarc.lu/assets/scripts/upgrade-to-2.9.1.sh&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;|&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;bash
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;blockquote&gt;
@@ -608,8 +672,8 @@ $ curl -sSL https://www.monarc.lu/assets/scripts/upgrade-to-2.9.1.sh &lt;span cl
 &lt;/blockquote&gt;
 &lt;p&gt;This is the only time you will have to use this script. Future &lt;span class="caps"&gt;MONARC&lt;/span&gt; updates
 will works as&amp;nbsp;usual.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ sha512sum upgrade-to-2.9.1.sh
-76a908ff39ae0d3ada2ccbf254979e733ef993ac650a41c27c03dc2f6f2c164ac22ba1862a155fb9bd05d7f7bdcc064287d7e2eb2a2cf3c2f2cd4e35389be6ae  upgrade-to-2.9.1.sh
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;sha512sum&lt;span class="w"&gt; &lt;/span&gt;upgrade-to-2.9.1.sh
+76a908ff39ae0d3ada2ccbf254979e733ef993ac650a41c27c03dc2f6f2c164ac22ba1862a155fb9bd05d7f7bdcc064287d7e2eb2a2cf3c2f2cd4e35389be6ae&lt;span class="w"&gt;  &lt;/span&gt;upgrade-to-2.9.1.sh
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;This script can be used in order to update &lt;span class="caps"&gt;MONARC&lt;/span&gt; and the
