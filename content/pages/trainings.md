@@ -12,7 +12,7 @@ table {
 
 |&nbsp;|||
 |:--|--|--|
-|**Date and time**|| April 2023 - 9h30 - 16h30. |
+|**Date and time**|| 31 May 2023 - 9h30 - 16h00. |
 |&nbsp;|  ||
 |**Location**|&nbsp;&nbsp;&nbsp;|Online / [BigBlueButton](https://bigbluebutton.org/) platform of the Luxembourg House of Cybersecurity|
 |&nbsp;|  |<i class="fa fa-exclamation-triangle"></i> Check your network connection to BigBlueButton [here](https://test.bigbluebutton.org).  |
@@ -31,9 +31,21 @@ table {
 |&nbsp;|  |  |
 |**Training materials**||Workshop MONARC &nbsp; [![English][en]](/assets/files/monarc-training/en/Formation_V2-MONARC_Env1.1.pdf) [![Français][fr]](/assets/files/monarc-training/fr/Formation_V2-MONARC_Fr.pdf) [![Dutch][nl]](/assets/files/monarc-training/nl/Formation_V2-MONARC_NL.pdf)<br/>Context MyCompany [![English][en]](/assets/files/monarc-training/en/Context_MyCompany_en_v1.0.pdf) [![Français][fr]](/assets/files/monarc-training/fr/Context_MyCompany_fr_v1.1.pdf)<br/>MyPrint workshop &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/assets/files/monarc-training/en/MyPrintEN.json" download>![English][en] <a href="/assets/files/monarc-training/fr/MyPrintFR.json" download>![Français][fr]<br />Check out the [community training materials](/trainings#community-training-materials).
 |&nbsp;|  |  |
-|**Price**||Free| /*(No show fee: 40€ HT - Cancellation is possible up to 48 hours before the start of the training) |*/
+|**Price**||Free| /*(Cancellation is possible up to 48 hours before the start of the training) |*/
 |&nbsp;|  |  |
-|**Registration** | |Coming soon|
+|**Registration** | ||
+
+<link rel="stylesheet" type="text/css" href="https://pretix.eu/monarc/training/widget/v1.css">
+<script type="text/javascript" src="https://pretix.eu/widget/v1.en.js" async></script>
+
+<pretix-widget event="https://pretix.eu/monarc/training/"></pretix-widget>
+<noscript>
+   <div class="pretix-widget">
+        <div class="pretix-widget-info-message">
+            JavaScript is disabled in your browser. To access our ticket shop without JavaScript, please <a target="_blank" rel="noopener" href="https://pretix.eu/monarc/training/">click here</a>.
+        </div>
+    </div>
+</noscript>
 
 
 
