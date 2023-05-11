@@ -13,7 +13,7 @@ The full list of
 is available on GitHub.
 
 If you have any questions about MONARC don't hesitate to contact the team at
-[opensource@nc3.lu](mailto:opensource@nc3.lu).
+[info-monarc@nc3.lu](mailto:info-monarc@nc3.lu).
 
 ### Our users
 

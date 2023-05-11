@@ -7,7 +7,7 @@ on [my.monarc.lu](https://my.monarc.lu), for free.
 ## How to request access?
 
 If you work for an organization you can request access by
-[contacting us](mailto:opensource@nc3.lu?subject=Access to MONARC SaaS).
+[contacting us](mailto:instance-monarc@nc3.lu?subject=Access to MONARC SaaS).
 
 We only provide organizational account with a **personal corporate email address**.
 The registration requires one contact email per organization.
