@@ -85,7 +85,8 @@ MENUITEMS = (
         ('Publications', '/publications'),
         ('Documentation', '/documentation'),
         ('Download', '/download'),
-        ('Trainings', '/trainings')
+        ('Trainings', '/trainings'),
+        ('Contact', '/contact')
 )
 
 # Links
