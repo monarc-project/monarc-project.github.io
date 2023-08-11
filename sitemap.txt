@@ -10,6 +10,7 @@ https://www.monarc.lu/archives.html
 https://www.monarc.lu/documentation/common-issues/
 https://www.monarc.lu/community/
 https://www.monarc.lu/publications/comparison-between-monarc-and-different-risk-management-methods/
+https://www.monarc.lu/contact/
 https://www.monarc.lu/community/contribution-guidelines/
 https://www.monarc.lu/documentation/
 https://www.monarc.lu/download/
