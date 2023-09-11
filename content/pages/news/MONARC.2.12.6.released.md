@@ -75,7 +75,7 @@ More details and notes are available on
 ## Download
 
 Download the OVA image of this release
-[here](https://vm.monarc.lu/MONARC_v2.6.0@c23cc82/).
+[here](https://vm.monarc.lu/MONARC_v2.12.6@ddca7f3/).
 
 Or use the [release bundle](https://github.com/monarc-project/MonarcAppFO/releases/download/v2.12.6/MonarcAppFO-v2.12.6.tar.gz).
 
