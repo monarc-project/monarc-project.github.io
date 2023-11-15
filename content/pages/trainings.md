@@ -12,7 +12,7 @@ table {
 
 |&nbsp;|||
 |:--|--|--|
-|**Date and time**|| December 2023. |
+|**Date and time**|| 6 December 2023, 9:30 - 15:30. |
 |&nbsp;|  ||
 |**Location**|&nbsp;&nbsp;&nbsp;|Online / [BigBlueButton](https://bigbluebutton.org/) platform of the Luxembourg House of Cybersecurity|
 |&nbsp;|  |<i class="fa fa-exclamation-triangle"></i> Check your network connection to BigBlueButton [here](https://test.bigbluebutton.org).  |
@@ -33,7 +33,19 @@ table {
 |&nbsp;|  |  |
 |**Price**||Free| /*(Cancellation is possible up to 48 hours before the start of the training) |*/
 |&nbsp;|  |  |
-|**Registration** | | Is going to be available about 1 month before the event. |
+|**Registration** | ||
+
+<link rel="stylesheet" type="text/css" href="https://pretix.eu/monarc/training2/widget/v1.css">
+<script type="text/javascript" src="https://pretix.eu/widget/v1.en.js" async></script>
+
+<pretix-widget event="https://pretix.eu/monarc/training2/" single-item-select="button"></pretix-widget>
+<noscript>
+   <div class="pretix-widget">
+        <div class="pretix-widget-info-message">
+            JavaScript is disabled in your browser. To access our ticket shop without JavaScript, please <a target="_blank" rel="noopener" href="https://pretix.eu/monarc/training2/">click here</a>.
+        </div>
+    </div>
+</noscript>
 
 
 
