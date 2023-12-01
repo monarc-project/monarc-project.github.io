@@ -16,6 +16,8 @@ Version 2.12.7 includes some new features and a fix.
 
 - [[FrontOffice] Global dashboard max calculation error](https://github.com/monarc-project/MonarcAppFO/issues/507)
 - Part of [Patch1](https://github.com/monarc-project/MonarcAppFO/releases/tag/v2.12.7-p1) - [[FrontOffice] Fixed the operational risks import from CSV](https://github.com/monarc-project/MonarcAppFO/issues/484)
+- Part of [Patch2](https://github.com/monarc-project/MonarcAppFO/releases/tag/v2.12.7-p2) - [Fixed removal of specific instance risks](https://github.com/monarc-project/MonarcAppFO/issues/520)
+- Part of [Patch2](https://github.com/monarc-project/MonarcAppFO/releases/tag/v2.12.7-p2) - [Fixed the library objects disappearing after the specific risks removal](https://github.com/monarc-project/MonarcAppFO/discussions/516)
 
 
 ## Updating
@@ -60,13 +62,15 @@ The standard steps to perform the Monarc update:
 [guide](https://monarc.lu/documentation/technical-guide/#monarc-update).
 
 More details and notes are available on
-[GitHub](https://github.com/monarc-project/MonarcAppFO/releases/tag/v2.12.7).
+[GitHub Release v2.12.7](https://github.com/monarc-project/MonarcAppFO/releases/tag/v2.12.7),
+[GitHub Release v2.12.7-p1](https://github.com/monarc-project/MonarcAppFO/releases/tag/v2.12.7-p1),
+[GitHub Release v2.12.7-p2](https://github.com/monarc-project/MonarcAppFO/releases/tag/v2.12.7-p2).
 
 
 ## Download
 
 Download the OVA image of this release
-[here](https://vm.monarc.lu/MONARC_v2.12.7-p1@bcbc8c6/).
+[here](https://vm.monarc.lu/MONARC_v2.12.7-p2@b0333dd/).
 
-Or use the [release bundle](https://github.com/monarc-project/MonarcAppFO/releases/download/v2.12.7-p1/MonarcAppFO-v2.12.7-p1.tar.gz).
+Or use the [release bundle](https://github.com/monarc-project/MonarcAppFO/releases/download/v2.12.7-p2/MonarcAppFO-v2.12.7-p2.tar.gz).
 
