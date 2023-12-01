@@ -9,6 +9,8 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://github.com/monarc-project/MonarcAppFO/issues/507"&gt;[FrontOffice] Global dashboard max calculation&amp;nbsp;error&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Part of &lt;a href="https://github.com/monarc-project/MonarcAppFO/releases/tag/v2.12.7-p1"&gt;Patch1&lt;/a&gt; - &lt;a href="https://github.com/monarc-project/MonarcAppFO/issues/484"&gt;[FrontOffice] Fixed the operational risks import from &lt;span class="caps"&gt;CSV&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Part of &lt;a href="https://github.com/monarc-project/MonarcAppFO/releases/tag/v2.12.7-p2"&gt;Patch2&lt;/a&gt; - &lt;a href="https://github.com/monarc-project/MonarcAppFO/issues/520"&gt;Fixed removal of specific instance&amp;nbsp;risks&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Part of &lt;a href="https://github.com/monarc-project/MonarcAppFO/releases/tag/v2.12.7-p2"&gt;Patch2&lt;/a&gt; - &lt;a href="https://github.com/monarc-project/MonarcAppFO/discussions/516"&gt;Fixed the library objects disappearing after the specific risks&amp;nbsp;removal&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="updating"&gt;Updating&lt;/h2&gt;
 &lt;p&gt;If the update is performed from Monarc v2.12.5 or earlier, the update of php to v8.x is necessary.
@@ -45,11 +47,13 @@ because it comes with available php8.1 by&amp;nbsp;default.&lt;/p&gt;
 &lt;p&gt;The standard steps to perform the Monarc update:
 &lt;a href="https://monarc.lu/documentation/technical-guide/#monarc-update"&gt;guide&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;More details and notes are available on
-&lt;a href="https://github.com/monarc-project/MonarcAppFO/releases/tag/v2.12.7"&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;a href="https://github.com/monarc-project/MonarcAppFO/releases/tag/v2.12.7"&gt;GitHub Release v2.12.7&lt;/a&gt;,
+&lt;a href="https://github.com/monarc-project/MonarcAppFO/releases/tag/v2.12.7-p1"&gt;GitHub Release v2.12.7-p1&lt;/a&gt;,
+&lt;a href="https://github.com/monarc-project/MonarcAppFO/releases/tag/v2.12.7-p2"&gt;GitHub Release v2.12.7-p2&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id="download"&gt;Download&lt;/h2&gt;
 &lt;p&gt;Download the &lt;span class="caps"&gt;OVA&lt;/span&gt; image of this release
-&lt;a href="https://vm.monarc.lu/MONARC_v2.12.7-p1@bcbc8c6/"&gt;here&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Or use the &lt;a href="https://github.com/monarc-project/MonarcAppFO/releases/download/v2.12.7-p1/MonarcAppFO-v2.12.7-p1.tar.gz"&gt;release bundle&lt;/a&gt;.&lt;/p&gt;</content><category term="monarc"></category><category term="monarc"></category><category term="new-release"></category></entry><entry><title>MONARC 2.12.6 released</title><link href="https://www.monarc.lu/news/2023/04/25/monarc-2126-released/" rel="alternate"></link><published>2023-04-25T00:00:00+02:00</published><updated>2023-04-25T00:00:00+02:00</updated><author><name>Luxembourg House of Cybersecurity</name></author><id>tag:www.monarc.lu,2023-04-25:/news/2023/04/25/monarc-2126-released/</id><summary type="html">&lt;p&gt;Release 2.12.6 of &lt;span class="caps"&gt;MONARC&lt;/span&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;Version 2.12.6 includes some new features and&amp;nbsp;fixes.&lt;/p&gt;
+&lt;a href="https://vm.monarc.lu/MONARC_v2.12.7-p2@b0333dd/"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Or use the &lt;a href="https://github.com/monarc-project/MonarcAppFO/releases/download/v2.12.7-p2/MonarcAppFO-v2.12.7-p2.tar.gz"&gt;release bundle&lt;/a&gt;.&lt;/p&gt;</content><category term="monarc"></category><category term="monarc"></category><category term="new-release"></category></entry><entry><title>MONARC 2.12.6 released</title><link href="https://www.monarc.lu/news/2023/04/25/monarc-2126-released/" rel="alternate"></link><published>2023-04-25T00:00:00+02:00</published><updated>2023-04-25T00:00:00+02:00</updated><author><name>Luxembourg House of Cybersecurity</name></author><id>tag:www.monarc.lu,2023-04-25:/news/2023/04/25/monarc-2126-released/</id><summary type="html">&lt;p&gt;Release 2.12.6 of &lt;span class="caps"&gt;MONARC&lt;/span&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;Version 2.12.6 includes some new features and&amp;nbsp;fixes.&lt;/p&gt;
 &lt;h3 id="new"&gt;New&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;[FrontOffice] Analysis background&amp;nbsp;import.&lt;/li&gt;
