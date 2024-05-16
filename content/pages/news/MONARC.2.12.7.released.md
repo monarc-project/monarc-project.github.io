@@ -17,7 +17,8 @@ Version 2.12.7 includes some new features and a fix.
 - [[FrontOffice] Global dashboard max calculation error](https://github.com/monarc-project/MonarcAppFO/issues/507)
 - Part of [Patch1](https://github.com/monarc-project/MonarcAppFO/releases/tag/v2.12.7-p1) - [[FrontOffice] Fixed the operational risks import from CSV](https://github.com/monarc-project/MonarcAppFO/issues/484)
 - Part of [Patch2](https://github.com/monarc-project/MonarcAppFO/releases/tag/v2.12.7-p2) - [Fixed removal of specific instance risks](https://github.com/monarc-project/MonarcAppFO/issues/520)
-- Part of [Patch2](https://github.com/monarc-project/MonarcAppFO/releases/tag/v2.12.7-p2) - [Fixed the library objects disappearing after the specific risks removal](https://github.com/monarc-project/MonarcAppFO/discussions/516)
+- Part of [Patch3](https://github.com/monarc-project/MonarcAppFO/releases/tag/v2.12.7-p3) - [Fixed the library objects disappearing after the specific risks removal](https://github.com/monarc-project/MonarcAppFO/discussions/516)
+- Part of [Patch4](https://github.com/monarc-project/MonarcAppFO/releases/tag/v2.12.7-p4) - Fixed the library objects disappearing after performing Edit Impacts on global asset
 
 
 ## Updating
@@ -65,12 +66,14 @@ More details and notes are available on
 [GitHub Release v2.12.7](https://github.com/monarc-project/MonarcAppFO/releases/tag/v2.12.7),
 [GitHub Release v2.12.7-p1](https://github.com/monarc-project/MonarcAppFO/releases/tag/v2.12.7-p1),
 [GitHub Release v2.12.7-p2](https://github.com/monarc-project/MonarcAppFO/releases/tag/v2.12.7-p2).
+[GitHub Release v2.12.7-p3](https://github.com/monarc-project/MonarcAppFO/releases/tag/v2.12.7-p3).
+[GitHub Release v2.12.7-p4](https://github.com/monarc-project/MonarcAppFO/releases/tag/v2.12.7-p4).
 
 
 ## Download
 
 Download the OVA image of this release
-[here](https://vm.monarc.lu/MONARC_v2.12.7-p2@b0333dd/).
+[here](https://vm.monarc.lu/MONARC_v2.12.7-p4@eac1b49/).
 
-Or use the [release bundle](https://github.com/monarc-project/MonarcAppFO/releases/download/v2.12.7-p2/MonarcAppFO-v2.12.7-p2.tar.gz).
+Or use the [release bundle](https://github.com/monarc-project/MonarcAppFO/releases/download/v2.12.7-p4/MonarcAppFO-v2.12.7-p4.tar.gz).
 
