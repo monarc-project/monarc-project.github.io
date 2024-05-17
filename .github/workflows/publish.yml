@@ -20,7 +20,7 @@ jobs:
 
     - name: Install dependencies
       run: |
-        pip install poetry
+        pip install poetry lxml
         poetry install
         poetry run make html
         poetry run ghp-import output
