@@ -12,7 +12,7 @@ table {
 
 |&nbsp;|||
 |:--|--|--|
-|**Date and time**|| 6 December 2023, 9:30 - 15:30. |
+|**Date and time**|| September 2024, 9:30 - 15:30. |
 |&nbsp;|  ||
 |**Location**|&nbsp;&nbsp;&nbsp;|Online / [BigBlueButton](https://bigbluebutton.org/) platform of the Luxembourg House of Cybersecurity|
 |&nbsp;|  |<i class="fa fa-exclamation-triangle"></i> Check your network connection to BigBlueButton [here](https://test.bigbluebutton.org).  |
@@ -25,7 +25,7 @@ table {
 |&nbsp;|  |  |
 |**Level required**||Basic|
 |&nbsp;|  |  |
-|**Language**|| English ![English][en] |
+|**Language**|| English ![English][en] &nbsp;&nbsp;&nbsp; (Note: The next public training in French is planned in Dec 2024). |
 |&nbsp;|  |  |
 |**Extra requirements**||**A laptop is required**|
 |&nbsp;|  |  |
@@ -35,18 +35,7 @@ table {
 |&nbsp;|  |  |
 |**Registration** | ||
 
-<link rel="stylesheet" type="text/css" href="https://pretix.eu/monarc/training2/widget/v1.css">
-<script type="text/javascript" src="https://pretix.eu/widget/v1.en.js" async></script>
-
-<pretix-widget event="https://pretix.eu/monarc/training2/" single-item-select="button"></pretix-widget>
-<noscript>
-   <div class="pretix-widget">
-        <div class="pretix-widget-info-message">
-            JavaScript is disabled in your browser. To access our ticket shop without JavaScript, please <a target="_blank" rel="noopener" href="https://pretix.eu/monarc/training2/">click here</a>.
-        </div>
-    </div>
-</noscript>
-
+Is going to be available 1 month before the event (by the end of August).
 
 
 ### Past Trainings
@@ -54,6 +43,7 @@ table {
 
 | Date       | Location                                     | Language        | Presentation material  |
 |------------| -------------------------------------------- | --------------- | ---------------------- |
+| 2023-12-06 | BigBlueButton platform of the Luxembourg House of Cybersecurity  | ![English][en]   | [<i class="fa fa-file-pdf-o" style="color:red" aria-hidden="true"></i>](https://github.com/monarc-project/monarc-training/releases/download/training_LHC_2023-12-06/20231206_MONARC-training.pdf)   |
 | 2023-05-31 | BigBlueButton platform of the Luxembourg House of Cybersecurity  | ![English][en]   | [<i class="fa fa-file-pdf-o" style="color:red" aria-hidden="true"></i>](https://github.com/monarc-project/monarc-training/files/11609462/20230531_MONARC-training.pdf)   |
 | 2022-12-07 | BigBlueButton platform of the Luxembourg House of Cybersecurity  | ![English][en]   | [<i class="fa fa-file-pdf-o" style="color:red" aria-hidden="true"></i>](https://github.com/monarc-project/monarc-training/releases/download/training_LHC_2022-12-07/20221207_MONARC-training.pdf)   | 
 | 2022-09-29 | BigBlueButton platform of the Luxembourg House of Cybersecurity  | ![French][FR]   |                        |
