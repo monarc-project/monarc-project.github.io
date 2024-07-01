@@ -12,7 +12,7 @@ table {
 
 |&nbsp;|||
 |:--|--|--|
-|**Date and time**|| September 2024, 9:30 - 15:30. |
+|**Date and time**|| September 18, 2024, 9:30 - 15:30. |
 |&nbsp;|  ||
 |**Location**|&nbsp;&nbsp;&nbsp;|Online / [BigBlueButton](https://bigbluebutton.org/) platform of the Luxembourg House of Cybersecurity|
 |&nbsp;|  |<i class="fa fa-exclamation-triangle"></i> Check your network connection to BigBlueButton [here](https://test.bigbluebutton.org).  |
@@ -25,7 +25,7 @@ table {
 |&nbsp;|  |  |
 |**Level required**||Basic|
 |&nbsp;|  |  |
-|**Language**|| English ![English][en] &nbsp;&nbsp;&nbsp; (Note: The next public training in French is planned in Dec 2024). |
+|**Language**|| English ![English][en] &nbsp;&nbsp;&nbsp; (Note: The next public training in French ![French][FR] is planned in Dec 2024). |
 |&nbsp;|  |  |
 |**Extra requirements**||**A laptop is required**|
 |&nbsp;|  |  |
@@ -71,7 +71,9 @@ Is going to be available 1 month before the event (by the end of August).
 |            |                                              |                 |                        |
 
 
-### Community training materials
+### Community training / materials
+
+- You could also discover Monarc trainings performed by us on the [DLH platform](https://dlh.lu/?s=Monarc&post_type=product)
 
 - [MONARC Workshop in German](/assets/files/monarc-training/de/MONARC_K8_ger_16x9_Download_monarc_lu.pdf), provided by [KonzeptAcht](http://konzeptacht.de)
 
