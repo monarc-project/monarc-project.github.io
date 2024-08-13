@@ -35,7 +35,17 @@ table {
 |&nbsp;|  |  |
 |**Registration** | ||
 
-Is going to be available 1 month before the event (by the end of August).
+<link rel="stylesheet" type="text/css" href="https://pretix.eu/monarc/training-2024-en/widget/v1.css" crossorigin>
+<script type="text/javascript" src="https://pretix.eu/widget/v1.en.js" async crossorigin></script>
+
+<pretix-widget event="https://pretix.eu/monarc/training-2024-en/" single-item-select="button"></pretix-widget>
+<noscript>
+   <div class="pretix-widget">
+        <div class="pretix-widget-info-message">
+            JavaScript is disabled in your browser. To access our ticket shop without JavaScript, please <a target="_blank" rel="noopener" href="https://pretix.eu/monarc/training-2024-en/">click here</a>.
+        </div>
+    </div>
+</noscript>
 
 
 ### Past Trainings

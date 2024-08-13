@@ -16,7 +16,7 @@ $ poetry install
 You can directly push your changes, but it is preferable to first check locally:
 
 ```bash
-$ poetry shell # you can also use pipenv shell
+$  # you can also use pipenv shell
 # generation of the static website:
 $ make html
 # or test with the development server:
