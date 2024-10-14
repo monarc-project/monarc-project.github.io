@@ -5,7 +5,7 @@ Category: monarc
 Tags: monarc, new-release
 Summary: Release 2.13.1 of MONARC is coming
 
-### To perform the release of the new version 2.13.1 it is going to be server maintenance starting from 8:00 to 10:00 on 15.10.2024. During the period the service will not be accessible, so please save your changes before the 8:00 to prevent data loose.
+### To perform the release of the new version 2.13.1 it is going to be server maintenance starting from 8:00 to 10:00 on 15.10.2024. During the period the service will not be accessible.
 
 Version 2.13.1 includes some new features and a fix.
 
