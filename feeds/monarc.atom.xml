@@ -1,5 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>MONARC - monarc</title><link href="https://www.monarc.lu/" rel="alternate"></link><link href="https://www.monarc.lu/feeds/monarc.atom.xml" rel="self"></link><id>https://www.monarc.lu/</id><updated>2023-10-25T00:00:00+02:00</updated><entry><title>MONARC 2.12.7 released</title><link href="https://www.monarc.lu/news/2023/10/25/monarc-2127-released/" rel="alternate"></link><published>2023-10-25T00:00:00+02:00</published><updated>2023-10-25T00:00:00+02:00</updated><author><name>Luxembourg House of Cybersecurity</name></author><id>tag:www.monarc.lu,2023-10-25:/news/2023/10/25/monarc-2127-released/</id><summary type="html">&lt;p&gt;Release 2.12.7 of &lt;span class="caps"&gt;MONARC&lt;/span&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;Version 2.12.7 includes some new features and a&amp;nbsp;fix.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>MONARC - monarc</title><link href="https://www.monarc.lu/" rel="alternate"></link><link href="https://www.monarc.lu/feeds/monarc.atom.xml" rel="self"></link><id>https://www.monarc.lu/</id><updated>2024-10-14T00:00:00+02:00</updated><entry><title>MONARC 2.13.1 is going to be released</title><link href="https://www.monarc.lu/news/2024/10/14/monarc-2131-is-going-to-be-released/" rel="alternate"></link><published>2024-10-14T00:00:00+02:00</published><updated>2024-10-14T00:00:00+02:00</updated><author><name>Luxembourg House of Cybersecurity</name></author><id>tag:www.monarc.lu,2024-10-14:/news/2024/10/14/monarc-2131-is-going-to-be-released/</id><summary type="html">&lt;p&gt;Release 2.13.1 of &lt;span class="caps"&gt;MONARC&lt;/span&gt; is&amp;nbsp;coming&lt;/p&gt;</summary><content type="html">&lt;h3 id="to-perform-the-release-of-the-new-version-2131-it-is-going-to-be-server-maintenance-starting-from-800-to-1000-on-15102024-during-the-period-the-service-will-not-be-accessible-so-please-save-your-changes-before-the-800-to-prevent-data-loose"&gt;To perform the release of the new version 2.13.1 it is going to be server maintenance starting from 8:00 to 10:00 on 15.10.2024. During the period the service will not be accessible, so please save your changes before the 8:00 to prevent data&amp;nbsp;loose.&lt;/h3&gt;
+&lt;p&gt;Version 2.13.1 includes some new features and a&amp;nbsp;fix.&lt;/p&gt;
+&lt;h3 id="new"&gt;New&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Refactored the codebase of core and client repositories to improve different aspects of the application, &lt;a href="https://github.com/monarc-project/MonarcAppBO/releases/tag/v2.13.1"&gt;described&amp;nbsp;here&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;Added possibility to export risk analysis with Knowledge Base (&lt;span class="caps"&gt;KB&lt;/span&gt;) and/or Assets Library (&lt;span class="caps"&gt;AL&lt;/span&gt;). That allows to optionally export all the &lt;span class="caps"&gt;KB&lt;/span&gt; a &lt;span class="caps"&gt;AL&lt;/span&gt; data without having the analysis modelling started. This is needed for sharing models between FrontOffices or update &lt;span class="caps"&gt;AL&lt;/span&gt; or &lt;span class="caps"&gt;KB&lt;/span&gt; with new versions of the&amp;nbsp;structures.&lt;/li&gt;
+&lt;li&gt;Changed the export format of &lt;span class="caps"&gt;JSON&lt;/span&gt; export file to reduce its size and be similar to the api endpoints responses and the projects structures views. An old data converter is implemented for the backward&amp;nbsp;compatibility.&lt;/li&gt;
+&lt;li&gt;Significantly improved the import time and made it always consistent. In case of import issues the data are not inserted, there are saved in the &lt;span class="caps"&gt;DB&lt;/span&gt; only at the end of the process (transactional&amp;nbsp;approach).&lt;/li&gt;
+&lt;li&gt;Removed extra user’s information from password reset response and removed the endpoint access by the other&amp;nbsp;users.&lt;/li&gt;
+&lt;li&gt;Restricted analysis creation based on the models that are not available for the&amp;nbsp;client.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="fix"&gt;Fix&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/monarc-project/MonarcAppFO/discussions/523"&gt;Fixed the password change&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="updating"&gt;Updating&lt;/h2&gt;
+&lt;p&gt;If the update is performed from Monarc v2.12.5 or earlier, the update of php to v8.x is necessary.
+It would be recommended to perform php version upgrade to php 8.1.&lt;br&gt;
+In case if on the Monarc server used Ubuntu distributive, then it would be a good move to upgrade it to 22.04 or later,  &lt;br&gt;
+because it comes with available php8.1 by&amp;nbsp;default.&lt;/p&gt;
+&lt;p&gt;The specific php packages that can be used (example with php8.0 / Ubuntu):  &lt;br&gt;
+&lt;code&gt;sudo apt-get install -y php8.1 php8.1-cli php8.1-common php8.1-mysql php8.1-zip php8.1-gd php8.1-mbstring php8.1-curl php8.1-xml php8.1-bcmath php8.1-intl php8.1-imagic&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;php8&lt;/code&gt; module also has to be enabled for Apache and previous used version disabled (in case if was&amp;nbsp;enabled):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;a2dismod php7.4&lt;/code&gt; (could be different one enabled, to check: &lt;code&gt;sudo a2query -m&lt;/code&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;a2enmod php8.1&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The standard steps to perform the Monarc update:
+&lt;a href="https://monarc.lu/documentation/technical-guide/#monarc-update"&gt;guide&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;More details and notes are available on
+&lt;a href="https://github.com/monarc-project/MonarcAppFO/releases/tag/v2.13.1"&gt;GitHub Release&amp;nbsp;v2.13.1&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="download"&gt;Download&lt;/h2&gt;
+&lt;p&gt;Download the &lt;span class="caps"&gt;OVA&lt;/span&gt; image of this release
+To be&amp;nbsp;created.&lt;/p&gt;
+&lt;p&gt;Or use the &lt;a href="https://github.com/monarc-project/MonarcAppFO/releases/download/v2.13.1/MonarcAppFO-v2.13.1.tar.gz"&gt;release bundle&lt;/a&gt;.&lt;/p&gt;</content><category term="monarc"></category><category term="monarc"></category><category term="new-release"></category></entry><entry><title>MONARC 2.12.7 released</title><link href="https://www.monarc.lu/news/2023/10/25/monarc-2127-released/" rel="alternate"></link><published>2023-10-25T00:00:00+02:00</published><updated>2023-10-25T00:00:00+02:00</updated><author><name>Luxembourg House of Cybersecurity</name></author><id>tag:www.monarc.lu,2023-10-25:/news/2023/10/25/monarc-2127-released/</id><summary type="html">&lt;p&gt;Release 2.12.7 of &lt;span class="caps"&gt;MONARC&lt;/span&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;Version 2.12.7 includes some new features and a&amp;nbsp;fix.&lt;/p&gt;
 &lt;h3 id="new"&gt;New&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://github.com/monarc-project/MonarcAppFO/issues/505"&gt;[FrontOffice] Alternative to &lt;span class="caps"&gt;2FA&lt;/span&gt; &lt;span class="caps"&gt;QR&lt;/span&gt;&amp;nbsp;code&lt;/a&gt;&lt;/li&gt;
