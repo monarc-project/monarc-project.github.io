@@ -20,9 +20,9 @@ Title: Documentation
 * ### [Security considerations](/documentation/security-considerations)
 
 
-## Video tutorial
+## Video tutorials
 
-Available on [YouTube](https://www.youtube.com/playlist?list=PLKKR5aIoeUqKFVd1uuXX5XKb8XfUP6GPS)
+* Available on [YouTube](https://www.youtube.com/playlist?list=PLKKR5aIoeUqKFVd1uuXX5XKb8XfUP6GPS){:target="_blank"}
 
 
 ## Satellite projects
