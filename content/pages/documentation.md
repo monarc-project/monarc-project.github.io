@@ -20,6 +20,11 @@ Title: Documentation
 * ### [Security considerations](/documentation/security-considerations)
 
 
+## Video tutorial
+
+Available on [YouTube](https://www.youtube.com/playlist?list=PLKKR5aIoeUqKFVd1uuXX5XKb8XfUP6GPS)
+
+
 ## Satellite projects
 
 * ### [MOSP - MONARC Objects Sharing Platform]({static}/documentation/MOSP-documentation)

@@ -1,11 +1,9 @@
-Title: MONARC 2.13.1 is going to be released
-Date: 2024-10-14
-Modified: 2024-10-14
+Title: MONARC 2.13.1 released
+Date: 2024-10-15
+Modified: 2024-10-15
 Category: monarc
 Tags: monarc, new-release
-Summary: Release 2.13.1 of MONARC is coming
-
-### To perform the release of the new version 2.13.1 it is going to be server maintenance starting from 8:00 to 10:00 on 15.10.2024. During the period the service will not be accessible.
+Summary: Release 2.13.1 of MONARC
 
 Version 2.13.1 includes some new features and a fix.
 
@@ -46,12 +44,12 @@ The standard steps to perform the Monarc update:
 [guide](https://monarc.lu/documentation/technical-guide/#monarc-update).
 
 More details and notes are available on
-[GitHub Release v2.13.1](https://github.com/monarc-project/MonarcAppFO/releases/tag/v2.13.1)
+[GitHub Release v2.13.1](https://github.com/monarc-project/MonarcAppFO/releases/tag/v2.13.1){:target="_blank"}
 
 ## Download
 
 Download the OVA image of this release
-To be created.
+[here](https://vm.monarc.lu/MONARC_v2.13.1@3a49e5f/){:target="_blank"}.
 
 Or use the [release bundle](https://github.com/monarc-project/MonarcAppFO/releases/download/v2.13.1/MonarcAppFO-v2.13.1.tar.gz).
 
