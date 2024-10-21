@@ -49,7 +49,7 @@ More details and notes are available on
 ## Download
 
 Download the OVA image of this release
-[here](https://vm.monarc.lu/MONARC_v2.13.1@3a49e5f/){:target="_blank"}.
+[here](https://vm.monarc.lu/MONARC_v2.13.1@e220645/){:target="_blank"}.
 
 Or use the [release bundle](https://github.com/monarc-project/MonarcAppFO/releases/download/v2.13.1/MonarcAppFO-v2.13.1.tar.gz).
 
