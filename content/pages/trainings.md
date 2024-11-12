@@ -12,7 +12,7 @@ table {
 
 |&nbsp;|||
 |:--|--|--|
-|**Date and time**|| December 2024. |
+|**Date and time**|| December 6, 2024, 9:30 - 12:30. |
 |&nbsp;|  ||
 |**Location**|&nbsp;&nbsp;&nbsp;|Online / [BigBlueButton](https://bigbluebutton.org/) platform of the Luxembourg House of Cybersecurity|
 |&nbsp;|  |<i class="fa fa-exclamation-triangle"></i> Check your network connection to BigBlueButton [here](https://test.bigbluebutton.org).  |
@@ -35,7 +35,17 @@ table {
 |&nbsp;|  |  |
 |**Registration** | ||
 
-Is going to be available 1 month before the event (by the end of November 2024).
+<link rel="stylesheet" type="text/css" href="https://pretix.eu/monarc/training-2024-fr-1/widget/v1.css" crossorigin>
+<script type="text/javascript" src="https://pretix.eu/widget/v1.en.js" async crossorigin></script>
+
+<pretix-widget event="https://pretix.eu/monarc/training-2024-fr-1/" single-item-select="button"></pretix-widget>
+<noscript>
+   <div class="pretix-widget">
+        <div class="pretix-widget-info-message">
+            JavaScript is disabled in your browser. To access our ticket shop without JavaScript, please <a target="_blank" rel="noopener" href="https://pretix.eu/monarc/training-2024-fr-1/">click here</a>.
+        </div>
+    </div>
+</noscript>
 
 
 ### Past Trainings
