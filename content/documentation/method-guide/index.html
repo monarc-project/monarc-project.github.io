@@ -4,25 +4,27 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 2.0.16">
+<meta name="generator" content="Asciidoctor 2.0.12">
 <meta name="description" content="MONARC Method guide">
 <meta name="keywords" content="risk-analysis, monarc">
 <meta name="author" content="NC3 Luxembourg">
 <title>Method Guide</title>
 <style>
-/*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
-/* Uncomment the following line when using as a custom stylesheet */
-/* @import "https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700"; */
-html{font-family:sans-serif;-webkit-text-size-adjust:100%}
+/* Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
+/* Uncomment @import statement to use as custom stylesheet */
+/*@import "https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700";*/
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section{display:block}
+audio,video{display:inline-block}
+audio:not([controls]){display:none;height:0}
+html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
 a{background:none}
 a:focus{outline:thin dotted}
 a:active,a:hover{outline:0}
 h1{font-size:2em;margin:.67em 0}
+abbr[title]{border-bottom:1px dotted}
 b,strong{font-weight:bold}
-abbr{font-size:.9em}
-abbr[title]{cursor:help;border-bottom:1px dotted #dddddf;text-decoration:none}
 dfn{font-style:italic}
-hr{height:0}
+hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}
 mark{background:#ff0;color:#000}
 code,kbd,pre,samp{font-family:monospace;font-size:1em}
 pre{white-space:pre-wrap}
@@ -34,22 +36,20 @@ sub{bottom:-.25em}
 img{border:0}
 svg:not(:root){overflow:hidden}
 figure{margin:0}
-audio,video{display:inline-block}
-audio:not([controls]){display:none;height:0}
 fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}
 legend{border:0;padding:0}
 button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}
 button,input{line-height:normal}
 button,select{text-transform:none}
-button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}
+button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}
 button[disabled],html input[disabled]{cursor:default}
-input[type=checkbox],input[type=radio]{padding:0}
+input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}
 button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
 textarea{overflow:auto;vertical-align:top}
 table{border-collapse:collapse;border-spacing:0}
-*,::before,::after{box-sizing:border-box}
+*,*::before,*::after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}
 html,body{font-size:100%}
-body{background:#fff;color:rgba(0,0,0,.8);padding:0;margin:0;font-family:"Noto Serif","DejaVu Serif",serif;line-height:1;position:relative;cursor:auto;-moz-tab-size:4;-o-tab-size:4;tab-size:4;word-wrap:anywhere;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased}
+body{background:#fff;color:rgba(0,0,0,.8);padding:0;margin:0;font-family:"Noto Serif","DejaVu Serif",serif;font-weight:400;font-style:normal;line-height:1;position:relative;cursor:auto;tab-size:4;word-wrap:anywhere;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased}
 a:hover{cursor:pointer}
 img,object,embed{max-width:100%;height:auto}
 object,embed{height:100%}
@@ -69,7 +69,7 @@ div,dl,dt,dd,ul,ol,li,h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6,
 a{color:#2156a5;text-decoration:underline;line-height:inherit}
 a:hover,a:focus{color:#1d4b8f}
 a img{border:0}
-p{line-height:1.6;margin-bottom:1.25em;text-rendering:optimizeLegibility}
+p{font-family:inherit;font-weight:400;font-size:1em;line-height:1.6;margin-bottom:1.25em;text-rendering:optimizeLegibility}
 p aside{font-size:.875em;line-height:1.35;font-style:italic}
 h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{font-family:"Open Sans","DejaVu Sans",sans-serif;font-weight:300;font-style:normal;color:#ba3925;text-rendering:optimizeLegibility;margin-top:1em;margin-bottom:.5em;line-height:1.0125em}
 h1 small,h2 small,h3 small,#toctitle small,.sidebarblock>.content>.title small,h4 small,h5 small,h6 small{font-size:60%;color:#e99b8f;line-height:0}
@@ -78,14 +78,14 @@ h2{font-size:1.6875em}
 h3,#toctitle,.sidebarblock>.content>.title{font-size:1.375em}
 h4,h5{font-size:1.125em}
 h6{font-size:1em}
-hr{border:solid #dddddf;border-width:1px 0 0;clear:both;margin:1.25em 0 1.1875em}
+hr{border:solid #dddddf;border-width:1px 0 0;clear:both;margin:1.25em 0 1.1875em;height:0}
 em,i{font-style:italic;line-height:inherit}
 strong,b{font-weight:bold;line-height:inherit}
 small{font-size:60%;line-height:inherit}
 code{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;font-weight:400;color:rgba(0,0,0,.9)}
-ul,ol,dl{line-height:1.6;margin-bottom:1.25em;list-style-position:outside;font-family:inherit}
+ul,ol,dl{font-size:1em;line-height:1.6;margin-bottom:1.25em;list-style-position:outside;font-family:inherit}
 ul,ol{margin-left:1.5em}
-ul li ul,ul li ol{margin-left:1.25em;margin-bottom:0}
+ul li ul,ul li ol{margin-left:1.25em;margin-bottom:0;font-size:1em}
 ul.square li ul,ul.circle li ul,ul.disc li ul{list-style:inherit}
 ul.square{list-style-type:square}
 ul.circle{list-style-type:circle}
@@ -93,14 +93,19 @@ ul.disc{list-style-type:disc}
 ol li ul,ol li ol{margin-left:1.25em;margin-bottom:0}
 dl dt{margin-bottom:.3125em;font-weight:bold}
 dl dd{margin-bottom:1.25em}
+abbr,acronym{text-transform:uppercase;font-size:90%;color:rgba(0,0,0,.8);border-bottom:1px dotted #ddd;cursor:help}
+abbr{text-transform:none}
 blockquote{margin:0 0 1.25em;padding:.5625em 1.25em 0 1.1875em;border-left:1px solid #ddd}
+blockquote cite{display:block;font-size:.9375em;color:rgba(0,0,0,.6)}
+blockquote cite::before{content:"\2014 \0020"}
+blockquote cite a,blockquote cite a:visited{color:rgba(0,0,0,.6)}
 blockquote,blockquote p{line-height:1.6;color:rgba(0,0,0,.85)}
 @media screen and (min-width:768px){h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{line-height:1.2}
 h1{font-size:2.75em}
 h2{font-size:2.3125em}
 h3,#toctitle,.sidebarblock>.content>.title{font-size:1.6875em}
 h4{font-size:1.4375em}}
-table{background:#fff;margin-bottom:1.25em;border:1px solid #dedede;word-wrap:normal}
+table{background:#fff;margin-bottom:1.25em;border:solid 1px #dedede;word-wrap:normal}
 table thead,table tfoot{background:#f7f8f7}
 table thead tr th,table thead tr td,table tfoot tr th,table tfoot tr td{padding:.5em .625em .625em;font-size:inherit;color:rgba(0,0,0,.8);text-align:left}
 table tr th,table tr td{padding:.5625em .625em;font-size:inherit;color:rgba(0,0,0,.8)}
@@ -115,7 +120,7 @@ h1 strong,h2 strong,h3 strong,#toctitle strong,.sidebarblock>.content>.title str
 :not(pre).nobreak{word-wrap:normal}
 :not(pre).nowrap{white-space:nowrap}
 :not(pre).pre-wrap{white-space:pre-wrap}
-:not(pre):not([class^=L])>code{font-size:.9375em;font-style:normal!important;letter-spacing:0;padding:.1em .5ex;word-spacing:-.15em;background:#f7f7f8;border-radius:4px;line-height:1.45;text-rendering:optimizeSpeed}
+:not(pre):not([class^=L])>code{font-size:.9375em;font-style:normal!important;letter-spacing:0;padding:.1em .5ex;word-spacing:-.15em;background:#f7f7f8;-webkit-border-radius:4px;border-radius:4px;line-height:1.45;text-rendering:optimizeSpeed}
 pre{color:rgba(0,0,0,.9);font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;line-height:1.45;text-rendering:optimizeSpeed}
 pre code,pre pre{color:inherit;font-size:inherit;line-height:inherit}
 pre>code{display:block}
@@ -123,7 +128,7 @@ pre.nowrap,pre.nowrap pre{white-space:pre;word-wrap:normal}
 em em{font-style:normal}
 strong strong{font-weight:400}
 .keyseq{color:rgba(51,51,51,.8)}
-kbd{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;display:inline-block;color:rgba(0,0,0,.8);font-size:.65em;line-height:1.45;background:#f7f7f7;border:1px solid #ccc;border-radius:3px;box-shadow:0 1px 0 rgba(0,0,0,.2),inset 0 0 0 .1em #fff;margin:0 .15em;padding:.2em .5em;vertical-align:middle;position:relative;top:-.1em;white-space:nowrap}
+kbd{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;display:inline-block;color:rgba(0,0,0,.8);font-size:.65em;line-height:1.45;background:#f7f7f7;border:1px solid #ccc;-webkit-border-radius:3px;border-radius:3px;-webkit-box-shadow:0 1px 0 rgba(0,0,0,.2),0 0 0 .1em white inset;box-shadow:0 1px 0 rgba(0,0,0,.2),0 0 0 .1em #fff inset;margin:0 .15em;padding:.2em .5em;vertical-align:middle;position:relative;top:-.1em;white-space:nowrap}
 .keyseq kbd:first-child{margin-left:0}
 .keyseq kbd:last-child{margin-right:0}
 .menuseq,.menuref{color:#000}
@@ -135,7 +140,7 @@ b.button::before,b.button::after{position:relative;top:-1px;font-weight:400}
 b.button::before{content:"[";padding:0 3px 0 2px}
 b.button::after{content:"]";padding:0 2px 0 3px}
 p a>code:hover{color:rgba(0,0,0,.9)}
-#header,#content,#footnotes,#footer{width:100%;margin:0 auto;max-width:62.5em;*zoom:1;position:relative;padding-left:.9375em;padding-right:.9375em}
+#header,#content,#footnotes,#footer{width:100%;margin-left:auto;margin-right:auto;margin-top:0;margin-bottom:0;max-width:62.5em;*zoom:1;position:relative;padding-left:.9375em;padding-right:.9375em}
 #header::before,#header::after,#content::before,#content::after,#footnotes::before,#footnotes::after,#footer::before,#footer::after{content:" ";display:table}
 #header::after,#content::after,#footnotes::after,#footer::after{clear:both}
 #content{margin-top:1.25em}
@@ -143,7 +148,7 @@ p a>code:hover{color:rgba(0,0,0,.9)}
 #header>h1:first-child{color:rgba(0,0,0,.85);margin-top:2.25rem;margin-bottom:0}
 #header>h1:first-child+#toc{margin-top:8px;border-top:1px solid #dddddf}
 #header>h1:only-child,body.toc2 #header>h1:nth-last-child(2){border-bottom:1px solid #dddddf;padding-bottom:8px}
-#header .details{border-bottom:1px solid #dddddf;line-height:1.45;padding-top:.25em;padding-bottom:.25em;padding-left:.25em;color:rgba(0,0,0,.6);display:flex;flex-flow:row wrap}
+#header .details{border-bottom:1px solid #dddddf;line-height:1.45;padding-top:.25em;padding-bottom:.25em;padding-left:.25em;color:rgba(0,0,0,.6);display:-ms-flexbox;display:-webkit-flex;display:flex;-ms-flex-flow:row wrap;-webkit-flex-flow:row wrap;flex-flow:row wrap}
 #header .details span:first-child{margin-left:-.125em}
 #header .details span.email a{color:rgba(0,0,0,.85)}
 #header .details br{display:none}
@@ -177,11 +182,11 @@ body.toc2.toc-right #toc.toc2{border-right-width:0;border-left:1px solid #e7e7e9
 #toc.toc2>ul{font-size:.95em}
 #toc.toc2 ul ul{padding-left:1.25em}
 body.toc2.toc-right{padding-left:0;padding-right:20em}}
-#content #toc{border:1px solid #e0e0dc;margin-bottom:1.25em;padding:1.25em;background:#f8f8f7;border-radius:4px}
+#content #toc{border-style:solid;border-width:1px;border-color:#e0e0dc;margin-bottom:1.25em;padding:1.25em;background:#f8f8f7;-webkit-border-radius:4px;border-radius:4px}
 #content #toc>:first-child{margin-top:0}
 #content #toc>:last-child{margin-bottom:0}
 #footer{max-width:none;background:rgba(0,0,0,.8);padding:1.25em}
-#footer-text{color:hsla(0,0%,100%,.8);line-height:1.44}
+#footer-text{color:rgba(255,255,255,.8);line-height:1.44}
 #content{margin-bottom:.625em}
 .sect1{padding-bottom:.625em}
 @media screen and (min-width:768px){#content{margin-bottom:1.25em}
@@ -194,32 +199,29 @@ body.toc2.toc-right{padding-left:0;padding-right:20em}}
 #content h1>a.link,h2>a.link,h3>a.link,#toctitle>a.link,.sidebarblock>.content>.title>a.link,h4>a.link,h5>a.link,h6>a.link{color:#ba3925;text-decoration:none}
 #content h1>a.link:hover,h2>a.link:hover,h3>a.link:hover,#toctitle>a.link:hover,.sidebarblock>.content>.title>a.link:hover,h4>a.link:hover,h5>a.link:hover,h6>a.link:hover{color:#a53221}
 details,.audioblock,.imageblock,.literalblock,.listingblock,.stemblock,.videoblock{margin-bottom:1.25em}
-details{margin-left:1.25rem}
-details>summary{cursor:pointer;display:block;position:relative;line-height:1.6;margin-bottom:.625rem;-webkit-tap-highlight-color:transparent}
-details>summary::before{content:"";border:solid transparent;border-left:solid;border-width:.3em 0 .3em .5em;position:absolute;top:.5em;left:-1.25rem;transform:translateX(15%)}
-details[open]>summary::before{border:solid transparent;border-top:solid;border-width:.5em .3em 0;transform:translateY(15%)}
-details>summary::after{content:"";width:1.25rem;height:1em;position:absolute;top:.3em;left:-1.25rem}
+details>summary:first-of-type{cursor:pointer;display:list-item;outline:none;margin-bottom:.75em}
 .admonitionblock td.content>.title,.audioblock>.title,.exampleblock>.title,.imageblock>.title,.listingblock>.title,.literalblock>.title,.stemblock>.title,.openblock>.title,.paragraph>.title,.quoteblock>.title,table.tableblock>.title,.verseblock>.title,.videoblock>.title,.dlist>.title,.olist>.title,.ulist>.title,.qlist>.title,.hdlist>.title{text-rendering:optimizeLegibility;text-align:left;font-family:"Noto Serif","DejaVu Serif",serif;font-size:1rem;font-style:italic}
 table.tableblock.fit-content>caption.title{white-space:nowrap;width:0}
-.paragraph.lead>p,#preamble>.sectionbody>[class=paragraph]:first-of-type p{font-size:1.21875em;line-height:1.6;color:rgba(0,0,0,.85)}
+.paragraph.lead>p,#preamble>.sectionbody>[class="paragraph"]:first-of-type p{font-size:1.21875em;line-height:1.6;color:rgba(0,0,0,.85)}
+table.tableblock #preamble>.sectionbody>[class="paragraph"]:first-of-type p{font-size:inherit}
 .admonitionblock>table{border-collapse:separate;border:0;background:none;width:100%}
 .admonitionblock>table td.icon{text-align:center;width:80px}
 .admonitionblock>table td.icon img{max-width:none}
 .admonitionblock>table td.icon .title{font-weight:bold;font-family:"Open Sans","DejaVu Sans",sans-serif;text-transform:uppercase}
 .admonitionblock>table td.content{padding-left:1.125em;padding-right:1.25em;border-left:1px solid #dddddf;color:rgba(0,0,0,.6);word-wrap:anywhere}
 .admonitionblock>table td.content>:last-child>:last-child{margin-bottom:0}
-.exampleblock>.content{border:1px solid #e6e6e6;margin-bottom:1.25em;padding:1.25em;background:#fff;border-radius:4px}
+.exampleblock>.content{border-style:solid;border-width:1px;border-color:#e6e6e6;margin-bottom:1.25em;padding:1.25em;background:#fff;-webkit-border-radius:4px;border-radius:4px}
 .exampleblock>.content>:first-child{margin-top:0}
 .exampleblock>.content>:last-child{margin-bottom:0}
-.sidebarblock{border:1px solid #dbdbd6;margin-bottom:1.25em;padding:1.25em;background:#f3f3f2;border-radius:4px}
+.sidebarblock{border-style:solid;border-width:1px;border-color:#dbdbd6;margin-bottom:1.25em;padding:1.25em;background:#f3f3f2;-webkit-border-radius:4px;border-radius:4px}
 .sidebarblock>:first-child{margin-top:0}
 .sidebarblock>:last-child{margin-bottom:0}
 .sidebarblock>.content>.title{color:#7a2518;margin-top:0;text-align:center}
 .exampleblock>.content>:last-child>:last-child,.exampleblock>.content .olist>ol>li:last-child>:last-child,.exampleblock>.content .ulist>ul>li:last-child>:last-child,.exampleblock>.content .qlist>ol>li:last-child>:last-child,.sidebarblock>.content>:last-child>:last-child,.sidebarblock>.content .olist>ol>li:last-child>:last-child,.sidebarblock>.content .ulist>ul>li:last-child>:last-child,.sidebarblock>.content .qlist>ol>li:last-child>:last-child{margin-bottom:0}
-.literalblock pre,.listingblock>.content>pre{border-radius:4px;overflow-x:auto;padding:1em;font-size:.8125em}
+.literalblock pre,.listingblock>.content>pre{-webkit-border-radius:4px;border-radius:4px;overflow-x:auto;padding:1em;font-size:.8125em}
 @media screen and (min-width:768px){.literalblock pre,.listingblock>.content>pre{font-size:.90625em}}
 @media screen and (min-width:1280px){.literalblock pre,.listingblock>.content>pre{font-size:1em}}
-.literalblock pre,.listingblock>.content>pre:not(.highlight),.listingblock>.content>pre[class=highlight],.listingblock>.content>pre[class^="highlight "]{background:#f7f7f8}
+.literalblock pre,.listingblock>.content>pre:not(.highlight),.listingblock>.content>pre[class="highlight"],.listingblock>.content>pre[class^="highlight "]{background:#f7f7f8}
 .literalblock.output pre{color:#f7f7f8;background:rgba(0,0,0,.9)}
 .listingblock>.content{position:relative}
 .listingblock code[data-lang]::before{display:none;content:attr(data-lang);position:absolute;font-size:.75em;top:.425rem;right:.5rem;line-height:1;text-transform:uppercase;color:inherit;opacity:.5}
@@ -227,7 +229,7 @@ table.tableblock.fit-content>caption.title{white-space:nowrap;width:0}
 .listingblock.terminal pre .command::before{content:attr(data-prompt);padding-right:.5em;color:inherit;opacity:.5}
 .listingblock.terminal pre .command:not([data-prompt])::before{content:"$"}
 .listingblock pre.highlightjs{padding:0}
-.listingblock pre.highlightjs>code{padding:1em;border-radius:4px}
+.listingblock pre.highlightjs>code{padding:1em;-webkit-border-radius:4px;border-radius:4px}
 .listingblock pre.prettyprint{border-width:0}
 .prettyprint{background:#f7f7f8}
 pre.prettyprint .linenums{line-height:1.45;margin-left:2em}
@@ -237,8 +239,8 @@ pre.prettyprint li:not(:first-child) code[data-lang]::before{display:none}
 table.linenotable{border-collapse:separate;border:0;margin-bottom:0;background:none}
 table.linenotable td[class]{color:inherit;vertical-align:top;padding:0;line-height:inherit;white-space:normal}
 table.linenotable td.code{padding-left:.75em}
-table.linenotable td.linenos{border-right:1px solid;opacity:.35;padding-right:.5em}
-pre.pygments .lineno{border-right:1px solid;opacity:.35;display:inline-block;margin-right:.75em}
+table.linenotable td.linenos{border-right:1px solid currentColor;opacity:.35;padding-right:.5em}
+pre.pygments .lineno{border-right:1px solid currentColor;opacity:.35;display:inline-block;margin-right:.75em}
 pre.pygments .lineno::before{content:"";margin-right:-.125em}
 .quoteblock{margin:0 1em 1.25em 1.5em;display:table}
 .quoteblock:not(.excerpt)>.title{margin-left:-1.5em;margin-bottom:.75em}
@@ -248,7 +250,7 @@ pre.pygments .lineno::before{content:"";margin-right:-.125em}
 .quoteblock blockquote>.paragraph:last-child p{margin-bottom:0}
 .quoteblock .attribution{margin-top:.75em;margin-right:.5ex;text-align:right}
 .verseblock{margin:0 1em 1.25em}
-.verseblock pre{font-family:"Open Sans","DejaVu Sans",sans-serif;font-size:1.15rem;color:rgba(0,0,0,.85);font-weight:300;text-rendering:optimizeLegibility}
+.verseblock pre{font-family:"Open Sans","DejaVu Sans",sans;font-size:1.15rem;color:rgba(0,0,0,.85);font-weight:300;text-rendering:optimizeLegibility}
 .verseblock pre strong{font-weight:400}
 .verseblock .attribution{margin-top:1.25rem;margin-left:.5ex}
 .quoteblock .attribution,.verseblock .attribution{font-size:.9375em;line-height:1.45;font-style:italic}
@@ -261,7 +263,7 @@ pre.pygments .lineno::before{content:"";margin-right:-.125em}
 .quoteblock.excerpt>blockquote,.quoteblock .quoteblock{padding:0 0 .25em 1em;border-left:.25em solid #dddddf}
 .quoteblock.excerpt,.quoteblock .quoteblock{margin-left:0}
 .quoteblock.excerpt blockquote,.quoteblock.excerpt p,.quoteblock .quoteblock blockquote,.quoteblock .quoteblock p{color:inherit;font-size:1.0625rem}
-.quoteblock.excerpt .attribution,.quoteblock .quoteblock .attribution{color:inherit;font-size:.85rem;text-align:left;margin-right:0}
+.quoteblock.excerpt .attribution,.quoteblock .quoteblock .attribution{color:inherit;text-align:left;margin-right:0}
 p.tableblock:last-child{margin-bottom:0}
 td.tableblock>.content{margin-bottom:1.25em;word-wrap:anywhere}
 td.tableblock>.content>:last-child{margin-bottom:-1.25em}
@@ -296,10 +298,10 @@ ol>li p,ul>li p,ul dd,ol dd,.olist .olist,.ulist .ulist,.ulist .olist,.olist .ul
 ul.checklist,ul.none,ol.none,ul.no-bullet,ol.no-bullet,ol.unnumbered,ul.unstyled,ol.unstyled{list-style-type:none}
 ul.no-bullet,ol.no-bullet,ol.unnumbered{margin-left:.625em}
 ul.unstyled,ol.unstyled{margin-left:0}
-ul.checklist>li>p:first-child{margin-left:-1em}
-ul.checklist>li>p:first-child>.fa-square-o:first-child,ul.checklist>li>p:first-child>.fa-check-square-o:first-child{width:1.25em;font-size:.8em;position:relative;bottom:.125em}
-ul.checklist>li>p:first-child>input[type=checkbox]:first-child{margin-right:.25em}
-ul.inline{display:flex;flex-flow:row wrap;list-style:none;margin:0 0 .625em -1.25em}
+ul.checklist{margin-left:.625em}
+ul.checklist li>p:first-child>.fa-square-o:first-child,ul.checklist li>p:first-child>.fa-check-square-o:first-child{width:1.25em;font-size:.8em;position:relative;bottom:.125em}
+ul.checklist li>p:first-child>input[type="checkbox"]:first-child{margin-right:.25em}
+ul.inline{display:-ms-flexbox;display:-webkit-box;display:flex;-ms-flex-flow:row wrap;-webkit-flex-flow:row wrap;flex-flow:row wrap;list-style:none;margin:0 0 .625em -1.25em}
 ul.inline>li{margin-left:1.25em}
 .unstyled dl dt{font-weight:400;font-style:normal}
 ol.arabic{list-style-type:decimal}
@@ -318,7 +320,7 @@ td.hdlist2{word-wrap:anywhere}
 .colist td:not([class]):first-child{padding:.4em .75em 0;line-height:1;vertical-align:top}
 .colist td:not([class]):first-child img{max-width:none}
 .colist td:not([class]):last-child{padding:.25em 0}
-.thumb,.th{line-height:0;display:inline-block;border:4px solid #fff;box-shadow:0 0 0 1px #ddd}
+.thumb,.th{line-height:0;display:inline-block;border:solid 4px #fff;-webkit-box-shadow:0 0 0 1px #ddd;box-shadow:0 0 0 1px #ddd}
 .imageblock.left{margin:.25em .625em 1.25em 0}
 .imageblock.right{margin:.25em 0 1.25em .625em}
 .imageblock>.title{margin-bottom:0}
@@ -386,7 +388,7 @@ a span.icon>.fa{cursor:inherit}
 .admonitionblock td.icon .icon-warning::before{content:"\f071";color:#bf6900}
 .admonitionblock td.icon .icon-caution::before{content:"\f06d";color:#bf3400}
 .admonitionblock td.icon .icon-important::before{content:"\f06a";color:#bf0000}
-.conum[data-value]{display:inline-block;color:#fff!important;background:rgba(0,0,0,.8);border-radius:50%;text-align:center;font-size:.75em;width:1.67em;height:1.67em;line-height:1.67em;font-family:"Open Sans","DejaVu Sans",sans-serif;font-style:normal;font-weight:bold}
+.conum[data-value]{display:inline-block;color:#fff!important;background:rgba(0,0,0,.8);-webkit-border-radius:50%;border-radius:50%;text-align:center;font-size:.75em;width:1.67em;height:1.67em;line-height:1.67em;font-family:"Open Sans","DejaVu Sans",sans-serif;font-style:normal;font-weight:bold}
 .conum[data-value] *{color:#fff!important}
 .conum[data-value]+b{display:none}
 .conum[data-value]::after{content:attr(data-value)}
@@ -394,20 +396,19 @@ pre .conum[data-value]{position:relative;top:-.125em}
 b.conum *{color:inherit!important}
 .conum:not([data-value]):empty{display:none}
 dt,th.tableblock,td.content,div.footnote{text-rendering:optimizeLegibility}
-h1,h2,p,td.content,span.alt,summary{letter-spacing:-.01em}
+h1,h2,p,td.content,span.alt{letter-spacing:-.01em}
 p strong,td.content strong,div.footnote strong{letter-spacing:-.005em}
-p,blockquote,dt,td.content,span.alt,summary{font-size:1.0625rem}
+p,blockquote,dt,td.content,span.alt{font-size:1.0625rem}
 p{margin-bottom:1.25rem}
 .sidebarblock p,.sidebarblock dt,.sidebarblock td.content,p.tableblock{font-size:1em}
-.exampleblock>.content{background:#fffef7;border-color:#e0e0dc;box-shadow:0 1px 4px #e0e0dc}
+.exampleblock>.content{background:#fffef7;border-color:#e0e0dc;-webkit-box-shadow:0 1px 4px #e0e0dc;box-shadow:0 1px 4px #e0e0dc}
 .print-only{display:none!important}
 @page{margin:1.25cm .75cm}
-@media print{*{box-shadow:none!important;text-shadow:none!important}
+@media print{*{-webkit-box-shadow:none!important;box-shadow:none!important;text-shadow:none!important}
 html{font-size:80%}
 a{color:inherit!important;text-decoration:underline!important}
 a.bare,a[href^="#"],a[href^="mailto:"]{text-decoration:none!important}
 a[href^="http:"]:not(.bare)::after,a[href^="https:"]:not(.bare)::after{content:"(" attr(href) ")";display:inline-block;font-size:.875em;padding-left:.25em}
-abbr[title]{border-bottom:1px dotted}
 abbr[title]::after{content:" (" attr(title) ")"}
 pre,blockquote,tr,img,object,svg{page-break-inside:avoid}
 thead{display:table-header-group}
@@ -431,7 +432,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 .print-only{display:block!important}
 .hide-for-print{display:none!important}
 .show-for-print{display:inherit!important}}
-@media amzn-kf8,print{#header>h1:first-child{margin-top:1.25rem}
+@media print,amzn-kf8{#header>h1:first-child{margin-top:1.25rem}
 .sect1{padding:0!important}
 .sect1+.sect1{border:0}
 #footer{background:none}
@@ -446,7 +447,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="details">
 <span id="author" class="author">NC3 Luxembourg</span><br>
 <span id="email" class="email"><a href="mailto:info@nc3.lu">info@nc3.lu</a></span><br>
-<span id="revnumber">version 2023-01-31</span>
+<span id="revnumber">version 2024-11-25</span>
 </div>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
@@ -522,13 +523,13 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="ulist">
 <ul>
 <li>
-<p><a href="https://www.monarc.lu/documentation/quick-start"><strong>Quick Start</strong></a>: Provide a quick start with MONARC.</p>
+<p><a href="https://www.monarc.lu/documentation/quick-start"><strong>Quick Start</strong></a>: Provides a quick start guide about MONARC.</p>
 </li>
 <li>
-<p><a href="https://www.monarc.lu/documentation/user-guide"><strong>User Guide</strong></a>: Complete documentation of the tool.</p>
+<p><a href="https://www.monarc.lu/documentation/user-guide"><strong>User Guide</strong></a>: Provides the complete documentation of the tool.</p>
 </li>
 <li>
-<p><a href="https://www.monarc.lu/documentation/technical-guide"><strong>Technical Guide</strong></a>: Complete technical documentation.</p>
+<p><a href="https://www.monarc.lu/documentation/technical-guide"><strong>Technical Guide</strong></a>: Provides the complete technical documentation of the tool.</p>
 </li>
 </ul>
 </div>
@@ -548,7 +549,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <tr>
 <td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/Step.png" alt="Cursor"></span></p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>All numbers in white on a red background are used on print-screen views to provide additional explanations. Explanations are always after the view with the corresponding numbering. <strong>i.e.</strong> 1.</p>
+<p>All numbers displayed in white on an orange background are used in print-screen views to provide additional explanations. Explanations are always after the view with the corresponding numbering. <strong>i.e.</strong> 1.</p>
 </div></div></td>
 </tr>
 </tbody>
@@ -581,7 +582,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <tr>
 <td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/Menu.png" alt="Menu"></span></p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Button that always brings up the menu.</p>
+<p>The three-dot menu icon brings up the menu items.</p>
 </div></div></td>
 </tr>
 </tbody>
@@ -595,7 +596,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <tr>
 <td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/CreateButton.png" alt="Create"></span></p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Creating/adding something in context (assets, recommendations, etc.).</p>
+<p>Create/add something in context (assets, recommendations, etc.).</p>
 </div></div></td>
 </tr>
 </tbody>
@@ -609,7 +610,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <tr>
 <td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/Cursor.png" alt="Cursor"></span></p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Most fields of MONARC display additional information when the pointer stay unmoved some time.</p>
+<p>Most fields of MONARC display additional information when the pointer stays unmoved for some time.</p>
 </div></div></td>
 </tr>
 </tbody>
@@ -641,7 +642,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="sect2">
 <h3 id="iterative-method"><a class="anchor" href="#iterative-method"></a><a class="link" href="#iterative-method">2.1. Iterative Method</a></h3>
 <div class="paragraph">
-<p>MONARC uses an iterative method which enables the pragmatic progression of risk management. This approach, as recommended by ISO 27005, enables the user to restrict himself to the essentials, then to carry out successive iterations to broaden the target or further refine it to cover more technical aspects. The optimised risk models provided as standard with the tool will enable this type of management to be carried out.</p>
+<p>MONARC uses an iterative method which enables the pragmatic progression of risk management. As recommended by ISO 27005, this method allows the user to focus on the essentials initially and then perform successive iterations to expand or refine the scope, addressing more technical aspects as needed. The tool’s optimized risk models, provided as standard, support this type of risk management.</p>
 </div>
 <div class="imageblock text-center">
 <div class="content">
@@ -654,13 +655,13 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p><code>Context establishment</code>: Definition of the target of the risk analysis, establishing and describing the context, defining the risk analysis criteria and the structure of the risk approach.</p>
 </li>
 <li>
-<p><code>Context modelling</code>: Development phase of the risk model. After having identified the primary assets, they just need to be broken down into support assets on a priority basis. The most common assets are present in the MONARC knowledge base and therefore identification of risk by default is offered. This type of identification may be sufficient in an initial risk iteration; however, it is the responsibility of the risk expert to provide the comprehensive model.</p>
+<p><code>Context modelling</code>: Development phase of the risk model. Once the primary assets have been identified, they should be broken down into support assets based on priority. The most common assets are available in the MONARC knowledge base, enabling default risk identification. This type of identification may be sufficient in an initial risk iteration; however, it is the responsibility of the risk expert to provide the comprehensive model.</p>
 </li>
 <li>
 <p><code>Evaluation and treatment of risks</code>: Risk assessment involves establishing the level of threats and vulnerabilities of the context type under review. The processing of risk entails proposing security measures which tend to lower major risks to acceptable levels and to accept low risks.</p>
 </li>
 <li>
-<p><code>Implementation and monitoring</code>: The current MONARC version provides a follow-ups views in terms of the implementation of recommendations. Monitoring involves checking the major changes to the risk analysis context on a regular basis, as well as any major changes beyond said context which would imply a redesign of an analysis iteration.</p>
+<p><code>Implementation and monitoring</code>: The current MONARC version provides follow-up views in terms of the implementation of recommendations. Monitoring involves regularly reviewing significant changes within the risk analysis context, as well as any major external changes that might necessitate a redesign of the analysis iteration.</p>
 </li>
 </ol>
 </div>
@@ -678,14 +679,14 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </td>
 <td class="content">
 <div class="paragraph">
-<p>the risk parameters are determined on a contextual digital scale which enables the risks to be prioritised.</p>
+<p>The risk parameters are determined on a contextual digital scale which enables the risks to be prioritised.</p>
 </div>
 </td>
 </tr>
 </table>
 </div>
 <div class="paragraph">
-<p>This approach is based on ISO/IEC 27005 as it is easier to understand, especially for non-tangible criteria in terms of impact and consequences, such as reputation, operational, legal, etc.</p>
+<p>This approach is based on ISO/IEC 27005, as it provides an easier framework for understanding non-tangible criteria related to impact and consequences, such as reputation, operational, and legal factors.</p>
 </div>
 </div>
 <div class="sect2">
@@ -744,10 +745,10 @@ The ISO/IEC 27005 processes are implemented via the views.</p>
 <h2 id="context-establishment"><a class="anchor" href="#context-establishment"></a><a class="link" href="#context-establishment">3. Context Establishment</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>By clicking on number <code>1</code>, the following menu will appear:</p>
+<p>By clicking on number <code>1</code>, the following menu appears:</p>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="images/MethodScreenStep1Detailed.png" alt="MethodScreenStep1Detailed"></span></p>
+<p><span class="image"><img src="images/MethodScreenStep_1_800.png" alt="MethodScreenStep1Detailed"></span></p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
@@ -755,10 +756,10 @@ The ISO/IEC 27005 processes are implemented via the views.</p>
 <p>Link to the contextual management pop-ups, see the following chapters.</p>
 </li>
 <li>
-<p>Boxes to tick, indicating that the stage selected has closed. This optional information helps to show the progress of the risk analysis project and display the risk representation graph of the dashboard.</p>
+<p>Checkboxes indicate that a selected stage has been completed. This feature helps track the progress of the risk analysis project and displays the risk representation graph on the dashboard.</p>
 </li>
 <li>
-<p>Link enabling the <code>Validation of the context</code> deliverable to be generated. As part of a consultancy assignment, for instance, it may be helpful to get the client to validate it.</p>
+<p>A link enables the generation of the context deliverable (Context validation) Validation of the context for validation. As part of a consultancy assignment, for instance, it may be helpful to get the client to validate it.</p>
 </li>
 </ol>
 </div>
@@ -768,12 +769,12 @@ The ISO/IEC 27005 processes are implemented via the views.</p>
 <p>This view offers text encoding and formatting functions, enabling the risk analysis target to be contextualised with well-formatted texts that will be documented in the deliverables.</p>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="images/RAContext.png" alt="RiskAnalysisContext"></span></p>
+<p><span class="image"><img src="images/RAContext_1_800.png" alt="RiskAnalysisContext"></span></p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Access to the text formatting functions (bold, italics, paragraph, text size, etc.). The quality of the encoding directly affects that of the deliverable.</p>
+<p>Access to the text formatting functions (bold, italics, paragraph, text size, etc.). The quality of the encoding has a direct impact on the quality of the deliverable.</p>
 </li>
 <li>
 <p>To display or delete the help area.</p>
@@ -790,10 +791,10 @@ The ISO/IEC 27005 processes are implemented via the views.</p>
 <div class="sect2">
 <h3 id="evaluation-of-the-trends-threats-and-synthesis"><a class="anchor" href="#evaluation-of-the-trends-threats-and-synthesis"></a><a class="link" href="#evaluation-of-the-trends-threats-and-synthesis">3.2. Evaluation of the trends, threats and synthesis</a></h3>
 <div class="paragraph">
-<p><span class="image"><img src="images/TrendEvaluation.png" alt="TrendEvaluation"></span></p>
+<p><span class="image"><img src="images/TrendEvaluation_1_800.png" alt="TrendEvaluation"></span></p>
 </div>
 <div class="paragraph">
-<p>This stage is divided into three separate parts which structures the data collection necessary for understanding the context to analyse. It is advisable to chair a working party of 5 to 10 people (depending on the organisation), bringing together the members of management, IT, risk management department (if it exists), the heads of departments or key personnel.</p>
+<p>This stage is divided into three parts to structure the data collection needed for understanding the analysis context. It is recommended to lead a working group of 5 to 10 people (depending on the organization), bringing together management members, IT staff, the risk management department (if applicable), and heads of departments or key personnel.</p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
@@ -801,7 +802,7 @@ The ISO/IEC 27005 processes are implemented via the views.</p>
 <p><code>Trends Assessment</code>: MONARC provides a series of questions to establish the context from a very general perspective (see <a href="#trends-assessment">Trends Assessment</a>).</p>
 </li>
 <li>
-<p><code>Threats Assessment</code>: Enables the threats to be reviewed from a general viewpoint and, possibly, to evaluate by default in the future model (for more information, see <a href="#threats-assessment">Threats Assessment</a>).</p>
+<p><code>Threats Assessment</code>: It allows threats to be reviewed from a general perspective and, if necessary, to be evaluated by default in the future model (for more information, see <a href="#threats-assessment">Threats Assessment</a>).</p>
 </li>
 <li>
 <p><code>Summary</code> of key points determined during stages 1 and 2 (for more information, see <a href="#summary">Summary</a>).</p>
@@ -818,9 +819,8 @@ This list is not exhaustive; you can add questions of your choice at the end of 
 <div class="sect3">
 <h4 id="threats-assessment"><a class="anchor" href="#threats-assessment"></a><a class="link" href="#threats-assessment">3.2.2. Threats Assessment</a></h4>
 <div class="paragraph">
-<p>The assessment of threats, in similar fashion to the assessment of trends, takes the form of a meeting involving key personnel in the organisation.
-The purpose is to review the majority of threats by gathering information on the past and reviewing the general observations made by the group.
-The principle is to obtain a consensus on the probability of the threat on a scale which is easy to interpret:</p>
+<p>The assessment of threats, in a similar fashion to the assessment of trends, takes the form of a meeting involving key personnel in the organisation.
+The goal is to review the majority of threats by gathering information from the past and examining the general observations made by the group. The objective is to reach a consensus on the likelihood of each threat, using a scale that is easy to interpret:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -840,7 +840,7 @@ The security expert is responsible for converting the consensus into a probabili
 </ul>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="images/ThreatAssessment.png" alt="ThreatAssessment"></span></p>
+<p><span class="image"><img src="images/ThreatAssessment_1_800.png" alt="ThreatAssessment"></span></p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
@@ -854,19 +854,19 @@ The security expert is responsible for converting the consensus into a probabili
 <p>Information on the threat.</p>
 </li>
 <li>
-<p>Observation to encode, information gathering from a group of persons.</p>
+<p>Observation to encode, information gathering from a group of people.</p>
 </li>
 <li>
 <p>Information on the security criteria affected by the threat.</p>
 </li>
 <li>
-<p>Choice of the trend, obtained by group consensus.</p>
+<p>Selection of the trend, determined by group consensus.</p>
 </li>
 <li>
 <p>Selection of the probability deduced from point 6 by the security expert.</p>
 </li>
 <li>
-<p>Possibility of subsequently running the threats of the model (after they have been developed).</p>
+<p>The option to run the threats in the model later, after they have been developed.</p>
 </li>
 <li>
 <p><code>Save</code> the information and browse the threats.</p>
@@ -881,7 +881,7 @@ The security expert is responsible for converting the consensus into a probabili
 </td>
 <td class="content">
 <div class="paragraph">
-<p>For point 7 and 8, you have to set the scales of your risk analysis to unhide this funtion (see <a href="#definition-of-the-risk-evaluation-criteria">Definition of the risk evaluation criteria</a>)</p>
+<p>For points 7 and 8, you have to set the scales of your risk analysis to unhide this funtion (see <a href="#definition-of-the-risk-evaluation-criteria">Definition of the risk evaluation criteria</a>)</p>
 </div>
 </td>
 </tr>
@@ -891,7 +891,7 @@ The security expert is responsible for converting the consensus into a probabili
 <div class="sect3">
 <h4 id="summary"><a class="anchor" href="#summary"></a><a class="link" href="#summary">3.2.3. Summary</a></h4>
 <div class="paragraph">
-<p>In similar fashion to the context of the risk analysis, this view enables the user to summarise the pertinent information gathered during the assessment of trends and threats.
+<p>Similar to the context of the risk analysis, this view allows the user to summarize the relevant information gathered during the assessment of trends and threats.
 This text enables the user to enrich the deliverable.</p>
 </div>
 <div class="paragraph">
@@ -902,7 +902,7 @@ This text enables the user to enrich the deliverable.</p>
 <div class="sect2">
 <h3 id="risks-management-organisation"><a class="anchor" href="#risks-management-organisation"></a><a class="link" href="#risks-management-organisation">3.3. Risks management organisation</a></h3>
 <div class="paragraph">
-<p>This view enables the user to encode the information on the context of the risk management, for instance, with regard to the roles and responsibilities, the stakeholders, etc.</p>
+<p>This view enables the user to encode the information in the context of the risk management, for instance, concerning the roles and responsibilities, the stakeholders, etc.</p>
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="images/RiskAnalysisContext.png" alt="RiskAnalysisContext"></span></p>
@@ -915,7 +915,7 @@ This text enables the user to enrich the deliverable.</p>
 </td>
 <td class="content">
 <div class="paragraph">
-<p>For more information, please see chapter 7.4, of ISO/IEC 27005:2011</p>
+<p>For more information, please see Chapter 7.4, of ISO/IEC 27005:2011</p>
 </div>
 </td>
 </tr>
@@ -925,13 +925,13 @@ This text enables the user to enrich the deliverable.</p>
 <div class="sect2">
 <h3 id="definition-of-the-risk-evaluation-criteria"><a class="anchor" href="#definition-of-the-risk-evaluation-criteria"></a><a class="link" href="#definition-of-the-risk-evaluation-criteria">3.4. Definition of the risk evaluation criteria</a></h3>
 <div class="paragraph">
-<p>This involves personalising the scales and impact criteria and consequences.
+<p>This involves personalising the scales, impact criteria, and consequences.
 MONARC provides values by default which can be personalised depending on the context. All the scales can be modified and the levels personalised. However, it is no longer possible to modify the scales when an assessment has been encoded.</p>
 </div>
 <div class="sect3">
 <h4 id="impact-scale"><a class="anchor" href="#impact-scale"></a><a class="link" href="#impact-scale">3.4.1. Impact scale</a></h4>
 <div class="paragraph">
-<p><span class="image"><img src="images/ScaleImpact.png" alt="ScaleImpact"></span></p>
+<p><span class="image"><img src="images/ScaleImpact_1_800.png" alt="ScaleImpact"></span></p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
@@ -945,7 +945,7 @@ MONARC provides values by default which can be personalised depending on the con
 <p>Click on the symbol to hide an unused column.</p>
 </li>
 <li>
-<p>Click on <code>New column name</code> to add a new impact criteria.</p>
+<p>Click on the <code>New column name</code> to add a new impact criteria.</p>
 </li>
 <li>
 <p>Click to edit the headings of each scale.</p>
@@ -960,7 +960,7 @@ MONARC provides values by default which can be personalised depending on the con
 </td>
 <td class="content">
 <div class="paragraph">
-<p>the management is similar to an Excel table, by clicking on a heading, it is possible to edit it; clicking on another, the first heading will save automatically and so forth.</p>
+<p>Managing the headings is similar to working with an Excel table. By clicking on a heading, you can edit it. Clicking on another heading will automatically save the first one, and so on.</p>
 </div>
 </td>
 </tr>
@@ -1001,7 +1001,7 @@ MONARC provides values by default which can be personalised depending on the con
 <p>It is also possible to add personalised consequences as well as impact criteria.</p>
 </div>
 <div class="paragraph">
-<p>The same scales are used to process information risk and operational risk; there is simply a difference of interpretation :</p>
+<p>The same scales are used to assess both information risk and operational risk; the difference lies in their interpretation:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -1020,7 +1020,7 @@ MONARC provides values by default which can be personalised depending on the con
 <p>The scale of threats is used to calculate information risks and the probability of scenarios relating to operational risks</p>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="images/ScaleThreats.png" alt="ScaleThreats"></span></p>
+<p><span class="image"><img src="images/ScaleThreats_1_800.png" alt="ScaleThreats"></span></p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
@@ -1039,7 +1039,7 @@ MONARC provides values by default which can be personalised depending on the con
 <p>The scale of vulnerabilities is only used for calculating information risks.</p>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="images/ScaleVulunerabilities.png" alt="ScaleVulunerabilities"></span></p>
+<p><span class="image"><img src="images/ScaleVulnerabilities_1_800.png" alt="ScaleVulunerabilities"></span></p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
@@ -1055,25 +1055,25 @@ MONARC provides values by default which can be personalised depending on the con
 <div class="sect3">
 <h4 id="acceptance-thresholds"><a class="anchor" href="#acceptance-thresholds"></a><a class="link" href="#acceptance-thresholds">3.4.4. Acceptance thresholds</a></h4>
 <div class="paragraph">
-<p>There are two separate tables for acceptability thresholds, as operational risk and information risk are not calculated in the same way.
+<p>There are two separate tables for acceptability thresholds, as operational risk and information risk are calculated differently.
 Information risks are calculated using three criteria:</p>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="images/InformationTresholds.png" alt="InformationTresholds"></span></p>
+<p><span class="image"><img src="images/InformationTresholds_1_800.png" alt="InformationTresholds"></span></p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Modification of thresholds levels of informations risks. The table displayed above (as well as the risk analysis tables) is updated automatically.</p>
+<p>Modification of threshold levels of informations risks. The table displayed above (as well as the risk analysis tables) is updated automatically.</p>
 </li>
 <li>
-<p>Information risks are calculated using three criteria: <code>Impact x Threat x Vulnerability</code></p>
+<p>Information risks are calculated using three criteria: <code>Impact x Threat x Vulnerability</code>.</p>
 </li>
 <li>
-<p>Modification of thresholds levels of operational risks. The table displayed above (as well as the risk analysis tables) is updated automatically.</p>
+<p>Modification of threshold levels of operational risks. The table displayed above (as well as the risk analysis tables) is updated automatically.</p>
 </li>
 <li>
-<p>Operational riks are calculated using two criteria: <code>Impact x Probability</code></p>
+<p>Operational risks are calculated using two criteria: <code>Impact x Probability</code>.</p>
 </li>
 </ol>
 </div>
@@ -1082,8 +1082,8 @@ Information risks are calculated using three criteria:</p>
 <div class="sect2">
 <h3 id="deliverable-context-validation"><a class="anchor" href="#deliverable-context-validation"></a><a class="link" href="#deliverable-context-validation">3.5. Deliverable: Context validation</a></h3>
 <div class="paragraph">
-<p>This deliverable includes all the information gathered and entered in the context establishment phase. It can be used to validate the information provided by the client, before beginning the risk identification.
-A form has to be filled in. When the user clicks on <code>Save</code>, a file in Word format is generated.</p>
+<p>This deliverable includes all information gathered and entered in the context establishment phase. It can be used to validate the information provided by the client, before initiating risk identification.
+A form has to be filled in. When the user clicks on <code>Save</code>, a Word file is generated.</p>
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="images/DeliverableContextValidation.png" alt="DeliverableContextValidation"></span></p>
@@ -1096,7 +1096,7 @@ A form has to be filled in. When the user clicks on <code>Save</code>, a file in
 <h2 id="context-modeling"><a class="anchor" href="#context-modeling"></a><a class="link" href="#context-modeling">4. Context Modeling</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>By clicking on number <code>2</code>, the following menu will appear:</p>
+<p>By clicking on number <code>2</code>, the following menu appears:</p>
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="images/MethodScreenStep2Detailed.png" alt="MethodScreenStep2Detailed"></span></p>
@@ -1106,23 +1106,28 @@ A form has to be filled in. When the user clicks on <code>Save</code>, a file in
 <div class="sect3">
 <h4 id="identification-of-assets"><a class="anchor" href="#identification-of-assets"></a><a class="link" href="#identification-of-assets">4.1.1. Identification of assets</a></h4>
 <div class="paragraph">
-<p>Clicking on the link <code>Identification of assets, vulnerabilities and impacts appreciation</code> will generate the main view of MONARC.
-The purpose is to create the risk model by using the assets in the library.
-The principle of the modelling is to place at the root the analysis of the primary assets, then place the support assets which make up the parts above it.
-The context establishment phase is used for determining the primary assets which will be the subject of the analysis. At this stage of the analysis, certain secondary assets may already be known.
-By default, MONARC offers a <code>Front Office</code> and <code>Back Office</code> structure; however, this is not an obligation. It is vital that the construction of the model follows a contextual logic, the assets and terms listed must use the organisation&#8217;s terminology. To do this, the user must not hesitate to rename the assets provided by default by the library.</p>
+<p>Clicking on the link <code>Identification of assets, vulnerabilities and impacts appreciation</code> generates the main view of MONARC.
+The goal is to create a risk model using assets from the library. The modelling principle involves placing the primary asset analysis at the root, followed by the supporting assets that comprise its components. The context establishment phase is used to determine the primary assets that will be analyzed.</p>
+</div>
+<div class="paragraph">
+<p>At this stage of the analysis, certain secondary assets may already be identified.
+By default, MONARC offers a <code>Front Office</code> and <code>Back Office</code> structure , although this is optional.
+The construction of the model must follow a contextual logic, with assets and terms reflecting the organization’s specific terminology.
+To achieve this, users should feel free to rename the default assets provided by the library.</p>
 </div>
 <div class="paragraph">
 <p>Principe of the <em>front office/back office</em> structure</p>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="images/FrontBack.png" alt="FrontBack"></span></p>
+<p><span class="image"><img src="images/FrontBack_1_500.png" alt="FrontBack"></span></p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>The <code>Front Office</code> represents the “user” side; for example, in the case of a “Human Resources” department we will find employees and the complete IT system to which they have access (office, workstation, hardware, software, individuals, etc.).<br>
-The <code>Back Office</code> represents the IT and organisational side of the organisation that are common to all concerned (building, data centre, network, administrators, common rules, etc.).</p>
+<p>The <code>Front Office</code> represents the “user” side; for instance, in a Human Resources department, this includes employees and the full IT system they access, such as office space, workstations, hardware, software, and personnel.</p>
+</li>
+<li>
+<p>The <code>Back Office</code>, on the other hand, represents the IT and organizational infrastructure shared across the organization, including facilities like buildings, data centres, networks, administrative roles, and common policies.</p>
 </li>
 </ol>
 </div>
@@ -1130,24 +1135,30 @@ The <code>Back Office</code> represents the IT and organisational side of the or
 <div class="sect3">
 <h4 id="impacts-appreciation"><a class="anchor" href="#impacts-appreciation"></a><a class="link" href="#impacts-appreciation">4.1.2. Impacts appreciation</a></h4>
 <div class="paragraph">
-<p>For each primary asset, the impact and consequences which may apply must be defined, if the risks in the model arise. By default, all the supporting assets will inherit these impacts, but it is also possible to redefine them.
-When the primary asset is a service, then the <strong>C</strong> (<code>Confidentiality</code>) and the <strong>I</strong> (<code>Integrity</code>) refers to the most sensitive information of the service in question. <strong>A</strong> (<code>Availability</code>) refers to the service and the information, based on the principle that if the information is available, the service will also be available.
-When the primary asset is the information, there is no ambiguity regarding the CIA criteria - it refers to all the information.
-In certain rarer cases, if the <strong>C</strong> associated with a service conveys the confidentiality of the operating procedure (e.g. manufacturing process), the user just has to express the assets in the model separately in the form of an informational asset and a service.</p>
+<p>For each primary asset, the impact and consequences which may apply must be defined, if the risks in the model arise. By default, all the supporting assets will inherit these impacts, but it is also possible to redefine them.</p>
+</div>
+<div class="paragraph">
+<p>When the primary asset is a service, then the <strong>C</strong> (<code>Confidentiality</code>) and the <strong>I</strong> (<code>Integrity</code>) refer to the most sensitive information of the service in question. <strong>A</strong> (<code>Availability</code>) refers to the service and the information, based on the principle that if the information is available, the service will also be available.</p>
+</div>
+<div class="paragraph">
+<p>When the primary asset is the information, there is no ambiguity regarding the CIA criteria - it refers to all the information.</p>
+</div>
+<div class="paragraph">
+<p>In certain rarer cases, if the <strong>C</strong> associated with a service conveys the confidentiality of the operating procedure (e.g. manufacturing process), the user just has to express the assets in the model separately in the form of an informational asset and a service.</p>
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="images/ImpactsConsequences.png" alt="ImpactsConsequences"></span></p>
 </div>
 <div class="paragraph">
-<p>The value of the CIA criteria is deduced automatically according to the ROLFP consequences or other consequences which have been associated with them (maximum value).
-For example: In the case of the abovementioned example, the <code>3</code> impact level on confidentiality is explained by the maximum ROLFP value regarding the confidentiality, which in this case is <code>3</code> in terms of consequence for the person.</p>
+<p>The value of the CIA criteria is deduced automatically according to the ROLFP consequences or other associated consequences, using the highest applicable value.
+For example: in the case above, the confidentiality impact level of <code>3</code> is set because the highest ROLFP value related to confidentiality is <code>3</code>, representing the impact on the individual.</p>
 </div>
 </div>
 </div>
 <div class="sect2">
 <h3 id="summary-of-assetsimpact"><a class="anchor" href="#summary-of-assetsimpact"></a><a class="link" href="#summary-of-assetsimpact">4.2. Summary of assets/impact</a></h3>
 <div class="paragraph">
-<p>The summary of the assets will provide editorial content that justifies the choice of assets and impact for the deliverable.</p>
+<p>The summary of the assets provides an explanation that justifies the selection of assets and their impact on the deliverable.</p>
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="images/SummaryAssetImpact.png" alt="SummaryAssetImpact"></span></p>
@@ -1197,7 +1208,7 @@ For example: In the case of the abovementioned example, the <code>3</code> impac
 <div class="sect2">
 <h3 id="evaluation-and-treatment-of-risks-2"><a class="anchor" href="#evaluation-and-treatment-of-risks-2"></a><a class="link" href="#evaluation-and-treatment-of-risks-2">5.1. Evaluation and treatment of risks</a></h3>
 <div class="paragraph">
-<p><span class="image"><img src="images/ARFull.png" alt="ARFull"></span></p>
+<p><span class="image"><img src="images/ARFull_1_800.png" alt="ARFull"></span></p>
 </div>
 <div class="paragraph">
 <p>The previous phase provided the impact criteria information; now it is necessary to evaluate threats and vulnerabilities in order to calculate risk levels.</p>
@@ -1306,7 +1317,7 @@ A form has to be filled in. Moreover, it is possible to add a <code>summary of r
 <p>This view goes beyond the ISO/IEC 27005, as it enables the user to manage the follow-up to the implementation of the measures.</p>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="images/PTRImplementation.png" alt="PTRImplementation"></span></p>
+<p><span class="image"><img src="images/PTRImplementation_1_800.png" alt="PTRImplementation"></span></p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
@@ -1328,7 +1339,7 @@ A form has to be filled in. Moreover, it is possible to add a <code>summary of r
 </ol>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="images/RecommendationImplementation.png" alt="RecommendationImplementation"></span></p>
+<p><span class="image"><img src="images/RecommendationImplementation_1_800.png" alt="RecommendationImplementation"></span></p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
@@ -1361,7 +1372,7 @@ After that go to your risk analysis and make a second iteration.</p>
 <p>All validations are stored in history and can be consulted:</p>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="images/RecommendationImplementationHistory.png" alt="RecommendationImplementationHistory"></span></p>
+<p><span class="image"><img src="images/RecommendationImplementationHistory_1_800.png" alt="RecommendationImplementationHistory"></span></p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
@@ -1402,8 +1413,8 @@ A form has to be filled in. When the user clicks on <code>Save</code>, a file in
 </div>
 <div id="footer">
 <div id="footer-text">
-Version 2023-01-31<br>
-Last updated 2023-01-31 11:27:03 +0100
+Version 2024-11-25<br>
+Last updated 2024-11-25 10:07:02 +0100
 </div>
 </div>
 <script type="text/x-mathjax-config">
