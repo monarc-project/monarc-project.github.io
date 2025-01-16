@@ -45,13 +45,13 @@ The standard steps to perform the Monarc update:
 
 More details and notes are available on
 [GitHub Release v2.13.1](https://github.com/monarc-project/MonarcAppFO/releases/tag/v2.13.1){:target="_blank"}
-and
 [GitHub Release v2.13.1-p1](https://github.com/monarc-project/MonarcAppFO/releases/tag/v2.13.1-p1){:target="_blank"}
+[GitHub Release v2.13.1-p2](https://github.com/monarc-project/MonarcAppFO/releases/tag/v2.13.1-p2){:target="_blank"}
 
 ## Download
 
 Download the OVA image of this release
-[here](https://vm.monarc.lu/MONARC_v2.13.1-p1@82084e6/){:target="_blank"}.
+[here](https://vm.monarc.lu/MONARC_v2.13.1-p2@19346ac/){:target="_blank"}.
 
-Or use the [release bundle](https://github.com/monarc-project/MonarcAppFO/releases/download/v2.13.1-p1/MonarcAppFO-v2.13.1-p1.tar.gz).
+Or use the [release bundle](https://github.com/monarc-project/MonarcAppFO/releases/download/v2.13.1-p2/MonarcAppFO-v2.13.1-p2.tar.gz).
 
