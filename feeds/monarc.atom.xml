@@ -23,7 +23,7 @@ because it comes with available php8.1 by&amp;nbsp;default.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;php8&lt;/code&gt; module also has to be enabled for Apache and previous used version disabled (in case if was&amp;nbsp;enabled):&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;code&gt;a2dismod php7.4&lt;/code&gt; (could be different one enabled, to check: &lt;code&gt;sudo a2query -m&lt;/code&gt;)&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;a2dismod php7.4&lt;/code&gt; (could be different one enabled, to&amp;nbsp;check: &lt;code&gt;sudo a2query -m&lt;/code&gt;)&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;code&gt;a2enmod php8.1&lt;/code&gt;&lt;/p&gt;
@@ -62,7 +62,7 @@ because it comes with available php8.1 by&amp;nbsp;default.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;php8&lt;/code&gt; module also has to be enabled for Apache and previous used version disabled (in case if was&amp;nbsp;enabled):&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;code&gt;a2dismod php7.4&lt;/code&gt; (could be different one enabled, to check: &lt;code&gt;sudo a2query -m&lt;/code&gt;)&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;a2dismod php7.4&lt;/code&gt; (could be different one enabled, to&amp;nbsp;check: &lt;code&gt;sudo a2query -m&lt;/code&gt;)&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;code&gt;a2enmod php8.1&lt;/code&gt;&lt;/p&gt;
@@ -118,7 +118,7 @@ because it comes with available php8.1 by&amp;nbsp;default.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;php8&lt;/code&gt; module also has to be enabled for Apache and previous used version disabled (in case if was&amp;nbsp;enabled):&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;code&gt;a2dismod php7.4&lt;/code&gt; (could be different one enabled, to check: &lt;code&gt;sudo a2query -m&lt;/code&gt;)&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;a2dismod php7.4&lt;/code&gt; (could be different one enabled, to&amp;nbsp;check: &lt;code&gt;sudo a2query -m&lt;/code&gt;)&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;code&gt;a2enmod php8.0&lt;/code&gt;&lt;/p&gt;
@@ -1122,7 +1122,7 @@ You can still&amp;nbsp;register.&lt;/p&gt;
 &lt;li&gt;fixed a bug in the table Risk treatment plan&amp;nbsp;management.&lt;/li&gt;
 &lt;li&gt;problem on date parsing with the date-picker with non-&lt;span class="caps"&gt;US&lt;/span&gt; browsers (when using
   date.toLocaleString) (&lt;a href="https://github.com/monarc-project/MonarcAppFO/issues/117"&gt;#117&lt;/a&gt;);&lt;/li&gt;
-&lt;li&gt;it is not possible to reset the &lt;code&gt;duedate&lt;/code&gt; attribute of a recommendation
+&lt;li&gt;it is not possible to reset&amp;nbsp;the &lt;code&gt;duedate&lt;/code&gt; attribute of a recommendation
   since the introduction of the date-picker (&lt;a href="https://github.com/monarc-project/MonarcAppFO/issues/116"&gt;#116&lt;/a&gt;);&lt;/li&gt;
 &lt;li&gt;review and correct the functionality of import by fusion or merge (&lt;a href="https://github.com/monarc-project/MonarcAppFO/issues/62"&gt;#62&lt;/a&gt;)&lt;/li&gt;
 &lt;li&gt;minor translations&amp;nbsp;fixes.&lt;/li&gt;
