@@ -1,5 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>MONARC - monarc</title><link href="https://www.monarc.lu/" rel="alternate"></link><link href="https://www.monarc.lu/feeds/monarc.atom.xml" rel="self"></link><id>https://www.monarc.lu/</id><updated>2024-10-15T00:00:00+02:00</updated><entry><title>MONARC 2.13.1 released</title><link href="https://www.monarc.lu/news/2024/10/15/monarc-2131-released/" rel="alternate"></link><published>2024-10-15T00:00:00+02:00</published><updated>2024-10-15T00:00:00+02:00</updated><author><name>Luxembourg House of Cybersecurity</name></author><id>tag:www.monarc.lu,2024-10-15:/news/2024/10/15/monarc-2131-released/</id><summary type="html">&lt;p&gt;Release 2.13.1 of &lt;span class="caps"&gt;MONARC&lt;/span&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;Version 2.13.1 includes some new features and a&amp;nbsp;fix.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>MONARC - monarc</title><link href="https://www.monarc.lu/" rel="alternate"></link><link href="https://www.monarc.lu/feeds/monarc.atom.xml" rel="self"></link><id>https://www.monarc.lu/</id><updated>2025-02-12T00:00:00+01:00</updated><entry><title>MONARC 2.13.2 released</title><link href="https://www.monarc.lu/news/2025/02/12/monarc-2132-released/" rel="alternate"></link><published>2025-02-12T00:00:00+01:00</published><updated>2025-02-12T00:00:00+01:00</updated><author><name>Luxembourg House of Cybersecurity</name></author><id>tag:www.monarc.lu,2025-02-12:/news/2025/02/12/monarc-2132-released/</id><summary type="html">&lt;p&gt;Release 2.13.2 of &lt;span class="caps"&gt;MONARC&lt;/span&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;Version 2.13.2 includes some new features and a&amp;nbsp;fix.&lt;/p&gt;
+&lt;h3 id="new"&gt;New&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;An optional Captcha integration, that can appear after certain number, configured, of unsuccessful login attempts.
+  To enable Captcha a specific configuration has to be added (@see config/autoload/local.php.dist, &amp;#8216;captcha&amp;#8217;&amp;nbsp;option).&lt;/li&gt;
+&lt;li&gt;Configurable export of analyses with evaluations. By default, the option can be yes, so export with evaluations is not forgotten to be enabled.
+  To enable it a specific configuration has to be added (@see config/autoload/local.php.dist, &amp;#8216;export&amp;#8217;&amp;nbsp;option).&lt;/li&gt;
+&lt;li&gt;Added the risks IDs to all the tables to facilitate the traceability. Based on &lt;a href="https://github.com/monarc-project/MonarcAppFO/discussions/419"&gt;the discussion&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="fix"&gt;Fix&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/monarc-project/MonarcAppFO/issues/552"&gt;#552&lt;/a&gt;, Fix of Assets Library objects&amp;nbsp;import.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="updating"&gt;Updating&lt;/h2&gt;
+&lt;p&gt;If the update is performed from Monarc v2.12.5 or earlier, the update of php to v8.x is necessary.
+It would be recommended to perform php version upgrade to php 8.1.&lt;br&gt;
+In case if on the Monarc server used Ubuntu distributive, then it would be a good move to upgrade it to 22.04 or later,  &lt;br&gt;
+because it comes with available php8.1 by&amp;nbsp;default.&lt;/p&gt;
+&lt;p&gt;The specific php packages that can be used (example with php8.0 / Ubuntu):  &lt;br&gt;
+&lt;code&gt;sudo apt-get install -y php8.1 php8.1-cli php8.1-common php8.1-mysql php8.1-zip php8.1-gd php8.1-mbstring php8.1-curl php8.1-xml php8.1-bcmath php8.1-intl php8.1-imagic&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;php8&lt;/code&gt; module also has to be enabled for Apache and previous used version disabled (in case if was&amp;nbsp;enabled):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;a2dismod php7.4&lt;/code&gt; (could be different one enabled, to&amp;nbsp;check: &lt;code&gt;sudo a2query -m&lt;/code&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;a2enmod php8.1&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The standard steps to perform the Monarc update:
+&lt;a href="https://monarc.lu/documentation/technical-guide/#monarc-update"&gt;guide&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;More details and notes are available on
+&lt;a href="https://github.com/monarc-project/MonarcAppFO/releases/tag/v2.13.2" target="_blank"&gt;GitHub Release&amp;nbsp;v2.13.2&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="download"&gt;Download&lt;/h2&gt;
+&lt;p&gt;Download the &lt;span class="caps"&gt;OVA&lt;/span&gt; image of this release
+&lt;a href="https://vm.monarc.lu/MONARC_v2.13.2@1f3a616/" target="_blank"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Or use the &lt;a href="https://github.com/monarc-project/MonarcAppFO/releases/download/v2.13.2/MonarcAppFO-v2.13.2.tar.gz"&gt;release bundle&lt;/a&gt;.&lt;/p&gt;</content><category term="monarc"></category><category term="monarc"></category><category term="new-release"></category></entry><entry><title>MONARC 2.13.1 released</title><link href="https://www.monarc.lu/news/2024/10/15/monarc-2131-released/" rel="alternate"></link><published>2024-10-15T00:00:00+02:00</published><updated>2024-10-15T00:00:00+02:00</updated><author><name>Luxembourg House of Cybersecurity</name></author><id>tag:www.monarc.lu,2024-10-15:/news/2024/10/15/monarc-2131-released/</id><summary type="html">&lt;p&gt;Release 2.13.1 of &lt;span class="caps"&gt;MONARC&lt;/span&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;Version 2.13.1 includes some new features and a&amp;nbsp;fix.&lt;/p&gt;
 &lt;h3 id="new"&gt;New&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Refactored the codebase of core and client repositories to improve different aspects of the application, &lt;a href="https://github.com/monarc-project/MonarcAppBO/releases/tag/v2.13.1"&gt;described&amp;nbsp;here&lt;/a&gt; &lt;/li&gt;
