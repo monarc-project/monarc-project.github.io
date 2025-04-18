@@ -12,7 +12,7 @@ table {
 
 |&nbsp;|||
 |:--|--|--|
-|**Date and time**|| June 2025. |
+|**Date and time**|| June 13, 2025, 9:00 - 12:30. |
 |&nbsp;|  ||
 |**Location**|&nbsp;&nbsp;&nbsp;|Online / [BigBlueButton](https://bigbluebutton.org/) platform of the Luxembourg House of Cybersecurity|
 |&nbsp;|  |<i class="fa fa-exclamation-triangle"></i> Check your network connection to BigBlueButton [here](https://test.bigbluebutton.org).  |
@@ -35,7 +35,7 @@ table {
 |&nbsp;|  |  |
 |**Registration** | ||
 
-Is going to be available 1 month before the event (by the end of May 2025).
+Is going to be available 1 month before the event (by the mid of May 2025).
 
 
 ### Past Trainings
