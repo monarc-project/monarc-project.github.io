@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
 <head>
-    <title>MONARC 2.9.7 released - MONARC</title>
+    <title>MONARC 2.13.3 released - MONARC</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -10,18 +10,18 @@
 
     <link href="../../../../../assets/images/monarc-logo.png" rel="icon">
 
-<link rel="canonical" href="../../../../../news/2020/01/07/monarc-297-released/">
+<link rel="canonical" href="../../../../../news/2025/04/17/monarc-2133-released/">
 
         <meta name="author" content="Luxembourg House of Cybersecurity" />
         <meta name="keywords" content="monarc,new-release" />
-        <meta name="description" content="Release 2.9.7 of MONARC" />
+        <meta name="description" content="Release 2.13.3 of MONARC" />
 
         <meta property="og:site_name" content="MONARC" />
         <meta property="og:type" content="article"/>
-        <meta property="og:title" content="MONARC 2.9.7 released"/>
-        <meta property="og:url" content="../../../../../news/2020/01/07/monarc-297-released/"/>
-        <meta property="og:description" content="Release 2.9.7 of MONARC"/>
-        <meta property="article:published_time" content="2020-01-07" />
+        <meta property="og:title" content="MONARC 2.13.3 released"/>
+        <meta property="og:url" content="../../../../../news/2025/04/17/monarc-2133-released/"/>
+        <meta property="og:description" content="Release 2.13.3 of MONARC"/>
+        <meta property="article:published_time" content="2025-04-17" />
             <meta property="article:section" content="monarc" />
             <meta property="article:tag" content="monarc" />
             <meta property="article:tag" content="new-release" />
@@ -88,10 +88,10 @@ MONARC            </a>
         <article>
             <header class="page-header">
                 <h1>
-                    <a href="../../../../../news/2020/01/07/monarc-297-released/"
+                    <a href="../../../../../news/2025/04/17/monarc-2133-released/"
                        rel="bookmark"
-                       title="Permalink to MONARC 2.9.7 released">
-                        <span class="caps">MONARC</span> 2.9.7&nbsp;released
+                       title="Permalink to MONARC 2.13.3 released">
+                        <span class="caps">MONARC</span> 2.13.3&nbsp;released
                     </a>
                 </h1>
             </header>
@@ -101,7 +101,7 @@ MONARC            </a>
 <footer class="post-info">
     <span class="label label-default">Date</span>
     <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2020-01-07T00:00:00+01:00"> Tue 07 January 2020</time>
+        <i class="fa fa-calendar"></i><time datetime="2025-04-17T00:00:00+02:00"> Thu 17 April 2025</time>
     </span>
 
 
@@ -115,21 +115,42 @@ MONARC            </a>
     
 </footer><!-- /.post-info -->                    </div>
                 </div>
-                <p>Version 2.9.7 of <span class="caps">MONARC</span> has been released with several&nbsp;fixes.</p>
+                <p>Version 2.13.3 includes some new features and a&nbsp;fix.</p>
+<h3 id="new">New</h3>
+<ul>
+<li>Possibility to rest <span class="caps">2FA</span> of users by the admin account along with the password&nbsp;reset.</li>
+<li>The Global analyses stats is only available now to the users with <span class="caps">CEO</span> (global statistics)&nbsp;role.</li>
+</ul>
 <h3 id="fix">Fix</h3>
 <ul>
-<li>Randomly deletion of recommendations
-  (<a href="https://github.com/monarc-project/MonarcAppFO/issues/228">#228</a>).</li>
-<li>Upload a new delivery template
-  (<a href="https://github.com/monarc-project/MonarcAppFO/issues/227">#227</a>).</li>
+<li>Fixed analysis creation based on a specific model when the model has assets that consist of risks with generic threats or&nbsp;vulnerabilities.</li>
 </ul>
 <h2 id="updating">Updating</h2>
-<p>To update, check out our
-<a href="http://monarc.lu/documentation/technical-guide/#monarc-update">update</a> instructions.
-If you are coming from <span class="caps">MONARC</span> 2.9.0 please read
-<a href="/news/2019/11/25/monarc-291-released/#updating">this</a>.</p>
-<p>You can also download the new virtual machine
-<a href="https://github.com/monarc-project/MonarcAppFO/releases/tag/v2.9.7">here</a>.</p>
+<p>If the update is performed from Monarc v2.12.5 or earlier, the update of php to v8.x is necessary.
+It would be recommended to perform php version upgrade to php 8.1.<br>
+In case if on the Monarc server used Ubuntu distributive, then it would be a good move to upgrade it to 22.04 or later,  <br>
+because it comes with available php8.1 by&nbsp;default.</p>
+<p>The specific php packages that can be used (example with php8.0 / Ubuntu):  <br>
+<code>sudo apt-get install -y php8.1 php8.1-cli php8.1-common php8.1-mysql php8.1-zip php8.1-gd php8.1-mbstring php8.1-curl php8.1-xml php8.1-bcmath php8.1-intl php8.1-imagic</code></p>
+<p><code>php8</code> module also has to be enabled for Apache and previous used version disabled (in case if was&nbsp;enabled):</p>
+<ul>
+<li>
+<p><code>a2dismod php7.4</code> (could be different one enabled, to&nbsp;check: <code>sudo a2query -m</code>)</p>
+</li>
+<li>
+<p><code>a2enmod php8.1</code></p>
+</li>
+</ul>
+<p>The standard steps to perform the Monarc update:
+<a href="https://monarc.lu/documentation/technical-guide/#monarc-update">guide</a>.</p>
+<p>More details and notes are available on
+<a href="https://github.com/monarc-project/MonarcAppFO/releases/tag/v2.13.3" target="_blank">GitHub Release&nbsp;v2.13.3</a></p>
+<h2 id="download">Download</h2>
+<p>Download the <span class="caps">OVA</span> image of this release
+<a href="https://vm.monarc.lu/MONARC_v2.13.3@54bb656/" target="_blank">here</a>.</p>
+<p>Or use the <a href="https://github.com/monarc-project/MonarcAppFO/releases/download/v2.13.3/MonarcAppFO-v2.13.3.tar.gz">release bundle</a>.</p>
+<h2 id="monarc-backoffice-application">Monarc BackOffice&nbsp;application.</h2>
+<p>The is also a new BackOffice release available. The details can be found <a href="https://github.com/monarc-project/MonarcAppBO/releases/tag/v2.13.3" target="_blank">here</a>.</p>
             </div>
             <!-- /.entry-content -->
         </article>
