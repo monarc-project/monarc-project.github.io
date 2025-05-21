@@ -1,20 +1,23 @@
 Title: MONARC 2.13.3 released
 Date: 2025-04-17
-Modified: 2025-04-17
+Modified: 2025-05-21
 Category: monarc
 Tags: monarc, new-release
 Summary: Release 2.13.3 of MONARC
 
-Version 2.13.3 includes some new features and a fix.
+Version 2.13.3 and 2.13.3-p1 include some new features and fixes
 
 ### New
 
 - Possibility to rest 2FA of users by the admin account along with the password reset.
 - The Global analyses stats is only available now to the users with CEO (global statistics) role.
+- Possibility to import on the BackOffice side risks with mode (generic | specific) property.
 
 ### Fix
 
 - Fixed analysis creation based on a specific model when the model has assets that consist of risks with generic threats or vulnerabilities.
+- Added the validation of the instances hierarchy to prevent a possible parent / child circular reference.
+- Fixed batch import validation error for measures, operational risks and operational risks tags.
 
 
 ## Updating
@@ -41,10 +44,13 @@ The standard steps to perform the Monarc update:
 
 More details and notes are available on
 [GitHub Release v2.13.3](https://github.com/monarc-project/MonarcAppFO/releases/tag/v2.13.3){:target="_blank"}
+and on the patch1 release page
+[GitHub Release v2.13.3-p1](https://github.com/monarc-project/MonarcAppFO/releases/tag/v2.13.3-p1){:target="_blank"}
 
 ## Download
 
 Download the OVA image of this release
+[here](https://vm.monarc.lu/MONARC_v2.13.3-p1@a3d7cbc/){:target="_blank"}.
 [here](https://vm.monarc.lu/MONARC_v2.13.3@54bb656/){:target="_blank"}.
 
 Or use the [release bundle](https://github.com/monarc-project/MonarcAppFO/releases/download/v2.13.3/MonarcAppFO-v2.13.3.tar.gz).
