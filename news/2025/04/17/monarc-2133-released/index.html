@@ -115,10 +115,10 @@ MONARC            </a>
     
 </footer><!-- /.post-info -->                    </div>
                 </div>
-                <p>Version 2.13.3 and 2.13.3-p1 include some new features and&nbsp;fixes</p>
+                <p>Version 2.13.3, 2.13.3-p1 and 2.13.3-p2 include some new features and&nbsp;fixes</p>
 <h3 id="new">New</h3>
 <ul>
-<li>Possibility to rest <span class="caps">2FA</span> of users by the admin account along with the password&nbsp;reset.</li>
+<li><a href="https://github.com/monarc-project/MonarcAppFO/issues/522">#522</a> Possibility to rest <span class="caps">2FA</span> of users by the admin account along with the password&nbsp;reset.</li>
 <li>The Global analyses stats is only available now to the users with <span class="caps">CEO</span> (global statistics)&nbsp;role.</li>
 <li>Possibility to import on the BackOffice side risks with mode (generic | specific)&nbsp;property.</li>
 </ul>
@@ -127,6 +127,8 @@ MONARC            </a>
 <li>Fixed analysis creation based on a specific model when the model has assets that consist of risks with generic threats or&nbsp;vulnerabilities.</li>
 <li>Added the validation of the instances hierarchy to prevent a possible parent / child circular&nbsp;reference.</li>
 <li>Fixed batch import validation error for measures, operational risks and operational risks&nbsp;tags.</li>
+<li><a href="https://github.com/monarc-project/MonarcAppFO/issues/562">#562</a> Fixed the final report generation error when the asset&#8217;s context is&nbsp;set.</li>
+<li>Fixed the scale impact type status validation during the import process. If an instance consequence is not hidden, but a corresponding scale impact type is hidden the consequence value is not used for the risk&nbsp;calculation.</li>
 </ul>
 <h2 id="updating">Updating</h2>
 <p>If the update is performed from Monarc v2.12.5 or earlier, the update of php to v8.x is necessary.
@@ -149,9 +151,12 @@ because it comes with available php8.1 by&nbsp;default.</p>
 <p>More details and notes are available on
 <a href="https://github.com/monarc-project/MonarcAppFO/releases/tag/v2.13.3" target="_blank">GitHub Release v2.13.3</a>
 and on the patch1 release page
-<a href="https://github.com/monarc-project/MonarcAppFO/releases/tag/v2.13.3-p1" target="_blank">GitHub Release&nbsp;v2.13.3-p1</a></p>
+<a href="https://github.com/monarc-project/MonarcAppFO/releases/tag/v2.13.3-p1" target="_blank">GitHub Release v2.13.3-p1</a>
+and on the patch2 release page
+<a href="https://github.com/monarc-project/MonarcAppFO/releases/tag/v2.13.3-p2" target="_blank">GitHub Release&nbsp;v2.13.3-p2</a></p>
 <h2 id="download">Download</h2>
 <p>Download the <span class="caps">OVA</span> image of this release
+<a href="https://vm.monarc.lu/MONARC_v2.13.3-p2@66ea2df/" target="_blank">here</a>.
 <a href="https://vm.monarc.lu/MONARC_v2.13.3-p1@a3d7cbc/" target="_blank">here</a>.
 <a href="https://vm.monarc.lu/MONARC_v2.13.3@54bb656/" target="_blank">here</a>.</p>
 <p>Or use the <a href="https://github.com/monarc-project/MonarcAppFO/releases/download/v2.13.3/MonarcAppFO-v2.13.3.tar.gz">release bundle</a>.</p>
