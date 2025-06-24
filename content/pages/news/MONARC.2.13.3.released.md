@@ -1,15 +1,15 @@
 Title: MONARC 2.13.3 released
 Date: 2025-04-17
-Modified: 2025-05-21
+Modified: 2025-06-24
 Category: monarc
 Tags: monarc, new-release
 Summary: Release 2.13.3 of MONARC
 
-Version 2.13.3 and 2.13.3-p1 include some new features and fixes
+Version 2.13.3, 2.13.3-p1 and 2.13.3-p2 include some new features and fixes
 
 ### New
 
-- Possibility to rest 2FA of users by the admin account along with the password reset.
+- [#522](https://github.com/monarc-project/MonarcAppFO/issues/522) Possibility to rest 2FA of users by the admin account along with the password reset.
 - The Global analyses stats is only available now to the users with CEO (global statistics) role.
 - Possibility to import on the BackOffice side risks with mode (generic | specific) property.
 
@@ -18,6 +18,8 @@ Version 2.13.3 and 2.13.3-p1 include some new features and fixes
 - Fixed analysis creation based on a specific model when the model has assets that consist of risks with generic threats or vulnerabilities.
 - Added the validation of the instances hierarchy to prevent a possible parent / child circular reference.
 - Fixed batch import validation error for measures, operational risks and operational risks tags.
+- [#562](https://github.com/monarc-project/MonarcAppFO/issues/562) Fixed the final report generation error when the asset's context is set.
+- Fixed the scale impact type status validation during the import process. If an instance consequence is not hidden, but a corresponding scale impact type is hidden the consequence value is not used for the risk calculation.
 
 
 ## Updating
@@ -46,10 +48,13 @@ More details and notes are available on
 [GitHub Release v2.13.3](https://github.com/monarc-project/MonarcAppFO/releases/tag/v2.13.3){:target="_blank"}
 and on the patch1 release page
 [GitHub Release v2.13.3-p1](https://github.com/monarc-project/MonarcAppFO/releases/tag/v2.13.3-p1){:target="_blank"}
+and on the patch2 release page
+[GitHub Release v2.13.3-p2](https://github.com/monarc-project/MonarcAppFO/releases/tag/v2.13.3-p2){:target="_blank"}
 
 ## Download
 
 Download the OVA image of this release
+[here](https://vm.monarc.lu/MONARC_v2.13.3-p2@66ea2df/){:target="_blank"}.
 [here](https://vm.monarc.lu/MONARC_v2.13.3-p1@a3d7cbc/){:target="_blank"}.
 [here](https://vm.monarc.lu/MONARC_v2.13.3@54bb656/){:target="_blank"}.
 
