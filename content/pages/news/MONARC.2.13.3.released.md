@@ -1,11 +1,11 @@
 Title: MONARC 2.13.3 released
 Date: 2025-04-17
-Modified: 2025-06-24
+Modified: 2025-07-04
 Category: monarc
 Tags: monarc, new-release
 Summary: Release 2.13.3 of MONARC
 
-Version 2.13.3, 2.13.3-p1 and 2.13.3-p2 include some new features and fixes
+Version 2.13.3, 2.13.3-p1, 2.13.3-p2 and 2.13.3-p3 include some new features and fixes
 
 ### New
 
@@ -20,6 +20,8 @@ Version 2.13.3, 2.13.3-p1 and 2.13.3-p2 include some new features and fixes
 - Fixed batch import validation error for measures, operational risks and operational risks tags.
 - [#562](https://github.com/monarc-project/MonarcAppFO/issues/562) Fixed the final report generation error when the asset's context is set.
 - Fixed the scale impact type status validation during the import process. If an instance consequence is not hidden, but a corresponding scale impact type is hidden the consequence value is not used for the risk calculation.
+- Import Asset Library objects from MOSP when selected category is root.
+- Snapshots creation when Record of Processing Activities are fully defined.
 
 
 ## Updating
@@ -46,14 +48,17 @@ The standard steps to perform the Monarc update:
 
 More details and notes are available on
 [GitHub Release v2.13.3](https://github.com/monarc-project/MonarcAppFO/releases/tag/v2.13.3){:target="_blank"}
-and on the patch1 release page
+on the patch1 release page
 [GitHub Release v2.13.3-p1](https://github.com/monarc-project/MonarcAppFO/releases/tag/v2.13.3-p1){:target="_blank"}
-and on the patch2 release page
+on the patch2 release page
 [GitHub Release v2.13.3-p2](https://github.com/monarc-project/MonarcAppFO/releases/tag/v2.13.3-p2){:target="_blank"}
+and on the patch3 release page
+[GitHub Release v2.13.3-p3](https://github.com/monarc-project/MonarcAppFO/releases/tag/v2.13.3-p3){:target="_blank"}
 
 ## Download
 
 Download the OVA image of this release
+[here](https://vm.monarc.lu/MONARC_v2.13.3-p3@6d10eba/){:target="_blank"}.
 [here](https://vm.monarc.lu/MONARC_v2.13.3-p2@66ea2df/){:target="_blank"}.
 [here](https://vm.monarc.lu/MONARC_v2.13.3-p1@a3d7cbc/){:target="_blank"}.
 [here](https://vm.monarc.lu/MONARC_v2.13.3@54bb656/){:target="_blank"}.
