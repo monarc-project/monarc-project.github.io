@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>MONARC</title><link href="https://www.monarc.lu/" rel="alternate"></link><link href="https://www.monarc.lu/feeds/all.atom.xml" rel="self"></link><id>https://www.monarc.lu/</id><updated>2025-06-24T00:00:00+02:00</updated><entry><title>MONARC 2.13.3 released</title><link href="https://www.monarc.lu/news/2025/04/17/monarc-2133-released/" rel="alternate"></link><published>2025-04-17T00:00:00+02:00</published><updated>2025-06-24T00:00:00+02:00</updated><author><name>Luxembourg House of Cybersecurity</name></author><id>tag:www.monarc.lu,2025-04-17:/news/2025/04/17/monarc-2133-released/</id><summary type="html">&lt;p&gt;Release 2.13.3 of &lt;span class="caps"&gt;MONARC&lt;/span&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;Version 2.13.3, 2.13.3-p1 and 2.13.3-p2 include some new features and&amp;nbsp;fixes&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>MONARC</title><link href="https://www.monarc.lu/" rel="alternate"></link><link href="https://www.monarc.lu/feeds/all.atom.xml" rel="self"></link><id>https://www.monarc.lu/</id><updated>2025-07-04T00:00:00+02:00</updated><entry><title>MONARC 2.13.3 released</title><link href="https://www.monarc.lu/news/2025/04/17/monarc-2133-released/" rel="alternate"></link><published>2025-04-17T00:00:00+02:00</published><updated>2025-07-04T00:00:00+02:00</updated><author><name>Luxembourg House of Cybersecurity</name></author><id>tag:www.monarc.lu,2025-04-17:/news/2025/04/17/monarc-2133-released/</id><summary type="html">&lt;p&gt;Release 2.13.3 of &lt;span class="caps"&gt;MONARC&lt;/span&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;Version 2.13.3, 2.13.3-p1, 2.13.3-p2 and 2.13.3-p3 include some new features and&amp;nbsp;fixes&lt;/p&gt;
 &lt;h3 id="new"&gt;New&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://github.com/monarc-project/MonarcAppFO/issues/522"&gt;#522&lt;/a&gt; Possibility to rest &lt;span class="caps"&gt;2FA&lt;/span&gt; of users by the admin account along with the password&amp;nbsp;reset.&lt;/li&gt;
@@ -13,6 +13,8 @@
 &lt;li&gt;Fixed batch import validation error for measures, operational risks and operational risks&amp;nbsp;tags.&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://github.com/monarc-project/MonarcAppFO/issues/562"&gt;#562&lt;/a&gt; Fixed the final report generation error when the asset&amp;#8217;s context is&amp;nbsp;set.&lt;/li&gt;
 &lt;li&gt;Fixed the scale impact type status validation during the import process. If an instance consequence is not hidden, but a corresponding scale impact type is hidden the consequence value is not used for the risk&amp;nbsp;calculation.&lt;/li&gt;
+&lt;li&gt;Import Asset Library objects from &lt;span class="caps"&gt;MOSP&lt;/span&gt; when selected category is&amp;nbsp;root.&lt;/li&gt;
+&lt;li&gt;Snapshots creation when Record of Processing Activities are fully&amp;nbsp;defined.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="updating"&gt;Updating&lt;/h2&gt;
 &lt;p&gt;If the update is performed from Monarc v2.12.5 or earlier, the update of php to v8.x is necessary.
@@ -34,12 +36,15 @@ because it comes with available php8.1 by&amp;nbsp;default.&lt;/p&gt;
 &lt;a href="https://monarc.lu/documentation/technical-guide/#monarc-update"&gt;guide&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;More details and notes are available on
 &lt;a href="https://github.com/monarc-project/MonarcAppFO/releases/tag/v2.13.3" target="_blank"&gt;GitHub Release v2.13.3&lt;/a&gt;
-and on the patch1 release page
+on the patch1 release page
 &lt;a href="https://github.com/monarc-project/MonarcAppFO/releases/tag/v2.13.3-p1" target="_blank"&gt;GitHub Release v2.13.3-p1&lt;/a&gt;
-and on the patch2 release page
-&lt;a href="https://github.com/monarc-project/MonarcAppFO/releases/tag/v2.13.3-p2" target="_blank"&gt;GitHub Release&amp;nbsp;v2.13.3-p2&lt;/a&gt;&lt;/p&gt;
+on the patch2 release page
+&lt;a href="https://github.com/monarc-project/MonarcAppFO/releases/tag/v2.13.3-p2" target="_blank"&gt;GitHub Release v2.13.3-p2&lt;/a&gt;
+and on the patch3 release page
+&lt;a href="https://github.com/monarc-project/MonarcAppFO/releases/tag/v2.13.3-p3" target="_blank"&gt;GitHub Release&amp;nbsp;v2.13.3-p3&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id="download"&gt;Download&lt;/h2&gt;
 &lt;p&gt;Download the &lt;span class="caps"&gt;OVA&lt;/span&gt; image of this release
+&lt;a href="https://vm.monarc.lu/MONARC_v2.13.3-p3@6d10eba/" target="_blank"&gt;here&lt;/a&gt;.
 &lt;a href="https://vm.monarc.lu/MONARC_v2.13.3-p2@66ea2df/" target="_blank"&gt;here&lt;/a&gt;.
 &lt;a href="https://vm.monarc.lu/MONARC_v2.13.3-p1@a3d7cbc/" target="_blank"&gt;here&lt;/a&gt;.
 &lt;a href="https://vm.monarc.lu/MONARC_v2.13.3@54bb656/" target="_blank"&gt;here&lt;/a&gt;.&lt;/p&gt;
