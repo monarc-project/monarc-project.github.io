@@ -13,10 +13,10 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
-    - name: Set up Python 3.x
-      uses: actions/setup-python@v4
+    - name: Set up Python
+      uses: actions/setup-python@v6
       with:
-        python-version: '3.x'
+        python-version: '3.13'
 
     - name: Install dependencies
       run: |
@@ -31,3 +31,4 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./output
         publish_branch: master  # deploying branch
+
