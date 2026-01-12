@@ -3,32 +3,38 @@ name: Publish website
 on:
   push:
     branches:
-      - source  # default branch with the source code of the website
+      - source
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-    
+
     steps:
-    - uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
-    - name: Set up Python
-      uses: actions/setup-python@v6
-      with:
-        python-version: '3.13'
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.13'
 
-    - name: Install dependencies
-      run: |
-        pip install poetry lxml
-        poetry install
-        poetry run make html
-        poetry run ghp-import output
+      - name: Install system dependencies (cairo)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            libcairo2-dev \
+            pkg-config
 
-    - name: Deploy
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./output
-        publish_branch: master  # deploying branch
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install poetry lxml ghp-import
+          poetry install
+          poetry run make html
+          poetry run ghp-import output
 
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./output
+          publish_branch: master
