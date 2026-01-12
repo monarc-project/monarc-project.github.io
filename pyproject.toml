@@ -13,6 +13,7 @@ Markdown = "^3.2.2"
 typogrify = "^2.0.7"
 xhtml2pdf = "^0.2.4"
 ghp-import = "^0.5.5"
+pytz = "^2025.2"
 
 [tool.poetry.dev-dependencies]
 
