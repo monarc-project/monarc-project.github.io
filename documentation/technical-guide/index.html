@@ -566,6 +566,7 @@ table.CodeRay td.code{padding:0 0 0 .75em}
 <ul class="sectlevel3">
 <li><a href="#prepared-virtual-machine">4.1.1. Prepared virtual machine</a></li>
 <li><a href="#manual-deployment">4.1.2. Manual deployment</a></li>
+<li><a href="#end-user-app">4.1.3. End-User installation and usage of the FrontOffice application</a></li>
 </ul>
 </li>
 <li><a href="#monarc-back-office-application">4.2. MONARC Back Office application.</a>
@@ -1065,10 +1066,24 @@ internal mail server (<strong>SMTP</strong>).</p>
 <div class="sect2">
 <h3 id="monarc-front-office-application"><a class="anchor" href="#monarc-front-office-application"></a><a class="link" href="#monarc-front-office-application">4.1. MONARC Front Office application</a></h3>
 <div class="paragraph">
-<p>There are 2 ways of installing or deployment of the MONARC Front Office application.</p>
+<p>There are 3 ways of installing or deployment of the MONARC Front Office application.</p>
 </div>
 <div class="sect3">
 <h4 id="prepared-virtual-machine"><a class="anchor" href="#prepared-virtual-machine"></a><a class="link" href="#prepared-virtual-machine">4.1.1. Prepared virtual machine</a></h4>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Warning</div>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>This prepared virtual machine solution is no longer maintained. For new installations, it is recommended to use the Docker + Application solution described in <a href="#end-user-app">4.1.3. End-User installation and usage of the FrontOffice application</a>.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
 <div class="paragraph">
 <p>Virtual machine can be used in case if you would like to have a locally installed instance of the MONARC Front Office
 on you PC or laptop. It is possible to use the VM installation on server, but not recommended.</p>
@@ -1118,6 +1133,404 @@ section <code>MONARC application</code> and usually login: <code>admin@admin.loc
 <div class="paragraph">
 <p>Follow the instructions
 <a href="https://github.com/monarc-project/MonarcAppFO/tree/master/INSTALL">here</a>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="end-user-app"><a class="anchor" href="#end-user-app"></a><a class="link" href="#end-user-app">4.1.3. End-User installation and usage of the FrontOffice application</a></h4>
+<div class="paragraph">
+<p>These steps are for people using the packaged applications from <code>dist/packages</code> rather than building from source.</p>
+</div>
+<div class="paragraph">
+<p>Before first run on any OS:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Install Docker and make sure it is running.</p>
+</li>
+<li>
+<p>Download the package that matches your operating system and CPU architecture.</p>
+</li>
+<li>
+<p>Start the launcher once.</p>
+</li>
+<li>
+<p>Open <code>Config</code> and review the generated <code>.env</code> file.</p>
+</li>
+<li>
+<p>Set at least <code>MONARC_FO_VERSION</code> and <code>MONARC_STATS_VERSION</code> to a real release tag instead of <code>vX.Y.Z</code>.</p>
+</li>
+<li>
+<p>Adjust DB settings, language settings, and any MONARC-specific values you need.</p>
+</li>
+<li>
+<p>Save the config, then use <code>Start MONARC</code>.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>The MONARC FrontOffice application launcher tool:</p>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img src="images/monarc_app_launcher.png" alt="MONARC FrontOffice application launcher tool">
+</div>
+</div>
+<div class="paragraph">
+<p>Default login after the stack is up:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>admin@admin.localhost</code></p>
+</li>
+<li>
+<p><code>admin</code></p>
+</li>
+</ul>
+</div>
+<div class="sect4">
+<h5 id="_windows">Windows</h5>
+<div class="paragraph">
+<p>Before installing:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Install Docker Desktop for Windows.</p>
+</li>
+<li>
+<p>Use the WSL 2 backend.</p>
+</li>
+<li>
+<p>Ensure WSL 2 is installed and updated; Docker currently recommends WSL version <code>2.1.5</code> or later, ideally the latest available version.</p>
+</li>
+<li>
+<p>Ensure hardware virtualization is enabled in BIOS/UEFI.</p>
+</li>
+<li>
+<p>Start Docker Desktop once and wait until Docker shows that the engine is running.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Recommended preparation:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="powershell">wsl --install
+wsl --update</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Package install:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Download <code>monarc-local-windows-amd64.zip</code>.</p>
+</li>
+<li>
+<p>Extract it to a normal writable folder such as <code>C:\Users\&lt;you&gt;\Documents\monarc-local\</code>.</p>
+</li>
+<li>
+<p>Start <code>Monarc Local.bat</code> for the GUI, or run <code>monarc-local.exe</code> in a terminal for CLI usage.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Windows notes:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The launcher stores editable config in <code>%LOCALAPPDATA%\MonarcLocal\compose\.env</code>.</p>
+</li>
+<li>
+<p>MONARC data is stored under <code>%LOCALAPPDATA%\MonarcLocal\</code>.</p>
+</li>
+<li>
+<p>If Docker Desktop is installed by an administrator for another account, the user may need access to the <code>docker-users</code> group.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_macos">macOS</h5>
+<div class="paragraph">
+<p>Before installing:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Install Docker Desktop for Mac for the correct CPU type: Apple silicon or Intel.</p>
+</li>
+<li>
+<p>Start Docker Desktop once and wait until it is fully running.</p>
+</li>
+<li>
+<p>Keep Docker Desktop updated; Docker supports the current macOS major release and the previous two major releases.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Package install:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Download the matching package: <code>monarc-local-darwin-arm64.zip</code> for Apple silicon, or <code>monarc-local-darwin-amd64.zip</code> for Intel.</p>
+</li>
+<li>
+<p>Extract the archive.</p>
+</li>
+<li>
+<p>Open <code>Monarc Local.app</code>.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>macOS notes:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The launcher stores editable config in <code>~/.monarc-local/compose/.env</code>.</p>
+</li>
+<li>
+<p>MONARC data is stored under <code>~/.monarc-local/</code>.</p>
+</li>
+<li>
+<p>Release artifacts should be signed and notarized; otherwise macOS may report the app as damaged or block it on first launch.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Avoiding the misleading macOS "app is damaged" error:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Best fix for published releases: distribute a signed and notarized macOS package.</p>
+</li>
+<li>
+<p>If you are testing an internal or unsigned build downloaded from a browser, macOS may add the <code>com.apple.quarantine</code> attribute to the extracted app and show a misleading "is damaged and can not be opened" message.</p>
+</li>
+<li>
+<p>If the archive came from a trusted MONARC source, remove the quarantine attribute from the extracted app before opening it by running in the terminal app:</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="bash">/usr/bin/xattr -dr com.apple.quarantine "/path/to/Monarc Local.app"</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>After removing quarantine, start <code>Monarc Local.app</code> again.</p>
+</li>
+<li>
+<p>Do not recommend this workaround for untrusted downloads; for public releases, the proper fix is notarization.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_linux">Linux</h5>
+<div class="paragraph">
+<p>Before installing:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Install Docker Engine and the Docker Compose plugin.</p>
+</li>
+<li>
+<p>Add your user to the <code>docker</code> group if you want to run Docker without <code>sudo</code>.</p>
+</li>
+<li>
+<p>Install <code>python3</code> with Tk support if you want the GUI launcher.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Typical Ubuntu preparation:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="bash">sudo apt-get update
+sudo apt-get install -y python3 python3-tk
+sudo usermod -aG docker "$USER"</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Install Docker Engine and the Compose plugin from Docker&#8217;s official Ubuntu repository instructions first, then log out and log back in after changing the <code>docker</code> group.</p>
+</div>
+<div class="paragraph">
+<p>Package install:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>.deb</code>:</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="bash">sudo dpkg -i monarc-local-linux-amd64.deb</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>portable archive:</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="bash">tar -xzf monarc-local-linux-amd64.tar.gz
+cd monarc-local-linux-amd64
+./monarc-local-gui.sh</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Linux notes:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The <code>.deb</code> installs files under <code>/opt/monarc-local</code> and adds <code>monarc-local</code> and <code>monarc-local-gui</code> into <code>/usr/bin</code>.</p>
+</li>
+<li>
+<p>The launcher stores editable config in <code>~/.monarc-local/compose/.env</code>.</p>
+</li>
+<li>
+<p>MONARC data is stored under <code>~/.monarc-local/</code>.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_daily_usage">Daily Usage</h5>
+<div class="paragraph">
+<p>GUI actions:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>Start MONARC</code>: pull images and start the stack</p>
+</li>
+<li>
+<p><code>Update MONARC</code>: pull newer images, restart the stack, and run the migration command</p>
+</li>
+<li>
+<p><code>Open In Browser</code>: open the configured MONARC URL</p>
+</li>
+<li>
+<p><code>Display Status</code>: show container status</p>
+</li>
+<li>
+<p><code>Display Logs</code>: show recent frontoffice logs</p>
+</li>
+<li>
+<p><code>Edit Config</code>: open the user <code>.env</code> file</p>
+</li>
+<li>
+<p><code>Help</code>: show CLI help text</p>
+</li>
+<li>
+<p><code>Stop MONARC</code>: stop the stack</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Equivalent CLI commands:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="bash">monarc-local doctor
+monarc-local up
+monarc-local status
+monarc-local logs --service monarc-frontoffice --tail 200
+monarc-local open
+monarc-local update
+monarc-local down</code></pre>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_updating_installed_packages">Updating Installed Packages</h5>
+<div class="paragraph">
+<p>Updating MONARC itself:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="bash">monarc-local update</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Updating the launcher package:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Windows: download the new zip, extract it, and replace the previous extracted folder.</p>
+</li>
+<li>
+<p>macOS: download the new macOS artifact and replace the previous app bundle.</p>
+</li>
+<li>
+<p>Linux <code>.deb</code>: install the newer <code>.deb</code> over the existing one with <code>sudo dpkg -i ...</code>.</p>
+</li>
+<li>
+<p>Linux <code>.tar.gz</code>: extract the new archive and start using the new extracted folder.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Reinstalling the launcher package does not remove the user config or MONARC data directories unless you delete them manually.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_launcher_commands">Launcher Commands</h5>
+<div class="ulist">
+<ul>
+<li>
+<p><code>doctor</code>: validate docker + compose + compose file</p>
+</li>
+<li>
+<p><code>status</code>: show stack status</p>
+</li>
+<li>
+<p><code>up</code>: pull images and start stack</p>
+</li>
+<li>
+<p><code>down</code>: stop stack</p>
+</li>
+<li>
+<p><code>update</code>: pull new FrontOffice/stats versions, restart stack, run migration hook</p>
+</li>
+<li>
+<p><code>logs</code>: show compose logs (all services or specific service)</p>
+</li>
+<li>
+<p><code>open</code>: open MONARC URL in browser</p>
+</li>
+<li>
+<p><code>backup</code>: archive local data folder into <code>.tar.gz</code></p>
+</li>
+<li>
+<p><code>restore</code>: restore archived data folder</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Run <code>monarc-local help</code> for options.</p>
+</div>
 </div>
 </div>
 </div>

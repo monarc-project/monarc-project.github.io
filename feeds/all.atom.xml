@@ -13,6 +13,7 @@
 &lt;li&gt;&lt;a href="https://github.com/monarc-project/MonarcAppFO/issues/574"&gt;&lt;span class="caps"&gt;SQL&lt;/span&gt; syntax error (MySQL ONLY_FULL_GROUP_BY&amp;nbsp;violation)&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://github.com/monarc-project/MonarcAppFO/issues/578"&gt;Dashboard Operational Risks &lt;span class="caps"&gt;PNG&lt;/span&gt; Export&amp;nbsp;incorrect&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Updated the proxy-manager to use the &lt;span class="caps"&gt;LTS&lt;/span&gt; version and avoid the php version&amp;nbsp;limitation.&lt;/li&gt;
+&lt;li&gt;Fixed the recommendations export to .csv, removed the default limit of 25&amp;nbsp;records.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="updating"&gt;Updating&lt;/h2&gt;
 &lt;p&gt;If the update is performed from Monarc v2.12.5 or earlier, the update of php to v8.x is necessary.
@@ -35,6 +36,21 @@ because it comes with available php8.1 by&amp;nbsp;default.&lt;/p&gt;
 &lt;p&gt;More details and notes are available on
 &lt;a href="https://github.com/monarc-project/MonarcAppFO/releases/tag/v2.13.4" target="_blank"&gt;GitHub Release&amp;nbsp;v2.13.4&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Or use the &lt;a href="https://github.com/monarc-project/MonarcAppFO/releases/download/v2.13.4/MonarcAppFO-v2.13.4.tar.gz"&gt;release bundle&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="local-installation-docker-application"&gt;Local Installation (Docker +&amp;nbsp;Application).&lt;/h2&gt;
+&lt;p&gt;Monarc FrontOffice can also be installed locally using Docker and a small utililty to execute docker commands, configure and update the Monarc &lt;span class="caps"&gt;FO&lt;/span&gt;&amp;nbsp;tool.&lt;/p&gt;
+&lt;p&gt;To install the&amp;nbsp;application:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Install Docker on your&amp;nbsp;system.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Download the appropriate application package for your operating system from &lt;a href="https://vm.monarc.lu/apps/" target="_blank"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Follow the setup instructions included with the&amp;nbsp;package.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For detailed installation steps and additional information, refer to the official documentation &lt;a href="https://monarc.lu/documentation/technical-guide/#end-user-app"&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id="monarc-backoffice-application"&gt;Monarc BackOffice&amp;nbsp;application.&lt;/h2&gt;
 &lt;p&gt;The is also a new BackOffice release available. The details can be found &lt;a href="https://github.com/monarc-project/MonarcAppBO/releases/tag/v2.13.5" target="_blank"&gt;here&lt;/a&gt;.&lt;/p&gt;</content><category term="monarc"/><category term="monarc"/><category term="new-release"/></entry><entry><title>MONARC 2.13.3 released</title><link href="https://www.monarc.lu/news/2025/04/17/monarc-2133-released/" rel="alternate"/><published>2025-04-17T00:00:00+02:00</published><updated>2025-07-04T00:00:00+02:00</updated><author><name>Luxembourg House of Cybersecurity</name></author><id>tag:www.monarc.lu,2025-04-17:/news/2025/04/17/monarc-2133-released/</id><summary type="html">&lt;p&gt;Release 2.13.3 of &lt;span class="caps"&gt;MONARC&lt;/span&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;Version 2.13.3, 2.13.3-p1, 2.13.3-p2 and 2.13.3-p3 include some new features and&amp;nbsp;fixes&lt;/p&gt;
 &lt;h3 id="new"&gt;New&lt;/h3&gt;
