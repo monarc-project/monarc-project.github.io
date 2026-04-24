@@ -20,6 +20,7 @@ Version 2.13.4 include some new features and fixes
 - [SQL syntax error (MySQL ONLY_FULL_GROUP_BY violation)](https://github.com/monarc-project/MonarcAppFO/issues/574)
 - [Dashboard Operational Risks PNG Export incorrect](https://github.com/monarc-project/MonarcAppFO/issues/578)
 - Updated the proxy-manager to use the LTS version and avoid the php version limitation.
+- Fixed the recommendations export to .csv, removed the default limit of 25 records.
 
 
 ## Updating
@@ -48,6 +49,21 @@ More details and notes are available on
 [GitHub Release v2.13.4](https://github.com/monarc-project/MonarcAppFO/releases/tag/v2.13.4){:target="_blank"}
 
 Or use the [release bundle](https://github.com/monarc-project/MonarcAppFO/releases/download/v2.13.4/MonarcAppFO-v2.13.4.tar.gz).
+
+
+## Local Installation (Docker + Application).
+
+Monarc FrontOffice can also be installed locally using Docker and a small utililty to execute docker commands, configure and update the Monarc FO tool.
+
+To install the application:
+
+- Install Docker on your system.
+
+- Download the appropriate application package for your operating system from [here](https://vm.monarc.lu/apps/){:target="_blank"}.
+
+- Follow the setup instructions included with the package.
+
+For detailed installation steps and additional information, refer to the official documentation [here](https://monarc.lu/documentation/technical-guide/#end-user-app).
 
 
 ## Monarc BackOffice application.
