@@ -19,7 +19,7 @@ jobs:
 
       - name: Install system dependencies (cairo)
         run: |
-          printf '%s\n' 'https://archive.ubuntu.com/ubuntu priority:1' \
+          printf '%s\t%s\n' 'https://archive.ubuntu.com/ubuntu' 'priority:1' \
             | sudo tee /etc/apt/apt-mirrors.txt
           sudo apt-get -o Acquire::Retries=2 -o Acquire::http::Timeout=30 update
           sudo apt-get -o Acquire::Retries=2 -o Acquire::http::Timeout=30 install -y \
