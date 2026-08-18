@@ -447,7 +447,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="details">
 <span id="author" class="author">NC3 Luxembourg</span><br>
 <span id="email" class="email"><a href="mailto:info@nc3.lu">info@nc3.lu</a></span><br>
-<span id="revnumber">version 2024-10-25</span>
+<span id="revnumber">version 2026-08-18</span>
 </div>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
@@ -476,9 +476,10 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel2">
 <li><a href="#risk-analysis-management">4.1. Risk analysis management</a></li>
 <li><a href="#method-steps-call">4.2. Method steps call</a></li>
-<li><a href="#library">4.3. Library</a></li>
-<li><a href="#information-risks">4.4. Information Risks</a></li>
-<li><a href="#operational-risks">4.5. Operational Risks</a></li>
+<li><a href="#risks-management">4.3. Risks management</a></li>
+<li><a href="#library">4.4. Library</a></li>
+<li><a href="#information-risks">4.5. Information Risks</a></li>
+<li><a href="#operational-risks">4.6. Operational Risks</a></li>
 </ul>
 </li>
 <li><a href="#evaluation-scales">5. Evaluation Scales</a>
@@ -498,7 +499,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#information-risks-3">7.5. Information Risks</a></li>
 <li><a href="#tags-operational-risks">7.6. Tags (Operational Risks)</a></li>
 <li><a href="#operational-risks-2">7.7. Operational Risks</a></li>
-<li><a href="#recommendations-sets">7.8. Recommendations Sets</a></li>
+<li><a href="#risk-sources">7.8. Risk Sources</a></li>
+<li><a href="#recommendations-sets">7.9. Recommendations Sets</a></li>
 </ul>
 </li>
 <li><a href="#statement-of-applicability">8. Statement of applicability</a></li>
@@ -522,6 +524,31 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div id="content">
+<div id="preamble">
+<div class="sectionbody">
+<div class="sidebarblock">
+<div class="content">
+<div class="title">New in MONARC v2.14.1</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>ISO 27005:2022 adaptations:</strong> risk sources, reassessment triggers and schedules, review governance, residual-risk approval, risk history, and role-based risks management. See the separate companion document: <a href="https://www.monarc.lu/documentation/iso27005_2022_adaptations/">HTML</a> or <a href="https://www.monarc.lu/assets/files/guides/iso27005_2022_adaptations.pdf">PDF</a>.</p>
+</li>
+<li>
+<p><strong>PDF report generation:</strong> select PDF when generating a deliverable. See <a href="#generate-a-pdf-report">Generate a PDF report</a> and <a href="https://github.com/monarc-project/MonarcAppFO/issues/615">issue #615</a>.</p>
+</li>
+<li>
+<p><strong>Blank Analysis:</strong> create a completely empty analysis without Knowledge Base or Assets library data. See <a href="#creating-a-risk-analysis">Creating a Risk Analysis</a> and <a href="https://github.com/monarc-project/MonarcAppFO/issues/324">issue #324</a>.</p>
+</li>
+<li>
+<p><strong>CyFun referentials:</strong> use the CyFun Basic, Important, and Essential 2025 referentials with ISO 27002 mappings. See <a href="#cyfun-referentials">New in MONARC v2.14.1: CyFun referentials</a> and <a href="https://github.com/monarc-project/MonarcAppFO/issues/616">issue #616</a>.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
 <div class="sect1">
 <h2 id="introduction"><a class="anchor" href="#introduction"></a><a class="link" href="#introduction">1. Introduction</a></h2>
 <div class="sectionbody">
@@ -688,6 +715,20 @@ there are already several and according to the state of progress of the analysis
 </li>
 </ol>
 </div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">New in MONARC v2.14.1</div>
+<div class="paragraph">
+<p>When the current user is linked to an active analysis supervisor, the <code>My risk analysis</code> list can also display a <code>My assignments</code> indicator with owned and approval counts.
+If at least one assigned risk exists, the <code>Manage my risks</code> button opens the dedicated <code>Risks management</code> view directly from the home page.</p>
+</div>
+</div>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img src="images/AnalysesViewForSupervisor.png" alt="My risk analysis assignments for a supervisor" width="85%">
+</div>
+</div>
 </div>
 <div class="sect2">
 <h3 id="creating-a-risk-analysis"><a class="anchor" href="#creating-a-risk-analysis"></a><a class="link" href="#creating-a-risk-analysis">2.2. Creating a Risk Analysis</a></h3>
@@ -706,7 +747,7 @@ there are already several and according to the state of progress of the analysis
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p><strong>Source</strong>: The creation of a risk analysis is always based on an existing model. There are two choices for this:</p>
+<p><strong>Source</strong>: By default, the creation of a risk analysis is based on an existing model. There are two choices for this:</p>
 <div class="olist loweralpha">
 <ol class="loweralpha">
 <li>
@@ -737,6 +778,23 @@ Modelling NC3 is the default template made available by the MONARC editor. It pr
 <p><strong>Description</strong>: An optional field, which allows you to describe your analysis in more detail.</p>
 </li>
 </ol>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">New in MONARC v2.14.1</div>
+<div class="paragraph">
+<p>Available from MONARC v2.14.1, <code>Empty analysis</code> lets you start without a preconfigured model. Enable the switch at the top of the creation window.
+This disables model and source selection, clears selected referentials, and lets you select any active system language.</p>
+</div>
+<div class="paragraph">
+<p>Creating a risk analysis now offers the <code>Empty analysis</code> option. It creates a completely empty risk analysis, without data in the Knowledge Base or Assets library. MONARC still creates the evaluation-scale baseline required to configure the analysis. Use this option when you want to build the scope and knowledge base from scratch. See <a href="https://github.com/monarc-project/MonarcAppFO/issues/324">issue #324</a> for the associated release item.</p>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img src="images/EmptyAnalysis.png" alt="Empty analysis option" width="75%">
+</div>
+</div>
+</div>
 </div>
 </div>
 <div class="sect2">
@@ -1096,10 +1154,22 @@ You don&#8217;t have to fill all the languages, one language is sufficient.
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-All the deliverables in MONARC have to be set in Word Format (.docx)
+Deliverable templates must be uploaded in Word format (<code>.docx</code>). The generated report can be downloaded in Word or PDF format.
 </td>
 </tr>
 </table>
+</div>
+</div>
+<div class="sect4">
+<h5 id="generate-a-pdf-report"><a class="anchor" href="#generate-a-pdf-report"></a><a class="link" href="#generate-a-pdf-report">Generate a PDF report</a></h5>
+<div class="paragraph">
+<p>Available from MONARC v2.14.1.</p>
+</div>
+<div class="paragraph">
+<p>Open the required method step in an analysis and select its <code>Deliverable</code> link. Select the template and complete the document metadata as usual. In <code>Report format</code>, choose <code>PDF (.pdf)</code>, then generate the deliverable. MONARC downloads the generated report as a PDF file. See <a href="https://github.com/monarc-project/MonarcAppFO/issues/615">issue #615</a> for the associated release item.</p>
+</div>
+<div class="paragraph">
+<p>Choose <code>Word (.docx)</code> when the report needs further editing. PDF generation uses the same selected template, analysis content, tags, status, version, classification, and document metadata as Word generation.</p>
 </div>
 <div class="sect5">
 <h6 id="list-of-tags-for-the-layout-of-the-document"><a class="anchor" href="#list-of-tags-for-the-layout-of-the-document"></a><a class="link" href="#list-of-tags-for-the-layout-of-the-document">List of tags for the layout of the document:</a></h6>
@@ -1186,6 +1256,12 @@ Open a risk analysis and click on the green icon (1) representing the first step
 </li>
 <li>
 <p><code>${CONTEXT_GEST_RISK}</code>: Free text which comes from the step: “Risk management organization”.</p>
+</li>
+<li>
+<p><code>${TABLE_INTERESTED_PARTIES}</code>: Table of interested parties and their requirements from the <code>Interested parties &amp; requirements</code> tab.</p>
+</li>
+<li>
+<p><code>${TABLE_REASSESSMENT_TRIGGERS}</code>: Table of the analysis reassessment trigger criteria, including monitoring approach and status.</p>
 </li>
 <li>
 <p>List of the tags from “Definition of the risk evaluation criteria”:</p>
@@ -1301,6 +1377,9 @@ Open a risk analysis and click on the green icon (1) representing the first step
 </li>
 <li>
 <p><code>${OPRISKS_RECO_FULL}</code>: A table which represents the recommendation for the operational risks</p>
+</li>
+<li>
+<p><code>${TABLE_RISK_OWNERS}</code>: A table of supervisors, their roles, linked users, and assigned risks.</p>
 </li>
 <li>
 <p><code>${TABLE_AUDIT_INSTANCES}</code>: A table with all the informational risks.</p>
@@ -1503,6 +1582,15 @@ This action only changes the interfaces language (The risk analysis language is 
 <div class="paragraph">
 <p><span class="image"><img src="images/AnalysisManagement_2_800.png" alt="Analysis Management esit options"></span></p>
 </div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">ISO 27005:2022 adaptation</div>
+<div class="paragraph">
+<p>The analysis actions menu now also gives direct access to <code>Reassessment trigger criteria</code> and <code>Supervisors</code>.
+These two dialogs are analysis-level management screens used to maintain review triggers, monitoring approaches, supervisor roles, linked users, and approval responsibilities.</p>
+</div>
+</div>
+</div>
 <div class="olist arabic">
 <ol class="arabic" start="1">
 <li>
@@ -1590,6 +1678,15 @@ The export of the analysis can be done with the following options:</p>
 <div class="paragraph">
 <p>Please note that the operation is irreversible.</p>
 </div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">ISO 27005:2022 adaptation</div>
+<div class="paragraph">
+<p>When exporting a risk analysis with assessments, the export options now also include switches for <code>Interested parties &amp; requirements</code> and <code>Reassessment trigger criteria</code>.
+Supervisor data is exported with the analysis structure so risk-owner and approval assignments can be preserved on import.</p>
+</div>
+</div>
+</div>
 </div>
 <div class="sect2">
 <h3 id="method-steps-call"><a class="anchor" href="#method-steps-call"></a><a class="link" href="#method-steps-call">4.2. Method steps call</a></h3>
@@ -1623,11 +1720,105 @@ More information about method steps. Consult the <a href="/method-guide"><strong
 </tr>
 </table>
 </div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">ISO 27005:2022 adaptation</div>
+<div class="paragraph">
+<p><code>Reassessment trigger criteria</code> can be opened from two method substeps: <code>Define reassessment strategy</code> in step 1, <code>Context Establishment</code>, and <code>Reassessment trigger criteria</code> in step 4, <code>Implementation and monitoring</code>.</p>
+</div>
+</div>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img src="images/ReassessmentTriggersMenu1.png" alt="Define reassessment strategy" width="40%">
+</div>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img src="images/ReassessmentTriggersMenu2.png" alt="Reassessment trigger criteria" width="55%">
+</div>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">ISO 27005:2022 adaptation</div>
+<div class="paragraph">
+<p>In the <code>Risk analysis context</code> sub-screen of step 1, MONARC now provides an additional tab named <code>Interested parties &amp; requirements</code>.
+This tab is used to maintain stakeholders and their requirements alongside the existing free-text context description.</p>
+</div>
+</div>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img src="images/InterestedPartiesAndReq.png" alt="Interested parties and requirements" width="95%">
+</div>
+</div>
 </div>
 <div class="sect2">
-<h3 id="library"><a class="anchor" href="#library"></a><a class="link" href="#library">4.3. Library</a></h3>
+<h3 id="risks-management"><a class="anchor" href="#risks-management"></a><a class="link" href="#risks-management">4.3. Risks management</a></h3>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">ISO 27005:2022 adaptation</div>
+<div class="paragraph">
+<p>If the current user is linked to an active supervisor in the analysis and has assigned risks, the tools menu exposes a dedicated <code>Risks management</code> view.
+The analysis header also displays a <code>My assignments</code> panel with owned and approval counts plus a direct <code>Manage my risks</code> action.</p>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>The <code>Risks management</code> view only lists the risks in which the linked supervisor is involved.
+It supports role-based batch updates for review metadata and residual-acceptance decision fields.</p>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img src="images/RisksManagement.png" alt="Risks management view and batch update" width="95%">
+</div>
+</div>
+<div class="paragraph">
+<p>Select one or more information or operational risks, enter only the values that should change, then select <code>Update</code>.
+The table keeps the following fields visible so the user can assess the selected register before acting: <code>Risk owner</code>, <code>Risk source</code>, <code>Last review date</code>, <code>Next reassessment date</code>, <code>Related reassessment trigger criteria</code>, <code>Review frequency</code>, <code>Residual risk approver</code>, and residual-acceptance details.</p>
+</div>
+<div class="paragraph">
+<p>The available batch fields depend on the linked supervisor role:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>A <code>Risk owner</code> can update <code>Last review date</code>, <code>Next reassessment date</code>, related trigger criteria, and <code>Review frequency</code> for risks they own.</p>
+</li>
+<li>
+<p>A <code>Residual risk approver</code> can update the residual-risk decision, decision date, and justification for risks they are allowed to approve.</p>
+</li>
+<li>
+<p>A supervisor with both roles receives both groups of fields.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Risk owner, risk source, and residual-risk approver are display-only in this view. Open the risk sheet to change their assignments.
+After an update, MONARC displays the number of updated and skipped risks. Any skipped row is listed with its reason.</p>
+</div>
+<div class="paragraph">
+<p>The download button exports the currently displayed risks-management list as a CSV file. The export includes the table fields above, including risk source, owner, reassessment schedule, linked trigger criteria, review frequency, approver, and residual-risk decision data.</p>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">ISO 27005:2022 adaptation</div>
+<div class="paragraph">
+<p>Risks with an overdue next reassessment date display the same orange warning icon in this view as in the ordinary information- and operational-risk tables.
+A green check-circle next to a treatment shows an <code>Accepted</code> residual-risk decision; an orange warning icon shows <code>Not accepted</code>. Hover an icon to see its explanation.</p>
+</div>
+</div>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img src="images/AnalysisDeadlinesAndApproval.png" alt="Analysis and risk deadlines and residual-risk acceptance indicators" width="95%">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="library"><a class="anchor" href="#library"></a><a class="link" href="#library">4.4. Library</a></h3>
 <div class="sect3">
-<h4 id="organization-of-assets"><a class="anchor" href="#organization-of-assets"></a><a class="link" href="#organization-of-assets">4.3.1. Organization of assets</a></h4>
+<h4 id="organization-of-assets"><a class="anchor" href="#organization-of-assets"></a><a class="link" href="#organization-of-assets">4.4.1. Organization of assets</a></h4>
 <div class="paragraph">
 <p>Click on the <code>+</code> and the <code>-</code> to unfold and fold the categories of the Library.</p>
 </div>
@@ -1665,7 +1856,7 @@ More information about method steps. Consult the <a href="/method-guide"><strong
 </div>
 </div>
 <div class="sect3">
-<h4 id="asset-management"><a class="anchor" href="#asset-management"></a><a class="link" href="#asset-management">4.3.2. Asset Management</a></h4>
+<h4 id="asset-management"><a class="anchor" href="#asset-management"></a><a class="link" href="#asset-management">4.4.2. Asset Management</a></h4>
 <div class="paragraph">
 <p>The information on each asset is different depending on its type: <code>Primary</code> or <code>Secondary</code>.
 This concept is explained in detail in the <a href="#type-of-assets">Type of assets</a> section.</p>
@@ -1818,7 +2009,7 @@ Delete action is definitive, even if the asset is used in the analysis.
 </div>
 </div>
 <div class="sect3">
-<h4 id="create-an-asset"><a class="anchor" href="#create-an-asset"></a><a class="link" href="#create-an-asset">4.3.3. Create an Asset</a></h4>
+<h4 id="create-an-asset"><a class="anchor" href="#create-an-asset"></a><a class="link" href="#create-an-asset">4.4.3. Create an Asset</a></h4>
 <div class="paragraph">
 <p>In the Library, after clicking on the icon <span class="image"><img src="images/CreateButton.png" alt="Add Asset" width="4%"></span>, the following pop-up appears:</p>
 </div>
@@ -1896,7 +2087,7 @@ Delete action is definitive, even if the asset is used in the analysis.
 </div>
 </div>
 <div class="sect3">
-<h4 id="edit-an-asset"><a class="anchor" href="#edit-an-asset"></a><a class="link" href="#edit-an-asset">4.3.4. Edit an asset</a></h4>
+<h4 id="edit-an-asset"><a class="anchor" href="#edit-an-asset"></a><a class="link" href="#edit-an-asset">4.4.4. Edit an asset</a></h4>
 <div class="paragraph">
 <p>An asset can be edited in the Context menu of the Library (when the asset is selected in the Library).</p>
 </div>
@@ -1915,7 +2106,7 @@ Delete action is definitive, even if the asset is used in the analysis.
 </div>
 </div>
 <div class="sect3">
-<h4 id="importing-an-asset"><a class="anchor" href="#importing-an-asset"></a><a class="link" href="#importing-an-asset">4.3.5. Importing an asset</a></h4>
+<h4 id="importing-an-asset"><a class="anchor" href="#importing-an-asset"></a><a class="link" href="#importing-an-asset">4.4.5. Importing an asset</a></h4>
 <div class="paragraph">
 <p>This pop-up is accessible from the pop-up <a href="#create-an-asset">Add a new asset</a> <span class="image"><img src="images/CreateButton.png" alt="CreateButton" width="4%"></span></p>
 </div>
@@ -2027,7 +2218,7 @@ The import of an uncontrolled asset can be destructive for the current analysis.
 </div>
 </div>
 <div class="sect3">
-<h4 id="exporting-an-asset"><a class="anchor" href="#exporting-an-asset"></a><a class="link" href="#exporting-an-asset">4.3.6. Exporting an asset</a></h4>
+<h4 id="exporting-an-asset"><a class="anchor" href="#exporting-an-asset"></a><a class="link" href="#exporting-an-asset">4.4.6. Exporting an asset</a></h4>
 <div class="paragraph">
 <p>To export an asset, click on the asset you want to export. Then click the <code>Asset management context menu</code> and choose the option ‘Export asset’:</p>
 </div>
@@ -2068,7 +2259,7 @@ If you hover your mouse over this icon, the tooltip 'Export (CSV)' appears.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="information-risks"><a class="anchor" href="#information-risks"></a><a class="link" href="#information-risks">4.4. Information Risks</a></h3>
+<h3 id="information-risks"><a class="anchor" href="#information-risks"></a><a class="link" href="#information-risks">4.5. Information Risks</a></h3>
 <div class="paragraph">
 <p>By selecting the top of the analysis or an asset in the tree, the risk table appears. There are two separate risk tables:</p>
 </div>
@@ -2120,9 +2311,21 @@ If you hover your mouse over this icon, the tooltip 'Export (CSV)' appears.</p>
 </tbody>
 </table>
 <div class="sect3">
-<h4 id="risks-table"><a class="anchor" href="#risks-table"></a><a class="link" href="#risks-table">4.4.1. Risks table</a></h4>
+<h4 id="risks-table"><a class="anchor" href="#risks-table"></a><a class="link" href="#risks-table">4.5.1. Risks table</a></h4>
 <div class="paragraph">
 <p><span class="image"><img src="images/InformationRisks_2_800.png" alt="Information Risk Table"></span></p>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">ISO 27005:2022 adaptation</div>
+<div class="paragraph">
+<p>The information risk table now includes a read-only <code>Risk source</code> column after <code>Asset</code>.
+It shows the selected source label for each risk or <code>-</code> when no source has been assigned yet.</p>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="images/RiskSource_ListColumn.png" alt="Risk source column in the risks list"></span></p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
@@ -2180,6 +2383,15 @@ If you hover your mouse over this icon, the tooltip 'Export (CSV)' appears.</p>
 </li>
 </ol>
 </div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">ISO 27005:2022 adaptation</div>
+<div class="paragraph">
+<p>When the risk&#8217;s <code>Next reassessment date</code> is in the past, MONARC displays an orange warning icon next to its identifier. Hover the icon to see the overdue date.
+The warning is based on the explicit next reassessment date; it is not a risk-level calculation from <code>Review frequency</code> alone.</p>
+</div>
+</div>
+</div>
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -2194,9 +2406,21 @@ By hovering the cursor over the fields, a relevant tooltip appears.
 </div>
 </div>
 <div class="sect3">
-<h4 id="risk-information-sheet"><a class="anchor" href="#risk-information-sheet"></a><a class="link" href="#risk-information-sheet">4.4.2. Risk information sheet</a></h4>
+<h4 id="risk-information-sheet"><a class="anchor" href="#risk-information-sheet"></a><a class="link" href="#risk-information-sheet">4.5.2. Risk information sheet</a></h4>
 <div class="paragraph">
 <p>The risk sheet is displayed when you click on the <code>Not treated</code> link in the information risk table.</p>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">ISO 27005:2022 adaptation</div>
+<div class="paragraph">
+<p>The information risk sheet now includes a <code>Risk source</code> row above <code>Threat</code>.
+From this field, you can select an active source, choose <code>None</code>, clear the current value, or create a new source directly from the sheet and assign it immediately.</p>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="images/RiskSource_Select.png" alt="Risk source selection in the risk sheet"></span></p>
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="images/RiskInformationSheet_1_800.png" alt="Information Risk Sheet"></span></p>
@@ -2251,9 +2475,45 @@ Do not forget to save the form in order to calculate the residual risk.
 </tr>
 </table>
 </div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">ISO 27005:2022 adaptation</div>
+<div class="paragraph">
+<p>The information risk sheet is now organised into dedicated cards:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>Risk identification</code></p>
+</li>
+<li>
+<p><code>Governance &amp; review</code></p>
+</li>
+<li>
+<p><code>Treatment</code></p>
+</li>
+<li>
+<p><code>Residual acceptance</code></p>
+</li>
+<li>
+<p><code>History</code></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The <code>Governance &amp; review</code> card groups the supervisor-based <code>Risk owner</code> field with <code>Last review date</code>, <code>Next reassessment date</code>, <code>Related reassessment trigger criteria</code>, and <code>Review frequency</code>.
+Set a last review date to automatically prefill the next reassessment date to one year later. You can retain that date or select another date. A related trigger criterion can be selected only after a next reassessment date has been set; select one or more criteria to show which analysis-level triggers apply to this risk.</p>
+</div>
+<div class="paragraph">
+<p>The available risk-level review-frequency values are <code>Monthly</code>, <code>Quarterly</code>, <code>Semi-annually</code>, <code>Annually</code>, <code>On trigger</code>, and <code>Other</code>. <code>Other</code> accepts a custom label. The review frequency documents the intended rhythm; the overdue warning for a risk is driven by the next reassessment date.
+The <code>Residual acceptance</code> card records the approver, decision, date, performer, and justification of the residual-risk decision after treatment.
+The <code>History</code> card provides a read-only audit trail of changes for the current risk.</p>
+</div>
+</div>
+</div>
 </div>
 <div class="sect3">
-<h4 id="adding-additional-risk"><a class="anchor" href="#adding-additional-risk"></a><a class="link" href="#adding-additional-risk">4.4.3. Adding additional risk</a></h4>
+<h4 id="adding-additional-risk"><a class="anchor" href="#adding-additional-risk"></a><a class="link" href="#adding-additional-risk">4.5.3. Adding additional risk</a></h4>
 <div class="paragraph">
 <p>The below screenshot shows an asset selected in the analysis:</p>
 </div>
@@ -2275,13 +2535,14 @@ Do not forget to save the form in order to calculate the residual risk.
 </td>
 <td class="content">
 Threat and vulnerability must exist beforehand.
+The risk source can then be assigned afterward from the risk information sheet.
 </td>
 </tr>
 </table>
 </div>
 </div>
 <div class="sect3">
-<h4 id="contextual-menu-of-asset"><a class="anchor" href="#contextual-menu-of-asset"></a><a class="link" href="#contextual-menu-of-asset">4.4.4. Contextual menu of asset</a></h4>
+<h4 id="contextual-menu-of-asset"><a class="anchor" href="#contextual-menu-of-asset"></a><a class="link" href="#contextual-menu-of-asset">4.5.4. Contextual menu of asset</a></h4>
 <div class="paragraph">
 <p>By clicking on the icon <span class="image"><img src="images/Menu.png" alt="Menu" width="4%"></span>, the context menu of the asset appears:</p>
 </div>
@@ -2355,7 +2616,7 @@ This action may lead to the loss of risk assessments for this asset and its chil
 </div>
 </div>
 <div class="sect3">
-<h4 id="impacts-and-consequences"><a class="anchor" href="#impacts-and-consequences"></a><a class="link" href="#impacts-and-consequences">4.4.5. Impacts and consequences</a></h4>
+<h4 id="impacts-and-consequences"><a class="anchor" href="#impacts-and-consequences"></a><a class="link" href="#impacts-and-consequences">4.5.5. Impacts and consequences</a></h4>
 <div class="sect4">
 <h5 id="edit-impacts"><a class="anchor" href="#edit-impacts"></a><a class="link" href="#edit-impacts">Edit impacts</a></h5>
 <div class="paragraph">
@@ -2432,14 +2693,23 @@ To hide the consequences that will not be considered. Click on the icon <span cl
 </div>
 </div>
 <div class="sect2">
-<h3 id="operational-risks"><a class="anchor" href="#operational-risks"></a><a class="link" href="#operational-risks">4.5. Operational Risks</a></h3>
+<h3 id="operational-risks"><a class="anchor" href="#operational-risks"></a><a class="link" href="#operational-risks">4.6. Operational Risks</a></h3>
 <div class="sect3">
-<h4 id="risks-table-2"><a class="anchor" href="#risks-table-2"></a><a class="link" href="#risks-table-2">4.5.1. Risks table</a></h4>
+<h4 id="risks-table-2"><a class="anchor" href="#risks-table-2"></a><a class="link" href="#risks-table-2">4.6.1. Risks table</a></h4>
 <div class="paragraph">
 <p>Below is an example of an Operational Risk table.</p>
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="images/OperationalRisk_1_800.png" alt="Operational Risk Table"></span></p>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">ISO 27005:2022 adaptation</div>
+<div class="paragraph">
+<p>The operational risk table now includes a read-only <code>Risk source</code> column between <code>Asset</code> and <code>Risk description</code>.
+It keeps the origin of the scenario visible directly in the operational risk register and displays <code>-</code> when no source has been assigned yet.</p>
+</div>
+</div>
 </div>
 <div class="paragraph">
 <p>To reach this table, please follow the steps as follows:</p>
@@ -2504,12 +2774,29 @@ To show this option see <a href="#creating-a-risk-analysis">Creating a Risk Anal
 </li>
 </ol>
 </div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">ISO 27005:2022 adaptation</div>
+<div class="paragraph">
+<p>When the operational risk&#8217;s <code>Next reassessment date</code> is in the past, an orange warning icon is displayed next to its identifier. Hover the icon to see the overdue date.</p>
+</div>
+</div>
+</div>
 </div>
 <div class="sect3">
-<h4 id="operational-risk-sheet"><a class="anchor" href="#operational-risk-sheet"></a><a class="link" href="#operational-risk-sheet">4.5.2. Operational risk sheet</a></h4>
+<h4 id="operational-risk-sheet"><a class="anchor" href="#operational-risk-sheet"></a><a class="link" href="#operational-risk-sheet">4.6.2. Operational risk sheet</a></h4>
 <div class="paragraph">
 <p>In the risk analysis, click on an asset and choose the Operational risk tab.
 Then, in the ‘Kind of treatment’ dropdown menu choose ‘Not treated’. The not treated assets should appear in the table.</p>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">ISO 27005:2022 adaptation</div>
+<div class="paragraph">
+<p>The operational risk sheet now includes a <code>Risk source</code> row above <code>Risk description</code>.
+From this field, you can select an active source, choose <code>None</code>, clear the current value, or create a new source directly from the sheet and assign it immediately.</p>
+</div>
+</div>
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="images/OperationalRiskSheet_1_800.png" alt="Operational Risk Sheet"></span></p>
@@ -2564,9 +2851,45 @@ Once the validation has been done, the risk is treated.
 </tr>
 </table>
 </div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">ISO 27005:2022 adaptation</div>
+<div class="paragraph">
+<p>The operational risk sheet now follows the same card structure as the information risk sheet:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>Risk identification</code></p>
+</li>
+<li>
+<p><code>Governance &amp; review</code></p>
+</li>
+<li>
+<p><code>Treatment</code></p>
+</li>
+<li>
+<p><code>Residual acceptance</code></p>
+</li>
+<li>
+<p><code>History</code></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The <code>Governance &amp; review</code> card contains the supervisor-based <code>Risk owner</code> field together with <code>Last review date</code>, <code>Next reassessment date</code>, <code>Related reassessment trigger criteria</code>, and <code>Review frequency</code>.
+When a last review date is set, MONARC proposes a next reassessment date one year later. You may change that date. Related trigger criteria become available after a next reassessment date is set and link the operational risk to one or more analysis-level trigger criteria.</p>
+</div>
+<div class="paragraph">
+<p>The risk-level review frequency can be <code>Monthly</code>, <code>Quarterly</code>, <code>Semi-annually</code>, <code>Annually</code>, <code>On trigger</code>, or <code>Other</code> with a custom value. It records the intended rhythm; the warning icon is controlled by the explicit next reassessment date.
+The <code>Residual acceptance</code> card captures the residual-risk approver, decision, date, performer, and justification.
+The <code>History</code> card exposes a read-only audit trail for the current operational risk.</p>
+</div>
+</div>
+</div>
 </div>
 <div class="sect3">
-<h4 id="adding-additional-risk-2"><a class="anchor" href="#adding-additional-risk-2"></a><a class="link" href="#adding-additional-risk-2">4.5.3. Adding additional risk</a></h4>
+<h4 id="adding-additional-risk-2"><a class="anchor" href="#adding-additional-risk-2"></a><a class="link" href="#adding-additional-risk-2">4.6.3. Adding additional risk</a></h4>
 <div class="paragraph">
 <p>You can add further risks to your risk table. Select an asset in the risk analysis and click on the ‘Create a specific risk’ link below the risk table:</p>
 </div>
@@ -2625,6 +2948,20 @@ If the risk does not exist, it can be created directly. In the popup window, you
 </div>
 <div class="sect2">
 <h3 id="information-risks-2"><a class="anchor" href="#information-risks-2"></a><a class="link" href="#information-risks-2">5.1. Information risks</a></h3>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">ISO 27005:2022 adaptation</div>
+<div class="paragraph">
+<p>In the current interface, the impact-scale area is labelled <code>Impact evaluation (severity of consequences)</code>.
+This wording clarifies that impact represents the severity of consequences while keeping the same MONARC impact model and calculations.</p>
+</div>
+</div>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img src="images/SeverityOfConsequence.png" alt="Impact evaluation severity of consequences" width="95%">
+</div>
+</div>
 <div class="paragraph">
 <p>The <code>Evaluation scales</code> window opens which has the following parts (from top to bottom):</p>
 </div>
@@ -2961,6 +3298,9 @@ Then choose a different colour from the palette:</p>
 <p>Operational risks</p>
 </li>
 <li>
+<p>Risk Sources</p>
+</li>
+<li>
 <p>Recommendation sets</p>
 </li>
 </ol>
@@ -3002,7 +3342,8 @@ This way the Knowledge Base of the analysis can be shared.</p>
 </ol>
 </div>
 <div class="paragraph">
-<p>Generally, all parameters have a code, label, and description</p>
+<p>Most parameters have a code, label, and description.
+<code>Risk Sources</code> are the exception: they use a label only, because the selected label is displayed directly in the risk tables, risk sheets, and exports.</p>
 </div>
 <div class="ulist">
 <ul>
@@ -3103,6 +3444,20 @@ The description of the vulnerability is very important because it appears in the
 <h3 id="referentials"><a class="anchor" href="#referentials"></a><a class="link" href="#referentials">7.4. Referentials</a></h3>
 <div class="paragraph">
 <p>It is a repository used by default to assist in the implementation of controls for managing a specific risk.</p>
+</div>
+<div id="cyfun-referentials" class="sidebarblock">
+<div class="content">
+<div class="title">New in MONARC v2.14.1: CyFun referentials</div>
+<div class="paragraph">
+<p>From MONARC v2.14.1, the 2025 <code>CyFun Basic</code>, <code>CyFun Important</code>, and <code>CyFun Essential</code> referentials are available by default in the referential list when creating a risk analysis. Select one or more of them as linked referentials, then manage their controls from this <code>Referentials</code> tab and use them in the Statement of Applicability.</p>
+</div>
+<div class="paragraph">
+<p>The CyFun referentials can also be imported from the <a href="https://objects.monarc.lu/schema/12?search_key=label&amp;search_term=Cyfun">MONARC Objects Sharing Platform (MOSP)</a>. In the <code>Referentials</code> tab, select <code>Add</code>, then <code>Import from MOSP</code>, and search for <code>CyFun</code> to select the required referential.</p>
+</div>
+<div class="paragraph">
+<p>The CyFun referentials include mappings to ISO 27002 controls. When both referentials are linked to an analysis, use the existing referential matching and control-update functions to work with these mappings. See <a href="https://github.com/monarc-project/MonarcAppFO/issues/616">issue #616</a> for the associated release item.</p>
+</div>
+</div>
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="images/ReferentialsTable_1_800.png" alt="Referentials Table"></span></p>
@@ -3212,7 +3567,52 @@ It is possible to link security controls to the risks of the information.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="recommendations-sets"><a class="anchor" href="#recommendations-sets"></a><a class="link" href="#recommendations-sets">7.8. Recommendations Sets</a></h3>
+<h3 id="risk-sources"><a class="anchor" href="#risk-sources"></a><a class="link" href="#risk-sources">7.8. Risk Sources</a></h3>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">ISO 27005:2022 adaptation</div>
+<div class="paragraph">
+<p>The <code>Risk Sources</code> tab introduces a reusable catalog of actors, origins, or causes that can be assigned to information and operational risks.
+It is the central place for maintaining the labels later shown in risk tables, risk sheets, and reports.</p>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>The <code>Risk Sources</code> tab lets you:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Add a new risk source.</p>
+</li>
+<li>
+<p>Search existing sources by label.</p>
+</li>
+<li>
+<p>Filter the list by status (<code>Show all</code>, <code>Show inactive only</code>, <code>Show active only</code>).</p>
+</li>
+<li>
+<p>Activate or deactivate a source through the <code>Status</code> column.</p>
+</li>
+<li>
+<p>Edit an existing source label.</p>
+</li>
+<li>
+<p>Delete a custom source when it is no longer needed.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>The table contains the columns <code>Status</code>, <code>Label</code>, and <code>Type</code>.
+The <code>Type</code> value distinguishes the default MONARC entries from custom sources created by the analyst.
+New sources created here become directly available in the information and operational risk sheets of the same analysis.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="images/RiskSource_KnowledgeBase.png" alt="Risk Sources Knowledge Base"></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="recommendations-sets"><a class="anchor" href="#recommendations-sets"></a><a class="link" href="#recommendations-sets">7.9. Recommendations Sets</a></h3>
 <div class="paragraph">
 <p>The Recommendations Sets table is the repository that is used by default to manage the recommendations.</p>
 </div>
@@ -4202,8 +4602,8 @@ You can also filter among the threats  by providing a start and end date and you
 </div>
 <div id="footer">
 <div id="footer-text">
-Version 2024-10-25<br>
-Last updated 2024-10-25 09:30:29 +0200
+Version 2026-08-18<br>
+Last updated 2026-08-18 09:26:24 +0200
 </div>
 </div>
 <script type="text/x-mathjax-config">
