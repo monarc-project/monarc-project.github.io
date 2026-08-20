@@ -127,6 +127,9 @@ MONARC            </a>
 <p>The updated <a href="/documentation/user-guide/">User guide <span class="caps">HTML</span></a> and <a href="/assets/files/guides/user-guide.pdf"><span class="caps">PDF</span></a> include the new functionality. The <span class="caps">ISO</span> 27005:2022 additions are also available as a separate <a href="/documentation/iso27005_2022_adaptations/"><span class="caps">HTML</span> guide</a> and <a href="/assets/files/guides/iso27005_2022_adaptations.pdf"><span class="caps">PDF</span> guide</a>.</p>
 <h2 id="updating">Updating</h2>
 <p>Follow the standard <a href="https://monarc.lu/documentation/technical-guide/#monarc-update"><span class="caps">MONARC</span> update guide</a>.</p>
+<blockquote>
+<p><strong>Important:</strong> If your <span class="caps">MONARC</span> installation includes a BackOffice, update the BackOffice to <strong>v2.14.1</strong> together with the FrontOffice. The FrontOffice application will not work with an outdated&nbsp;BackOffice.</p>
+</blockquote>
 <h3 id="ansible-deployment">Ansible&nbsp;deployment</h3>
 <p>For <span class="caps">MONARC</span> installations deployed with <a href="https://github.com/monarc-project/ansible-ubuntu">ansible-ubuntu</a>, a BackOffice with multiple FrontOffice clients, - it&#8217;s required to update the Ansible repository before deploying this release. It contains the new FrontOffice-client configuration changes. Updating the repository only requires pulling the&nbsp;latest <code>master</code> branch:</p>
 <div class="highlight"><pre><span></span><code>git<span class="w"> </span>pull<span class="w"> </span>origin<span class="w"> </span>master
@@ -149,7 +152,7 @@ MONARC            </a>
 </ul>
 <p>For detailed installation steps and additional information, refer to the official documentation <a href="https://monarc.lu/documentation/technical-guide/#end-user-app">here</a>.</p>
 <h2 id="monarc-backoffice-application">Monarc BackOffice&nbsp;application.</h2>
-<p>The is also a new BackOffice release available. The details can be found <a href="https://github.com/monarc-project/MonarcAppBO/releases/tag/v2.13.5" target="_blank">here</a>.</p>
+<p>There is also a new BackOffice v2.14.1 release available. The details can be found <a href="https://github.com/monarc-project/MonarcAppBO/releases/tag/v2.14.1" target="_blank">here</a>.</p>
             </div>
             <!-- /.entry-content -->
         </article>
