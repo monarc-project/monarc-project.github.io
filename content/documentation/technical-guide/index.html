@@ -4,25 +4,27 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 2.0.16">
+<meta name="generator" content="Asciidoctor 2.0.12">
 <meta name="description" content="Technical guide of MONARC">
 <meta name="keywords" content="risk-analysis, monarc, technical-guide">
 <meta name="author" content="NC3 Luxembourg">
 <title>Technical Guide</title>
 <style>
-/*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
-/* Uncomment the following line when using as a custom stylesheet */
-/* @import "https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700"; */
-html{font-family:sans-serif;-webkit-text-size-adjust:100%}
+/* Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
+/* Uncomment @import statement to use as custom stylesheet */
+/*@import "https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700";*/
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section{display:block}
+audio,video{display:inline-block}
+audio:not([controls]){display:none;height:0}
+html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
 a{background:none}
 a:focus{outline:thin dotted}
 a:active,a:hover{outline:0}
 h1{font-size:2em;margin:.67em 0}
+abbr[title]{border-bottom:1px dotted}
 b,strong{font-weight:bold}
-abbr{font-size:.9em}
-abbr[title]{cursor:help;border-bottom:1px dotted #dddddf;text-decoration:none}
 dfn{font-style:italic}
-hr{height:0}
+hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}
 mark{background:#ff0;color:#000}
 code,kbd,pre,samp{font-family:monospace;font-size:1em}
 pre{white-space:pre-wrap}
@@ -34,22 +36,20 @@ sub{bottom:-.25em}
 img{border:0}
 svg:not(:root){overflow:hidden}
 figure{margin:0}
-audio,video{display:inline-block}
-audio:not([controls]){display:none;height:0}
 fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}
 legend{border:0;padding:0}
 button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}
 button,input{line-height:normal}
 button,select{text-transform:none}
-button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}
+button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}
 button[disabled],html input[disabled]{cursor:default}
-input[type=checkbox],input[type=radio]{padding:0}
+input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}
 button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
 textarea{overflow:auto;vertical-align:top}
 table{border-collapse:collapse;border-spacing:0}
-*,::before,::after{box-sizing:border-box}
+*,*::before,*::after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}
 html,body{font-size:100%}
-body{background:#fff;color:rgba(0,0,0,.8);padding:0;margin:0;font-family:"Noto Serif","DejaVu Serif",serif;line-height:1;position:relative;cursor:auto;-moz-tab-size:4;-o-tab-size:4;tab-size:4;word-wrap:anywhere;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased}
+body{background:#fff;color:rgba(0,0,0,.8);padding:0;margin:0;font-family:"Noto Serif","DejaVu Serif",serif;font-weight:400;font-style:normal;line-height:1;position:relative;cursor:auto;tab-size:4;word-wrap:anywhere;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased}
 a:hover{cursor:pointer}
 img,object,embed{max-width:100%;height:auto}
 object,embed{height:100%}
@@ -69,7 +69,7 @@ div,dl,dt,dd,ul,ol,li,h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6,
 a{color:#2156a5;text-decoration:underline;line-height:inherit}
 a:hover,a:focus{color:#1d4b8f}
 a img{border:0}
-p{line-height:1.6;margin-bottom:1.25em;text-rendering:optimizeLegibility}
+p{font-family:inherit;font-weight:400;font-size:1em;line-height:1.6;margin-bottom:1.25em;text-rendering:optimizeLegibility}
 p aside{font-size:.875em;line-height:1.35;font-style:italic}
 h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{font-family:"Open Sans","DejaVu Sans",sans-serif;font-weight:300;font-style:normal;color:#ba3925;text-rendering:optimizeLegibility;margin-top:1em;margin-bottom:.5em;line-height:1.0125em}
 h1 small,h2 small,h3 small,#toctitle small,.sidebarblock>.content>.title small,h4 small,h5 small,h6 small{font-size:60%;color:#e99b8f;line-height:0}
@@ -78,14 +78,14 @@ h2{font-size:1.6875em}
 h3,#toctitle,.sidebarblock>.content>.title{font-size:1.375em}
 h4,h5{font-size:1.125em}
 h6{font-size:1em}
-hr{border:solid #dddddf;border-width:1px 0 0;clear:both;margin:1.25em 0 1.1875em}
+hr{border:solid #dddddf;border-width:1px 0 0;clear:both;margin:1.25em 0 1.1875em;height:0}
 em,i{font-style:italic;line-height:inherit}
 strong,b{font-weight:bold;line-height:inherit}
 small{font-size:60%;line-height:inherit}
 code{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;font-weight:400;color:rgba(0,0,0,.9)}
-ul,ol,dl{line-height:1.6;margin-bottom:1.25em;list-style-position:outside;font-family:inherit}
+ul,ol,dl{font-size:1em;line-height:1.6;margin-bottom:1.25em;list-style-position:outside;font-family:inherit}
 ul,ol{margin-left:1.5em}
-ul li ul,ul li ol{margin-left:1.25em;margin-bottom:0}
+ul li ul,ul li ol{margin-left:1.25em;margin-bottom:0;font-size:1em}
 ul.square li ul,ul.circle li ul,ul.disc li ul{list-style:inherit}
 ul.square{list-style-type:square}
 ul.circle{list-style-type:circle}
@@ -93,14 +93,19 @@ ul.disc{list-style-type:disc}
 ol li ul,ol li ol{margin-left:1.25em;margin-bottom:0}
 dl dt{margin-bottom:.3125em;font-weight:bold}
 dl dd{margin-bottom:1.25em}
+abbr,acronym{text-transform:uppercase;font-size:90%;color:rgba(0,0,0,.8);border-bottom:1px dotted #ddd;cursor:help}
+abbr{text-transform:none}
 blockquote{margin:0 0 1.25em;padding:.5625em 1.25em 0 1.1875em;border-left:1px solid #ddd}
+blockquote cite{display:block;font-size:.9375em;color:rgba(0,0,0,.6)}
+blockquote cite::before{content:"\2014 \0020"}
+blockquote cite a,blockquote cite a:visited{color:rgba(0,0,0,.6)}
 blockquote,blockquote p{line-height:1.6;color:rgba(0,0,0,.85)}
 @media screen and (min-width:768px){h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{line-height:1.2}
 h1{font-size:2.75em}
 h2{font-size:2.3125em}
 h3,#toctitle,.sidebarblock>.content>.title{font-size:1.6875em}
 h4{font-size:1.4375em}}
-table{background:#fff;margin-bottom:1.25em;border:1px solid #dedede;word-wrap:normal}
+table{background:#fff;margin-bottom:1.25em;border:solid 1px #dedede;word-wrap:normal}
 table thead,table tfoot{background:#f7f8f7}
 table thead tr th,table thead tr td,table tfoot tr th,table tfoot tr td{padding:.5em .625em .625em;font-size:inherit;color:rgba(0,0,0,.8);text-align:left}
 table tr th,table tr td{padding:.5625em .625em;font-size:inherit;color:rgba(0,0,0,.8)}
@@ -115,7 +120,7 @@ h1 strong,h2 strong,h3 strong,#toctitle strong,.sidebarblock>.content>.title str
 :not(pre).nobreak{word-wrap:normal}
 :not(pre).nowrap{white-space:nowrap}
 :not(pre).pre-wrap{white-space:pre-wrap}
-:not(pre):not([class^=L])>code{font-size:.9375em;font-style:normal!important;letter-spacing:0;padding:.1em .5ex;word-spacing:-.15em;background:#f7f7f8;border-radius:4px;line-height:1.45;text-rendering:optimizeSpeed}
+:not(pre):not([class^=L])>code{font-size:.9375em;font-style:normal!important;letter-spacing:0;padding:.1em .5ex;word-spacing:-.15em;background:#f7f7f8;-webkit-border-radius:4px;border-radius:4px;line-height:1.45;text-rendering:optimizeSpeed}
 pre{color:rgba(0,0,0,.9);font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;line-height:1.45;text-rendering:optimizeSpeed}
 pre code,pre pre{color:inherit;font-size:inherit;line-height:inherit}
 pre>code{display:block}
@@ -123,7 +128,7 @@ pre.nowrap,pre.nowrap pre{white-space:pre;word-wrap:normal}
 em em{font-style:normal}
 strong strong{font-weight:400}
 .keyseq{color:rgba(51,51,51,.8)}
-kbd{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;display:inline-block;color:rgba(0,0,0,.8);font-size:.65em;line-height:1.45;background:#f7f7f7;border:1px solid #ccc;border-radius:3px;box-shadow:0 1px 0 rgba(0,0,0,.2),inset 0 0 0 .1em #fff;margin:0 .15em;padding:.2em .5em;vertical-align:middle;position:relative;top:-.1em;white-space:nowrap}
+kbd{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;display:inline-block;color:rgba(0,0,0,.8);font-size:.65em;line-height:1.45;background:#f7f7f7;border:1px solid #ccc;-webkit-border-radius:3px;border-radius:3px;-webkit-box-shadow:0 1px 0 rgba(0,0,0,.2),0 0 0 .1em white inset;box-shadow:0 1px 0 rgba(0,0,0,.2),0 0 0 .1em #fff inset;margin:0 .15em;padding:.2em .5em;vertical-align:middle;position:relative;top:-.1em;white-space:nowrap}
 .keyseq kbd:first-child{margin-left:0}
 .keyseq kbd:last-child{margin-right:0}
 .menuseq,.menuref{color:#000}
@@ -135,7 +140,7 @@ b.button::before,b.button::after{position:relative;top:-1px;font-weight:400}
 b.button::before{content:"[";padding:0 3px 0 2px}
 b.button::after{content:"]";padding:0 2px 0 3px}
 p a>code:hover{color:rgba(0,0,0,.9)}
-#header,#content,#footnotes,#footer{width:100%;margin:0 auto;max-width:62.5em;*zoom:1;position:relative;padding-left:.9375em;padding-right:.9375em}
+#header,#content,#footnotes,#footer{width:100%;margin-left:auto;margin-right:auto;margin-top:0;margin-bottom:0;max-width:62.5em;*zoom:1;position:relative;padding-left:.9375em;padding-right:.9375em}
 #header::before,#header::after,#content::before,#content::after,#footnotes::before,#footnotes::after,#footer::before,#footer::after{content:" ";display:table}
 #header::after,#content::after,#footnotes::after,#footer::after{clear:both}
 #content{margin-top:1.25em}
@@ -143,7 +148,7 @@ p a>code:hover{color:rgba(0,0,0,.9)}
 #header>h1:first-child{color:rgba(0,0,0,.85);margin-top:2.25rem;margin-bottom:0}
 #header>h1:first-child+#toc{margin-top:8px;border-top:1px solid #dddddf}
 #header>h1:only-child,body.toc2 #header>h1:nth-last-child(2){border-bottom:1px solid #dddddf;padding-bottom:8px}
-#header .details{border-bottom:1px solid #dddddf;line-height:1.45;padding-top:.25em;padding-bottom:.25em;padding-left:.25em;color:rgba(0,0,0,.6);display:flex;flex-flow:row wrap}
+#header .details{border-bottom:1px solid #dddddf;line-height:1.45;padding-top:.25em;padding-bottom:.25em;padding-left:.25em;color:rgba(0,0,0,.6);display:-ms-flexbox;display:-webkit-flex;display:flex;-ms-flex-flow:row wrap;-webkit-flex-flow:row wrap;flex-flow:row wrap}
 #header .details span:first-child{margin-left:-.125em}
 #header .details span.email a{color:rgba(0,0,0,.85)}
 #header .details br{display:none}
@@ -177,11 +182,11 @@ body.toc2.toc-right #toc.toc2{border-right-width:0;border-left:1px solid #e7e7e9
 #toc.toc2>ul{font-size:.95em}
 #toc.toc2 ul ul{padding-left:1.25em}
 body.toc2.toc-right{padding-left:0;padding-right:20em}}
-#content #toc{border:1px solid #e0e0dc;margin-bottom:1.25em;padding:1.25em;background:#f8f8f7;border-radius:4px}
+#content #toc{border-style:solid;border-width:1px;border-color:#e0e0dc;margin-bottom:1.25em;padding:1.25em;background:#f8f8f7;-webkit-border-radius:4px;border-radius:4px}
 #content #toc>:first-child{margin-top:0}
 #content #toc>:last-child{margin-bottom:0}
 #footer{max-width:none;background:rgba(0,0,0,.8);padding:1.25em}
-#footer-text{color:hsla(0,0%,100%,.8);line-height:1.44}
+#footer-text{color:rgba(255,255,255,.8);line-height:1.44}
 #content{margin-bottom:.625em}
 .sect1{padding-bottom:.625em}
 @media screen and (min-width:768px){#content{margin-bottom:1.25em}
@@ -194,32 +199,29 @@ body.toc2.toc-right{padding-left:0;padding-right:20em}}
 #content h1>a.link,h2>a.link,h3>a.link,#toctitle>a.link,.sidebarblock>.content>.title>a.link,h4>a.link,h5>a.link,h6>a.link{color:#ba3925;text-decoration:none}
 #content h1>a.link:hover,h2>a.link:hover,h3>a.link:hover,#toctitle>a.link:hover,.sidebarblock>.content>.title>a.link:hover,h4>a.link:hover,h5>a.link:hover,h6>a.link:hover{color:#a53221}
 details,.audioblock,.imageblock,.literalblock,.listingblock,.stemblock,.videoblock{margin-bottom:1.25em}
-details{margin-left:1.25rem}
-details>summary{cursor:pointer;display:block;position:relative;line-height:1.6;margin-bottom:.625rem;-webkit-tap-highlight-color:transparent}
-details>summary::before{content:"";border:solid transparent;border-left:solid;border-width:.3em 0 .3em .5em;position:absolute;top:.5em;left:-1.25rem;transform:translateX(15%)}
-details[open]>summary::before{border:solid transparent;border-top:solid;border-width:.5em .3em 0;transform:translateY(15%)}
-details>summary::after{content:"";width:1.25rem;height:1em;position:absolute;top:.3em;left:-1.25rem}
+details>summary:first-of-type{cursor:pointer;display:list-item;outline:none;margin-bottom:.75em}
 .admonitionblock td.content>.title,.audioblock>.title,.exampleblock>.title,.imageblock>.title,.listingblock>.title,.literalblock>.title,.stemblock>.title,.openblock>.title,.paragraph>.title,.quoteblock>.title,table.tableblock>.title,.verseblock>.title,.videoblock>.title,.dlist>.title,.olist>.title,.ulist>.title,.qlist>.title,.hdlist>.title{text-rendering:optimizeLegibility;text-align:left;font-family:"Noto Serif","DejaVu Serif",serif;font-size:1rem;font-style:italic}
 table.tableblock.fit-content>caption.title{white-space:nowrap;width:0}
-.paragraph.lead>p,#preamble>.sectionbody>[class=paragraph]:first-of-type p{font-size:1.21875em;line-height:1.6;color:rgba(0,0,0,.85)}
+.paragraph.lead>p,#preamble>.sectionbody>[class="paragraph"]:first-of-type p{font-size:1.21875em;line-height:1.6;color:rgba(0,0,0,.85)}
+table.tableblock #preamble>.sectionbody>[class="paragraph"]:first-of-type p{font-size:inherit}
 .admonitionblock>table{border-collapse:separate;border:0;background:none;width:100%}
 .admonitionblock>table td.icon{text-align:center;width:80px}
 .admonitionblock>table td.icon img{max-width:none}
 .admonitionblock>table td.icon .title{font-weight:bold;font-family:"Open Sans","DejaVu Sans",sans-serif;text-transform:uppercase}
 .admonitionblock>table td.content{padding-left:1.125em;padding-right:1.25em;border-left:1px solid #dddddf;color:rgba(0,0,0,.6);word-wrap:anywhere}
 .admonitionblock>table td.content>:last-child>:last-child{margin-bottom:0}
-.exampleblock>.content{border:1px solid #e6e6e6;margin-bottom:1.25em;padding:1.25em;background:#fff;border-radius:4px}
+.exampleblock>.content{border-style:solid;border-width:1px;border-color:#e6e6e6;margin-bottom:1.25em;padding:1.25em;background:#fff;-webkit-border-radius:4px;border-radius:4px}
 .exampleblock>.content>:first-child{margin-top:0}
 .exampleblock>.content>:last-child{margin-bottom:0}
-.sidebarblock{border:1px solid #dbdbd6;margin-bottom:1.25em;padding:1.25em;background:#f3f3f2;border-radius:4px}
+.sidebarblock{border-style:solid;border-width:1px;border-color:#dbdbd6;margin-bottom:1.25em;padding:1.25em;background:#f3f3f2;-webkit-border-radius:4px;border-radius:4px}
 .sidebarblock>:first-child{margin-top:0}
 .sidebarblock>:last-child{margin-bottom:0}
 .sidebarblock>.content>.title{color:#7a2518;margin-top:0;text-align:center}
 .exampleblock>.content>:last-child>:last-child,.exampleblock>.content .olist>ol>li:last-child>:last-child,.exampleblock>.content .ulist>ul>li:last-child>:last-child,.exampleblock>.content .qlist>ol>li:last-child>:last-child,.sidebarblock>.content>:last-child>:last-child,.sidebarblock>.content .olist>ol>li:last-child>:last-child,.sidebarblock>.content .ulist>ul>li:last-child>:last-child,.sidebarblock>.content .qlist>ol>li:last-child>:last-child{margin-bottom:0}
-.literalblock pre,.listingblock>.content>pre{border-radius:4px;overflow-x:auto;padding:1em;font-size:.8125em}
+.literalblock pre,.listingblock>.content>pre{-webkit-border-radius:4px;border-radius:4px;overflow-x:auto;padding:1em;font-size:.8125em}
 @media screen and (min-width:768px){.literalblock pre,.listingblock>.content>pre{font-size:.90625em}}
 @media screen and (min-width:1280px){.literalblock pre,.listingblock>.content>pre{font-size:1em}}
-.literalblock pre,.listingblock>.content>pre:not(.highlight),.listingblock>.content>pre[class=highlight],.listingblock>.content>pre[class^="highlight "]{background:#f7f7f8}
+.literalblock pre,.listingblock>.content>pre:not(.highlight),.listingblock>.content>pre[class="highlight"],.listingblock>.content>pre[class^="highlight "]{background:#f7f7f8}
 .literalblock.output pre{color:#f7f7f8;background:rgba(0,0,0,.9)}
 .listingblock>.content{position:relative}
 .listingblock code[data-lang]::before{display:none;content:attr(data-lang);position:absolute;font-size:.75em;top:.425rem;right:.5rem;line-height:1;text-transform:uppercase;color:inherit;opacity:.5}
@@ -227,7 +229,7 @@ table.tableblock.fit-content>caption.title{white-space:nowrap;width:0}
 .listingblock.terminal pre .command::before{content:attr(data-prompt);padding-right:.5em;color:inherit;opacity:.5}
 .listingblock.terminal pre .command:not([data-prompt])::before{content:"$"}
 .listingblock pre.highlightjs{padding:0}
-.listingblock pre.highlightjs>code{padding:1em;border-radius:4px}
+.listingblock pre.highlightjs>code{padding:1em;-webkit-border-radius:4px;border-radius:4px}
 .listingblock pre.prettyprint{border-width:0}
 .prettyprint{background:#f7f7f8}
 pre.prettyprint .linenums{line-height:1.45;margin-left:2em}
@@ -237,8 +239,8 @@ pre.prettyprint li:not(:first-child) code[data-lang]::before{display:none}
 table.linenotable{border-collapse:separate;border:0;margin-bottom:0;background:none}
 table.linenotable td[class]{color:inherit;vertical-align:top;padding:0;line-height:inherit;white-space:normal}
 table.linenotable td.code{padding-left:.75em}
-table.linenotable td.linenos{border-right:1px solid;opacity:.35;padding-right:.5em}
-pre.pygments .lineno{border-right:1px solid;opacity:.35;display:inline-block;margin-right:.75em}
+table.linenotable td.linenos{border-right:1px solid currentColor;opacity:.35;padding-right:.5em}
+pre.pygments .lineno{border-right:1px solid currentColor;opacity:.35;display:inline-block;margin-right:.75em}
 pre.pygments .lineno::before{content:"";margin-right:-.125em}
 .quoteblock{margin:0 1em 1.25em 1.5em;display:table}
 .quoteblock:not(.excerpt)>.title{margin-left:-1.5em;margin-bottom:.75em}
@@ -248,7 +250,7 @@ pre.pygments .lineno::before{content:"";margin-right:-.125em}
 .quoteblock blockquote>.paragraph:last-child p{margin-bottom:0}
 .quoteblock .attribution{margin-top:.75em;margin-right:.5ex;text-align:right}
 .verseblock{margin:0 1em 1.25em}
-.verseblock pre{font-family:"Open Sans","DejaVu Sans",sans-serif;font-size:1.15rem;color:rgba(0,0,0,.85);font-weight:300;text-rendering:optimizeLegibility}
+.verseblock pre{font-family:"Open Sans","DejaVu Sans",sans;font-size:1.15rem;color:rgba(0,0,0,.85);font-weight:300;text-rendering:optimizeLegibility}
 .verseblock pre strong{font-weight:400}
 .verseblock .attribution{margin-top:1.25rem;margin-left:.5ex}
 .quoteblock .attribution,.verseblock .attribution{font-size:.9375em;line-height:1.45;font-style:italic}
@@ -261,7 +263,7 @@ pre.pygments .lineno::before{content:"";margin-right:-.125em}
 .quoteblock.excerpt>blockquote,.quoteblock .quoteblock{padding:0 0 .25em 1em;border-left:.25em solid #dddddf}
 .quoteblock.excerpt,.quoteblock .quoteblock{margin-left:0}
 .quoteblock.excerpt blockquote,.quoteblock.excerpt p,.quoteblock .quoteblock blockquote,.quoteblock .quoteblock p{color:inherit;font-size:1.0625rem}
-.quoteblock.excerpt .attribution,.quoteblock .quoteblock .attribution{color:inherit;font-size:.85rem;text-align:left;margin-right:0}
+.quoteblock.excerpt .attribution,.quoteblock .quoteblock .attribution{color:inherit;text-align:left;margin-right:0}
 p.tableblock:last-child{margin-bottom:0}
 td.tableblock>.content{margin-bottom:1.25em;word-wrap:anywhere}
 td.tableblock>.content>:last-child{margin-bottom:-1.25em}
@@ -296,10 +298,10 @@ ol>li p,ul>li p,ul dd,ol dd,.olist .olist,.ulist .ulist,.ulist .olist,.olist .ul
 ul.checklist,ul.none,ol.none,ul.no-bullet,ol.no-bullet,ol.unnumbered,ul.unstyled,ol.unstyled{list-style-type:none}
 ul.no-bullet,ol.no-bullet,ol.unnumbered{margin-left:.625em}
 ul.unstyled,ol.unstyled{margin-left:0}
-ul.checklist>li>p:first-child{margin-left:-1em}
-ul.checklist>li>p:first-child>.fa-square-o:first-child,ul.checklist>li>p:first-child>.fa-check-square-o:first-child{width:1.25em;font-size:.8em;position:relative;bottom:.125em}
-ul.checklist>li>p:first-child>input[type=checkbox]:first-child{margin-right:.25em}
-ul.inline{display:flex;flex-flow:row wrap;list-style:none;margin:0 0 .625em -1.25em}
+ul.checklist{margin-left:.625em}
+ul.checklist li>p:first-child>.fa-square-o:first-child,ul.checklist li>p:first-child>.fa-check-square-o:first-child{width:1.25em;font-size:.8em;position:relative;bottom:.125em}
+ul.checklist li>p:first-child>input[type="checkbox"]:first-child{margin-right:.25em}
+ul.inline{display:-ms-flexbox;display:-webkit-box;display:flex;-ms-flex-flow:row wrap;-webkit-flex-flow:row wrap;flex-flow:row wrap;list-style:none;margin:0 0 .625em -1.25em}
 ul.inline>li{margin-left:1.25em}
 .unstyled dl dt{font-weight:400;font-style:normal}
 ol.arabic{list-style-type:decimal}
@@ -318,7 +320,7 @@ td.hdlist2{word-wrap:anywhere}
 .colist td:not([class]):first-child{padding:.4em .75em 0;line-height:1;vertical-align:top}
 .colist td:not([class]):first-child img{max-width:none}
 .colist td:not([class]):last-child{padding:.25em 0}
-.thumb,.th{line-height:0;display:inline-block;border:4px solid #fff;box-shadow:0 0 0 1px #ddd}
+.thumb,.th{line-height:0;display:inline-block;border:solid 4px #fff;-webkit-box-shadow:0 0 0 1px #ddd;box-shadow:0 0 0 1px #ddd}
 .imageblock.left{margin:.25em .625em 1.25em 0}
 .imageblock.right{margin:.25em 0 1.25em .625em}
 .imageblock>.title{margin-bottom:0}
@@ -386,7 +388,7 @@ a span.icon>.fa{cursor:inherit}
 .admonitionblock td.icon .icon-warning::before{content:"\f071";color:#bf6900}
 .admonitionblock td.icon .icon-caution::before{content:"\f06d";color:#bf3400}
 .admonitionblock td.icon .icon-important::before{content:"\f06a";color:#bf0000}
-.conum[data-value]{display:inline-block;color:#fff!important;background:rgba(0,0,0,.8);border-radius:50%;text-align:center;font-size:.75em;width:1.67em;height:1.67em;line-height:1.67em;font-family:"Open Sans","DejaVu Sans",sans-serif;font-style:normal;font-weight:bold}
+.conum[data-value]{display:inline-block;color:#fff!important;background:rgba(0,0,0,.8);-webkit-border-radius:50%;border-radius:50%;text-align:center;font-size:.75em;width:1.67em;height:1.67em;line-height:1.67em;font-family:"Open Sans","DejaVu Sans",sans-serif;font-style:normal;font-weight:bold}
 .conum[data-value] *{color:#fff!important}
 .conum[data-value]+b{display:none}
 .conum[data-value]::after{content:attr(data-value)}
@@ -394,20 +396,19 @@ pre .conum[data-value]{position:relative;top:-.125em}
 b.conum *{color:inherit!important}
 .conum:not([data-value]):empty{display:none}
 dt,th.tableblock,td.content,div.footnote{text-rendering:optimizeLegibility}
-h1,h2,p,td.content,span.alt,summary{letter-spacing:-.01em}
+h1,h2,p,td.content,span.alt{letter-spacing:-.01em}
 p strong,td.content strong,div.footnote strong{letter-spacing:-.005em}
-p,blockquote,dt,td.content,span.alt,summary{font-size:1.0625rem}
+p,blockquote,dt,td.content,span.alt{font-size:1.0625rem}
 p{margin-bottom:1.25rem}
 .sidebarblock p,.sidebarblock dt,.sidebarblock td.content,p.tableblock{font-size:1em}
-.exampleblock>.content{background:#fffef7;border-color:#e0e0dc;box-shadow:0 1px 4px #e0e0dc}
+.exampleblock>.content{background:#fffef7;border-color:#e0e0dc;-webkit-box-shadow:0 1px 4px #e0e0dc;box-shadow:0 1px 4px #e0e0dc}
 .print-only{display:none!important}
 @page{margin:1.25cm .75cm}
-@media print{*{box-shadow:none!important;text-shadow:none!important}
+@media print{*{-webkit-box-shadow:none!important;box-shadow:none!important;text-shadow:none!important}
 html{font-size:80%}
 a{color:inherit!important;text-decoration:underline!important}
 a.bare,a[href^="#"],a[href^="mailto:"]{text-decoration:none!important}
 a[href^="http:"]:not(.bare)::after,a[href^="https:"]:not(.bare)::after{content:"(" attr(href) ")";display:inline-block;font-size:.875em;padding-left:.25em}
-abbr[title]{border-bottom:1px dotted}
 abbr[title]::after{content:" (" attr(title) ")"}
 pre,blockquote,tr,img,object,svg{page-break-inside:avoid}
 thead{display:table-header-group}
@@ -431,7 +432,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 .print-only{display:block!important}
 .hide-for-print{display:none!important}
 .show-for-print{display:inherit!important}}
-@media amzn-kf8,print{#header>h1:first-child{margin-top:1.25rem}
+@media print,amzn-kf8{#header>h1:first-child{margin-top:1.25rem}
 .sect1{padding:0!important}
 .sect1+.sect1{border:0}
 #footer{background:none}
@@ -534,7 +535,7 @@ table.CodeRay td.code{padding:0 0 0 .75em}
 <div class="details">
 <span id="author" class="author">NC3 Luxembourg</span><br>
 <span id="email" class="email"><a href="mailto:info@nc3.lu">info@nc3.lu</a></span><br>
-<span id="revnumber">version 2023-01-31</span>
+<span id="revnumber">version 2026-08-20</span>
 </div>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
@@ -548,9 +549,10 @@ table.CodeRay td.code{padding:0 0 0 .75em}
 <li><a href="#requirements">2. Requirements</a>
 <ul class="sectlevel2">
 <li><a href="#system-and-software">2.1. System and software</a></li>
-<li><a href="#specifications-by-server">2.2. Specifications by server</a></li>
-<li><a href="#network">2.3. Network</a></li>
-<li><a href="#tls-certificate">2.4. TLS certificate</a></li>
+<li><a href="#pdf-deliverable-generation">2.2. PDF deliverable generation</a></li>
+<li><a href="#specifications-by-server">2.3. Specifications by server</a></li>
+<li><a href="#network">2.4. Network</a></li>
+<li><a href="#tls-certificate">2.5. TLS certificate</a></li>
 </ul>
 </li>
 <li><a href="#architecture">3. Architecture</a>
@@ -566,7 +568,6 @@ table.CodeRay td.code{padding:0 0 0 .75em}
 <ul class="sectlevel3">
 <li><a href="#prepared-virtual-machine">4.1.1. Prepared virtual machine</a></li>
 <li><a href="#manual-deployment">4.1.2. Manual deployment</a></li>
-<li><a href="#end-user-app">4.1.3. End-User installation and usage of the FrontOffice application</a></li>
 </ul>
 </li>
 <li><a href="#monarc-back-office-application">4.2. MONARC Back Office application.</a>
@@ -691,6 +692,26 @@ In order to install MONARC you will need the following requirements:</p>
 </li>
 </ul>
 </div>
+</div>
+<div class="sect2">
+<h3 id="pdf-deliverable-generation"><a class="anchor" href="#pdf-deliverable-generation"></a><a class="link" href="#pdf-deliverable-generation">2.2. PDF deliverable generation</a></h3>
+<div class="paragraph">
+<p>Generating deliverables as PDF requires LibreOffice Writer on the same server
+or container that runs the MONARC FrontOffice application. On Ubuntu and Debian,
+install it with:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="bash">sudo apt-get update
+sudo apt-get install -y libreoffice-writer</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The default converter executable is <code>/usr/bin/soffice</code>. If LibreOffice is
+installed elsewhere, configure the corresponding converter-binary setting in
+the FrontOffice configuration. Docker images and deployments managed by the
+MONARC Ansible playbook already install this package.</p>
+</div>
 <div class="paragraph">
 <p>Postfix, or an equivalent software, is required for the account creation and
 password recovery features.</p>
@@ -701,7 +722,7 @@ password recovery features.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="specifications-by-server"><a class="anchor" href="#specifications-by-server"></a><a class="link" href="#specifications-by-server">2.2. Specifications by server</a></h3>
+<h3 id="specifications-by-server"><a class="anchor" href="#specifications-by-server"></a><a class="link" href="#specifications-by-server">2.3. Specifications by server</a></h3>
 <table class="tableblock frame-all grid-all stretch">
 <caption class="title">Minimum requirements</caption>
 <colgroup>
@@ -770,7 +791,7 @@ It is always better to forecast more memory and disk space for MONARC
 </div>
 </div>
 <div class="sect2">
-<h3 id="network"><a class="anchor" href="#network"></a><a class="link" href="#network">2.3. Network</a></h3>
+<h3 id="network"><a class="anchor" href="#network"></a><a class="link" href="#network">2.4. Network</a></h3>
 <div class="paragraph">
 <p>The deployment on the different servers requires an Internet connection since
 the updates are retrieved from our GitHub repositories. If this is hardly
@@ -832,7 +853,7 @@ export https_proxy=http://proxy.your.domain.com:4128</code></pre>
 </div>
 </div>
 <div class="sect2">
-<h3 id="tls-certificate"><a class="anchor" href="#tls-certificate"></a><a class="link" href="#tls-certificate">2.4. TLS certificate</a></h3>
+<h3 id="tls-certificate"><a class="anchor" href="#tls-certificate"></a><a class="link" href="#tls-certificate">2.5. TLS certificate</a></h3>
 <div class="paragraph">
 <p>Is is strongly advised to use a TLS certificate.</p>
 </div>
@@ -1066,24 +1087,10 @@ internal mail server (<strong>SMTP</strong>).</p>
 <div class="sect2">
 <h3 id="monarc-front-office-application"><a class="anchor" href="#monarc-front-office-application"></a><a class="link" href="#monarc-front-office-application">4.1. MONARC Front Office application</a></h3>
 <div class="paragraph">
-<p>There are 3 ways of installing or deployment of the MONARC Front Office application.</p>
+<p>There are 2 ways of installing or deployment of the MONARC Front Office application.</p>
 </div>
 <div class="sect3">
 <h4 id="prepared-virtual-machine"><a class="anchor" href="#prepared-virtual-machine"></a><a class="link" href="#prepared-virtual-machine">4.1.1. Prepared virtual machine</a></h4>
-<div class="admonitionblock warning">
-<table>
-<tr>
-<td class="icon">
-<div class="title">Warning</div>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>This prepared virtual machine solution is no longer maintained. For new installations, it is recommended to use the Docker + Application solution described in <a href="#end-user-app">4.1.3. End-User installation and usage of the FrontOffice application</a>.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
 <div class="paragraph">
 <p>Virtual machine can be used in case if you would like to have a locally installed instance of the MONARC Front Office
 on you PC or laptop. It is possible to use the VM installation on server, but not recommended.</p>
@@ -1133,404 +1140,6 @@ section <code>MONARC application</code> and usually login: <code>admin@admin.loc
 <div class="paragraph">
 <p>Follow the instructions
 <a href="https://github.com/monarc-project/MonarcAppFO/tree/master/INSTALL">here</a>.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="end-user-app"><a class="anchor" href="#end-user-app"></a><a class="link" href="#end-user-app">4.1.3. End-User installation and usage of the FrontOffice application</a></h4>
-<div class="paragraph">
-<p>These steps are for people using the packaged applications from <code>dist/packages</code> rather than building from source.</p>
-</div>
-<div class="paragraph">
-<p>Before first run on any OS:</p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Install Docker and make sure it is running.</p>
-</li>
-<li>
-<p>Download the package that matches your operating system and CPU architecture.</p>
-</li>
-<li>
-<p>Start the launcher once.</p>
-</li>
-<li>
-<p>Open <code>Config</code> and review the generated <code>.env</code> file.</p>
-</li>
-<li>
-<p>Set at least <code>MONARC_FO_VERSION</code> and <code>MONARC_STATS_VERSION</code> to a real release tag instead of <code>vX.Y.Z</code>.</p>
-</li>
-<li>
-<p>Adjust DB settings, language settings, and any MONARC-specific values you need.</p>
-</li>
-<li>
-<p>Save the config, then use <code>Start MONARC</code>.</p>
-</li>
-</ol>
-</div>
-<div class="paragraph">
-<p>The MONARC FrontOffice application launcher tool:</p>
-</div>
-<div class="imageblock text-center">
-<div class="content">
-<img src="images/monarc_app_launcher.png" alt="MONARC FrontOffice application launcher tool">
-</div>
-</div>
-<div class="paragraph">
-<p>Default login after the stack is up:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><code>admin@admin.localhost</code></p>
-</li>
-<li>
-<p><code>admin</code></p>
-</li>
-</ul>
-</div>
-<div class="sect4">
-<h5 id="_windows">Windows</h5>
-<div class="paragraph">
-<p>Before installing:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Install Docker Desktop for Windows.</p>
-</li>
-<li>
-<p>Use the WSL 2 backend.</p>
-</li>
-<li>
-<p>Ensure WSL 2 is installed and updated; Docker currently recommends WSL version <code>2.1.5</code> or later, ideally the latest available version.</p>
-</li>
-<li>
-<p>Ensure hardware virtualization is enabled in BIOS/UEFI.</p>
-</li>
-<li>
-<p>Start Docker Desktop once and wait until Docker shows that the engine is running.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>Recommended preparation:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="CodeRay highlight"><code data-lang="powershell">wsl --install
-wsl --update</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Package install:</p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Download <code>monarc-local-windows-amd64.zip</code>.</p>
-</li>
-<li>
-<p>Extract it to a normal writable folder such as <code>C:\Users\&lt;you&gt;\Documents\monarc-local\</code>.</p>
-</li>
-<li>
-<p>Start <code>Monarc Local.bat</code> for the GUI, or run <code>monarc-local.exe</code> in a terminal for CLI usage.</p>
-</li>
-</ol>
-</div>
-<div class="paragraph">
-<p>Windows notes:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>The launcher stores editable config in <code>%LOCALAPPDATA%\MonarcLocal\compose\.env</code>.</p>
-</li>
-<li>
-<p>MONARC data is stored under <code>%LOCALAPPDATA%\MonarcLocal\</code>.</p>
-</li>
-<li>
-<p>If Docker Desktop is installed by an administrator for another account, the user may need access to the <code>docker-users</code> group.</p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect4">
-<h5 id="_macos">macOS</h5>
-<div class="paragraph">
-<p>Before installing:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Install Docker Desktop for Mac for the correct CPU type: Apple silicon or Intel.</p>
-</li>
-<li>
-<p>Start Docker Desktop once and wait until it is fully running.</p>
-</li>
-<li>
-<p>Keep Docker Desktop updated; Docker supports the current macOS major release and the previous two major releases.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>Package install:</p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Download the matching package: <code>monarc-local-darwin-arm64.zip</code> for Apple silicon, or <code>monarc-local-darwin-amd64.zip</code> for Intel.</p>
-</li>
-<li>
-<p>Extract the archive.</p>
-</li>
-<li>
-<p>Open <code>Monarc Local.app</code>.</p>
-</li>
-</ol>
-</div>
-<div class="paragraph">
-<p>macOS notes:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>The launcher stores editable config in <code>~/.monarc-local/compose/.env</code>.</p>
-</li>
-<li>
-<p>MONARC data is stored under <code>~/.monarc-local/</code>.</p>
-</li>
-<li>
-<p>Release artifacts should be signed and notarized; otherwise macOS may report the app as damaged or block it on first launch.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>Avoiding the misleading macOS "app is damaged" error:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Best fix for published releases: distribute a signed and notarized macOS package.</p>
-</li>
-<li>
-<p>If you are testing an internal or unsigned build downloaded from a browser, macOS may add the <code>com.apple.quarantine</code> attribute to the extracted app and show a misleading "is damaged and can not be opened" message.</p>
-</li>
-<li>
-<p>If the archive came from a trusted MONARC source, remove the quarantine attribute from the extracted app before opening it by running in the terminal app:</p>
-</li>
-</ul>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="CodeRay highlight"><code data-lang="bash">/usr/bin/xattr -dr com.apple.quarantine "/path/to/Monarc Local.app"</code></pre>
-</div>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>After removing quarantine, start <code>Monarc Local.app</code> again.</p>
-</li>
-<li>
-<p>Do not recommend this workaround for untrusted downloads; for public releases, the proper fix is notarization.</p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect4">
-<h5 id="_linux">Linux</h5>
-<div class="paragraph">
-<p>Before installing:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Install Docker Engine and the Docker Compose plugin.</p>
-</li>
-<li>
-<p>Add your user to the <code>docker</code> group if you want to run Docker without <code>sudo</code>.</p>
-</li>
-<li>
-<p>Install <code>python3</code> with Tk support if you want the GUI launcher.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>Typical Ubuntu preparation:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="CodeRay highlight"><code data-lang="bash">sudo apt-get update
-sudo apt-get install -y python3 python3-tk
-sudo usermod -aG docker "$USER"</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Install Docker Engine and the Compose plugin from Docker&#8217;s official Ubuntu repository instructions first, then log out and log back in after changing the <code>docker</code> group.</p>
-</div>
-<div class="paragraph">
-<p>Package install:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><code>.deb</code>:</p>
-</li>
-</ul>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="CodeRay highlight"><code data-lang="bash">sudo dpkg -i monarc-local-linux-amd64.deb</code></pre>
-</div>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>portable archive:</p>
-</li>
-</ul>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="CodeRay highlight"><code data-lang="bash">tar -xzf monarc-local-linux-amd64.tar.gz
-cd monarc-local-linux-amd64
-./monarc-local-gui.sh</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Linux notes:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>The <code>.deb</code> installs files under <code>/opt/monarc-local</code> and adds <code>monarc-local</code> and <code>monarc-local-gui</code> into <code>/usr/bin</code>.</p>
-</li>
-<li>
-<p>The launcher stores editable config in <code>~/.monarc-local/compose/.env</code>.</p>
-</li>
-<li>
-<p>MONARC data is stored under <code>~/.monarc-local/</code>.</p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect4">
-<h5 id="_daily_usage">Daily Usage</h5>
-<div class="paragraph">
-<p>GUI actions:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><code>Start MONARC</code>: pull images and start the stack</p>
-</li>
-<li>
-<p><code>Update MONARC</code>: pull newer images, restart the stack, and run the migration command</p>
-</li>
-<li>
-<p><code>Open In Browser</code>: open the configured MONARC URL</p>
-</li>
-<li>
-<p><code>Display Status</code>: show container status</p>
-</li>
-<li>
-<p><code>Display Logs</code>: show recent frontoffice logs</p>
-</li>
-<li>
-<p><code>Edit Config</code>: open the user <code>.env</code> file</p>
-</li>
-<li>
-<p><code>Help</code>: show CLI help text</p>
-</li>
-<li>
-<p><code>Stop MONARC</code>: stop the stack</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>Equivalent CLI commands:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="CodeRay highlight"><code data-lang="bash">monarc-local doctor
-monarc-local up
-monarc-local status
-monarc-local logs --service monarc-frontoffice --tail 200
-monarc-local open
-monarc-local update
-monarc-local down</code></pre>
-</div>
-</div>
-</div>
-<div class="sect4">
-<h5 id="_updating_installed_packages">Updating Installed Packages</h5>
-<div class="paragraph">
-<p>Updating MONARC itself:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="CodeRay highlight"><code data-lang="bash">monarc-local update</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Updating the launcher package:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Windows: download the new zip, extract it, and replace the previous extracted folder.</p>
-</li>
-<li>
-<p>macOS: download the new macOS artifact and replace the previous app bundle.</p>
-</li>
-<li>
-<p>Linux <code>.deb</code>: install the newer <code>.deb</code> over the existing one with <code>sudo dpkg -i ...</code>.</p>
-</li>
-<li>
-<p>Linux <code>.tar.gz</code>: extract the new archive and start using the new extracted folder.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>Reinstalling the launcher package does not remove the user config or MONARC data directories unless you delete them manually.</p>
-</div>
-</div>
-<div class="sect4">
-<h5 id="_launcher_commands">Launcher Commands</h5>
-<div class="ulist">
-<ul>
-<li>
-<p><code>doctor</code>: validate docker + compose + compose file</p>
-</li>
-<li>
-<p><code>status</code>: show stack status</p>
-</li>
-<li>
-<p><code>up</code>: pull images and start stack</p>
-</li>
-<li>
-<p><code>down</code>: stop stack</p>
-</li>
-<li>
-<p><code>update</code>: pull new FrontOffice/stats versions, restart stack, run migration hook</p>
-</li>
-<li>
-<p><code>logs</code>: show compose logs (all services or specific service)</p>
-</li>
-<li>
-<p><code>open</code>: open MONARC URL in browser</p>
-</li>
-<li>
-<p><code>backup</code>: archive local data folder into <code>.tar.gz</code></p>
-</li>
-<li>
-<p><code>restore</code>: restore archived data folder</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>Run <code>monarc-local help</code> for options.</p>
-</div>
 </div>
 </div>
 </div>
@@ -2109,8 +1718,8 @@ It can be configured the same way as your Back Office instance access.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Version 2023-01-31<br>
-Last updated 2023-01-31 12:27:29 +0100
+Version 2026-08-20<br>
+Last updated 2026-08-20 11:03:09 +0200
 </div>
 </div>
 <script type="text/x-mathjax-config">
