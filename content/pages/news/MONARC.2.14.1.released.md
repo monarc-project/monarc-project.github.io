@@ -21,6 +21,8 @@ The updated [User guide HTML](/documentation/user-guide/) and [PDF](/assets/file
 
 Follow the standard [MONARC update guide](https://monarc.lu/documentation/technical-guide/#monarc-update).
 
+> **Important:** If your MONARC installation includes a BackOffice, update the BackOffice to **v2.14.1** together with the FrontOffice. The FrontOffice application will not work with an outdated BackOffice.
+
 ### Ansible deployment
 
 For MONARC installations deployed with [ansible-ubuntu](https://github.com/monarc-project/ansible-ubuntu), a BackOffice with multiple FrontOffice clients, - it's required to update the Ansible repository before deploying this release. It contains the new FrontOffice-client configuration changes. Updating the repository only requires pulling the latest `master` branch:
@@ -49,4 +51,4 @@ For detailed installation steps and additional information, refer to the officia
 
 ## Monarc BackOffice application.
 
-The is also a new BackOffice release available. The details can be found [here](https://github.com/monarc-project/MonarcAppBO/releases/tag/v2.13.5){:target="_blank"}.
+There is also a new BackOffice v2.14.1 release available. The details can be found [here](https://github.com/monarc-project/MonarcAppBO/releases/tag/v2.14.1){:target="_blank"}.
