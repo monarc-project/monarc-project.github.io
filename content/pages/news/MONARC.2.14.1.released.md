@@ -21,6 +21,14 @@ The updated [User guide HTML](/documentation/user-guide/) and [PDF](/assets/file
 
 Follow the standard [MONARC update guide](https://monarc.lu/documentation/technical-guide/#monarc-update).
 
+### Ansible deployment
+
+For MONARC installations deployed with [ansible-ubuntu](https://github.com/monarc-project/ansible-ubuntu), a BackOffice with multiple FrontOffice clients, - it's required to update the Ansible repository before deploying this release. It contains the new FrontOffice-client configuration changes. Updating the repository only requires pulling the latest `master` branch:
+
+```bash
+git pull origin master
+```
+
 More details are available on the [GitHub Release v2.14.1](https://github.com/monarc-project/MonarcAppFO/releases/tag/v2.14.1){:target="_blank"}.
 
 
