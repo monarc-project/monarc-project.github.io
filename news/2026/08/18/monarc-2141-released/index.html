@@ -127,6 +127,11 @@ MONARC            </a>
 <p>The updated <a href="/documentation/user-guide/">User guide <span class="caps">HTML</span></a> and <a href="/assets/files/guides/user-guide.pdf"><span class="caps">PDF</span></a> include the new functionality. The <span class="caps">ISO</span> 27005:2022 additions are also available as a separate <a href="/documentation/iso27005_2022_adaptations/"><span class="caps">HTML</span> guide</a> and <a href="/assets/files/guides/iso27005_2022_adaptations.pdf"><span class="caps">PDF</span> guide</a>.</p>
 <h2 id="updating">Updating</h2>
 <p>Follow the standard <a href="https://monarc.lu/documentation/technical-guide/#monarc-update"><span class="caps">MONARC</span> update guide</a>.</p>
+<h3 id="ansible-deployment">Ansible&nbsp;deployment</h3>
+<p>For <span class="caps">MONARC</span> installations deployed with <a href="https://github.com/monarc-project/ansible-ubuntu">ansible-ubuntu</a>, a BackOffice with multiple FrontOffice clients, - it&#8217;s required to update the Ansible repository before deploying this release. It contains the new FrontOffice-client configuration changes. Updating the repository only requires pulling the&nbsp;latest <code>master</code> branch:</p>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>pull<span class="w"> </span>origin<span class="w"> </span>master
+</code></pre></div>
+
 <p>More details are available on the <a href="https://github.com/monarc-project/MonarcAppFO/releases/tag/v2.14.1" target="_blank">GitHub Release v2.14.1</a>.</p>
 <h2 id="local-installation-docker-application">Local Installation (Docker +&nbsp;Application).</h2>
 <p>Monarc FrontOffice can also be installed locally using Docker and a small utililty to execute docker commands, configure and update the Monarc <span class="caps">FO</span>&nbsp;tool.</p>
