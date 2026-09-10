@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
 <head>
-    <title>MONARC 2.9.3 released - MONARC</title>
+    <title>MONARC 2.14.2 released - MONARC</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -10,18 +10,18 @@
 
     <link href="../../../../../assets/images/monarc-logo.png" rel="icon">
 
-<link rel="canonical" href="../../../../../news/2019/12/09/monarc-293-released/">
+<link rel="canonical" href="../../../../../news/2026/09/10/monarc-2142-released/">
 
         <meta name="author" content="Luxembourg House of Cybersecurity" />
         <meta name="keywords" content="monarc,new-release" />
-        <meta name="description" content="Release 2.9.3 of MONARC" />
+        <meta name="description" content="Release 2.14.2 of MONARC" />
 
         <meta property="og:site_name" content="MONARC" />
         <meta property="og:type" content="article"/>
-        <meta property="og:title" content="MONARC 2.9.3 released"/>
-        <meta property="og:url" content="../../../../../news/2019/12/09/monarc-293-released/"/>
-        <meta property="og:description" content="Release 2.9.3 of MONARC"/>
-        <meta property="article:published_time" content="2019-12-09" />
+        <meta property="og:title" content="MONARC 2.14.2 released"/>
+        <meta property="og:url" content="../../../../../news/2026/09/10/monarc-2142-released/"/>
+        <meta property="og:description" content="Release 2.14.2 of MONARC"/>
+        <meta property="article:published_time" content="2026-09-10" />
             <meta property="article:section" content="monarc" />
             <meta property="article:tag" content="monarc" />
             <meta property="article:tag" content="new-release" />
@@ -88,10 +88,10 @@ MONARC            </a>
         <article>
             <header class="page-header">
                 <h1>
-                    <a href="../../../../../news/2019/12/09/monarc-293-released/"
+                    <a href="../../../../../news/2026/09/10/monarc-2142-released/"
                        rel="bookmark"
-                       title="Permalink to MONARC 2.9.3 released">
-                        <span class="caps">MONARC</span> 2.9.3&nbsp;released
+                       title="Permalink to MONARC 2.14.2 released">
+                        <span class="caps">MONARC</span> 2.14.2&nbsp;released
                     </a>
                 </h1>
             </header>
@@ -101,7 +101,7 @@ MONARC            </a>
 <footer class="post-info">
     <span class="label label-default">Date</span>
     <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2019-12-09T00:00:00+01:00"> Mon 09 December 2019</time>
+        <i class="fa fa-calendar"></i><time datetime="2026-09-10T00:00:00+02:00"> Thu 10 September 2026</time>
     </span>
 
 
@@ -115,29 +115,44 @@ MONARC            </a>
     
 </footer><!-- /.post-info -->                    </div>
                 </div>
-                <p>Version 2.9.3 of <span class="caps">MONARC</span> has been released with several&nbsp;fixes.</p>
-<h3 id="fix">Fix</h3>
+                <p>Version 2.14.2 delivers fixes for issues introduced or identified in v2.14.1, improving asset imports and search results, operational risk recommendations, risk-management views, risk-treatment calendars, and <span class="caps">MFA</span> one-time-code&nbsp;autofill.</p>
+<h3 id="new">New</h3>
 <ul>
-<li>Configuration menu should not be scrollable
-  (<a href="https://github.com/monarc-project/MonarcAppFO/issues/212">#212</a>);</li>
-<li>The type hint of parameter &#8220;theme&#8221; in method &#8220;setTheme&#8221; is invalid
-  (<a href="https://github.com/monarc-project/MonarcAppFO/issues/211">#211</a>);</li>
-<li>Training <span class="caps">VM</span> does not show version number
-  (<a href="https://github.com/monarc-project/MonarcAppFO/issues/210">#210</a>);</li>
-<li>library object duplicated
-  (<a href="https://github.com/monarc-project/MonarcAppFO/issues/208">#208</a>);</li>
-<li>Drag and drop recommendations
-  (<a href="https://github.com/monarc-project/MonarcAppFO/issues/206">#206</a>);</li>
-<li>Edit an asset in the library
-  (<a href="https://github.com/monarc-project/MonarcAppFO/issues/205">#205</a>).</li>
+<li><a href="https://github.com/monarc-project/MonarcAppFO/issues/623">Highlighting asset search&nbsp;results</a></li>
 </ul>
+<h3 id="fixes">Fixes</h3>
+<ul>
+<li><a href="https://github.com/monarc-project/MonarcAppFO/issues/620">Import rename assets to &#8220;<asset_name> - Imp. #1&#8221; when multiple asset have the same&nbsp;name</a></li>
+<li><a href="https://github.com/monarc-project/MonarcAppFO/issues/628">Operational risk recommendations display&nbsp;issue</a></li>
+<li><a href="https://github.com/monarc-project/MonarcAppFO/issues/622">Problems with &#8220;Synthesis of assets&#8221; and &#8220;Risks management&nbsp;organisation&#8221;</a></li>
+<li><a href="https://github.com/monarc-project/MonarcAppFO/issues/624">Buggy calendar in risk&nbsp;treatment</a></li>
+<li><a href="https://github.com/monarc-project/MonarcAppFO/issues/610"><span class="caps">MFA</span> <span class="caps">OTP</span> input field incorrectly uses autocomplete=&#8221;new-password&#8221; instead of&nbsp;autocomplete=&#8221;one-time-code&#8221;</a></li>
+</ul>
+<h2 id="documentation">Documentation</h2>
+<p>The updated <a href="/documentation/user-guide/">User guide <span class="caps">HTML</span></a> and <a href="/assets/files/guides/user-guide.pdf"><span class="caps">PDF</span></a> include the new functionality. The <span class="caps">ISO</span> 27005:2022 additions are also available as a separate <a href="/documentation/iso27005_2022_adaptations/"><span class="caps">HTML</span> guide</a> and <a href="/assets/files/guides/iso27005_2022_adaptations.pdf"><span class="caps">PDF</span> guide</a>.</p>
 <h2 id="updating">Updating</h2>
-<p>To update, check out our
-<a href="http://monarc.lu/documentation/technical-guide/#monarc-update">update</a> instructions.
-If you are coming from <span class="caps">MONARC</span> 2.9.0 please read
-<a href="/news/2019/11/25/monarc-291-released/#updating">this</a>.</p>
-<p>You can also download the new virtual machine
-<a href="https://github.com/monarc-project/MonarcAppFO/releases/tag/v2.9.3">here</a>.</p>
+<p>Follow the standard <a href="https://monarc.lu/documentation/technical-guide/#monarc-update"><span class="caps">MONARC</span> update guide</a>.</p>
+<blockquote>
+<p><strong>Important:</strong> If your <span class="caps">MONARC</span> installation includes a BackOffice, update the BackOffice to <strong>v2.14.1</strong> (if the BackOffice version is lower) together with the FrontOffice. The FrontOffice application will not work with an outdated&nbsp;BackOffice.</p>
+</blockquote>
+<h3 id="ansible-deployment">Ansible&nbsp;deployment</h3>
+<p>Update the Ansible repository if this was not done during the v2.14.1&nbsp;update.</p>
+<p>For <span class="caps">MONARC</span> installations deployed with <a href="https://github.com/monarc-project/ansible-ubuntu">ansible-ubuntu</a>, a BackOffice with multiple FrontOffice clients, - it&#8217;s required to update the Ansible repository before deploying this release. It contains the new FrontOffice-client configuration changes. Updating the repository only requires pulling the&nbsp;latest <code>master</code> branch:</p>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>pull<span class="w"> </span>origin<span class="w"> </span>master
+</code></pre></div>
+
+<p>More details are available on the <a href="https://github.com/monarc-project/MonarcAppFO/releases/tag/v2.14.2" target="_blank">GitHub Release v2.14.2</a>.</p>
+<h2 id="local-installation-docker-application">Local installation (Docker +&nbsp;application)</h2>
+<p>Monarc FrontOffice can also be installed locally using Docker and a small utility to execute docker commands, configure and update the Monarc <span class="caps">FO</span>&nbsp;tool.</p>
+<p>To install the&nbsp;application:</p>
+<ul>
+<li>Install Docker on your&nbsp;system.</li>
+<li>Download the appropriate application package for your operating system from <a href="https://vm.monarc.lu/apps/" target="_blank">here</a>.</li>
+<li>Follow the setup instructions included with the&nbsp;package.</li>
+</ul>
+<p>For detailed installation steps and additional information, refer to the official documentation <a href="https://monarc.lu/documentation/technical-guide/#end-user-app">here</a>.</p>
+<h2 id="monarc-backoffice-application"><span class="caps">MONARC</span> BackOffice&nbsp;application</h2>
+<p>There is now new release, so v2.14.1 needs to be used / installed. The details can be found <a href="https://github.com/monarc-project/MonarcAppBO/releases/tag/v2.14.1" target="_blank">here</a>.</p>
             </div>
             <!-- /.entry-content -->
         </article>
