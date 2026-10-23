@@ -28,6 +28,7 @@ https://www.monarc.lu/publications/table-of-comparison-between-monarc-and-differ
 https://www.monarc.lu/trainings/
 https://www.monarc.lu/community/users/
 https://www.monarc.lu/community/vulnerability-disclosure/
+https://www.monarc.lu/news/2026/10/23/php-runtime-security-notice/
 https://www.monarc.lu/news/2026/09/10/monarc-2142-released/
 https://www.monarc.lu/news/2026/08/18/monarc-2141-released/
 https://www.monarc.lu/news/2026/02/13/monarc-2134-released/
@@ -87,6 +88,10 @@ https://www.monarc.lu/news/2017/10/13/monarc-203-released/
 https://www.monarc.lu/news/2017/10/10/monarc-202-released/
 https://www.monarc.lu/news/2017/08/28/monarc-201-released/
 https://www.monarc.lu/category/monarc.html
+https://www.monarc.lu/category/security.html
+https://www.monarc.lu/tag/security.html
+https://www.monarc.lu/tag/php.html
+https://www.monarc.lu/tag/advisory.html
 https://www.monarc.lu/tag/monarc.html
 https://www.monarc.lu/tag/new-release.html
 https://www.monarc.lu/tag/internships.html

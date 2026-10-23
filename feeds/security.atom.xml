@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>MONARC - security</title><link href="https://www.monarc.lu/" rel="alternate"/><link href="https://www.monarc.lu/feeds/security.atom.xml" rel="self"/><id>https://www.monarc.lu/</id><updated>2026-10-23T00:00:00+02:00</updated><entry><title>PHP runtime security notice for MONARC deployments</title><link href="https://www.monarc.lu/news/2026/10/23/php-runtime-security-notice/" rel="alternate"/><published>2026-10-23T00:00:00+02:00</published><updated>2026-10-23T00:00:00+02:00</updated><author><name>Luxembourg House of Cybersecurity</name></author><id>tag:www.monarc.lu,2026-10-23:/news/2026/10/23/php-runtime-security-notice/</id><summary type="html">&lt;p&gt;Update affected &lt;span class="caps"&gt;PHP&lt;/span&gt; web runtimes for &lt;span class="caps"&gt;CVE&lt;/span&gt;-2026-109618 and &lt;span class="caps"&gt;CVE&lt;/span&gt;-2026-109619.&lt;/p&gt;</summary><content type="html">&lt;p&gt;The reported vulnerabilities affect the &lt;span class="caps"&gt;PHP&lt;/span&gt; runtime, not the &lt;span class="caps"&gt;MONARC&lt;/span&gt; application
+code itself. However, &lt;span class="caps"&gt;MONARC&lt;/span&gt; installations using an affected &lt;span class="caps"&gt;PHP&lt;/span&gt; version to
+serve web requests may be&amp;nbsp;exposed.&lt;/p&gt;
+&lt;p&gt;Please apply your operating system or vendor security update for
+&lt;strong&gt;&lt;span class="caps"&gt;CVE&lt;/span&gt;-2026-109618&lt;/strong&gt; and &lt;strong&gt;&lt;span class="caps"&gt;CVE&lt;/span&gt;-2026-109619&lt;/strong&gt;, then restart the affected web
+server or &lt;span class="caps"&gt;PHP&lt;/span&gt;&amp;nbsp;workers.&lt;/p&gt;
+&lt;p&gt;For Ubuntu, see the
+&lt;a href="https://ubuntu.com/security/notices/USN-8948-1"&gt;Ubuntu Security Notice &lt;span class="caps"&gt;USN&lt;/span&gt;-8948-1&lt;/a&gt;.
+In particular, Ubuntu 22.04 installations using &lt;span class="caps"&gt;PHP&lt;/span&gt; 8.1 should update to
+Ubuntu package&amp;nbsp;version &lt;code&gt;8.1.2-1ubuntu2.28&lt;/code&gt; or&amp;nbsp;later.&lt;/p&gt;
+&lt;p&gt;Please verify the &lt;span class="caps"&gt;PHP&lt;/span&gt; runtime used by the web server, not only the &lt;span class="caps"&gt;CLI&lt;/span&gt; version.
+This applies to Apache mod_php, &lt;span class="caps"&gt;PHP&lt;/span&gt;-&lt;span class="caps"&gt;FPM&lt;/span&gt;, &lt;span class="caps"&gt;CGI&lt;/span&gt;, and other &lt;span class="caps"&gt;PHP&lt;/span&gt; web&amp;nbsp;SAPIs.&lt;/p&gt;
+&lt;p&gt;For other operating systems, follow the relevant vendor security advisory and
+ensure it explicitly addresses both&amp;nbsp;CVEs.&lt;/p&gt;
+&lt;p&gt;More information is available in
+&lt;a href="https://www.circl.lu/pub/tr-102/"&gt;&lt;span class="caps"&gt;CIRCL&lt;/span&gt; &lt;span class="caps"&gt;TR&lt;/span&gt;-102&lt;/a&gt;.&lt;/p&gt;</content><category term="security"/><category term="security"/><category term="php"/><category term="advisory"/></entry></feed>
