@@ -64,3 +64,7 @@ stored only on this server, for example for a system user
 
 Always keep your systems up-to-date. At least the security updates from the
 GNU/Linux distribution.
+
+> **PHP security notice:** See the
+> [PHP runtime security notice](/news/2026/10/23/php-runtime-security-notice/)
+> and apply the relevant vendor update.
